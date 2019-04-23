@@ -1,6 +1,6 @@
 # Book "Programming Basics" (with Java)
 
-> This is work in progress. This open-source free book, originally written in Bulgarian, will be transtaled into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
+> This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
 Книгата "**Основи на програмирането с Java**" запознава читателите с писането на **програмен код** на начално ниво (работа с данни, проверки, цикли и методи) с езика **Java**.
 
