@@ -1,274 +1,238 @@
-# Глава 1. Първи стъпки в програмирането
+# Chapter 1. First Steps in Programming
 
-В тази глава ще разберем **какво е програмирането** в неговата същина. Ще се запознаем с идеята за **програмни езици** и ще разгледаме **средите за разработка на софтуер** (IDE) и как да работим с тях, в частност с **IntelliJ IDEA**. Ще напишем и изпълним **първата си програма** на програмния език **Java**, а след това ще се упражним с няколко задачи: ще създадем конзолна програма, графично приложение и уеб приложение. Ще се научим как да проверяваме за коректност решенията на задачите от тази книга в **Judge системата на СофтУни** и накрая ще се запознаем с типичните грешки, които често се допускат при писането на код и как да се предпазим от тях.
+In this chapter, we are going to figure out **what programming is** in its core. We will get familiar with the idea of **programming languages** and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward we will exercise with a few tasks we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni** and in the end, we will get familiar with the typical errors, which are made often when writing code and how to avoid them.
 
-## Видео
-
+## Video
 <div class="video-player">
-  Гледайте видеоурок по тази глава тук: <a target="_blank"
+  Watch a video lesson on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=sU_JUiersZg">
   https://www.youtube.com/watch?v=sU_JUiersZg</a>.
 </div>
 
-## Какво означава "да програмираме"?
+## What does it mean to program
+To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
-**Да програмираме** означава да даваме команди на компютъра какво да прави, например "*да отпечата нещо на екрана*" или "*да умножи две числа*". Когато командите са няколко една след друга, те се наричат **компютърна програма**. Текстът на компютърните програми се нарича **програмен код** (или **сорс код**, или за по-кратко **код**).
+## Computer programs
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Java**. In this book we'll cover programming in general, as well as Python's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
-### Компютърни програми
+### Algorithms
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 
-**Компютърните програми** представляват **поредица от команди**, които се изписват на предварително избран **език за програмиране**, например Java, C#, JavaScript, Python, Ruby, PHP, C, C++, Swift, Go или друг. За да пишем команди, трябва да знаем **синтаксиса и семантиката на езика**, с който ще работим, в нашия случай **Java**. Затова ще се запознаем със синтаксиса и семантиката на езика Java и с програмирането като цяло в настоящата книга, изучавайки стъпка по стъпка писането на код, от по-простите към по-сложните програмни конструкции.
+To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **IntelliJ**.
 
-### Алгоритми
+### Programming languages, compilers, interpeters and environments for development
+**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-Компютърните програми обикновено изпълняват някакъв алгоритъм. **Алгоритмите** са последователност от стъпки, необходими, за да се свърши определена работа и да се постигне някакъв очакван резултат, нещо като "рецепта". Например, ако пържим яйца, ние изпълняваме някаква рецепта (алгоритъм): загряваме мазнина в някакъв съд, чупим яйцата, изчакваме докато се изпържат, отместваме от огъня. Аналогично, в програмирането **компютърните програми изпълняват алгоритми**: поредица от команди, необходими, за да се свърши определена работа. Например, за да се подредят поредица от числа в нарастващ ред, е необходим алгоритъм, примерно да се намери най-малкото число и да се отпечата, от останалите числа да се намери отново най-малкото число и да се отпечата и това се повтаря, докато числата свършат.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
 
-За удобство при създаването на програми, за писане на програмен код (команди), за изпълнение на програмите и за други операции, свързани с програмирането, ни е необходима и **среда за разработка**, например IntelliJ IDEA.
+Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, **interpreted languages' errors are found during run time**, after the program has already started working.
 
-### Езици за програмиране, компилатори, интерпретатори и среди за разработка
+**The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a **text editor** for writing code, a **programming language**, a **compiler** or **interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
-**Езикът за програмиране** е изкуствен език (синтаксис за изразяване), предназначен за **задаване на команди**, които искаме компютъра да прочете, обработи и изпълни. Чрез езиците за програмиране пишем поредици от команди (**програми**), които **задават какво да прави компютъра**. Изпълнението на компютърните програми може да се реализира с **компилатор** или с **интерпретатор**.
+**Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.
 
-**Компилаторът** превежда кода от програмен език на **машинен код**, като за всяка от конструкциите (командите) в кода избира подходящ, предварително подготвен фрагмент от машинен код, като междувременно **проверява за грешки текста на програмата**. Заедно компилираните фрагменти съставят програмата в машинен код, както я очаква микропроцесорът на компютъра. След като е компилирана програмата, тя може да бъде директно изпълнена от микропроцесора в кооперация с операционната система. При компилируемите езици за програмиране **компилирането на програмата** се извършва задължително преди нейното изпълнение и по време на компилация се откриват синтактичните грешки (грешно зададени команди). С компилатор работят езици като C++, C#, Java, Swift и Go.
+For programming with the **Java language** the most commonly used development environment is **IntelliJ IDEA**, which is developed and distributed by JetBrains and it can be downloaded free from their website: [https://jetbrains.com/idea](https://jetbrains.com/idea).
 
-Някои езици за програмиране не използват компилатор, а се **интерпретират директно** от специализиран софтуер, наречен "интерпретатор". **Интерпретаторът** е "**програма за изпълняване на програми**", написани на някакъв програмен език. Той изпълнява командите на програмата една след друга, като разбира не само от единични команди и поредици от команди, но и от другите езикови конструкции (проверки, повторения, функции и т.н.). Езици като PHP, Python и JavaScript работят с интерпретатор и се изпълняват без да се компилират. Поради липса на предварителна компилация, при интерпретируемите езици **грешките се откриват по време на изпълнение**, след като програмата започне да работи, а не предварително.
+Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/packages](https://eclipse.org/downloads/packages), **NetBeans** [https://netbeans.org/downloads](https://netbeans.org/downloads) and **JDeveloper** [http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html) and many others. In the current book, we are going to use IntelliJ IDEA.
 
-**Средата за програмиране** (Integrated Development Environment - **IDE**, интегрирана среда за разработка) е съвкупност от традиционни инструменти за разработване на софтуерни приложения. В средата за разработка пишем код, компилираме и изпълняваме програмите. Средите за разработка интегрират в себе си **текстов редактор** за писане на кода, **език за програмиране**, **компилатор или интерпретатор** и **среда за изпълнение** на програмите, **дебъгер** за проследяване на програмата и търсене на грешки, **инструменти за дизайн на потребителски интерфейс** и други инструменти и добавки.
+If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it**: [https://repl.it/languages/java](https://repl.it/languages/java).
 
-**Средите за програмиране** са удобни, защото интегрират всичко необходимо за разработката на програмата, без да се напуска средата. Ако не ползваме среда за разработка, ще трябва да пишем кода в текстов редактор, да го компилираме с команда от конзолата, да го изпълняваме с друга команда от конзолата и да пишем още допълнителни команди, когато се налага, и това ще ни губи време. Затова повечето програмисти ползват IDE в ежедневната си работа.
+### Low and high level languages, runtime environments
+A program is, in essence, a **set of instructions** that ask the computer to carry out certain tasks. They are entered by the programmer and **executed unconditionally by the machine**.
 
-За програмиране на **езика Java** често се ползва средата за разработка **IntelliJ IDEA**, която се разработва и разпространява от JetBrains и може да се изтегли безплатно от техния сайт: https://jetbrains.com/idea.
+There are different types of **programming languages**. **Lowest-level** languages can be used to write the very **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like **JavaScript**, **C#** and **Python** are used to create application software, like programs for reading mail or chatting.
 
-Алтернативи на IntelliJ IDEA са **Eclipse** (https://eclipse.org/downloads/packages), **NetBeans** (https://netbeans.org/downloads) и **JDeveloper** (http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html) и много други. В настоящата книга ще използваме средата за разработка IntelliJ IDEA.
+**Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-Ако не разполагате с възможност да си инсталирате среда за разработка, може да използвате и някое онлайн Java IDE като **Repl.it**: https://repl.it/languages/java.
+Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
 
-### Езици от ниско и високо ниво, среди за изпълнение (Runtime Environments)
+**Java is a compiled language**, and this means that we are writing commands, which are being compiled before they are executed. The code, writen in Java, is not compiled to machine code for a certain processor, but to a specific for the language code, **called Java bytecode**. Due to that, the execution of a program, written in Java, requires a virtual machine - **Java Virtual Machine** (JVM). 
 
-Програмата в своята същност е **набор от инструкции**, които карат компютъра да свърши определена задача. Те се въвеждат от програмиста и се **изпълняват безусловно от машината**.
+The Java compiler, the virtual machine and number of libraries stand inside the core of the **Java platform**. The Java platform is developed in a few variations
 
-Съществуват различни видове **езици за програмиране**. С езиците от най-ниско ниво могат да бъдат написани **самите инструкции**, които **управляват процесора**, например с езика "**assembler**". С езици от малко по-високо ниво като **C** и **C++** могат да бъдат създадени операционна система, драйвери за управление на хардуера (например драйвер за видеокарта), уеб браузъри, компилатори, двигатели за графика и игри (game engines) и други системни компоненти и програми. С езици от още по-високо ниво като **C#**, **Python** и **JavaScript** се създават приложни програми, например програма за четене на поща или чат програма.
+- **Java Standard Edition** (Java SE) – the basic version, which is used for development of client applications and the so called Java applets.
+- **Java Enterprise Edition** (Java EE) – based on the Standard Edition, it is mostly used with server applications in the internet, but besides that, it includes a big number of other software technologies.
+- **Java Micro Edition** (Java ME) – a standalone light version for working on devices with limited computing power like mobile phones, smartphones, PDA devices and others.
 
-**Езиците от ниско ниво** управляват директно хардуера и изискват много усилия и огромен брой команди, за да свършат единица работа. **Езиците от по-високо ниво** изискват по-малко код за единица работа, но нямат директен достъп до хардуера. На тях се разработва приложен софтуер, например уеб приложения и мобилни приложения.
+### Computer programs - compilation and execution
+As we have already mentioned, the program is a **sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to accomplish some kind of result.
 
-Болшинството софтуер, който използваме ежедневно, като музикален плеър, видеоплеър, GPS програма и т.н., се пише на **езици за приложно програмиране**, които са от високо ниво, като Java, C#, Python, C++, JavaScript, PHP и др.
+The program is written in text format, and the text of the program itself is called a **source code**. It gets compiled to an executable file (for example `Program.cs` gets compiled to `Program.exe`) or it it is executed directly from the .NET environment.
 
-**Java е компилируем език**, а това означава, че пишем команди, които се компилират преди да се изпълнят. Кодът, написан на Java, не се компилира до машинен код за определен процесор, а до специфичен за езика код, наречен **байт код (Java bytecode)**. Поради това за изпълнението на програма, написана на Java, е необходима виртуална машина - **Java Virtual Machine** (JVM). 
+The process of compilation of the code before  its execution is used only in compiled languages like C#, Java and C++. With scripts and interpreted languages, like JavaScript, Python and PHP, the source code gets executed step by step by an interpreter.
 
-Java компилаторът, виртуалната машина и набор от библиотеки стоят в същността на **Java платформата** (Java Platform). Java платформата се разработва в няколко разновидности:
+### Computer programs – examples
+Let's start with a very simple example of a short Java program, which consists of a single command.
 
-  - **Java Standard Edition** (Java SE) – базовата версия, която се използва за разработка на клиентски приложения и т.нар. Java аплети.
-  - **Java Enterprise Edition** (Java EE) – базирана е върху Standard Edition, използва се най-често при сървърните приложения в интернет, но освен това включва и голям брой други софтуерни технологии.
-  - **Java Micro Edition** (Java ME) – самостоятелна олекотена версия за работа на устройства с ограничена изчислителна мощност като мобилни телефони, смартфони, PDA устройства и други.
-
-### Компютърни програми - компилация и изпълнение
-
-Както вече споменахме, програмата е **последователност от команди**, иначе казано тя описва поредица от пресмятания, проверки, повторения и всякакви подобни операции, които целят постигане на някакъв резултат.
-
-Програмата се пише в текстов формат, а самият текст на програмата се нарича **сорс код** (source code). Процесът на **компилация** на кода преди изпълнение се използва само при компилируеми езици като Java, C# и C++. При **скриптови и интерпретеруеми езици**, като JavaScript, Python и PHP, сорс кодът се изпълнява постъпково от интерпретатор.
-
-### Компютърни програми – примери
-
-Да започнем с много прост пример за кратка Java програма, която се състои от единична команда.
-
-#### Пример: команда, която печата даден текст
-
-Нашата първа програма ще е **единична Java команда**, която печата думата “*Hello*”:
-
+#### Example – a command which prints a given text
+Our first program will consist of a **single Java command** which prints the word *"Hello"*
 ```java
 System.out.println("Hello");
 ```
 
-След малко ще разберем **как можем да изпълним тази команда**, но засега нека само разгледаме какво представляват командите в програмирането. Да се запознаем с още няколко примера.
+In a moment we'll get to know **how to execute this command** but for now, we'll just stick to what commands in programming consist of. Let's have a look at a few more examples.
 
-#### Пример: команда, която проверява дали една дума се съдържа в друга
-
-Можем да проверим дали в думата "gosho" се съдържа думата "go", използвайки метода **contains**:
-
+#### Example: A program which checks whether a word contains another word
+We can check whether the word "alright" contains the word "right" using the **contains** method:
 ```java
-System.out.println("gosho".contains("go"));
+System.out.println("alright".contains("right"));
 ```
 
-#### Пример: програма, която конвертира от левове в евро
-
-Да разгледаме още една проста програма, която прочита от потребителя някаква сума в лева (цяло число), конвертира я в евро (като я разделя на курса на еврото) и отпечатва получения резултат. Това е програма от 3 поредни команди:
-
+#### Example: A program which converts Bulgarian levs into euro
+Let's have a look at another simple program which reads a number of levs (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
 ```java
 Scanner console = new Scanner(System.in);
 double leva = Double.parseDouble(console.nextLine());
 double euro = leva / 1.95583;
 System.out.println(euro);
 ```
+We looked at **three examples of computer programs**: two single-command, and one consisting of a sequence of three commands. Let's now move on to the more exciting bit: writing, compiling and executing our own programs in **Java**.
 
-Разгледахме **три примера за компютърни програми**: две единични команди и една поредица от три команди. Нека сега преминем към по-интересното: как можем да пишем собствени програми на **Java** и как можем да ги компилираме и изпълняваме?
+## How do we write a console program?
+Let's go through the necessary **steps to create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Java programs from this book and the exercises that go along with it.
 
-## Как да напишем конзолна програма?
+## Java development kit (JDK)
+In order to create programs using the Java programming language, we need to install the **Java Development Kit**. It includes a **virtual machine**, a **Java compiler** and numerous **helper tools**. JDK should not be confused for a runtime environment – **Java Runtime Environment** (JRE). Installing JRE will allow us to open and work with Java programs, but won't give us the ability to develop our own.
 
-Нека преминем през **стъпките за създаване и изпълнение на компютърна програма**, която чете и пише своите данни от и на текстова конзола (прозорец за въвеждане и извеждане на текст). Такива програми се наричат "**конзолни**". Преди това, трябва първо да си **инсталираме и подготвим средата за разработка**, в която ще пишем и изпълняваме Java програмите от тази книга и упражненията към нея.
-
-## Java пакет за разработка (JDK)
-
-За да можем да създаваме програми с езика Java, е необходимо да инсталираме Java пакет за разработка - **Java Development Kit** (JDK). Java пакетът за разработка включва в себе си **виртуална машина**, **Java компилатор** и множество **помощни инструменти**. JDK не трябва да се бърка със средата за изпълнение - **Java Runtime Environment** (JRE). Инсталирането на JRE ни позволява да отваряме и да работим с Java програми, но не ни дава възможността да разработваме свои собствени.  
-
-## Инсталация на Java пакет за разработка (JDK)
-
-Java пакетът за разработка (JDK) се разпространява безплатно и може да бъде изтеглен от тук: https://oracle.com/technetwork/java/javase/downloads. Изберете последна версия **Java SE** (Java Standard Edition).
+## Installing JDK
+JDK is distributed freely and can be downloaded from this link: https://oracle.com/technetwork/java/javase/downloads.  Choose the latest version of **Java SE** (Java Standard Edition).
 
 ![](assets/chapter-1-images/00.Jdk-1.png)
 
-Отбелязваме полето, с което се съгласяваме с условията на лицензите (Accept License Agreement) и избираме инсталационния файл според операционната ни система. Например Windows 64-bit: 
+We need to accept the license agreement and choose the installation file which corresponds to our operating system. Windows 64-bit, for instance.
 
 ![](assets/chapter-1-images/00.Jdk-2.png)
 
-Изтегляме инсталационния файл и го стартираме. Следва инсталаторът, който в **Windows** среда изглежда ето така:
+Then we can download the installation file and run it. The installer which opens should look like this on a **Windows** environment:
 
 ![](assets/chapter-1-images/00.Jdk-3.png)
 
-Натискаме бутона [**Next**] няколко пъти, докато не започне инсталацията на Java пакета за разработка:
+Press the **[Next]** button a few times until the Java development Kit starts installing:
 
 ![](assets/chapter-1-images/00.Jdk-4.png)
 
-Изчакваме, докато инсталацията приключи и затваряме инсталатора с бутона [**Close**].
+When it's finished, close the installer with the **[Close]** button.
+Installation on a Linux environment may be completely different, but most often you need to install a standard package from the central repository `sudo apt install default-jdk`.
 
-Инсталацията на JDK в **Linux** среда може да е съвсем различна, като най-често се инсталира стандартен пакет от централно хранилище: `sudo apt install default-jdk`.
+## Development environment (IDE)
+As was already noted, we need a development environment (IDE – Integrated Development Environment) in order to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+-	Suitable for Java programming are the IntelliJ IDEA, Eclipse and NetBeans environments.
 
-## Среда за разработка (IDE)
-
-Както вече стана дума, за да програмираме ни е нужна **среда за разработка** - **Integrated Development Environment** (IDE). Това е всъщност редактор за програми, в който пишем програмния код и можем да го компилираме и изпълняваме, да виждаме грешките, да ги поправяме и да стартираме програмата отново.
- - За програмиране на Java, подходящи са средите **IntelliJ IDEA**, **Eclipse** или **NetBeans**.
- - Ако програмираме на C#, можем да ползваме средата **Visual Studio** за операционната система Windows и **Raider** за Linux или macOS X.
- - Ако ще пишем на Python, можем да използваме средата **PyCharm**.
-
-## Инсталация на IntelliJ IDEA
-
-Започваме с инсталацията на интегрираната среда **IntelliJ IDEA Community** (версия 2017, актуална към юли 2017 г.).
-
-**Community** версията на IntelliJ IDEA се разпространява **безплатно** от JetBrains и може да бъде изтеглена от тук: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download). 
-
-В следващите редове подробно са описани **стъпките за инсталация на IntelliJ IDEA** (версия Community 2017). След като свалим инсталационния файл и го стартираме, се появява следният екран:
+## Installing IntelliJ IDEA
+Let's start by installing the **integrated environment** **IntelliJ IDEA Community** (version 2019, current as at May 2019).
+**The community version** of IntelliJ IDEA is **freely distributed** by JetBrains and can be downloaded from this link: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
+The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2019). After we download and run the installation file, we're greeted by the following screen:
 
 ![](assets/chapter-1-images/00.Intellij-idea-1.png)
 
-Натискаме бутона [**Next**], след което ще видим прозореца долу:
+We click the **[Next]** button and we'll see the following window displayed:
 
 ![](assets/chapter-1-images/00.Intellij-idea-2.png)
 
-Отново избираме [**Next**] и се зарежда прозорец с инсталационния панел на IntelliJ IDEA.
+We click the **[Next]** button one more time and IntelliJ IDEA's installation panel gets loaded on the screen.
 
 ![](assets/chapter-1-images/00.Intellij-idea-3.png)
 
-Избираме 32-bit launcher или 64-bit launcher в зависимост от това колко битова е операционната система, която използваме. Слагаме отметка на [**.java**], [**.groovy**] и [**.kt**], след което натискаме бутона [**Next**]. 
+Depending on our operating system, we choose the 32 or the 64-bit launcher.  Then we tick the **[.java]**, **[.groovy]** and **[.kt]** boxes and click **[Next]**.
 
-Запазваме името на папката в старт менюто и натискаме бутона [**Install**]. Започва инсталацията на IntelliJ IDEA и трябва да се появи екран като този по-долу:
+We save the folder's name in the start menu and click **[Install]**. The following screen should appear once IntelliJ IDEA has started installing:
 
 ![](assets/chapter-1-images/00.Intellij-idea-4.png)
 
-След като IntelliJ IDEA се инсталира, ще се появи информативен екран, в който избираме отметката [**Run IntelliJ IDEA**] и натискаме бутона [**Finish**], за да приключим инсталацията и да стартираме средата за разработка:
+When the process is finished, tick the **[Run IntelliJ IDEA]** box and hit **[Finish]** which will wrap up the installation and run the development environment.
 
 ![](assets/chapter-1-images/00.Intellij-idea-5.png)
 
-От началния прозорец на IntelliJ IDEA, избираме [**Create New Project**]:
+We choose **[Create New Project]** from IntelliJ IDEA's welcome screen:
 
 ![](assets/chapter-1-images/00.Intellij-idea-6.png)
 
-Визуализира се прозорец, в който се вижда, че липсва избран пакет за разработка на софтуер - Software Development Kit (SDK): 
+A window which shows we haven't chosen a software development kit (SDK) gets displayed:
 
 ![](assets/chapter-1-images/00.Intellij-idea-7.png)
 
-Натискаме [**New**] и намираме пътя към вече инсталирания Java пакет за разработка (JDK), като внимаваме да не изберем JRE:
+We click **[New]** and find the route to the **Java Development Kit** (JDK) we already installed, being careful not to choose **JRE**.
 
 ![](assets/chapter-1-images/00.Intellij-idea-8.png)
 
-Селектираме **папката с JDK инсталацията** (не JRE) и натискаме бутона [**OK**]. Това е всичко. Готови сме за работа с **IntelliJ IDEA**.
+Then we simply select the JDK installation folder and click **[OK]**. That's it. We're ready to start working with **IntelliJ IDEA**.
 
-### По-стари версии на IntelliJ IDEA
+### Older versions of IntelliJ IDEA
+Using older versions of IntelliJ IDEA is possible, but definitely **not advisable**, as they might not contain some of the newest development options which may result in some of the examples from this book not compiling.
 
-Можем да използваме и по-стари версии на IntelliJ IDEA, но **не е препоръчително**, тъй като в тях може да не се съдържат някои от по-новите възможности за разработка и не всички примери от книгата ще се изпълнят.
+### Online development environments
+There are also **online development environments** which allow you to write code directly in your browser. They are not the most convenient but if you have no other options, you can use them at the start your education and install IntelliJ IDEA later. You can find useful links here:
+- For Java we can use the following online Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
+- For C# we can use **.NET Fiddle**: [https://dotnetfiddle.net](https://dotnetfiddle.net).
+- For JavaScript we can write JS code directly in our browser by pressing **[F12]**.
 
-### Онлайн среди за разработка
+### Project solutions and Projects in IntelliJ IDEA
+The IntelliJ IDEA project uses **logic to group the numerous files** that make up a certain application or component. A single **IntelliJ IDEA project** consists of several **Java source files**, configuration files and other resources. Each Java source file can have several **definitions and types** (classes or other definitions). **Classes** contain methods (actions), which are comprised of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.
 
-Съществуват и **алтернативни среди за разработка онлайн**, директно във вашия уеб браузър. Тези среди не са много удобни, но ако нямате друга възможност, може да стартирате обучението си с тях и да си инсталирате IntelliJ IDEA по-късно. Ето някои линкове:
-* За Java можем да използваме следното онлайн Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
-* За езика C# сайтът **.NET Fiddle** позволява писане на код и изпълнението му онлайн: [https://dotnetfiddle.net](https://dotnetfiddle.net).
-* За JavaScript можем да пишем JS код директно в конзолата на даден браузър с натискане на **[F12]**.
-
-### Проектни решения и проекти в IntelliJ IDEA
-
-Проектът в IntelliJ IDEA **логически групира множество файлове**, изграждащи дадено приложение или компонент. Един **IntelliJ IDEA проект** съдържа един или повече **Java сорс файла**, конфигурационни файлове и други ресурси. Във всеки Java сорс файл има една или повече **дефиниции на типове** (класове или други дефиниции). В **класовете** има **методи** (действия), а те се състоят от **поредици от команди**. Изглежда сложно, но при големи проекти такава структура е много удобна и позволява добра организация на работните файлове.
-
-### Пример: създаване на конзолна програма "Hello Java"
-
-Да се върнем на нашата конзолна програма. Вече имаме IntelliJ IDEA и можем да го стартираме. След това създаваме нов конзолен проект от [**Create New Project**]. Избирaме от диалоговия прозорец [Java] → [Comand Line App] и даваме подходящо име на проекта, например `HelloJava`:
+### Example: creating a 'Hello Java' console program
+Let's get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we'll create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
 
 ![](assets/chapter-1-images/01.Hello-java-01.png)
 
 ![](assets/chapter-1-images/01.Hello-java-02.png)
 
-IntelliJ IDEA ще създаде за нас **празна Java програма**, която трябва да допишем.
+IntelliJ IDEA will create an empty Java program for us and we'll just need to write the code for it.
 
-#### Писане на програмен код
-
-Сорс кодът на Java програмите се пише в секцията **`main(String[] args)`**, между отварящата и затварящата скоба **`{ }`**. Това е главният метод (действие), което се изпълнява при стартиране на една Java програма. Натискаме [**Enter**] след **отварящата скоба** **`{`** и **започваме да пишем**. Кодът на програмата се пише **отместен навътре**, като това е част от оформянето на текста, за по-голямо удобство при повторен преглед и/или дебъгване.
+#### Writing program code
+Java programs' source code is written between the curly brace of the **`main(String[] args)`** section. This is the main method (action) executed when starting a Java program. Press [Enter] after the opening bracket and we can start writing. In regards to text formatting, program code is written with an indentation which help when reviewing and debugging it. 
 
 ![](assets/chapter-1-images/01.Hello-java-03.png)
 
-Пишем следната команда:
-
+We can write the following command:
 ```java
 System.out.println("Hello Java");
 ```
 
-Ето как трябва да изглежда нашата програма в IntelliJ IDEA:
+And here's what our program in IntelliJ IDEA should look like:
 
 ![](assets/chapter-1-images/01.Hello-java-04.png)
 
-Командата **`System.out.println("Hello Java")`** на езика Java означава да изпълним отпечатване върху конзолата (**`out.println(…)`**) и да отпечатаме текстово съобщение **`Hello Java`**. Kавичките служат за пояснение, че това е текст. В края на всяка команда на езика Java се слага символът **`;`** , който указва, че командата свършва на това място (т.е. не продължава на следващия ред).
+The **`System.out.printIn("Hello java")`** command in the Java language allows us to print the text message **`"Hello Java"`** on the console ('out.printIn(…)'). The message needs to be enclosed in quotes which signify text. At the end of every Java command we place a semicolon **`;`** which indicates the end of a command (meaning it doesn't continue on the next row).
 
-Тази команда e типична за програмирането: указваме да се намери даден **обект** (в случая **`PrintStream`** обект с име **`out`**, който се намира в обекта **`System`**) и върху него да се изпълни някакво **действие** (в случая печатане на нещо, което се задава в скоби). По-техническо обяснено, извикваме метода **`println(…)`** от класа **`PrintStream`**, който е част от класа **`System`** и му подаваме като параметър текстов литерал **`"Hello Java"`**.
+This command is quite typical for programming: we signify we need a certain **object** (a **`PrintStream`** object named **`out`** located in the object **`System`**, in this case) to be found and a certain **`action`** (printing something, passed within brackets, in this case) to be performed on it. In more technical terms, we call the method **`printIn(…)`** from the class **`PrintStream`**, part of the **`System`** class, and pass as a parameter to it the text literal **`Hello Java`**.
 
-#### Класове и файлове в Java
+#### Classes and files in Java
+**Java** is an **object-oriented language** hence why every Java program consists of at least one **class**. If the Java class is public, its name needs to match the name of the file + **`.java`**. In the above example, the **`Main`** class, defined with **`public class Main {…}`**, is located in a file named **`Main.java`** in the project's **`src`** folder. Were it called **`HelloJava`**, its source code would need to be located in a file named **`HelloJava.java`**. Otherwise, we'd get a compile time error. 
 
-Езикът **Java** е **обектно-ориентиран** език за програмиране и затова всички Java програми се състоят от един или няколко **класа** (classes). За публичните класове в Java името на класа трябва да съвпада с името на файла + `.java`. В горния пример класът `Main`, дефиниран с `public class Main { … }` стои във файл с име `Main.java` в `src` папката на проекта. Ако класът се казва `HelloJava`, сорс кодът му трябва да е записан във файл с име `HelloJava.java`. Иначе получаваме грешка по време на компилация.
-
-#### Стартиране на програмата
-
-За стартиране на програмата натискаме [**Ctrl+Shift+F10**]. Ако няма грешки, програмата ще се изпълни. Резултатът ще се изпише на конзолата (прозорецът, който се намира най-отдолу в IntelliJ IDEA):
+#### Starting the program
+We start the program by pressing **[Ctrl + Shift + F10]**. If there are no errors, the program will execute. The result will be displayed on the console (the window at the very bottom of IntelliJ IDEA).
 
 ![](assets/chapter-1-images/01.Hello-java-05.png)
 
-Всъщност, изходът от програмата е следното текстово съобщение:
-
+The result of the program is actually the following message:
 ```java
 Hello Java
 ```
+The additional **`Process finished with exit code 0`** message is written last in the console and signifies that the program has ended with no errors.
 
-Съобщението "**`Process finished with exit code 0`**" се изписва допълнително на най-долния ред на конзолата от IntelliJ IDEA и ни показва, че програмата е завършила успешно без грешки.
-
-#### Тестване на програмата в Judge системата
-
-Тестването на задачите от тази книга е автоматизирано и се осъществява през Интернет, от сайта на **Judge системата**: [https://judge.softuni.bg](https://judge.softuni.bg). Оценяването на задачите се извършва на момента от системата. Всяка задача минава поредица от тестове, като всеки успешно преминат тест дава предвидените за него точки. Тестовете, които се подават на задачите, са скрити.
-
-Горната програма може да тестваме тук: [https://judge.softuni.bg/Contests/Practice/Index/646#0](https://judge.softuni.bg/Contests/Practice/Index/646#0). Поставяме целия сорс код на програмата в черното поле, като внимаваме дали сме избирали **Java code** от падащото меню:
+#### Testing the program in the Judge system
+Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real time by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
+The program we just wrote can be tested here:
+[https://judge.softuni.bg/Contests/Practice/Index/646#0](https://judge.softuni.bg/Contests/Practice/Index/646#0).
+We need to paste the program's entire source code in the black field and make sure we've selected **Java code** from the dropdown menu.
 
 ![](/assets/chapter-1-images/01.Hello-java-06.png)
 
-Изпращаме решението за оценяване с бутона [**Изпрати**]. Системата връща резултат след няколко секунди в таблицата с изпратени решения. При необходимост може да натиснем бутона за обновяване на резултатите **[refresh]** в горната дясна част на таблицата с изпратени за проверка решения:
+Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
 
-![](assets/chapter-1-images/01.Hello-java-07.png)
+![](/assets/chapter-1-images/01.Hello-java-07.png)
 
-В таблицата с изпратените решения judge системата ще покаже един от следните **възможни резултати**:
-* **Брой точки** (между 0 и 100), когато предаденият код се компилира успешно (няма синтактични грешки) и може да бъде тестван.
-  - При **вярно решение** всички тестове са маркирани в зелено и получаваме **100 точки**.
-  - При **грешно решение** някои от тестовете са маркирани в червено и получаваме непълен брой точки или 0 точки.
-* При грешна програма ще получим **съобщение за грешка** по време на компилация.
+The Judge System will display one of the following possible results in the table:
+* **Number of points** (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
+    - If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
+    - If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
+* If there are syntactic errors in our program, we receive a **compile time error message**.
 
-#### Как да се регистрирам в SoftUni Judge?
+### How do I register at SoftUni Judge?
+Just use your id (Username + Password) for the [softuni.bg](softuni.bg) website. If you haven't yet registered, go right ahead – it's just a standard website registration and takes no more than a minute.
 
-Използваме идентификацията си (username + password) за сайта softuni.bg. Ако нямате СофтУни регистрация, направете си. Отнема само минутка - стандартна регистрация в Интернет сайт.
-
-## Типични грешки в Java програмите
-
-Една от често срещаните грешки при начинаещите е **писането извън тялото на ``main(String[] args)`` метода**, защото интегрираната среда или компилаторът не биха могли правилно да разчетат зададените команди в програмата. Ето пример за грешно написана програма:
-
+## Typical mistakes in Java programs
+One mistake we often see with beginners is that they write their **code outside the body of the `main(String[] args)` method**. This causes an error because the integrated environment or the compiler cannot read the commands issued in the program correctly. Here's an example of an incorrect program:
 ```java
 static void main(String[] args)
 {
@@ -276,8 +240,7 @@ static void main(String[] args)
 System.out.println("Hello SoftUni");
 ```
 
-Друга грешка е бъркането на **главни и малки букви**, а те имат значение при извикване на командите и тяхното правилно функциониране. Ето пример за такава грешка:
-
+Another usual mistakes is mixing up **capital and lowercase letters**. They matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
 ```java
 static void main(String[] args)
 {
@@ -285,10 +248,9 @@ static void main(String[] args)
 }
 ```
 
-В горния пример **`Println`** е изписано грешно и трябва да се поправи на **`println`**.
+In the example above **`PrintIn`** is written incorrectly and the capital **`P`** needs to be changed to lowercase.
 
-Липсата на **точка и запетая** (**`;`**) в края на командите е един от вечните проблеми на начинаещия програмист. Пропускането на този знак води до **неправилно функциониране на програмата** и **често проблемът остава незабелязан**. Ето примерен грешен код:
-
+The missing **semicolon** `(;)`** at the end of commands is one of the timeless issues for beginner programmers. Skipping this symbol leads to the **program functioning improperly** and it's very often left **unnoticed**. Here's an example of incorrect code:
 ```java
 static void main(String[] args)
 {
@@ -296,8 +258,7 @@ static void main(String[] args)
 }
 ```
 
-Липсваща **кавичка** или **липса на отваряща или затваряща скоба** също може да се окажат проблеми. Kакто и при точката и запетаята, така и тук проблемът води до **неправилно функциониране на програмата** или въобще до нейното неизпълнение. Този пропуск трудно се забелязва при по-обемен код. Ето пример за грешна програма, в която има незатворена кавичка:
-
+A missing **quotation mark** or **closing bracket** can also cause issues. As with the *semicolon*, this will lead to the program either **functioning improperly** or not executing at all. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example of an incorrect program with a lonely opening quotation mark:
 ```java
 static void main(String[] args)
 {
@@ -305,10 +266,8 @@ static void main(String[] args)
 }
 ```
 
-Тази програма ще даде **грешка при опит за компилация** и стартиране и даже още преди това кодът ще бъде подчертан, за да се насочи вниманието на програмиста към грешката, която е допуснал (пропуснатата затваряща кавичка).
-
-Друга честа грешка при начинаещите е да се опиват да пиша `main(…)` метода извън класа:
-
+This program will return a **compile time error** and even before that, the code will be underlined to draw the programmer's attention towards the error (missing closing quotation mark).
+Another beginner's frequent mistake is trying to write the **`main(…)`** method outside the class:
 ```java
 public class Example {
 }
@@ -319,71 +278,59 @@ static void main(String[] args)
 }
 ```
 
-Правилното е да сложим `main(…)` метода вътре в класа `Example`, а целият код на програмата да запишем във файла `Example.java`:
-
+The correct way to do this is by placing the **`main(…)`** method within the **`Example`** class and saving the entire code in the **`Example.java`** file:
 ```java
-// Put this code in the file: Example.java
+ Put this code in the file Example.java
 
 public class Example {
     static void main(String[] args) {
-        System.out.println("Correct class");
+        System.out.println(Correct class);
     }
 }
 
 ```
 
+## What did we learn in this chapter?
+First of all, we learned **what programming is** – **issuing commands written in a computer language** which the machine can understand and carry out. We also found out **what a computer program is** – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Java programming language** and learned **how to create simple console programs using IntelliJ IDEA**. We followed Java's program code structure, one example of which is that issuing of commands mainly happens in the **`static void main(String[] args)`** section, within the curly braces. We looked at printing with the function **`System.out.printIn(…)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
-## Какво научихме от тази глава?
+Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
-На първо място научихме **какво е програмирането** - **задаване на команди, изписани на компютърен език**, които машината разбира и може да изпълни. Разбрахме още какво е **компютърната програма** - тя представлява **поредица от команди**, подредени една след друга. Запознахме се с **езика за програмиране Java** на базисно ниво и как **да създаваме прости конзолни програми** с IntelliJ IDEA. Проследихме и **структурата на програмния код в езика Java**, като например, че командите главно се задават в секцията **``static void main(String[] args)``** между **отварящата и затварящата къдрава скоба**. Видяхме как да печатаме с **`System.out.println(…)`** и как да стартираме програмата си с [**Ctrl+Shift+F10**]. Научихме се да тестваме кода си в **SoftUni Judge**.
+## First Steps in Programming – Exercises
+Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
 
-Добра работа! Да се захващаме с **упражненията**. Нали не сте забравили, че програмиране се учи с много писане на код и решаване на задачи? Да решим няколко задачи, за да затвърдим наученото.
-
-
-## Упражнения: първи стъпки в коденето
-
-Добре дошли в упражненията. Сега ще напишем няколко конзолни програми, с които ще направим още няколко първи стъпки в програмирането, след което ще покажем как можем да програмираме нещо по-сложно - програми с графичен и уеб потребителски интерфейс.
-
-### Задача: конзолна програма “Expression”
-
-Да се напише конзолна Java програма, която **пресмята** и **отпечатва** стойността на следния числен израз:
-
+### Problem: console-based program 'Expression'
+Write a console-based Java program that **calculates** and **prints** the value of the following numerical expression:
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
 
-Забележка: **не е разрешено да се пресметне стойността предварително** (например с Windows Calculator).
+Note: **you are not allowed to previously calculate the value** (for example with Windows Calculator).
 
-#### Насоки и подсказки
-
-Правим **нов Java конзолен проект** с име "**`Expression`**".	Намираме метода **``static void main(String[] args)``** и **влизаме в неговото тяло** между **`{`** и **`}`**. След това трябва да **напишем кода**, който да изчисли горния числен израз и да отпечата на конзолата стойността му. Подаваме горния числен израз в скобите на командата **``System.out.println(…)``**:
+### Hints and Guidelines
+Create a **new Java file** and name it **`Expression`**. Then we find the method **`static void main(String[] args)`** and start writing in its body (the space **between the opening and closing curly braces**). We need to **write the code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`System.out.printIn(…)`** command by writing it within its brackets:
 
 ![](assets/chapter-1-images/02.Expression-01.png)
 
-Стартираме програмата с [**Ctrl+Shift+F10**] и проверяваме дали резултатът е същия като на картинката:
+Start the program with **[Ctrl + Shift + F10]** and check whether the result matches the one from the picture:
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/646#1](https://judge.softuni.bg/Contests/Practice/Index/646#1).
+### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#1](https://judge.softuni.bg/Contests/Practice/Index/646#1).
 
 ![](assets/chapter-1-images/02.Expression-03.png)
 
+### Problem: Numbers from 1 to 20
+Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
-### Задача: числата от 1 до 20
-
-Да се напише Java конзолна програма, която **отпечатва числата от 1 до 20** на отделни редове на конзолата.
-
-#### Насоки и подсказки
-
-Създаваме нов Java клас с име "**`Nums1To20`**" (десен бутон върху "**[src]**" папката → [New] → [Java Class]):
+### Hints and Guidelines
+Create a new Java class and name it **`Nums1to20`** (right click on the **`src`** folder -> [New] -> [Java Class])
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-В **`static void main(String[] args)`** метода пишем 20 команди **``System.out.println(…)``**, всяка на отделен ред, за да отпечатаме числата от 1 до 20 едно след друго. По-досетливите от вас сигурно се питат дали няма по-умен начин. Спокойно, има, но за него по-късно.
+Inside the **`static void main(String[] args`** method write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
-![](assets/chapter-1-images/03.Numbers-1-to-20-02.png)
+![](assetschapter-1-images03.Numbers-1-to-20-02.png)
 
-Сега **стартираме програмата** и проверяваме дали резултатът е какъвто се очаква да бъде:
+Let's now **start the program** and check whether the result is what we're expecting:
 ```
 1
 2
@@ -391,17 +338,13 @@ public class Example {
 20
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/646#2](https://judge.softuni.bg/Contests/Practice/Index/646#2).
+Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/646#2](https://judge.softuni.bg/Contests/Practice/Index/646#2).
-
-Сега помислете дали може да напишем програмата по **по-умен начин**, така че да не повтаряме 20 пъти една и съща команда. Потърсете в Интернет информация за "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**".
-
-
-### Задача: триъгълник от 55 звездички
-
-Да се напише Java конзолна програма, която **отпечатва триъгълник от 55 звездички**, разположени на 10 реда:
-
+### Problem: Triangle of 55 stars
+Write a Java console program that **prints a triangle of 55 stars** on 10 lines:
 ```
 *
 **
@@ -415,85 +358,69 @@ public class Example {
 **********
 ```
 
-#### Насоки и подсказки
-
-Създаваме **ново конзолно Java приложение** с име “**TriangleOf55Stars**”. В него трябва да напишем код, който печата триъгълника от звездички, например чрез 10 команди, като посочените по-долу:
-
+### Hints and Guidelines
+Create a **new Java console application** and name it **TriangleOf55Stars**. Inside we need to write code that prints the triangle if stars, using commands like the ones below:
 ```java
-System.out.println("*");
-System.out.println("**");
+System.out.println();
+System.out.println();
 …
 ```
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/646#3](https://judge.softuni.bg/Contests/Practice/Index/646#3).
 
-#### Тестване в Judge системата
+Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/646#3](https://judge.softuni.bg/Contests/Practice/Index/646#3).
+### Problem: Rectangle Area
+Write a Java program which receives two numbers **a** and **b**, then calculates and prints the area of a rectangle with sides **a** and **b**.
 
-Опитайте да **подобрите решението**, така че да няма много повтарящи се команди. Може ли това да стане с **`for`** цикъл? Успяхте ли да намерите умно решение (например с цикъл) на предната задача? При тази задача може да се ползва нещо подобно, но малко по-сложно (два цикъла един в друг). Ако не успеете, няма проблем, ще учим цикли след няколко глави и ще си спомните за тази задача тогава.
-
-
-### Задача: лице на правоъгълник
-
-Да се напише Java програма, която **прочита** от конзолата **две числа a и b**, **пресмята** и **отпечатва** лицето на правоъгълник със страни **a** и **b**. 
-
-#### Примерен вход и изход
-
-| a | b | area |
-| :---: | :---: | :---: |
-| 2 | 7 |  14  |
-| 7 | 8 |  56  |
-| 12 | 5 |  60  |
-
-#### Насоки и подсказки
-
-Създаваме нова **конзолна Java програма**. За да **прочетем двете числа**, използваме следния код:
-
+### Sample input and output
+| a | b | area | 
+| --- | --- | --- | 
+| 2 | 7 | 14 |  
+| 7 | 8 | 56 |
+| 12 | 5 | 60 | 
+ 
+### Hints and Guidelines
+Create a **new Java console application**. We'll use the following code to read our numbers:
 ```java
 import java.util.Scanner;
 
 public class RectangleArea {
     public static void main(String[] args) {
-       Scanner console = new Scanner(System.in);
-       int a = Integer.parseInt(console.nextLine());
-       int b = Integer.parseInt(console.nextLine());
+        Scanner console = new Scanner(System.in);
+        int a = Integer.parseInt(console.nextLine());
+        int b = Integer.parseInt(console.nextLine());
 
-       // TODO: calculate the area and print it
+        // TODO: calculate the area and print it
     }
 }
 ```
+In order to read input data from the console, we import and use the `java.util.Scanner` class, which we'll look at in detail a little later. For now, just accept that reading number is achieved like in the example above.
 
-За да прочетен входни данни от конзолата импортираме и използваме класа `java.util.Scanner`, който ще разгледаме подробно по-късно. Засега просто приемете, че четенето на число се прави като в примера по-горе.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming we multiply using the **`*`** operator.
 
-Остава да се допише програмата по-горе, за да пресмята лицето на правоъгълника и да го отпечата. Използвайте познатата ни вече команда **`System.out.println(…)`** и ѝ подайте в скобите произведението на числата **`a`** и **`b`**. В програмирането умножението се извършва с оператора **`*`**.
-
-#### Тествайте решението си
-
-Тествайте решението си с няколко примера. Трябва да получите рeзултат, подобен на този (въвеждаме 2 и 7 като вход и програмата отпечатва като резултат 14 - тяхното произведение):
+### Test your solution
+Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 – their product, as output):
 ```
 2
 7
 14
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/646#4](https://judge.softuni.bg/Contests/Practice/Index/646#4).
-
-
-### \* Задача: квадрат от звездички
-
-Да се напише Java конзолна програма, която **прочита** от конзолата **цяло положително число `n`** и **отпечатва** на конзолата **квадрат от `n` звездички**, като в примерите по-долу.
-
-#### Примерен вход и изход
-
-| Вход  |    Изход   	| Вход  |    Изход   	| Вход  |    Изход   	| 
+### \* Problem: Square of Stars
+Write a **Java console program** which **reads** a whole positive number N from the console and **prints a square of N stars on the console**, like in the examples below.
+### Sample input and output
+| Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
-
-Правим нова **конзолна Java програма**. За да прочетем числото `n` (2 ≤ n ≤100), използваме следния код:
-
+### Hints and Guidelines
+Create a new **Java console program**. In order to read the number N (2 ≤ N ≤100), we use the following code:
 ```java
 Scanner console = new Scanner(System.in);
 int n = Integer.parseInt(console.nextLine());
@@ -501,298 +428,286 @@ int n = Integer.parseInt(console.nextLine());
 // TODO: print the rectangle
 ```
 
-Не забравяйте да импортиране класа `java.util.Scanner` и да сложите кода си в `main(…)` метода на основния клас от вашата програма. Да се допише програмата по-горе, за да отпечатва квадрат, съставен от звездички. Може да се наложи да се използват `for` цикли. Потърсете информация в Интернет.
+Don't forget to import the `java.util.Scanner` class and put your code in the `main(…)` method of your program's main class .Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Look up information on the Internet.
 
-**Внимание**: тази задача е по-трудна от останалите и нарочно е дадена сега и е обозначена със звездичка, за да ви провокира да потърсите информация в Интернет. Това е едно от най-важните умения, което трябва да развивате докато изучавате програмирането: **да търсите информация в Интернет**. Това ще правите всеки ден, ако работите като програмисти, така че не се плашете, а се опитайте. Ако имате трудности, можете да потърсите помощ и в СофтУни форума: https://softuni.bg/forum.
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. 
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#5](https://judge.softuni.bg/Contests/Practice/Index/646#5).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/646#5](https://judge.softuni.bg/Contests/Practice/Index/646#5).
+## Console, graphical and web applications
+With **console applications**, as you can figure out yourselves, **all operations** for reading input and printing output are done through the **console**. There the **input data is inserted**, which is read from the application, also in it, is **printed the output data** after or during the runtime of the program.
 
+While the console application uses the **text console**, web applications use **web-based user interface**. To receive their performance are needed two things - a **web server** and a **web browser**, as the browser plays the main role in the **visualization of the data and the interaction with the user**. Web applications are much more pleasant for the user, they visually look better, and a mouse and touch screen can be used (for tablets and smartphones), but behind all of that stands programming. And this is why we **have to learn to program** and we have already made our first very little steps towards.
 
-## Конзолни, графични и уеб приложения
+**Graphical (GUI) applications** have a **visual user interface**, directly into your computer or mobile device, without a web browser. Graphical applications (or otherwise said, desktop applications) **contain one or more graphical windows**, in which are situated certain **controllers** (text fields, buttons, pictures, tables and others), **serving for dialog with the user** in a more intuitive way. Similar to them are the mobile applications in your telephone or your tablet we use forms, text fileds, buttons and other controls and we control them by programming code. This is why we are learning how to write code now **the code is everywhere in the software development**.
 
-При **конзолните приложения** (Console Applications), както и сами можете да се досетите, **всички операции** за четене на вход и печатане на изход се **извършват през конзолата**. Там се **въвеждат входните данни**, които се прочитат от приложението, там се **отпечатват и изходните данни** след или по време на изпълнение на програмата.
+## Exercises graphical and web applications
+Now we are about to build one simple **web application** and one simple **graphical application**, in order to take a look at what we will be able to create when we progress with programming and software development. We are not going to look through the details about the used techniques and constructions fundamentally, rather we are just going to take a look at the arrangement and functionality of our creation. After we progress with our knowledge, we will be able to do bigger and more complex software applications and systems. We hope that the examples given below will **enlighten your interest**, rather than make you give up.
 
-Докато конзолните приложения **ползват текстовата конзола**, уеб приложенията (Web Аpplications) **използват уеб-базиран потребителски интерфейс**. За да се **постигне тяхното изпълнение** са необходими две неща - **уеб сървър** и **уеб браузър**, като **браузърът** играе главната роля по **визуализация на данните и взаимодействието с потребителя**. Уеб приложенията са много по-приятни за потребителя, изглеждат визуално много по-добре, използват се мишка и докосване с пръст (при таблети и телефони), но зад всичко това стои програмирането. И затова **трябва да се научим да програмираме** и вече направихме първите си съвсем малки стъпки.
+### Problem graphical application "Summator for numbers"
 
-**Графичните (GUI) приложения** имат **визуален потребителски интерфейс**, директно върху вашия компютър или мобилно устройство, без да е необходим уеб браузър. Графичните приложения (настолни приложения или, иначе казано, desktop apps) **се състоят от един или повече графични прозореца**, в които се намират определени **контроли** (текстови полета, бутони, картинки, таблици и други), **служещи за диалог** с потребителя по по-интуитивен начин. Подобни са и мобилните приложения във вашия телефон и таблет: ползваме форми, текстови полета, бутони и други контроли и ги управляваме чрез програмен код. Нали затова се учим сега да пишем код: **кодът е навсякъде в разработката на софтуер**.
-
-
-## Упражнения: графични и уеб приложения
-
-Сега предстои да направим едно просто **уеб приложение** и едно просто **графично приложение**, за да можем да надникнем в това, какво ще можем да създаваме като напреднем с програмирането и разработката на софтуер. Няма да разглеждаме детайлите по използваните техники и конструкции из основи, а само ще хвърлим поглед върху подредбата и функционалността на създаденото от нас. След като напреднем със знанията си, ще бъдем способни да правим големи и сложни софтуерни приложения и системи. Надяваме се примерите по-долу **да запалят интереса ви**, а не да ви откажат.
-
-
-### Задача: графично приложение „Суматор за числа“
-
-Да се напише **графично (GUI) приложение**, което **изчислява сумата на две числа**:
+Write a **graphical (GUI) application**, which **calculates the sum of two numbers**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-01.png)
 
-При въвеждане на две числа в първите две текстови полета и натискане на бутона [Calculate] се изчислява тяхната сума и резултатът се показва в третото текстово поле.
+By entering two numbers in the first two fields and pressing the button [Calculate] their sum is being calculated and the result is shown in the third text field.
 
-За разлика от конзолните приложения, които четат и пишат данните си във вид на текст на конзолата, **графичните (GUI) приложения** имат визуален потребителски интерфейс. Графичните приложения (настолни приложения, desktop apps) се състоят от един от няколко графични прозореца, в които има контроли: текстови полета, бутони, картинки, таблици и други.
+Unlike console applications, which read and write their data in the form of a text on the console, **graphical (GUI) applications** have a visual user interface. Graphical applications (desktop applications) are consisted of one or more graphic windows, in which there are controls text fields, buttons, pictures, tables and others.
 
-За нашето приложение ще използваме технологията **JavaFX**, която позволява създаване на графични приложения за всички платформи с езика за програмиране **Java**. За среда на разработка ще ползваме програмата **IntelliJ IDEA**.
+For our application, we will use the technology **JavaFX**, which allows the creation of graphical applications for every platform with the programming language **Java**. For environment for development, we are going to use the program **IntelliJ IDEA**.
 
-За да направим по-лесно създаването на графични приложения с JavaFX, ще ползваме програмата SceneBuilder, която ще изтеглим от тук:  https://gluonhq.com/products/scene-builder/#download.
+To make the creation of graphical applications with JavaFX, we are going to use the program, which can be downloaded from here httpsgluonhq.comproductsscene-builder#download.
 
 ![](assets/chapter-1-images/07.Numbers-sum-02.png)
 
-Инсталираме **SceneBuilder** за дизайн на JavaFX потребителски интерфейси:
+We install **SceneBuilder** for desig of JavaFX user interface
 
 ![](assets/chapter-1-images/07.Numbers-sum-03.png)
 
-В IntelliJ IDEA създайте нов Java проект от тип **JavaFX Application**:
+In IntelliJ IDEA create a new Java project of type **JavaFX Application**
 
 ![](assets/chapter-1-images/07.Numbers-sum-04.png)
 
-При създаването на **JavaFX приложение** ще генерира проект с няколко файла:
+When creating a **JavaFX application** a project with a few files will be generated
 
 ![](assets/chapter-1-images/07.Numbers-sum-05.png)
 
-Файлът, в който се намира изгледа на нашето приложение, се намира в пътя [**src/sample/sample.fxml**]. Нека да отидем там и да го отворим:
+The file, inside which is the view of our application can be found on the path **[src/sample/sample.fxml]**. Let's go there and open it
 
 ![](assets/chapter-1-images/07.Numbers-sum-06.png)
 
-Файлът изглежда по този начин. Няма да работим директно с него, а ще ползваме горепосочения **SceneBuilder**, който ще генерира кода вместо нас. Кликваме с десен бутон на файла и избираме **[Open in SceneBuilder]**:
+The file looks like this. We are not going to work with it directly later, but we are going to use the mentioned above **SceneBuilder**, which will generate code instead of us. We click with right mouse button on the file and we choose **[Open in SceneBuilder]**.
 
 ![](assets/chapter-1-images/07.Numbers-sum-07.png)
 
-При избирането на тази опция **за първи път**, IntelliJ IDEA ще поиска да посочим пътя към **SceneBuilder.exe**:
+By choosing the option for the first time, IntelliJ IDEA will ask us to enter the path towards **SceneBuilder.exe**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-08.png)
 
-При обикновена инсталация на Windows **SceneBuilder** се намира в [**C:\Users\[username]\AppData\Local\SceneBuilder**]. 
+With the usual Windows installation of **SceneBuilder**, it is found in [**C:\Users\[username]\AppData\Local\SceneBuilder**]. 
 
-След като сме посочили правилния път, се отваря **SceneBuilder** и виждаме следния екран: 
+After we have pointed the right path, **SceneBuilder** opens and we see the following screen 
 
 ![](assets/chapter-1-images/07.Numbers-sum-09.png)
 
-Отляво имаме видовете контроли, които можем да добавяме, така че ще намерим **[AnchorPane]** прозореца и ще го добавим като го завлечем в средата, където се намира нашият дизайн:
+We have the types of controls we can add on the left-hand side of the screen, so let's find the **[AnchorPane]** window and add it by dragging it to 
+the environment where our design is located.
 
 ![](assets/chapter-1-images/07.Numbers-sum-10.png)
 
-Това е нашият прозорец, в който вече можем да започнем да добавяме контроли, които взимаме от същото място, от което добавихме **[AnchorPane] (в менюто [Containers])**. За нашия интерфейс ни трябват:
+This is our window where we can now start adding controls located in the same place we added [AnchorPane] from (in the [Containers] menu). For our interface we'll need:
+  - 3 text fields: **`TextField`**
+  - 2 labels between the text fields (for **`+`** and **`=`**) 
+  - 1 button for calculation the result: **`Button`**
 
-  - 3 текстови полета: **`TextField`**
-  - 2 етикета между текстовите полета (за **`+`** и **`=`**): **`Label`**
-  - 1 бутон за пресмятане на резултата: **`Button`**
-  
-След като ги добавим, нашето приложение трябва да изглежда така:
+After we've added them, our application should look like this:
 
 ![](assets/chapter-1-images/07.Numbers-sum-11.png)
 
-Ще преименуваме контролите, като изберем по-подходящи имена, отговарящи на функционалността на приложението ни ("**`+`**" и "**`=`**"). Това се осъществява като кликнем на контрола, който искаме да променим, и отидем в дясно на неговите свойства ([Properties]).
+We'll rename the controls by choosing more appropriate names, reflecting our application's functionality (**`"+"`** and **`"="`**). This is achieved by clicking the control we wish to change and go to its [Properties] on the right.
 
-За начало ще променим свойството **`Text`** на етикетите. Името им по подразбиране е **`Label`**:
+First we'll change the **`Text`** property of the tickets. Their name is **`Label`** by default:
 
 ![](assets/chapter-1-images/07.Numbers-sum-12.png)
 
-За да отговаря по-добре на логиката на програмата ни, избираме по-смислени имена. Заменяме първия текст **`Label`** с **`+`**:
+We'll choose more meaningful names which will reflect our program's logic better. Change the first text **`Label`** with **`+`**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-13.png)
 
-Съответно, променяме текста на втория етикет на **`=`**, а надписа на бутона на **`Calculate`**:
+Then do the same with the second ticket and the button - change the former's text to **`=`** and the latter's to **`Calculate`** 
 
 ![](assets/chapter-1-images/07.Numbers-sum-14.png)
 
-Запазваме промените към дизайна с [**Ctrl+S**]:
+We'll save our design changes using **[Ctrl+S]**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-15.png)
 
-Връщаме се обратно в IntelliJ IDEA и стартираме приложението с [**Shift+F10**]:
+Now go back to IntelliJ IDEA and start the application using **[Shift+F10]**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-16.png)
 
-Вероятно приложението изглежда по-голямо или по-малко, отколкото очаквахме. Причината за това е, че в кода на нашето приложение има една част, която казва изрично какви да са неговите размери. Нека оправим този проблем.
-
-Отиваме в класа **`Main`** и намираме това парче код:
+The application's size is most likely not what you expected it to be. This is due to a piece of our code explicitly stating what that size needs to be. Let's resolve the issue:
+Go to the **`Main`** class and find the piece of code
 
 ![](assets/chapter-1-images/07.Numbers-sum-17.png)
 
-Изтриваме кода, който казва на нашата програма колко ще е голям прозорецa, за да се използва оразмеряването, което ние избрахме в SceneBuilder:
+Delete the code responsible for window size, so our program can use the sizing we chose in SceneBuilder
 
 ![](assets/chapter-1-images/07.Numbers-sum-18.png)
 
-Кодът ни вече изглежда така:
+Now the code looks like this
 
 ![](assets/chapter-1-images/07.Numbers-sum-19.png)
 
-Пускаме програмата отново с [**Shift+F10**] и проверяваме дали оразмеряването е правилно:
+We start the program once more using **[Shift+F10]** and check whether the sizing is correct
 
 ![](assets/chapter-1-images/07.Numbers-sum-20.png)
 
-Като последна стъпка за завършването на нашия дизайн, ще се върнем в нашия код и ще променим **заглавието** на приложението, което се намира на този ред:
+The final step in our design is to go back to our code and change the application's **title**, located on this line
 
 ![](assets/chapter-1-images/07.Numbers-sum-21.png)
 
-Променяме името от "**Hello World**" на "**Sumator**":
+Change the name from **"Hello World"** to **"Sumator"**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-22.png)
 
-Стартираме приложението:
+And start the application:
 
 ![](assets/chapter-1-images/07.Numbers-sum-23.png)
 
-Дизайнът на графичната част изглежда готов. Сега е време за нещо доста по-интересно - **програмната логика**. Време е да напишем кода, който сумира числата от първите две полета и показва резултата в третото поле. За целта трябва да се върнем обратно в **SceneBuilder** и да дадем имена на текстовите полета, за да можем да ги достъпваме в кода:
+The graphical part's design looks ready. It's now time for something a lot more interesting – **the program logic**. Time to write the code which sums the numbers from the first two fields and displays the result in the third field. To do that we need to go back to **SceneBuilder** and give the text fields names so we can access them in the code:
 
 ![](assets/chapter-1-images/07.Numbers-sum-24.png)
 
-Кликваме първото текстово поле с мишката и отиваме в секцията [**Code**] отдясно, където ще дадем името **`num1`** в полето **`fx:id`**:
+Click the first text field and go to the **[Code]** section on the right, where we'll enter the name **`num1`** in the **`fxid`** field:
 
 ![](assets/chapter-1-images/07.Numbers-sum-25.png)
 
-Второто поле преименуваме на **`num2`**:
+Then rename the second field to **`num2`**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-26.png)
 
-Съответно третото поле наименуваме **`result`**:
+And the third field to **`result`**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-27.png)
 
-Сега ще кажем на бутона коя функция да изпълнява, когато той бъде кликнат. Отиваме в **`On Action`** полето и му подаваме името на функцията **`calculate`**, която след малко ще създадем:
+Now we'll tell the button what function to perform once it's clicked. Go to the **`On Action`** field and enter the name of the function **`calculate`** which we'll create in a moment:
 
 ![](assets/chapter-1-images/07.Numbers-sum-28.png)
 
-Запазваме промените в SceneBuilder с [**Ctrl+S**] и се връщаме обратно в **`sample.fxml`** файла:
+Save the changes in SceneBuilder using **[Ctrl+S]** and go back to the **`sample.fxml`** file
 
 ![](assets/chapter-1-images/07.Numbers-sum-29.png)
 
-Виждаме, че нашите полета си имат имена, а нашият бутон си има функция, която да се изпълнява, когато той бъде кликнат.
-До тук добре, но тези полета и функцията на бутона все още не съществуват в нашия код. За да ги генерираме, ще отидем на всеки от тях и ще натиснем [**Alt+Enter**] → [**Create field**] [име на полето]:
+We can see that our fields have names and our button has a function to perform once it's clicked.
+So far so good, but these fields and the button's function don't yet exist in our code. To generate them, we'll go to each one of them and press **[Alt+Enter]** -> **[Create field]** (the field's name]
 
 ![](assets/chapter-1-images/07.Numbers-sum-30.png)
 
-След като създадем едно от полетата, ще бъдем пренасочени към файла **`Controller.java`**, където ще се създаде полето в кода по следния начин:
-
-![](assets/chapter-1-images/07.Numbers-sum-31.png)
-
-Добавяме по същия начин полетата **`num2`**, **`result`** и функцията **`calculate`**. Кодът в файла **`Controller.java`** би трябвало вече да изглежда по следния начин:
+Once we create one of the fields, we'll get redirected to the **`Controller.java`** file, where the field will be generated in the code in the following manner:
 
 ![](assets/chapter-1-images/07.Numbers-sum-32.png)
 
-Пишем следния Java код между отварящата и затварящата скоба **`{ }`** на нашата функция **`calculate`**:
+Write the following Java code between the curly braces of the **`calculate`** function:
 
 ![](assets/chapter-1-images/07.Numbers-sum-33.png)
 
-Този код взима първото число от полето **`num1`** в променлива **`num1`**, след това второто число от полето **`num2`** в променлива **`num2`**, след това сумира **`num1 + num2`** в променлива **`result`** и накрая извежда текстовата стойност на **`result`** в полето **`result`**.
+This code takes the first number from the field **`num1`** and stores it in the variable **`num1`**, then does the same with the **`num2`** field and stores it in the variable **`num2`**. The numbers are then summed, storing their value in the variable **`result`** and finally, the latter's text value is visualized in the **`result`** field.
 
 ![](assets/chapter-1-images/07.Numbers-sum-34.png)
 
-**Стартираме** отново програмата с [**Shift+F10**] и **пробваме дали работи**. Тестваме дали можем да изчислим сбора на различни стойности правилно. Първо въвеждаме две цели числа - например **4** и **5**:
+**Start** the program again with **[Shift+F10]** and **check if it's working**. Check whether we can calculate the sum of different values properly. First we enter two whole numbers – **4** and **5**, for example:
 
 ![](assets/chapter-1-images/07.Numbers-sum-35.png)
 
-След това пробваме да съберем отрицателно и положително нецяло число - например **-12.5** и **1.3**:
+Then we try summing negative and positive floating-point numbers – for example **-12.5** and **1.3**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-36.png)
 
-Опитваме да въведем невалиден вход, примерно **aaa** и **bbb**: 
+How about entering invalid input such as **aaa** and bbb**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-37.png)
 
-Виждаме, че има проблем, когато потребителят въведе **невалидни входни данни**:
+Obviously, we have a problem when the user enters **invalid input data**:
 
 ![](assets/chapter-1-images/07.Numbers-sum-38.png)
 
-Това се случва заради прехвърлянето на текстово поле в число. Ако стойността в полето не е число, програмата се чупи и **дава грешка** (exception). Можем да поправим кода така:
+This is due to the transformation of our text field into a number. If the value in the field isn't a number, the program crashes and **returns an error** (exception). We can fix the code in the by doing the following:
 
 ![](assets/chapter-1-images/07.Numbers-sum-39.png)
 
-С този код прихващаме грешките при работа с числа (**хващаме изключенията**) и в случай на грешка извеждаме стойност "**error**" в полето с резултата. Стартираме отново програмата с [**Shift+F10**] и я пробваме дали работи. Този път при грешно число резултатът е "" **error**" и програмата не се чупи:
+With this code we intercept errors when working with numbers (**catch exceptions**) and in case of an error we display the value **"error"** in our result field. Start the program again with **[Shift+F10]** and check if it's working. This time, if an incorrect number is entered, the result is **"error"** and the program doesn't crash:
 
 ![](assets/chapter-1-images/07.Numbers-sum-40.png)
 
-Сложно ли е? Нормално е да е сложно, разбира се. Тъкмо започваме да навлизаме в програмирането. Примерът по-горе изисква още много знания и умения, които ще развиваме в тази книга и даже след нея. Просто си позволете да се позабавлявате с desktop програмирането. Ако не тръгва нещо, гледайте **видеото в началото на тази глава** или питайте във **форума на СофтУни**: [https://softuni.bg/forum](https://softuni.bg/forum). Или продължете смело напред към следващия пример или към следващата глава от книгата. Ще дойде време и ще ви е лесно, но наистина трябва да вложите **усърдие и постоянство**. Програмирането се учи бавно и с много, много практика.
+Does all this seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. If something doesn't work, feel free to ask for help in the SoftUni discussion forum: https://forum.softuni.org. Or bravely move forward to the next example or to the next chapter in the book. A time will come when this will to be easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and lots of practice.
 
-### Уеб приложение: суматор за числа
-
-Сега ще напишем нещо още по-сложно, но и по-интересно: уеб приложение, което **изчислява сумата на две числа**. При **въвеждане на две числа** в първите две текстови полета и натискане на бутона [**Calculate**] се **изчислява тяхната сума** и резултатът се показва в третото текстово поле. Очаква се приложението да изглежда приблизително по следния начин:
+### Web Application: 'Numbers Summator'
+Now we are going to create something even more complex, but also more interesting: a Web application that **calculates the sum of two numbers**. By **entering two numbers** in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated** and the result is displayed in the third text field. The application is expected to resemble what you see below:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-01.png)
 
-За разлика от конзолните приложения, които четат и пишат данните си във вид на текст на конзолата, **уеб приложенията** имат **уеб базиран потребителски интерфейс**. Уеб приложенията се зареждат от някакъв **Интернет адрес** (URL) чрез стандартен **уеб браузър**. Потребителите пишат входните данни в страница, визуализирана от уеб приложението, данните се обработват на уеб сървъра и резултатите се показват отново в страницата в уеб браузъра.
+As opposed to console applications which read and write data in the form of text on the console, **Web applications** have a **Web-based user interface**. Web applications are loaded from some **Internet address** (URL) through a standard **web browser**. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser.
 
-За нашето уеб приложение ще използваме технологията **Spring MVC**, която позволява създаване на уеб приложения с езика за програмиране **Java** в средата за разработка **IntelliJ IDEA**. 
+For our web application we are going to use **Spring MVC**, which enables us to create web application with the **Java** programming language in the **IntelliJ IDEA** development environment.
 
-В IntelliJ IDEA вкарайте проекта (скелета на приложениет) от този линк: [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets), чрез **[Import Project]**:
+Take the project (the application's skeleton) from this link:
+[https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-02.png)
 
-Намираме папката, в която сме свалили скелета:
+Find the folder where we've downloaded the skeleton:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-03.png)
 
-Избираме [**Import project from external model**] и след това [**Maven**]:
+Choose **[Import project from external model]** and then **[Maven]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-04.png)
 
-Следва този екран:
+This is the screen that comes up next:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-05.png)
 
-Продължаваме напред с [**Next**]:
+Proceed by clicking **[Next]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-06.png)
 
-Отново продължаваме напред с [**Next**]:
+And again continue with **[Next]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-07.png)
 
-И още веднъж продължаваме напред с [**Next**]:
+One more time – **[Next]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-08.png)
 
-След като вкараме проекта в IntelliJ, той би трябвало да изглежда така:
+Once the project is loaded in IntelliJ, it should look something like this:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-09.png)
 
-Пускаме проекта, за да видим дали тръгва без грешки. За да осъществим това, ще отидем в папката [**src/main/java/com.softuni**] и ще отворим файла **SumatorApplication**:
+Let's start the project and make sure it runs without errors. To do that, we'll go to the **[src/main/javacom.softuni]** folder and open the **SumatorApplication** file:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-10.png)
 
-За да пуснем програмата, можем да използваме клавишната комбинация [**Ctrl+Shift+F10**] или да изберем [**Run 'SumatorApplication.main()'**] от контекстното меню:
+To run the program, we can either use the **[Ctrl+Shift+F10]** key combination, or select **[Run 'SumatorApplication.main()']** from the context menu:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-11.png)
 
-След като уеб приложението зареди, би трябвало да видим това съобщение най-отдолу в конзолата, която се отваря:
+Once the web application is loaded, we should see the following message at the very bottom of the console which has appeared:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-12.png)
 
-Можем да пуснем приложението и да проверим дали работи, като отидем в нашия уеб браузър и напишем **localhost:8080**:
+We can run the application and check whether it's working by opening our web browser and typing **localhost:8080** in the address bar:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-13.png)
 
-До тук добре, само че когато въведем две числа и натиснем [**Calculate**], не се случва нищо. Нека да напишем логиката, която е нужна, за да работи суматорът коректно.
-
-Отваряме файла **`HomeController`** в същата папка и би трябвало да видим следното:
+All seems fine but when we enter the two numbers and hit **[Calculate]**, nothing happens. Let's write the logic needed for our summator to work as intended.
+Open the **`HomeController`** file in the same folder and we should be able to see the following
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-14.png)
 
-Частта, която ни интересува, е функцията **`sum`**:
+The part we're interested in is the **`sum`** function
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-15.png)
 
-В момента тази функция приема два текста **`num1`** и **`num2`**, подава ги на сървъра и връща файла **`index`** на потребителя. Както може би се досещате, вътре няма код, който да пресмята числата в двете текстови полета и да ги подава на третото поле. Нека напишем логиката, която ще осъществи това.
+Currently this function accepts two pieces of text **`num1`** and **`num2`**, passes them to the server and returns the file **`index`** to the user. As you've probably realised, inside there's no code to calculate the numbers from the two text fields and enter the result in the third field. Let's write the logic to make it happen.
 
-Отиваме между къдравите скоби и написваме следния код:
+Go between the curly braces and write the following code:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-16.png)
 
-Ето как трябва да изглежда файлът **`HomeController`** след промяната:
+Here's what the **`HomeController`** file should look like after the change:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-17.png)
 
-Преди да се върнем обратно в приложението, трябва да приложим нашите промени. Ще направим това като отидем в прозореца на конзолата и натиснем бутона [**Rerun application**]:
+Before we go back to the application, we need to apply our changes. We'll do that by going to the console window and clicking the **[Rerun application]** button.
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-18.png)
 
-Приложението е готово. Ако въведем две числа в текстовите полета и натиснем бутона [**Calculate**], би трябвало резултата да излезе в третото текстово поле:
+The application is completed. If we enter the two numbers in the text fields and click the **[Calculate]** button, we should see the result come up in the third text field:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-19.png)
 
-Страшно ли изглежда? **Не се плашете!** Имаме да учим още много, за да достигнем ниво на знания и умения, за да пишем свободно уеб-базирани приложения, като в примера по-горе и много по-големи и по-сложни. Ако не успеете да се справите, няма страшно, продължете спокойно напред. След време ще си спомняте с усмивка колко непонятен и вълнуващ е бил първият ви сблъсък с уеб програмирането. Ако имате проблеми с примера по-горе, **гледайте видеото** в началото на тази глава. Там приложението е направено на живо стъпка по стъпка с много обяснения. Или питайте във **форума на СофтУни**: [https://softuni.bg/forum](https://softuni.bg/forum).
+Does all this seem scary? **There's no need to be afraid!** We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. 
 
-Целта на горните два примера (графично desktop приложение и уеб приложение) не е да се научите, а да се докоснете по-надълбоко до програмирането, **да разпалите интереса си** към разработката на софтуер и да се вдъхновите да учите здраво. **Имате да учите още много**, но пък е интересно, нали?
+The purpose of both examples (the graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, **to fuel your interest** towards software development and to inspire you to study hard. **You have a lot more to learn**, but it is interesting, isn't it?
