@@ -1,6 +1,6 @@
 # Book "Programming Basics" (with Java)
 
-> This is work in progress. This open-source free book, originally written in Bulgarian, will be transtaled into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
+> This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
 Книгата "**Основи на програмирането с Java**" запознава читателите с писането на **програмен код** на начално ниво (работа с данни, проверки, цикли и методи) с езика **Java**.
 
@@ -29,7 +29,7 @@
 * [Заключение](chapter-12-conclusion.md)
 
 Изтеглете книгата "Основи на програмирането с Java" в PDF формат:
-* <a href="https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/resources/Programming-Basics-Java-v2017.pdf">Programming-Basics-Java-v2017.pdf</a>
+* <a href="#">TODO</a>
 
 Настоящата книга е достъпна в няколко варианта с различни езици за програмиране:
 * [Основи на програмирането със C#](https://csharp-book.softuni.bg)
@@ -38,15 +38,14 @@
 * [Основи на програмирането с JavaScript](https://js-book.softuni.bg)
 * [Основи на програмирането с Python](https://python-book.softuni.bg)
 * [Основи на програмирането със C++](https://cpp-book.softuni.bg)
-* [Основи на програмирането с PHP](https://php-book.softuni.bg)
 
 Кратка информация за изданието:
 * Заглавие: **Основи на програмирането с Java**
 * Автори: **Светлин Наков и колектив**
-* ISBN: **978-619-00-0636-7**
-* Издание: **Faber Publishing, София, декември 2017 г.**
+* ISBN: **TODO**
+* Издание: **TODO**
 * Лиценз: **CC-BY-SA**
-* Сорс код: https://github.com/SoftUni/Programming-Basics-Book-Java-BG
+* Сорс код: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
 * Всички автори, редактори и **участници в проекта**: Ася Дикова-Кирова, Вайдин Качанов, Венцислав Петров, Даниел Цветков, Димитър Далев, Жулиета Атанасова, Ивайло Иванов, Кристиян Памидов, Милена Георгиева, Николай Банкин, Петър Иванов, Росица Ненова, Светлин Наков, Теодор Куртев, Цветан Георгиев, Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева, Марина Шидерова.
 
-Приятно четене и не забравяйте да се запишете на [**практическия безплатен курс "Основи на програмирането"**](https://softuni.bg/apply) към тази книга, защото програмирането се учи с практика, писане на код и решаване на много, много задачи, а не само с четене!
+Приятно четене и не забравяйте да се запишете на [**практическия безплатен курс "Основи на програмирането"**](https://softuni.org/apply) към тази книга, защото програмирането се учи с практика, писане на код и решаване на много, много задачи, а не само с четене!
