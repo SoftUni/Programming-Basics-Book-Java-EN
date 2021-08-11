@@ -1,24 +1,26 @@
-# Глава 11. Хитрости и хакове
+# Chapter 11. Tricks and Hacks
 
-В настоящата глава ще разгледаме някои хитрости, хакове и техники, които ще улеснят работата ни с езика Java в средата за разработка IntelliJ IDEA. По-специално ще се запознаем:
+In the current chapter we are going to see some tricks, hacks and techniques, which will make our work with C# easier in the IntelliJ IDEA. In particular we will see:
 
-* Как правилно да **форматираме код**
-* С конвенции за **именуване на елементи от код**
-* С някои **бързи клавиши** (keyboard shortcuts)
-* С някои **шаблони с код** (code snippets)
-* С техники за **дебъгване на код**
+* How to properly **format our code**
+* Conventions for **naming elements in the code**
+* Some **keyboard shortcuts**
+* Some **code snippets**
+* Techniques to **debug our code**
 
 ## Форматиране на кода
 
-Правилното форматиране на нашия код ще го направи **по-четим и разбираем**, в случай че се наложи някой друг да работи с него. Това е важно, защото в практиката ще ни се наложи да работим в екип с други хора и е от голямо значение дали пишем кода си така, че колегите ни да могат **бързо да се ориентират** в него.
+The right formatting of our code will make it easier to read and understand in case someone else needs to work with it. This is important, because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand** it.
 
-Има определени правила за правилно форматиране на кода, които събрани в едно се наричат **конвенции**. Конвенциите са група от правила, общоприети от програмистите на даден език, и се ползват масово. Тези конвенции помагат за изграждането на норми в дадени езици - как е най-добре да се пише и какви са добрите практики. Приема се, че ако един програмист ги спазва, то кодът му е лесно четим и разбираем.
+There are some defined rules for correct formatting of the code, which are collected in one place and are called **conventions**. The conventions are a group of rules, generally accepted by the programmers using a given language, which are massively used. These conventions help building norms in given languages – what is the best way to write and what are good practices. It is accepted that if a programmer follows them then his code is easy to read and understand.
 
-Програмният език Java е създаден от **Sun Microsystems** (технологична компания, погълната по-късно от **Oracle**) и Sun са тези, които създават една от първите конвенции за Java. Трябва да знаете, че дори да не спазвате общоприетите конвенциите, кодът ви ще работи (стига да е написан правилно), но просто няма да бъде лесно разбираем от останалите програмисти. Това, разбира се, не е фатално на основно ниво, но колкото по-бързо свикнете да пишете качествен код, толкова по-добре.
+The Java language is developed by **Sun Microsystems** (tech company, later acquired by **Oracle**). Sun are the ones that lay the foundations of the currently well established conventions in Java. You should know that even if you don't follow the conventions given by **Microsoft**, your code will work (as long as it is properly written), but it will not be easy to understand. This, of course, is not fatal at base level, but the faster you get used to writing quality code the better.
 
-Най-широко възприетата съвременна **Java код конвенция** се нарича "Google Java Style Guide" (https://google.github.io/styleguide/javaguide.html) и в тази книга ще се ръководим основно от нея.
+## The Official Java Code Conventions
 
-За форматиране на кода в Java света се препоръчва **къдравите скоби `{}`** да са в следното разположение - отварящата скоба да е на същия ред, а затварящата скоба да е точно под конструкцията, към която се отнасят, както е в примера по-долу.
+The most widely adopted modern **Java convention** is called [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) and this book will be closely following it.
+
+For code formatting in the Java ecosystem the following is recommended for the **curly brackets `{}`** - opening bracket is supposed to be on the same line and the closing bracket should be right underneath the consturct:
 
 ```java
 if (someCondition) {
@@ -26,7 +28,7 @@ if (someCondition) {
 }
 ```
 
-Вижда се, че командата **`System.out.println(…)`** в примера е **4 празни полета навътре (един таб)**, което е стандарта в Java. Без значение колко таба навътре започва определена конструкция с къдрави скоби (т.е. без значение колко влагания на различни оператори имаме), затварящата скоба трябва да е **под началото на конструкцията**, както е в примера по-долу:
+You can see that the command **`System.out.println(…)`** in the example is **indented by 4 white spaces (one tab)**, which is a standard in Java. If given block enclosed in curly brackets is indented by any number of tabs, then **the closing curly bracket `}`** must be **right below the beginning of the construct**, as in the example below:
 
 ```java
 if (someCondition) {
@@ -36,7 +38,7 @@ if (someCondition) {
 }
 ```
 
-Ето това е пример за **лошо форматиран код** спрямо общоприетите конвенции за писане на код на езика Java:
+Below you can see an example for **badly formatted code** according to the accepted conventions for writing code in Java:
    
 ```java
 if(someCondition)
@@ -44,17 +46,17 @@ if(someCondition)
 System.out.println("Inside the if statement");}
 ```
 
-Първото, което се забелязва са **къдравите скоби `{}`**. Първата (отваряща) скоба трябва да е **след `if` условието**, a втората (затваряща) скоба - **под командата `System.out.println(…)`, на отделен празен ред**. В допълнение, командата вътре в **`if`** конструкцията трябва да бъде **4 празни полета навътре (един таб)**. Веднага след ключовата дума **`if`** и преди условието на проверката и веднага след него преди **`{`** се оставя **интервал**.
+The first thing that we see is **the curly brackets `{}`**. The first (opening) bracket should be **just after the `if` condition**, and the second (closing) bracket – **below the command `System.out.println(…)`, at a new and empty line**. In addition, the command inside the **`if`** construction should be **offset by 4 white spaces (one tab)**. Just after the keyword **`if`**, before the condition  and preceding the **`{`** you should put **a space**.
 
-Същото правило важи и за **`for` цикли и всякакви други конструкции с къдрави скоби `{}`**. Ето още няколко примера:
+The same rule applies for **the `for` loops and all other constructions with curly brackets `{}`**. Here are some more examples:
 
-Правилно:
+**Correct** formatting:
 ```java
 for (int i = 0; i < 5; i++) {
     System.out.println(i);
 }
 ```
-Грешно:
+**Wrong** formatting:
 ```java
 for(int i=0;i<5;i++)
 {
@@ -62,9 +64,15 @@ System.out.println(i);
 }
 ```
 
-За ваше удобство има **бързи клавиши в IntelliJ IDEA**, за които ще обясним по-късно в настоящата глава, но засега ни интересуват две конкретни комбинации. Едната комбинация е за форматиране на **кода в целия документ**, а другата комбинация - за форматиране на **част от кода**. Ако искаме да форматираме **целия код**, то трябва да натиснем [**CTRL + ALT + L**]. В случай, че искаме да форматираме само **част от кода**, то ние трябва да **маркираме частта**, която искаме да форматираме, и да натиснем [**Ctrl + Shift + Alt + L**].
+## Code Formatting Shortcuts in IntelliJ IDEA
 
-Нека използваме **грешния пример** от преди малко:
+For your comfort there are **keyboard shortcuts in IntelliJ IDEA**, which we will explain later in this chapter, but for now we are interested in two specific combinations. One of the combinations is for formatting **the code in the whole document**, and the other one – for formatting **a part of the code**. If we want to format **the whole code** we need to press [**CTRL + ALT + L**]. In case we need to format only **a part of the code**, we need to **mark this part with the mouse** and press [**Ctrl + Shift + Alt + L**].
+
+[//]: # (TODO: Uncomment the following text after adding the image below: The screenshot below illustrates how to **format Java code in IntelliJ IDEA**, using the menu commands or keyboard schortcuts:)
+
+[//]: # (TODO: Insert similar image as the one in the C# book)
+
+Let's use **the wrongly formatted example** from earlier:
 
 ```java
 for(int i=0;i<5;i++)
@@ -73,7 +81,7 @@ System.out.println(i);
 }
 ```
 
-Ако натиснем [**CTRL + ALT + L**], което е нашата комбинация за форматиране на **целия документ**, ще получим код, форматиран според **общоприетите конвенции за Java**, който ще изглежда по следния начин:
+If we press [**CTRL + ALT + L**], which is the combination to **format the whole document**, we will have a code, formatted according to **the accepted conventions for Java**, which will look as follows:
 
 ```java
 for (int i = 0; i < 5; i++) {
@@ -81,116 +89,128 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-Тази комбинация може да ни помогне, ако попаднем на лошо форматиран код.
-
-## Именуване на елементите на кода
+This key combination in IntelliJ IDEA can help us if we work with a badly formatted code.
+## Naming Code Elements
 
 В тази секция ще се фокусираме върху **общоприетите конвенции за именуване на проекти, файлове и променливи в Java света**.
 
-### Именуване на проекти и класове
+In this section we will focus on **the accepted conventions for naming projects, files and variables**, defined by Microsoft.
 
-**За именуване на проекти и класове** се препоръчва описателно име, което подсказва **каква е ролята** на въпросния клас / проект и в същото време се препоръчва **`PascalCase` конвенцията**. Tова е **конвенция за именуване** на елементи, при която всяка дума, включително първата, започва с **главна буква**, например **`ExpressionCalculator`**.
+### Naming Projects and Files
 
-Пример: в този курс се започва с лекция на име **First steps in coding** и следователно едно примерно именуване на проекта за тази лекция може да бъде **`FirstStepsInCoding`**. Същата конвенция важи и за класовете в даден проект. Ако вземем за пример първата задача от лекцията **First steps in coding**, тя се казва **Hello World** и следователно нашият файл в проекта ще се казва **`HelloWorld`**.
+It is recommended to use a descriptive name **for naming projects and files**, which suggests **the role** of the respective file / project and at the same time the **`PascalCase` convention** is also recommended. This is a **convention for naming** elements, in which each word, including the first one, starts with **an uppercase character**, for example **`ExpressionCalculator`**.
 
-### Именуване на променливи
+Example: this course starts with a **First steps in coding** lecture, therefore an exemplary name for the solution for this lecture can be **`FirstStepsInCoding`**. The same convention applies for the files in a project. If we take for example the first problem in the **First steps in coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`HelloWorld`**.
 
-В програмирането променливите пазят някакви данни и за да е по-разбираем кода, името на една променлива трябва **да подсказва нейното предназначение**. Ето и още няколко препоръки за имената на променливите:
+### Naming Variables
 
-* Името трябва да е **кратко и описателно** и да обяснява за какво служи дадената променлива.
-* Името трябва да се състои само от буквите **a-z**, **A-Z**, **цифрите 0-9**, както и **символите '$' и '\_'**.
-* В Java е прието променливите да **започват** винаги **с малка буква** и да **съдържат малки букви**, като **всяка следваща дума** в тях **започва с главна буква** (това именуване е още познато като **`camelCase`** конвенция).
-* Трябва да се внимава за главни и малки букви, тъй като Java прави разлика между тях. Например **`age`** и **`Age`** са различни променливи.
-* Имената на променливите не могат да съвпадат със служебна дума (keyword) от езика Java, например **`int`** е невалидно име на променлива.
+In programming variables keep data, and for the code to be more understandable, the name of a variable should **suggest its purpose**. Here are some recommendations for naming variables:
+
+* The name should be **short and descriptive** and to explain what the variable serves for.
+* The name should only contain the letters **a-z**, **A-Z**, **the numbers 0-9**, and **the symbols '$' и '\_'**.
+* It is accepted in Java for the variables to always **begin** **with a lowercase letter** and to **contain lowercase letters**, and **each next word** in them should **start with an uppercase letter** (this naming is also known as **`camelCase`** convention).
+* You should be careful about uppercase and lowercase letters, because Java distinguishes them. For example, **`age`** and **`Age`** are different variables.
+* The names of the variables cannot coincide with keywords in the Java language, for example **`int`** is an invalid name for a variable.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Въпреки че използването на символа <code><b>_</b></code> в имената на променливите е разрешено, в Java това не се препоръчва и се счита за лош стил на именуване.</td>
+<td>Although using the symbol <code><b>_</b></code> in the names of variables is allowed, in Java it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
-Ето няколко примера за **добре именувани** променливи:
+### Naming – Examples
+
+Here are some examples for **well named** variables:
 
 * **`firstName`**
 * **`age`**
 * **`startIndex`**
 * **`lastNegativeNumberIndex`**
 
-Ето няколко примера за **лошо именувани променливи**, макар и имената да са коректни от гледна точка на компилатора на Java:
+Here are some examples for **badly named variables**, even though the names are correct according to the Java compiler:
 
-* **`_firstName`** (започва с '\_')
-* **`last_name`** (съдържа '\_')
-* **`AGE`** (изписана е с главни букви, което е **грешно име за променлива**, но е **правилно име за константа**)
-* **`Start_Index`** (започва с главна буква и съдържа '\_')
-* **`lastNegativeNumber_Index`** (съдържа '\_')
+* **`_firstName`** (starts with '`_`')
+* **`last_name`** (contains '`_`')
+* **`AGE`** (written in uppercase, which is **badly named variable** but **well named constant**)
+* **`Start_Index`** (starts with an uppercase letter and contains '`_`')
+* **`lastNegativeNumber_Index`** (contains '`_`')
 
-Първоначално всички тези правила може да ни се струват безсмислени и ненужни, но с течение на времето и натрупването на опит ще видите нуждата от норми за писане на качествен код, за да може да се работи по-лесно и по-бързо в екип. Ще разберете, че е изключително досадна работата с код, който е написан без да се спазват никакви правила за качествен код.
+At first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for **conventions for writing quality code** in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
 
-## Бързи клавиши в IntelliJ IDEA
+## Shortcuts in IntelliJ IDEA
 
-В предната секция споменахме за две от комбинациите, които се отнасят за форматиране на код. Едната комбинация [**Ctrl + Alt + L**] беше за **форматиране на целия код в даден файл**, а втората [**Ctrl + Shift + Alt + L**] ни служеше в случай, че искаме да **форматираме само дадена част от кода**. Тези комбинации се наричат **бързи клавиши** и сега ще дадем по-подробна информация за тях.
+In the previous section we mentioned two of the combinations that are used for formatting code. One of them [**Ctrl + Alt + L**] is used for **formatting the whole code in a file**, and the second one [**Ctrl + Shift + Alt + L**] serves if we want to **format just a piece of the code**. These combinations are called **shortcuts** and now we will give more thorough information about them.
 
-Бързи клавиши са **комбинации**, които ни предоставят възможността да извършваме някои действия **по-лесно и по-бързо**, като всяка среда за разработка на софтуер си има своите бързи клавиши, въпреки че повечето се повтарят. Сега ще разгледаме някои от **бързите клавиши** в **IntelliJ IDEA**.
+Shortcuts are **combinations** that give us the possibility to do some things in an **easier and faster** way, and each IDE has its shortcuts, even though most of them are recurring. Now we will look at some of the **shortcuts** in **IntelliJ IDEA**:
 
-| Комбинация | Действие |
+| Combination | Action|
 | --- | --- |
-|  [**CTRL + F**] | Комбинацията **отваря търсачка**, с която можем да **търсим в нашия код**. |
-|  [**CTRL + /**] | **Закоментира** част от кода. / **Разкоментира код**, който е вече закоментиран.|
-|  [**CTRL + Z**] | **Връща една промяна назад** (т.нар. Undo). |
-|  [**Ctrl + Shift + Z**] | Комбинацията има противоположно действие на [**CTRL + Z**] (т.нар. Redo). |
-|  [**CTRL + ALT + L**] | **Форматира кода** според конвенциите по подразбиране. |
-|  [**CTRL + Backspace**] | **Изтрива** думата вляво от курсора. |
-|  [**CTRL + Del**] | **Изтрива** думата вдясно от курсора. |
-|  [**CTRL + S**] | **Запазва** всички файлове в проекта. |
-|  [**CTRL + D**] | **Копира** ред или маркирания фрагмент. |
-|  [**CTRL + Y**] | **Изтрива** текущия ред. |
+|  [**CTRL + F**] | Opens the **search window**, by which we can **search in our code**. |
+|  [**CTRL + /**] | **Comments** part of the code. / **Uncomments a code**, which is already commented. |
+|  [**CTRL + Z**] | **Brings back one change** (so-called Undo). |
+|  [**Ctrl + Shift + Z**] | The combination is opposite of [**CTRL + Z**] (the so-called Redo). |
+|  [**CTRL + ALT + L**] | **Formats the code** according the default conventions. |
+|  [**CTRL + Backspace**] | **Deletes** the word to the left of the cursor. |
+|  [**CTRL + Del**] | **Deletes** the word to the right of the cursor. |
+|  [**CTRL + Shift + S**] | **Saves** all files in the project. |
+|  [**CTRL + S**] | **Saves** the current file. |
+|  [**CTRL + D**] | **Copies** the current line or the selected fragment. |
+|  [**CTRL + Y**] | **Deletes** the current line. |
 
-Повече за **бързите клавиши в IntelliJ IDEA** може да намерите тук: [https://www.jetbrains.com/help/idea/keyboard-shortcuts-by-category.html](https://www.jetbrains.com/help/idea/keyboard-shortcuts-by-category.html).
+More about the **shortcuts in IntelliJ IDEA*** can be found here: [https://www.jetbrains.com/help/idea/keyboard-shortcuts-by-category.html](https://www.jetbrains.com/help/idea/keyboard-shortcuts-by-category.html).
 
-## Шаблони с код (code snippets)
+## Code Snippets in IntelliJ IDEA
 
-В IntelliJ IDEA съществуват т.нар. **шаблони с код** (code snippets), при изписването на които се изписва по шаблон някакъв блок с код. Примерно при изписването на **`sout` + [Enter]** се изписва кодът **`System.out.println();`**:
+In IntelliJ IDEA there are the so called **code snippets**, which write a block of code by using a code template. For example, by writing the short code **`sout` + [Enter]** the following code is generated in the body of our program, in the place of the short code:
+
+```java
+System.out.println();
+```
+This is called “unfolding a code snippet”. The **`fori` + [Enter]**  snippet works in the same way. On the figure below you can see the **`sout`** snippet in action:
 
 ![](/assets/chapter-11-images/01.Code-snippet-01.png)
 
-### Да си направим собствен шаблон за код
+### Creating Your Own Code Snippet
 
-В тази секция ще покажем как сами да си **направим собствен шаблон**. Ще разгледаме **как се прави code snippet** за **`scanner.nextLine();`**. Като за начало ще си създадем нов празен проект и ще отидем на [**File → Settings → Editor → Live Templates**], като избираме [**+** → **Live Template**], както е показано на снимката по-долу.
+In this section we are going to show you how to **make your own code snippet**. We will see **how to make a code snippet** for `scanner.nextLine();`. In order to begin we must create a new empty project in IntelliJ IDEA and go to [**File → Settings → Editor → Live Templates**], and choose [**+** → **Live Template**] as shown on the picture:
 
 ![](/assets/chapter-11-images/01.Code-snippet-02.png)
 
-Излиза нов прозорец, който изглежда както на следващата картинката.
+A new window that looks like the one on the image below pops up:
 
 ![](/assets/chapter-11-images/01.Code-snippet-03.png)
 
-Тук попълваме следната информация:
-* **[Abbreviation]** - тук се вписва **code snippet**-a, който ще използваме. В конкретния случай това е **`scnl`**.
-* **[Description]** - тук се попълва **описание** за **snippet**-a. В нашия случай това е **`scanner.nextLine()`**.
-* **[Template text]** - тук въвеждаме **кода, който ще се генерира** при изписване на съкращението. В този случай, това е кода по-долу:
+The following information should be entered:
+* **[Abbreviation]** - we specify the **code snippet** that we wish to use. In our case this is **`scnl`**.
+* **[Description]** - this is the place for our **snippet**'s **description**. In our case this is **`scanner.nextLine()`**.
+* **[Template text]** - we enter **the code to be generated** at the event of snippet usage. In our case this is:
 
 ```java
 Scanner scanner = new scanner(Sysrtem.in);
 String s = scanner.nextLine();
 ```
 
-След това маркираме **[Reformat according to style]**, a от **[Define]** избираме **[Java]**, след което натискаме **[OK]**, както е показано на картинката по-долу.
+Next we select **[Reformat according to style]** and choose **[Java]** from **[Define]** list. To finish the procedure press **[OK]** as it's shown in the picture below:
 
 ![](/assets/chapter-11-images/01.Code-snippet-04.png)
 
-Вече когато напишем **`scnl`** в IntelliJ IDEA, **нашият нов snippet** се появява:
+
+Now when we write **`scnl`** in IntelliJ IDEA, **our new snippet** is going to appear:
 
 ![](/assets/chapter-11-images/01.Code-snippet-05.png)
 
-## Техники за дебъгване на кода
+## Code Debugging Techniques
 
-Дебъгването играе важна роля в процеса на създаване на софтуер, която ни позволява **постъпково да проследим изпълнението** на нашата програма. С помощта на тази техника можем да **следим стойностите на локалните променливи**, тъй като те се променят по време на изпълнение на програмата, и да **отстраним** евентуални **грешки** (бъгове). Процесът на дебъгване включва:
+Debugging plays an important role in the process of creating software, which is to allow us to **follow the implementation** of our program **step by step**. With this technique we can **follow the values of the local variables**, because they are changing during the execution of the program, and to **remove** possible **errors** (bugs). The process of debugging includes:
 
-* **Забелязване** на проблемите (бъговете).
-* **Намиране** на кода, който причинява проблемите.
-* **Коригиране** на кода, причиняващ проблемите, така че програмата да работи правилно.
-* **Тестване**, за да се убедим, че програмата работи правилно след нанесените корекции.
+* **Finding** the problems (bugs).
+* **Locating** the code, which causes the problems.
+* **Correcting** the code, which causes the problems, so that the program works correctly.
+* **Testing** to make sure that the program works correctly after the corrections we have made.
 
-IntelliJ IDEA ни предоставя **вграден дебъгер** (debugger), чрез който можем да поставяме **точки на прекъсване** (или **breakpoints**) на избрани от нас места. При среща на **стопер** (breakpoint), програмата **спира изпълнението** си и позволява **постъпково изпълнение** на останалите редове. Дебъгването ни дава възможност да **вникнем в детайлите на програмата** и да видим къде точно възникват грешките, както и каква е причината за това.
+### Debugging in IntelliJ IDEA
 
-За да демонстрираме работа с дебъгера ще използваме следната програма:
+IntelliJ IDEA gives us **a built-in debugger**, thanks to which we can place **breakpoints** at places we have chosen. When it reaches a **breakpoint**, the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
+
+In order to demonstrate how to use the debugger we will use the following program:
 
 ```java
 public static void main(String[] args) {
@@ -200,29 +220,33 @@ public static void main(String[] args) {
 }
 ```
 
-Ще сложим стопер (breakpoint) на функцията **`System.out.println(…)`**. За целта трябва да преместим курсора на реда, който печата на конзолата, и да натиснем [**Ctrl + F8**] или да кликнем с левия бутон на мишката от дясно на номера на реда. Появява се **точка на прекъсване**, където програмата ще **спре** изпълнението си.
+We will place a **breakpoint** at the function `System.out.println(…)`. For this we will need to move our cursor to the line, which prints on the console, and press [**Ctrl + F8**], alternatively we can simply click using the left mouse button on the right side of the line number. A **breakpoint** appears, showing where the program will **stop** running:
 
 ![](/assets/chapter-11-images/02.Debugger-01.png) 
 
-За да стартираме **програмата в режим на дебъгване**, избираме [**Run**] → [**Debug <име на класа>**] или натискаме [**SHIFT + F9**].
+### Starting the Program in Debug Mode
+
+In order to start  **the program in debug mode**, we choose [**Run**] -> [**Debug &lt;class name>**] or press [**SHIFT + F9**]:
 
 ![](/assets/chapter-11-images/02.Debugger-02.png) 
 
-След стартиране на програмата виждаме, че тя **спира изпълнението си** на ред 8, където сложихме стопера (breakpoint). Кодът на текущия ред се **маркира в допълнителен цвят** и можем да го **изпълняваме постъпково**. За да преминем на **следващ ред** използваме клавиш [**F8**]. **Забелязваме, че кодът на текущия ред все още не е изпълнен**. **Изпълнява се, когато преминем на следващия ред**. В зелено се показва текущата стойност на променливата, на снимката по-долу **`i = 0`**.
+After starting the program, we can see that it **stops executing** at line 8, where we placed our breakpoint. The code in the current line **is colored in additional color** and we can **run it step by step**. In order to go to **the next line**, we use the key [**F8**]. We can see that **the code on the current line hasn't executed yet**. **It will execute when we go ahead with the debugging the next line**. The current value of the variable is depicted in green, in this case **`i = 0`** can be seen in the following picture.
 
 ![](/assets/chapter-11-images/02.Debugger-03.png) 
 
-От прозореца [**Variables**] можем да наблюдаваме **промените по локалните променливи**.
+
+From the [**Variables**] window we can observe **the changes in the local variables** .
 
 ![](/assets/chapter-11-images/02.Debugger-04.png)  
 
-## Справочник с хитрости
+## Tricks for Java Developers
 
-В тази секция ще припомним накратко **хитрости и техники** от програмирането с езика Java, разглеждани вече в тази книга, които ще са ви много полезни, ако ходите на изпит по програмиране за начинаещи:
+In this section we will recall some **tricks and techniques** in programming with Java, already seen in this book, which can be very useful if you attend an exam for beginner programming.
 
-### Форматиран изход с printf()
+### Formatted output with printf()
 
 За отпечатването на дълги и сложни поредици от елементи можем да използваме метода **`printf(…)`**. Този метод е съкращение на "Print Formatted". Основната идея на **`printf(…)`** е да приеме **специален стринг**, форматиран със специални **форматиращи символи** и списък със стойностите, които трябва да се заместят на мястото на **"форматните спецификатори"**.
+
 
 ```java
 printf(<formatted string>, <param1>, <param2>, <param3>, …)
@@ -287,7 +311,9 @@ System.out.println(Math.ceil(numberToCeiling));
 // Tова ще отпечата на конзолата 6.0
 ```
 
-### Форматиране с две цифри след десетичния знак
+### Formatting with 2 Digits After the Decimal Point
+
+When we print numbers, we often need to round them to 2 digits after the decimal point, e.g.
 
 ```java
 double number = 5.432432;
@@ -295,48 +321,48 @@ System.out.printf("%.2f%n", number);
 // Tова ще отпечата на конзолата 5.43
 ```
 
-В случая използваме форматиращият стринг **`%.2f`**, което ще ограничи числовата променлива до 2 цифри след десетичния знак. Tрябва да имаме предвид, че числото пред буквата **`f`** означава до колко цифри след десетичния знак да е закръглено резултата (т.е. може да е **`%.3f`** или **`%.5f`**). Препоръчително е с **`printf()`** като символ за нов ред да използваме **`%n`**, вместо **`/n`**.
+In the given example a formatting string **`%.2f`** is used, which rounds the number variable to two decimal places. We have to take into account that the number before the letter **`f`** means the number of decimal places up to which the result will be rounded (e.g. the formatting string can very well be **`%.3f`** or **`%.5f`**). When formatting a string using **`printf()`**, it's recommended to use  **`%n`** as a symbol for new line and not **`/n`**.
 
-### Как се пише условна конструкция?
+### How to Write a Conditional Statement?
 
-Условната **`if` конструкция** се състои от следните елементи:
+The conditional **`if` construction** contains the following elements:
 
-* Ключова дума **`if`**
-* **Булев израз** (условие)
-* **Тяло** на условната конструкция
-* Незадължително: **`else` клауза**
+* Keyword `if`
+* **A Boolean expression** (condition)
+* **Body** of the conditional construction
+* Optional: **`else` clause**
 
 ```java
-if (условие) {
-    // тяло
-} else (условие) {
-    // тяло
+if (condition) {
+    // body
+} else (condition) {
+    // body
 }
 ```
 
-За улеснение може да използваме **code snippet** за **`if` конструкция**:
- * **`if` + [Enter]**
+To make it easier we can use a **code snippet** for an **`if` construction**:
+* **`if` + [Enter]**
 
-### Как се пише for-цикъл?
+### How to Write a 'For' Loop?
 
-За **`for` цикъл** ни трябват няколко неща:
+For a **`for` loop** we need a couple of things:
 
-* Инициализационен блок, изпълнява се само веднъж преди да се провери условието за повторение. Най-често се декларира променливата-брояч (**`int i`**) и се задава нейна начална стойност.
-* Условие за повторение (**`i <= 10`**).
-* Обновяване на брояча (**`i++`**).
-* Тяло на цикъла.
+- **Initializing block**, in which the counter variable is declared (**`int i`**) and its initial value is set
+- **Condition** for repetition (**`i <= 10`**)
+- Loop variable (counter) **updating statement** (**`i++`**)
+- **Body** of the loop, holding statements
 
 ```java
 for (int i = 0; i <= 10; i++) {
-    // тяло
+    // body
 }
 ```
 
-Важно е да знаем, че и трите части на **`for`** цикъла са **незадължителни** и **могат** да се пропуснат. **`for(; ; ) { … }`** е валиден пример за **`for`** цикъл.
+It's important to know that the three elements of the **`for` loop** are **optional** and can be **omitted**. **`for(; ; ) { … }`** is a valid **`for` loop** statement.
 
-За улеснение може да използваме **code snippet** за **`for` цикъл**:
+To make it easier we can use a code snippet for a **`for` loop**:
  * **`fori` + [Enter]**
 
-## Какво научихме от тази глава?
+## What We Learned in This Chapter?
 
-В **настоящата** глава се запознахме как **правилно** да **форматираме** и именуваме елементите на нашия **код**, някои **бързи клавиши** (shortcuts) за работа в IntelliJ IDEA, **шаблони с код** (code snippets) и разгледахме как се **дебъгва код**.
+In the **current** chapter we learned how to **correctly** **format** and name the elements of our **code**, some **shortcuts** in IntelliJ IDEA, some **code snippets**, and we analyzed how to **debug the code**.
