@@ -8,7 +8,7 @@ In the current chapter we are going to see some tricks, hacks and techniques, wh
 * Some **code snippets**
 * Techniques to **debug our code**
 
-## Форматиране на кода
+## Code Formatting
 
 The right formatting of our code will make it easier to read and understand in case someone else needs to work with it. This is important, because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand** it.
 
@@ -92,8 +92,6 @@ for (int i = 0; i < 5; i++) {
 This key combination in IntelliJ IDEA can help us if we work with a badly formatted code.
 ## Naming Code Elements
 
-В тази секция ще се фокусираме върху **общоприетите конвенции за именуване на проекти, файлове и променливи в Java света**.
-
 In this section we will focus on **the accepted conventions for naming projects, files and variables**, defined by Microsoft.
 
 ### Naming Projects and Files
@@ -107,7 +105,7 @@ Example: this course starts with a **First steps in coding** lecture, therefore 
 In programming variables keep data, and for the code to be more understandable, the name of a variable should **suggest its purpose**. Here are some recommendations for naming variables:
 
 * The name should be **short and descriptive** and to explain what the variable serves for.
-* The name should only contain the letters **a-z**, **A-Z**, **the numbers 0-9**, and **the symbols '$' и '\_'**.
+* The name should only contain the letters **a-z**, **A-Z**, **the numbers 0-9**, and **the symbols '$' and '\_'**.
 * It is accepted in Java for the variables to always **begin** **with a lowercase letter** and to **contain lowercase letters**, and **each next word** in them should **start with an uppercase letter** (this naming is also known as **`camelCase`** convention).
 * You should be careful about uppercase and lowercase letters, because Java distinguishes them. For example, **`age`** and **`Age`** are different variables.
 * The names of the variables cannot coincide with keywords in the Java language, for example **`int`** is an invalid name for a variable.
@@ -245,70 +243,71 @@ In this section we will recall some **tricks and techniques** in programming wit
 
 ### Formatted output with printf()
 
-За отпечатването на дълги и сложни поредици от елементи можем да използваме метода **`printf(…)`**. Този метод е съкращение на "Print Formatted". Основната идея на **`printf(…)`** е да приеме **специален стринг**, форматиран със специални **форматиращи символи** и списък със стойностите, които трябва да се заместят на мястото на **"форматните спецификатори"**.
-
+For printing long and complex sequences of elements we can use the **`printf(…)`** method. This method is abbreviation of "Print Formatted". The main idea of **`printf(…)`** is to take a **special string** formatted with special **formatting symbols** and a comma separated list of values that have to substitute the **formatting specifiers**.
 
 ```java
 printf(<formatted string>, <param1>, <param2>, <param3>, …)
 ```
 
-Пример:
+Example:
 ```java
 String str = "some text";
 System.out.printf("%s", str);
-// Tова ще отпечата на конзолата "some text"
+// This will print on the console "some text"
 ```
-Първият аргумент на метода **`printf(…)`** е форматиращият стринг. В случая **`%s`** означава, че трябва да се разпечата стринг **`str`**, на мястото на **`%s`**.
+
+The first argument of the **`printf(…)`** method is the formatting string. In this case **`%s`** means that **`%s`** is going to be substituted by the string **`str`** and the value of **`str`** is what you'll see printed on the console.
 
 ```java
 String str1 = "some text";
 int number = 5;
 String str2 = "some more text";
 System.out.printf("%s %d %s \n", str1, number, str2);
-// Tова ще отпечата на конзолата "some text 5 some more text"
+// This will print on the console "some text 5 some more text"
 ```
 
-В този пример забелязваме, че можем да подаваме **не само текстови променливи**. Първият аргумент е **форматиращият низ**. Следва **поредица от аргументи**, които се заместват на местата, където има процент, следван от буква (`%s` или `%d`). Първият **`%s`** означава да се постави на негово място първия аргумент, подаден след форматиращия низ, в случая **`str1`**. Следва **`%d`**, което означава да се замести с първото целочислено число, подадено в аргументите. Последният специален символ е отново **`%s`**, което означава да се замести със следващия по ред символен низ **`str2`**. Следва **`\n`**, което е специален символ, който указва преминаване на нов ред. Можем да използваме дадена променлива **няколко пъти**.
+Notice that in this example we can pass **non-exclusively string variables**. The first argument is a **formatting string**. Following it comes a **sequence of arguments** that are replacing any instance of a formatting specifier (meaning `%` followed by a single character, e.g. `%s` or `%d`). The first **`%s`** means that the first argument that is passed after the formatting string, is going to take its place , in our case that's **`str1`**. After that there's **`%d`** which means that it's going to be substituted by the first integer number that is among the arguments. The last special symbol is **`%s`** which means that it'll be replaced by the next string that can be found in the arguments. Finally there's **`\n`** and that is a special symbol which denotes new line. A single variable can be used multiple times.
 
 ```java
 String str = "some text";
 int number = 5;
 System.out.printf("%s %d %s \n", str, number, str);
-// Tова ще отпечата на конзолата "some text 5 some text"
+// This will print on the console "some text 5 some text"
 ```
 
-### Закръгляне на числа с плаваща запетая
+### Rounding of floating point numbers
 
-Реалните типове с плаваща запетая, които използваме в Java, са **`float`** и **`double`**.
+Real numbers are represented in Java with the types **`float`** and **`double`**.
 
 ```java
 double number = 5.432432;
 System.out.println(Math.round(number));
-// Tова ще отпечата на конзолата "5"
+// This will print on the console "5"
 ```
 
-Ако първата цифра след десетичния знак е по-малкa от 5, както в примера по-горе, то закръглянето е надолу, но ако е 5 или по-голяма - закръглянето е нагоре, както е в примера по-долу:
+If the digit at the first decimal place is less than 5, just like in the example above, then the number is rounded down, otherwise - it's rounded up as you can see in the example below:
 
 ```java
 double number = 5.543;
 System.out.println(Math.round(number));
-// Tова ще отпечата на конзолата "6"
+// This will print on the console "6"
 ```
 
-### Други методи за закръгляне
+### Other Rounding Methods
 
-В случай, че искаме винаги да закръгляме надолу можем вместо **`Math.round(…)`** да използваме друг метод - **`Math.floor(…)`**, който винаги закръгля надолу. Например, ако имаме числото 5.99 и използваме **`Math.floor(5.99)`**, ще получим числото **5.0**.
+In case we always want to round down instead of `Math.round(…)` we can use another method – `Math.floor(…)`, which always rounds down. For example, if we have the number 5.99 and we use `Math.floor(5.99)`, we will get the number **5.0***.
 
-Можем и да направим точно обратното - винаги да закръгляме нагоре, използвайки метода **`Math.ceil(…)`**. Отново, ако имаме число, примерно 5.11 и използваме **`Math.ceil(5.11)`**, ще получим **6.0**. Ето и няколко примера:
+We can also do the exact opposite – to always round up using the method `Math.ceil(…)`. Again, if we have for example 5.11 and we use `Math.ceil(5.11)`, we will get **6.0**. Here are some examples:
+
 
 ```java
 double numberToFloor = 5.99;
 System.out.println(Math.floor(numberToFloor));
-// Tова ще отпечата на конзолата 5.0
+// This will print on the console 5.0
 
 double numberToCeiling = 5.11;
 System.out.println(Math.ceil(numberToCeiling));
-// Tова ще отпечата на конзолата 6.0
+// This will print on the console 6.0
 ```
 
 ### Formatting with 2 Digits After the Decimal Point
@@ -318,7 +317,7 @@ When we print numbers, we often need to round them to 2 digits after the decimal
 ```java
 double number = 5.432432;
 System.out.printf("%.2f%n", number);
-// Tова ще отпечата на конзолата 5.43
+// This will print on the console 5.43
 ```
 
 In the given example a formatting string **`%.2f`** is used, which rounds the number variable to two decimal places. We have to take into account that the number before the letter **`f`** means the number of decimal places up to which the result will be rounded (e.g. the formatting string can very well be **`%.3f`** or **`%.5f`**). When formatting a string using **`printf()`**, it's recommended to use  **`%n`** as a symbol for new line and not **`/n`**.
