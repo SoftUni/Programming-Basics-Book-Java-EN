@@ -1,8 +1,8 @@
-# Глава 5.1. Повторения (цикли)
+# Chapter 5.1. Repetitons (Loops)
 
-В настоящата глава ще се запознаем с конструкциите за **повторение на група команди**, известни в програмирането с понятието "**цикли**". Ще напишем няколко цикъла с използване на оператора **`for`** в най-простата му форма. Накрая ще решим няколко практически задачи, изискващи повторение на поредица от действия, като използваме цикли.
+In the present chapter we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its symplest form. Finally, we will solve some practical problems that require repeating series of actions, using loops.
 
-## Видео
+## Video
 
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: <a target="_blank"
@@ -10,40 +10,40 @@
   https://www.youtube.com/watch?v=MMLI-dGB3Ms</a>.
 </div>
 
-## Повторения на блокове код (for цикъл)
+## Repetitions of blocks of code (for loop)
 
-В програмирането често пъти се налага **да изпълним блок с команди няколко пъти**. За целта се използват т.нар. **цикли**. Нека разгледаме един пример за **`for` цикъл**, който преминава последователно през числата от 1 до 10 и ги отпечатва: 
+Often in programming we have to  **execute a block of code multiple times**. In order to do that we use the so called **loops**. Let us look at an example of a **`for` loop** that passes sequentially through the numbers from 1 to 10 and prints them: 
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-Цикълът започва с **оператора `for`** и преминава през всички стойности за дадена променлива в даден интервал, например всички числа от 1 до 10 включително, и за всяка стойност изпълнява поредица от команди.
+The loop starts with the **operator `for`** and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
 
-В декларацията на цикъла се задава **начална стойност** и **крайна стойност**. **Тялото на цикъла** се огражда с къдрави скоби **`{ }`** и представлява блок с една или няколко команди. На фигурата по-долу е показана структурата на един **`for` цикъл**:
+Upon declaring the loop, you can specify a **start value** and an **end value**. **The body of the loop** is enclosed in curly brackets **`{ }`** and represents a block of one or multiple commands. The figure below shows the structure of a **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-02.png)
 
-В повечето случаи един **`for` цикъл** се завърта от **`1`** до **`n`** (например от 1 до 10). Целта на цикъла е да се премине последователно през числата 1, 2, 3, …, n и за всяко от тях да се изпълни някакво действие. В примера по-горе променливата **`i`** приема стойности от 1 до 10 и в тялото на цикъла се отпечатва текущата стойност. Цикълът се повтаря 10 пъти и всяко от тези повторения се нарича "**итерация**".
+In most cases a **`for` loop** is run from **`1`** to **`n`** times(for example from 1 to 10). The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action.  In the example above, the **`i`** variable is assigned values from 1 to 10 and the current value is printed in the body of the loop. The loop repeats 10 times and each of these repetitions is called an "**iteration**".
 
-### Пример: числа от 1 до 100
+### Example: Numbers from 1 to 100
 
-Да се напише програма, която **печата числата от 1 до 100**. Програмата не приема вход и отпечатва числата от 1 до 100 едно след друго, по едно на ред.
+Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line. 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата с **`for` цикъл** , с който преминаваме с променливата **`i`** през числата от 1 до 100 и ги печатаме в тялото на цикъла:
+We can solve the problem using a **`for` loop** , which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
-**Стартираме** програмата с [**Shift+F10**] и я **тестваме**:
+**Start** the program with [**Shift+F10**] and **test it**:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#0](https://judge.softuni.bg/Contests/Practice/Index/655#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#0](https://judge.softuni.bg/Contests/Practice/Index/655#0).
 
 
-Трябва да получите **100 точки** (напълно коректно решение).
+You should get **100 точки** (fully accurate solution).
 
 ## Code Snippet за for цикъл в IntelliJ IDEA
 
