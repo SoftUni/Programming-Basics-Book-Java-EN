@@ -339,98 +339,98 @@ After we have done the calculations, we have to only print the result in the **`
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5](https://judge.softuni.bg/Contests/Practice/Index/665#5).
 
 
-## Варианти на методи
+## Method Overloading
 
-В много езици за програмиране един и същ метод може да е деклариран в **няколко варианта** с еднакво име и различни параметри. Това е известно с термина “**method overloading**”. Сега нека разгледаме как се пишат тези overloaded methods.
+In many programming languages same methods can be declared in **different variants** with the **same name and different parameters**. This goes by the term “**method overloading**”. Now let's see how to write these overloaded methods.
 
-### Сигнатура на метода
+### Method Signature
 
-В програмирането **начинът**, по който се **идентифицира** един метод, е чрез **двойката елементи** от декларацията му – **име** на метода и **списък** от неговите параметри. Тези два елемента определят неговата **спецификация**, т. нар. **сигнатура** на метода. 
+In programming methods are **identified** through the elements of their declaration: **name** of the method + a list of its **parameters**. These two elements define its specification, the so called “**method signature**”.
 
 ![](assets/chapter-10-images/13.Method-signature-01.png)
 
-В този пример сигнатурата на метода е неговото име (**`print`**), както и неговият параметър (**`String text`**).
+In this example the method's signature is its name (**`print`**), together with its parameter (**`String text`**).
 
-Ако в програмата ни има **методи с еднакви имена**, но с **различни сигнатури**, то казваме, че имаме **варианти на методи (method overloading)**.
+If our program holds several **methods with the same name**, but with **different lists of parameters (signatures)**, we can say that we use **method overloading**.
 
-### Варианти на методи
+### Overloading Methods
 
-Както споменахме, ако използваме **едно и също име за няколко метода с различни сигнатури**, то това означава, че имаме **варианти на метод**. Кодът по-долу показва как три различни метода могат да са с едно и също име, но да имат различни сигнатури и да изпълняват различни действия.
+As we mentioned, if you use **the same name for several methods with different signatures**, this means that you are **overloading a method**. The code below shows how three different methods can use the same name, but have different signatures and execute different actions.
 
 ![](assets/chapter-10-images/14.Method-overloading-01.png)
 
-### Сигнатура и тип на връщаната стойност
+### Signature and Return Value Type
 
-Важно е да отбележим, че **връщаният тип като резултат** на метода **не е част от сигнатурата му**. Ако връщаната стойност беше част от сигнатурата на метода, то няма как компилаторът да знае кой метод точно да извика.
+It is important to say that **the returned type as a result** of the method **is not a part of its signature**. If the returned type was a part of the signature, then the compiler doesn't know which method exactly to call (there is an ambiguity).
 
-Нека разгледаме следния пример - имаме два метода с различен тип на връщаната стойност. Въпреки това IntelliJ IDEA ни показва, че има грешка, защото сигнатурите и на двата са еднакви. Съответно при опит за извикване на метод с име **`print()`**, компилаторът не би могъл да прецени кой от двата метода да изпълни.
+Let's look at the following **example**: we have two methods with different return types. Despite the fact that IntelliJ IDEA shows that there is an error, our compiler won't know which of the two methods to invoke because they are with the same name **`print()`**.
 
 ![](assets/chapter-10-images/14.Method-overloading-02.png)
 
-### Пример: по-голямата от две стойности
+### Example: Greater of Two Values
 
-Като входни данни са дадени две стойности от един и същ тип. Стойностите могат да са от тип **`int`**, **`char`** или **`String`**. Да се създаде метод **`getMax()`**, който връща като резултат по-голямата от двете стойности.
+The input is two values of the same type. The values can be of **`int`**, **`char`** or **`String`** type. Create a method **`getMax()`** that returns as a result the greater of the two values.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |int<br>2<br>16|16|char<br>a<br>z|z|string<br>Ivan<br>Todor|Todor|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да създадем този метод, първо трябва да създадем три други метода с едно и също име и различни сигнатури. Първо създаваме метод, който ще сравнява цели числа.
+To complete our task we need to create three methods with the same name and different signatures. First we create a method, which will compare integers.
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-01.png)
 
-Следвайки логиката от предходния метод, създаваме такъв със същото име, който обаче ще сравнява символи.
+Following the logic of the previous method we create another one with the same name, but this one will compare characters.
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-02.png)
 
-Следващият метод, който трябва да създадем, ще сравнява низове. Тук логиката ще е малко по-различна, тъй като стойностите от тип **`String`** не позволяват да бъдат сравнявани чрез операторите **`<`** и **`>`**. Ще използваме метода **`compareTo(…)`**, който връща числова стойност: по-голяма от 0 (сравняваният обект е по-голям), по-малка от 0 (сравняваният обект е по-малък) и 0 (при два еднакви обекта).
+The next method we need to create will compare strings. The logic here is a bit different from the previous two methods because variables of **`String`** type cannot be compared with the operators **`<`** and **`>`**. We will use the method **`compareTo(…)`**, which returns a numerical value: larger than 0 (the compared object is larger), smaller than 0 (the compared object is smaller) and 0 (the two objects are the same).
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-03.png)
 
-Последната стъпка е да прочетем входните данни, да използваме подходящи променливи и да извикаме метода **`getMax()`** от тялото на метода **`main()`**.
+The last step is to read the input data, to use the appropriate variables and to invoke the method **`getMax()`** from the body of the **`main()`** method.
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#6](https://judge.softuni.bg/Contests/Practice/Index/665#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#6](https://judge.softuni.bg/Contests/Practice/Index/665#6).
 
 
-## Именуване на методи. Добри практики при работа с методи
+## Naming Methods. Best Practices when working with methods
 
-В тази част ще се запознаем с някои **утвърдени практики** при работа с методи, свързани с именуването, подредбата на кода и неговата структура.
+In this chapter, we will introduce you to some of the **best practices** when working with methods. They will be related to naming, organizing our code and it's structure. 
 
-### Именуване на методи
+### Naming Methods
 
-Когато наименуваме даден метод е препоръчително да използваме **смислени имена**. Тъй като всеки метод **отговаря** за някаква част от нашия проблем, то при наименуването му трябва да вземем предвид **неговата функция**, т.е. добра практика е **името да описва неговата цел**. 
+When we name a method it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **task** which  the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
 
-Задължително е името да започва с **малка буква** и трябва да е съставено от глагол или от двойка: глагол + съществително име. Форматирането на името става, спазвайки **Lower Case Camel** конвенцията, т.е. **първата дума започва с малка буква, а всяка следваща започва с главна буква**. Кръглите скоби **`( `** и **`)`** винаги следват името му. 
+It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets  **`( `** and **`)`** are always after the name of the method.
 
-Всеки метод трябва да изпълнява самостоятелна задача, а името на метода трябва да описва каква е неговата функция. 
+Every method must do an independent task and the name must describe its role.
 
-Няколко примера за **коректно** именуване на методи:
+Here are some examples of **correctly** named methods:
 * **`findStudent`**
 *	**`loadReport`**
 *	**`sine`**
 
-Няколко примера за **лошо** именуване на методи:
+Some examples of **badly** named methods:
 *	**`Method1`**
 *	**`DoSomething`**
 *	**`HandleStuff`**
 *	**`SampleMethod`**
 *	**`DirtyHack`**
 
-Ако не можем да измислим подходящо име, то най-вероятно методът решава повече от една задача или няма ясно дефинирана цел и тогава трябва да помислим как да го разделим на няколко отделни метода.
+If we can't come up with a good name it's probably because our method does more than one job or it doesn't have a clear task. We must think of a way to divide the method into different methods.
 
-### Именуване на параметрите на методите
+### Naming parameters of methods
 
-При именуването на **параметрите** на метода важат почти същите правила, както и при самите методи. Разликите тук са, че за имената на параметрите е добре да използваме съществително име или двойка от прилагателно и съществително име, както и че при именуване на параметрите също се спазва **`lowerCamelCase`** конвенцията. Трябва да отбележим, че е добра практика името на параметъра да **указва** каква е **мерната единица**, която се използва при работа с него.
+When naming **the parameters** of a method you can apply almost the same rules as with the methods themselves. The difference here is that it is good for the names of the parameters to use a noun or a couple of an adjective and a noun, and when naming the parameters, we use the **`lowerCamelCase`** convention, i.e. **each word except for the first one starts with uppercase**. We should note that it is a good practice that the name of the parameter **shows** what **unit** is used when working with it.
 
-Няколко примера за **коректно** именуване на параметри на методи:
+Here are some examples of **correctly** named parameters of methods:
 * **`firstName`**
 *	**`report`**
 *	**`speedKmH`**
@@ -438,7 +438,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5
 *	**`fontSizeInPixels`**
 *	**`font`**
 
-Няколко примера за **некоректно** именуване на параметри:
+Some examples of **incorrectly** named parameters: 
 *	**`p`**
 *	**`p1`**
 *	**`p2`**
@@ -446,149 +446,152 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5
 * **`LastName`**
 * **`last_name`**
 
-### Добри практики при работа с методи
+### Good Practices When Working with Methods
 
-Нека отново припомним, че един метод трябва да изпълнява **само една** точно определена **задача**. Ако това не може да бъде постигнато, тогава трябва да помислим как да **разделим** метода на няколко отделни такива. Както казахме, името на метода трябва точно и ясно да описва неговата цел. Друга добра практика в програмирането е да **избягваме** методи, по-дълги от екрана ни (приблизително). Ако все пак кода стане много обемен, то е препоръчително метода да се **раздели** на няколко по-кратки, както в примера по-долу.
+We must keep in mind that a method must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
+As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** methods that are longer than our screen. If this happens it's recommended to **split** the method into smaller ones as shown in the example below.
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-### Структура и форматиране на кода
+### Structure and formatting of the code
 
-При писането на методи трябва да внимаваме да спазваме коректна **индентация** (отместване по-навътре на блокове от кода).
+When writing methods we must keep in mind to follow a correct **indication** (move more inward blocks of the code).
 
-Пример за **правилно** форматиран Java код:
+Here are some examples of **correctly** formatted Java code:
 
 ![](assets/chapter-10-images/16.Good-practice-01.png)
 
-Пример за **некоректно** форматиран Java код:
+Some examples of **incorrectly** formatted Java code:
 
 ![](assets/chapter-10-images/16.Good-practice-02.png)
 
-Когато заглавният ред на метода е **твърде дълъг**, се препоръчва той да се раздели на няколко реда, като всеки ред след първия се отмества с две табулации надясно (за по-добра четимост):
+When the headline row of the method is **too long**, it's recommended to be split into several rows, and every row after the first should be moved 2 tabulations to right (for clear readability):
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-Друга добра практика при писане на код е да **оставяме празен ред** между методите, след циклите и условните конструкции. Също така, опитвайте да **избягвате** да пишете **дълги редове и сложни изрази**. С времето ще установите, че това подобрява четимостта на кода и спестява време. 
+Another good practice is to **leave an empty row** between methods, after loops, and conditional statements. You should always try to **avoid** writing **long rows and complicated expressions**. Over time you will find out that improves the readability and saves time.
 
-Препоръчваме винаги да се **използват къдрави скоби за тялото на проверки и цикли**. Скобите не само подобряват четимостта, но и намалят възможността да бъде допусната грешка и прогрaмата ни да се държи некоректно.
+We recommend you to always **use curly brackets for the body of conditional statements and loops**. The brackets don't just improve the readability but also reduce the possibility of making a mistake.
 
-## Какво научихме от тази глава?
+## What have we learned from this chapter?
 
-В тази глава се запознахме с базовите концепции при работа с методи:
-* Научихме, че **целта** на методите е да **разделят** големи програми с много редове код на по-малки и кратки задачи.
-* Запознахме се със **структурата** на методите, как да ги **декларираме** и **извикваме** по тяхното име. 
-* Разгледахме примери за методи с **параметри** и как да ги използваме в нашата програма.
-* Научихме какво представляват **сигнатурата** и **връщаната стойност** на метода, както и каква е функцията на оператора **`return`** в методите.
-* Запознахме се с **добрите практики** при работа с методи, как да именуваме методите и техните параметри, как да форматираме кода и други.
+In this chapter we have learned base concepts about working with methods:
+* Learned that **the goal** of a method is to **split** programs with many rows to code with smaller and shorter parts.
+* Comprehended the idea of the **structure** of methods and how to **declare** and **invoke** them by their name.
+* Looked into different examples of methods with **parameters** and how to use them in our program.
+* Learned what is **signature** and **return value** of the method as well as what is the role of the **`return`** operator.
+* Studied **good practices** for working with methods, how to name them and their parameters and how to format our code and others.
 
 
-## Упражнения
+## Exercises
 
-За да затвърдим работата с методи, ще решим няколко задачи. В тях се изисква да напишете метод с определена функционалност и след това да го извикате като му подадете данни, прочетени от конзолата, точно както е показано в примерния вход и изход.
+To improve what we have learned we will solve a few exercises. In them, it is required to write functions with specific functionality and then call it with values as shown in the example.
 
-### Задача: "Hello, Име!"
+To improve what we have learned we will solve a few exercises. In them, it is required to write method with specific functionality and then call it with values read from the console, as shown in the example. 
 
-Да се напише метод, който получава като параметър име и принтира на конзолата "*Hello, \<name\>!*".
+### Problem: "Hello, Name!"
 
-#### Примерен вход и изход
+Write a method which takes a name as a parameter and prints on the console "*Hello, \<name\>!*".
 
-|Вход|Изход|
+#### Sample Input and Output
+
+|Input|Output|
 |---|---|
 |Peter|Hello, Peter!|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте метод **`printName(string name)`** и го имплементирайте, след което в главната програма прочетете от конзолата име на човек и извикайте метода като му подадете прочетеното име.
+Define a method **`printName(String name)`** and implement it, after which read a name from the console in the main program and invoke the method by feeding it the name.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#7](https://judge.softuni.bg/Contests/Practice/Index/665#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#7](https://judge.softuni.bg/Contests/Practice/Index/665#7).
 
 
-### Задача: по-малко число
+### Problem: Min Method
 
-Да се създаде метод **`getMin(int a, int b)`**, който връща по-малкото от две числа. Да се напише програма, която чете като входни данни от конзолата три числа и печата най-малкото от тях. Да се използва метода **`getMin(…)`**, който е вече създаден.
+Create a method **`getMin(int a, int b)`**, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method **`getMin(…)`**, which you have already created.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте метод **`getMin(int a, int b)`** и го имплементирайте, след което го извикайте от главната програма както е показано по-долу. За да намерите минимума на три числа, намерете първо минимума на първите две от тях и след това минимума на резултата и третото число:
+Define a method **`getMin(int a, int b)`** and implement it.After that call it from the main method as shown in the example below. To find the minimum of 3 numbers, first find the minimum of the first two and then the result from their result and the third one.
 
 ```java
 int min = getMin(getMin(num1, num2), num3);
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#8](https://judge.softuni.bg/Contests/Practice/Index/665#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#8](https://judge.softuni.bg/Contests/Practice/Index/665#8).
 
 
-### Задача: повтаряне на низ
+### Problem: String Repeater
 
-Да се напише метод **`repeatString(str, count)`**, който получава като параметри променлива от тип **`String`** и цяло число **`n`** и връща низа, повторен **`n`** пъти. След това резултатът да се отпечата на конзолата.
+Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this print the result on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Допишете метода по-долу като добавите съединяването входния низ към резултата в цикъла:
+Write method and add the input string to the result in the for loop:
 
 ![](assets/chapter-10-images/17.Repeated-string-01.png)
 
-Имайте предвид, че в езика Java съединяването на низове в цикъл води до лоша производителност и не се препоръчва. Потърсете и пробвайте по-ефективни решения тук: https://stackoverflow.com/questions/1235179.
+Keep in mind that **in Java concatenating strings in loops leads to bad performance** and is not recommended. Learn more at: https://stackoverflow.com/questions/1235179.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#9](https://judge.softuni.bg/Contests/Practice/Index/665#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#9](https://judge.softuni.bg/Contests/Practice/Index/665#9).
 
 
-### Задача: n-та цифра
+### Problem: N-th Digit
 
-Да се напише метод **`findNthDigit(number, index)`**, който получава число и индекс N като параметри и печата N-тата цифра на числото (като се брои от дясно на ляво, започвайки от 1). След това, резултатът да се отпечата на конзолата.
+Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that print the result on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |83746<br>2|4|93847837<br>6|8|2435<br>4|2|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да изпълним алгоритъма, ще използваме **`while`** цикъл, докато дадено число не стане 0. На всяка итерация на **`while`** цикъла ще проверяваме дали настоящият индекс на цифрата не отговаря на индекса, който търсим. Ако отговаря, ще върнем като резултат цифрата на индекса (**`number % 10`**). Ако не отговаря, ще премахнем последната цифра на числото (**`number = number / 10`**). Трябва да следим коя цифра проверяваме по индекс (от дясно на ляво, започвайки от 1). Когато намерим цифрата, ще върнем индекса. 
+In order to do the algorithm use a **`while`** loop, until the given number equals 0. At each iteration of the **`while`** loop check if the current index of the digit is equal to the index you are looking for. If it is, return as a result the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#10](https://judge.softuni.bg/Contests/Practice/Index/665#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#10](https://judge.softuni.bg/Contests/Practice/Index/665#10).
 
 
-### Задача: число към бройна система
+### Problem: Integer to Base
 
-Да се напише метод **`integerToBase(number, toBase)`**, който получава като параметри цяло число и основа на бройна система и връща входното число, конвертирано към посочената бройна система. След това, резултатът да се отпечата на конзолата. Входното число винаги ще е в бройна система 10, а параметърът за основа ще е между 2 и 10.
+Write a method **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this the result should be printed on the console. The input number will always be in decimal numeral system, and the base parameter will be between 2 and 10.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|----|---|---|---|---|
 |3<br>2|11|4<br>4|10|9<br>7|12|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да решим задачата, ще декларираме стрингова променлива, в която ще пазим резултата. След това трябва да изпълним следните изчисления, нужни за конвертиране на числото.
-* Изчисляваме **остатъка** от числото, разделено на основата.
-* **Вмъкваме остатъка** от числото в началото на низа, представящ резултата.
-* **Разделяме** числото на основата.
-* **Повтаряме** алгоритъма, докато входното число не стане 0.
+In order to solve the problem, we will declare a string, in which we will keep the result. After this we need to do the following calculations to convert the number.
+* Calculate **the remainder** of the number, divided by the base.
+* **Insert the remainder** in the beginning of the string.
+* **Divide** the number to the base.
+* **Repeat** the algorithm, until the input integer equals 0.
 
-Допишете липсващата логика в метода по-долу:
+Write the missing logic in the method below:
 
 ```java
 static String integerToBase(int number, int toBase) {
@@ -600,118 +603,119 @@ static String integerToBase(int number, int toBase) {
 }
 ```
 
-#### Тестване в Judge системата 
+#### Testing in the Judge System 
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#11](https://judge.softuni.bg/Contests/Practice/Index/665#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#11](https://judge.softuni.bg/Contests/Practice/Index/665#11).
 
 
-### Задача: известия
+### Problem: Notifications
 
-Да се напише програма, която прочита цяло число **`n`** и на следващите редове въвежда **`n`** **съобщения** (като за всяко съобщение се прочитат по няколко реда). Всяко съобщение започва с **`messageType`**: **`success`**, **`warning`** или **`error`**:
-   - Когато **`messageType`** е **`success`** да се четат **`operation`** + **`message`** (всяко на отделен ред).
-   - Когато **`messageType`** е **`warning`** да се чете само **`message`**.
-   - Когато **`messageType`** е **`error`** да се четат **`operation`** + **`message`** + **`errorCode`** (всяко на отделен ред).
+Write a program, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
+- When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
+- When **`messageType`** is “**`warning`**” read only **`message`** (from a new line).
+- When **`messageType`** is “**`error`**” read **`operation`** + **`message`** + **`errorCode`** (each from a new line).
 
-На конзолата да се отпечата **всяко прочетено съобщение**, форматирано в зависимост от неговия **`messageType`**. Като след заглавния ред за всяко съобщение да се отпечатат толкова на брой символа **`=`**, **колкото е дълъг** съответният **заглавен ред** и да се сложи по един **празен ред** след всяко съобщение (за по-детайлно разбиране погледнете примерите). 
+Print on the console **each read message**, formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
 
-Задачата да се реши с дефиниране на четири метода: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** и **`readAndProcessMessage()`**, като само последният метод да се извиква от главния **`main()`** метод:
+The problem should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is invoked by the **`main()`** method:
 
 ![](assets/chapter-10-images/18.Notifications-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Дефинирайте и имплементирайте посочените четири метода.
+Define and implement the four shown methods.
 
-В **`readAndProcessMessage()`** прочетете типа съобщение от конзолата и според прочетения тип прочетете останалите данни (още един два или три реда). След това извикайте съответния метод за печатане на съответния тип съобщение.
+In **`ReadAndProcessMessage()`** read the type of message from the console and according the read type read the rest of the data (one, two or three more lines). After that invoke the method for printing the given type of message.
 
-Ако четете от конзолата от няколко отделни метода, имайте предвид, че трябва **да създадете `Scanner` обект само веднъж** (например в главния метод) и да го предавате към другите методи като параметър. Създаването на няколко **`Scanner`** обекта, които четат от конзолата, може да не работи както очаквате.
+If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a a parameter.  Creating more than one **`Scanner`** which reads from the console might not work as expected.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#12](https://judge.softuni.bg/Contests/Practice/Index/665#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#12](https://judge.softuni.bg/Contests/Practice/Index/665#12).
 
 
-### Задача: числа към думи
+### Problem: Numbers to Words
 
-Да се напише метод **`letterize(number)`**, който прочита цяло число и го разпечатва с думи на английски език според условията по-долу:
-* Да се отпечатат с думи стотиците, десетиците и единиците (и евентуални минус) според правилата на английския език.
-* Ако числото е по-голямо от **999**, трябва да се принтира "**too large**".
-* Ако числото е по-малко от **-999**, трябва да се принтира "**too small**".
-* Ако числото е **отрицателно**, трябва да се принтира "**minus**" преди него.
-* Ако числото не е съставено от три цифри, не трябва да се принтира.
+Write a method **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
+* Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
+* If the number is larger than **999**, you must print "**too large**".
+* If the number is smaller than **-999**, you must print "**too small**".
+* If the number is **negative**, you must print "**minus**" before it.
+* If the number is not built up of three digits, you shouldn't print it.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3<br>999<br>-420<br>1020|nine-hundred and ninety nine<br>minus four-hundred and twenty<br>too large|2<br>15<br>350|fifteen<br>three-hundred and fifty|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем първо да отпечатаме **стотиците** като текст - (числото / 100) % 10, след тях **десетиците** - (числото / 10) % 10 и накрая **единиците** - (числото % 10).
+We can first print **the hundreds** as a text - (the number / 100) % 10, after that **the tens** –  (the number / 10) % 10 and at the end **the ones** – (the number % 10).
 
-Първият специален случай е когато числото е точно **закръглено на 100** (напр. 100, 200, 300 и т.н.). В този случай отпечатваме "one-hundred", "two-hundred", "three-hundred" и т.н.
+The first special case is when the number is exactly **rounded to 100** (e.g. 101, 305, 609 etc.). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
 
-Вторият специален случай е когато числото, формирано от последните две цифри на входното число, е **по-малко от 10** (напр. 101, 305, 609 и т.н.). В този случай отпечатваме "one-hundred and one", "three-hundred and five", "six-hundred and nine" и т.н.
+The second special case is when the number formed by the last two digits of the input number is **less than 10**  (e.g. 101, 305, 609 etc.). In this case we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
 
-Третият специален случай е когато числото, формирано от последните две цифри на входното число, е **по-голямо от 10 и по-малко от 20** (напр. 111, 814, 919 и т.н.). В този случай отпечатваме "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" и т.н.
+The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** (e.g. 111, 814, 919 etc.). In this case we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#13](https://judge.softuni.bg/Contests/Practice/Index/665#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#13](https://judge.softuni.bg/Contests/Practice/Index/665#13).
 
 
-### Задача: криптиране на низ
+### Problem: String Encryption
 
-Да се напише метод **`encrypt(char letter)`**, който криптира дадена буква по следния начин:
-* Вземат се първата и последна цифра от ASCII кода на буквата и се залепят една за друга в низ, който ще представя резултата. 
-* Към началото на стойността на низа, който представя резултата, се залепя символа, който отговаря на следното условие:
-  * ASCII кода на буквата + последната цифра от ASCII кода на буквата.
-* След това към края на стойността на низа, който представя резултата, се залепя символа, който отговаря на следното условие:
-  * ASCII кода на буквата - първата цифра от ASCII кода на буквата.
-* Методът трябва да върне като резултат криптирания низ.
+Write a method **`encrypt(char letter)`**, which encrypts a given letter in the following way:
+* It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
+* In the beginning of the string, which represents the result, we will insert the symbol which matches the following condition:
+  * ASCII code of the letter + the last digit of the ASCII code of the letter.
+* After that in the end of the string, which represents the result, you concatenate the character which matches the following condition:
+  * ASCII code of the letter - the first digit of the ASCII code of the letter.
+* The method should return the encrypted string.
 
-Пример:
+Example:
 * j &rarr; **p16i**
-  * ASCII кодът на **j** e **106** &rarr; Първа цифра - **1**, последна цифра - **6**.
-  * Залепяме първата и последната цифра &rarr; **16**.
-  * Към **началото** на стойността на низа, който представя резултата, залепяме символа, който се получава от сбора на ASCII кода + последната цифра &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
-  * Към **края** на стойността на низа, който представя резултата, залепяме символа, който се получава от разликата на ASCII кода - първата цифра &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
-  
-Използвайки метода, описан по-горе, да се напише програма, която чете **поредица от символи**, **криптира ги** и отпечатва резултата на един ред.
+  * ASCII code of **j** is **106** &rarr; First digit – **1**, last digit – **6**.
+  * We concatenate the first and the last digit &rarr; **16**.
+  * At **the beginning** of the string, which represents the result, concatenate the symbol, which you get from the sum of the ASCII code + the last digit &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
+  * At **the end** of the string, which represents the result, concatenate the symbol, which you get from subtracting the ASCII code – the first digit &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
 
-Приемаме, че входните данни винаги ще бъдат валидни. Главният метод трябва да прочита входните данни, подадени от потребителя – цяло число **`n`**, следвани от по един символ на всеки от следващите **`n`** реда.
+Using the method shown above, write a program which takes **a sequence of characters**, **encrypts them** and prints the result on one line.
 
-Да се криптират символите и да се добавят към криптирания низ. Накрая като резултат трябва да се отпечата **криптиран низ от символи** като в следващия пример.
+The input data will always be valid. The Main method must read the data given by the user – an integer **`n`**, followed by a character for each of the following **`n`** lines.
 
-Пример:
+Encrypt the symbols and add them to the encrypted string. In the end, as a result, you must print **an encrypted string** as in the following example.
+
+Example:
 * S, o, f, t, U, n, i &rarr; V83Kp11nh12ez16sZ85Mn10mn15h
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7<br>S<br>o<br>f<br>t<br>U<br>n<br>i| V83Kp11nh12ez16sZ85Mn10mn15h |
 
-|Вход|Изход| 
+|Input|Output| 
 |---|---|
 |7<br>B<br>i<br>r<br>a<br>H<br>a<br>x| H66<n15hv14qh97XJ72Ah97xx10w |
 
-#### Насоки и подсказки
-На променливата от тип **`String`**, в която ще се пази стойността на резултата, ще присвоим първоначална стойност **`String str = ""`** (Empty String / празен стринг). Трябва да се завърти цикъл **`n`** пъти, като на всяка итерация към променливата, в която пазим стойността на резултата, ще прибавяме криптирания символ. 
+#### Hints and Guidelines
 
-За да намерим първата и последната цифри от ASCII кода, ще използваме алгоритъма, който използвахме за решаване на задача "N-та цифра", а за да създадем низа, ще процедираме както в задачата "Число към бройна система".
+Our variable from type **`String`** which will store the value of the result, will have initial value of **`String str = ""`** (Empty String). The loop should iterate **`n`** times, and in every iteration we will add to our variable the encrypted symbol.
 
-#### Тестване в Judge системата
+To find the first and the last digit from the ASCII code, we will use the algorithm, that we have used when solving the "Integer to Base" problem.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#14](https://judge.softuni.bg/Contests/Practice/Index/665#14).
+#### Testing in the Judge System
+
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#14](https://judge.softuni.bg/Contests/Practice/Index/665#14).
