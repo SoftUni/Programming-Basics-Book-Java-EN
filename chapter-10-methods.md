@@ -223,7 +223,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#3
 
 ## Returning Result from a Method
 
-Up to this point, we have viewed methods that do a specific task. For example printing a text, number, or a figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of function in this part.
+Up to this point, we have viewed methods that do a specific task. For example printing a text, number, or a figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of method in this part.
 
 ### Types of Returned Values
 
@@ -253,7 +253,7 @@ The **`return`** operator can also be used in **`void`** methods. This way the m
 
 **There are cases** where **`return`** can be called from multiple places in the method, but only if there are **certain** input conditions.
 
-We have a method in the example below, which compares two numbers and returns a result respectively **`-1`**, **`0`**, or **`1`** depending on if the first argument is smaller, equal, or, larger than the second argument, given to the function. The method uses the keyword **`return`** in three different places, to return three different values according to the logic of comparing the numbers:
+We have a method in the example below, which compares two numbers and returns a result respectively **`-1`**, **`0`**, or **`1`** depending on if the first argument is smaller, equal, or, larger than the second argument, given to the method. The method uses the keyword **`return`** in three different places, to return three different values according to the logic of comparing the numbers:
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
@@ -318,7 +318,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#4
 
 ### Example: Power of a number
 
-Write a function that calculates and returns the result the power of a number. 
+Write a method that calculates and returns the result the power of a number. 
 
 #### Sample Input and Output
 
