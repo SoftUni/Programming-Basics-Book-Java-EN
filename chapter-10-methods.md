@@ -8,7 +8,7 @@ Until this moment, we have found out that while **writing** a programming code f
 
 A block of code designed to perform a particular task and which we have separated logically is called **method**. **Methods – slices of code, that are named** by us in a specific way.They can be called numerous times when we need them, and they will be run that many times as we want to.
 
-One **method** can be **called** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
+One **method** can be **invoked** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
 
 ### Simple methods
 
@@ -51,291 +51,292 @@ After we have declared a method, its **implementation (body)** follows. In the b
 
 When declaring a variable in the body of a method, it is called a **local** variable of the method. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
-### Извикване на методи
+### Invoking a method
 
-Извикването на метод представлява **стартирането на изпълнението на кода**, който се намира в **тялото на метода**. Това става като изпишем **името** му, последвано от кръглите скоби **`()`** и знака **`;`** за край на реда. Ако методът ни изисква входни данни, то те се подават в скобите **`()`**, като последователността на фактическите параметри трябва да съвпада с последователността на подадените при декларирането на метода. Ето един пример:
+**Invoking** a method means **starting to execute the code**, which is in **the body of the method**. This happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as the one of the given parameters when declaring the method. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
-Даден метод може да бъде извикан от **няколко места** в нашата програма. Единият начин е да бъде извикан от **главния метод**.
+A method can be invoked from **several places** in the program. One way is to call it in **the main method**.
 
 ![](assets/chapter-10-images/03.Invoking-methods-02.png)
 
-Метод може да бъде извикан и от **тялото на друг метод**, който **не** е главния метод на програмата ни.
+A method can also be invoked from **the body of another method**, which is **not** the main method of the program.
 
 ![](assets/chapter-10-images/03.Invoking-methods-03.png)
 
-Съществува вариант методът да бъде извикан от **собственото си тяло**. Това се нарича **рекурсия** и можете да намерите повече информация за нея в [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) или да потърсите сами в Интернет.
+A method can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
 
-Важно е да знаем, че ако един метод е деклариран в даден клас, то той може да бъде извикван преди реда, на който е деклариран.
+It is important to know that if a method is declared in a class, it can be called before the line, on which it has been declared.
 
-### Пример: празна касова бележка
+### Example: Blank Receipt
 
-Да се напише метод, който печата празна касова бележка. Методът трябва да извиква други три метода: един за принтиране на заглавието, един за основната част на бележката и един за долната част.
+Write a method that prints a blank receipt. The method should call another three methods: one to print the header, one for the middle part of the receipt and one for the lower part.
 
-|Част от касовата бележка|Текст|
+|Part of cash receipt|Text|
 |---|---|
-|Горна част|CASH RECEIPT<br>------------------------------|
-|Средна част|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
-|Долна част|------------------------------<br>(c) SoftUni|
+|Upper part|CASH RECEIPT<br>------------------------------|
+|Middle part|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
+|Lower part|------------------------------<br>(c) SoftUni|
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|(няма)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
+|(no input)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е да създадем **`void`** метод за **принтиране на заглавната част** от касовата бележка (header). Нека му дадем смислено име, което описва кратко и ясно задачата му, например **`printReceiptHeader`**. В тялото му ще напишем кода от примера по-долу:
+The first step is to create a **`void`** method to **print the upper part** of the receipt (header). Let's give it a meaningful name, which describes what the method does, e.g. **`PrintReceiptHeader`**. In its body write the code from the example below:
 
 ![](assets/chapter-10-images/04.Print-receipt-01.png)
 
-Съвсем аналогично ще създадем още два метода **за разпечатване на средната част** на бележката (тяло) **`printReceiptBody`** и **за разпечатване на долната част** на бележката (footer) **`printReceiptFooter`**.
+In the same way we'll create two more methods **to print the middle part** of the receipt (body) **`PrintReceiptBody`** and **to print the lower part** of the receipt (footer) **`PrintReceiptFooter`**.
 
-След това ще създадем и **още един метод**, който ще извиква трите метода, които написахме до момента един след друг:
+After this we will create **another method**, which will invoke the three methods we already wrote, one after the other:
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-Накрая ще **извикаме** метода **`printReceipt`** от тялото на главния **`main`** метод за нашата програма:
+In the end we'll **invoke** the **`PrintReceipt`** method from the body of the **`Main`** method of our program:
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Програмата с общо пет метода, които се извикват един от друг, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в judge системата: [https://judge.softuni.bg/Contests/Practice/Index/665#0](https://judge.softuni.bg/Contests/Practice/Index/665#0).
+The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.bg/Contests/Practice/Index/665#0](https://judge.softuni.bg/Contests/Practice/Index/665#0).
 
 
-## Методи с параметри
+## Methods with Parameters
 
-Много често в практиката, за да бъде решен даден проблем, методът, с чиято помощ постигаме това, се нуждае от **допълнителна информация**, която зависи от задачата му. Именно тази информация представляват **параметрите на метода** и неговото поведение зависи от тях. 
+Frequently in order to solve a problem, the method by which we do this needs **additional information**, which depends on its purpose. This is precisely the information that **the method parameters** are, and its behavior depends on them. 
 
-### Използване на параметри в методите
+### Using Parameters in Methods
 
-Както отбелязахме по-горе, **параметрите освен нула на брой, могат също така да са един или няколко**. При декларацията им ги разделяме със запетая. Те могат да бъдат от всеки един тип (**`int`**, **`String`** и т.н.), а по-долу е показан пример как точно ще бъдат използвани от метода.
+As we observed above, **the parameters can be zero, one or more**. When declaring them you should divide them with a comma. They can be of any type (**`int`**, **`string`** etc.), and there is an example below to show how they can be used by the method.
 
-**Декларираме** метода и **списъка** му с **параметри**, след което пишем кода, който той ще изпълнява.
+We **declare** the method and its **list** of **parameters**, then we write the code that the method executes.
 
 ![](assets/chapter-10-images/05.Method-parameters-01.png)
 
-След това **извикваме** метода и му **подаваме конкретни стойности**:
+After that **call** the method and **give it particular values**:
 
 ![](assets/chapter-10-images/05.Method-parameters-02.png)
 
-При **декларирането на параметри** можем да използваме **различни** типове променливи, като трябва да внимаване всеки един параметър да има **тип** и **име**. Важно е да отбележим, че при последващото извикване на метода, трябва да подаваме **стойности** за параметрите по **реда**, в който са **декларирани** самите те. Ако имаме подадени параметри в реда **`int`** и след това **`String`**, при извикването му не можем да подадем първо стойност за **`String`** и след това за **`int`**. 
+When **declaring parameters**, we can use **various** types of variables, and we should be careful that every parameter has a **type** and **name**. It is important to note that when calling the method, we must pass to it **values** for the parameters in **the order**, in which they are **declared**. If the parameters are first **`int`** and after that **`string`**, when calling the method, we can't give it first a **`string`** and then **`int`**. We can only change places of given parameters if we write the name of the parameter beforehand, as you will see below in one of the examples. This is generally not a good practice!
 
-Нека разгледаме примера за декларация на метод, който има няколко параметъра от различен тип.
+Let's look at the example for declaring a method, which has several parameters of different types.
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-### Пример: знак на цяло число
+### Example: Sign of an Integer
 
-Да се създаде метод, който печата знака на цяло число **n**.
+Create a method that prints the sign of an integer **n**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |2|The number 2 is positive.|
 |-5|The number -5 is negative.|
 |0|The number 0 is zero.|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е **създаването** на метод и даването му на описателно име, например **`printSign`**. Този метод ще има само един параметър от тип **`int`**. 
+The first step is **creating** a method and giving it a descriptive name, e.g. **`PrintSign`**. This method will have only one parameter of **`int`** type. 
 
 ![](assets/chapter-10-images/06.Print-sign-01.png)
 
-Следващата ни стъпка е **имплементирането** на логиката, по която програмата ни ще проверява какъв точно е знакът на числото. От примерите виждаме, че има три случая: числото е по-голямо от нула, равно на нула или по-малко от нула, което означава, че ще направим три проверки в тялото на метода. 
+The next step is **implementing** the logic by which the program will check what the sign of the number is. You can see from the examples that there are three cases – the number is larger than, equal to or lower than zero, which means that we'll make three verifications in our method.
 
-Следващата ни стъпка е да прочетем входното число и да извикаме новия метод от тялото на **`main`** метода.
+The next step is to read the input number and to call the new method from the body of the **`main`** method.
 
 ![](assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#1](https://judge.softuni.bg/Contests/Practice/Index/665#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#1](https://judge.softuni.bg/Contests/Practice/Index/665#1).
 
 
-### Пример: принтиране на триъгълник
+### Example: Printing a Triangle
 
-Да се създаде метод, който принтира триъгълник, както е показано в примерите.
+Create a method which prints a triangle as shown in the examples.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|1<br>1 2<br>1 2 3<br>1 2<br>1|4|1<br>1 2<br>1 2 3<br>1 2 3 4 <br>1 2 3<br>1 2<br>1|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Преди да създадем метод за принтиране на един ред с дадени начало и край, прочитаме входното число от конзолата. След това избираме смислено име за метода, което описва целта му, например **`printLine`**, и го имплементираме.
+Before creating a method to print a row with a given beginning and an end, we must read the input number from the console. After that we choose a meaningful name, which describes its purpose, e.g. **`printLine`**, and implement it.
 
 ![](assets/chapter-10-images/07.Print-triangle-01.png)
 
-От задачите за рисуване на конзолата си спомняме, че е добра практика **да разделяме фигурата на няколко части**. За наше улеснение ще разделим триъгълника на три части - горна, средна линия и долна.
+From the drawing exercises we remember that it is good practice **to divide the figure into several parts**. To make it easier we will divide the triangle into three parts – upper, middle and lower.
 
-Следващата ни стъпка е с цикъл да разпечатаме **горната половина** от триъгълника:
+The next step is to print **the upper half** of the triangle using a loop:
 
 ![](assets/chapter-10-images/07.Print-triangle-02.png)
 
-След това разпечатваме **средната линия**:
+After that, we will print the **middle part**:
 
 ![](assets/chapter-10-images/07.Print-triangle-03.png)
 
-Накрая разпечатваме **долната част** от триъгълника, като този път стъпката на цикъла намалява.
+In the end, we will print the **bottom part** from the triangle but this time with a reverse loop.
 
 ![](assets/chapter-10-images/07.Print-triangle-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#2](https://judge.softuni.bg/Contests/Practice/Index/665#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#2](https://judge.softuni.bg/Contests/Practice/Index/665#2).
 
 
-### Пример: рисуване на запълнен квадрат
+### Example: Draw a Filled Square
 
-Да се нарисува на конзолата запълнен квадрат със страна **n**, както е показно в примерите.
+Print on the console a filled square with side **n**, as in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>--------</code><br><code>-\\/\\/\\/-</code><br><code>-\\/\\/\\/-</code><br><code>--------</code>|5|<code>----------</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>----------</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е да прочетем входа от конзолата. След това трябва да създадем метод, който ще принтира първия и последен ред, тъй като те са еднакви. Нека не забравяме, че трябва да му дадем **описателно име** и да му зададем като **параметър** дължината на страната. Ще използваме конструктора **`new String`**. 
+The first step is to read the input from the console. After that we need to create a method, which will print the first and the last rows because they are the same. Let's remember that we must give it **a descriptive name** and give it as **a parameter** the length of the side. We will use the constructor **`new String`**. 
 
 ![](assets/chapter-10-images/08.Draw-filled-square-01.png)
 
-Следващата ни стъпка е да създадем метод, който ще рисува на конзолата средните редове. Отново задаваме описателно име, например **`printMiddleRow`**.
+Our next step is to create a method that will draw the middle rows on the console. Again, give it a descriptive name i.e. **`printMiddleRow`**.
 
 ![](assets/chapter-10-images/08.Draw-filled-square-02.png)
 
-Накрая извикваме създадените методи в главния метод **`main()`** на програмата, за да нарисуваме целия квадрат:
+Finally, call the methods in the **`main()`** method of the program in order to draw the whole square:
 
 ![](assets/chapter-10-images/08.Draw-filled-square-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#3](https://judge.softuni.bg/Contests/Practice/Index/665#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#3](https://judge.softuni.bg/Contests/Practice/Index/665#3).
 
 
-## Връщане на резултат от метод
+## Returning Result from a Method
 
-До момента разгледахме методи, които извършват дадено действие, например отпечатване на даден текст, число или фигура на конзолата. Освен този тип методи, съществуват и такива, които могат да **връщат** някакъв **резултат**. Именно тези методи ще разгледаме в следващите редове.
+Up to this point, we have viewed methods that do a specific task. For example printing a text, number or a figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of function in this part.
 
-### Типове на връщаната от метода стойност
+### Types of Returned Values
 
-До сега разглеждахме примери, в които при декларация на методи използвахме ключовата дума **`void`**, която указва, че методът **не** връща резултат, а изпълнява определено действие.
+Up until now we saw some examples, in which when declaring methods, we used the keyword **`void`**, which shows that the method **does not** return a result, but just executes a certain action.
 
 ![](assets/chapter-10-images/09.Return-types-01.png)
 
-Ако **заместим** **`void`** с **тип** на променлива, то това ще укаже на програмата, че метода трябва да върне някаква стойност от указания тип. Тази върната стойност може да бъде от всякакъв тип – **`int`**, **`String`**, **`double`** и т.н. 
+If we **replace** **`void`** by **a type** of some variable, this will tell the program that the method should return a value of the said type. This returned value could be of any type – **`int`**, **`String`**, **`double`** etc. 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-</td><td>За да върне един метод <strong>резултат</strong> е нужно да внимаваме да напишем очаквания тип на резултата при декларацията на метода на мястото на <code>void</code>.</td></tr>
+</td><td>In order for a method to return <strong>a result</strong> we need to write the type of returned value we expect when declaring the method, in the place of <code>void</code>.</td></tr>
 </table>
 
 ![](assets/chapter-10-images/09.Return-types-02.png)
 
-Важно е да отбележим, че **резултатът**, който се връща от метода, може да е от **тип, съвместим с типа на връщаната стойност** на метода. Например, ако декларираният тип на връщаната стойност е **`double`**, то можем да върнем резултат от тип **`int`**.
+We should note that **the result** returned by the method can be of **a type, compatible with the type of the returned value** of the method. For example, if the declared type of the returned value is **`double`**, we can return a value of **`int`** type.
 
-### Оператор return
+### The "Return" Operator
 
-За да получим резултат от метода, на помощ идва операторът **`return`**. Той трябва да бъде **използван в тялото** на метода и указва на програмата да **спре изпълнението** му и да **върне** на извиквача на метода определена **стойност**, която се определя от израза след въпросния оператор **`return`**.
+In order to obtain a result from the method we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** the method invoker a certain **value**, which is defined by the expression after the **`return`** operator.
 
-В примера по-долу имаме метод, който взима име и фамилия, съединява ги и ги връща като резултат. Връщаната стойност е от тип **`String`**:
+In the example below there is a method that reads two names from the console, concatenates them and returns them as a result. The return value is of **`String`** type:
 
 ![](assets/chapter-10-images/10.Return-operator-01.png)
 
-Операторът **`return`** може да бъде използван и във **`void`** методи. Тогава самият метод ще спре изпълнението си, без да връща никаква стойност, а след него не трябва да има израз, който да бъде върнат. В този случай употребата на **`return`** е единствено за излизане от метода.
+The **`return`** operator can also be used in **`void`** methods. This way the method will stop its execution without returning a value, and after it there shouldn't be an expression, which should be returned. In this case we use **`return`** only to exit the method.
 
-**Има случаи**, в които **`return`** може да бъде извикван от няколко места в метода, но само ако има **определени** входни условия.
+**There are cases** where **`return`** can be called from multiple places in the method, but only if there are **certain** input conditions.
 
-В примера по-долу имаме метод, който сравнява две числа и връща резултат съответно **`-1`**, **`0`** или **`1`** според това дали първият аргумент е по-малък, равен или по-голям от втория аргумент, подаден на функцията. Методът използва ключо-вата дума **`return`** на три различни места, за да върне три различни стойности според логиката на сравненията на числата:
+We have a method in the example below, which compares two numbers and returns a result respectively **`-1`**, **`0`** or **`1`** depending on if the first argument is smaller, equal or larger than the second argument, given to the function. The method uses the keyword **`return`** in three different places, in order to return three different values according to the logic of comparing the numbers:
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
-#### Кодът след return е недостъпен
+####  Code after a return is unreachable
 
-След **`return`** операторa, в текущия блок, **не** трябва да има други редове код, тъй като тогава IntelliJ IDEA ще покаже грешка, че е засякъл код, който **не може да бъде достъпен**:
+When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because IntelliJ IDEA will display a warning telling us that it had found an **unreachable** statement.
 
 ![](assets/chapter-10-images/10.Return-operator-03.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-</td><td>В програмирането не може да има два пъти оператор <code><b>return</b></code> един след друг, защото изпълнението на първия няма да позволи да се изпълни вторият. Понякога програмистите се шегуват с фразата “<b><i>пиши</i> <code>return; return;</code> <i>и да си ходим</i></b>”, за да обяснят, че логиката на програмата е объркана.</td></tr>
+</td><td>In programming, we can't have 2 times the operator <code><b>return</b></code> one after another because the first return won't allow us to use the second. Sometimes programmers joke
+with the phrase <b><i>write</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Употреба на връщаната от метода стойност
+### Using the return value of a method
 
-След като даден метод е изпълнен и върне стойност, то тази стойност може да се използва по **няколко** начина.
+After a method is executed and has returned a value, we can use the value in several ways.
 
-Първият е да **присвоим резултата като стойност на променлива** от съвместим тип:
+The first is to **assign the result to a variable**:
 
 ```java
 int max = getMax(5, 10);
 ```
 
-Вторият е резултатът да бъде използван **в израз**:
+The second is to be used inside **an expression**:
 
 ```java
 double total = getPrice() * quantity * 1.2;
 ```
 
-Третият е да **подадем** резултата от работата на метода към **друг метод**:
+The third is to **pass** the result from one method to **another method**:
 
 ```java
 Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
 ```
 
-### Пример: пресмятане на лицето на триъгълник
+### Example: Calculating Triangle Area
 
-Да се напише метод, който изчислява лицето на триъгълник по дадени основа и височина и връща стойността му.
+Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |3<br>4|6|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка е да прочетем входа. След това **създаваме** метод, но този път внимаваме при **декларацията** да подадем коректния **тип** данни, които искаме метода да върне, а именно **`double`**.
+The first step is to read the input. After that, **create** a method, but this time be careful when **declaring** to give it the correct **type** of data we want the method to return, which is **`double`**
 
 ![](assets/chapter-10-images/11.Calculate-triangle-area-01.png)
 
-Следващата ни стъпка е да **извикаме новия** метод от нашия **`main()`** метод и да **запишем върнатата стойност в подходяща променлива**.
+The next step is to **call the new** method from the **`main()`** method and to **store the returned value in a suitable variable**.
 
 ![](assets/chapter-10-images/11.Calculate-triangle-area-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#4](https://judge.softuni.bg/Contests/Practice/Index/665#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#4](https://judge.softuni.bg/Contests/Practice/Index/665#4).
 
 
-### Пример: степен на число
+### Example: Power of a number
 
-Да се напише метод, който изчислява и връща резултата от повдигането на число на дадена степен.
+Write a function that calculates and returns the result the power of a number. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2<br>8|256|3<br>4|81|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първата ни стъпка отново ще е да прочетем входните данни от конзолата. Следващата стъпка е да създадем метод, който ще приема два параметъра (числото и степента) и ще връща като резултат число от тип **`double`**.
+Our first step is to read the input data from the console. The next step is to create a method that will take two parameters (the number and the power) and returns as a result a number of **`double`** type.
 
 ![](assets/chapter-10-images/12.Number-power-01.png)
 
-След като сме направили нужните изчисления, ни остава да разпечатаме резултата в главния метод **`main()`** на програмата.
+After we have done the calculations, we have to only print the result in the **`main()`** method of the program.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/665#5](https://judge.softuni.bg/Contests/Practice/Index/665#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5](https://judge.softuni.bg/Contests/Practice/Index/665#5).
 
 
 ## Варианти на методи
