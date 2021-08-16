@@ -1,55 +1,55 @@
-# Глава 10. Методи
+# Chapter 10. Methods
 
-В настоящата глава ще се запознаем с **методи** и ще научим какво представляват те, както и кои са **базовите концепции** при работа с тях. Ще научим защо е добра практика да ги използваме, как да ги **декларираме** и **извикваме**. Ще се запознаем с **параметри** и **връщана стойност на метод**, както и как да използваме тази връщана стойност. Накрая на главата ще разгледаме **утвърдените практики** при използване на методите.
+In this chapter, we will introduce you to **methods** and you will learn their **definition**, as well as what their **base concepts** are while working with them.You will learn why it's a **good practice** to use them, how to **define** and **declare** them. We will also introduce you to the **parameters** and **return value of a method**, as well as how to use that return value. In the end, we will peek at **best practices** when using methods.
 
-## Какво е "метод"?
+## What is "method"?
 
-До момента установихме, че при **писане** на код на програма, която решава дадена задача, ни **улеснява** това, че **разделяме** задачата на **части**. Всяка част отговаря за **дадено действие** и по този начин не само ни е **по-лесно** да решим задачата, но и значително се подобрява както **четимостта** на кода, така и проследяването за грешки.
+Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into different **parts**, favors us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
-Всяко едно парче код, което изпълнява дадена функционалност и което сме отделили логически, може да изземе функционалността на метода. Точно това представляват **методите – парчета код, които са именувани** от нас по определен начин и които могат да бъдат **извикани** толкова пъти, колкото имаме нужда.
+A block of code designed to perform a particular task and which we have separated logically is called **method**. **Methods – slices of code, that are named** by us in a specific way.They can be called numerous times when we need them, and they will be run that many times as we want to.
 
-Един метод може да бъде извикан толкова пъти, колкото ние преценим, че ни е нужно за решаване на даден проблем. Това ни **спестява** повторението на един и същи код няколко пъти, както и **намалява** възможността да пропуснем грешка при евентуална корекция на въпросния код.
+One **method** can be **called** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
 
-### Прости методи
+### Simple methods
 
-**Простите** методи отговарят за изпълнението на дадено **действие**, което **спомага** за решаване на определен проблем. Такива действия могат да бъдат разпечатване на даден низ на конзолата, извършване на някаква проверка, изпълнение на цикъл и др.
+Simple methods are responsible for running a specific **action**, that will **help** us solve a problem. Those actions can be printing a string on the console, doing a conditional statement, doing a loop, etc.
 
-Нека разгледаме следния **пример за прост метод**:
+Let's see an **example of a simple method**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-Този метод има задачата да отпечата заглавие, което представлява поредица от символа **`-`**. Поради тази причина името му е **`printHeader`**. Кръглите скоби **`(`** и **`)` винаги** следват името, независимо как сме именували метода. По-късно ще разгледаме как трябва да именуваме методите, с които работим, а за момента ще отбележим само, че е важно *името му да описва действието**, което той извършва.
+This **method** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The round brackets **`( `** and **`)`** are always after the name, no matter how we have named the method. Later we will take a look at how we have to name a method we are working with. For now, we will only say that the **name of a method must define the action** that is doing.
 
-**Тялото** на метода съдържа **програмния код**, който се намира между къдравите скоби **`{`** и **`}`**. Тези скоби **винаги** следват **декларацията** му и между тях поставяме кода, който решава проблема, описан от името на метода. 
+The **body** of the method consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the method.
 
-### Защо да използваме методи?
+### Why should we use methods?
 
-До тук установихме, че методите спомагат за **разделянето на обемна задача на по-малки части**, което води до **по-лесно решаване** на въпросното задание. Това прави програмата ни не само по-добре структурирана и лесно четима, но и по-разбираема.
+Up to this moment, we have found out that, methods help us with **separating long exercises into smaller parts**, which leads to a **simple solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but also more understandable.
 
-Чрез методите **избягваме повторението** на програмен код. **Повтарящият** се код е **лоша** практика, тъй като силно **затруднява поддръжката** на програмата и води до грешки. Ако дадена част от кода ни присъства в програмата няколко пъти и се наложи да променим нещо, то промените трябва да бъдат направени във всяко едно повторение на въпросния код. Вероятността да пропуснем място, на което трябва да нанесем корекция, е много голяма, което би довело до некоректно поведение на програмата. Това е причината, поради която е **добра практика**, ако използваме даден фрагмент код **повече от веднъж** в програмата си, да го **дефинираме като отделен метод**. 
+Using methods we **escape repeating** of programming code. **Repeating** code is a **bad practice** because it makes **harder maintenance** for the programmer to do which leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change every occurrence of repeating code. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. This is exactly why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
 
-Методите ни предоставят **възможността** да използваме даден **код няколко** пъти. С решаването на все повече и повече задачи ще установите, че използването на вече съществуващи методи спестява много време и усилия. 
+Methods offer us an **opportunity** to use **code several times**. With solving more and more exercises, we will come to the conclusion that using already defined methods saves us a lot of time and effort.
 
-### Деклариране на методи
+### Declaring methods
 
-В езика Java **декларираме** методите в рамките на даден клас, т.е. между отварящата **`{`** и затваряща **`}`** скоби на класа, но не и в декларацията на друг метод. Декларирането представлява регистрирането на метода в програмата, за да бъде разпознаван в останалата част от нея. Най-добре познатият ни пример за метод е метода **`main(…)`**, който използваме във всяка една програма, която пишем.
+In Java lanauge you can **declare** methods inside a class, i.e. between the opening **`{`** and closing **`}`** brackets of the class. Declaring is registering the method in the program, so that it can be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program that we write.
 
 ![](assets/chapter-10-images/02.Declaring-methods-01.png)
 
-Със следващия пример ще разгледаме задължителните елементи в декларацията на един метод.
+With the next example we will look at the mandatory elements in the declaration of a method.
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
-* **Тип на връщаната стойност**. В случая типа е **`double`**, което означава, че методът от примера ще **върне резултат**, който е от тип **`double`**. Връщаната стойност може да бъде както **`int`**, **`double`**, **`String`** и **т.н.**, така и **`void`**. Ако типът е **`void`**, то това означава, че методът **не връща** резултат, а само **изпълнява дадено действие**.
-* **Име на метода**. Името на метода е **определено от нас**, като не забравяме, че трябва да **описва функцията**, която е изпълнявана от кода в тялото му. В примера името е **`GetSquare`**, което ни указва, че задачата на този метод е да изчисли лицето на квадрат.
-* **Списък с параметри**. Декларира се между скобите **`(`** и **`)`**, които изписваме след името му. Тук изброяваме поредицата от **параметри**, които метода ще използва. Може да присъства **само един** параметър, **няколко** такива или да е **празен** списък. Ако няма параметри, то ще запишем само скобите **`()`**. В конкретния пример декларираме параметъра **`side`** от тип **`double`**.
-* Декларация **`static`** в описанието на метода. За момента може да приемем, че **`static`** се пише винаги, когато се декларира метод, а по-късно, когато се запознаем с обектно-ориентираното програмиране (ООП), ще разберем разликата между **статични методи** (споделени за целия клас) и **методи на обект**, които работят върху данните на конкретна инстанция на класа (обект).
+* **Type of the returned value**. In this case the type is **`double`**, which means that the method will **return a result**, which is of **`double`** type. The returned value can be **`int`**, **`double`**, **`string`** **etc.**, and also **`void`**. If the type is **`void`**, this means that the method **doesn't return** a result, but only **does a particular operation**.
+* **Method name**. The name of the method is **defined by us**, but we shouldn't forget that it has to **describe the function**, which is executed by the code in its body. In the example the name is **`GetSquare`**, which tells us that this method is made to find the area of a square.
+* **Parameters list**. It is declared between the parentheses **`(`** and **`)`** that we write after its name. This is where we list all the **parameters** that the method will use. There can be **only one** parameter, **multiple** ones or it could be an **empty** list. If there aren't any parameters, we will write only the parentheses **`()`**. In this example we declare the parameter **`double num`**.
+* **`static`** declaration in the method description. For the moment you can accept that we write **`static`** always when we declare a method, and later when we get familiar with object-oriented programming (OOP), we will learn about the difference between **static methods** (shared for the whole class) and **methods of an object**, which work on the data of a certain instance of the class (object).
 
-При деклариране на методи е важно да спазваме **последователността** на основните му елементи - първо **ключовата дума `static`**, следвана от **тип на връщаната стойност**, след това **име на метода** и накрая **списък от параметри**, ограден с кръгли скоби **`()`**.
+When declaring methods, you must follow the **sequence** of its base elements – first is the **keyword `static`**, then **type of the returned value**, then **method name** and in the end **list of parameters**, surrounded by parentheses **`()`**. 
 
-След като сме декларирали метода, следва неговата **имплементация (тяло)**. В тялото на метода описваме **алгоритъма**, по който той решава даден проблем, т.е. тялото съдържа кода (програмен блок), който реализира **логиката** на метода. В показания пример изчисляваме лицето на квадрат, а именно **`side * side`**. 
+After we have declared a method, its **implementation (body)** follows. In the body of the method we write down **the algorithm**, by which it solves a problem, i.e. the body contains the code (program block), which applies the method's **logic**. In the shown example we are calculating the area of a square, which is **`side * side`**. 
 
-Когато декларираме дадена променлива в тялото на един метод, я наричаме **локална** променлива за метода. Областта, в която съществува и може да бъде използвана тази променлива, започва от реда, на който сме я декларирали и стига до затварящата къдрава скоба **`}`** на тялото на метода. Тази област се нарича **област на видимост** на променливата (variable scope). 
+When declaring a variable in the body of a method, it is called a **local** variable of the method. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
 ### Извикване на методи
 
