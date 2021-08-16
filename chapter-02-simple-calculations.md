@@ -1,56 +1,56 @@
-# Chapter 2.1. Прости пресмятания с числа
+# Chapter 2.1. Simple Calculations
 
-- Какво представлява **системната конзола**?
-В настоящата глава ще се запознаем със следните концепции и програмни техники:
-- Как да **прочитаме числа** от системната конзола?
-- Как да работим с **типове данни и променливи**, които са ни необходими при обработка на числа и операциите между тях?
-- Как да **изведем** резултат (число) на системната конзола?
-- Как да извършваме прости **аритметични операции**: събиране, изваждане, умножение, деление, съединяване на низ?
+-	What is **system console**?
+In this chapter we are going to get familiar with the following concepts and programming techniques:
+- How to **read numbers** from the system console?
+- How to work with **data types and variables**, which are necessary to process numbers and the operations between them?
+- How to **print** output (a number) on the console?
+- How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation?
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
+  Watch a video tutorial on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
 </div>
 
-## Системна конзола
+## The System Console
 
-Обикновено наричана само "**конзола**", системната или още компютърната конзола, представлява устройството, чрез което подаваме команди на компютъра в текстов вид и получаваме резултатите от тяхното изпълнение отново като текст.
+Usually called "**the console**", the system console or more computer console, represents the tool, by which we give the computer commands in a text format and get the results from their execution again as a text.
 
-В повечето случаи системната конзола представлява текстов терминал, т.е. приема и визуализира само **текст**, без графични елементи като например бутони, менюта и т.н. Обикновено изглежда като прозорец с черен цвят, в който пишем изпълняваме **конзолни команди**, които отпечатват текстов резултат. В **Windows** конзолата изглежда ето така:
+Generally, the system console represents a text terminal, which means that it accepts and visualizes just **text**, without any graphical elements like buttons, menus, etc. Usually, it looks like a black colored window, in which we write and perform **console commands**, and print the result in the form of a text. In **Windows** the console looks like this:
 
 ![](/assets/chapter-2-1-images/00.Console-example.png)
 
-В повечето операционни системи, обикновено **конзолата** е достъпна като самостоятелно приложение, на което пишем различни конзолни команди. В Windows се нарича **Command Prompt**, а в Linux и macOS се нарича **Terminal**. В конзолата се изпълняват конзолни приложения. Те четат текстов вход от командния ред и печатат изхода си като текстов изход на конзолата. В настоящата книга ще се учим на програмиране като създаваме предимно **конзолни приложения**.
+In most operating systems, generally **the console** is available as a standalone application on which we write different console commands. In Windows it is called **Command Prompt**, while in Linux and macOS it is called **Terminal**. The console runs console applications. They read text as an input from the command line and print the output as a text on the console. In this book we are going to learn programming mostly through creating **console applications**.
 
-Ето как изглежда конзолата в **Linux**:
+This is how the console looks in **Linux**:
 
 ![](/assets/chapter-2-1-images/00.Linux-terminal-example.png)
 
-## Четене на числа от конзолата
+## Reading Integers From The Console
 
-Реално в **Java** има няколко начина да прочетем някакъв вход от **конзолата**. Единият е чрез използването на вградения клас **`Scanner`**, който ще използваме сега, а другият е с изпозването на **`BufferedReader`**. Вторият е малко по-бърз, но ще започнем да го ползваме едва след като се запознаем и с потоците в **Java**.
+In **Java** we have several options to read an input from **the console**. One is through the use of the built-in class **`Scanner`**, which we are going to use now, and the other one is using the  **`BufferedReader`**. The second is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
 
-За да прочетем **цяло** (не дробно) **число** от конзолата е необходимо първо да импортираме класа **`Scanner`** на първия ред от нашата програма, още преди декларацията на основния клас. Слагаме този ред най-отгоре:
+In order to read an **Integer** (not a float) **number** from the console first we have to import the built-in class **`Scanner`** on the first line of our program, even before the base class declaration. We put this line above:
 
 ```java
 import java.util.Scanner;
 ```
 
-След това в `main(…)` метода на програмата трябва да създадем нова `Scanner` инстанция, която да закачим за системния вход. След през създадения сканиращ четец `scanner` можем да четем цели и дробни числа, текст и други данни. Например с `.nextInt()` четем следващото подадено като вход цяло число:
+Then in the `main(…)` method of the program we have to create a new `Scanner` instance , which to attach to the system input. After the created `scanner` reader we can read integers, floating-point numbers, text, etc. For example, with `.nextInt()` we read the next following integer given as input:
 
 ```java
 Scanner scanner = new Scanner(System.in);
 int num = scanner.nextInt();
 ```
 
-Сега в променливата **`num`** от целочислен тип **`int`** имаме прочетена, подадена като вход от **конзолата**.
+Now in the variable **`num`** of integer type **`int`** we have read, given as input from **the console**.
 
-Java е **статично типизиран език**, а това означава, че променливите имат тип, който се определя по време на компилацията и не може да се променя в движение (както е при динамичните езици като JavaScript и Python). В горния пример променливата `scanner` е от тип `java.util.Scanner` (сканиращ текстов четец), a променливата `num` е от тип `int` (цяло число).
+Java is **highly typed language**, this means, that the variables have type, which is determine at compile time and can not change on the go (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader), and the variable `num` is from type `int` (integer number).
 
-### Пример: пресмятане на лице на квадрат със страна **а**
-
-За пример да вземем следната програма, която **прочита цяло число** от конзолата, **умножава го** по него самото (вдига го на квадрат) и **отпечатва резултата** от умножението. Така можем да пресметнем лицето на квадрат по дадена дължина на страната, прочетена от конзолата. Следва целия сорс код на програмата. Запишете го във файл с име `SquareArea.java`, иначе ще даде грешка при компилация:
+### Example: Calculating a Square Area With Side **а**
+ 
+For example, let us look at the following program, which **reads an integer** from the console, **multiplies it** by itself (squares it) and **prints the result** from the multiplication. This is how we can calculate the square area by given side length read from the cosnole. The whole source code of the program follows. Write it in file with name `SquareArea.java`, or else you will have a compile time error:
 
 ```Java
 // Put this code in the file: SquareArea.java
@@ -70,60 +70,60 @@ public class SquareArea {
     }
 }
 ```
-Ето как би работила програмата при квадрат с размер на страната 15:
+Here is how the program would work when we have a square with a side length equal to 15:
 
 ![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
 
-Опитайте да въведете грешно число, например "**hello**". Ще получите съобщение за грешка по време на изпълнение (exception). 
+Try to write a wrong number, for example "**hello**". You will get an error message during runtime (exception). 
 
 ![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
 
-Това е напълно нормално, защото езика **Java** е силно типизиран език. По-късно ще разберем как можем да прихващаме такива грешки и да караме потребителя да въвежда число наново.
+This is normal, because **Java** is highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
-#### Как работи примерът?
+#### How Does the Example Work?
 
-Първият ред **`Scanner scanner = new Scanner(System.in);`** създава нова инстанция на класа **`Scanner`** със стандартен системен вход.
+The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
 
-Следващият ред **`System.out.print("a = ");`** печата информативно съобщение, което подканва потребителя да въведе страната **a** на квадрата. След отпечатването курсорът остава на същия ред. Оставането на същия ред е по-удобно за потребителя чисто визуално. Използва се **`System.out.print(…);`**, а не **`System.out.println(…);`** и така курсорът остава на същия ред.
+The next line **`System.out.print("a = ");`** prints an informative message, which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`**, and not **`System.out.println(…);`** and this way the cursor stays on the same line.
 
-Следващият ред **`int a = scanner.nextInt();`** прочита цяло число от конзолата. Резултатът се записва в променлива с име **`a`**.
+The next line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with name **`a`**.
 
-Следващата команда **`int area = a * a;`** записва в нова променлива **`area`** резултата от умножението на **`a`** по **`a`**.
+The next command **`int area = a * a;`** keeps in a new variable **`area`** the result of the multiplication of **`a`** by **`a`**.
 
-Следващата команда **`System.out.print("Square area = ");`** отпечатва посочения текст без да преминава на нов ред. Отново се използва **`System.out.print(…);`**, а не **`System.out.println("…");`** и така курсорът остава на същия ред, за да може след това да се отпечата и изчисленото лице на квадрата.
+Next command **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`**, and not **`System.out.println("…");`** and this way the cursor stays on the same line in order to print the calculated area of the square afterwards.
 
-Последната команда **`System.out.println(area);`** отпечатва изчислената стойност от променливата **`area`**.
+The last command **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0).
 
-#### Четене на дробни числа
+#### Reading Floating-Point Numbers From the Console
 
-Опитайте да преработите горната програма, така че да приема не само цели числа (`int`), но и дробни числа (`double`). Можете да използвате `scanner.nextDouble()`. Повече за дробните числа ще научим след малко.
+Try to rework the above program so that it accepts not only integers (`int`), but floating-point numbers as well (`double`). We can use `scanner.nextDouble()`. We will learn more about the floating-point numbers after a while. 
 
 
-## Пресмятания в програмирането
+## Calculations in Programming
 
-За компютрите знаем, че са машини, които обработват данни. Всички **данни** се записват в компютърната памет (RAM памет) в **променливи**. Променливите са именовани области от паметта, които пазят данни от определен тип, например число или текст. Всяка една **променлива** в Java има **име**, **тип** и **стойност**. Ето как бихме дефинирали една променлива, като едновременно с декларацията ѝ, ѝ присвояваме и стойност:
+We know about the computers that they are machines, which process data. All **data** is stored in the computer memory (RAM memory) in **variables**. Variables are named areas of memory, which stores data from certain type, for example number or text. Each **variable** in Java has **name**, **type** and **value**. This is how we can define a variable, as at the same time with the declaration, we also assign value to it:
 
 ![](/assets/chapter-2-1-images/03.Declaring-variables-01.png)
 
-След тяхната обработка, данните се записват отново в променливи (т.е. някъде в паметта, заделена от нашата програма).
+After processing, the data is stored again in variables (somewhere in the memory, set aside by our program).
 
-## Типове данни и променливи
+## Data Types and Variables
 
-В програмирането всяка една променлива съхранява определена **стойност** от даден **тип**. Типовете данни могат да бъдат например: **число**, **буква**, **текст** (стринг), **дата**, **цвят**, **картинка**, **списък** и др.
-Ето няколко примера за типове данни:
-- тип **цяло число**: 1, 2, 3, 4, 5, …
-- тип **дробно число**: 0.5, 3.14, -1.5, …
-- тип **буква от азбуката** (символ): 'a', 'b', 'c', …
-- тип **текст** (стринг): "Здрасти", "Hi", "Beer", …
-- тип **ден от седмицата**: Monday, Tuesday, …
+In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **letter**, **text** (string), **date**, **colour**, **image**, **list** and others.
+Here are some examples of data types:
+- type **int number**: 1, 2, 3, 4, 5, …
+- type **double number**: 0.5, 3.14, -1.5, …
+- type **a letter from the alphabet** (symbol): 'a', 'b', 'c', …
+- type **text** (string): "Здрасти", "Hi", "Beer", …
+- type **day of the week**: Monday, Tuesday, …
 
-## Четене на дробно число от конзолата
+## Reading Floating-Point Numbers from the Console
 
-За да прочетем **дробно число** от конзолата е необходимо отново да **декларираме променлива**, да посочим **типа на числото**, както и да използваме стандартната команда за четене на информация от системната конзола:
+In order to read **floating-point number** from the console it is again neccessary to **declare variable**, to point out **the type of the number**, and to use the standard command to read information from the system console:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -131,9 +131,9 @@ Scanner scanner = new Scanner(System.in);
 Double num = scanner.nextDouble();
 ```
 
-### Пример: прехвърляне от инчове в сантиметри
+### Example: Converting Inches into Centimeters
 
-Да напишем програма, която чете дробно число в инчове и го обръща в сантиметри:
+Let’s write a program that reads a floating-point number in inches and converts it to centimeters:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -145,29 +145,29 @@ System.out.print("Centimeters = ");
 System.out.println(centimeters);
 ```
 
-Да стартираме програмата и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
+Let’s start the program and make sure that when a value in inches is entered, we obtain a correct output in centimeters:
 
 ![](assets/chapter-2-1-images/04.Console-output-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
 
 
-## Четене и печатане на текст
+## Reading and Printing Text
 
-За да прочетем текст (стринг) от конзолата, отново **декларираме нова променлива** и използваме стандартната **команда за четене на информация от системната конзола**:
+To read a text (string) from the console, again **we declare new variable** and use the standard **command for reading a text from the console**:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
 
 String str = scanner.nextLine();
 ```
-Нека обърнем внимание на факта, че при **четене на текст не се налага преобразуването в друг тип**. Това е така, защото по подразбиране методът **`scanner.nextLine(…)`** връща като **резултат текст**. Допълнително, можем да зададем текстa да бъде прехвърлен в цяло число чрез **`Integer.parseInt(…)`** или дробно число чрез **`Double.parseDouble(…)`**. Ако това не се направи, за програмата **всяко едно число** ще бъде просто **текст**, с който **не бихме могли да извършваме** аритметични операции.
+Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way, because by default the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If it is not parse to a number, for the program **each number** will be just **text**, with which **we can not do** arithmetic operations.
 
-### Пример: поздрав по име
+### Example: Greeting by Name
 
-Да напишем програма, която въвежда името на потребителя и го поздравява с текста "**Hello, *име***".
+Let’s write a program, which enter the name of the user and greets them with the text "**Hello, *име***".
 
 ```Java 
 Scanner scanner = new Scanner(System.in);
@@ -176,20 +176,20 @@ String name = scanner.nextLine();
 System.out.printf("Hello, %s!", name);
 ```
 
-В този случай, изразът **`%s`** e заместен от **първия** подаден аргумент, който в примера е променливата **`name`**:
+In this case the expression **`%s`** is replaced with the **first** passed argument, in this case is the variable **`name`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#2](https://judge.softuni.bg/Contests/Practice/Index/649#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#2](https://judge.softuni.bg/Contests/Practice/Index/649#2).
 
 
-## Съединяване на текст и числа
+## Concatenating Text and Numbers
 
-При печат в конзолата на текст, числа и други данни, **можем да ги съединим**, като използваме шаблони **`%s`**, **`%d`**, **`%f`** и т.н. В програмирането тези шаблони се наричат **placeholders**, а в зависимост от типа на променливата се използват различни символи за обозначаване на различни типове аргументи. Основните са `%s` за текст (стринг), `%d` за цели числа, `%f` за десетични числа.
+When printing a text, numbers and other data on the console, **we can join them**, by using templates **`%s`**, **`%d`**, **`%f`** etc. In programming, these templates are called **placeholders**, depending on the type of the variable, different symbols are used to declare different types of arguments. The main ones are `%s` for text (string), `%d` for int numbers, `%f` for floating-point numbers.
 
-Ето един **пример** за печатане на форматиран текст с шаблони (**placeholders**):
+This is **example** for printing formatted text with (**placeholders**):
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -202,24 +202,24 @@ System.out.printf("You are %s %s, a %d-years old person from %s.",
   firstName, lastName, age, town);
 ```
 
-Ето резултатът, който ще получим след изпълнение на този пример:
+This is the result, which we will get after the execution of the example:
 
 ![](assets/chapter-2-1-images/04.Console-output-03.png)
 
-Обърнете внимание как всяка една променлива трябва да бъде подадена в **реда, в който искаме да се печата**, и да съответства на **типа подаден в шаблона**. По същество, шаблонът (**placeholder**) приема променливи от **всякакъв тип**.
+Notice how every variable should be passed in the **order, in which we want it to be printed**, and correspond to the **type passed in the placeholder**. Practically, the template (**placeholder**) accepts variables of **every type**.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
 
 
-## Аритметични операции
+## Arithmetic Operations
 
-Да разгледаме базовите аритметични операции в програмирането.
+Let’s look at the basic arithmetic operations in programming.
 
-### Събиране на числа (оператор **`+`**)
+### Summing up Numbers (operator **`+`**)
 
-Можем да събираме числа с оператора **`+`**:
+We can sum up numbers using the operator **`+`**:
 
 ```Java
 int a = 5;
@@ -227,9 +227,9 @@ int b = 7;
 int sum = a + b; // резултатът е 12
 ```
 
-### Изваждане на числа (оператор **`-`**)
+### Subtracting Numbers (оператор **`-`**)
 
-Изваждането на числа се извършва с оператора **`-`**:
+Subtracting Numbers is done by the operator **`-`**:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -240,13 +240,13 @@ int result = a - b;
 System.out.println(result);
 ```
 
-Ето резултатът от изпълнението на програмата (при числа 10 и 3):
+Here is the result of the execution of this program (with numbers 10 and 3):
 
 ![](assets/chapter-2-1-images/04.Console-output-04.png)
 
-### Умножение на числа (оператор **`*`**)
+### Multiplying Numbers (operator **`*`**)
 
-За умножение на числа използваме оператора **`*`**:
+For multiplication of numbers we use the operator **`*`**:
 
 ```Java
 int a = 5;
@@ -254,15 +254,15 @@ int b = 7;
 int product = a * b; // 35
 ```
 
-### Деление на числа (оператор **`/`**)
+### Dividing Numbers (operator **`/`**)
 
-Делението на числа се извършва с оператора **`/`**. Той работи различно при цели и при дробни числа.
-* Когато делим две цели числа, се извършва **целочислено деление** и полученият резултат е цяло число с отрязана дробна част. Например 11 / 3 = 3.
-* Когато делим две числа, от които поне едното е дробно, се извършва **дробно деление** и полученият резултат е дробно число, както в математиката. Например 11 / 4.0 = 2.75. При невъзможност за точно разделяне, резултатът се закръгля, например 11.0 / 3 = 3.66666666666667.
-* Челочисленото **деление на 0** предизвиква **грешка** по време на изпълнение (`Java.lang.ArithmeticException`).
-* Дробното **деление на 0** не предизвиква грешка, а резултатът е **+/- безкрайност** или специалната стойност **`NaN`**. Например 5 / 0.0 = &#8734;.
+Dividing numbers is done using the **`/`**. It works differently with integers and floating-point numbers.
+*	When we divide two integers, **цan integer division** is applied and the obtained output is without its fractional part. Example: 11 / 3 = 3.
+*	When we divide two numbers and at least one of them is a float number, **a floating division** is applied, and the obtained result is a float number, just like in math. Example 11 / 4.0 = 2.75. When it cannot be done with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
+* The integer **division by 0** causes an **exception** during runtime (`Java.lang.ArithmeticException`).
+* •	Float number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
 
-Ето няколко примера за използване на оператора за делене:
+Here are a few examples with the division operator:
 
 ```Java
 int a = 25;
@@ -274,14 +274,14 @@ int f = a / 4.0;    // 6.25 – дробно деление. Изрично см
 int error = a / 0;  // Грешка: целочислено деление на 0
 ```
 
-Да разгледаме и няколко примера за **целочислено деление** (запомнете, че при **деление на цели числа** в езика Java резултатът е **цяло число**):
+Let's look at some examples for **integer division** (remember that when we **divide integers** in Java the result is **an integer**):
 
 ```Java
 int a = 25;
 System.out.println(a / 4);  // Целочислен резултат: 6
 System.out.println(a / 0);  // Грешка: деление на 0
 ```
-Да разгледаме няколко примера за **деление на дробни числа**. При дробно делене резултатът винаги е **дробно число** и деленето никога не дава грешка и работи коректно със специалните стойности **+&#8734;** и **-&#8734;**:
+Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails, and works correctly with the special values **+&#8734;** и **-&#8734;**:
 
 ```Java
 int a = 15;
@@ -292,7 +292,7 @@ System.out.println(0.0 / 0.0);   // Резултат: NaN (Not a Number), т.е.
                                  // от операцията не е валидна числена стойност
 ```
 
-При отпечатването на стойностите **&#8734;** и **-&#8734;** на конзолата може да излязат `?`, защото конзолата в Windows не поддържа коректно Unicode и поврежда повечето нестандартни символи, букви и специални знаци. Горният пример най-вероятно ще изведе следния резултат:
+When printing the values **&#8734;** and **-&#8734;** the console output may be `?`, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters and special characters. The example above would most probably give the following result:
 ```
 7.5
 ?
@@ -300,9 +300,9 @@ System.out.println(0.0 / 0.0);   // Резултат: NaN (Not a Number), т.е.
 NaN
 ```
 
-## Съединяване на текст и число
+## Concatenating Text and Numbers
 
-Операторът **`+`** освен за събиране на числа, служи и за съединяване на текст (долепяне на два символни низа един след друг). В програмирането съединяване на текст с текст или с число наричаме "**конкатенация**". Ето как можем да съединяваме текст и число с оператора **`+`**:
+The operator **`+`** besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
 
 ```Java
 String firstName = "Maria";
@@ -312,7 +312,7 @@ String str = firstName + " " + lastName + " @ " + age;
 System.out.println(str);  // Maria Ivanova @ 19
 ```
 
-Ето още един пример:
+Here is another example:
 
 ```Java
 double a = 1.5;
@@ -321,7 +321,7 @@ String sum = "The sum is: " + a + b;
 System.out.println(sum);  // The sum is: 1.52.5
 ```
 
-Забелязвате ли нещо странно? Може би очаквахте числата **`a`** и **`b`** да се сумират? Всъщност конкатенацията работи отляво надясно и горният резултат е абсолютно коректен. Ако искаме да сумираме числата, ще трябва да ползваме **скоби**, за да променим реда на изпълнение на операциите:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
 
 ```Java
 double a = 1.5;
@@ -331,18 +331,18 @@ System.out.println(sum);  // The sum is: 4
 ```
 
 
-## Числени изрази
+## Numerical Expressions
 
-В програмирането можем да пресмятаме и **числови изрази**, например:
+In programming, we can calculate **numerical expressions**, for example:
 
 ```Java
 int expr = (3 + 5) * (4 – 2);
 ```
-В сила е стандартното правило за приоритетите на аритметичните операции: **умножение и деление се извършват винаги преди събиране и изваждане**. При наличие на **израз в скоби, той се изчислява пръв**, но ние знаем всичко това от училищната математика.
+The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
-### Пример: изчисляване на лице на трапец
+### Example: Calculating Trapezoid Area
 
-Да напишем програма, която въвежда дължините на двете основи на трапец и неговата височина (по едно дробно число на ред) и пресмята **лицето на трапеца** по стандартната математическа формула.
+Let’s write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -354,7 +354,7 @@ double area = (b1 + b2) * h / 2.0;
 System.out.println("Trapezoid area = " + area);
 ```
 
-Ако стартираме програмата и въведем за страните съответно `3`, `4` и `5`, ще получим следния резултат:
+If we start the program and enter values for the sides: 3, 4 and 5, we will obtain the following result:
 ```
 3
 4
@@ -362,18 +362,18 @@ System.out.println("Trapezoid area = " + area);
 Trapezoid area = 17.5
 ```
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
 
 
-### Пример: периметър и лице на кръг 
+### Example: Circle Area and Perimeter 
 
-Нека напишем програма, която при въвеждане **радиуса r** на кръг **изчислява лицето и периметъра** на кръга / окръжността.
+Let’s write a program, which when enter a **radius r** of a circle **calculates the area and the perimeter** of the circle / round.
 
-Формули:
-- Лице = π \* r \* r
-- Периметър = 2 \* π \* r
+Formulas:
+-	Area = π \* r \* r
+- Perimeter = 2 \* π \* r
 - π ≈ 3.14159265358979323846…
 
 ```Java
@@ -385,22 +385,22 @@ System.out.println("Area = " + Math.PI * r * r);
   // Math.PI - вградена в Java константа за π
 System.out.println("Perimeter = " + 2 * Math.PI * r);
 ```
-Нека изпробваме програмата с **радиус `r = 10`**:
+НLet’s test the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-05.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
 
 
-### Пример: лице на правоъгълник в равнината
+### Example: 2D Rectangle Area
 
-Правоъгълник е зададен с **координатите на два от своите два срещуположни ъгъла**. Да се пресметнат **площта и периметъра** му:
+A rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter**:
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
 
-В тази задача трябва да съобразим, че ако от по-големия `x` извадим по-малкия `x`, ще получим дължината на правоъгълника. Аналогично, ако от по-големия `y` извадим по-малкия `y`, ще получим височината на правоъгълника. Остава да умнижим двете страни. Ето примерна имплементация на описаната логика:
+In this tast we must take into account, that if from the bigger `x` we subtract the smaller `x`, we will obtain the length of the rectangle. Identically, if from the bigger `y` we subtract the smaller `y`, we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -419,129 +419,129 @@ System.out.println(decimalFormat.format(width * height));
 System.out.println(decimalFormat.format(2 * (width + height)));
 ```
 
-Използваме **`Math.max(a, b)`**, за да намерим по-голямата измежду стойностите **`a`** и **`b`** и аналогично **`Math.min(a, b)`** за намиране на по-малката от двете стойности.
+We use **`Math.max(a, b)`**, to find the bigger value from **`a`** and **`b`** and identically **`Math.min(a, b)`** to find the smaller of both values.
 
-При стартиране на програмата със стойностите от координатната система в условието, получаваме следния резултат:
+When the program is executed with the values from the coordinate system given in the condition, we obtain the following result:
 
 ![](/assets/chapter-2-1-images/04.Console-output-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
 
 
-## Какво научихме от тази глава?
+## What we learned in this chapter?
 
-Да резюмираме какво научихме от тази глава на книгата:
-- **Въвеждане на текст**: **`String str = scanner.nextLine();`** (като предварително направим **`Scanner scanner = new Scanner(System.in);`**).
-- **Въвеждане на цяло число**: **`int num = Integer.parseInt(scanner.nextLine());`**.
-- **Въвеждане на дробно число**: **`double num = Double.parseDouble(scanner.nextLine());`**.
-- **Извършване на пресмятания с числа** и използване на съответните **аритметични оператори** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
-- **Извеждане на текст по шаблон** на конзолата: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
+To summarize what we learned from this chapter of the book:
+- **Reading text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).
+- **Reading an integer**: **`int num = Integer.parseInt(scanner.nextLine());`**.
+- **Reading a floating-point number**: **`double num = Double.parseDouble(scanner.nextLine());`**.
+- **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
+- **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
 
-## Упражнения: прости пресмятания
+## Exercises: Simple Calculations
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Let's solidify what we learned in this chapter with some exercises.
 
-### Празно IntelliJ IDEA решение (Project)
+### Blank IntelliJ IDEA Solution (Project)
 
-Започваме, като създадем празно решение **(Project)** в IntelliJ IDEA. Проектите (project) в IntelliJ IDEA обединяват **група задачи**. Тази възможност е **изключително удобна**, когато искаме да **работим по няколко задачи** и бързо да превключваме между тях или искаме да **обединим логически няколко взаимносвързани задачи**.
+We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient**, when we want to **work on a few projects** and switch quickly between them or we want to **unite logically a few interconnected projects**.
 
-В настоящото практическо занимание ще използваме **Project с няколко задачи (Java класове)**, за да организираме решенията на задачите от упражненията – всяка задача в отделен Java клас и всички Java класове в общ проект.
+In the current practical exercise, we will use a **Project with a couple of tasks (Java classes)**, to organize the solutions of the tasks from the exercises – every task in a separate Java class and all of them in a common project.
 
-* Стартираме IntelliJ IDEA.
-* Създаваме нов **Project:** [**File**] → [**New**] → [**Project**].
+* We start IntelliJ IDEA.
+* We create a new **Project:** [**File**] → [**New**] → [**Project**].
 
 ![](assets/chapter-2-1-images/06.New-project-01.png)
 
-Избираме от диалоговия прозорец [**Java**], в полето Project SDK уточняваме каква версия на Java ще използваме и накрая натискаме бутоните [**Next**] → [**Next**]:
+Select from the dialog window [**Java**], in the field Project SDK we specify which version of Java we will use and finally we click [**Next**] → [**Next**]:
 
 ![](assets/chapter-2-1-images/06.New-project-02.png)
 
 ![](assets/chapter-2-1-images/06.New-project-03.png)
 
-Даваме подходящо име на проекта, например "SimpleCalculations" и също така къде да бъде съхранен нашия проект, след което натискаме бутона [**Finish**]:
+Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, after that we click [**Finish**]:
 
 ![](assets/chapter-2-1-images/06.New-project-04.png)
 
-Сега имаме създаден **празен IntelliJ IDEA Project** (без никакви Java класове в него, които трябва да се намират в папката `src`):
+Now we have **empty IntelliJ IDEA Project** (without any Java classes in it, which have to be in the `src` folder):
 
 ![](assets/chapter-2-1-images/06.New-project-05.png)
 
-Целта на този project e да добавяме в него **по един `.java` клас за всяка задача** от упражненията.
+The purpose of this project is to add in it **`.java` class per problem** from the exercises.
 
-### Задача:	пресмятане на лице на квадрат
+### Problem: Calculating Square Area
 
-Първата задача от тази тема е следната: да се напише конзолна програма, която **въвежда цяло число `a` и пресмята лицето** на квадрат със страна **`a`**. Задачата е тривиално лесна: **въвеждате число** от конзолата, **умножавате го само по себе си** и **печатате получения резултат** на конзолата.
+The first exercise from this topic is the following: write a console program that **inputs an integer `a` and calculates the area** of a square with side **`a`**. The task is trivial and easy: **input a number** from the console, **multiply it by itself** and **print the obtained result** on the console.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Създаваме **нов Java клас** в съществуващ IntelliJ IDEA проект. Върху **src** папката кликнете с десен бутон на мишката. Изберете [**New**] → [**Java Class**]:
+We create **new Java class** in existing IntelliJ IDEA project. On the **src** folder right-click with the mouse. Choose [**New**] → [**Java Class**]:
 
 ![](assets/chapter-2-1-images/07.Square-area-01.png)
 
-Ще се отвори **диалогов прозорец** за избор на име на Java класа, примерно “SquareArea”:
+A **dialogue window** will open for choosing name to the Java class, for example “SquareArea”:
 
 ![](assets/chapter-2-1-images/07.Square-area-02.png)
 
-Вече имаме проект с един Java клас в него. Остава да напишем **кода за решаване на задачата**. За целта си дописваме в нашия Java клас `Main` метод(както е показано на картинката) и отиваме в тялото на метода **`Main(string[] args)`**, където пишем следния код между отварящата и затварящата къдрави скоби:
+We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class `Main` method(as it is shown on the picture) and we go to the main method's body **`Main(string[] args)`**, and write the following code between the opening and closing curly brackets:
 
 ![](assets/chapter-2-1-images/07.Square-area-03.png)
 
-Кодът въвежда цяло число чрез **`a = Integer.parseInt(scanner.nextLine())`**, след това изчислява **`area = a * a`** и накрая печата стойността на променливата **`area`**. **Стартираме** програмата с [**Ctrl+Shft+F10**] и я **тестваме** с различни входни стойности:
+The code inputs an integer through **`a = Integer.parseInt(scanner.nextLine())`**, afterwards it calculates **`area = a * a`** and finally prints the value of the variable **`area`**. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
 
 ![](assets/chapter-2-1-images/07.Square-area-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0). Трябва да получите 100 точки (напълно коректно решение):
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
 
 ![](assets/chapter-2-1-images/07.Square-area-05.png)
 
 ![](assets/chapter-2-1-images/07.Square-area-06.png)
 
 
-### Задача:	от инчове към сантиметри
+### Problem: Inches to Centimeters
 
-Да се напише програма, която **чете от конзолата число** (не непременно цяло) и преобразува числото от **инчове в сантиметри.** За целта **умножава инчовете по 2.54** (тъй като 1 инч = 2.54 сантиметра).
+Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **it multiplies the inches by 2.54** (because one inch = 2.54 centimeters).
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо създаваме **нов Java клас** в проекта “SimpleCalculations”. Кликаме с мишката върху папката **src** и избираме [**New**] → [**Java Class**]:
+First, we create **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-01.png)
 
-Появява се диалогов прозорец, в който изписваме името на файла. В нашия случай това е "InchesToCentimeters" → [**OK**]:
+A dialogue window shows up in which we write file’s name. In our case this is "InchesToCentimeters" → [**OK**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-02.png)
 
-Следва да напишем **кода на програмата**:
+Next, we have to write the **program code**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-03.png)
 
-**Стартираме програмата** с десен бутон на мишката върху прозореца на текущата програма. Избираме [**Run InchesToCentim...main()**] или натискаме [**Ctrl+Shift+F10**]. Tази клавишна комбинация стартира програмата в настоящия Java клас (този, в който сме писали последно):
+**We start the program** with the right button of the mouse on the window of the current program. We choose [**Run InchesToCentim...main()**] or we press [**Ctrl+Shift+F10**]. This shortcut starts the program in the current Java class (the one in which we wrote last):
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-04.png)
 
-При което получаваме следния резултат:
+We obtain the following result:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.png)
 
-Сега **да превключим към предходната програма/задача** ("лице на квадрат"). Това става с двоен клик на мишката върху файла **`SquareArea.java`** от папката **src** в проекта [**SimpleCalculations**]:
+Now **let's switch to the previous program / task** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.png)
 
-Ако използваме [**Shift+F10**] или натиснем една от двете зелени стрелки (които се намират горе в дясно и долу в ляво на прозореца на IntelliJ IDEA)
+If we use [**Shift+F10**] or press one of the two green arrows (located at the top right and bottom left of the IntelliJ IDEA window)
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-07.png)
 
-ще се изпълни последно компилираната програма (**InchesToCentimeters**). Нея може да видим като име в горния десен ъгъл на прозореца преди едната зелена стрелка:
+The last compiled program will be executed (**InchesToCentimeters**). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
 
-**Превключването между проектите** е много лесно, нали? Просто избираме файла със сорс кода на програмата, кликваме два пъти с мишката върху него и при стартиране тръгва програмата от този файл.
+**Switching between projects** is very easy, isn't it? Just choose the file with the source code of the program, double click it and when it starts, the program from the current file is being executed.
 
-Да тестваме с дробни числа, например с **2.5**:
+Let's test with floating-point numbers, for example with **2.5**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
 
@@ -549,123 +549,123 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 <td>В зависимост от регионалните настройки на операционната система, е възможно вместо <b>десетична точка</b> (US настройки) да се използва <b>десетична запетая</b> (BG настройки).</td>
 </tr></table>
 
-Ако програмата очаква десетична точка и бъде въведено число с десетична запетая или обратното (бъде въведена десетична точка, когато се очаква десетична запетая), ще се получи следната грешка:
+If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-10.png)
 
-Препоръчително е **да променим настройките на компютъра си**, така че да се използва **десетична точка**:
+It is recommended to **change the settings of your computer**, in order to use a **decimal point**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-11.png)
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
 
-Решението би трябвало да бъде прието като напълно коректно:
+The solution should be accepted as a completely correct one:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
 
 
-### Задача: поздрав по име
+### Problem: Greeting by Name
 
-Да се напише програма, която **чете от конзолата име на човек** и отпечатва **`Hello, <name>!`**, където **`<name>`** е въведеното преди това име.
+Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо създаваме **нов Java клас** с име “Greeting” в проекта “SimpleCalculations”:
+First, we create **new Java class** with name “Greeting” in the project “SimpleCalculations”:
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-01.png)
 
-**Следва да напишем кода** на програмата. Ако се затруднявате, може да ползвате примерния код по-долу:
+**Next, we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-02.png)
 
-**Стартираме** програмата с [**Ctrl+Shift+F10**] и я тестваме дали работи:
+**Run** the program with [**Ctrl+Shift+F10**] and test if it works:
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/649#2](hhttps://judge.softuni.bg/Contests/Practice/Index/649#2).
+Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/649#2](hhttps://judge.softuni.bg/Contests/Practice/Index/649#2).
 
 
-### Задача:	съединяване на текст и числа
+### Problem: Concatenating Text and Numbers
 
-Напишете Java програма, който прочита от конзолата име, фамилия, възраст и град и печата съобщение от следния вид: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
+Write a Java program, that reads from the console a first name, last name, age and city and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Добавяме към текущият IntelliJ IDEA проект още един Java клас с име "`ConcatenateData`".	**Пишем кода**, който чете входните данни от конзолата:
+We add to the existing IntelliJ IDEA Project one more Java Class with name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
 
 ![](assets/chapter-2-1-images/10.Concatenate-data-01.png)
 
-**Кодът**, който отпечатва описаното в условието на задачата съобщение, трябва да се допише.
+**The code**, that prints the message described in the problem requirements should be finished.
 
 ![](assets/chapter-2-1-images/10.Concatenate-data-02.png)
 
-На горната картинка кодът е нарочно даден замъглен, за да помислите как да си го напишете сами.
+In the picture above the code is blurred on purpose, in order for you to think of a way to finish it yourself.
 
-Следва да се тества решението локално с [**Ctrl+Shift+F10**] и въвеждане на примерни входни данни.
+СNext, the solution should be tested locally using [**Ctrl+Shift+F10**] and by entering an exemplary input data.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
 
 
-### Задача:	лице на трапец
+### Problem: Trapezoid Area
 
-Напишете програма, която чете от конзолата три числа **b1**, **b2** и **h** и пресмята **лицето на трапец** с основи **b1** и **b2** и височина **h**. Формулата за лице на трапец е **(b1 + b2) * h / 2**.
+Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for trapezoid area is **(b1 + b2) * h / 2**.
 
-На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
+On the figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Отново трябва да добавим към текущия проект в IntelliJ IDEA още един **Java клас** с име "`TrapezoidArea`" и да напишем **кода, който чете входните данни от конзолата, пресмята лицето на трапеца и го отпечатва**:
+Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with name "`TrapezoidArea`" and to write **the code, that reads the input from the console, calculates the trapezoid area and prints it**:
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-02.png)
 
-Кодът на картинката е нарочно размазан, за да помислите върху него и да го допишете сами.
+The code on the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
 
-**Тествайте** решението локално с [**Ctrl+Shift+F10**] и въвеждане на примерни данни.
+**Test** your solution locally using [**Ctrl+Shift+F10**] and enter an exemplary data.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
 
 
-### Задача:	периметър и лице на кръг
+### Problem: Circle Area and Perimeter
 
-Напишете програма, която чете от конзолата **число r** и пресмята и отпечатва **лицето и периметъра на кръг**/**окръжност** с **радиус r**.
+Write a program that reads from the console **a number r** r and calculates and prints **the area and perimeter of the circle**/**round** with **radius r**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 | Вход  |           Изход                                          |    
 |-----|--------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За изчисленията можете да използвате следните формули:
+For the calculations you may use the following formulas:
 -	**`Area = Math.PI * r * r`**.
 -	**`Perimeter = 2 * Math.PI * r`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
 
 
-### Задача: лице на правоъгълник в равнината
+### Problem: Rectangle Area
 
-**Правоъгълник** е зададен с **координатите** на два от своите срещуположни ъгъла (x1, y1) – (x2, y2). Да се пресметнат **площта и периметъра** му. **Входът** се чете от конзолата. Числата **x1, y1, x2 и y2** са дадени по едно на ред. **Изходът** се извежда на конзолата и трябва да съдържа два реда с по една число на всеки от тях – лицето и периметъра.
+**A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |               Вход                        |       Изход         |
 |-----------------------------------------|-------------------|
@@ -673,16 +673,16 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 |30<br>40<br>70<br>-10                   |2000<br>180         |
 |600.25<br>500.75<br>100.50<br>-200.5    |350449.6875<br>2402 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
 
 
-### Задача:	лице на триъгълник
+### Problem: Triangle Area
 
-Напишете програма, която чете от конзолата **страна и височина на триъгълник** и пресмята неговото лице. Използвайте **формулата** за лице на триъгълник: **area = a * h / 2**. Закръглете резултата до **2 цифри след десетичния знак, използвайки `Math.round(area, 2)`**.
+Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area, 2)`**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |       Вход           |         Изход         |
 |--------------------|---------------------|
@@ -691,16 +691,16 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 | 7.75 <br>8.45        | Triangle area = 32.74 |
 | 1.23456 <br>4.56789  | Triangle area = 2.82  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#7](https://judge.softuni.bg/Contests/Practice/Index/649#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#7](https://judge.softuni.bg/Contests/Practice/Index/649#7).
 
 
-### Задача:	конзолен конвертор - от градуси °C към градуси °F
+### Problem: Converter – from °C Degrees to °F Degrees
 
-Напишете програма, която чете **градуси по скалата на Целзий** (°C) и ги преобразува в **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](http://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**. Ето няколко примера:
+Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](http://bfy.tw/3rGh "Търсене в Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 | Вход | Изход |
 |----|-----|
@@ -709,16 +709,16 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 | -5.5 |  22.1 |
 | 32.3 | 90.14 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#8](https://judge.softuni.bg/Contests/Practice/Index/649#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#8](https://judge.softuni.bg/Contests/Practice/Index/649#8).
 
 
-### Задача:	конзолен конвертор - от радиани в градуси
+### Problem: Converter – from Radians to Degrees
 
-Напишете програма, която чете **ъгъл в [радиани](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) и го преобразува в **[градуси](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Потърсете в Интернет подходяща формула. Числото **π** в Java програмите е достъпно чрез **``Math.PI``**. Закръглете резултата до най-близкото цяло число, използвайки метода **``Math.round(…)``**.
+Write a program, that reads **ъan angle in [radians](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) and converts it to **[degrees](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |  Вход  | Изход |
 |------|-----|
@@ -727,16 +727,16 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 | 0.7854 |   45  | 
 | 0.5236 |   30  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#9](https://judge.softuni.bg/Contests/Practice/Index/649#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#9](https://judge.softuni.bg/Contests/Practice/Index/649#9).
 
 
-### Задача: конзолен конвертор - USD към BGN
+### Problem: Converter – USD to BGN
 
-Напишете програма за **конвертиране на щатски долари** (USD) **в български лева** (BGN). **Закръглете** резултата до **2 цифри** след десетичния знак. Използвайте фиксиран курс между долар и лев: **1 USD = 1.79549 BGN**.
+Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** след десетичния знак. after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |  Вход  |    Изход  |
 |------|---------|
@@ -744,22 +744,22 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 |   100  | 179.55 BGN|
 |  12.5  | 22.44 BGN |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#10](https://judge.softuni.bg/Contests/Practice/Index/649#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#10](https://judge.softuni.bg/Contests/Practice/Index/649#10).
 
 
-### Задача:	\* конзолен междувалутен конвертор
+### Problem:	\* Currency Converter
 
-Напишете програма за **конвертиране на парична сума от една валута в друга**. Трябва да се поддържат следните валути: **BGN, USD, EUR, GBP**. Използвайте следните фиксирани валутни курсове:
+Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
 |  Курс  |   USD   |   EUR   |   GBP   |
 |:------:|:-------:|:-------:|:-------:|
 | 1 BGN  | 1.79549 | 1.95583 | 2.53405 |
 
-**Входът** e **сума за конвертиране**, **входна валута** и **изходна валута**. **Изходът** е едно число – преобразуваната сума по посочените по-горе курсове, закръглен до **2 цифри** след десетичния знак. 
+**The input** is **sum for conversion**, **input currency** and **output currency**. **The output** is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |        Вход        |   Изход  |
 |------------------|--------|
@@ -768,16 +768,16 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 | 12.35<br>EUR<br>GBP| 9.53 GBP |  
 |150.35<br>USD<br>EUR|138.02 EUR|
  
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#11](https://judge.softuni.bg/Contests/Practice/Index/649#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#11](https://judge.softuni.bg/Contests/Practice/Index/649#11).
 
 
-### Задача:	** пресмятане с дати - 1000 дни на Земята
+### Problem: ** Date Calculations – 1000 Days on the Earth
 
-Напишете програма, която въвежда **рождена дата** във формат **`dd-MM-yyyy`** и пресмята датата, на която се навършват **1000 дни** от тази рождена дата и я отпечатва в същия формат.
+Write a program that enters a **birth date** in format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |   Вход   |	 Изход  |
 |--------|--------|
@@ -787,10 +787,10 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 |01-01-2012|27-09-2014|
 |14-06-1980|11-03-1983|
 
-#### Насоки и подсказки 
-  * Потърсете информация за типовете **`Date`**, **`Calendar`** и **`SimpleDateFormat`** в Java и по-конкретно разгледайте методите **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** и **`SimpleDateFormat.format(date)`**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
-  * **Не печатайте** нищо допълнително на конзолата, освен изискваната дата!
+#### Hints and Guidelines 
+  * Look for information about the data type **`Date`**, **`Calendar`** and **`SimpleDateFormat`** in Java and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help you can solve the problem without the need to calculate days, months and leap years.
+  * **Don't print** anything additional on the console except for the wanted date!
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/649#12](https://judge.softuni.bg/Contests/Practice/Index/649#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#12](https://judge.softuni.bg/Contests/Practice/Index/649#12).
