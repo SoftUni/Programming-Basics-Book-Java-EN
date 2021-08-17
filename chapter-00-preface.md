@@ -28,7 +28,7 @@ As we will explain later, **the programming language that we start with, does no
 This book on programming for beginners is available in several programming languages (or is in the process of being adapted for them):
 
 * [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
-* [Programming Basics with C# (English)](https://csharp-book.softuni.bg)
+* [Programming Basics with C# (English)](https://csharp-book.softuni.org)
 * [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
 * [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
 * [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
