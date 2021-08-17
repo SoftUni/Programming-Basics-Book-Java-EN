@@ -1,16 +1,16 @@
-# Глава 4.1. По-сложни проверки
+# Chapter 4.1. Complex conditions
 
-В **настоящата** глава ще разгледаме **вложените проверки** в езика **Java**, чрез които нашата програма може да изпълнява **условни конструкции**, в които има **вложени други условни конструкции**. Наричаме ги **"вложени"**, защото **поставяме една `if` конструкция** в **друга `if` конструкция**. Ще разгледаме и **по-сложни логически условия** с подходящи примери.
+In **the following** chapter we are going to examie **nested conditional staements** in the **Java** language, by which our program can execute **conditional statements**, that contain other **nested contitionals**. We call them **"nested"**, because **we put one `if` statement** inside **another `if` statement**. We will also examine **more complex logical conditions** through relevant examples.
 
-## Видео
+## Video: Chapter Overview
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch a video lesson on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=1ZXBO_fCZ4w">
   https://www.youtube.com/watch?v=1ZXBO_fCZ4w</a>.
 </div>
 
 
-## Вложени проверки
+## Nested if-else conditions
 
 Доста често програмната логика налага използването на **`if`** или **`if-else`** конструкции, които се съдържат една в друга. Те биват наричани **вложени** **`if`** или **`if-else`** конструкции. Както се подразбира от названието **"вложени"**, това са **`if`** или **`if-else`** конструкции, които са поставени в други **`if`** или **`else`** конструкции.
   
