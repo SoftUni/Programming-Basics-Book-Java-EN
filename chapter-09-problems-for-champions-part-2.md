@@ -88,11 +88,11 @@ Here is the place to point out that calling  **`scanner.nextLine()`** after the 
 
 #### Algorithm for Solving the Problem
 
-The algorithm for solving the problem is a direct one – we continue **reading commands** from the console, **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has, and **store the number of purchases**.
+The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
-Let's examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second problem for the task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is **`String`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
+Let's examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second problem for the task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`String`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
 
-This is how the code will look like when using those two type of loops:
+This is how the code will look like when are using those two types of loops:
 
 ![](assets/chapter-9-2-images/01.Passion-days-03.png)
 
@@ -100,15 +100,15 @@ The next part of the algorithm is to **process the symbols from the commands**, 
 
 > * If the symbol is a **capital letter**, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
 > * If the symbol is a **small letter**, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
-> * If the symbol is **"%"**,  Lina makes a purchase that decreases her money in half.
+> * If the symbol is **"%"**,  Lina purchases that decreases her money in half.
 > * If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 lv. to her available funds.
-> * If the symbol is **different from all of the aforementioned**, Lina just makes a purchase without discount, and in this case you should simply subtract the value of the symbol from the ASCII table from her available funds.
+> * If the symbol is **different from all of the aforementioned**, Lina just purchases without discount, and in this case, you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
 Let's examine the problems that we will be facing in the first condition. The first one is how to distinguish if a particular **symbol is a capital letter**. We can use one of the following ways:
-* Keeping in mind the fact that the letters in the alphabet have a particular order, we can use the following condition **`action >= 'A' && action <= 'Z'`**, in order to check if our symbol is within the capital letters range.
+* Keeping in mind the fact that the letters in the alphabet have a particular order, we can use the following condition **`action >= 'A' && action <= 'Z'`**, to check if our symbol is within the capital letters range.
 * We can use the **`char.IsUpper(..)`** function.
 
-The other problem is how **to skip a particular symbol**, if it is not an operation that requires more money that Lina has. This is doable using the **`continue`** construction.
+The other problem is how **to skip a particular symbol** if it is not an operation that requires more money than Lina has. This is doable using the **`continue`** construction.
 
 An exemplary condition for the first part of the requirements looks like this:
 
@@ -120,12 +120,12 @@ We believe the reader should not have difficulties implementing all the other co
 
 #### Formatting the Output
 
-In the end of our task we must **print** a particular **output**, depending on the following condition:
+At the end of our task we must **print** a particular **output**, depending on the following condition:
 
 > - If no purchases have been made – "**No purchases. Money left: {remaining funds} lv.**"
 > - If at least one purchase is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
 
-The printing operations are trivial, as the only thing we need to take into consideration is that **the amount has to be printed with accuracy of up to 2 symbols after the decimal point**.
+The printing operations are trivial, as the only thing we need to take into consideration is that **the amount has to be printed with an accuracy of up to 2 symbols after the decimal point**.
 
 How can we do that? We will leave the answer to this question to the reader.
 
@@ -136,9 +136,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#0
 
 ## Problem: Numerical Expression
 
-Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master, because the spell relies on the ability to **quickly solve mathematical expressions**.
+Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
-In order to use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying** and/or **division**.
+To use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying**, and/or **division**.
 
 The expression is solved without considering the mathematical rules for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets, but no nested brackets:
 - An expression containing **(…(…)…) is an invalid one**.
@@ -158,17 +158,17 @@ Bonny is very pretty, but not as wise, so she will need our help to master the p
 
 ### Input Data
 
-The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means **end of the mathematical expression**.
+The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means the **end of the mathematical expression**.
 
 The input data is always valid and always in the described format. No need to validate it.
 
 ### Output Data
 
-The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression, rounded up to the **second digit after the decimal point**.
+The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression rounded up to the **second digit after the decimal point**.
 
 ### Constraints
 
-- The expressions will consist of **maximum 2500 symbols**.
+- The expressions will consist of a maximum of **2500 symbols**.
 - The numbers of each mathematical expression will be within the range [**1 … 9**].
 - The operators in the mathematical expressions will always be among **`+`** (summing up), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplying).
 - The result of the mathematical expression will be within the range [**-100000.00 … 100000.00**].
@@ -183,7 +183,7 @@ The output data must be printed on the console. The output consists of one line:
 
 ### Hints and Guidelines
 
-As usual, we will first read and process the input, after that we will solve the problem, and finally, we will print the result, formatted as required.
+As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required.
 
 #### Reading the Input Data
 
@@ -203,7 +203,7 @@ For the tasks of our problem we will need two variables:
 
 About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number can be summed to our result.
 
-After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task we know that **every expression is ending with `=`**. This means that we have to read and process symbols, until we match with  **`=`**.  After that we will type **`while` loop** as shown below.
+After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task, we know that **every expression is ending with `=`**. This means that we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
 
 ![](assets/chapter-9-2-images/02.X-expression-05.png)
 
@@ -304,8 +304,8 @@ We will solve the problem in a few steps:
 
 We have 3 lines in the input data:
  * **Secret number**.
- * **Number of** desired **bulls**.
- * **Number of** desired **cows**.
+ * **A Number for** desired **bulls**.
+ * **A Number for** desired **cows**.
 
 Reading the input data is trivial:
 
@@ -343,11 +343,11 @@ The condition for the bulls is very simple – we check whether the **first digi
 
 We repeat the action for the second, third, and fourth digits. 
 
-We will apply the following condition for the cows – first we will check whether the **first digit** of the generated number **matches the second one**, the **third one** or the **fourth digit** of the secret number. An example for the implementation:
+We will apply the following condition for the cows – first, we will check whether the **first digit** of the generated number **matches the second one**, the **third one**, or the **fourth digit** of the secret number. An example for the implementation:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-10.png)
 
-After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one** or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one** or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
+After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
 #### Printing the Output
 
