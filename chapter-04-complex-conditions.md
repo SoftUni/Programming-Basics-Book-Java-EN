@@ -98,17 +98,17 @@ Let us take a look at how we an implement more complex logical conditions. We ca
 
 As we saw, in some tasks we have to make **any chacks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each of them? The option with nested **`if` blocks** is valid, however the code would look very **disorganised** and surely - it would be **harder** to read and maintain.  
 
-Логическо "**И**" (оператор **`&&`**) означава няколко условия да са **изпълнени едновременно**. В сила е следната таблица на истинност:
+Logcal "**AND**" (operator **`&&`**) means that a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
 |a|b|a && b|
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### Как работи операторът && ?
+### How does the && opeartor work?
 
-Операторът **`&&`** приема **няколко булеви** (условни) израза, които имат стойност **`true`** или **`false`**, и ни връща **един** булев израз като **резултат**. Използването му **вместо** редица вложени **`if`** блокове прави кода **по-четлив**, **подреден** и **лесен** за поддръжка. Но как **работи**, когато поставим **няколко** условия едно след друго? Както видяхме по-горе, логическото **"И"** връща **`true`**, **само** когато приема като **аргументи изрази** със стойност **`true`**. Съответно, когато имаме **последователност** от аргументи, логическото "И" **проверява** или докато **свършат** аргументите, или докато не **срещне** аргумент със стойност **`false`**. 
+The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead of** a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put **a couple of** one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either **until the end of** the arguments listed, or until it **meets** an argument with value **`false`**. 
 
-**Пример**:
+**Example**:
 
 ```java
 boolean a = true;
@@ -116,40 +116,40 @@ boolean b = true;
 boolean c = false;
 boolean d = true;
 boolean result = a && b && c && d;
-// false (като d не се проверява)
+// false (where d is not being checked)
 ```
 
-Програмата ще се изпълни по **следния** начин: **започва** проверката от **`а`**, **прочита** я и отчита, че има стойност **`true`**, след което **проверява** **`b`**. След като е **отчелa**, че **`a`** и **`b`** връщат стойност **`true`**, **проверява следващия** аргумент. Стига до **`c`** и отчита, че променливата има стойност **`false`**. След като програмата отчете, че аргументът **`c`** има стойност **`false`**, тя изчислява израза **до `c`**, **независимо** каква е стойността на **`d`**. За това проверката на **`d`** се **прескача** и целият израз бива изчислен като **`false`**.
+The program will run in the **following** way: **It starts** the check from **`а`**, **reads** it and accepts that it has a **`true`** valude, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets ot **`c`** and sees that the argument has a **`false`** value. After the program accepts that the argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **regardless** of what the value of **`d`** is. That's why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
 
 ![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
-### Пример: точка в правоъгълник
+### Example: Point in a Rectangle
 
-Проверка дали **точка {x, y}** се намира **вътре в правоъгълника {x1, y1} – {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**).
+Checks whether **point {x, y}** is located **inside the rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход |Визуализация|
+|Input |Output |Visualization|
 |-----|------|:------:|
 |2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.png)|
 
-#### Решение
+#### Solution
 
-Една точка е вътрешна за даден правоъгълник, ако **едновременно** са изпълнени следните четири условия:
+A point is internal for a given polygon, if the following four conditions are applied **at the same time**:
 
-* Точката е надясно от лявата страна на правоъгълника.
-* Точката е наляво от дясната страна на правоъгълника.
-* Точката е надолу от горната страна на правоъгълника.
-* Точката е нагоре от долната страна на правоъгълника.
+* The point is placed to the right from the left side of the rectangle.
+* The point is placed to the left from the right side of the rectangle.
+* The point is placed downwards from the upper side of the rectangle.
+* The point is placed upwards from the down side of the rectangle.
 
 ![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.png)
 
-#### Тестване на решението
+#### Testing the solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#2](https://judge.softuni.bg/Contests/Practice/Index/653#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#2](https://judge.softuni.bg/Contests/Practice/Index/653#2).
 
 
-## Логическо "ИЛИ"
+## Logical "OR"
 
 Логическо **"ИЛИ"** (оператор **`||`**) означава да е **изпълнено поне едно** измежду няколко условия. Подобно на оператора **`&&`**, логическото **"ИЛИ"** приема няколко аргумента от **булев** (условен) тип и връща **`true`** или **`false`**. Лесно можем да се досетим, че **получаваме** като стойност **`true`**, винаги когато поне **един** от аргументите има стойност **`true`**. Типичен пример за логиката на този оператор е следният:
 
