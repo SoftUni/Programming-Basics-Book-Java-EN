@@ -10,94 +10,93 @@ In **the following** chapter we are going to examie **nested conditional staemen
 </div>
 
 
-## Nested if-else conditions
+## Nested If-Else Conditions
 
-Доста често програмната логика налага използването на **`if`** или **`if-else`** конструкции, които се съдържат една в друга. Те биват наричани **вложени** **`if`** или **`if-else`** конструкции. Както се подразбира от названието **"вложени"**, това са **`if`** или **`if-else`** конструкции, които са поставени в други **`if`** или **`else`** конструкции.
+Pretty often the program logic requires the use of **`if`** ot **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As the word **"nested"** implies, these are **`if`** or **`if-else`** statements, which are placed inside other **`if`** or **`else`** statements.
   
 
 ```java
-if (условие1) {
-    if (условие2) {
-	// тяло; 
+if (condition1) {
+    if (condition2) {
+	// body; 
     } else {
-	// тяло;
+	// body;
     }
 }
 ```
 
-Влагането на повече от три условни конструкции една в друга не се счита за добра практика и трябва да се избягва, най-вече чрез оптимизиране на структурата/алгоритъма на кода и/или чрез използването на друг вид условна конструкция, който ще разгледаме по-надолу в тази глава.
+Nesting of more than three conditional statements inside each other is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
 
-### Пример: обръщение според възраст и пол
+### Example: Personal Titles
 
-Според въведени **възраст** (десетично число) и **пол** (**m** / **f**) да се отпечата обръщение:
-* "**Mr.**" – мъж (пол "**m**") на 16 или повече години.
-* "**Master**" – момче (пол "**m**") под 16 години.
-* "**Ms.**" – жена (пол "**f**") на 16 или повече години.
-* "**Miss**" – момиче (пол "**f**") под 16 години.
+Depending on **age** (decimal number) and **gender** (**m** / **f**), print a personal title:
+* "**Mr.**" – a man (gender "**m**") 16 or over the age of 16.
+* "**Master**" – a boy (gender "**m**") under the age of 16.
+* "**Ms.**" – a woman (gender "**f**") 16 or over the age of 16.
+* "**Miss**" – a girl (gender "**f**") under the age of 16.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |12<br>f|Miss|17<br>m|Mr.|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |25<br>f|Ms.|13.5<br>m|Master|
 
-#### Решение
-
-Можем да забележим, че **изходът** на програмата **зависи от няколко неща**. **Първо** трябва да проверим какъв **пол** е въведен и **после** да проверим **възрастта**. Съответно ще използваме **няколко** **`if-else`** блока. Тези блокове ще бъдат **вложени**, т.е. от **резултата** на първия ще **определим** кои от **другите** да изпълним.
+#### Solution
+We should notice that the **output** of the program **depends on a few things**. **First**, we need to check the **gender**  entered and **then** check the **age**. Respectively, we are going to usе **a few** **`if-else`** blocks. These blocks will be **nested**, meaning that from the **result** of the first we are going to **define** which one of the **others** to execute.
 
 ![](assets/chapter-4-1-images/01.Personal-titles-01.jpg)
 
-След **прочитане на входните данни от конзолата** ще трябва да се изпълни следната **примерна програмна логика**:
+After **reading the input data from the console** the following **program logic** should be executed:
 
 ![](assets/chapter-4-1-images/01.Personal-titles-02.png)
 
-#### Тестване на решението:
+#### Testing the Solution:
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#0](https://judge.softuni.bg/Contests/Practice/Index/653#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#0](https://judge.softuni.bg/Contests/Practice/Index/653#0).
 
 
-### Пример: квартално магазинче
+### Example: Small Shop
 
-Предприемчив българин отваря по едно **квартално магазинче** в **няколко града** с различни **цени** за следните **продукти**:
+A Bulgarian entrepreneur opens **small shops** in **a few different cities** with different **prices** for the following **products**:
 
-|продукт / град|Sofia|Plovdiv|Varna|
+|product / city|Sofia|Plovdiv|Varna|
 |:-------:|:-------:|:-------:|:-------:|
 |coffee<br>water<br>beer<br>sweets<br>peanuts|0.50<br>0.80<br>1.20<br>1.45<br>1.60<br>|0.40<br>0.70<br>1.15<br>1.30<br>1.50<br>|0.45<br>0.70<br>1.10<br>1.35<br>1.55|
 
-По даден **град** (стринг), **продукт** (стринг) и **количество** (десетично число) да се пресметне цената.
+Calculate the price by the given **city** (string), **product** (string) and **quantity** (decmal number).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-------|-------|-------|-------|
 |coffee<br>Varna<br>2|0.9|peanuts<br>Plovidv<br>1|1.5|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-------|-------|-------|-------|
 |beer<br>Sofia<br>6|7.2|water<br>Plovdiv<br>3|2.1|
 
-#### Решение
+#### Solution
 
-**Прехвърляме** всички букви в **долен регистър** с функцията **`.toLowerCase()`**, за да сравняваме продукти и градове **без значение** от малки/главни букви.
+We **convert** all of the letters into **lower register** using the function **`.toLowerCase()`**, in order to compare products and cities **no matter** what the letters are - small or capital ones.
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
-#### Тестване на решението: 
+#### Testing the solution: 
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#1](https://judge.softuni.bg/Contests/Practice/Index/653#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#1](https://judge.softuni.bg/Contests/Practice/Index/653#1).
 
 
-## По-сложни проверки
+## More Complex Conditions
 
-Нека разгледаме как можем да правим по-сложни логически проверки. Може да използваме логическо "**И**" (**`&&`**), логическо "**ИЛИ**" (**`||`**), логическо **отрицание** (**`!`**) и **скоби** (**`()`**).
+Let us take a look at how we an implement more complex logical conditions. We can use the logical "**AND**" (**`&&`**), logical "**OR**" (**`||`**), logical **negation** (**`!`**) and **brackets** (**`()`**).
 
-### Логическо "И"
+### Logical "AND"
 
-Както видяхме, в някои задачи се налага да правим **много проверки наведнъж**. Но какво става, когато за да изпълним някакъв код, трябва да бъдат изпълнени **повече** условия и **не искаме** да правим **отрицание** (**`else`**) за всяко едно от тях? Вариантът с вложените **`if` блокове** е валиден, но кодът би изглеждал много **неподреден** и със сигурност - **труден** за четене и поддръжка.  
+As we saw, in some tasks we have to make **any chacks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each of them? The option with nested **`if` blocks** is valid, however the code would look very **disorganised** and surely - it would be **harder** to read and maintain.  
 
 Логическо "**И**" (оператор **`&&`**) означава няколко условия да са **изпълнени едновременно**. В сила е следната таблица на истинност:
 
