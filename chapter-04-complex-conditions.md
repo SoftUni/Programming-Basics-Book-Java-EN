@@ -315,16 +315,16 @@ boolean result = a || b || c || d;
 |-----|-----|-----|-----|-----|-----|
 |Sofia<br>1500|120.00|Plovidv<br>499.99|27.50|Kaspichan<br>-50|error|
 
-#### Решение
+#### Solution
 
 При прочитането на входа можем да обърнем града в малки букви (с функцията **`.toLowerCase()`**). Първоначално задаваме комисионната да е **`-1`**. Тя ще бъде променена, ако градът и ценовият диапазон бъдат намерени в таблицата с комисионните.
 За да изчислим комисионната според града и обема на продажбите се нуждаем от няколко вложени **`if` проверки**, както е в примерния код по-долу:
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Тестване на решението
+#### Testing the Solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#7](https://judge.softuni.bg/Contests/Practice/Index/653#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#7](https://judge.softuni.bg/Contests/Practice/Index/653#7).
 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -362,13 +362,13 @@ switch (селектор) {
 
 Нека напишем програма, която принтира **деня от седмицата** (на английски) според **въведеното число** (1 … 7) или "**Error!**", ако е подаден невалиден ден.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |-----|-----|
 |1<br>7<br>-1|Monday<br>Sunday<br>Error!|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
@@ -376,9 +376,9 @@ switch (селектор) {
 <td><b>Добра практика</b> е на <b>първо</b> място да поставяме онези <b><code>case</code> случаи</b>, които обработват <b>най-често случилите се ситуации</b>, а <b><code>case</code> конструкциите</b>, обработващи <b>по-рядко възникващи ситуации</b>, да оставим в <b>края преди <code>default</code> конструкцията</b>. Друга <b>добра практика</b> е да <b>подреждаме <code>case</code> етикетите</b> в <b>нарастващ ред</b>, без значение дали са целочислени или символни.</td>
 </tr></table>
 
-#### Тестване на решението
+#### Testing the solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#8](https://judge.softuni.bg/Contests/Practice/Index/653#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#8](https://judge.softuni.bg/Contests/Practice/Index/653#8).
 
 
 ### Множество етикети в switch-case
@@ -412,21 +412,21 @@ switch (селектор) {
 * crocodile, tortoise, snake -> **reptile**
 * others -> **unknown**
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |tortoise|reptile|dog|mammal|elephant|unknown|
 
-#### Решение
+#### Solution
 
 Можем да решим задачата чрез **`switch`**-**`case`** проверки с множество етикети по следния начин:
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Тестване на решението
+#### Testing the Solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#9](https://judge.softuni.bg/Contests/Practice/Index/653#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#9](https://judge.softuni.bg/Contests/Practice/Index/653#9).
 
 
 ## Какво научихме от тази глава?
@@ -485,9 +485,9 @@ switch (селектор) {
 
 Напишете програма, която въвежда **тип прожекция** (стринг), брой **редове** и брой **колони** в залата (цели числа) и изчислява **общите приходи** от билети при **пълна зала**. Резултатът да се отпечата във формат като в примерите по-долу - с 2 цифри след десетичния знак.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |Premiere<br>10<br>12|1440.00 leva|Normal<br>21<br>13|2047.50 leva|
 
@@ -499,9 +499,9 @@ switch (селектор) {
 
 ![](assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Тестване на решението
+#### Testing the Solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#10](https://judge.softuni.bg/Contests/Practice/Index/653#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#10](https://judge.softuni.bg/Contests/Practice/Index/653#10).
 
 
 ### Задача: волейбол
@@ -515,13 +515,13 @@ switch (селектор) {
 * Вторият ред съдържа цялото число **p** – брой празници в годината (които не са събота или неделя).
 * Третият ред съдържа цялото число **h** – брой уикенди, в които Влади си пътува до родния град.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |leap<br>5<br>2|45|normal<br>3<br>2|38|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |normal<br>11<br>6|44|leap<br>0<br>1|41|
 
@@ -533,9 +533,9 @@ switch (селектор) {
 
 ![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Тестване на решението
+#### Testing the Solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#11](https://judge.softuni.bg/Contests/Practice/Index/653#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#11](https://judge.softuni.bg/Contests/Practice/Index/653#11).
 
 
 ### Задача: * точка във фигурата
@@ -546,25 +546,25 @@ switch (селектор) {
 
 Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>3<br>10|outside|2<br>3<br>1|inside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>2<br>2|border|2<br>6<br>0|border|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|-----|-----|
 |2<br>0<br>6|outside|15<br>13<br>55|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>29<br>37|inside|15<br>37<br>18|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>-4<br>7|outside|15<br>30<br>0|border|
 
@@ -584,6 +584,6 @@ switch (селектор) {
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-03.png)
 
-#### Тестване на решението
+#### Testing the Solution
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/653#12](https://judge.softuni.bg/Contests/Practice/Index/653#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/653#12](https://judge.softuni.bg/Contests/Practice/Index/653#12).
