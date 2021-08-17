@@ -98,7 +98,7 @@ Let us take a look at how we an implement more complex logical conditions. We ca
 
 As we saw, in some tasks we have to make **any chacks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each of them? The option with nested **`if` blocks** is valid, however the code would look very **disorganised** and surely - it would be **harder** to read and maintain.  
 
-Logcal "**AND**" (operator **`&&`**) means that a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
+Logical "**AND**" (operator **`&&`**) means that a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
 |a|b|a && b|
 |-----|-----|-----|
