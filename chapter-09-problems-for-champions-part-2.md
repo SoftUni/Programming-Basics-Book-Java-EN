@@ -134,229 +134,227 @@ How can we do that? We will leave the answer to this question to the reader.
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#0](https://judge.softuni.bg/Contests/Practice/Index/664#0).
 
 
-## Задача: числен израз
+## Problem: Numerical Expression
 
-Бони е изключително могъща вещица. Тъй като силата на природата не е достатъчна, за да се бори успешно с вампири и върколаци, тя започнала да усвоява силата на Изразите. Изразът е много труден за усвояване, тъй като заклинанието разчита на способността за **бързо решаване на математически изрази**.
+Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master, because the spell relies on the ability to **quickly solve mathematical expressions**.
 
-За използване на "Израз заклинание", вещицата трябва да знае резултата от математическия израз предварително. **Израз заклинанието** се състои от няколко прости математически израза. Всеки математически израз може да съдържа оператори за **събиране**, **изваждане**, **умножение** и/или **деление**.
+In order to use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying** and/or **division**.
 
-Изразът се решава без да се вземат под внимание математическите правила при пресмятане на числови изрази. Това означава, че приоритет има последователността на операторите, а не това какъв вид изчисление правят. Израза **може да съдържа скоби**, като **всичко в скобите се пресмята първо**. Всеки израз може да съдържа множество скоби, но не може да съдържа вложени скоби:
-- Израз съдържащ **(…(…)…) е невалиден**.
-- Израз съдържащ **(…)…(…) е валиден**.
+The expression is solved without considering the mathematical rules for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets, but no nested brackets:
+- An expression containing **(…(…)…) is an invalid one**.
+- An expression containing **(…)…(…) is a valid one**.
 
-### Пример
+### Example
 
-Изразът
+The expression
 
 ![](assets/chapter-9-2-images/02.X-expression-01.png)
 
-бива решен по следния начин:
+is solved in the following way:
 
 ![](assets/chapter-9-2-images/02.X-expression-02.png)
 
-Бони е много красива, но не чак толкова съобразителна, затова тя има нужда от нашата помощ, за да усвои силата на Изразите.
+Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
-### Входни данни
+### Input Data
 
-Входните данни се състоят от един ред, който бива подаван от конзолата. Той съдържа **математическият израз за пресмятане**. Редът **винаги завършва със символа "="**. Символът **"="** означава **край на математическия израз**.
+The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means **end of the mathematical expression**.
 
-Входните данни винаги са валидни и във формата, който е описан. Няма нужда да бъдат валидирани.
+The input data is always valid and always in the described format. No need to validate it.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се принтират на конзолата. Изходът се състои от един ред – резултата от **пресметнатия математически израз**.
+The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression, rounded up to the **second digit after the decimal point**.
 
-Резултатът трябва да бъде **закръглен до втората цифра след десетичния знак**.
+### Constraints
 
-### Ограничения
+- The expressions will consist of **maximum 2500 symbols**.
+- The numbers of each mathematical expression will be within the range [**1 … 9**].
+- The operators in the mathematical expressions will always be among **`+`** (summing up), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplying).
+- The result of the mathematical expression will be within the range [**-100000.00 … 100000.00**].
+- Allowed execution time: **0.1 seconds**.
+- Allowed memory: **16 MB**.
 
-- Изразите ще състоят от **максимум 2500 символа**.
-- Числата от всеки математически израз ще са в интервала [**1 … 9**].
-- Операторите в математическите изрази винаги ще бъдат измежду **`+`** (събиране), **`-`** (изваждане), **`/`** (деление) или **`*`** (умножение).
-- Резултатът от математическия израз ще е в интервала [**-100000.00 … 100000.00**].
-- Позволено време за изпълнение: **0.1 секунди**.
-- Позволена памет: **16 MB**.
+### Sample Input and Output
 
-### Примерен вход и изход
+|Input|Output|Input|Output|
+|---------------------|----|-----------------------------------|--------|
+| 4+6/5+(4\*9–8)/7\*2=|8.57|3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)= | 110.63|
 
-| Вход                           | Изход  |Вход                           | Изход  |
-|--------------------------------|--------|-------------------------------|--------|
-| 4+6/5+(4\*9–8)/7\*2=           | 8.57   |3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)= | 110.63 |
+### Hints and Guidelines
 
-### Насоки и подсказки
+As usual, we will first read and process the input, after that we will solve the problem, and finally, we will print the result, formatted as required.
 
-Както обикновено, първо ще прочетем и обработим входа, след това ще решим задачата и накрая ще отпечатаме резултата, форматиран, както се изисква.
+#### Reading the Input Data
 
-#### Обработване на входа
+The input data will consist of exactly one text line read from the console. Here we have **two ways** to process the input. The first way is by **reading the entire line using the `bufferReader.readLine()`** ( where **`bufferReader`** is a variable from type **`BufferedReader`**) and accessing each symbol (**`char`**) of the line via a **`foreach` loop**. The second one is by **reading the input symbol by symbol using the `bufferReader.read()` command** and processing each symbol.
 
-Входните данни се състоят от точно един ред от конзолата. Тук имаме **два начина**, по които можем да обработим входа. Първият е чрез **прочитането на целия ред с командата `bufferReader.readLine()`**(където **`bufferReader`** е променлива от тип **`BufferedReader`**) и достъпването на всеки един символ (**`char`**) от реда чрез **`foreach` цикъл**. Вторият е чрез **прочитане на входа символ по символ чрез командата `bufferReader.read()`** и обработване на всеки символ.
-
-За решаване на задачата ще използваме втория вариант.
+We will use the second option to solve the problem.
 
 ![](assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-За целите на нашата задача ще имаме нужда от две променливи:
-* Една променлива, в която ще пазим **текущия резултат**.
-* Още една променлива, в която ще пазим **текущия оператор** от нашия израз.
+For the tasks of our problem we will need two variables:
+* One variable, that will hold the **current result**.
+* Another variable to hold our **current operator**. 
 
 ![](assets/chapter-9-2-images/02.X-expression-04.png)
 
-Относно кода по-горе трябва да поясним следния детайл. Стойността по подразбиране на оператора е **`+`**, за да може още първото срещнато число да бъде събрано с резултата ни.
+About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number can be summed to our result.
 
-След като вече имаме началните си променливи, трябва да помислим върху това **каква ще е основната структура** на нашата програма. От условието разбираме, че **всеки израз завършва с `=`**, т.е. ще трябва да четем и обработваме символи, докато не срещнем **`=`**. Следва точното изписване на **`while` цикъл**.
+After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task we know that **every expression is ending with `=`**. This means that we have to read and process symbols, until we match with  **`=`**.  After that we will type **`while` loop** as shown below.
 
 ![](assets/chapter-9-2-images/02.X-expression-05.png)
 
-Следващата стъпка е обработването на нашата **`symbol`** променлива. За нея имаме 3 възможни случая:
-* Ако символът е **начало на подизраз, заграден в скоби**, т.е. срещнатият символ е **`(`**.
-* Ако символът е **цифра между 0 и 9**. Но как можем да проверим това? Как можем да проверим дали символът ни е цифра? Тук идва на помощ **ASCII кодът** на символа, чрез който можем да използваме следната формула: **`[ASCII кода на нашия символ] - [ASCII кода на символа 0] = [цифрата, която репрезентира символа]`**. Ако **резултатът от тази проверка е между 0 и 9**, то тогава нашият символ наистина е **число**.
-* Ако символът е **оператор**, т.е. е **`+`**, **`-`**, **`*`** или **`/`**.
+The next step is the processing of our **`symbol`** variable. We have 3 possible cases for it:
+* If the symbol is a **start of a sub-expression placed in brackets** i.e. the found symbol is a **`(`**.
+* If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is a **number**. (* We can also use directly `'0'` and `'9'` symbols or their **ASCII codes***.)
+* If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
 ![](assets/chapter-9-2-images/02.X-expression-06.png)
 
-Нека разгледаме действията, които трябва да извършим при съответните случаи, които дефинирахме:
-* Ако нашият символ е **оператор**, то тогава единственото, което трябва да направим, е да **зададем нова стойност на променливата `expressionOperator`**.
-*  Ако нашият символ е **цифра**, тогава трябва да **променим текущия резултат от израза в зависимост от текущия оператор**, т.е. ако **`expressionOperator`** е **`-`**, тогава трябва да **намалим резултата с цифровата репрезентация на текущия символ**. Можем да вземем цифровата репрезентация на текущия символ, чрез формулата, която използвахме при проверката на този случай (**`[ASCII кода на нашия символ] - [ASCII кода на символа `0`] = [цифрата, която репрезентира символа]`**).
+Let's examine the actions that we need to undertake in the relevant cases that we defined:
+* If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expressionOperator` variable**.
+* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
 
 ![](assets/chapter-9-2-images/02.X-expression-07.png)
 
-* Ако нашият символ е **`(`**, това индикира **началото на подизраз** (израз в скоби). По дефиниция **подизразът трябва да се калкулира преди да се модифицира резултата от целия израз** (действията в скобите се извършват първи). Това означава, че ще имаме локален резултат за подизраза ни и локален оператор.
+* If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
 
 ![](assets/chapter-9-2-images/02.X-expression-08.png)
 
-След това, за **пресмятане стойността на подизраза** използваме същите методи, които използвахме за пресмятане на главния израз - използваме **`while` цикъл**, за **да четем символи** (докато не срещнем символа **`)`**). В зависимост от това дали прочетения символ е цифра или оператор, модифицираме резултата на подизраза. Имплементацията на тези операции е аналогична на имплементацията за пресмятане на изрази, описана по-горе, затова смятаме, че читателят не би трябвало да има проблем с нея.
+After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
 
-След като приключим калкулацията на резултата от подизраза ни, **модифицираме резултата на целия израз** в зависимост от стойността на **`expressionOperator`**.
+After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expressionOperator`**.
 
 ![](assets/chapter-9-2-images/02.X-expression-09.png)
 
-#### Форматиране на изхода
+#### Formatting the Output
 
-Единствения изход, който програмата трябва да принтира на конзолата, е **резултатът от решаването на израза, с точност два символа след десетичния знак**. Как можем да форматираме изхода по този начин? Отговора на този въпрос оставяме на читателя.
+The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/664#1](https://judge.softuni.bg/Contests/Practice/Index/664#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#1](https://judge.softuni.bg/Contests/Practice/Index/664#1).
 
 
-## Задача: бикове и крави
+## Problem: Bulls and Cows
 
-Всички знаем играта „Бикове и крави“ ([http://en.wikipedia.org/wiki/Bulls_and_cows](http://en.wikipedia.org/wiki/Bulls_and_cows)). При дадено 4-цифрено **тайно число** и 4-цифрено **предполагаемо число**, използваме следните правила:
-* Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число и е на **същата позиция**, имаме ***бик***.
-* Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число, но е **на различна позиция**, имаме ***крава***.
+We all know the game called "Bulls and Cows"  ([http://en.wikipedia.org/wiki/Bulls_and_cows](http://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
+* If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
+* If a digit in the suggested number matches a digit in the secret number but is located at a **different position**, we have a ***cow***.
 
-| Тайно число         | 1 | 4 | 8 | 1 |Коментар|
-|:-------------------:|:---:|:---:|:---:|:---:|:--------------------------:|
-| Предполагаемо число | 8 | 8 | 1 | 1 | Бикове = 1<br>Крави = 2  |
+| Secret number | 1 | 4 | 8 | 1 |Comment|
+|:-------------------:|:---:|:---:|:---:|:---:|:----------:|
+| Suggested number| 8 | 8 | 1 | 1 | Bulls = 1<br>Cows = 2  |
 
-| Тайно число         | 2 | 2 | 4 | 1 |Коментар|
-|:-------------------:|:---:|:---:|:---:|:---:|:-------------------------:|
-| Предполагаемо число | 9 | 9 | 2 | 4 | Бикове = 0<br>Крави = 2 |
+| Secret number          | 2 | 2 | 4 | 1 |Comment|
+|:-------------------:|:---:|:---:|:---:|:---:|:----------:|
+| Suggested number | 9 | 9 | 2 | 4 | Bulls = 0<br>Cows = 2 |
 
-При дадено тайно число и брой на бикове и крави, нашата задача е **да намерим всички възможни предполагаеми числа** в нарастващ ред.
+Upon having a particular secret number and the bulls and cows pertaining to it, our task is **to find all possible suggested numbers** in ascending order.
 
-Ако **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва да се отпечата "**No**".
+If there are **no suggested numbers** that match the criteria provided from the console, we must print "**No**".
 
-### Входни данни
+### Input Data
 
-Входните данни се четат от конзолата. Входът се състои от 3 реда:
-* Първият ред съдържа **секретното число**.
-* Вторият ред съдържа **броя бикове**.
-* Третият ред съдържа **броя крави**.
+Our input data consists of 3 arguments: 
+ * The first contains **the secret number**.
+ * The second contains **the number of bulls**.
+ * The third contains **the number of cows**.
 
-Входните данни ще бъдат винаги валидни. Няма нужда да бъдат проверявани.
+The input data will always be valid. There is no need to verify them.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се принтират на конзолата.
-Изходът трябва да се състои от **един единствен ред** – **всички предполагаеми числа**, разделени с единично празно място.
-Aко **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва **да се изпише “No”**.
+The output data must be printed on the console.
+The output must consist of **a single line**, holding **all suggested numbers**, space-separated.
+If there are **no suggested numbers** that match the criteria provided from the console, we must **print “No”**.
 
-### Ограничения
+### Constraints
 
-- Тайното число винаги ще се състои от **4 цифри в интервала** [**1..9**].
-- Броят на **кравите и биковете** винаги ще е в интервала [**0..9**].
-- Позволено време за изпълнение: **0.15 секунди**.
-- Позволена памет: **16 MB**.
+- The secret number will always consist of **4 digits in the range** [**1..9**].
+- The number of **cows and bulls** will always be in the range [**0..9**].
+- Allowed execution time: **0.15 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход           | Изход        |
+| Input        | Output     |
 |--------------|------------|
 | 2228<br>2<br>1 | 1222 2122 2212 2232 2242 2252 2262 2272 2281 2283 2284 2285 2286 2287 2289 2292 2322 2422 2522 2622 2722 2821 2823 2824 2825 2826 2827 2829 2922 3222 4222 5222 6222 7222 8221 8223 8224 8225 8226 8227 8229 9222 |
 
-| Вход           | Изход        |
+| Input        | Output     |
 |--------------|------------|
 | 1234<br>3<br>0 | 1134 1214 1224 1231 1232 1233 1235 1236 1237 1238 1239 1244 1254 1264 1274 1284 1294 1334 1434 1534 1634 1734 1834 1934 2234 3234 4234 5234 6234 7234 8234 9234 |
 
-| Вход           | Изход        |
+| Input        | Output     |
 |--------------|------------|
-| 1234<br>3<br>1 | No           |
+| 1234<br>3<br>1 | No       |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще решим задачата на няколко стъпки:
- - Ще прочетем **входните данни**.
- - Ще генерираме всички възможни **четирицифрени комбинации** (кандидати за проверка).
- - За всяка генерирана комбинация ще изчислим **колко бика** и **колко крави** има в нея спрямо секретното число. При съвпадение с търсените бикове и крави, ще **отпечатаме комбинацията**.
+We will solve the problem in a few steps:
+- We will read the **input data**.
+- We will generate all possible **four-digit combinations** (candidates for verification).
+- For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Обработване на входа
+#### Reading the Input Data
 
-За входа на нашата задача имаме 3 реда:
-* **Секретното число**.
-* **Броят** желани **бикове**.
-* **Броят** желани **крави**.
+We have 3 lines in the input data:
+ * **Secret number**.
+ * **Number of** desired **bulls**.
+ * **Number of** desired **cows**.
 
-Прочитането на тези входни данни е тривиално:
+Reading the input data is trivial:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-03.png)
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-Преди да започнем писането на алгоритъма за решаване на нашия проблем, трябва да **декларираме флаг**, който да указва дали е намерено решение:
+Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-04.png)
 
-Ако след приключването на нашия алгоритъм, този флаг все още е **`false`**, тогава ще принтираме **`No`** на конзолата, както е указано в условието.
+If after finishing our algorithm this flag is still **`false`**, then we will print **`No`** on the console, as specified in the requirements.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-05.png)
 
-Нека започнем да размишляваме над нашия проблем. Това, което трябва да направим, е да **анализираме всички числа от `1111` до `9999`** без тези, които съдържат в себе си нули (напр. **`9011`**, **`3401`** и т.н. са невалидни). Какъв е най-лесният начин за **генериране** на всички тези **числа**? **С вложени цикли**. Тъй като имаме **4-цифрено число**, ще имаме **4 вложени цикъла**, като всеки един от тях ще генерира **отделна цифра от нашето число** за тестване.
+Let's start analyzing our problem. What we need to do is **analyze all numbers from `1111` to `9999`**, excluding those that contain zeroes (for example **`9011`**, **`3401`**, etc. are invalid). What is the easiest way to **generate** all these **numbers**? We will **use nested loops**. As we have a **4-digit number**, we will have **4 nested loops**, as each of them will generate **an individual digit in our number** for testing.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-06.png)
 
-Благодарение на тези цикли, **имаме достъп до всяка една цифра** на всички числа, които трябва да проверим. Следващата ни стъпка е да **разделим секретното число на цифри**. Това може да се постигне много лесно чрез **комбинация от целочислено и модулно деление**.
+Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily using **a combination of integer division and modular division**.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-07.png)
 
-Остават ни последните две стъпки преди да започнем да анализираме колко крави и бикове има в дадено число. Съответно, първата е **декларацията на `counter` променливи** във вложените ни цикли, за да **броим кравите и биковете** за текущото число. Втората стъпка е да направим **копия на цифрите на текущото число**, което ще анализираме, за да предотвратим проблеми с работата на вложите цикли, ако правим промени по тях.
+Only two last steps remain until we start analyzing how many cows and bulls there are in a particular number. Accordingly, the first one is the **declaration of `counter` variables** in the nested loops, to **count the cows and bulls** for the current number. The second step is to make **copies of the digits of the current number** that we will analyze, to prevent problems upon working with nested loops, in case we make changes to them.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-08.png)
 
-Вече сме готови да започнем анализирането на генерираните числа. Каква логика можем да използваме? Най-елементарният начин да проверим колко крави и бикове има в едно число е чрез **поредица от `if-else` проверки**. Да, не е най-оптималния начин, но с цел да не използваме знания извън пределите на тази книга, ще изберем този подход.
+We are ready to start analyzing the generated numbers. What logic can we use? The easiest way to check how many cows and bulls there are inside a number is via a **sequence of `if-else` conditions**. Yes, this is not the most optimal way, but to stick to what is covered in the current book, we will use this approach.
 
-От какви проверки имаме нужда?
+What conditions do we need?
 
-Проверката за бикове е елементарна - проверяваме дали **първата цифра** от генерираното число е еднаква със **същата цифра** от секретното число. Премахваме проверените цифри с цел да избегнем повторения на бикове и крави.
+The condition for the bulls is very simple – we check whether the **first digit** of the generated number matches the **same digit** in the secret number. We remove the digits that are already checked to avoid repetitions of bulls and cows.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-09.png)
 
-Повтаряме действието за втората, третата и четвърта цифра. 
+We repeat the action for the second, third, and fourth digits. 
 
-Проверката за крави можем да направи по следния начин - първо проверяваме дали **първата цифра** от генерираното число **съвпада с втората**, **третата** или **четвъртата цифра** на секретното число. Примерна имплементация:
+We will apply the following condition for the cows – first we will check whether the **first digit** of the generated number **matches the second one**, the **third one** or the **fourth digit** of the secret number. An example for the implementation:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-10.png)
 
-След това последователно проверяваме дали **втората цифра** от генерираното число **съвпада с първата**, **третата** или **четвъртата цифра** на секретното число, дали **третата цифра** от генерираното число съвпада с **първата**, **втората** или **четвъртата цифра** на секретното число и накрая проверяваме дали **четвъртата цифра** от генерираното число съвпада с **първата**, **втората** или **третата цифра** на секретното число.
+After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one** or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one** or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
-#### Отпечатване на изхода
+#### Printing the Output
 
-След като приключим всички проверки, ни остава единствено да **проверим дали биковете и кравите в текущото генерирано число съвпадат с желаните бикове и крави, прочетени от конзолата**. Ако това е така, принтираме текущото число на конзолата.
+After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console.
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-11.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/664#2](https://judge.softuni.bg/Contests/Practice/Index/664#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#2](https://judge.softuni.bg/Contests/Practice/Index/664#2).
