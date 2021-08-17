@@ -40,8 +40,8 @@ This book is available in several versions in different programming languages:
 * [Programming Basics with C++ (Bulgarian)](https://cpp-book.softuni.bg)
 
 Brief information about this edition:
-* Title: **Основи на програмирането с Java**
-* Authors: **Светлин Наков и колектив**
+* Title: **Programming Basics with Java**
+* Authors: **Svetlin Nakov & Team**
 * ISBN: **TODO**
 * Edition: **TODO**
 * License: **CC-BY-SA**
