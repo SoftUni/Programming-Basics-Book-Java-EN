@@ -15,13 +15,13 @@ In this chapter we are going to get familiar with the following concepts and pro
 
 ## The System Console
 
-Usually called "**the console**", the system console or more computer console, represents the tool, by which we give the computer commands in a text format and get the results from their execution again as a text.
+Usually called "**the console**", the system console or more computer console, represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
 
-Generally, the system console represents a text terminal, which means that it accepts and visualizes just **text**, without any graphical elements like buttons, menus, etc. Usually, it looks like a black colored window, in which we write and perform **console commands**, and print the result in the form of a text. In **Windows** the console looks like this:
+Generally, the system console represents a text terminal which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. Usually, it looks like a black colored window, in which we write and perform **console commands** and print the result in the form of a text. In **Windows** the console looks like this:
 
 ![](/assets/chapter-2-1-images/00.Console-example.png)
 
-In most operating systems, generally **the console** is available as a standalone application on which we write different console commands. In Windows it is called **Command Prompt**, while in Linux and macOS it is called **Terminal**. The console runs console applications. They read text as an input from the command line and print the output as a text on the console. In this book we are going to learn programming mostly through creating **console applications**.
+In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows it is called **Command Prompt**, while in Linux and macOS it is called **Terminal**. The console runs console applications. They read text as an input from the command line and print the output as a text on the console. In this book we are going to learn programming mostly through creating **console applications**.
 
 This is how the console looks in **Linux**:
 
@@ -29,28 +29,28 @@ This is how the console looks in **Linux**:
 
 ## Reading Integers From The Console
 
-In **Java** we have several options to read an input from **the console**. One is through the use of the built-in class **`Scanner`**, which we are going to use now, and the other one is using the  **`BufferedReader`**. The second is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
+In **Java** we have several options to read an input from **the console**. One is through the use of the built-in class **`Scanner`** which we are going to use now and the other one is using the  **`BufferedReader`**. The second is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
 
-In order to read an **Integer** (not a float) **number** from the console first we have to import the built-in class **`Scanner`** on the first line of our program, even before the base class declaration. We put this line above:
+In order to read an **Integer** (not a float) **number** from the console first we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line above:
 
 ```java
 import java.util.Scanner;
 ```
 
-Then in the `main(…)` method of the program we have to create a new `Scanner` instance , which to attach to the system input. After the created `scanner` reader we can read integers, floating-point numbers, text, etc. For example, with `.nextInt()` we read the next following integer given as input:
+Then in the `main(…)` method of the program we have to create a new `Scanner` instance which to attach to the system input. After the created `scanner` reader we can read integers, floating-point numbers, text, etc. For example, with `.nextInt()` we read the next following integer given as input:
 
 ```java
 Scanner scanner = new Scanner(System.in);
 int num = scanner.nextInt();
 ```
 
-Now in the variable **`num`** of integer type **`int`** we have read, given as input from **the console**.
+Now in the variable **`num`** of integer type **`int`** we have read given as input from **the console**.
 
-Java is **highly typed language**, this means, that the variables have type, which is determine at compile time and can not change on the go (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader), and the variable `num` is from type `int` (integer number).
+Java is **highly typed language**, this means that the variables have type which is determine at compile time and can not change on the go (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
 ### Example: Calculating a Square Area With Side **а**
  
-For example, let us look at the following program, which **reads an integer** from the console, **multiplies it** by itself (squares it) and **prints the result** from the multiplication. This is how we can calculate the square area by given side length read from the cosnole. The whole source code of the program follows. Write it in file with name `SquareArea.java`, or else you will have a compile time error:
+For example, let us look at the following program which **reads an integer** from the console, **multiplies it** by itself (squares it) and **prints the result** from the multiplication. This is how we can calculate the square area by given side length read from the cosnole. The whole source code of the program follows. Write it in file with name `SquareArea.java`, or else you will have a compile time error:
 
 ```Java
 // Put this code in the file: SquareArea.java
@@ -74,23 +74,23 @@ Here is how the program would work when we have a square with a side length equa
 
 ![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
 
-Try to write a wrong number, for example "**hello**". You will get an error message during runtime (exception). 
+Try to write a wrong number, for example, "**hello**". You will get an error message during runtime (exception). 
 
 ![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
 
-This is normal, because **Java** is highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
+This is normal because **Java** is highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
 
 #### How Does the Example Work?
 
 The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
 
-The next line **`System.out.print("a = ");`** prints an informative message, which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`**, and not **`System.out.println(…);`** and this way the cursor stays on the same line.
+The next line **`System.out.print("a = ");`** prints an informative message which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`** and not **`System.out.println(…);`** and this way the cursor stays on the same line.
 
 The next line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with name **`a`**.
 
 The next command **`int area = a * a;`** keeps in a new variable **`area`** the result of the multiplication of **`a`** by **`a`**.
 
-Next command **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`**, and not **`System.out.println("…");`** and this way the cursor stays on the same line in order to print the calculated area of the square afterwards.
+Next command **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`** and not **`System.out.println("…");`** and this way the cursor stays on the same line in order to print the calculated area of the square afterwards.
 
 The last command **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
 
@@ -100,16 +100,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0
 
 #### Reading Floating-Point Numbers From the Console
 
-Try to rework the above program so that it accepts not only integers (`int`), but floating-point numbers as well (`double`). We can use `scanner.nextDouble()`. We will learn more about the floating-point numbers after a while. 
+Try to rework the above program so that it accepts not only integers (`int`) but floating-point numbers as well (`double`). We can use `scanner.nextDouble()`. We will learn more about the floating-point numbers after a while. 
 
 
 ## Calculations in Programming
 
-We know about the computers that they are machines, which process data. All **data** is stored in the computer memory (RAM memory) in **variables**. Variables are named areas of memory, which stores data from certain type, for example number or text. Each **variable** in Java has **name**, **type** and **value**. This is how we can define a variable, as at the same time with the declaration, we also assign value to it:
+We know about the computers that they are machines which process data. All **data** is stored in the computer memory (RAM memory) in **variables**. Variables are named areas of memory which stores data from certain type, for example number or text. Each **variable** in Java has **name**, **type** and **value**. This is how we can define a variable as at the same time with the declaration we also assign value to it:
 
 ![](/assets/chapter-2-1-images/03.Declaring-variables-01.png)
 
-After processing, the data is stored again in variables (somewhere in the memory, set aside by our program).
+After processing, the data is stored again in variables (somewhere in the memory set aside by our program).
 
 ## Data Types and Variables
 
@@ -145,7 +145,7 @@ System.out.print("Centimeters = ");
 System.out.println(centimeters);
 ```
 
-Let’s start the program and make sure that when a value in inches is entered, we obtain a correct output in centimeters:
+Let’s start the program and make sure that when a value in inches is entered we obtain a correct output in centimeters:
 
 ![](assets/chapter-2-1-images/04.Console-output-01.png)
 
@@ -163,11 +163,11 @@ Scanner scanner = new Scanner(System.in);
 
 String str = scanner.nextLine();
 ```
-Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way, because by default the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If it is not parse to a number, for the program **each number** will be just **text**, with which **we can not do** arithmetic operations.
+Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because by default the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If it is not parse to a number, for the program **each number** will be just **text** with which **we can not do** arithmetic operations.
 
 ### Example: Greeting by Name
 
-Let’s write a program, which enter the name of the user and greets them with the text "**Hello, *име***".
+Let’s write a program which enter the name of the user and greets them with the text "**Hello, *име***".
 
 ```Java 
 Scanner scanner = new Scanner(System.in);
@@ -176,7 +176,7 @@ String name = scanner.nextLine();
 System.out.printf("Hello, %s!", name);
 ```
 
-In this case the expression **`%s`** is replaced with the **first** passed argument, in this case is the variable **`name`**:
+In this case the expression **`%s`** is replaced with the **first** passed argument which now this is the variable **`name`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
@@ -187,7 +187,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#2
 
 ## Concatenating Text and Numbers
 
-When printing a text, numbers and other data on the console, **we can join them**, by using templates **`%s`**, **`%d`**, **`%f`** etc. In programming, these templates are called **placeholders**, depending on the type of the variable, different symbols are used to declare different types of arguments. The main ones are `%s` for text (string), `%d` for int numbers, `%f` for floating-point numbers.
+When printing a text, numbers and other data on the console **we can join them** by using templates **`%s`**, **`%d`**, **`%f`** etc. In programming, these templates are called **placeholders**, depending on the type of the variable, different symbols are used to declare different types of arguments. The main ones are `%s` for text (string), `%d` for int numbers, `%f` for floating-point numbers.
 
 This is **example** for printing formatted text with (**placeholders**):
 
@@ -206,7 +206,7 @@ This is the result, which we will get after the execution of the example:
 
 ![](assets/chapter-2-1-images/04.Console-output-03.png)
 
-Notice how every variable should be passed in the **order, in which we want it to be printed**, and correspond to the **type passed in the placeholder**. Practically, the template (**placeholder**) accepts variables of **every type**.
+Notice how every variable should be passed in the **order in which we want it to be printed** and correspond to the **type passed in the placeholder**. Practically, the template (**placeholder**) accepts variables of **every type**.
 
 ### Testing in the Judge System
 
@@ -257,10 +257,10 @@ int product = a * b; // 35
 ### Dividing Numbers (operator **`/`**)
 
 Dividing numbers is done using the **`/`**. It works differently with integers and floating-point numbers.
-*	When we divide two integers, **цan integer division** is applied and the obtained output is without its fractional part. Example: 11 / 3 = 3.
-*	When we divide two numbers and at least one of them is a float number, **a floating division** is applied, and the obtained result is a float number, just like in math. Example 11 / 4.0 = 2.75. When it cannot be done with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
+*	When we divide two integers **an integer division** is applied and the obtained output is without its fractional part. Example: 11 / 3 = 3.
+*	When we divide two numbers and at least one of them is a float number **a floating division** is applied and the obtained result is a float number, just like in math. Example 11 / 4.0 = 2.75. When it cannot be done with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
 * The integer **division by 0** causes an **exception** during runtime (`Java.lang.ArithmeticException`).
-* •	Float number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
+* Float number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
 
 Here are a few examples with the division operator:
 
@@ -281,7 +281,7 @@ int a = 25;
 System.out.println(a / 4);  // Целочислен резултат: 6
 System.out.println(a / 0);  // Грешка: деление на 0
 ```
-Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails, and works correctly with the special values **+&#8734;** и **-&#8734;**:
+Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails and works correctly with the special values **+&#8734;** и **-&#8734;**:
 
 ```Java
 int a = 15;
@@ -321,7 +321,7 @@ String sum = "The sum is: " + a + b;
 System.out.println(sum);  // The sum is: 1.52.5
 ```
 
-Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers we have to use **brackets** in order to change the order of execution of the operations:
 
 ```Java
 double a = 1.5;
@@ -333,12 +333,12 @@ System.out.println(sum);  // The sum is: 4
 
 ## Numerical Expressions
 
-In programming, we can calculate **numerical expressions**, for example:
+In programming we can calculate **numerical expressions**, for example:
 
 ```Java
 int expr = (3 + 5) * (4 – 2);
 ```
-The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
+The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets it is calculated first**, but we already know all of that from school math.
 
 ### Example: Calculating Trapezoid Area
 
@@ -369,7 +369,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4
 
 ### Example: Circle Area and Perimeter 
 
-Let’s write a program, which when enter a **radius r** of a circle **calculates the area and the perimeter** of the circle / round.
+Let’s write a program which when enter a **radius r** of a circle **calculates the area and the perimeter** of the circle / round.
 
 Formulas:
 -	Area = π \* r \* r
@@ -400,7 +400,7 @@ A rectangle is given with the **coordinates of two of its opposite angles**. Cal
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
 
-In this tast we must take into account, that if from the bigger `x` we subtract the smaller `x`, we will obtain the length of the rectangle. Identically, if from the bigger `y` we subtract the smaller `y`, we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
+In this tast we must take into account, that if from the bigger `x` we subtract the smaller `x`, we will obtain the length of the rectangle. Identically, if from the bigger `y` we subtract the smaller `y` we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -419,9 +419,9 @@ System.out.println(decimalFormat.format(width * height));
 System.out.println(decimalFormat.format(2 * (width + height)));
 ```
 
-We use **`Math.max(a, b)`**, to find the bigger value from **`a`** and **`b`** and identically **`Math.min(a, b)`** to find the smaller of both values.
+We use **`Math.max(a, b)`** to find the bigger value from **`a`** and **`b`** and identically **`Math.min(a, b)`** to find the smaller of both values.
 
-When the program is executed with the values from the coordinate system given in the condition, we obtain the following result:
+When the program is executed with the values from the coordinate system given in the condition we obtain the following result:
 
 ![](/assets/chapter-2-1-images/04.Console-output-06.png)
 
@@ -445,9 +445,9 @@ Let's solidify what we learned in this chapter with some exercises.
 
 ### Blank IntelliJ IDEA Solution (Project)
 
-We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient**, when we want to **work on a few projects** and switch quickly between them or we want to **unite logically a few interconnected projects**.
+We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **unite logically a few interconnected projects**.
 
-In the current practical exercise, we will use a **Project with a couple of tasks (Java classes)**, to organize the solutions of the tasks from the exercises – every task in a separate Java class and all of them in a common project.
+In the current practical exercise we will use a **Project with a couple of tasks (Java classes)** to organize the solutions of the tasks from the exercises – every task in a separate Java class and all of them in a common project.
 
 * We start IntelliJ IDEA.
 * We create a new **Project:** [**File**] → [**New**] → [**Project**].
@@ -464,7 +464,7 @@ Give an appropriate name for the project, for example "SimpleCalculations" and a
 
 ![](assets/chapter-2-1-images/06.New-project-04.png)
 
-Now we have **empty IntelliJ IDEA Project** (without any Java classes in it, which have to be in the `src` folder):
+Now we have **empty IntelliJ IDEA Project** (without any Java classes in it which have to be in the `src` folder):
 
 ![](assets/chapter-2-1-images/06.New-project-05.png)
 
@@ -624,7 +624,7 @@ On the figure below shows a trapezoid with bases 8 and 13 and height 7. It has a
 
 #### Hints and Guidelines
 
-Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with name "`TrapezoidArea`" and to write **the code, that reads the input from the console, calculates the trapezoid area and prints it**:
+Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with name "`TrapezoidArea`" and to write **the code that reads the input from the console, calculates the trapezoid area and prints it**:
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-02.png)
 
