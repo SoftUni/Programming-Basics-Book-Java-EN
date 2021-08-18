@@ -1,15 +1,15 @@
 # Chapter 2.2. Simple calculations - Exam Problems
 
-In the previous chapter, we got familiar with the system console and how to work with it – how to **read numbers** from the console and how to **print an output** on the console. We went through the main arithmetical operations and briefly mentioned data types. In this chapter we will practice and consolidate what we have learned so far, by solving a few **more complicated problems**, given .
+In the previous chapter we got familiar with the system console and how to work with it – how to **read numbers** from the console and how to **print an output** on the console. We went through the main arithmetical operations and briefly mentioned data types. In this chapter we will practice and consolidate what we have learned so far by solving a few **more complicated problems** given .
 
 
 ## Reading Numbers from the Console
 
-Before jumping into the practical problems, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start with reading numbers from the console.
+Before jumping into the practical problems we are going to revise the most important aspects of what we have studied in the previous chapter. We will start with reading numbers from the console.
 
 ### Reading an Integer
 
-We need to create a variable to store the numbers (for example **`num`**), and to use the standard command to read data from the console in combination with the function **`Integer.parseInt(…)`**, which converts text into number:
+We need to create a variable to store the numbers (for example **`num`**) and to use the standard command to read data from the console in combination with the function **`Integer.parseInt(…)`** which converts text into number:
 
 ```java
 int num = Integer.parseInt(scanner.nextLine());
@@ -25,7 +25,7 @@ double num = Double.parseDouble(scanner.nextLine());
 
 ## Printing text through formatted specificators (format specifiers)
 
-**Format specifier** is an expression which is going to be replaced with a particular value while printing the output. The method **`System.out.printf(…)`** supports printing a string based on a formatted specificators, where the first argument, which we need to pass, is the formatted string, followed by the number of arguments, equal to the number of specificators.
+**Format specifier** is an expression which is going to be replaced with a particular value while printing the output. The method **`System.out.printf(…)`** supports printing a string based on a formatted specificators where the first argument which we need to pass is the formatted string followed by the number of arguments, equal to the number of specificators.
 
 ```java
 System.out.printf("You are %s %s, a %d-years old person from %s.",
@@ -63,7 +63,7 @@ double result2 = 5 / 2.0; // резултатът е 2.5 (дробно деле�
 
 ## Concatenation
 
-By using the operator **`+`** between string variables (or between a string and a number), we have the so-called concatenation (cobining strings).
+By using the operator **`+`** between string variables (or between a string and a number) we have the so-called concatenation (cobining strings).
 
 ```java
 String firstName = "Ivan";
@@ -75,11 +75,11 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 
 ## Exam Problems
 
-Now, after we revised how to make simple calculations and how to read and print numbers from the console, let's move to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
+Now, after we revised how to make simple calculations and how to read and print numbers from the console let's move to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
 
 ## Problem: Training Lab
 
-**A training lab** has a rectangular size **l** for **w** metres, without columns on the inside. The hall is divided into two parts- left and right, with a hallway - approximately in the middle. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a **department** with podium for the lecturer. A single **working place** occupies **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has an opening of 160cm) **exactly one working space is lost**, and due to the **department** (кwhich has size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** at the described location (look at the figure).
+**A training lab** has a rectangular size **l** for **w** metres without columns on the inside. The hall is divided into two parts- left and right, with a hallway - approximately in the middle. In both parts there are **rows with desks**. In the back of the hall there is a big **entrance door**. In the front there is a **department** with podium for the lecturer. A single **working place** occupies **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and due to the **department** (кwhich has size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** at the described location (look at the figure).
 
 ### Input Data
 
@@ -110,13 +110,13 @@ Try to solve the problem on your own first. If you do not succeed, go through th
 
 #### Idea for Solution
 
-As with any programming task is **important to build an idea for its solution**, before we start to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab, where the number depends on the hall length and height. We notice that the provided input will be in **meters**, and the information about how much space the working places and hallway take, will be in **centimeters**. To do the calculations, we will use the same measuring units, no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution.  
+As with any programming task is **important to build an idea for its solution** before we start to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab where the number depends on the hall length and height. We notice that the provided input will be in **meters** and the information about how much space the working places and hallway take will be in **centimeters**. To do the calculations, we will use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution.  
 
-Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations with integer and fractional part can be obtained, **In a variable we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the places which are lost because of the entrance door and podium). This is how we calculate the needed value. 
+Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations with integer, fractional part can be obtained. **In a variable we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the places which are lost because of the entrance door and podium). This is how we calculate the needed value. 
 
 #### Choosing Data Types
 
-From the example, we see that a real number with whole and fractional part can be given as an input, therefore, it is not appropriate to choose data type **`int`**, This is why we use **`double`**. Choosing data type for the next variables depends on the method we choose to solve the problem. . As with any programming task, this one also has **more than one way to be solved**. Two methods will be shown here. 
+From the example, we see that a real number with whole and fractional part can be given as an input, therefore, it is not appropriate to choose data type **`int`**. This is why we use **`double`**. Choosing data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one also has **more than one way to be solved**. Two methods will be shown here. 
 
 #### Solution
 
@@ -132,16 +132,16 @@ The first thing we have to do is read the input from the console. With **`scanne
 Let’s move to the calculations. The special part here is that after dividing the numbers, we have to store only the integer part the result in a variable. 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Търсете в Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Java or we are dealing with one that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
+<td><b>Търсете в Google!</b> Whenever we have an idea how to solve a particular problem but we do not know how to write it in Java or we are dealing with one that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: *java get whole number part of double*. We find out that, one possible way is to use the method **`Math.floor(…)`**. as it works with data types of type **`double`**, For the number of rows and columns we create variables of the same type.  
+In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. as it works with data types of type **`double`**. For the number of rows and columns we create variables of the same type.  
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 
-Second variant: As we already know, the operator for division **`/`** operates differently on integers and decimals. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search how to convert the real numbers that we have as values for the height and the width, into integers and then divide them. 
+Second variant: As we already know, the operator for division **`/`** operates differently on integers and decimals. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search how to convert the real numbers that we have as values for the height and the width into integers and then divide them. 
 
-In this case, there could be  **data loss**, after having removed the fractional part, so it is necessary that it is converted **expressly** (explicit typecasting). We use the operator for converting data **`(type)`**, by replacing the word **type** with the needed **тdata type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
+In this case, there could be  **data loss** after having removed the fractional part so it is necessary that it is converted **expressly** (explicit typecasting). We use the operator for converting data **`(type)`**, by replacing the word **type** with the needed **тdata type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
 
 ![](assets/chapter-2-2-images/01.Training-lab-05.png)
 
@@ -187,7 +187,7 @@ Print on the console **one floating-point number: the earnings of all fruits and
 
 ### Hints and Guidelines
 
-First, we will give a few ideas and particular hints for solving the problem, followed by the essential part of the code.
+First, we will give a few ideas and particular hints for solving the problem followed by the essential part of the code.
 
 #### Idea for Solution
 
@@ -195,11 +195,11 @@ Let's first go through the problem requirements. In this case, we have to calcul
 
 #### Choosing Data Types
 
-After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of **`int`**. The prices of the fruits and vegetables are said to be **floating-point numbers**, so the variables will be of type **`double`**.
+After we have a clear idea of how to solve the task we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of **`int`**. The prices of the fruits and vegetables are said to be **floating-point numbers** so the variables will be of type **`double`**.
 
-We can also declare two variables to store the income from the fruits and vegetables separately. . As we are multiplying a variable of type **`int`** (total kilograms) with one of type **`double`** (price), the result should also be of type **`double`**. Let's clarify that: generally **operators work with arguments of the same type**. Therefore, in order to multiply values of different data types, we have to convert them into the same type. When there are types of different scopes in one expression, the one with the highest scope is the one the other types are converted to, in this case **`double`**. . As there isn't danger of data loss, **the conversion is implicit** (implicit) and is automatically done by the compiler.  
+We can also declare two variables to store the income from the fruits and vegetables separately. As we are multiplying a variable of type **`int`** (total kilograms) with one of type **`double`** (price) the result should also be of type **`double`**. Let's clarify that: generally **operators work with arguments of the same type**. Therefore, in order to multiply values of different data types we have to convert them into the same type. When there are types of different scopes in one expression the one with the highest scope is the one the other types are converted to, in this case **`double`**. As there isn't danger of data loss **the conversion is implicit** (implicit) and is automatically done by the compiler.  
 
-The **output** should also be a **floating-point number**, this means that the result will be stored in a variable of type **`double`**.
+The **output** should also be a **floating-point number**. This means that the result will be stored in a variable of type **`double`**.
 
 #### Solution 
 
@@ -208,7 +208,7 @@ It is time to get to the solution. We can divide it into three smaller tasks:
 * **Doing** the calculations.
 * **Printing** the output on the console.
 
-In order to read the input, we declare variables, which we have to name carefully, so that they can give us a hint about the values they store. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
+In order to read the input we declare variables which we have to name carefully so that they can give us a hint about the values they store. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-01.png)
 
@@ -216,7 +216,7 @@ We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-02.png)
 
-The task does not specify special output format, so we just have to calculate the requested value and print it on the console. As in mathematics and so in programming, division has a priority over addition. However, in this task, first we have to **calculate the sum** of the two input values and then we have to **divide by 1.94**. In order to give priority to addition, we can use brackets. With **`System.out.println(…)`** we print the output on the console.  
+The task does not specify special output format so we just have to calculate the requested value and print it on the console. As in mathematics and so in programming, division has a priority over addition. However, in this task first we have to **calculate the sum** of the two input values and then we have to **divide by 1.94**. In order to give priority to addition we can use brackets. With **`System.out.println(…)`** we print the output on the console.  
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-03.png)
 
@@ -229,9 +229,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#1
 
 The tiles on the ground in front of an apartment building need changing. The ground has a **square shape with side of N meters**. The tiles are **wide W meters** and **length L meters**. There is one bench on the ground with **width of "M" meters and length of "O" meters**. The tiles under it do not need to be replaced. Each tile is replaced for **0.2 minutes**.
 
-Write a program that reads the size of the ground, the tiles and the bench from the console, and calculates **how many tiles are needed to** cover the ground and calculates **is the total time for replacing the tiles**.
+Write a program that reads the size of the ground, the tiles and the bench from the console and calculates **how many tiles are needed to** cover the ground and calculates **is the total time for replacing the tiles**.
 
-**Example**: **ground** with size 20 м. mm has area of 400 кв.м. **A bench**, that is 1 м. wide and 2 м. long, has area of 2 кв.м. One **tile** is 5 м. wide and 4 м. long and has area of = 20 кв.м. **The area**, that needs to be covered is **400 - 2 = 398 кв.м.** They are needed **398 / 20 = 19.90 tiles**. The needed **time** is **19.90 * 0.2 = 3.98 minutes.**
+**Example**: **ground** with size 20 м. mm has area of 400 кв.м. **A bench** that is 1 м. wide and 2 м. long has area of 2 кв.м. One **tile** is 5 м. wide and 4 м. long and has area of = 20 кв.м. **The area** that needs to be covered is **400 - 2 = 398 кв.м.** They are needed **398 / 20 = 19.90 tiles**. The needed **time** is **19.90 * 0.2 = 3.98 minutes.**
 
 ### Input Data
 
@@ -245,7 +245,7 @@ They are read from the console **5 numbers**:
 
 ### Output Data
 
-Print on the console **two numbers**: **number of tiles**, needed for the repair, and **the time for placing them**, each on a new line.
+Print on the console **two numbers**: **number of tiles** needed for the repair and **the time for placing them**. Each on a new line.
 
 ## Sample Input and Output
 
@@ -270,17 +270,17 @@ Let's make a draft to clarify the task requirements. It can look the following w
 
 ### Idea for Solution
 
-It is required to calculate **the number of tiles**, which have to be placed, as well as the **time**, for replacing them. In order to **calculate the number of tiles**, we have to calculate the **area that needs to be covered**, and to **divide it by the area per tile**. The ground is square, therefore, we find the total area by multiplying its side by its value **`N * N`**. After that, we calculate **the area that the bench takes up**, by multiplying its two sides as well **`M * O`**. After subtracting the area of the bench from the area of the whole ground, we obtain the area that needs to be repaired. 
+It is required to calculate **the number of tiles** which have to be placed as well as the **time** for replacing them. In order to **calculate the number of tiles** we have to calculate the **area that needs to be covered** and to **divide it by the area per tile**. The ground is square, therefore, we find the total area by multiplying its side by its value **`N * N`**. After that, we calculate **the area that the bench takes up** by multiplying its two sides as well **`M * O`**. After subtracting the area of the bench from the area of the whole ground we obtain the area that needs to be repaired. 
 
-We calculate the area of a single tile by **multiplying** its two sides with one another - **`W * L`**. As we already saied, now we have to **divide** the area for covering by the area of a single tile. This way, we find the number of necessary tiles which we multiply by **0.2** (the time needed for changing single tile). Now, we have the wanted output. 
+We calculate the area of a single tile by **multiplying** its two sides with one another - **`W * L`**. As we already saied, now we have to **divide** the area for covering by the area of a single tile. This way we find the number of necessary tiles which we multiply by **0.2** (the time needed for changing single tile). Now, we have the wanted output. 
 
 ### Choosing Data Types
 
-ДThe length of the side of the ground, the width and the length of the bench, will be given as **integer numbers**, therefore, in order to store their values, we can declare **variables of type `int`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`double`**. The output will be a floating-point number as well, so the variables will be of type **`double`**. 
+The length of the side of the ground, the width and the length of the bench will be given as **integer numbers**, therefore, in order to store their values we can declare **variables of type `int`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`double`**. The output will be a floating-point number as well so the variables will be of type **`double`**. 
 
 ### Solution
 
-As in the previous tasks, we can divide the solution into three smaller tasks:
+As in the previous tasks we can divide the solution into three smaller tasks:
 * **Reading** the input.
 * **Doing** the calculations.
 * **Printing** the input on the console.
