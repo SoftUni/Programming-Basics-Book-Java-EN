@@ -289,11 +289,11 @@ The first thing we have to do is go through **the input** of the task. It is imp
 
 ![](assets/chapter-2-2-images/03.Change-tiles-02.png)
 
-After we have initialized the variables and have stored the corresponding values in them, we move to the **calculations**. As the values of the variables **`n`**, **`a`** and **`b`**, which we work with, are stored in variables of type **`int`**, we can also declare for the results **variables of the same type**.  
+After we have initialized the variables and have stored the corresponding values in them we move to the **calculations**. As the values of the variables **`n`**, **`a`** and **`b`** which we work with are stored in variables of type **`int`** we can also declare for the results **variables of the same type**.  
 
 ![](assets/chapter-2-2-images/03.Change-tiles-03.png)
 
-The variables **`w`** and  **`h`** are of type **`double`**, therefore, for the **area of a single tile** we create a variable of the same type. Finally **we calculate the values that we have to print** on the console. **The number** of needed **tiles** we get by **dividing the area that needs to be covered by the area of a single tile**. When dividing two numbers, one of which is **floating-point number**, the result is also a **floating-point number**. In order, for the calculations to be correct, we store the result in a variable of type **`double`**. The task does not specify special formatting or rounding of the output, so we just print the values with **`System.out.println(…)`**. 
+The variables **`w`** and  **`h`** are of type **`double`**, therefore, for the **area of a single tile** we create a variable of the same type. Finally **we calculate the values that we have to print** on the console. **The number** of needed **tiles** we get by **dividing the area that needs to be covered by the area of a single tile**. When dividing two numbers, one of which is **floating-point number** the result is also a **floating-point number**. In order for the calculations to be correct we store the result in a variable of type **`double`**. The task does not specify special formatting or rounding of the output so we just print the values with **`System.out.println(…)`**. 
 
 ![](assets/chapter-2-2-images/03.Change-tiles-04.png)
 
@@ -343,24 +343,24 @@ Let's first think of the way we can solve the task again, before having started 
 
 #### Idea for Solution
 
-ВWe see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. **The output** should be in **euro**. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR so we have **first to calculate the whole sum that Peter has in BGN**, and **then to calculate the output**. 
+We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. **The output** should be in **euro**. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR so we have **first to calculate the whole sum that Peter has in BGN** and **then to calculate the output**. 
 
-As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, in order to get the value of **Chinese yuans in leva**, first we have to **exchange them in dollars**, and then **the dollars to BGN**. Finally, we will **sum the two values** and calculate how much Euro that is. 
+As we have information for the exchange rate of Bitcoins to BGN we can directly exchange them. On the other hand, in order to get the value of **Chinese yuans in leva**, first we have to **exchange them in dollars** and then **the dollars to BGN**. Finally, we will **sum the two values** and calculate how much Euro that is. 
 
-Only the final step left: to **calculate the commission fee** and subtracting the new sum from the total one. The comission will be given as a **floating-point number**, which will represent a **percent from the total sum**. Let's divide it from the beginning by 100, so as to calculate its **percentage value**. We will multiply it by the sum in Euro and than divide the result from the same sum and print the final sum on the console. 
+Only the final step left: to **calculate the commission fee** and subtracting the new sum from the total one. The comission will be given as a **floating-point number** which will represent a **percent from the total sum**. Let's divide it from the beginning by 100 so as to calculate its **percentage value**. We will multiply it by the sum in Euro and than divide the result from the same sum and print the final sum on the console. 
 
 #### Choosing Data Types
 
-**Bitcoins** are given as **an integer**, therefore, for their value we can declare **a variable of type `int`**. As a number **Chinese yuan and commission fee** we will obtain **a floating-point number**, so we are going to use **`double`**. As **`double`** is the data type with bigger scope, and the **output** should also be a **floating-point numbe**, we will use it for the other variables we create as well. 
+**Bitcoins** are given as **an integer**, therefore, for their value we can declare **a variable of type `int`**. As a number **Chinese yuan and commission fee** we will obtain **a floating-point number** so we are going to use **`double`**. As **`double`** is the data type with bigger scope and the **output** should also be a **floating-point numbe** we will use it for the other variables we create as well. 
 
 #### Solution
 
-After we have built an idea on how to solve the task and we have chosen the data structures that we are going to use, it is time to get to **write the code**. As in the previous tasks, we can divide the solution into three smaller tasks: 
+After we have built an idea on how to solve the task and we have chosen the data structures that we are going to use it is time to get to **write the code**. As in the previous tasks we can divide the solution into three smaller tasks: 
 * **Reading** the input.
 * **Doing** the calculations.
 * **Printing** the input on the console.
 
-**We declare the variables**, that we are going to use and again we carefully have to choose **meaningful names**, which are going to give us hints about the values they store. We initialize their values: with **`scanner.nextLine()`** we read the input numbers from the console and convert the string entered by the user to **`int`** or **`double`**. 
+**We declare the variables** that we are going to use and again we carefully have to choose **meaningful names** which are going to give us hints about the values they store. We initialize their values: with **`scanner.nextLine()`** we read the input numbers from the console and convert the string entered by the user to **`int`** or **`double`**. 
 
 ![](assets/chapter-2-2-images/04.Money-01.png)
 
@@ -370,17 +370,17 @@ We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/04.Money-03.png)
 
-Finally, we **calculate the commission fee value** and **subtract it from the sum in Euro**. Let's pay attention to the way we could write this: **`euro -= commission * euro`** is the short way to write **`euro = euro - (commission * euro)`**. In this case, we use a **combined assignment operator** **`-=`**, which **subtracts the value of the operand to the right from the one to the left**. The operator for multiplication **`*`** has **a higher priority** than the combined operator, this is why, the expression **`commission * euro`** is performed first and then its value is divided. More about the operators you can learn in the book ["Въведение в програмирането с Java", (стр. 116)](http://www.introprogramming.info/intro-csharp-book/read-online/glava3-operatori-i-izrazi/#_Toc298863965).
+Finally, we **calculate the commission fee value** and **subtract it from the sum in Euro**. Let's pay attention to the way we could write this: **`euro -= commission * euro`** is the short way to write **`euro = euro - (commission * euro)`**. In this case, we use a **combined assignment operator** **`-=`**, which **subtracts the value of the operand to the right from the one to the left**. The operator for multiplication **`*`** has **a higher priority** than the combined operator, this is why the expression **`commission * euro`** is performed first and then its value is divided. More about the operators you can learn in the book ["Въведение в програмирането с Java", (стр. 116)](http://www.introprogramming.info/intro-csharp-book/read-online/glava3-operatori-i-izrazi/#_Toc298863965).
 
 The task does not specify special string formatting or rounding the result, therefore, we just have to calculate the output and print it on the console. 
 
 ![](assets/chapter-2-2-images/04.Money-04.png)
 
-Let's pay attention to something that applies to all other problems of this type: written like that, the solution of the task is pretty detailed. As the task itself is not too complex, in theory, we could write one big expression, where right after having taken the input, we calculate the output. For example, such expression would look like this: 
+Let's pay attention to something that applies to all other problems of this type: written like that the solution of the task is pretty detailed. As the task itself is not too complex in theory, we could write one big expression where right after having taken the input we calculate the output. For example, such expression would look like this: 
 
 ![](assets/chapter-2-2-images/04.Money-05.png)
 
-This code would print a correct result, but it is **hard to read**. It won't be easy to find out how it works and whether if it contains any mistakes, as well as finding such and correcting them. It is better to **Instead of one complex expression, to write a few simpler ones** and to store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable. 
+This code would print a correct result but it is **hard to read**. It won't be easy to find out how it works and whether if it contains any mistakes as well as finding such and correcting them. It is better to **instead of one complex expression, to write a few simpler ones** and to store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable. 
 
 ## Testing in the Judge System
 
@@ -389,7 +389,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#3
 
 ## Problem: Daily Earnings
 
-Ivan is a programmer in an **American company** and he works from home **approximately N days per month**, and earns **approximately M dollars per day**. At the end of the year, Ivan **пgets bonus**, which is **equals to 2.5 monthly salaries**. From what he earned during the year **withhold 25% for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in leva per day, as he spends them in Bulgaria. It is accepted that one year has exactly **365 days**. **The exchange rate of dollar** to leva will be **read from the console**.
+Ivan is a programmer in an **American company** and he works from home **approximately N days per month** and earns **approximately M dollars per day**. At the end of the year, Ivan **gets bonus** which is **equals to 2.5 monthly salaries**. From what he earned during the year **withhold 25% for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in leva per day as he spends them in Bulgaria. It is accepted that one year has exactly **365 days**. **The exchange rate of dollar** to leva will be **read from the console**.
 
 ### Input Data
 
@@ -417,24 +417,24 @@ On the console **to print 1 number – approximately daily earnings in leva**. T
 
 ### Hints and Guidelines
 
-Firstly, we have to analyze the task and think of a way to solve it. Then, we will choose data types and, finally, we will write the code.
+Firstly, we have to analyze the task and think of a way to solve it. Then we will choose data types and finally we will write the code.
 
 #### Idea for Solution
 
-Let's first calculate **how much the monthly salary** of Ivan is. . We do that by **multiplying the working days per month by his daily earnings**. **We multiply the result** by 12, so as to calculate his salary for 12 months, and then **by 2.5**, in order to calculate the bonus. After having summed up the two values, we calculate his **annual income**. From it **we have to reduce 25% for taxes**. We can do this by multipling his total income by **0.25** and subtract the result from it. Depending on the exchange rate, we **exchange the dollars to leva**, after that **we divide the result by the days in a year**, which we accepts that they are 365.     
+Let's first calculate **how much the monthly salary** of Ivan is. We do that by **multiplying the working days per month by his daily earnings**. **We multiply the result** by 12 so as to calculate his salary for 12 months and then **by 2.5** in order to calculate the bonus. After having summed up the two values we calculate his **annual income**. From it **we have to reduce 25% for taxes**. We can do this by multipling his total income by **0.25** and subtract the result from it. Depending on the exchange rate we **exchange the dollars to leva**. After that **we divide the result by the days in a year** which we accepts that they are 365.     
 
 #### Choosing Data Types
 
-**The working days per month** are given as an **integer**, therefore, we can declare a variable of **type `int`**. For the **earned money**, as well as for the **exchange rate of dollar to leva**, we will obtain **a floating-point number**, so we use for them **`double`**. As **`double`** is the type with **the higher scope**, and the output should also be **a floating-point number**, we use double for the other variables that we create as well. 
+**The working days per month** are given as an **integer**, therefore, we can declare a variable of **type `int`**. For the **earned money** as well as for the **exchange rate of dollar to leva** we will obtain **a floating-point number** so we use for them **`double`**. As **`double`** is the type with **the higher scope** and the output should also be **a floating-point number** we use double for the other variables that we create as well. 
 
 #### Solution
 
-Again: after we have an idea on how to solve the problem and we have considered the data types that we are going to use, we can start **writing the program**. As in the previous tasks, we can divide the solution into three smaller tasks: 
+Again: after we have an idea on how to solve the problem and we have considered the data types that we are going to use, we can start **writing the program**. As in the previous tasks we can divide the solution into three smaller tasks: 
 * **Reading the input**.
 * **Doing the calculations**.
 * **Printing the output** on the console.
 
-**We declare the variables**, that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseInt/Double(…)`**. 
+**We declare the variables** that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseInt/Double(…)`**. 
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-01.png)
 
@@ -442,9 +442,9 @@ Doing the Calculations:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-02.png)
 
-We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators**, because this way the code becomes **more easily readable** and chances of making a mistake are smaller. 
+We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators** because this way the code becomes **more easily readable** and chances of making a mistake are smaller. 
 
-Finally, we have to print the result on the console. We notice that **the number has to be rounded up to the second digit after the decimal point**. For this purpose we can use **formatted specificators**, an item that will be replaced by a particular value when printing. In Java for **formatting specificator** is used `%`, followed by a specific letter (specificator). We can format an integer or a floating-point number by using **F**/**f**, or **D**/**d**. It is followed by a whole positive number, specifying the number of digits after the decimal point (you can read more about formatting in the book ["Въведение в програмирането с Java" (стр. 137-143)](http://www.introprogramming.info/intro-java-book/read-online/glava4-vhod-i-izhod-ot-konzolata/#_Toc243587243).
+Finally, we have to print the result on the console. We notice that **the number has to be rounded up to the second digit after the decimal point**. For this purpose we can use **formatted specificators**, an item that will be replaced by a particular value when printing. In Java for **formatting specificator** is used `%` followed by a specific letter (specificator). We can format an integer or a floating-point number by using **F**/**f**, or **D**/**d**. It is followed by a whole positive number specifying the number of digits after the decimal point (you can read more about formatting in the book ["Въведение в програмирането с Java" (стр. 137-143)](http://www.introprogramming.info/intro-java-book/read-online/glava4-vhod-i-izhod-ot-konzolata/#_Toc243587243).
 
 We see the final result like this:
 
