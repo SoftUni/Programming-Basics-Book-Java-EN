@@ -167,7 +167,7 @@ Let's pay attention to the fact that **reading text does not require converting 
 
 ### Example: Greeting by Name
 
-Let’s write a program which enter the name of the user and greets them with the text "**Hello, *име***".
+Let’s write a program which enters the name of the user and greets them with the text "**Hello, *име***".
 
 ```Java 
 Scanner scanner = new Scanner(System.in);
