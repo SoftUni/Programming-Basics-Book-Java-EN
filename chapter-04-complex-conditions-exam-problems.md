@@ -1,9 +1,9 @@
-# Глава 4.2. По-сложни проверки – изпитни задачи
+# Chapter 4.2. More Complex Conditions – Exam Problems
 
-В предходната глава се запознахме с **вложените условни конструкции** в езика Java. Чрез тях програмната логика в дадена програма може да бъде представена посредством **`if` конструкции**, които се влагат една в друга. Разгледахме и условната конструкция **`switch-case`**, която позволява избор измежду списък от възможности. Следва да упражним и затвърдим наученото досега, като разгледаме няколко по-сложни задачи, давани на изпити. Преди да преминем към задачите, ще си припомним условните конструкции:
+The previous chapter introduced you to **nested conditions** in Java. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the **`switch-case`** conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have in-depth understanding of the material, by discussing a number of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
 
-## Вложени проверки
+## Nested Conditions
 
 ```java
 if (condition1) {
@@ -16,13 +16,13 @@ if (condition1) {
 ```
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>Запомнете, че <b>не е добра практика</b> да пишете <b>дълбоко вложени условни конструкции</b> (с ниво на влагане повече от три). Избягвайте влагане на повече от три условни конструкции една в друга. Това усложнява кода и затруднява неговото четене и разбиране.</td>
+    <td>Remember that <b>it is not a good practice</b> to write <b>deeply nested conditional statements</b> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
 
-## Switch-case проверки
+## Switch-case Conditions
 
-Когато работата на програмата зависи от стойността на една променлива, вместо да правим последователни проверки с множество **`if-else`** блокове, можем да използваме условната конструкция **`switch-case`**.
+When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
 ```java
 switch (селектор) {
@@ -38,47 +38,47 @@ switch (селектор) {
 }
 ```
 
-Конструкцията се състои от:
-* Селектор - израз, който се изчислява до някаква конкретна стойност. Типът на селектора може да бъде **цяло число**, **`string`** или **`enum`**.
-* Множество **`case`** етикети с команди след тях, завършващи с **`break`**.
+The structure consists of:
+* Selector - an expression that calculates a particular value. The type of the selector can be **an integer**, **`string`** or **`enum`**.
+* multiple **`case`** labels followed by commands after them, ending with **`break`**.
 
 
-## Изпитни задачи
+## Exam Problems
 
-Сега, след като си припомнихме как се използват условни конструкции и как се влагат една в друга условни конструкции, за реализиране на по-сложни проверки и програмна логика, нека решим няколко изпитни задачи.
+Now, after we refreshed our knowledge on how to use and nest conditional statements in order to implement more complex conditions and program logic, let's solve some exam problems.
 
 
-## Задача: навреме за изпит
+## Problem: On Time for the Exam
 
-Студент трябва да отиде **на изпит в определен час** (например в 9:30 часа). Той идва в изпитната зала в даден **час на пристигане** (например 9:40). Счита се, че студентът е дошъл **навреме**, ако е пристигнал **в часа на изпита или до половин час преди това**. Ако е пристигнал **повече от 30 минути по-рано**, той е **подранил**. Ако е дошъл **след часа на изпита**, той е **закъснял**. 
+A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrive **at the time when the exam starts or up to half an hour earlier**. If the student arrive **more than 30 minutes earlier**, the student **has come too early**. If he arrive **after the time when the exam starts**, he is **late**. 
 
-Напишете програма, която въвежда време на изпит и време на пристигане и отпечатва дали студентът е дошъл **навреме**, дали е **подранил** или е **закъснял**, както и **с колко часа или минути** е подранил или закъснял.
+Write a program that has an input for the exam starting time and the time of the student arrival, and prints if the student has arrive **on time**, or if he has **arrive early** or if he is **late**, as well as **how many hours or minutes** the student has arrive too early or too late.
 
-### Входни данни
+### Input Data
 
-От конзолата се четат **четири цели числа** (по едно на ред):
+From the console are read **four integers** (one per line):
 
-- Първият ред съдържа **час на изпита** – цяло число от 0 до 23.
-- Вторият ред съдържа **минута на изпита** – цяло число от 0 до 59.
-- Третият ред съдържа **час на пристигане** – цяло число от 0 до 23.
-- Четвъртият ред съдържа **минута на пристигане** – цяло число от 0 до 59.
+- The first line contains **exam starting time(hours)** – an integer from 0 to 23.
+- The second line contains **exam starting time(minutes)** – an integers from 0 to 59.
+- The third line contains **hour of arrival** – an integer from 0 to 23.
+- The fourth line contains **minutes of arrival** – an integer from 0 to 59.
 
-### Изходни данни
+### Output Data
 
-На първия ред отпечатайте:
+Print on the first line:
 
-- "**Late**", ако студентът пристига **по-късно** от часа на изпита.
-- "**On time**", ако студентът пристига **точно** в часа на изпита или до 30 минути по-рано.
-- "**Early**", ако студентът пристига повече от 30 минути **преди** часа на изпита.
+- "**Late**", if the student arrives **later** than the exam starting time.
+- "**On time**", if the student arrives **on time** exactly at the exam starting time or up to 30 minutes earlier.
+- "**Early**", if the student arrives more than 30 minutes **before** the exam starting time.
 
-Ако студентът пристига с поне минута разлика от часа на изпита, отпечатайте на следващия ред:
+If the student arrives with more than one minute difference compared to the exam starting time, print on the next line:
 
-- "**mm minutes before the start**" за идване по-рано с по-малко от час.
-- "**hh:mm hours before the start**" за подраняване с 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:05".
-- "**mm minutes after the start**" за закъснение под час.
-- "**hh:mm hours after the start**" за закъснение от 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:03".
+- "**mm minutes before the start**" for arriving less than an hour earlier.
+- "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print the minutes using 2 digits, for example "1:05".
+- "**mm minutes after the start**" for arriving less than an hour late.
+- "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print the minutes using 2 digits, for example "1:03".
 
-### Примерен вход и изход
+### Sample Input and Output
 
 | Вход | Изход | Вход | Изход |
 |---|---|---|---|
@@ -92,12 +92,12 @@ switch (селектор) {
 |11<br>30<br>10<br>55|Early<br>35 minutes before the start|
 |11<br>30<br>12<br>29|Late<br>59 minutes after the start|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>Препоръчително е <b>да прочетете няколко пъти заданието</b> на дадена задача, като си водите записки и си скицирате примерите, докато разсъждавате над тях, преди да започнете писането на код.</td></tr></table>
+    <td>It is recommended <b>to read a few more times the task</b> of a given problem by taking notes and sketching examples as you think about them before you start writing code.</td></tr></table>
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
 Съгласно заданието очакваме да ни бъдат подадени **четири** поредни реда с различни **цели числа**. Разглеждайки дадените параметри можем да се спрем на типа **`int`**, тъй като той удовлетворява очакваните ни стойности. Едновременно **четем** входа и **парсваме** стринговата стойност към избрания от нас тип данни за **цяло число**.
 
