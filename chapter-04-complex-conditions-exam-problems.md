@@ -177,12 +177,12 @@ budget determines the destination, and the season determines what amount of the 
 - If **more than 1000 lv**. – somewhere in **Europe**.
   - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от конзолата и се състои от **два реда**:
+The input data will be read from the console and will consist of **two lines**:
 
-- На **първия** ред получаваме **бюджета** - **реално число** в интервал [**10.00 … 5000.00**].
-- На **втория** ред – **един** от двата възможни сезона: "**summer**" или "**winter**".
+- On **the first** line we receive the **budget** - **a floating-point number** int the range of [**10.00 … 5000.00**].
+- On **the second** line – **one** of the two possible seasons: "**summer**" or "**winter**".
 
 ### Input Data
 
