@@ -99,25 +99,25 @@ If the student arrives with more than one minute difference compared to the exam
 
 #### Processing the Input Data
 
-Съгласно заданието очакваме да ни бъдат подадени **четири** поредни реда с различни **цели числа**. Разглеждайки дадените параметри можем да се спрем на типа **`int`**, тъй като той удовлетворява очакваните ни стойности. Едновременно **четем** входа и **парсваме** стринговата стойност към избрания от нас тип данни за **цяло число**.
+According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
 
-Разглеждайки очаквания изход можем да създадем променливи, които да съдържат различните видове изходни данни, с цел да избегнем използването на т.нар. **"magic strings"** в кода.
+Looking at the expected output, we can create variables that contain the different output data types, in order to avoid using the so called **"magic strings"** in the code.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
 
-#### Изчисления
+#### Calculations
 
-След като прочетохме входа, можем да започнем да разписваме логиката за изчисление на резултата. Нека първо да изчислим **началния час** на изпита **в минути** за по-лесно и точно сравнение.
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **starting time** of the exam **in minutes** for easier and more accurate comparison.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
-Нека изчислим по същата логика и **времето на пристигане** на студента.
+Let's also calculate the **arrival time** of the student.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.png)
 
-Остава ни да пресметнем разликата в двете времена, за да можем да определим **кога** и в **какво време спрямо изпита** е пристигнал студентът.
+What remains is to calculate the difference between the two times, in order to determine **when** and **what time compared to the exam time** the student has arrived.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
