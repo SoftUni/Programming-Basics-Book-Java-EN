@@ -121,61 +121,61 @@ What remains is to calculate the difference between the two times, in order to d
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
-Следващата ни стъпка е да направим необходимите **проверки и изчисления**, като накрая ще изведем резултата от тях. Нека разделим изхода на **две** части: 
+Our next step is to do the required **checks and calculations**,and finally we will print the output. Let's separate the code into **two** parts: 
 
-- Първо да покажем кога е пристигнал студентът - дали е **подранил**, **закъснял** или е пристигнал **навреме**. За целта ще се спрем на **`if-else`** конструкция.
-- След това ще покажем **времевата разлика**, ако студентът пристигне в **различно време** от началния **час на изпита**.
+- First, let's show when the student arrived – is he **early**, **late** or **on time**. In order to do that, we will use an **`if-else`** statement.
+- After that, we will show the **time difference**, if the student arrives in a **different time** from the starting **time of the exam**.
 
-С цел да спестим една допълнителна проверка (**`else`**), можем по подразбиране да приемем, че студентът е закъснял. 
+In order to spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
-След което, съгласно условието, проверяваме дали разликата във времената е **повече от 30 минути**. Ако това е така, приемаме, че е **подранил**. Ако не влезем в първото условие, то следва да проверим само дали **разликата е по-малка или равна на нула (**`<= 0`**)**, с което проверяваме условието, студентът да е дошъл в рамките на от **0 до 30 минути** преди изпита. 
+that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if the **difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
-При всички останали случаи приемаме, че студентът е **закъснял**, което сме направили **по подразбиране**. Следователно не е нужна допълнителна проверка.
+In all other cases we assume that the student is **late**, which we did **by default**. Therefore, no additional check is needed.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-За финал ни остава да разберем и покажем с **каква разлика от времето на изпита е пристигнал** студентът, както и дали тази разлика показва време на пристигане **преди или след изпита**.
+Finally, we need to find out and print **what is the time difference between exam start time and student arrival time**, , as well as whether the time difference indicates the time of arrival **before or after the exam start**.
 
-Правим проверка дали разликата ни е **над** един час, за да изпишем съответно часове и минути в желания според заданието **формат**, или е **под** един час, за да покажем **само минути** като формат и описание. 
+We check whether the time difference is **more than** one hour, in order to print hours and minutes in the required **format**, or if it is **less than** one hour,  in order to print **only minutes** as a format and description. 
 
-Остава да направим още една проверка - дали времето на пристигане на студента е **преди** или **след** началото на изпита.
+We also need to do one more check – whether the time of the student arrival is **before** or **after** the exam start time.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да изведем резултата на конзолата. По задание, ако студентът е дошъл точно навреме (**без нито една минута разлика**), не трябва да изваждаме втори резултат. Затова правим следната **проверка**:
+Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time (**not even a minute difference**), we do not need to print a second result. This is why we apply the following **condition**:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
-Всъщност, за целите на задачата извеждането на резултата **на конзолата** може да бъде направен и в по-ранен етап - още при самите изчисления. Това като цяло не е много добра практика. **Защо?**
+Actually, for the purposes of the task, printing the result **on the console** can be done on a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
 
-Нека разгледаме идеята, че кодът ни не е 10 реда, а 100 или 1000! Някой ден ще се наложи извеждането на резултата да не бъде в конзолата, а да бъде записан във **файл** или визуализиран в **уеб приложение**. Тогава на колко места в кода ще трябва да бъдат нанесени корекции поради тази смяна? И дали няма да пропуснем някое място?
+Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web aplication**. Then, on how many places in the code you will need to do changes? Are you sure you won't miss some places?
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Винаги си мислете за кода с <b>логическите изчисления</b>, като за <b>отделна част</b> от, различна от обработката на входните и изходните данни. Той трябва да може да работи без значение как му се подават данните и къде ще трябва да бъде показан резултатът.</td></tr></table>
+<td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/654#0](https://judge.softuni.bg/Contests/Practice/Index/654#0).
+Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/654#0](https://judge.softuni.bg/Contests/Practice/Index/654#0).
 
 
-## Задача: пътешествие
+## Problem: Trip
 
-Странно, но повечето хора си плануват от рано почивката. Млад програмист разполага с **определен бюджет** и свободно време в даден **сезон**.
+Strange, but most people start planning their vacations in advance. A young programmer has a **certain budget** and spare time in a particula **season**.
 
-Напишете програма, която да приема **на входа бюджета и сезона**, а **на изхода** да изкарва **къде ще почива** програмистът и **колко ще похарчи**.
+Write a program that accepts **as an input the budget and the season**, and **as an output** to print **where will rest** the programmer and **the amount of money that he will spend**.
 
-Бюджетът определя дестинацията, а сезонът определя колко от бюджета ще бъде изхарчен. Ако е **лято**, ще почива на **къмпинг**, а **зимата - в хотел**. Ако е в **Европа**, независимо от сезона, ще почива в **хотел**. Всеки **къмпинг** или **хотел**, според дестинацията, има **собствена цена**, която отговаря на даден **процент от бюджета**:
+budget determines the destination, and the season determines what amount of the budget will be spent. If the season is  **summer**, he will go **camping**, and if it is **winter - in a hotel**. If it is in **Europe**, regardless of the season, the programmer will stay in a **hotel**. Each **camping** or **hotel**, according to the destination, has **its own price**, which corresponds to a particular **percentage of the budget**:
 
-- При **100 лв. или по-малко** – някъде в **България**.
-  - **Лято** – **30%** от бюджета.
-  - **Зима** – **70%** от бюджета.
-- При **1000 лв. или по малко** – някъде на **Балканите**.
-  - **Лято** – **40%** от бюджета.
-  - **Зима** – **80%** от бюджета.
-- При **повече от 1000 лв**. – някъде из **Европа**.
-  - При пътуване из Европа, независимо от сезона, ще похарчи **90% от бюджета си**.
+- If **100 lv. or less** – somewhere in **Bulgaria**.
+  - **Summer** – **30%** of the budget.
+  - **Winter** – **70%** of the budget.
+- If **1000 lv. or less** – somewhere on the **Balkans**.
+  - **Summer** – **40%** of the budget.
+  - **Winter** – **80%** of the budget.
+- If **more than 1000 lv**. – somewhere in **Europe**.
+  - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
 
 ### Входни данни
 
@@ -184,16 +184,16 @@ What remains is to calculate the difference between the two times, in order to d
 - На **първия** ред получаваме **бюджета** - **реално число** в интервал [**10.00 … 5000.00**].
 - На **втория** ред – **един** от двата възможни сезона: "**summer**" или "**winter**".
 
-### Изходни данни
+### Input Data
 
-На конзолата трябва да се отпечатат **два реда**.
+On the console must be printed **two lines**.
 
-- На **първи** ред – "**Somewhere in {дестинация}**" измежду "**Bulgaria**", "**Balkans**" и "**Europe**".
-- На **втори** ред – "{**Вид почивка**} – {**Похарчена сума**}":
-  - **Почивката** може да е между "**Camp**" и "**Hotel**".
-  - **Сумата** трябва да е **закръглена с точност до втория символ след десетичния знак**.
+- On the **first** line – "**Somewhere in {destination}**" between "**Bulgaria**", "**Balkans**" and "**Europe**".
+- On the **second** line – "{**Vacation type**} – {**Spent money**}":
+  - **The vacation** can be between "**Camp**" and "**Hotel**".
+  - **The amount of money** has to be **rounded up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
 | Вход | Изход |
 |---|---|
@@ -203,74 +203,74 @@ What remains is to calculate the difference between the two times, in order to d
 |678.53<br>winter|Somewhere in Balkans<br>Hotel - 542.82|
 |1500<br>summer|Somewhere in Europe<br>Hotel - 1350.00|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Типично, както и при другите задачи, можем да разделим решението на няколко части: четене на входните данни, изчисления, отпечатване на резултата.
+Typically, as for the other tasks, we can separate the solution into the following parts: reading the input data, doing calculations, printing the result..
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Прочитайки внимателно условието разбираме, че очакваме **два** реда с входни данни. Първият параметър е **реално число**, за което е добре да изберем подходящ тип на променливата. За по-голяма точност в изчисленията ще се спрем на **`BigDecimal`** като тип за бюджета, а за сезона - **`string`**. 
+While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For higher level of calculation accuracy, we can pick **`BigDecimal`** as a variable for the budget and for the season - **`string`**. 
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>Винаги преценявайте какъв <b>тип стойност</b> се подава при входните данни, както и към какъв тип трябва да бъдат конвертирани тези данни, за да работят правилно създадените от вас програмни конструкции!</td>
+    <td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, in order for the program conditions to work properly!</td>
 </tr></table>
 
-**Пример**: Когато в задачата е необходимо да направите парични изчисления, използвайте **`BigDecimal`** за по-голяма точност.
+**Example**: When you need to do money calculations in a task, use **`BigDecimal`** for higher level of accuracy.
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи.
+Let's create and initialize the variables needed for applying the logic and calculations.
 
 ![](assets/chapter-4-2-images/02.Trip-02.png)
 
-Подобно на примера в предната задача, можем да инициализираме променливите с някои от изходните резултати - с цел спестяване на допълнително инициализиране.
+Similarly to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
 
-Разглеждайки отново условието на задачата забелязваме, че основното разпределение за това къде ще почиваме се определя от **стойността на подадения бюджет**, т.е. основната ни логика се разделя на два случая: 
-* Ако бюджетът е **по-малък** от дадена стойност.
-* Ако е **по-малък** от друга стойност, или е **повече** от дадена гранична стойност. 
+When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the passed budget**, i.e. our main logic is divided into two cases: 
+* If the budget is **less than** a particular value.
+* If it is **less than** other value or is **more than** the specified border value. 
 
-Спрямо това как си подредим логическата схема (в какъв ред ще обхождаме граничните стойности), ще имаме повече или по-малко проверки в условията. **Помислете защо!**
+Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or less conditions in the solution. **Think why!**
 
-След това е необходимо да направим проверка за стойността на **подадения сезон**. Спрямо нея ще определим какъв процент от бюджета ще бъде похарчен, както и къде ще почива програмистът - в **хотел** или на **къмпинг**.
+After that, we need to apply a condition to check the value of the **given season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**.
 
-Нека да си изберем и създадем нужният формат за изходните данни, който ще използваме по нататък в кода:
+Let's choose and create the needed format for the output data, which we will use further in the code:
 ```java
 DecimalFormat formatter = new DecimalFormat("0.00");
 ```
 
-Пример за един от възможните подходи за решение е:
+This is a sample code that may be used to implement the above idea:
 
 ![](assets/chapter-4-2-images/02.Trip-03.png)
 
-след което продължаваме с:
+After, we continue with:
 
 ![](assets/chapter-4-2-images/02.Trip-04.png)
 
-и завършваме проверките с:
+and finish the conditions with:
 
 ![](assets/chapter-4-2-images/02.Trip-05.png)
 
-Винаги можем да инициализираме дадена стойност на параметъра и след това да направим само една проверка. **Това ни спестява една логическа стъпка**.
+We always can initialize a given value of the parameter and then make only one check. **This saves us a logic step**.
 
-Например следният блок:
+For ecample, the following block:
 
 ![](assets/chapter-4-2-images/02.Trip-03.png)
 
-може да бъде съкратен до този си вид:
+can be shortened to this type:
 
 ![](assets/chapter-4-2-images/02.Trip-06.png)
 
-#### Отпечатване на резултата
+#### Printing the result
 
-Остава ни да покажем изчисления резултат на конзолата:
+It remains to print the obtained result on the console:
 
 ![](assets/chapter-4-2-images/02.Trip-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
 
 
 ## Задача: операции между числа
