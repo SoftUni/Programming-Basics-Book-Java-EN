@@ -273,100 +273,100 @@ It remains to print the obtained result on the console:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
 
 
-## Задача: операции между числа
+## Problem: Operations Between Numbers
 
-Напишете програма, която чете **две цели числа (N1 и N2)** и **оператор**, с който да се извърши дадена **математическа операция** с тях. Възможните операции са: **събиране** (**`+`**), **изваждане** (**`-`**), **умножение** (**`*`**), **деление** (**`/`**) и **модулно деление** (**`%`**). При събиране, изваждане и умножение на конзолата трябва да се отпечата резултата и дали той е **четен** или **нечетен**. При обикновено деление – **единствено резултата**, а при модулно деление – **остатъка**. Трябва да се има предвид, че **делителят може да е равен на нула** (**`= 0`**), а на нула не се дели. В този случай трябва да се отпечата **специално съобщение**.
+Write a program that reads **two integers (N1 и N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is **even** or **odd**. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case must be printed **a special notification**.
 
-### Входни данни
+### Input Data
 
-От конзолата се прочитат **3 реда**:
+Are read from the console **3 lines**:
 
-- **N1** – **цяло число** в интервала [**0 … 40 000**].
-- **N2** – **цяло число** в интервала [**0 … 40 000**].
-- **Оператор** – **един символ** измежду: "**+**", "**-**", "**\***", "**/**", "**%**".
+- **N1** – **integer** within the range [**0 … 40 000**].
+- **N2** – **integer** within the range [**0 … 40 000**].
+- **Operator** – **one character** among: "**+**", "**-**", "**\***", "**/**", "**%**".
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **един ред**:
+Print on the console **one line**:
 
-- Ако операцията е **събиране**, **изваждaне** или **умножение**:
-  - **"{N1} {оператор} {N2} = {резултат} – {even/odd}"**.
-- Ако операцията е **деление**:
-  - **"{N1} / {N2} = {резултат}"** – резултатът е **форматиран** до **втория символ след десетичния знак**.
-- Ако операцията е **модулно деление**:
-  - **"{N1} % {N2} = {остатък}"**.
-- В случай на **деление на 0 (нула)**:
+- If the operation is **summing up**, **subtraction** or **multiplying**:
+  - **"{N1} {operator} {N2} = {output} – {even/odd}"**.
+- If the operation is **division**:
+  - **"{N1} / {N2} = {output}"** – the result is **formatted** up to the **second digit after the decimal point**.
+- If the operation is **modular division**:
+  - **"{N1} % {N2} = {remainder}"**.
+- In case of **dividing by 0 (zero)**:
   - **"Cannot divide {N1} by zero"**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 |---|---|---|---|
 |123<br>12<br>/|123 / 12 = 10.25|112<br>0<br>/|Cannot divide 112 by zero|
 |10<br>3<br>%|10 % 3 = 1|10<br>0<br>%|Cannot divide 10 by zero|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |10<br>12<br>+|10 + 12 = 22 - even|
 |10<br>1<br>-|10 - 1 = 9 - odd|
 |7<br>3<br>\*|7 * 3 = 21 - odd|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Задачата не е сложна, но има доста редове код за писане.
+The problem is not complex, but there are a lot of code lines to write.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-След прочитане на условието разбираме, че очакваме **три** реда с входни данни. На първите **два** реда ни се подават **цели числа** (в указания от заданието диапазон), а на третия - **аритметичен символ**. 
+After reading the requirements, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
 ![](assets/chapter-4-2-images/03.Operations-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи. В едната ще пазим **резултата от изчисленията**, а другата ще използваме за **крайния изход** на програмата.
+Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the result from the calculations**, and the other one we will use for the **final output** of the program.
 
 ![](assets/chapter-4-2-images/03.Operations-02.PNG)
 
-Прочитайки внимателно условието разбираме, че има случаи, в които не трябва да правим **никакви** изчисления, а просто да изведем резултат.
+When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply print the result.
 
-Следователно първо може да проверим дали второто число е **`0`** (нула), както и дали операцията е **деление** или **модулно деление**, след което да инициализираме резултата.
+Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is **division** or **modular division**, and then initialize the output.
 
 ![](assets/chapter-4-2-images/03.Operations-03.png)
 
-Нека сложим резултата като стойност при инициализацията на **`output`** параметъра. По този начин може да направим само **една проверка** - дали е необходимо да **преизчислим** и **заменим** този резултат. 
+Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply only **one condition** - whether it is needed to **recalculate** and **replace** this output. 
 
-Спрямо това кой подход изберем, следващата ни проверка ще бъде или обикновен **`else`** или единичен **`if`**. В тялото на тази проверка, с допълнителни проверки за начина на изчисление на резултата спрямо подадения оператор, можем да разделим логиката спрямо **структурата** на очаквания **резултат**. 
+Based on the approach that we choose, our next condition will be either a simple **`else`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
 
-От условието можем да видим, че за **събиране** (**`+`**), **изваждане** (**`-`**) или **умножение** (**`*`**) очакваният резултат има еднаква структура: **"{N1} {оператор} {N2} = {резултат} – {even/odd}"**, докато за **деление** (**`/`**) и за **модулно деление** (**`%`**) резултатът има различна структура.
+From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) or **multiplying** (**`*`**) the expected output has the same structure: **"{N1} {operator} {N2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure.
 
 ![](assets/chapter-4-2-images/03.Operations-04.png)
 
-Завършваме с проверките за събиране, изваждане и умножение:
+We finish the solution by applying conditions for summing up, subtraction and multiplying:
 
 ![](assets/chapter-4-2-images/03.Operations-05.PNG)
 
-При кратки и ясни проверки, както в горния пример за четно и нечетно число, е възможно да се използва **тернарен оператор**. Нека разгледаме възможната проверка **с** и **без** тернарен оператор.
+For short and clear conditions, such as the above example for even and odd number, you can use a **ternary operator**. Let's look at the possibility to apply a condition **with** and **without** ternary operator.
 
-**Без използване на тернарен оператор** кодът е по-дълъг, но се чете лесно:
+**Without using a ternary operator** the code is longer but easier to read:
 
 ![](assets/chapter-4-2-images/03.Operations-06.png)
 
-**С използване на тернарен оператор** кодът е много по-кратък, но може да изисква допълнителни усилия, за да бъде прочетен и разбран като логика:
+**Upon using a ternary operator** he code is much shorter but may require additional efforts to read and understand the logic:
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Output
 
-Накрая ни остава да покажем изчисления резултат на конзолата:
+Finally, what remains is to print the calculated result on the console:
 
 ![](assets/chapter-4-2-images/03.Operations-08.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/654#2](https://judge.softuni.bg/Contests/Practice/Index/654#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#2](https://judge.softuni.bg/Contests/Practice/Index/654#2).
 
 
-## Задача: билети за мач
+## Problem: Game Tickets
 
 **Група запалянковци** решили да си закупят **билети за Евро 2016**. Цената на билета се определя спрямо **две** категории:
 
