@@ -93,7 +93,7 @@ Print on the console one integer number: **the number of working places** in the
 
 ### Sample Input and Output
 
-| Вход   | Изход | Чертеж |
+| Input   | Output | Diagram |
 |---------|-------|--------|
 |15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
 |8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
@@ -174,7 +174,7 @@ Print on the console **one floating-point number: the earnings of all fruits and
 
 ### Sample Input and Output
 
-| Вход   | Изход  | Вход    | Изход      |
+| Input   | Output  | Input    | Output      |
 |-----------|----------|-----------|----------------|
 |0.194<br>19.4<br>10<br>10|101 | 1.5<br>2.5<br>10<br>10|20.6185567010309| 
 
@@ -249,7 +249,7 @@ Print on the console **two numbers**: **number of tiles** needed for the repair 
 
 ## Sample Input and Output
 
-| Вход        | Изход    | Вход    | Изход            |
+| Input        | Output    | Input    | Output            |
 |---------------|------------|-----------|--------------------|
 |20<br>5<br>4<br>1<br>2|19.9<br>3.98| 40<br>0.8<br>0.6<br>3<br>5|3302.08333333333<br>660.416666666667| 
 
@@ -321,11 +321,12 @@ Three numbers are read from the console:
 * On the third line – **comission fee**. Floating-point number in the range of [**0.00 … 5.00**].
 
 ### Output Data
+
 Print one number on the console - **– the result of the exchange of currencies**. Rounding is not necessary.
 
 ### Sample Input and Output
 
-| Вход        | Изход    |Вход        | Изход            | Вход         | Изход            |
+| Input        | Output    |Input        | Output            | Input         | Output            |
 |---------------|------------|------------|------------------|--------------|------------------|
 |1<br>5<br>5|569.668717948718| 20<br>5678<br>2.4|12442.2442010256|7<br>50200.12<br>3|10659.4701177436|
 
@@ -404,7 +405,7 @@ On the console **to print 1 number – approximately daily earnings in leva**. T
 
 ### Sample Input and Output
 
-| Вход        | Изход          |Вход        | Изход            | Вход         | Изход    |
+| Input        | Output          |Input        | Output            | Input         | Output    |
 |---------------|------------------|-------------|------------------|-------------|------------------|
 |21<br>75.00<br>1.59|74.61| 15<br>105<br>1.71|80.24|22<br>199.99<br>1.50|196.63|
 
