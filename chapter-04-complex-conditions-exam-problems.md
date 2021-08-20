@@ -359,7 +359,7 @@ For short and clear conditions, such as the above example for even and odd numbe
 
 Finally, what remains is to print the calculated result on the console:
 
-![](assets/chapter-4-2-images/03.Operations-08.png)
+![](assets/chapter-4-2-images/03.OperatioA group of football fansns-08.png)
 
 ### Testing in the Judge System
 
@@ -368,95 +368,95 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#2
 
 ## Problem: Game Tickets
 
-**Група запалянковци** решили да си закупят **билети за Евро 2016**. Цената на билета се определя спрямо **две** категории:
+**A group of football fans** decided to buy **tickets for Euro Cup 2016**. The ticket price sis determine by **two** categories:
 
-- **VIP** – **499.99** лева
-- **Normal** – **249.99** лева
+- **VIP** – **499.99** leva
+- **Normal** – **249.99** leva
 
-Запалянковците **имат определен бюджет**, a **броят на хората** в групата определя какъв процент от бюджета трябва **да се задели за транспорт**:
+The fans **have a certain budget**, and **the number of people** in the group determines what percentage of the budget **should be set aside for transport**:
 
-- **От 1 до 4** – 75% от бюджета
-- **От 5 до 9** – 60% от бюджета
-- **От 10 до 24** – 50% от бюджета
-- **От 25 до 49** – 40% от бюджета
-- **50 или повече** – 25% от бюджета
+- **From 1 to 4** – 75% from the budget
+- **From 5 to 9** – 60% from the budget
+- **From 10 to 24** – 50% from the budget
+- **From 25 to 49** – 40% from the budget
+- **50 or more** – 25% from the budget
 
-Напишете програма, която да **пресмята дали с останалите пари от бюджета** могат да си **купят билети за избраната категория**, както и **колко пари** ще им **останат или ще са им нужни**.
+Write a program that **calculates whether the money left in the budget** will be enough for **buying tickets in the chosen category**, as well as **how much money** will be **left or they will need**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от **конзолата** и съдържа **точно 3 реда**:
+The input is read from the **console** and contains **exactly 3 lines**:
 
-- На **първия** ред е **бюджетът** – реално число в интервала [**1 000.00 … 1 000 000.00**.
-- На **втория** ред е **категорията** – "**VIP**" или "**Normal**".
-- На **третия** ред е **броят на хората в групата** – цяло число в интервала [**1 … 200**].
+- On the **first** line is the **budget** – a floating-point number in the range of [**1 000.00 … 1 000 000.00**.
+- On the **second** line is the **category** – "**VIP**" or "**Normal**".
+- On the **third** line is the **number of people in the group** – an integer in the range of [**1 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечата** на конзолата **един ред**:
+**Print** on the console **one line**:
 
-- Ако **бюджетът е достатъчен**:
-  - "**Yes! You have {N} leva left.**" – където **N са останалите пари** на групата.
-- Ако **бюджетът НЕ Е достатъчен**:
-  - "**Not enough money! You need {М} leva.**" – където **М е сумата, която не достига**.
+- If **the budget is enough**:
+  - "**Yes! You have {N} leva left.**" – where **N is the remaining amount** of the group.
+- If **the budget is not enough**:
+  - "**Not enough money! You need {М} leva.**" – where **М is the amount that is insufficient**.
 
-**Сумите** трябва да са **форматирани с точност до два символа след десетичния знак**.
+**The amounts** must be **formatted up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations |
 |---|---|---|
-|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 човек: 75%** от бюджета отиват за **транспорт**.<br>**Остават:** 1000 – 750 = **250**.<br>Категория **Normal**: билетът **струва 249.99 * 1 = 249.99**<br>249.99 < 250: **остават му** 250 – 249.99 = **0.01**|
+|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person: 75%** of the budget are spent on **transport**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category **Normal**: The ticket **price is 249.99 * 1 = 249.99**<br>249.99 < 250: **they remain to him** 250 – 249.99 = **0.01**|
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations |
 |---|---|---|
-|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 човека: 40%** от бюджета отиват за **транспорт**.<br>Остават: 30000 – 12000 = 18000.<br>Категория **VIP**: билетът **струва** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Не стигат** 24499.51 - 18000 = **6499.51**|
+|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 people: 40%** of the budget are spent on **transport**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: The ticket **price is** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Money needed** 24499.51 - 18000 = **6499.51**|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията, описани в условието на задачата, за да проверим дали ще стигнат парите.
+We will read the input data and do the calculations described in the task requirements, in order to check if the money will be sufficient.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Нека прочетем внимателно условието и да разгледаме какво се очаква да получим като **входни данни**, какво се очаква да **върнем като резултат**, както и кои са **основните стъпки** при разбиването **на логическата схема**.
+Let's carefully read the requirements and look at what we expect to take as an **input data**, what is expected to **return as a result**, as well as what are the **main steps** when breaking the **logic circuit**.
 
-Като за начало, нека обработим и запазим входните данни в **подходящи** за това **променливи**:
+For a start, let's process and save the input data in **appropriate** for this **variables**:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека създадем и инициализираме нужните за изчисленията променливи:
+Let's create and initialize the needed variables for doing the calculations:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-02.png)
 
-Нека отново прегледаме условието. Трябва да направим **две** различни блок изчисления. 
+Let's review the requirements once again. We need to do **two** blocks of calculations. 
 
-От първите изчисления трябва да разберем каква част от бюджета ще трябва да заделим за **транспорт**. За логиката на тези изчисления забелязваме, че има значение единствено **броят на хората в групата**. Следователно ще направим логическата разбивка спрямо броя на запалянковците.
+From the first calculations we must understand what part of the budget has to be spent on **transport**. For the logic of these calculations we will notice that it only matters **the number of people in the group**. Therefore, we will create the logic according to the number of fans.
 
-Ще използваме условна конструкция - поредица от **`if-else`** блокове.
+We will use a conditional construction - a series of **`if-else`** blocks.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-От вторите изчисления трябва да намерим каква сума ще ни е необходима за закупуване на **билети за групата**. Според условието, това зависи единствено от типа на билетите, които трябва да закупим. 
+From the second calculations we need to find out what amount will be needed for purchasing **the tickets for the group**. According to the task, it only depends on the type of tickets which we need to buy. 
 
-Нека използваме **`switch-case`** условна конструкция.
+Let's use **`switch-case`** conditional construction.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-След като сме изчислили какви са **транспортните разходи** и **разходите за билети**, ни остава да изчислим крайния резултат и да разберем **ще успее** ли групата запалянковци да отиде на Евро 2016 или **няма да успее** при така подадените параметри. 
+Once we have calculated the **transport costs** and **the tickets costs**, what remains is to calculate the final result and see **whether it will succeed** the group of fans to attend the Euro Cup 2016 or **not** with this parameters given. 
 
-За извеждането на резултата, за да си спестим една **`else` проверка** приемаме, че групата по подразбиране ще може да отиде на Евро 2016.
+For printing the result, in order to skip one **`else` condition** we will assume that the group can, by default, attend Euro Cup 2016.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая ни остава да покажем изчисления резултат на конзолата.
+Finally, we need to print the calculated result on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
 
 
 ## Задача: хотелска стая
