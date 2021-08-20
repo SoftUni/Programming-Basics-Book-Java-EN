@@ -459,94 +459,94 @@ Finally, we need to print the calculated result on the console.
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
 
 
-## Задача: хотелска стая
+## Problem: Hotel Room
 
-Хотел предлага **два вида стаи**: **студио и апартамент**.
+A hotel offers **two types of rooms**: **studio and apartment**.
 
-Напишете програма, която изчислява **цената за целия престой за студио и апартамент**. **Цените** зависят от **месеца** на престоя:
+Write a program that calculates **the price of the whole stay for a studio and apartment**. **The prices** depend on **the month** of the stay:
 
-| **Май и октомври** | **Юни и септември** | **Юли и август** |
+| **May and October** | **June and September** | **July and August** |
 |---|---|---|
-|Студио – **50** лв./нощувка|Студио – **75.20** лв./нощувка|Студио – **76** лв./нощувка|
-|Апартамент – **65** лв./нощувка|Апартамент – **68.70** лв./нощувка|Апартамент – **77** лв./нощувка|
+|Studio – **50** lv./per night|Studio – **75.20** lv./per night|Studio – **76** lv./per night|
+|Apartment – **65** lv./per night|Apartment – **68.70** lv./per night|Apartment – **77** lv./per night|
 
-Предлагат се и следните **отстъпки**:
+he following **discounts** are offered:
 
-- За **студио**, при повече от **7** нощувки през **май и октомври**: **5%** намаление.
-- За **студио**, при повече от **14** нощувки през **май и октомври**: **30%** намаление.
-- За **студио**, при повече от **14** нощувки през **юни и септември**: **20%** намаление.
-- За **апартамент**, при повече от **14** нощувки, **без значение от месеца: 10%** намаление.
+- For **studio**, in case of more than **7** nights in **May and October**: **5%** discount.
+- For **studio**, in case of more than **14** nights in **May and October**: **30%** discount.
+- For **studio**, in case of more than **14** nights in **June and September**: **20%** discount.
+- For **apartment**, in case of more than **14** nights, **no matter the month: 10%** discount.
 
-### Входни данни
+### Input Data
 
-Входът се чете от **конзолата** и съдържа **точно два реда**:
+The input data is read from the **console** and contains **exactly two lines**:
 
-- На **първия** ред е **месецът** – May, June, July, August, September или October.
-- На **втория** ред е **броят на нощувките** – цяло число в интервала [**0 … 200**].
+- On the **first** line is the **month** – May, June, July, August, September or October.
+- On the **second** line is the **number of nights** – integer in the range of [**0 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечатат** на конзолата **два реда**:
+**Print** on the console **two lines**:
 
-- На първия ред: "**Apartment: { цена за целият престой } lv.**"
-- На втория ред: "**Studio: { цена за целият престой } lv.**"
+- On the first line: "**Apartment: { price for the whole stay } lv.**"
+- On the second line: "**Studio: { price for the whole stay } lv.**"
 
-**Цената за целия престой** да е форматирана с точност до **два символа след десетичния знак**.
+**The price for the whole stay** must be formatted up to **two symbols after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход |Обяснения |
+| Input | Output |Comments |
 |---|---|---|
-|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| През **май**, при повече от **14 нощувки**, намаляме цената на **студиото с 30%** (50 – 15 = 35), а на **апартамента – с 10%** (65 – 6.5 =58.5).<br>Целият престой в **апартамент – 877.50** лв.<br>Целият престой **в студио – 525.00** лв.|
+|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| In **май**, for more than **14 nights**, we decrease the price of the **studio with 30%** (50 – 15 = 35), and for the **apartment – with 10%** (65 – 6.5 =58.5).<br>The whole stay in the **apartment – 877.50** lv.<br>The whole stay in the **studio – 525.00** lv.|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |June<br>14|Apartment: 961.80 lv.<br>Studio: 1052.80 lv.|
 |August<br>20|Apartment: 1386.00 lv.<br>Studio: 1520.00 lv.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията според описания ценоразпис и правилата за отстъпките и накрая ще отпечатаме резултата.
+We will read the input data and do the calculations according to the provided price list and the discount rules, and finally print the result.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Съгласно условието на задачата очакваме да получим два реда входни данни - на първия ред **месеца, през който се планува престой**, а на втория - **броя нощувки**.
+According to the task we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 
-Нека обработим и запазим входните данни в подходящи за това параметри:
+Let's process and store the input data in appropriate parameters:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-01.png)
 
-#### Изчисления
+#### Calculations
 
-След това да създадем и инициализираме нужните за изчисленията променливи:
+Now let's create and initialize the needed variables for the calculations:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-02.png)
 
-Разглеждайки отново условието забелязваме, че основната ни логика зависи от това какъв **месец** ни се подава, както и от броя на **нощувките**.
+While looking at the task we see that the main logic depends on the **month** which is given, as well as the number of **nights**.
 
-Като цяло има различни подходи и начини да се направят въпросните проверки, но нека се спрем на основна условна конструкция **`switch-case`**, като в различните **`case` блокове** ще използваме условни конструкции **`if`** и **`if-else`**.
+In general, there are different approaches and ways to apply the above conditions, but let's look at the basic **`switch-case`**, as in the different **`case` blocks** we will use conditional statements such as **`if`** and **`if-else`**.
 
-Нека започнем с първата група месеци: **Май** и **Октомври**. За тези два месеца **цената на престой е еднаква** и за двата типа настаняване - в **студио** и в **апартамент**. Следователно е необходимо да направим вътрешна проверка спрямо **броят нощувки**, за да преизчислим **съответната цена** (ако се налага).
+Let's start with the first group of months: **May** and **October**. For this two months **the price for the stay is the same** for both types of accommodation - in the **studio** and in the **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of nights**, and recalculate the **relevant price** (if needed).
 
 ![](assets/chapter-4-2-images/05.Hotel-room-03.png)
 
-За следващите месеци **логиката** и **изчисленията** ще са относително **идентични**. 
+For the following months the **logic** and the **calculations** will be **identical**. 
 
 ![](assets/chapter-4-2-images/05.Hotel-room-04.png)
 
 ![](assets/chapter-4-2-images/05.Hotel-room-05.png)
 
-След като изчислихме какви са съответните цени и крайната сума за престоя - нека да си изведем резултата във форматиран вид, като преди това го запишем в изходните ни **променливи** - **`studioInfo`** и **`apartmentInfo`**.
+After calculating the relevant prices and the total amount for the stay - let's prepare the formatted result. Before that, we should store it in our output **variables** - **`studioInfo`** and **`apartmentInfo`**.
 
 ![](assets/chapter-4-2-images/05.Hotel-room-06.png)
 
-За изчисленията на изходните параметри използваме **метода** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**.
-Този метод **закръгля десетично** число до **зададен брой цифри** след десетичния знак като съответно имаме и управление от какъв тип да е закръглението - **`RoundingMode`**. За целта, подаваме на метода цяло число (**`int`**) с което указваме до кой знак е нужно да бъде закръглението и стойност от дадена енумерация **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). В нашия случай ще закръглим десетичното число до **две цифри** след десетичната точка с тип на закръгление **`HALF_UP`**.
+In order to calculate the output parameters, we will use the **method** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**.
+This method **rounds to decimal** number up to a **specified number of characters** after the decimal point as well as we have control of any type of rounding  - **`RoundingMode`**. For this purpose, we give the method an integer (**`int`**) with which we indicate to which sign the rounding and value of a given enumeration should be **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). In our case, we will round the decimal number up to **two digits** after the decimal point with type of rounding **`HALF_UP`**.
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да покажем изчислените резултати на конзолата.
+Finally, what remains is to print the calculated results on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/654#4](https://judge.softuni.bg/Contests/Practice/Index/654#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#4](https://judge.softuni.bg/Contests/Practice/Index/654#4).
