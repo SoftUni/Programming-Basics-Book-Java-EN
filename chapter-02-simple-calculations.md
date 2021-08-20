@@ -643,7 +643,7 @@ Write a program that reads from the console **a number r** r and calculates and 
 
 #### Sample Input and Output
 
-| Вход  |           Изход                                          |    
+| Input  |           Output                                          |    
 |-----|--------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
@@ -667,7 +667,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5
 
 #### Sample Input and Output
 
-|               Вход                        |       Изход         |
+|               Input                        |       Output         |
 |-----------------------------------------|-------------------|
 |60<br>20<br>10<br>50                     |1500<br>160         |
 |30<br>40<br>70<br>-10                   |2000<br>180         |
@@ -684,7 +684,7 @@ Write a program that reads from the console **a side and height of a triangle** 
 
 #### Sample Input and Output
 
-|       Вход           |         Изход         |
+|       Input           |         Output         |
 |--------------------|---------------------|
 | 20 <br>30            | Triangle area = 300   |
 | 15 <br>35            | Triangle area = 262.5 |
@@ -702,7 +702,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 
 #### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 |----|-----|
 |  25  |   77  |
 |   0  |   32  |
@@ -720,7 +720,7 @@ Write a program, that reads **ъan angle in [radians](https://bg.wikipedia.org/w
 
 #### Sample Input and Output
 
-|  Вход  | Изход |
+|  Input  | Output |
 |------|-----|
 | 3.1416 |  180  |       
 | 6.2832 |  360  | 
@@ -738,7 +738,7 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 
 #### Sample Input and Output
 
-|  Вход  |    Изход  |
+|  Input  |    Output  |
 |------|---------|
 |   20   | 35.91 BGN |      
 |   100  | 179.55 BGN|
@@ -753,7 +753,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1
 
 Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
-|  Курс  |   USD   |   EUR   |   GBP   |
+|  Course  |   USD   |   EUR   |   GBP   |
 |:------:|:-------:|:-------:|:-------:|
 | 1 BGN  | 1.79549 | 1.95583 | 2.53405 |
 
@@ -761,7 +761,7 @@ Write a program for **conversion of money from one currency into another**. It h
 
 #### Sample Input and Output
 
-|        Вход        |   Изход  |
+|        Input        |   Input  |
 |------------------|--------|
 |   20<br>USD<br>BGN |35.91 BGN |     
 |  100<br>BGN<br>EUR |51.13 EUR | 
@@ -779,7 +779,7 @@ Write a program that enters a **birth date** in format **`dd-MM-yyyy`** and calc
 
 #### Sample Input and Output
 
-|   Вход   |	 Изход  |
+|   Input   |	 Output  |
 |--------|--------|
 |25-02-1995|21-11-1997|
 |07-11-2003|03-08-2006|
