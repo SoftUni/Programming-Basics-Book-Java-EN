@@ -1,199 +1,209 @@
-# Глава 3.1. Прости проверки
+# Chapter 3.1 Simple Conditions
 
-В настоящата глава ще разгледаме **условните конструкции в езика Java**, чрез които нашата програма може да има различно действие, в зависимост от дадено условие. Ще обясним синтаксиса на условните оператори за проверки (**`if`** и **`if-else`**) с подходящи примери и ще видим в какъв диапазон живее една променлива (нейният **обхват**). Накрая ще разгледаме техники за **дебъгване**, чрез които постъпково да проследяваме пътя, който извървява нашата програма по време на своето изпълнение.
+This chapter will discuss **conditional statements in the Java language**. Depending on the condition, a program may have different behavior. First will be explained the syntax of conditional operators **`if`** and **`if-else`** with appropriate examples. Then we will see in what range (**scope**) a variable lives. Finally, we will look through **debugging** techniques to track the step-by-step execution of our programs.
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=cXKIVmjEgHw">https://www.youtube.com/watch?v=cXKIVmjEgHw</a>.
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=cXKIVmjEgHw">https://www.youtube.com/watch?v=cXKIVmjEgHw</a>.
 </div>
 
-## Сравняване на числа
+## Comparing numbers
 
-В програмирането можем да сравняваме стойности чрез следните **оператори**:
+In programming, we can compare values using the following **operators**:
 
-* Оператор **`<`** (по-малко)
-* Оператор **`>`** (по-голямо)
-* Оператор **`<=`** (по-малко или равно)
-* Оператор **`>=`** (по-голямо или равно)
-* Оператор **`==`** (равно)
-* Оператор **`!=`** (различно)
+* Operator **`<`** (less than)
+* Operator **`>`** (greater than)
+* Operator **`<=`** (less than or equals)
+* Operator **`>=`** (greater than or equals)
+* Operator **`==`** (equas)
+* Operator **`!=`** (not equals)
 
-При сравнение резултатът е булева стойност – **`true`** или **`false`**, в зависимост от това дали резултатът от сравнението е истина или лъжа.
+When comparing values, the result is of the Boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
 
-### Примери за сравнение на числа
+### Examples for Comparing Numbers
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-### Оператори за сравнение
+### Comparison Operators
 
-В езика Java можем да използваме следните оператори за сравнение на числови данни:
+In Java, we can use the following comparison operators when comparing numbers:
 
 <table>
 <tr>
-<th>Оператор</th> <th>Означение</th>
+<th>Description of the Operator</th> <th>Notation</th>
 </tr>
 <tr>
-<td>Проверка за равенство</td><td align="center"> == </td>
+<td>Equals to</td><td align="center"> == </td>
 </tr>
 <tr>
-<td>Проверка за различие</td><td align="center"> != </td>
+<td>Not Equals to</td><td align="center"> != </td>
 </tr>
 <tr>
-<td>По-голямо</td><td align="center"> &gt; </td>
+<td>Greater than</td><td align="center"> &gt; </td>
 </tr>
 <tr>
-<td>По-голямо или равно</td><td align="center"> &gt;= </td>
+<td>Gerater than or equals</td><td align="center"> &gt;= </td>
 </tr>
 <tr>
-<td>По-малко</td><td align="center"> &lt; </td>
+<td>Less than</td><td align="center"> &lt; </td>
 </tr>
 <tr>
-<td>По-малко или равно</td><td align="center"> &lt;= </td>
+<td>Less than or equals</td><td align="center"> &lt;= </td>
 </tr>
 </table>
 
-Ето един пример:
+The following example demonstrates how to use comparison operators in expressions:
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-## Прости проверки
+## Simple If Conditions
 
-В програмирането често **проверяваме дадени условия** и извършваме различни действия, според резултата от проверката. Това става чрез проверката **`if`**, която има следната конструкция:
+In programming, we often **check given conditions** and perform different actions depending on the result. This is done by **`if`** conditional statement, which has the following structure:
 
 ```java
-if (булев израз) {
-    // тяло на условната конструкция, 
-	// което ще се изпълни единствено при верен булев израз;  
+if (condition) {
+    // body of if construction
+	// single command or block of code to be executed if the condition is true  
 }
 ```
 
-### Пример: отлична оценка
+### Example: Excellent Grade
 
-Въвеждаме оценка в конзолата и проверяваме дали тя е отлична (**`≥ 5.50`**).
+**Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.Еxcellent-result-01.png)
 
-Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе "**Excellent!**".
+Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**" text.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук:
+Test your solution here:
 [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
 
-## Проверки с if-else конструкция
+## If-Else Conditions
 
-Конструкцията **`if`** може да съдържа и **`else`** клауза, с която да окажем конкретно действие в случай, че булевият израз (който е зададен в началото **`if (булев израз)`**) върне отрицателен резултат (**`false`**). Така построена, **условната конструкция** наричаме **`if-else`** и поведението ѝ е следното: ако резултатът от условието е **позитивен** (**`true`**) - извършваме действията, описани в къдравите скоби след **`if`** клаузата, a когато е **негативен** (**`false`**) - други действия, намиращи се в къдравите скоби на **`else`** клаузата. Форматът на конструкцията е:
+Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning **if(condition)**) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
 
 ```java
-if (булево условие) {
-    // тяло на условната конструкция;
+if (condition) {
+    // body of if construction
+    	// single command or block of code to be executed if the condition is true
 } else {
-    // тяло на else-конструкция;
+    // body of else construction
+    	// single command or block of code to be executed if the condition is false
 }
 ```
 
-### Пример: отлична оценка или не
+### Example: Excellent Grade or Not
 
-Подобно на горния пример, въвеждаме оценка, проверяваме дали е отлична, но **изписваме резултат и в двата случая**.
+Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
 
-## За къдравите скоби { } след if / else 
+## The Curly Brackets {} After If / Else 
 
-Когато имаме **само една команда** в тялото на **`if` конструкцията**, можем да **пропуснем къдравите скоби**, обозначаващи тялото на условния оператор. Когато искаме да изпълним **блок от код** (група команди), къдравите скоби са **задължителни**. В случай че ги изпуснем, ще се изпълни **само първият ред** след **`if` клаузата**. 
+When we have **only one command** in the body of the **`if` construction**, we can **skip the curly brackets**. When we want to execute **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е, <strong>винаги да слагаме къдрави скоби</strong>, понеже това прави кода ни по-четим и по-подреден.</td>
+<td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
 </tr></table>
 
-Ето един пример, в който изпускането на къдравите скоби води до объркване:
+Here is an example that skipping curly brackets leads to confusion:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
-Изпълнението на горния код ще изведе следния резултат на конзолата:
+Executing the above code will output the following result on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
-С използването на къдрави скоби:
+Here is the same example, but with using curly brackets: 
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
-На конзолата ще бъде отпечатано следното:
+Executing the code with curly brackets will output the following result on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Абсолютно и двата начина на използване са <strong>правилни</strong> и може да се използват в зависимост от конкретния случай, изискванията в документацията и/или други изисквания, но абсолютно винаги трябва да се внимава и да се съобразим с резултатите.</td>
+<td>Both use cases are <strong>correct</strong> and could be used depending on the concrete case and/or particular requirements, but always must be careful and check with expected results.</td>
 </tr></table>
 
-### Пример: четно или нечетно
+### Example: Even or Odd Number
 
-Да се напише програма, която проверява дали дадено цяло число е **четно** (even) или **нечетно** (odd).
+Write a program that checks whether an integer is **even** or **odd**.
 
-Задачата можем да решим с помощта на една **`if-else`** конструкция и оператора **`%`**, който връща **остатък при деление** на две числа.
+### Hint and Guidelines
+
+We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns a **remainder by dividing** two numbers.
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-Трябва да получим следния отговор:
+Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Пример: по-голямото число
+### Example: The greater Number
 
-Да се напише програма, която чете две цели числа и извежда по-голямото от тях.
+Write a program that reads two integer numbers, from the console, and return the greater of them. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
-Първата ни задача е да **прочетем** двете цели числа. След което, чрез проста **`if-else`** конструкция, в съчетание с **оператора за по-голямо** (**`>`**), да направим проверка. Част от кода е замъглена умишлено, за да изпробваме наученото до момента.
+### Hint and Guidelines
+
+Our first task is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what we have learned so far.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-Ако всичко е вярно, трябва да получим отговорът по-долу за числата 3 и 5.
+Executing the above code will output the following result for numbers 3 and 5:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
-## Живот на променлива
+## Variable Scope
 
-Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика Java областта, в която една променлива съществува, започва от реда, на който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **`}`** (на метода, на **`if` конструкцията** и т.н.). За това е важно да знаем, че **всяка променлива, дефинирана вътре в тялото на `if`, няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
+Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
 
-В примерa по-долу, на последния ред, на който се опитваме да отпечатаме променливата **`salary`**, която е дефинирана в **`if` конструкцията**, ще получим **грешка**, защото нямаме достъп до нея (в случай и самото **IDE** ни предупреждава за **variable scope**).
+In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the if statement (in this case we will receive notification from the **IDE** about variable scope).
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-## Серии от проверки
+## Sequence of If-Else Conditions
 
-Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-else if…-else` в серия**. За целта използваме следния формат: 
+Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. In such cases, we can apply the construction  **`if-else if… -else`**. For this purpose, we use the following format:
 
 ```java
-if (условие) {
-    // тяло на условната конструкция;
+if (condition) {
+    // body of if construction
 } else if (условие2) {
-    // тяло на условната конструкция;
+    // body of if construction
 } else if (условие3) {
-    // тяло на условната конструкция;
+    // body of if construction
 } … else {
-    // тяло на else-конструкция;
+    // body of else construction
 }
 ```
 
-### Пример: число от 1 до 9 на английски
+### Example: Digits 0..9 to Text
 
-Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се чете от конзолата). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
+Print the digit in rage from 1 to 9 in English (digit is read from the console). 
+
+### Hint and Guidelines
+
+First, we read the digit from the console. Then using a **sequence of conditions** and print the relevant English word:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -212,90 +222,92 @@ if (num == 1) {
 }
 ```
 
-Програмната логика от примера по-горе **последователно сравнява** входното число от конзолата с цифрите от 1 до 9, като **всяко следващо сравнение се извършва, само в случай че предходното сравнение не е било истина**. В крайна сметка, ако никое от **`if`**  условията не е изпълнено, се изпълнява последната **`else` клаузa**.
+The program logic from the above example **sequentially compares** the input digit from the console with the numbers from 1 to 9. **Each following comparison is being performed only in case the preceding comparison is false**. If none of the **`if`** statements return true, then the last **`else` clause** is executed.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-## Упражнения: прости проверки
+## Exercises: Sequence of If-Else Conditions
 
-За да затвърдим знанията си за условните конструкции **`if`** и **`if-else`**, ще решим няколко практически задачи.
+To consolidate our knowledge of the conditional constructions **`if`** and **`if-else`**, let's solve several practical problems.
 
-### Задача: бонус точки 
 
-Дадено е **цяло число** – брой точки. Върху него се начисляват **бонус точки** по правилата, описани по-долу. Да се напише програма, която пресмята **бонус точките** за това число и **общия брой точки** с бонусите.
+### Exercise: Bonus score
 
-- Ако числото е **до 100** включително, бонус точките са 5.
-- Ако числото е **по-голямо от 100**, бонус точките са **20%** от числото.
-- Ако числото е **по-голямо от 1000**, бонус точките са **10%** от числото.
-- Допълнителни бонус точки (начисляват се отделно от предходните):
- - За **четно** число → + 1 т.
- - За число, което **завършва на 5** → + 2 т.
+An **integer** is read from the console - the number of points. A **bonus score** adds to it according to the rules described below. Write a program that calculates the **bonus score** for this integer and **the total number of points** with the bonuses.
+
+- If the integer is **up to 100** inclusive, the bonus score is 5.
+- If the integer is **greater than 100**, the bonus score is **20%** from the integer.
+- If the integer is **greater than 1000**, the bonus score is **10%** from the integer.
+- Additional bonus score (added separately from previous)
+ - If the integer is **even** -> +1 bonus score
+ - If the integer is odd, with **last digit equals 5** -> +2 bonus score 
  
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 20 | 6<br>26 |
 | 175 | 37<br>212 |
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Насоки и подсказки
+#### Sample Input and Output
 
-Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-else-if-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно).
+We can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
 
 ![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
-Ето как би могло да изглежда решението на задачата в действие:
+Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
 
 
-### Задача: сумиране на секунди
+### Exercise: Summing Up seconds
 
-Трима спортни състезатели финишират за някакъв **брой секунди** (между **1** и **50**). Да се напише програма, която въвежда времената на състезателите и пресмята **сумарното им време** във формат "минути:секунди". Секундите да се изведат с **водеща нула** (2 → "02", 7 → "07", 35 → "35").
+Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the times of these from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **zeroed at the front** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 35<br>45<br>44 | 2:04 |
 | 22<br>7<br>34 | 1:03 |
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Задачата можем да решим по няколко начина. Първият, който съвпада с темата, е следният:
-Първо сумираме трите числа, за да получим общия резултат в секунди. Понеже **1 минута = 60** секунди, ще трябва да изчислим броя минути и броя секунди в диапазона от 0 до 59:
-- Ако резултатът е между 0 и 59, отпечатваме 0 минути + изчислените секунди.
-- Ако резултатът е между 60 и 119, отпечатваме 1 минута + изчислените секунди минус 60.
-- Ако резултатът е между 120 и 179, отпечатваме 2 минути + изчислените секунди минус 120.
-- Ако секундите са по-малко от 10, извеждаме водеща нула преди тях.
+The task has several solutions, but in the context of this chapter, we can do the following:
+First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, we will have to calculate the number of minutes and seconds in the range 0 to 59:
+
+- If the result is between 0 and 59, print 0 minutes + calculated seconds.
+- If the result is between 60 and 119, print 1 minute + calculate seconds minus 60.
+- If the result is between 120 and 179, print 2 minutes + calculate seconds minus 120.
+- If the seconds are less than 10, print the number with zero in front.
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-Вторият начин, който не използва конструкции **`if-else`**, е по-удачен, защото може да се използва за големи стойности на времената:
+Another solution, which does not use **`if-else`** constructs, is more appropriate because you can use it for greater time values:
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
 
 
-### Задача: конвертор за мерни единици
+### Exercise: Unit converter
 
-Да се напише програма, която **преобразува разстояние** между следните **8 мерни единици**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Използвайте съответствията от таблицата по-долу:
+Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the table below when a conversion from one unit to another:
 
-| Входна eдиница | Изходна eдиница |
+| Input Unit | Output Unit |
 | :-------------: | :--------------: |
 | 1 meter (m) | 1000 millimeters (mm) |
 | 1 meter (m) | 100 centimeters (cm) |
@@ -305,275 +317,274 @@ if (num == 1) {
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-Входните данни се състоят от три реда:
+The program will receive three input lines:
 
-- Първи ред: число за преобразуване.
-- Втори ред: входна мерна единица.
-- Трети ред: изходна мерна единица (за резултата).
+- First line: a number for converting.
+- Second line: input unit.
+- Third line: output unit (for the result).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 12 <br>km <br>ft | 39370.0788 |
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`toLowerCase()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
+Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the condition, we can convert **between meters and some other unit**. Then, first calculate the result from converting the input number in meters, doing a set of checks to define the input unit. Then calculate the output unit.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Имайте в предвид, че в Java сравняването на стрингове не работи с използването на  <strong><code>==</code></strong> и трябва да се използват вградените за тази цел функции за сравнение на стрингове.</td>
+<td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
 </tr></table>
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
 
 
-## Дебъгване - прости операции с дебъгер
+## Debugging
 
-До момента писахме доста код и често пъти в него имаше грешки, нали? Сега ще покажем един инструмент, с който можем да намираме грешките по-лесно.
+There were probably errors in the code you wrote so far. There is a way to find errors more easily, using a tool. In the following section, we will look at one of them.
 
-### Какво е "дебъгване"?
+### What is "Debugging"?
 
-**Дебъгване** е процесът на "**закачане**" към изпълнението на програмата, който ни позволява да проследим поетапно цялостния процес на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
+**Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**, of logic that follows, defined variables and how they are changed, and so on.
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
 
-### Дебъгване в IntelliJ Idea
+### Debugging with IntelliJ Idea
 
-Чрез комбинация от бутоните [**Shift + F9**], стартираме текущата програма в **debug режим**. Преминаваме към **следващия ред** с [**F7**]. 
+By pressing, a combination of buttons [**Shift + F9**], you run the current program in **debug mode**. To move to **the next line** in the code, use the [**F7**] button.
 
 ![](assets/chapter-3-1-images/00.Debugging-02.png)
 
-Чрез [**CTRL + F8**] създаваме стопери – така наречените **breakpoints**, до които можем да стигнем директно при стартирането на програмата.
+By pressing, a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints**, which suspend program execution at a specific point.
 
-## Упражнения: прости проверки
+## Exercises: Simple Conditions
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+To get a better understanding of what we learned, let's solve a few practical exercises.
 
-### Празен Java проект в IntelliJ Idea
+### Empty project in IntelliJ Idea
 
-Създаваме нов проект (**Java**) в IntelliJ Idea, без да маркираме абсолютно нищо. За да организираме по-добре решенията на задачите от упражненията – всяка задача ще бъде в отделен клас и всички класове ще бъдат в **src** директорията на проекта.
+Create a new project with name **Java** in IntelliJ Idea and leave all others options by default. In order to better organize the solutions of the tasks from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
 
-Стартираме IntelliJ Idea. Създаваме нов **Java project:** [**File**] → [**New**] → [**Project**].
+Run IntelliJ Idea. Create a new **Java project:** [**File**] → [**New**] → [**Project**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-01.png)
 
-Избираме от левият панел **Java**, без да маркираме нищо друго и натискаме [**Next**]. В следващия диалогов прозорец имаме няколко варианта, от които единият е да се конфигурира **ConsoleApp**. Обикновенно това ще правим, но може да не се маркира нищо и да дадем пак [**Next**]. В последния диалогов прозорец даваме име на проекта и място за съхранение, след което натискаме [**Finish**].
+Choose **Java** from the left panel and anything else leaves it by default, and press [**Next**]. In the next dialog box, we have an option to create a project from a template. Usually, we will do this, but now we can skip it and press [**Next**]. In the last dialog box, enter the project's name and storage location, and then click [**Finish**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-02.png)
 ![](assets/chapter-3-1-images/00.IntelliJ-03.png)
 
-Сега вече имаме създаден празен Java проект:  
+We now have an empty Java project:
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Задача: проверка за отлична оценка
+### Exercise: Check for Excellent Grade
 
-Първата задача от упражненията за тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
+The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
-| 5 | (няма изход) |
+| 5 | (no output) |
 | 5.5 | Excellent! |
-| 5.49 | (няма изход) |
+| 5.49 | (no output) |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src**]. Избираме [**New**] → [**Java Class**]:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**].
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
-Ще се отвори диалогов прозорец с 2 поленца - в горното въвеждаме името на класа, а в долното - вида (има и други опции освен класове, но за тях в следващите глави), след което създаваме класа. Задаваме име, например "Evaluations":  
+A dialog box with two fields will open. In the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then press [**OK**] button to create our class. We set a name, for example, "Excellent-Result":
 
  ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
-Вече имаме клас с едно конзолно приложение в него. Остава да напишем кода за решаване на задачата.
+We already have a class with one console application in it. It remains to write the code to solve the problem.
 
-За целта отиваме в тялото на метода **`main(string[] args)`** и поставяме курсора между отварящата и затваряща къдрави скоби на метода. Ако главнията метод не е създаден автоматично в **IntelliJ Idea**, има клавишна комбинация, която прави това - **`psvm`**. Вътре в метода пишем следния код:
+To do this, go to the body of the method **`main (string [] args)`** and place the cursor between the opening and closing curly brackets of the method. If the main method is not created automatically in **IntelliJ Idea**, there is a keyboard shortcut to do this - **`psvm`**. Inside the main method, we write the following code:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
-**Стартираме** програмата от зелената стрелка пред името на класа, за да я **тестваме** с различни входни стойности:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
  ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
  ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
 
  ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
-### Задача: отлична оценка или не
+### Exercise: Excellent Grade or Not
 
-Следващата задача от тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока, или "**Not excellent.**" в противен случай.
+The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
 | 5 | Not excellent. |
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea** , като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**].
- 
-Следва да **напишем кода** на програмата. Може да си помогнем с примерния код от картинката:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
+
+We already have a class with one console application in it. It remains to **write the code** to solve the problem. We can help ourselves with the sample code from the picture:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-Сега **стартираме програмата** както обикновено със зелената стрелкичка и я тестваме дали работи коректно:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Задача: четно или нечетно
+### Exercise: Even or Odd Number
 
-Да се напише програма, която въвежда **цяло число** и печата дали е **четно** или **нечетно**.
+The next task is to write a **program that reads input data from the console**. As input data enter **an integer**. As output print **even** or **odd**.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 2 | even |
 | 3 | odd |
 | 25 | odd |
 | 1024 | even |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**]:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
   
- В метода **`public static void main()`** трябва да напишем кода на програмата. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`boolean isEven = (number %2 == 0);`**.
+In the main method, **`public static void main()`** write the code to solve the problem. To check if a number is even, we ca use operator **`%`**, which returns **the remainder of integer division by 2** in following way: **`boolean isEven = (number %2 == 0);`**.
 
-Остава да **стартираме** програмата и да я тестваме:  
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Задача: намиране на по-голямото число
+### Exercise: Find the Greater Number
 
-Да се напише програма, която въвежда **две цели числа** и отпечатва по-голямото от двете.
+The next task is to write a **program that reads input data from the console**. As input data, enter **two integers** each on a separate line. As output print the greater integer of them.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 |-----|------|
 |5<br>3| 5 |
 |3<br>5| 5 |
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**]. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помислите как да го допишете сами:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-След като сме готови с имплементацията на решението, **стартираме** програмата и я тестваме:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
-### Задача: изписване на число до 9 с думи
+### Exercise: Write the number (from 0 to 9 ) in English.
 
-Да се напише програма, която въвежда **цяло число в диапазона** [**0 … 9**] и го **изписва с думи** на английски език. Ако числото е извън диапазона, изписва "**number too big**".
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer in range [0 … 9]**. As output, **print the integer in English**. If the integer is outside range, print "**number too big**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5 | five |
 | 1 | one |
 | 9 | nine |
 | 10 | number too big |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Може да използваме поредица **`if-else`** конструкции, с които да разгледаме възможните **11 случая**.
+To solve the problem, we can use sequential **`if-else`** statements to cover **all eleven possible cases**.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-### Задача: познай паролата
+### Exercise: Password guess
 
-Да се напише програма, която **въвежда парола** (един ред с произволен текст) и проверява дали въведеното **съвпада** с фразата "**s3cr3t!P@ssw0rd**". При съответствие да се изведе "**Welcome**", а при несъответствие да се изведе "**Wrong password!**". 
+The next task is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as phrase "**s3cr3t!P@ssw0rd**". As output, print "**Welcome**" if the result is true and "**Wrong password!**" if the result is false.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | qwerty | Wrong password! |
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Използвайте **`if-else`** конструкцията.
+To solve the problem is necessary one **`if-else`** statement.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
 
 
-### Задача: число от 100 до 200
+### Exercise: Number from 100 to 200
 
-Да се напише програма, която **въвежда цяло число** и проверява дали е **под 100**, **между 100 и 200** или **над 200**. Да се отпечатат съответно съобщения, като в примерите по-долу. 
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200**, and **above 200**. As output, print the corresponding message as shown in the table below.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 95 | Less than 100 |
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
+Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
 
 
-### Задача: еднакви думи
+### Exercise: The same words
 
-Да се напише програма, която **въвежда две думи** и проверява дали са еднакви. Да не се прави разлика между главни и малки букви. 
-Да се изведе "**yes**" или "**no**". 
+The next task is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. As output, print "**yes**" or "**no**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | Hello<br>Hello | yes |
 | SoftUni<br>softuni | yes |
@@ -581,28 +592,29 @@ if (num == 1) {
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Преди сравняване на думите, ги обърнете в долен регистър, за да не оказва влияние размера на буквите (главни/малки): **`String wordFirst = scanner.next().toLowerCase()`**.
+Before comparing words, turn them to lowercase so that the size of the letters (uppercase/lowercase) does not affect: **`String wordFirst = scanner.next().toLowerCase().`**
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
 
 
-### Задача: информация за скоростта
+### Exercise: Speed information
 
-Да се напише програма, която **въвежда скорост** (десетично число) и отпечатва **информация за скоростта**. 
+The next task is to write a **program that reads input data from the console**. As input data, enter **speed**(a decimal number). As output, print information about the speed.
 
-* При скорост **до 10** (включително), отпечатайте "**slow**". 
-* При скорост **над 10** и **до 50**, отпечатайте "**average**". 
-* При скорост **над 50 и до 150**, отпечатайте "**fast**". 
-* При скорост **над 150 и до 1000**, отпечатайте "**ultra fast**". 
-* При по-висока скорост, отпечатайте "**extremely fast**".
+* At speed **up to 10** (inclusive), print "**slowly**".
+* At speed **above 10 and up to 50**, print "**average**".
+* At speed **above 50 and up to 150**, print "**fast**".
+* At speed **above 150 and up to 1000**, print "**ultra fast**".
+* At greater speed, print "**extremely fast**".
 
-#### Примерен вход и изход
 
-| Вход | Изход |
+#### Sample input and output
+
+| Input | Output |
 | --- | ---- |
 | 8 | slow |
 | 49.5 | average |
@@ -610,44 +622,45 @@ if (num == 1) {
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
 
 
-### Задача: лица на фигури
+### Exercise: Faces of figures
 
-Да се напише програма, която **въвежда размерите на геометрична фигура** и **пресмята лицето й**. Фигурите са четири вида: квадрат (**square**), правоъгълник (**rectangle**), кръг (**circle**) и триъгълник (**triangle**).
+The next task is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its fac**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
 
-На първия ред на входа се чете вида на фигурата (`square`, `rectangle`, `circle`, `triangle`).
-* Ако фигурата е **квадрат**, на следващия ред се чете едно число – дължина на страната му.
-* Ако фигурата е **правоъгълник**, на следващите два реда се четат две числа – дължините на страните му.
-* Ако фигурата е **кръг**, на следващия ред се чете едно число – радиусa на кръга.
-* Ако фигурата е **триъгълник**, на следващите два реда се четат две числа – дължината на страната му и дължината на височината към нея.
+On the first line of input data, read the type of figure (`square`, `rectangle`, `circle`, `triangle`).
+* If the figure is a **square**, on the next line read one number - the length of its side.
+* If the figure is a **rectangle**, on the next two lines read two numbers - the lengths of its sides.
+* If the figure is a **circle**, on the next line read one number - the radius of the circle.
+* If the figure is a **triangle**, on the next two lines read two numbers - the length of its side and the length of the height to it.
 
-Резултатът да се закръгли до **3 цифри след десетичния знак**. 
 
-#### Примерен вход и изход
+Format the output up to **3 digits after the decimal point**.
 
-| Вход | Изход |
+#### Sample input and output
+
+| Input | Output |
 | --- | ---- |
 | square<br>5 | 25 |
 | rectangle<br>7<br>2.5 | 17.5 |
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
 
 
-### Задача: време + 15 минути
+### Exercise: Calculate what will be the time in 15 minutes 
 
-Да се напише програма, която **въвежда час и минути** от 24-часово денонощие и изчислява колко ще е **часът след 15 минути**. Резултатът да се отпечата във формат **`hh:mm`**. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59. Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри и с **водеща нула**, когато е необходимо.
+The next task is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what time it will be in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. The hours are print in one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 1<br>46 | 2:01 |
 | 0<br>01 | 0:16 |
@@ -655,47 +668,47 @@ if (num == 1) {
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Добавете 15 минути и направете няколко проверки. Ако минутите надвишат 59, **увеличете часовете** с 1 и **намалете минутите** с 60. По аналогичен начин разгледайте случая, когато часовете надвишат 23. При печатането на минутите, **проверете за водеща нула**.
+To solve the problem, add 15 minutes and do a few checks. If the minutes exceed 59, **increase the hours by 1** and **decrease the minutes by 60**. Similarly, consider the case when the hours exceed 23. When printing the minutes, check for **leading zero**.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
 
-### Задача: еднакви 3 числа
+### Exercise: Equals three numbers
 
-Да се напише програма, в която се въвеждат **3 числа** и се отпечатва дали те са еднакви (**yes** / **no**).
+The next task is to write a **program that reads input data from the console**. As input data, enter **3 integers**. As output, print if they are equals (**yes** / **no**).
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5<br>5<br>5 | yes |
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
 
 
-### Задача: \* изписване на число от 0 до 100 с думи
+### Exercise: \* Write a number from 0 to 100 in English
 
-Да се напише програма, която превръща число в диапазона [**0 … 100**] в текст. 
+The next task is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. As output print  the text in English.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 25 | twenty five |
 | 42 | forty two |
 | 6  | six |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Проверете първо за **едноцифрени числа** и ако числото е едноцифрено, отпечатайте съответната дума за него. След това проверете за **двуцифрени числа**. Тях отпечатвайте на две части: лява част (**десетици** = числото / 10) и дясна част (**единици** = числото % 10). Ако числото има 3 цифри, трябва да е 100 и може да се разгледа като специален случай.
+To solve the problem, first, check for **one-digit numbers**, and if the number is one-digit, print the appropriate text for it. Then check for **two-digit numbers**. Print them in two parts: left part (**tens** = number / 10) and right part (**units** = number% 10). If the number has three digits, it must be 100 and considered as a special case.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
