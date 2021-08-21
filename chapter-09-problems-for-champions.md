@@ -120,211 +120,212 @@ Input data should be read from the console. It consists of 3 lines:
 
 Input data will always be valid and will always be in the format described. No need to check.
 
-### Изходни данни
+### Output Data
 
-Резултатът трябва да бъде принтиран на конзолата, като последователни дати във **формат "дд-мм-гггг"**, подредени по дата в нарастващ ред. Всеки низ трябва да е на отделен ред. В случай, че няма съществуващи магически дати, да се принтира "**No**".
-### Ограничения
+The result should be printed on the console as consecutive dates in **"dd-mm-yyyy" format**, sorted by date in ascending order. Each string must be in a separate line. If there are no existing magic dates, print "**No**".
+### Constraints
 
-* Началната и крайната година са цели числа в периода [**1900-2100**].
-* Магическото тегло е цяло число в диапазона [**1 … 1000**].
-* Позволено работно време за програмата: 0.25 секунди.
-* Позволена памет: 16 MB.
+   * The start and final year are integer numbers in the range [**1900-2100**].
+   * Magic weight is an integer in the range [**1 … 1000**].
+   * Allowed program time: 0.25 seconds.
+   * Allowed memory: 16 MB.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход      | Вход | Изход      |
+| Input | Output      | Input | Output  |
 |------|------------|------|------------|
 |2007<br>2007<br>144|17-03-2007<br>13-07-2007<br>31-07-2007|2003<br>2004<br>1500<br>|No|
 
-| Вход | Изход      | Вход | Изход      |
+| Input | Output      | Input | Output  |
 |------|------------|------|------------|
 |2012<br>2014<br>80|09-01-2013<br>17-01-2013<br>23-03-2013<br>11-07-2013<br>01-09-2013<br>10-09-2013<br>09-10-2013<br>17-10-2013<br>07-11-2013<br>24-11-2013<br>14-12-2013<br>23-11-2014<br>13-12-2014<br>31-12-2014|2011<br>2012<br>14<br>|01-01-2011<br>10-01-2011<br>01-10-2011<br>10-10-2011|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Започваме от входните данни. В случая имаме **3 цели числа**, които трябва да се прочетат от конзолата, като с това се изчерпва въвеждането и обработването на входа за задачата.
+We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the problem.
 
-Разполагайки с началната и крайната година, е хубаво да разберем как ще минем през всяка дата, без да се объркваме от това колко дена има в месеца и дали е високосна година и т.н.
+Having the start and the end year, it is nice to know how we will go through every date, not to worry about how many days there are in the month and whether it is a leap year, and so on.
 
-#### Обхождане на всички дати
+#### Loop through Dates
 
-За обхождането ще се възползваме от функционалността, която ни дава **`LocalDate`** класът в **C#**. Ще си дефинираме **променлива за началната дата**, което можем да направим, използвайки конструктора, който приема година, месец и ден. Знаем, че годината е началната година, която сме прочели от конзолата, а месеца и деня трябва да са съответно януари и 1-ви. При Java "конструкторът" на **`LocalDate`** приема като първи аргумент годината, като втори аргумент месеца и като трети аргумент деня от месеца.
+For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as first argument the year, as second argument the month and as third argument the day of the month:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-01.png)
 
-След като имаме началната дата, искаме да направим **цикъл, който се изпълнява, докато не превишим крайната година** (или докато не преминем 31 декември в крайната година, ако сравняваме целите дати), като на всяка стъпка увеличава с по 1 ден.
+Once we have the start date, we want to create a **loop that runs until we exceed the final year** (or until we pass December 31 in the final year if we compare the full dates), increasing each day by 1 day.
 
-За да увеличаваме с 1 ден при всяко завъртане, ще използваме метод от **`LocalDate` - `plusDays(…)`**, чрез който ще добавяме по един ден към текущата дата. Методът ще се грижи вместо нас кога трябва да прескочи в следващия месец, колко дни има даден месец и всичко около високосните години.
+To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us, to decide where to skip the next month, how many days there is a month and everything around the leap years.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-02.png)
 
-***Внимание***: тъй като методът **`LocalDate.plusDays(…)`** връща "новата" дата, е важно да имаме присвояване на резултата, а не само извикване на метода! 
+**Caution**: since the **`LocalDate.plusDays(…)`** method returns the "new" date, it is important to assign the result, not just to call the method!
 
-В крайна сметка нашият цикъл може да изглежда по следния начин:
+In the end, our loop may look like this:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-03.png)
 
-***Забележка***: може да постигнем същия резултат с **`for` цикъл**, инициализацията на датата отива в първата част на **`for`**, условието се запазва, а стъпката е увеличаването с 1 ден.
+**Note**: we can achieve the same result with a **`for` loop**: the **initialization** of the date goes to the first part of **`for`**, the condition is preserved and the** step** is the increase by 1 day.
 
-#### Пресмятане на теглото
+#### Calculating Date Weight
 
-Всяка дата се състои от точно **8 символа (цифри)** - **2 за деня** (**`d1`**, **`d2`**), **2 за месеца** (**`d3`**, **`d4`**) и **4 за годината** (**`d5`** до **`d8`**). Това означава, че всеки път ще имаме едно и също пресмятане и може да се възползваме от това, за **да дефинираме формулата статично** (т.е. да не обикаляме с цикли, реферирайки различни цифри от датата, а да изпишем цялата формула). За да успеем да я изпишем, ще ни трябват **всички цифри от датата** в отделни променливи, за да направим всички нужни умножения. Използвайки операциите деление и взимане на остатък върху отделните компоненти на датата, чрез методите **`getDayOfMonth()`**, **`getMonthValue()`** и **`getYear()`**, можем да извлечем всяка цифра.
+Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**) and **4 for the year** (**`d5`** to **`d8`**). This means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e. not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. By using the division and partition operations on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`** and **`getYear()`** properties, we can retrieve each digit.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-04.png)
 
-Нека обясним и един от по-интересните редове тук. Нека вземе за пример взимането на втората цифра от годината (**`d6`**). При нея делим годината на 100 и взимаме остатък от 10. Какво постигаме така? Първо с деленето на 100 отстраняваме последните 2 цифри от годината (пример: **`2018 / 100 = 20`**). С остатъка от деление на 10 взимаме последната цифра на полученото число (**`20 % 10 = 0`**) и така получаваме 0, което е втората цифра на 2018.
+Let's also explain one of the more interesting lines here. Let's take the second digit of the year for example (**`d6`**). We divide the year by 100, and we take a remainder of 10. What do we do? First, we eliminate the last 2 digits of the year by dividing by 100 (Example: **`2018/100 = 20`**). With the remainder of 10, we take the last digit of the resulting number (**`20 % 10 = 0`**) and so we get 0, which is the second digit of 2018.
 
-Остава да направим изчислението, което ще ни даде магическото тегло на дадена дата. За да **не изписваме всички умножения**, както е показано в примера, ще приложим просто групиране. Това, което трябва да направим, е да умножим всяка цифра с тези, които са след нея. Вместо да изписваме **`d1 * d2 + d1 * d3 + … + d1 * d8`**, може да съкратим този израз до **`d1 * (d2 + d3 + … + d8)`**, следвайки математическите правила за групиране, когато имаме умножение и събиране. Прилагайки същото опростяване за останалите умножения, получаваме следната формула: 
+What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications** as shown in the example, we will simply apply a grouping. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**, we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`** for grouping when we have multiplication and summing up. Applying the same simplification for the other multiplications, we get the following formula:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-05.png)
 
-#### Отпечатване на изхода
+#### Printing the Output
 
-След като имаме пресметнато теглото на дадена дата, трябва **да проверим дали съвпада с търсеното от нас магическо тегло**, за да знаем, дали трябва да се принтира или не. Проверката може да се направи със стандартен **`if`** блок, като трябва да се внимава при принтирането датата да е в правилния формат. За да форматираме дата в желания за нас вид, ще използваме **`DateTimeFormatter`** класа.
+Once we have the weight calculated of a given date, we need **to check and see if it matches the magical weight we want**, in order to know if it should be printed or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data in our required format we will use **`DateTimeFormatter`** class.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-06.png)
 
-***Внимание***: тъй като обхождаме датите от началната година към крайната, те винаги ще бъдат подредени във възходящ ред, както е по условие.
+***Caution***: Since we iterate over the dates from initial to final, they will always be ordered in ascending order as it is in the requirements.
 
-И накрая, ако не сме намерили нито една дата, отговаряща на условията, ще имаме **`false`** стойност във **`found`** променливата и ще можем да отпечатаме **`No`**.
+Finally, if we have not found a date that is eligible, we will have a **`false`** value in the **`found`** variable and we will be able to print **`No`**.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/663#1](https://judge.softuni.bg/Contests/Practice/Index/663#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#1](https://judge.softuni.bg/Contests/Practice/Index/663#1).
 
 
-## Задача: пет специални букви
+## Problem: Five Special Letters
 
-Дадени са две числа: **начало** и **край**. Напишете програма, която **генерира всички комбинации от 5 букви**, всяка измежду множеството **`{'a', 'b', 'c', 'd', 'e'}`**, така че теглото на тези 5 букви да е число в интервала **`[начало … край]`**, включително. Принтирайте ги по азбучен ред, на един ред, разделени с интервал.
+Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`** so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
-**Теглото на една буква** се изчислява по следния начин:
+**The weight of the letters** is calculated as follows:
 
 ```java 
-weight('а') = 5;
+weight('a') = 5;
 weight('b') = -12;
 weight('c') = 47;
 weight('d') = 7;
 weight('e') = -32;
 ```
 
-**Теглото на редицата** от букви **`c1, c2, …, cn`** е изчислено, като се премахват всички букви, които се повтарят (от дясно наляво), и след това се пресметне формулата:
+**The weight of the sequence** of the letters **`c1, c2, …, cn`** is calculated by removing all the letters that are repeated (from right to left) and then calculating the formula:
 
 ```java 
 weight(c1c2…cn) = 1 * weight(c1) + 2 * weight(c2) + … + n * weight(cn)
 ```
 
-**Например**, теглото на **`bcddc`** се изчислява по следния начин: 
+**For example**, the weight of **`bcddc`** is calculated as follows:
 
-Първо **премахваме повтарящите се букви** и получаваме **`bcd`**. След това прилагаме формулата: **`1 * weight('b') + 2 * weight('c') + 3 * weight('d') = 1 * (-12) + 2 * 47 + 3 * 7 = 103`**.
+First, **we remove the repeating letters** and get **`bcd`**. Then we apply the formula: **`1 * weight('b') + 2 * weight('c') + 3 * weight('d') = 1 * (-12) + 2 * 47 + 3 * 7 = 103`**.
 
-**Друг пример**: **`weight("cadae") = weight("cade") = 1 * 47 + 2 * 5 + 3 * 7 + 4 * (-32) = -50`**.
+**Another example**: `weight("cadae") = weight("cade") = 1 * 47 + 2 * 5 + 3 * 7 + 4 * (-32) = -50`.
 
-### Входни данни
+### Input Data
 
-Входните данни се четат от конзолата. Състоят се от две числа:
-* Числото за **начало**.
-* Числото за **край**.
 
-Входните данни винаги ще бъдат валидни и винаги ще са в описания формат. Няма нужда да се проверяват.
+The input data is read from the console. It consists of two numbers:
+* The number for **start**.
+* The number for **end**.
 
-### Изходни данни
+Input data will always be valid and will always be in the format described. No need to check.
 
-Резултатът трябва да бъде принтиран на конзолата като поредица от низове, **подредени по азбучен ред**. Всеки низ трябва да бъде отделен от следващия с едно разстояние. Ако теглото на нито един от 5 буквените низове не съществува в зададения интервал, принтирайте "**No**".
+### Output Data
 
-### Ограничения
+The result should be printed on the console as a sequence of strings, **arranged in alphabetical order**. Each string must be separated from the next one by a single space. If the weight of any of the 5 letter strings does not exist within the specified range, print "**No**".
 
-* Числата за **начало** и **край** да бъдат цели числа в диапазона [**-10000  … 10000**].
-* Позволено работно време за програмата: 0.25 секунди.
-* Позволена памет: 16 MB.
+### Constraints
 
-### Примерен вход и изход
+* Numbers for **start** and **end** are integers in the range [**-10000 … 10000**].
+* Allowed program time: 0.25 seconds.
+* Allowed memory: 16 MB.
 
-| Вход | Изход       | Коментар             |
-| ------ | ------------- | ---------------------- |
+### Sample Input and Output
+
+| Input  | Output     | Comment                                    |
+| ------ | -----------| -------------------------------------------|
 |40<br>42|bcead bdcea |weight("bcead") = 41<br>weight("bdcea") = 40|
 
-| Вход | Изход         |
+| Input | Output         |
 | ------ |---------------|
 |-1<br>1| bcdea cebda eaaad eaada eaadd eaade eaaed eadaa eadad eadae eadda eaddd eadde eadea eaded eadee eaead eaeda eaedd eaede eaeed eeaad eeada eeadd eeade eeaed eeead|
 
-| Вход | Изход      |
+| Input | Output      |
 | ------ |------------|
 |200<br>300|baadc babdc badac badbc badca badcb badcc badcd baddc bbadc bbdac bdaac bdabc bdaca bdacb bdacc bdacd bdadc bdbac bddac beadc bedac eabdc ebadc ebdac edbac|
 
-| Вход | Изход  |
+| Input | Output  |
 | ------ | -------- |
 |300<br>400| No|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Като всяка задача, започваме решението с **прочитане и обработване на входните данни**. В случая имаме **две цели числа**, които можем да обработим с комбинация от методите **`Integer.parseInt(…)`** и **`Scanner.nextLine()`**.
+As every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-01.png)
 
-В задачата имаме няколко основни момента - **генерирането на всички комбинации** с дължина 5 включващи 5-те дадени букви, **премахването на повтарящите се букви** и **пресмятането на теглото** за дадена вече опростена дума. Отговорът ще се състои от всяка дума, чието тегло е в дадения интервал **`[firstNumber, secondNumber]`**.
+We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters** and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
 
-#### Генериране на всички комбинации
+#### Generating All Combinations
 
-За да генерираме **всички комбинации с дължина 1** използвайки 5 символа, бихме използвали **цикъл от 0..4**, като всяко число от цикъла ще искаме да отговаря на един символ. За да генерираме **всички комбинации с дължина 2** използвайки 5 символа (т.е. "aa", "ab", "ac", …, "ba", …), бихме направили **два вложени цикъла, всеки обхождащ цифрите от 0 до 4**, като отново ще направим, така че всяка цифра да отговаря на конкретен символ. Тази стъпка ще повторим 5 пъти, така че накрая да имаме 5 вложени цикъла с индекси **`i1`**, **`i2`**, **`i3`**, **`i4`** и **`i5`**.
+In order to generate **all combinations with length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. In order to generate **any combinations of length 2** using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`** and **`i5`**.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-02.png)
 
-Имайки всички 5-цифрени комбинации, трябва да намерим начин да "превърнем" петте цифри в дума с буквите от '**a**' до '**e**'. Един от начините да направим това е, като си **предефинираме прост стринг съдържащ буквите**, които имаме
+Now that we have all 5-digit combinations, we must find a way to "turn" the five digits into a word with the letters from '**a**' to '**e**'. One of the ways to do that is to **predefine a simple string that contains the letters** that we have
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-03.png)
 
-и **за всяка цифра взимаме буквата от конкретната позиция**. По този начин числото **00000** ще стане **"aaaaa"**, числото **02423** ще стане **"acecd"**. Можем да направим стринга от 5 букви по следния начин.
+and **for each digit we take the letter from the particular position.** This way, the number **00000** will become **"aaaaa"**, and the number **02423** will become **"acecd"**. We can create the 5-letter string in the following way.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-04.png)
 
-***Друг начин***: можем да преобразуваме цифрите до букви, използвайки подредбата им в **ASCII таблицата**. Изразът **`'а' + i`** ще ни даде резултата **`'a'`** при **`i = 0`**, **`'b'`** при **`i = 1`**, **`'c'`** при **`i = 2`** и т.н.
+**Another way**: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`'a' + i`** return the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**,  **`'c'`** in case **`i = 2`**, etc.
 
-Така вече имаме генерирани всички 5-буквени комбинации и можем да продължим със следващата част от задачата.
+This way we already have generated all 5-letter combinations and can proceed with the following part of the task.
 
-***Внимание***: тъй като сме подбрали **`pattern`**, съобразен с азбучната подредба на буквите и циклите се въртят по подходящ начин, алгоритъмът ще генерира думите в азбучен ред и няма нужда от допълнително сортиране преди извеждане.
+**Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run in the appropriate manner, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 
-#### Премахването на повтарящи се букви
+#### Removing Repetitive Letters
 
-След като имаме вече готовия низ, трябва да премахнем всички повтарящи се символи. Ще направим тази операция, като **добавяме буквите от ляво надясно в нов низ и всеки път преди да добавим буква ще проверяваме дали вече я има** - ако я има ще я пропускаме, а ако я няма ще я добавяме. За начало ще добавим първата буква към началния стринг.
+Once we have the finished string, we have to remove all the repeating symbols. We will do this by adding **the letters from left to right in a new string and each time before adding a letter, we will check if it already exists** – if it does, we will skip it and if it doesn't, we will add it. To begin with, we will add the first letter to the starting string.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-05.png)
 
-След това ще направим същото и с останалите 4, проверявайки всеки път дали ги има със следното условие и метода **`.indexOf(…)`**. Това може да стане с цикъл по **`fullWord`** (оставяме това на читателя за упражнение), а може да стане и по мързеливия начин с copy-paste.
+Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. This can be done with a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done in the lazy way by copy-paste.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-06.png)
 
-Методът **`.indexOf(…)`** връща **индекса на конкретния елемент, ако бъде намерен или **`-1`**, ако елементът не бъде намерен**. Следователно всеки път, когато получим **`-1`**, ще означава, че все още нямаме тази буква в новия низ с уникални букви и можем да я добавим, а ако получим стойност различна от **`-1`**, ще означава, че вече имаме буквата и няма да я добавяме.
+The **`.indexOf(…)`** method returns **the index of the particular element if it is found or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter and we'll not add it.
 
-#### Пресмятане на теглото
+#### Calculating Weight
  
-Пресмятането на теглото е просто **обхождане на уникалната дума** (**`word`**), получена в миналата стъпка, като за всяка буква трябва да вземем теглото ѝ и да я умножим по позицията. За всяка буква в обхождането трябва да пресметнем с каква стойност ще умножим позицията ѝ, например чрез използването на **`switch`** конструкция.
+Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example by using a **`switch`** construction.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-07.png)
 
-След като имаме стойността на дадената буква, следва да я **умножим по позицията ѝ**. Тъй като индексите в стринга се различават с 1 от реалните позиции, т.е. индекс 0 е позиция 1, индекс 1 е позиция 2 и т.н., ще добавим 1 към индексите.
+Once we have the value of that letter, we should **multiply it by its position**. Because the indexes in the string differ by 1 from the actual positions, i.e. index 0 is position 1, index 1 is position 2, etc., we will add 1 to the indexes.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-08.png)
 
-Всички получени междинни резултати трябва да бъдат добавени към **обща сума за всяка една буква от 5-буквената комбинация**.
+All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
-#### Оформяне на изхода
+#### Preparing the Output
 
-Дали дадена дума трябва да се принтира, се определя по нейната тежест. Трябва ни условие, което да определи дали **текущата тежест е в интервала** [**начало … край**], подаден ни на входа в началото на програмата. Ако това е така, принтираме **пълната** дума (**`fullWord`**).
+Whether a word needs to be printed is determined by its weight. We need a condition to determine if **the current weight is in the range** [**start … end**] passed to the input at the start of the program. If this is the case, we print the **full** word (**`fullWord`**).
 
-**Внимавайте** да не принтирате думата от уникални букви. Тя ни бе необходима само за пресмятане на тежестта!
+**Be careful** not to print the word with unique letters. It was only needed to calculate the weight!
 
-Думите са **разделени с интервал** и ще ги натрупваме в междинна променлива **`result`**, която е дефинирана като празен низ в началото.
+The words are **separated with a space** and we'll accumulate them in an intermediate variable **`result`**, which is defined as an empty string at the beginning.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-09.png)
 
-#### Финални щрихи
+#### Final Touches
 
-Условието е изпълнено **с изключение случаите, в които нямаме нито една дума в подадения интервал**. За да разберем дали сме намерили такава дума, можем просто да проверим дали низът **`result`** има началната си стойност (а именно празен низ), ако е така - отпечатваме **`No`**, иначе печатаме целия низ без последния интервал (използвайки метода **`.trim()`**).
+The condition is met **unless we do not have a single word in the entered range**. In order to find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string), if it does, we print **`No`**, otherwise we print the whole string without the last space (using the **`.trim ()`**) method.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-10.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/663#2](https://judge.softuni.bg/Contests/Practice/Index/663#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#2](https://judge.softuni.bg/Contests/Practice/Index/663#2).
