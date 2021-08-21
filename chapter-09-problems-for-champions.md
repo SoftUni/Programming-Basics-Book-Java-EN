@@ -1,6 +1,6 @@
 # Chapter 9.1. Problems for Champions – Part I
 
-In this chapter, we will offer the reader a few **more difficult tasks** that aim to develop **algorithmic skills** and acquire **programming techniques** to solve tasks with higher complexity.
+In this chapter, we will offer the reader **more complex tasks**. They aim to develop **algorithmic skills** and acquire **programming techniques** to solve tasks with higher complexity.
 
 ## More Complex Problems on the Studied Material
 
@@ -95,7 +95,7 @@ We will do a **linear** search in the second array, and we will leave the more c
 
 ![](assets/chapter-9-1-images/01.Crossing-sequences-06.png)
 
-The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution** that generates the numbers and works directly with them instead of keeping them in an array. On **every step** we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of **which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"** until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution.
+The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution** that generates the numbers and works directly with them instead of keeping them in an array. On **every step**, we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of **which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"** until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution.
 
 ![](assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
@@ -108,7 +108,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#0
 
 **Date** is given in a "**dd-mm-yyyy**" format, e.g. 17-04-2018. We calculate **the weight of that date** by taking all of its digits, multiplying each digit with the others after it, and finally summing up all the results obtained. In our case, we have 8 digits: **17032007**, so the weight is **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
 
-Our task is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
+Our task is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to the given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
 
 ### Input Data
 
@@ -125,7 +125,7 @@ Input data will always be valid and will always be in the format described. No n
 The result should be printed on the console as consecutive dates in **"dd-mm-yyyy" format**, sorted by date in ascending order. Each string must be in a separate line. If there are no existing magic dates, print "**No**".
 ### Constraints
 
-   * The start and final year are integer numbers in the range [**1900-2100**].
+   * The start and final years are integer numbers in the range [**1900-2100**].
    * Magic weight is an integer in the range [**1 … 1000**].
    * Allowed program time: 0.25 seconds.
    * Allowed memory: 16 MB.
@@ -148,13 +148,13 @@ Having the start and the end year, it is nice to know how we will go through eve
 
 #### Loop through Dates
 
-For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as first argument the year, as second argument the month and as third argument the day of the month:
+For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as the first argument the year, as second argument the month, and as the third argument the day of the month:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-01.png)
 
 Once we have the start date, we want to create a **loop that runs until we exceed the final year** (or until we pass December 31 in the final year if we compare the full dates), increasing each day by 1 day.
 
-To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us, to decide where to skip the next month, how many days there is a month and everything around the leap years.
+To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us, to decide where to skip the next month, how many days there is a month, and everything around the leap years.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-02.png)
 
@@ -168,7 +168,7 @@ In the end, our loop may look like this:
 
 #### Calculating Date Weight
 
-Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**) and **4 for the year** (**`d5`** to **`d8`**). This means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e. not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. By using the division and partition operations on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`** and **`getYear()`** properties, we can retrieve each digit.
+Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**), and **4 for the year** (**`d5`** to **`d8`**). This means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e. not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. By using the division and partition operations on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`**, and **`getYear()`** properties, we can retrieve each digit.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-04.png)
 
@@ -180,13 +180,13 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 #### Printing the Output
 
-Once we have the weight calculated of a given date, we need **to check and see if it matches the magical weight we want**, in order to know if it should be printed or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data in our required format we will use **`DateTimeFormatter`** class.
+Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight we want**, to know if it should be printed or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data in our required format, we will use **`DateTimeFormatter`** class.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-06.png)
 
 ***Caution***: Since we iterate over the dates from initial to final, they will always be ordered in ascending order as it is in the requirements.
 
-Finally, if we have not found a date that is eligible, we will have a **`false`** value in the **`found`** variable and we will be able to print **`No`**.
+Finally, if we have not found an eligible date, we will have a **`false`** value in the **`found`** variable and we will be able to print **`No`**.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-07.png)
 
@@ -225,8 +225,8 @@ First, **we remove the repeating letters** and get **`bcd`**. Then we apply the 
 
 
 The input data is read from the console. It consists of two numbers:
-* The number for **start**.
-* The number for **end**.
+* The number for our **start**.
+* The number for our **end**.
 
 Input data will always be valid and will always be in the format described. No need to check.
 
@@ -246,29 +246,29 @@ The result should be printed on the console as a sequence of strings, **arranged
 | ------ | -----------| -------------------------------------------|
 |40<br>42|bcead bdcea |weight("bcead") = 41<br>weight("bdcea") = 40|
 
-| Input | Output         |
+| Input  | Output        |
 | ------ |---------------|
 |-1<br>1| bcdea cebda eaaad eaada eaadd eaade eaaed eadaa eadad eadae eadda eaddd eadde eadea eaded eadee eaead eaeda eaedd eaede eaeed eeaad eeada eeadd eeade eeaed eeead|
 
 | Input | Output      |
-| ------ |------------|
+| ------|-------------|
 |200<br>300|baadc babdc badac badbc badca badcb badcc badcd baddc bbadc bbdac bdaac bdabc bdaca bdacb bdacc bdacd bdadc bdbac bddac beadc bedac eabdc ebadc ebdac edbac|
 
-| Input | Output  |
-| ------ | -------- |
+| Input | Output |
+| ------| -------|
 |300<br>400| No|
 
 ### Hints and Guidelines
 
-As every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
+Like every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-01.png)
 
-We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters** and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
+We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters**, and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
 
 #### Generating All Combinations
 
-In order to generate **all combinations with length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. In order to generate **any combinations of length 2** using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`** and **`i5`**.
+To generate **all combinations with a length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. To generate **any combinations of length 2** using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`**, and **`i5`**.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-02.png)
 
@@ -276,7 +276,7 @@ Now that we have all 5-digit combinations, we must find a way to "turn" the five
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-03.png)
 
-and **for each digit we take the letter from the particular position.** This way, the number **00000** will become **"aaaaa"**, and the number **02423** will become **"acecd"**. We can create the 5-letter string in the following way.
+and **for each digit, we take the letter from the particular position.** This way, the number **00000** will become **"aaaaa"**, and the number **02423** will become **"acecd"**. We can create the 5-letter string in the following way.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-04.png)
 
@@ -284,7 +284,7 @@ and **for each digit we take the letter from the particular position.** This way
 
 This way we already have generated all 5-letter combinations and can proceed with the following part of the task.
 
-**Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run in the appropriate manner, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
+**Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 
 #### Removing Repetitive Letters
 
@@ -292,7 +292,7 @@ Once we have the finished string, we have to remove all the repeating symbols. W
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-05.png)
 
-Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. This can be done with a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done in the lazy way by copy-paste.
+Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. This can be done with a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done lazily by copy-paste.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-06.png)
 
@@ -300,7 +300,7 @@ The **`.indexOf(…)`** method returns **the index of the particular element if 
 
 #### Calculating Weight
  
-Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example by using a **`switch`** construction.
+Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter, we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example by using a **`switch`** construction.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-07.png)
 
@@ -322,7 +322,7 @@ The words are **separated with a space** and we'll accumulate them in an interme
 
 #### Final Touches
 
-The condition is met **unless we do not have a single word in the entered range**. In order to find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string), if it does, we print **`No`**, otherwise we print the whole string without the last space (using the **`.trim ()`**) method.
+The condition is met **unless we do not have a single word in the entered range**. To find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string) if it does, we print **`No`**, otherwise we print the whole string without the last space (using the **`.trim ()`**) method.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-10.png)
 
