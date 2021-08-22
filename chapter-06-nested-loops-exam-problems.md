@@ -1,6 +1,6 @@
-# Глава 6.2. Вложени цикли – изпитни задачи
+# Chapter 6.2. Nested Loops – Exam Problems
 
-В предходната глава разгледахме **вложените цикли** и как да ги използване за **рисуване** на различни **фигури на конзолата**. Научихме се как да отпечатваме фигури с различни размери, измисляйки подходяща логика на конструиране с използване на **единични и вложени `for`** цикли в комбинация с различни изчисления и програмна логика:
+In the previous chapter we looked at **nested loops** and how to use them to **draw** different kinds of **figures on the console**. We learned how to print figures with different sizes, thinking of an appropriate logic to construct them using **single and nested `for`** loops in combination with various calculations and program logic:
 
 ```java
 for (int row = 1; row <= 5; row++) {
@@ -12,162 +12,162 @@ for (int row = 1; row <= 5; row++) {
 }
 ```
 
-Декларирахме си и собствен метод **`repeatStr(…)`**, който ни помага да печатаме **даден символ** (или поредица от символи) **определен** от нас брой пъти:
+We also declared our own method **`repeatStr(…)`** which helps us to print **a given symbol** (or a series of characters) **certain** number of times:
 
 ![](assets/chapter-6-2-images/00.RepeatStr-custom-method-01.png)
 
 
-## Изпитни задачи
+## Exam Problems
 
-Сега нека решим заедно няколко изпитни задачи, за да затвърдим наученото и да развием още алгоритмичното си мислене.
+Let's solve several exam problems related to nested loops to practice what we have learned and to further develop our algorithmic thinking.
 
 
-## Задача: чертане на крепост
+## Problem: Drawing a Fort
 
-Да се напише програма, която прочита от конзолата **цяло число n** и чертае **крепост** с ширина **2 * n колони** и височина **n реда** като в примерите по-долу. Лявата и дясната колона във вътрешността си са широки **n / 2**.
+Write a program that reads from the console **an integer n** and draws **a fortress** with width **2 * n columns** and height **n rows** like the examples below. The left and right columns on the inside are with width **n / 2**.
 
-### Входни данни
+### Input Data
 
-Входът е **цяло число n** в интервала [**3 … 1000**].
+The input is an **integer n** in the range of [**3 … 1000**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечатат на конзолата **n** текстови реда, изобразяващи **крепостта**, точно както в примерите.
+Print on the console **n** text rows, depicting **the fortress**, exactly like the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>&#47;&#94;&#92;&#47;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#47;&#92;&#95;&#47;</code>|4|<code>&#47;&#94;&#94;&#92;&#47;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#47;&#92;&#95;&#95;&#47;</code><br>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |5|<code>&#47;&#94;&#94;&#92;&#95;&#95;&#47;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&#95;&#95;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#47;&nbsp;&nbsp;&#92;&#95;&#95;&#47;</code><br>|8|<code>&#47;&#94;&#94;&#94;&#94;&#92;&#95;&#95;&#95;&#95;&#47;&#94;&#94;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#95;&#95;&#95;&#95;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#95;&#95;&#47;&nbsp;&nbsp;&nbsp;&nbsp;&#92;&#95;&#95;&#95;&#95;&#47;</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-От условието на задачата виждаме, че **входните данни** ще се състоят само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще използваме **променлива** от тип **`int`**.
+We can see from the task that the **input data** will be only one line which will contains **an integer** within the range [**3 … 1000**]. Therefore, we will use a **variable** from type **`int`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-01.png)
 
-След като вече сме декларирали и инициализирали входните данни, трябва да разделим **крепостта** на три части:
-* покрив
-* тяло
-* основа
+After we have declared and initialized the input data, we must divide **the fort** into three parts:
+* roof
+* body
+* base
 
-От примерите можем да разберем, че **покривът** е съставен от **две кули** и **междинна част**. Всяка кула се състои от начало **`/`**, среда **`^`** и край **`\`**.
+We can see from the examples that **the roof** is made of **two towers** and **a middle part**. Each tower has a beginning **`/`**, middle part **`^`** and an end **`\`**.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><strong><code>\</code></strong> е специален символ в езика Java и използвайки само него в метода <strong><code>System.out.println(…)</code></strong>, конзолата няма да го разпечата, затова с <strong><code>\\</code></strong> показваме на конзолата, че искаме да отпечатаме точно този символ, без да се интерпретира като специален (<b>екранираме го</b>, на английски се нарича “<b>character escaping</b>”).</td>
+<td><strong><code>\</code></strong> is a special symbol in Java and using only it in the method <strong><code>System.out.println(…)</code></strong>, the console will not print it, that's why with <strong><code>\\</code></strong> we show on the console that we want to print exactly this symbol, without being interpreted as a special one (<b>екранираме го</b>, in English this is called “<b>character escaping</b>”).</td>
 </tr></table>
 
-Средата е с размер, равен на **`n / 2`**, следователно можем да отделим тази стойност в отделна **променлива**. Тя ще пази **големината** на **средата на кулата**.
+The size of the middle part is **`n / 2`**, therefore we can write this value in a new **variable**. It will store the **size** of the **middle part of the tower**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-02.png)
 
-Декларираме си и втора **променлива**, в която ще пазим **стойността** на частта **между двете кули**. Междинната част на покрива е с размер  **`2 * n - 2 * colSize - 4`**.
+Now we declare a second **variable**, in which we will store the **value** of the part **between the two towers**. The middle part of the roof has size of **`2 * n - 2 * colSize - 4`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-03.png)
 
-За да отпечатаме на конзолата **покрива**, ще използваме нашия метод **`repeatStr(…)`**, който приема два параметъра **`(string, int)`** и съединява даден символ (или поредица от символи) **n** на брой пъти.
+In order to print on the console the **roof**, we will use our method **`repeatStr(…)`**, which accepts two parameters **`(string, int)`** and concatenate a certain symbol (or series of characters) **n** times.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-04.png)
 
-**Тялото на крепостта** се състои от начало **`|`**, среда **`(празно място)`** и край **`|`**. **Средата** от празно място е с големина **`2 * n - 2`**. Броят на **редовете** за стени, можем да определим от дадените ни примери - **`n - 3`**.
+**The body of the fort** contains a beginning **`|`**, middle part **`(white space)`** and an end **`|`**. **The middle part** is a blank space with size of **`2 * n - 2`**. The number of the **rows** used for walls could be found by the given parameters - **`n - 3`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-05.png)
 
-За да нарисуваме предпоследния ред, който е част от основата, трябва да отпечатаме начало **`|`**, среда **`(празно място)_(празно място)`** и край **`|`**. За да направим това, можем да използваме отново вече декларираните от нас променливи **`colSize`** и **`midSize`**, защото от примерите виждаме, че са равни на броя **`_`** в покрива.
+In order to draw the last row, which is a part of the base, we need to print the beginning **`|`**, the middle part **`(white space)_(white space)`** and an end **`|`**. In order to do this, we can use the already declared variables **`colSize`** and **`midSize`**, because we can see from the examples that they are equal to the **`_`** in the roof.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-06.png)
 
-Добавяме към стойността на **празните места** **`+ 1`**, защото в примерите имаме **едно** празно място повече.
+We add to the values of the **blank spaces** **`+ 1`**, because we have in the examples **one** blank space more.
 
-Структурата на **основата на крепостта** е еднаква с тази на **покрива**. Съставена е от **две кули** и **междинна част**. Всяка една **кула** има начало **`\`**, среда **`_`** и край **`/`**.
+The structure of the **base of the fort** is the same as the one of the **roof**. It is made of **two towers** and a **middle part**. Each **tower** has a beginning **`\`**, middle part **`_`** and an end **`/`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/658#0](https://judge.softuni.bg/Contests/Practice/Index/658#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/658#0](https://judge.softuni.bg/Contests/Practice/Index/658#0).
 
 
-## Задача: пеперуда
+## Problem: Butterfly
 
-Да се напише програма, която прочита от конзолата **цяло число n** и чертае **пеперуда** с ширина **2 * n - 1 колони** и височина **2 * (n - 2) + 1 реда** като в примерите по-долу.  **Лявата и дясната** ѝ **част** са **широки n - 1**.
+Write a program that reads from the console an **integer n** and draws a **butterfly** with width **2 * n - 1 columns** and a height **2 * (n - 2) + 1 rows** like the examples below. **The left and right** **parts** are with **width n - 1**.
 
-### Входни данни
+### Input Data
 
-Входът е **цяло число n** в интервала [**3 … 1000**].
+The input is an **integer n** in the range of [**3 … 1000**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечатат на конзолата **2 * (n - 2) + 1**  текстови реда, изобразяващи **пеперудата**, точно както в примерите.
+Print on the console **2 * (n - 2) + 1**  text rows, depicting the **butterfly**, exactly like the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&#42;&#92;&nbsp;&#47;&#42;</code><br><code>&nbsp;&nbsp;&#64;&nbsp;&nbsp;</code><br><code>&#42;&#47;&nbsp;&#92;&#42;</code><br>|5|<code>&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&#64;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7|<code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#64;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще използваме **променлива** от тип **`int`**.
+From the task we can see that the **input data** will be only one line which will contains an **integer** within the range [**3 … 1000**]. That is why we will use **a variable** from type **`int`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-01.png)
 
-Можем да разделим фигурата на 3 части - **горно крило**, **тяло** и **долно крило**. За да начертаем горното крило на пеперудата, трябва да го разделим на части - начало **`*`**, среда **`\ /`** и край **`*`**. След разглеждане на примерите можем да кажем, че началото е с големина **`n - 2`**.
+We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. In order to draw the upper wing, we need to divide it into parts - a beginning **`*`**, middle part **`\ /`** and an end **`*`**. After looking at the examples we find out that the beginning is with size **`n - 2`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-02.png)
 
-Виждаме също така, че горното крило на пеперудата е с размер **`n - 2`**, затова можем да направим цикъл, който да се повтаря **`halfRowSize`** пъти.
+We can also see that the upper wing is with size **`n - 2`**, and that's why we can make a loop which repeats **`halfRowSize`** times.
 
 ![](assets/chapter-6-2-images/02.Butterfly-03.png)
 
-От примерите можем да забележим, че на **четен** ред имаме начало **`-`**, среда **`\ /`** и край **`*`**, а на **нечетен** - начало **`*`**, среда **`\ /`** и край **`-`**. Следователно, трябва да направим **`if-else`** проверка дали е четен или нечетен редът и съответно да отпечатаме един от двата типа редове.
+We can see in the examples that on an **even** row we have a beginning **`-`**, middle part **`\ /`** and an end **`*`**, and on a **odd** - a beginning **`*`**, middle part **`\ /`** and an end **`-`**. Therefore, we have to do an **`if-else`** condition to check if the row is even or odd and then to draw one of the two types of rows.
 
 ![](assets/chapter-6-2-images/02.Butterfly-04.png)
 
-За да направим **тялото на пеперудата**, можем отново да използваме **променливата** **`halfRowSize`** и да отпечатаме на конзолата точно **един** ред. Структурата на тялото е с начало **`(празно място)`**, среда **`@`** и край **`(празно място)`**.
+In order to create the **body of the butterfly**, we can use the **variable** **`halfRowSize`** and to print on the console exactly **one** line. The structure of the body begins with **`(white spave)`**, middle part **`@`** and ends with **`(white space)`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-05.png)
 
-Остава да отпечатаме на конзолата и долното крило, което е идентично с горното крило.
+Now we need to print the lower wing, which is the same as the upper one.
 
 ![](assets/chapter-6-2-images/02.Butterfly-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/658#1](https://judge.softuni.bg/Contests/Practice/Index/658#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/658#1](https://judge.softuni.bg/Contests/Practice/Index/658#1).
 
 
-## Задача: знак "Стоп"
+## Problem: "Stop" Sign
 
-Да се напише програма, която прочита от конзолата **цяло число n** и чертае **предупредителен знак STOP** с размери като в примерите по-долу.
+Write a program that reads from the console an **integer n** and draws the **warning sign STOP** with size as in the example below.
 
-### Входни данни
+### Input Data
 
-Входът е **цяло число N** в интервала [**3 … 1000**].
+The input is an **integer N** in the range of [**3 … 1000**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечатат на конзолата текстови редове, изобразяващи **предупредителния знак STOP**, точно както в примерите.
+Print on the console text lines which depict **the warning sign STOP** as in the examples below.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>....\_\_\_\_\_\_\_....</code><br><code>...//\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_STOP!\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_//..</code><br>|6|<code>.......\_\_\_\_\_\_\_\_\_\_\_\_\_.......</code><br><code>......//\_\_\_\_\_\_\_\_\_\_\_\\\\......</code><br><code>.....//\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.....</code><br><code>....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\....</code><br><code>...//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_\_\_\_\_\_\_STOP!\_\_\_\_\_\_\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//..</code><br><code>...\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//...</code><br><code>....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//....</code><br><code>.....\\\\_\_\_\_\_\_\_\_\_\_\_\_\_//.....</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7|<code>........\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_........</code><br><code>.......//\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.......</code><br><code>......//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\......</code><br><code>.....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.....</code><br><code>....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\....</code><br><code>...//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_\_\_\_\_\_\_\_\_STOP!\_\_\_\_\_\_\_\_\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//..</code><br><code>...\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//...</code><br><code>....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//....</code><br><code>.....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.....</code><br><code>......\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//......</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
 От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще използваме **променлива** от тип **`int`**.
 
