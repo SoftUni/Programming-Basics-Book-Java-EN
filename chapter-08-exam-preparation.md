@@ -1,45 +1,45 @@
-# Глава 8.1. Подготовка за практически изпит – част I
+# Chapter 8.1. Practical Exam Preparation – Part I
 
-В **настоящата глава** ще разгледаме няколко **задачи** с ниво на **трудност**, каквото може да очаквате от **задачите** на практическия **изпит** по “Основи на програмирането”. Ще **преговорим** и **упражним** всички знания, които сте придобили от настоящата книга и през курса "Programming Basics".
+In **the current chapter** we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch a video about what you shall learn in this chapter: <a target="_blank"
   href="https://www.youtube.com/watch?v=ljaZHRCyZW8">
   https://www.youtube.com/watch?v=ljaZHRCyZW8</a>.
 </div>
 
 
-## Практически изпит по “Основи на програмирането”
+## Practical exam on “Programming Basic”
 
-Курсът **"Programming Basics"** приключва с **практически изпит**. Включени са **6** задачи, като ще имате **4 часа**, за да ги решите. **Всяка** от задачите на изпита ще **засяга** една от изучаваните **теми** по време на курса. Темите на задачите са както следва:
+The **"Programming Basics"** course ends with **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** ne of the **topics** studied in the course. The themes of the problems are as follows:
 
-- Задача с прости сметки (без проверки)
-- Задача с единична проверка
-- Задача с по-сложни проверки
-- Задача с единичен цикъл
-- Задача с вложени цикли (чертане на фигурка на конзолата)
-- Задача с вложени цикли и по-сложна логика
+- Problem with simple calculations \(no conditions\)
+- Problem with simple condition
+- Problem with more complex conditions
+- Problem with a simple loop
+- Problem with nested loops (drawing a figure on the console)
+- Problem with nested loops and more complex logic
 
-## Система за онлайн оценяване (Judge)
+## The Online Evaluation System (Judge)
 
-**Всички изпити и домашни** се **тестват** автоматизирано през онлайн **Judge система**: [https://judge.softuni.bg](https://judge.softuni.bg). За **всяка** от задачите има **открити** (нулеви) тестове, които ще ви помогнат да разберете какво се очаква от задачата и да поправите грешките си, както и **състезателни** тестове, които са **скрити** и проверяват дали задачата ви работи правилно. В **Judge** системата се влиза с вашия **softuni.bg акаунт**.
+**All exams and exercises** from this book are automatically **tested** through the online **Judge система**: [https://judge.softuni.bg](https://judge.softuni.bg). For **each** of the problems there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system you can log in with your **softuni.bg account**.
 
-**Как** работи тестването в **Judge** системата? **Качвате** сорс кода и от менюто под него избирате да се компилира като **Java** програма. Програмата бива **тествана** с поредица от тестове, като за всеки **успешен** тест получавате **точки**.
+**How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
 
-## Задачи с прости пресмятания
+## Simple Calculations – Problems
 
-**Първата** задача на практическия изпит по “Основи на програмирането” обхваща **прости пресмятания без проверки и цикли**. Ето няколко примера:
+**The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Задача: лице на триъгълник в равнината
+### Problem: Triangle Area in the plane
 
 <table>
    <tr>
       <td width="60%">
-        <b>Триъгълник в равнината</b> е зададен чрез координатите на трите си върха. Първо е зададен <b>върхът (x1, y1)</b>. След това са зададени останалите два върха: <b>(x2, y2)</b> и <b>(x3, y3)</b>, които <b>лежат на обща хоризонтална права</b> (т.е. имат еднакви Y координати). Напишете програма, която пресмята <b>лицето на триъгълника</b> по координатите на трите му върха.
+        <b>А triangle in the plane</b> is defined by the coordinates of its three vertices. First the vertex <b>(x1, y1)</b> is set. СThen the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b>, which <b>lie on a common horizontal line</b> (i.e. they have the same Y coordinates). Write a program that calculates <b>the area of the triangle</b> by the coordinates of its three vertices.
       </td>
       <td>
          <img src="assets/chapter-8-1-images/01.Triangle-area-01.png"/>
@@ -47,466 +47,466 @@
    </tr>
 </table>
 
-#### Вход
-От конзолата се четат **6 цели числа** (по едно на ред):
+#### Input
+The console provides **6 integers** (one per line):
 **x1, y1, x2, y2, x3, y3.**
--	Всички входни числа са в диапазона [**-1000 … 1000**].
--	Гарантирано е, че **y2 = y3**.
+-	All input numbers are in the range [**-1000 … 1000**].
+-	It is guaranteed that **y2 = y3**.
 
-#### Изход
-Да се отпечата на конзолата **лицето на триъгълника**.
+#### Output
+Print on the console **the area of the triangle**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Чертеж|Обяснения|
+|Input|Output|Visualization|Comments|
 |----|----|----|----|
-|5<br>-2<br>6<br>1<br>1<br>1|7.5|![](/assets/chapter-8-1-images/01.Triangle-area-01.png)|Страната на триъгълника **а** = 6 - 1 = **5**<br>Височината на триъгълника **h** = 1 - (-2) = **3**<br>Лицето на триъгълника **S** = a \* h / 2 = 5 \* 3 / 2 = **7.5**|
+|5<br>-2<br>6<br>1<br>1<br>1|7.5|![](/assets/chapter-8-1-images/01.Triangle-area-01.png)|The side of the triangle **а** = 6 - 1 = **5**<br>The height of the triangle **h** = 1 - (-2) = **3**<br>The area of the triangle **S** = a \* h / 2 = 5 \* 3 / 2 = **7.5**|
 
-|Вход|Изход|Чертеж|Обяснения|
+|Input|Output|Visualization|Comments|
 |----|----|----|----|
-|4<br>1<br>-1<br>-3<br>3<br>-3|8|![](/assets/chapter-8-1-images/01.Triangle-area-02.png)|Страната на триъгълника **а** = 3 - (-1) = **4**<br>Височината на триъгълника **h** = 1 - (-3) = **4**<br>Лицето на триъгълника **S** = a \* h / 2 = 4 \* 4 / 2 = **8**|
+|4<br>1<br>-1<br>-3<br>3<br>-3|8|![](/assets/chapter-8-1-images/01.Triangle-area-02.png)|The side of the triangle **а** = 3 - (-1) = **4**<br>The height of the triangle **h** = 1 - (-3) = **4**<br>The area of the triangle **S** = a \* h / 2 = 4 \* 4 / 2 = **8**|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Изключително важно при подобен тип задачи, при които се подават някакви координати, е да обърнем внимание на **реда**, в който се подават, както и правилно да осмислим кои от координатите ще използваме и по какъв начин. В случая, на входа се подават **x1, y1, x2, y2, x3, y3** в този си ред. Ако не спазваме тази последователност, решението става грешно. Първо пишем кода, който чете подадените данни:
+It is very important when facing such types of tasks where some coordinates are given to pay attention to **the order** in which they are submitted, and to properly understand which of the coordinates we will use and how. In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes incorrect. First, we write the code that reads the input data:
 
 ![](assets/chapter-8-1-images/01.Triangle-area-03.png)
 
-Трябва да пресметнем **страната** и **височината** на триъгълника. От картинките, както и от условието **`y2 = y3`** забелязваме, че едната **страна** винаги е успоредна на хоризонталната ос. Това означава, че нейната **дължина** е равна на дължината на отсечката между нейните координати **`x2` и `x3`**, която е равна на разликата между по-голямата и по-малката координата. Аналогично можем да изчислим и **височината**. Тя винаги ще е равна на разликата между **`y1` и `y2`**(или **`y3`**, тъй като са равни). Тъй като не знаем дали винаги **`x2`** ще е по-голям от **`x3`**, или **`y1`** ще е под или над страната на триъгълника, ще използваме **абсолютните стойности** на разликата, за да получаваме винаги положителни числа, понеже една отсечка не може да има отрицателна дължина.
+We have to calculate **the side** and **the height** of the triangle. From the pictures, as well as the condition **`y2 = y3`**, we notice that the one **side** is always parallel to the horizontal axis. This means that its **length** is equal to the length of the segment between its coordinates **`x2` and `x3`**, which is equal to the difference between the larger and the smaller coordinates. Analogically, we can calculate **the height**. It will always be equal to the difference between **`y1` and `y2`** (or **`y3`**, as they are equal). Since we do not know if **`x2`** is greater than **`x3`**, or **`y1`** will be below or above the triangle side, we will use **the absolute values** of the difference to always get positive numbers, because one segment cannot have a negative length.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-04.png)
 
-По познатата ни от училище формула за намиране на **лице на триъгълник** ще пресметнем лицето. Важно нещо, което трябва да съобразим, е въпреки че на входа получаваме само цели числа, **лицето** не винаги ще е цяло число. Затова за лицето използваме променлива от тип **`double`**. Налага се да конвертираме и дяснaта страна на уравнението, понеже ако подадем цели числа като параметри на уравнението, резултатът ни също ще е цяло число.
+we will calculate it using our familiar formula for finding an **area of a triangle**. An important thing to consider is that although we get only integers at an input, **the area** will not always be an integer. That's why we use a variable of **`double`** type for the area. We have to convert the right side of the equation, because if we give whole numbers as equation parameters, our result will also be an integer.
 
 
 ![](assets/chapter-8-1-images/01.Triangle-area-05.png)
 
-Единственото, което остава, е да отпечатаме лицето на конзолата.
+The only thing left is to print the area on the console.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#0](https://judge.softuni.bg/Contests/Practice/Index/661#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#0](https://judge.softuni.bg/Contests/Practice/Index/661#0).
 
 
-### Задача: пренасяне на тухли
+### Problem: Moving Bricks
 
-Строителни работници трябва да пренесат общо **x тухли**. **Работниците** са **w** на брой и работят едновременно. Те превозват тухлите в колички, всяка с **вместимост m** тухли. Напишете програма, която прочита целите числа **x**, **w** и **m** и пресмята **колко най-малко курса** трябва да направят работниците, за да превозят тухлите.
+Construction workers have to transfer a total of **x bricks**. **Workers** are **w** in numbers and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
-#### Вход
+#### Input
 
-От конзолата се четат **3 цели числа** (по едно на ред):
-- **Броят тухли x** се чете от първия ред.
-- **Броят работници w** се чете от втория ред.
-- **Вместимостта на количката m** се чете от третия ред.
+On the console **3 integers** are given, one per line:
+- **The number of bricks x** is read from the first line.
+- **The number of workers w** is read from the second line.
+- **The capacity of the trolley m** is read from the third line.
 
-Всички входни числа са цели и в диапазона [**1 … 1000**].
+All input numbers are integers in the range [**1 … 1000**].
 
-#### Изход
+#### Output
 
-Да се отпечата на конзолата **минималният брой курсове**, необходими за превозване на тухлите.
+Print on the console **the minimum number of courses** needed to transport the bricks.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Обяснения|
+|Input|Output|Comments|
 |----|----|----|
-|120<br>2<br>30|2|Имаме **2** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **60** тухли на курс. За да превозят **120** тухли, са необходими точно **2** курса.|
+|120<br>2<br>30|2|We have **2** workers, each transporting **30** bricks per course. In total, workers are transporting **60** bricks per course. To transport **120** bricks, exactly **2** courses are needed.|
 
-|Вход|Изход|Обяснения|
+|Input|Output|Comments|
 |----|----|----|
-|355<br>3<br>10|12|Имаме **3** работника, всеки вози по **10** тухли на курс. Общо работниците возят по **30** тухли на курс. За да превозят **355** тухли, са необходими точно **12** курса: **11** пълни курса превозват **330** тухли и последният **12**-ти курс пренася последните **25** тухли.|
+|355<br>3<br>10|12|We have **3** workers, each transporting **10** bricks per course. In total, workers are transporting **30** bricks per course. To transport **355** bricks, exactly **12** courses are needed: **11** complete courses carry **330** bricks and the last **12**-th course carries the last **25** bricks.|
 
-|Вход|Изход|Обяснения|
+|Input|Output|Comments|
 |----|----|----|
-|5<br>12<br>30|1|Имаме **5** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **150** тухли на курс. За да превозят **5** тухли, е достатъчен само **1** курс (макар и непълен, само с 5 тухли).|
+|5<br>12<br>30|1|We have **5** workers, each transporting **30** bricks per course. In total, workers are transporting **150** bricks per course. In order to transport **5** bricks, only **1** course is sufficient (although incomplete, with only 5 bricks).|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Входът е стандартен, като единствено трябва да внимаваме за последователността, в която прочитаме данните.
+The input is standard, and we only need to be careful about the sequence in which we read the data.
 
 ![](assets/chapter-8-1-images/02.Bricks-01.png)
 
-Пресмятаме колко **тухли** носят работниците на един курс.
+ПWe calculate how many **bricks** the workers transport in a single course.
 
 ![](assets/chapter-8-1-images/02.Bricks-02.png)
 
-Като разделим общия брой на **тухлите, пренесени за 1 курс**, ще получим броя **курсове**, необходими за пренасянето им. Трябва да съобразим, че при деление на цели числа се пренебрегва остатъка и се закръгля винаги надолу. За да избегнем това ще конвертираме дяснaта страна на уравнението към **`double`** и ще използваме функцията **`Math.ceil(…)`**, за да закръглим получения резултат винаги нагоре. Когато тухлите могат да се пренесат с **точен брой курсове**, делението ще връща точно число и няма да има нищо за закръгляне. Съответно, когато не е така, резултатът от делението ще е **броя на точните курсове**, но с десетична част. Десетичната част ще се закръгли нагоре и така ще се получи нужният **1 курс** за оставащите тухли.
+By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** required to carry them. We have to consider that when dividing whole numbers, the remainder is ignored and always rounded down. To avoid this, we will convert the right side of the equation to **`double`** and use the **`Math.Ceiling(…)`** function to round the result always up. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but a decimal fraction. The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
 
 ![](assets/chapter-8-1-images/02.Bricks-03.png)
 
-Накрая принтираме резултата на конзолата.
+Finally, we print the result on the console.
 
 ![](assets/chapter-8-1-images/02.Bricks-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#1](https://judge.softuni.bg/Contests/Practice/Index/661#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#1](https://judge.softuni.bg/Contests/Practice/Index/661#1).
 
 
-## Задачи с единична проверка
+## Simple Conditions – Problems
 
-**Втората** задача на практическия изпит по “Основи на програмирането” обхваща **условна конструкция и прости премятания**. Ето няколко примера:
+**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
-### Задача: точка върху отсечка
+### Problem: Point on a Segment
 
-Върху хоризонтална права е разположена **хоризонтална отсечка**, зададена с **x** координатите на двата си края: **first** и **second**. **Точка** е разположена **върху** същата хоризонтална права и е зададена с **x координатата** си. Напишете програма, която проверява дали точката е **вътре или вън от отсечката** и изчислява **разстоянието до по-близкия край** на отсечката.
+**A horizontal segment** is placed on a horizontal line, set with the **x** coordinates of both ends: **first** and **second**. **A point** is located **on** the same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside the segment** and calculates **the distance to the nearest end** of the segment.
 
-#### Вход
+#### Input
 
-От конзолата се четат **3 цели числа** (по едно на ред):
-- На първия ред стои числото first – **единия край на отсечката**.
-- На втория ред стои числото second – **другия край на отсечката**.
-- На третия ред стои числото point – **местоположението на точката**.
+The console reads **3 integer numbers** (one per line):
+- On the first line the number "first" is read – **one end of the segment**.
+- On the second line the number "second" is read – **the other end of the segment**.
+- On the third line the number "point" is read – **the location of the point**.
 
-Всички входни числа са цели и в диапазона [**-1000 … 1000**].
+All input numbers are integers in the range [**-1000 … 1000**].
 
-#### Изход
+#### Output
 
-Резултатът да се отпечата на конзолата:
-- На първия ред да се отпечата "**in**" или "**out**" – дали точката е върху отсечката или извън нея.
-- На втория ред да се отпечата разстоянието от точката до най-близкия край на отсечката.
+Print the result on the console:
+- On the first line, print "**in**" or "**out**" – whether the point is inside or outside the segment.
+- On the second line, print the distance from the point to the nearest end of the segment.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Визуализация|
+|Input|Output|Visualization|
 |---|---|---|
 |10<br>5<br>7|in<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-01.png)|
 
-|Вход|Изход|Визуализация|
+|Input|Output|Visualization|
 |---|---|---|
 |8<br>10<br>5|out<br>3|![](/assets/chapter-8-1-images/03.Point-on-segment-02.png)|
 
-|Вход|Изход|Визуализация|
+|Input|Output|Visualization|
 |---|---|---|
 |1<br>-2<br>3|out<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-03.png)|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Четем входа от конзолата.
+We read the input from the console.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-04.png)
 
-Тъй като не знаем коя **точка** е от ляво и коя е от дясно, ще си направим две променливи, които да ни отбелязват това. Тъй като **лявата точка** е винаги тази с по-малката **х координата**, ще ползваме **`Math.min(…)`**, за да я намерим. Съответно, **дясната** е винаги тази с по-голяма **х координата** и ползваме **`Math.max(…)`**. Ще намерим и разстоянието от **точката x** до **двете точки**. Понеже не знаем положението им една спрямо друга, ще използваме **`Math.abs(…)`**, за да получим положителен резултат.
+Since we do not know which **point** is on the left and which is on the right, we will create two variables to mark this. ТSince the **left point** is always the one with the smaller **x coordinate**, we will use **`Math.Min(…)`** to find it.  Accordingly, **the right one** is always the one with a larger **x coordinate** and we will use **`Math.Max(…)`**. We will also find the distance from **point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.Abs(…)`** to get a positive result.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-05.png)
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-06.png)
 
-По-малкото от двете **разстояния** ще намерим ползвайки **`Math.min(…)`**.
+The shorter of the two **distances** we can found using **`Math.Min(…)`**.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-07.png)
 
-Остава да намерим дали **точката** е на линията или извън нея. Точката ще се намира **на линията** винаги, когато тя **съвпада** с някоя от другите две точки или х координатата ѝ се намира **между тях**. В противен случай, точката се намира **извън линията**. След проверката изкарваме едното от двете съобщения, спрямо това коя проверка е удовлетворена.
+What remains is to find whether **the point** is on or out of the line. The point will be **on the line** whenever it **matches** one of the other two points or its x coordinate lies **between them**. Otherwise, the point is **outside the line**. After checking, we display one of the two messages, depending on which condition is satisfied.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-08.png)
 
-Накрая принтираме **разстоянието**, намерено преди това.
+Finally, we print **the distance** previously found.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-09.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#2](https://judge.softuni.bg/Contests/Practice/Index/661#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#2](https://judge.softuni.bg/Contests/Practice/Index/661#2).
 
 
-### Задача: точка във фигура
+### Problem: Point in a Figure
 
-Да се напише програма, която проверява дали дадена точка (с кординати **x** и **y**) е **вътре** или **извън** следната фигура:
+Write a program that checks whether a point (with coordinates **x** and **y**) is **inside** or **outside** the following figure:
  
 ![](/assets/chapter-8-1-images/04.Point-in-figure-01.png)
 
-#### Вход
+#### Input
 
-От конзолата се четат **две цели числа** (по едно на ред): **x** и **y**.
+The console reads **two integers** (one per line): **x** and **y**.
 
-Всички входни числа са цели и в диапазона **[-1000 … 1000]**.
+All input numbers are integers in the range **[-1000 … 1000]**.
 
-#### Изход
+#### Output
 
-Да се отпечата на конзолата "**in**" или "**out**" – дали точката е **вътре** или **извън** фигурата (на контура е вътре).
+Print on the console "**in**" or "**out**" – whether the point is **inside** or **outside** the figure (the outline counts as inside).
 
 #### Примерен вход и изход
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |8<br>-5|in|6<br>-3|in|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |11<br>-5|out|11<br>2|out|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да разберем дали **точката** е във фигурата, ще разделим **фигурата** на 2 четириъгълника:
+In order to find whether the **point** is in the figure, we will divide **the figure** into 2 rectangles:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-02.png)
 ![](assets/chapter-8-1-images/04.Point-in-figure-03.png)
 
-Достатъчно условие е **точката** да се намира в един от тях, за да се намира във **фигурата**.
+A sufficient condition is **the point** to be located in one of them, in order to be in **the figure**.
 
-Четем от конзолата входните данни:
+We read the input data from the console:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-04.png)
 
-Ще направим две проверки, чрез които ще открием дали **точката** се намира в някой от правоъгълниците. При отпечатването на съобщението ще проверим дали някоя от тези проверки е върнала стойност **`true`**. Достатъчно е **само една** от тях да е **`true`**, за да се намира точката във фигурата.
+We will initialize two variables that will mark whether **the point** is in one of the rectangles. When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It is enough **only one** of them to be **`true`**, so that the point is in the figure.
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#3](https://judge.softuni.bg/Contests/Practice/Index/661#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#3](https://judge.softuni.bg/Contests/Practice/Index/661#3).
 
 
-## Задачи с по-сложни проверки
+## Complex Conditions – Problems
 
-**Третата** задача на практическия изпит по “Основи на програмирането” включва **няколко вложени проверки съчетани с прости пресмятания**. Ето няколко примера:
+**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### Задача: дата след 5 дни
+### Problem: Date After 5 days
 
-Дадени са две числа **d** (ден) и **m** (месец), които формират **дата**. Да се напише програма, която отпечатва датата, която ще бъде **след 5 дни**. Например 5 дни след **28.03** е датата **2.04**. Приемаме, че месеците: април, юни, септември и ноември имат по 30 дни, февруари има 28 дни, а останалите имат по 31 дни. Месеците да се отпечатат с **водеща нула**, когато са едноцифрени (например 01, 08).
+There are two numbers given - **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **5 days a particular date**. For example, 5 days after **28.03** is the date **2.04**. e assume that the months: April, June, September and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
-#### Вход
+#### Input
 
-Входът се чете от конзолата и се състои от два реда:
--	На първия ред стои едно цяло число **d** в интервала [**1 … 31**] – ден. Номерът на деня не надвишава броя дни в съответния месец (напр. 28 за февруари).
--	На втория ред стои едно цяло число **m** в интервала [**1 … 12**] – месец. Месец 1 е януари, месец 2 е февруари, …, месец 12 е декември. Месецът може да съдържа водеща нула (напр. април може да бъде изписан като 4 или 04).
+The input is read from the console and consists of two lines:
+-	On the first line we read an integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
+-	On the second line we read an integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February,  …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
 
-#### Изход
+#### Output
 
-Отпечатайте на конзолата един единствен ред, съдържащ дата след 5 дни във формат **ден.месец**. Месецът трябва да бъде двуцифрено число с водеща нула, ако е необходимо. Денят трябва да е без водеща нула.
+Print a single line containing the date after 5 days in the format **day.month** on the console. The month must be a 2-digit number with a leading zero, if necessary. The day must be written without leading zero.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |28<br>03|2.04|27<br>12|1.01|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |25<br>1|30.01|26<br>02|3.03|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Приемаме си входа от конзолата.
+We take the input from the console.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-01.png)
 
-За да си направим по-лесно проверките, ще си създадем една променлива, която ще съдържа **броя дни**, които има в месеца, който сме задали.
+To make our checks easier, we'll create a variable that will contain the **number of days** that we have in the month we set.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-02.png)
 
-Увеличаваме **деня** с 5.
+We increase **the day** by 5.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-03.png)
 
-Проверяваме дали **денят** не е станал по-голям от броя дни, които има в съответния **месец**. Ако това е така, трябва да извадим дните от месеца от получения ден, за да получим нашият ден на кой ден от следващия месец съответства.
+We check if **the day** has not exceeded the number of days in the **month**. If so, we must deduct the days of the month from the obtained day in order to calculate which day of the next month our day corresponds to.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-04.png)
 
-След като сме минали в **следващия месец**, това трябва да се отбележи, като увеличим първоначално зададения с 1. Трябва да проверим, дали той не е станал по-голям от 12 и ако е така, да коригираме. Тъй като няма как да прескочим повече от **един месец**, когато увеличаваме с 5 дни, долната проверка е достатъчна.
+After we have passed to the **next month**, this should be noted by increasing the initial one by 1. We need to check if it has not become greater than 12 and if it has, to adjust it. Because we cannot skip more than **one month** when we increase by 5 days, the following check is enough.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-05.png)
 
-Остава само да принтираме резултата на конзолата. Важно е да **форматираме изхода** правилно, за да се появява водещата нула в първите 9 месеца. Това става, като добавим **форматиращ стринг** **`%02d`** при втория елемент. **`0`** указва с каква цифра да бъде запълнено отделеното място за нея, а **`2`** указва броя на местата, които трябва да бъдат запълнени от въпросната цифра.
+The only thing that remains is to print the result on the console. It is important to **format the output** correctly to display the leading zero in the first 9 months. This is done by adding a **formatting string**** **`%02d`** at the second element. **`0`** shpws what number must me used in that place, and **`2`** shows the number of digits that must be filled with the corresponding number.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#4](https://judge.softuni.bg/Contests/Practice/Index/661#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#4](https://judge.softuni.bg/Contests/Practice/Index/661#4).
 
 
-### Задача: суми от 3 числа
+### Problem: Sums of 3 Numbers
 
-Дадени са **3 цели числа**. Да се напише програма, която проверява дали **сумата на две от числата е равна на третото**. Например, ако числата са **3**, **5** и **2**, сумата на две от числата е равна на третото: **2 + 3 = 5**.
+There are **3 integers** given.  Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5** and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
-#### Вход
+#### Input
 
-От конзолата се четат **три цели числа**, по едно на ред. Числата са в диапазона [**1 … 1000**].
+The console reads **three integers**, one per line. The numbers are in the range [**1 … 1000**].
 
-#### Изход
+#### Output
 
--	Да се отпечата на конзолата един ред, съдържащ решението на задачата във формат "**a + b = c**", където **a**, **b** и **c** са измежду входните три числа и  **a ≤ b**.
--	Ако задачата няма решение, да се отпечата “**No**” на конзолата.
+-	Print a text line on the console containing the solution of the problem in the format "**a + b = c**", where **a**, **b** and **c** are among the three input numbers and **a ≤ b**.
+-	If the problem has no solution, print "**No**" on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3<br>5<br>2|2 + 3 = 5|2<br>2<br>4|2 + 2 = 4|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>1<br>5|No|2<br>6<br>3|No|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Приемаме си входа от конзолата.
+We take the input from the console.
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-01.png)
 
-Трябва да проверим дали **сумата** на някоя двойка числа е равна на третото. Имаме три възможни случая:
+We have to check if the **sum** of a pair of numbers is equal to the third number. We have three possible cases:
 * a + b = c
 * a + c = b 
 * b + c = a
 
-Ще си напишем **рамка**, която после ще допълним с нужния код. Ако никое от горните три условия не е изпълнено, ще зададем на програмата да принтира "**No**".
+We will write a **template**, which will later be complemented by the required code. If none of the above three conditions is met, we will make our program print "**No**".
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-02.png)
 
-Сега остава да разберем реда, в който ще се изписват **двете събираеми** на изхода на програмата. За целта ще направим **вложено условие**, което проверява кое от двете числа е по-голямото. При първия случай, ще стане по този начин:
+We now have to understand the order in which the **two addends** will be written in the output of the program. For this purpose, we will create **a nested condition** that checks which one of the two numbers is the larger one. In the first case, it will look like this:
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-03.png)
 
-Аналогично, ще допълним и другите два случая. Пълният код на проверките и изходът на програмата ще изглеждат така:
+Similarly, we will supplement the other two cases. The full code of the program will look like this:
 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-04.png)
 
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#5](https://judge.softuni.bg/Contests/Practice/Index/661#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#5](https://judge.softuni.bg/Contests/Practice/Index/661#5).
 
 
-## Задачи с единичен цикъл
+## Simple Loops – Problems
 
-**Четвъртата** задача на практическия изпит по “Основи на програмирането” включва **единичен цикъл с проста логика** в него. Ето няколко примера:
+**The fourth** problem of the "Programming Basics" Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
 
-### Задача: суми през 3
+### Problem: Sums with Step of 3
 
-Дадени са **n** цели числа **a1, a2, …, an**. Да се пресметнат сумите:
--	**sum1 = a1 + a4 + a7** + … (сумират се числата, започвайки от първото със стъпка 3).
--	**sum2 = a2 + a5 + a8** + … (сумират се числата, започвайки от второто със стъпка 3).
--	**sum3 = a3 + a6 + a9** + … (сумират се числата, започвайки от третото със стъпка 3).
+We are given **n** integers: **a1, a2, …, an**. Calculate the sums:
+-	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
+- **sum2 = a2 + a5 + a8** + … (the numbers are summed, starting from the second one with step of 3).
+-	**sum3 = a3 + a6 + a9** + … (the numbers are summed, starting from the third one with step of 3).
 
-#### Вход
+#### Input
 
-Входните данни се четат от конзолата. На първия ред стои цяло число **n (0 ≤ n ≤ 1000)**. На следващите **n** реда стоят **n** цели числа в интервала [**-1000 … 1000**]: **a1, a2, …, an**.
+The input data is read from the console. The first line holds an integer **n (0 ≤ n ≤ 1000)**. On the next **n** lines we are given **n** integers in the range [**-1000 … 1000**]: **a1, a2, …, an**.
 
-#### Изход
+#### Output
 
-На конзолата трябва да се отпечатат 3 реда, съдържащи търсените 3 суми, във формат като в примерите.
+On the console we should print 3 lines containing the 3 sums in a format such as in the example.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2<br>3<br>5<br>|sum1 = 3<br>sum2 = 5<br>sum3 = 0|4<br>7<br>-2<br>6<br>12|sum1 = 19<br>sum2 = -2<br>sum3 = 6|5<br>3<br>5<br>2<br>7<br>8|sum1 = 10<br>sum2 = 13<br>sum3 = 2| 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Ще вземем **броя на числата** от конзолата и ще декларираме **начални стойности** на трите суми.
+We will take **the count of numbers** from the console and declare **starting values** of the three sums.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-01.png)
 
-Тъй като не знаем предварително колко числа ще обработваме, ще си ги взимаме едно по едно в **цикъл**, който ще се повтори **n на брой пъти** и ще ги обработваме в тялото на цикъла.
+Since we do not know in advance how many numbers we will process, we will take them one at a time in **a loop** which will be repeated **n times** and we will process them in the body of the loop.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-02.png)
 
-За да разберем в коя от **трите суми** трябва да добавим числото, ще разделим **поредния му номер на три** и ще използваме **остатъка**. Ще използваме променливата **`i`**, която следи **броя завъртания** на цикъла, за да разберем на кое поред число сме. Когато остатъкът от **`i/3`** е **нула**, това означава, че ще добавяме това число към **първата** сума, когато е **1** към **втората** и когато е **2** към **третата**.
+To find out in which of **the three sums** we need to add the number, we will divide its **sequence number into three** and we will use the remainder. We will use the variable **`i`**, which tracks **the number of runs** of the loop, in order to find out which sequence number we are at. When the remainder of **`i/3`** is **zero**, it means we will add this number to **the first** sum, when it is **1** to the **second** one, and when it is **2** to **the third** one.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-03.png)
 
-Накрая, ще отпечатаме резултата на конзолата в изисквания **формат**.
+Finally, we will print the result on the console in the required **format**.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#6](https://judge.softuni.bg/Contests/Practice/Index/661#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#6](https://judge.softuni.bg/Contests/Practice/Index/661#6).
 
 
-### Задача: поредица от нарастващи елементи
+### Problem: Sequence of Increasing Elements
 
-Дадена е редица от **n** числа: **a1**, **a2**, **…**, **an**. Да се пресметне **дължината на най-дългата нарастваща поредица** от последователни елементи в редицата от числа.
+A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
-#### Вход
+#### Input
 
-Входните данни се четат от конзолата. На първия ред стои цяло число **n** (**0 ≤ n ≤ 1000**). На следващите **n** реда стоят **n** цели числа в интервала [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
+The input data is read from the console. The first line holds an integer **n** (**0 ≤ n ≤ 1000**). On the following **n** lines we are given **n** integers in the range [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
 
-#### Изход
+#### Output
 
-На конзолата трябва да се отпечата едно число – **дължината** на най-дългата нарастваща редица.
+On the console we must print one number – **the length** of the longest increasing sequence.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|---|---|
 |3<br>5<br>2<br>4|2|4<br>2<br>8<br>7<br>6|2|4<br>1<br>2<br>4<br>4|3|4<br>5<br>6<br>7<br>8|4|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За решението на тази задача трябва да помислим малко **по-алгоритмично**. Дадена ни е **редица от числа** и трябва да проверяваме дали всяко **следващо**, ще бъде **по-голямо от предното** и ако е така да броим колко дълга е редицата, в която това условие е изпълнено. След това трябва да намерим **коя редица** от всички такива е **най-дълга**. За целта, нека да си направим няколко променливи, които ще ползваме през хода на задачата. 
+To solve this problem, we need to think in a bit **more algorithmic way**.  A **sequence of numbers** is given to us, and we need to check whether each **subsequent** one will be **larger than the previous one**, and if so, we count how long is the sequence in which this condition is fulfilled. Then we have to find **which sequence** of these is **the longest** one. To do this, let's create some variables that we will use during solving the problem.
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-01.png)
 
-Променливата **`n`** е **броя числа**, които ще получим от конзолата. В **`countCurrentLongest`** ще запазваме **броя на елементите** в нарастващата редица, която **броим в момента**. Напр. при редицата: 5, 6, 1, 2, 3 **`countCurrentLongest`** ще бъде 2, когато сме стигнали **втория елемент** от броенето (5, **6**, 1, 2, 3) и ще стане 3, когато стигнем **последния елемент** (5, 6, 1, 2, **3**), понеже нарастващата редица 1, 2, 3 има 3 елемента. Ще използваме **`countLongest`**, за да запазим **най-дългата** нарастваща редица. Останалите променливи са **`a`** - числото, на което се намираме **в момента**, и **`aPrev`** - **предишното число**, което ще сравним с **`a`**, за да разберем дали редицата **расте**.
+he variable **`n`** is **the count of numbers** we get from the console. In **`countCurrentLongest`** we will keep **the number of elements** in the increasing sequence we are **currently counting**. For example, in the sequence: 5, 6, 1, 2, 3 **`countCurrentLongest`** will be 2 when we reach **the second element** of the counting (5, **6**, 1, 2, 3) and will become 3 when we reach the **last element** (5, 6, 1, 2, **3**), because the increasing row 1, 2, 3 has 3 elements. We will use **`countLongest`** to keep the **longest** increasing sequence. The other variables are **`a`** – the number we are **currently in**, and **`aPrev`** – **the previous number** which we will compare with **`a`** to see if the row is **growing**.
 
-Започваме да въртим числата и проверяваме дали настоящото число **`а`** е по-голямо от предходното **`aPrev`**. Ако това е изпълнено, значи редицата **е нарастваща** и трябва да увеличим броя ѝ с **1**. Това запазваме в променливата, която следи дължината на редицата, в която се намираме в момента, а именно - **`countCurrentLongest`**. Ако числото **`а`** **не е по-голямо** от предходното, това означава, че започва **нова редица** и трябва да стартираме броенето от **1**. Накрая, след всички проверки, **`aPrev`** става **числото**, което използваме **в момента**, и започваме цикъла от начало със **следващото** въведено **`а`**.
+We begin to run the numbers and check if the present number **`a`** is larger than the previous **`aPrev`** one. If this is true, then the row **is growing**, and we need to increase its number by **1**. This is stored in the variable that tracks the length of the sequence we are currently in – **`countCurrentLongest`**. If the number **`a`** is **not greater** than the previous one, it means that **a new sequence** starts, and we have to start the count from **1**. Finally, after all the checks are done, **`aPrev`** becomes **the number** we are **currently** using, and we start the loop from the beginning with **the next** entered **`a`**.
 
-Ето и примерна реализация на описания алгоритъм:
+Here is a sample implementation of the algorithm described:
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-02.png)
 
-Остава да разберем коя от всички редици е **най-дълга**. Това ще направим с проверка в цикъла дали **редицата**, в която се намираме **в момента**, е станала по-дълга от дължината на **най-дългата намерена до сега**. Целият цикъл ще изглежда така:
+What remains is to see which of all sequences is **the longest** one. We will do this by checking in the loop if **the sequence** we are **currently** in has become longer than the **longest one by now**. The whole loop will look like this:
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-03.png)
 
-Накрая принтираме дължината на **най-дългата** намерена редица.
+Finally, we print the length of **the longest** sequence found.
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#7](https://judge.softuni.bg/Contests/Practice/Index/661#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#7](https://judge.softuni.bg/Contests/Practice/Index/661#7).
 
 
-## Задачи за чертане на фигурки на конзолата
+## Drawing Figures in the console – Problems
 
-**Петата** задача на практическия изпит по “Основи на програмирането” изисква **използване на един или няколко вложени цикъла за рисуване** на някаква фигурка на конзолата. Може да се изискват логически размишления, извършване на прости пресмятания и проверки. Задачата проверява способността на студентите да мислят логически и да измислят прости алгоритми за решаване на задачи, т.е. да мислят алгоритмично. Ето няколко примера за изпитни задачи:
+**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. A logical deductions, simple calculations and checks might be required. The problem checks the students abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
 
-### Задача: перфектен диамант
+### Problem: Perfect Diamond
 
-Да се напише програма, която прочита от конзолата цяло число **n** и чертае **перфектен диамант** с размер **n** като в примерите по-долу.
+Write a program that reads an integer **n** from the console and draws **a perfect diamond** with size **n** as in the examples below.
 
-#### Вход
+#### Input
 
-Входът е цяло число **n** в интервала [**1 … 1000**].
+The input is an integer **n** within the range [**1 … 1000**].
 
-#### Изход
+#### Output
 
-На конзолата трябва да се отпечата диамантът като в примерите.
+The diamond should be printed on the console as in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |2|<code>&nbsp;&#42;&nbsp;</code><br><code>&#42;-&#42;</code><br><code>&nbsp;&#42;&nbsp;</code>|3|<code>&nbsp;&nbsp;&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;&nbsp;&nbsp;</code><br>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;</code><br>|5|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&#42;-&#42;-&#42;-&#42;&nbsp;</code><br><code>&#42;-&#42;-&#42;-&#42;-&#42;</code><br><code>&nbsp;&#42;-&#42;-&#42;-&#42;&nbsp;</code><br><code>&nbsp;&nbsp;&#42;-&#42;-&#42;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&#42;-&#42;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&#42;&nbsp;&nbsp;&nbsp;&nbsp;</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 От примерни изходни резултати виждаме, че ще се налага да печатаме повтарящи се символи. Затова предварително пишем метод, чрез който ще повтаряме един и същ символ толкова пъти, колкото ни е нужно.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-01.png)
 
-В задачите с чертане на фигурки най-важното, което трябва да преценим е **последователността**, в която ще рисуваме. Кои елементи се **повтарят** и с какви **стъпки**. Ясно може да забележим, че **горната и долната** част на диаманта са **еднакви**. Най-лесно ще решим задачата, като направим **един цикъл**, който чертае **горната част**, и след това още **един**, който чертае **долната** (обратно на горната).
+In tasks for drawing figures, the most important thing to consider is **the sequence** in which we will draw. Which items are **repeated** and with what **steps**?  We can clearly see that **the top and bottom** parts of the diamond are the **same**. The easiest way to solve the problem is by creating **a loop** that draws the **upper part**, and then **another loop** that draws the **bottom part** (opposite to the top one).
 
 Ще си прочетем числото **`n`** от конзолата.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-02.png)
 
-Започваме да рисуваме **горната половина** на диаманта. Ясно виждаме, че **всеки ред** започва с няколко **празни места и <code>*</code>**. Ако се вгледаме по-внимателно, ще забележим, че **празните места** са винаги равни на **`n - броя на реда`** (на първия ред са n-1, на втория - n-2 и т.н.) Ще започнем с това да нарисуваме броя **празни места**, както и **първата звездичка**. Нека не забравяме да използваме **`System.out.print(…)`** вместо **`System.out.println(…)`**, за да оставаме на **същия ред**. На края на реда пишем **`System.out.println(…)`**, за да преминем на **нов ред**. Забележете, че започваме да броим от **1, а не от 0**. След това ще остане само да добавим няколко пъти **`-*`**, за да **довършим реда**.
+We start painting **the top half** of the diamond. We clearly see that **each row** starts with a **few empty spaces and <code>*</code>**. If we take a closer look, we will notice that **the empty spaces** are always equal to **`n` – the number of lines** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces**, and the **first asterisk**. Let's not forget to use **`System.out.print(…)`** instead of **`System.out.println(…)`**, to stay on **the same line**. At the end of the line we write **`System.out.println(…)`**, to go to **a new line**. Notice that we start counting from **1, not from 0**. Next, we will only add a few times **`-*`** to **finish the line**.
 
-Ето фрагмент от кода за начертаване на **горната част на диаманта**:
+Here is part of the code for the **top of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-03.png)
 
-Остава да **довършим всеки ред** с нужния брой **`-*`** елементи. На всеки ред трябва да добавим **`i - 1`** такива **елемента** (на първия 1-1 -> 0, на втория -> 1 и т.н.)
+What remains is to **complete each line** with the required number of **`-*`** elements. On each row we have to add **`i-1`** such **items** (on the first 1-1 -> 0, the second -> 1, etc.)
 
 Ето и пълния код за начертаване на **горната част на диаманта**:
 
@@ -514,173 +514,173 @@
 
 За да изрисуваме **долната част** на диаманта, трябва да обърнем **горната** на обратно. Ще броим от **`n - 1`**, тъй като ако започнем от **`n`**, ще изрисуваме средния ред два пъти. Не забравяйте да смените **стъпката** от **`++` на `--`**.
 
-Ето го и кода за начертаване на **долната част на диаманта**:
+Here is the complete code for drawing **the top of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-05.png)
 
-Остава **да си сглобим цялата програма** като първо четем входа, печатаме горната част на диаманта и след него и долната част на диаманта.
+What remains is **to assemble the whole program** by first reading the input, printing the top part of the diamond and then the bottom part of the diamond.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#8](https://judge.softuni.bg/Contests/Practice/Index/661#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#8](https://judge.softuni.bg/Contests/Practice/Index/661#8).
 
 
-### Задача: правоъгълник със звездички в центъра
+### Problem: Rectangle with Stars in the Center
 
-Да се напише програма, която прочита от конзолата цяло число **n** и чертае **правоъгълник** с размер **n с две звездички в центъра**, като в примерите по-долу.
+Write a program that reads from the console an integer **n** and draws a **rectangle** with size **n with two asterisks is its center** as in the examples below.
 
-#### Вход
+#### Input
 
-Входът е цяло число **n** в интервала [**2 … 1000**].
+The input is an integer **n** in the range [**2 … 1000**].
 
-#### Изход
+#### Output
 
-На конзолата трябва да се отпечата правоъгълникът като в примерите.
+The rectangle should be printed on the console as in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2|<code>&#37;&#37;&#37;&#37;</code><br><code>&#37;&#42;&#42;&#37;</code><br><code>&#37;&#37;&#37;&#37;</code><br>|3|<code>&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&#42;&#42;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&#42;&#42;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|5|<code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&#42;&#42;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#37;</code><br><code>&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;&#37;</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-При тази задача също забелязваме, че ще трябва да печатаме един и същи знак няколко пъти. За наше улеснение първо написваме метод, с чиято помощ печатането на един и същи символ ще се случва бързо и лесно.
+With this problem we also notice that we will have to type the same symbol several times. To make things easier we type a method, with which we will type the same symbol fast and easy.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-01.png)
 
-Прoчитаме входните данни от задачата.
+We read the input data.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-02.png)
 
-Първото нещо, което лесно забелязваме, е че **първият и последният ред** съдържат **`2 * n`** символа **`%`**. Ще започнем с това и после ще нарисуваме средата на четириъгълника.
+The first thing we can easily notice is that **the first and last rows** contain **`2 * n`** symbols **`%`**. We will start with this and then draw the middle part of the rectangle.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-03.png)
 
-От дадените примери виждаме, че **средата** на фигурата винаги има **нечетен брой** редове. Забелязваме, че когато е зададено **четно число**, броят на редовете е равен на **предишното нечетно** (2 -> 1, 4 -> 3 и т.н.). Създаваме си променлива, която представлява броя редове, които ще има нашият правоъгълник, и я коригираме, ако числото **`n` е четно**. След това ще нарисуваме **правоъгълника без звездичките**. Всеки ред има за **начало и край** символа **`%`** и между тях **`2 * n - 2`** празни места (ширината е **`2 * n`** и вадим 2 за двата процента в края). Не забравяйте да преместите кода за **последния ред след цикъла**.
+From the examples we see that **the middle** part of the figure always has **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw a **rectangle without the asterisks**. Each row has for **the beginning and the end** the symbol **`%`** and between them **2 * n - 2** empty spaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code for the **last line after the loop**.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
-Можем да **стартираме и тестваме кода до тук**. Всичко без двете звездички в средата трябва да работи коректно.
+We can **start and test the code so far**. Everything without the two asterisks in the middle should work correctly.
 
-Сега остава **в тялото** на цикъла да добавим и **звездичките**. Ще направим проверка дали сме на **средния ред**. Ако сме на средния, ще рисуваме **реда** заедно **със звездичките**, ако не - ще рисуваме **нормален ред**. Редът със звездичките има **`n - 2`** **празни места** (**`n`** е половината дължина и махаме звездичката и процента), **две звезди** и отново **`n - 2` празни места**. Двата процента в началото и в края на реда си ги оставяме извън проверката.
+Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. The line with the asterisks has **`n-2` empty spaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two stars** and again **`n-2` empty spaces**. We leave out of the check the two percent at the beginning and at the end of the row.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-05.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#9](https://judge.softuni.bg/Contests/Practice/Index/661#9).
-
-
-## Задачи с вложени цикли с по-сложна логика
-
-**Последната** (шеста) задача от практическия изпит по “Основи на програмирането” изисква използване на **няколко вложени цикъла и по-сложна логика в тях**. Задачата проверява способността на студентите да мислят алгоритмично и да решават нетривиални задачи, изискващи съставянето на цикли. Следват няколко примера за изпитни задачи.
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#9](https://judge.softuni.bg/Contests/Practice/Index/661#9).
 
 
-### Задача: четворки нарастващи числа
+## Nested Loops with more complex logic – Problems
 
-По дадена двойка числа **a** и **b** да се генерират всички четворки **n1, n2, n3, n4,** за които **a ≤ n1 < n2 < n3 < n4 ≤ b**.
+**The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think in an algorithmic way** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples for exam problems.
 
-#### Вход
 
-Входът съдържа две цели числа **a** и **b** в интервала [**0 … 1000**], по едно на ред.
+### Problem: Increasing 4 Numbers
 
-#### Изход
+For given pair of numbers **a** and **b** generate all four number **n1, n2, n3, n4,** for which **a ≤ n1 < n2 < n3 < n4 ≤ b**.
 
-Изходът съдържа всички търсени **четворки числа**, в нарастващ ред, по една на ред.
+#### Input
 
-#### Примерен вход и изход
+The input contains two integers **a** and **b** in the range  [**0 … 1000**], one per line.
 
-|Вход|Изход|Вход|Изход|
+#### Output
+
+The output contains all **numbers in batches of four**, in ascending order, one per line.
+
+#### Sample Input and Output
+
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3<br>7|3 4 5 6<br>3 4 5 7<br>3 4 6 7<br>3 5 6 7<br>4 5 6 7|15<br>20|15 16 17 18<br>15 16 17 19<br>15 16 17 20<br>15 16 18 19<br>15 16 18 20<br>15 16 19 20<br>15 17 18 19<br>15 17 18 20<br>15 17 19 20<br>15 18 19 20<br>16 17 18 19<br>16 17 18 20<br>16 17 19 20<br>16 18 19 20<br>17 18 19 20<br>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5<br>7|No|10<br>13|10 11 12 13|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Ще прочетем входните данни от конзолата. Създаваме и допълнителната променлива **`count`**, която ще следи дали има **съществуваща редица числа**.
+We will read the input data from the console. We also create the additional variable **`count`**, which will keep track of **existing number ranges**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
-Най-лесно ще решим задачата, ако логически я разделим **на части**. Ако се изисква да изведем всички редици от едно число между **`a`** и **`b`**, ще го направим с **един цикъл**, който изкарва всички числа от **`а`** до **`b`**. Нека помислим как ще стане това с **редици от две числа**. Отговорът е лесен - ще ползваме **вложени цикли**. 
+It will be easier to solve the problem if we logically divide it **in parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**. 
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-02.png)
 
-Можем да тестваме недописаната програма, за да проверим дали е вярна до този момент. Тя трябва да отпечата всички двойки числа **`i`**, **`j`**, за които **`i ≤ j`**.
+We can test the incomplete program to see if it's accurate so far. It must print all pairs of numbers **`i`**, **`j`** for which **`i ≤ j`**.
 
-Тъй като всяко **следващо число** от редицата трябва да е **по-голямо** от **предишното**, вторият цикъл ще се върти от **`i + 1`** (следващото по-голямо число). Съответно, ако **не съществува редица** от две нарастващи числа (**`a`** и **`b`** са равни), вторият цикъл  **няма да се изпълни** и няма да се разпечата нищо на конзолата.
+Since each **next number** of the row must be **greater** than **the previous one**, the second loop will run around **`i + 1`** (the next greater number). Accordingly, if **there is no sequence** of two incremental numbers (**`a`** and **`b`** are equal), the second loop **will not be fulfilled**, and nothing will be printed on the console.
 
-**Аналогично**, остава да реализираме по същия начин **вложените цикли** и за **четири числа**. Ще добавим и **увеличаване на брояча**, който инициализирахме в началото, за да знаем дали **съществува** такава **редица**.
+**Similarly**, what remains is to implement **the nested loops** for **four numbers**. We will add an **increase of the counter** that we initialized in order to know if **there is such a sequence**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-03.png)
 
-Накрая ще проверим дали **броячът** е равен на **0** и съответно ще принтираме “**No**” на конзолата, ако е така.
+Finally, we will check if **the counter** is equal to **0** and we will print "**No**" on the console accordingly, if so.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#10](https://judge.softuni.bg/Contests/Practice/Index/661#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#10](https://judge.softuni.bg/Contests/Practice/Index/661#10).
 
 
-### Задача: генериране на правоъгълници
+### Problem: Generating Rectangles
 
-По дадено число **n** и **минимална площ m** да се генерират всички правоъгълници с цели координати в интервала [**-n…n**] с площ поне **m**. Генерираните правоъгълници да се отпечатат в следния формат:
+By a given number **n** and **a minimum area m**, generate all possible rectangles with integer coordinates in the range [**-n…n**] with an area of at least **m**. The generated rectangles must be printed in the following format:
 
 **(left, top) (right, bottom) -> area**
 
-Правоъгълниците се задават чрез горния си ляв и долния си десен ъгъл. В сила са следните неравенства:
+Rectangles are defined using the top left and bottom right corner. The following inequalities are in effect:
 -	**-n ≤ left < right ≤ n**
 -	**-n ≤ top < bottom ≤ n**
 
-#### Вход
+#### Input
 
-От конзолата се въвеждат две числа, по едно на ред:
+Two numbers, one per line, are entered from the console:
 
--	Цяло число **n** в интервала [**1 … 100**] – задава минималната и максималната координата на връх.
--	Цяло число **m** в интервала [**0 … 50000**] – задава минималната площ на генерираните правоъгълници.
+-	An integer **n** in the range [**1 … 100**] – sets the minimum and maximum coordinates of a peak.
+-	An integer **m** in the range [**0 … 50000**] – sets the minimum area of the generated rectangles.
 
-#### Изход
+#### Output
 
--	На конзолата трябва да се отпечатат описаните правоъгълници във формат като в примерите по-долу.
--	Ако за числата **n** и **m** няма нито един правоъгълник, да се изведе **“No”**.
--	Редът на извеждане на правоъгълниците е без значение.
+-	The described rectangles should be printed on the console in a format such as in the examples below.
+-	If there are no rectangles for the specified **n** and **m**, then print "**No**".
+-	The order of rectangles in the output is not important.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>2|(-1, -1) (0, 1) -> 2<br>(-1, -1) (1, 0) -> 2<br>(-1, -1) (1, 1) -> 4<br>(-1, 0) (1, 1) -> 2<br>(0, -1) (1, 1) -> 2|2<br>17|No|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |3<br>36|(-3, -3) (3, 3) -> 36|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Да прочетем входните данни от конзолата. Ще създадем и един **брояч**, в който ще пазим броя на намерените правоъгълници.
+Read the input data from the console. We will also create a **counter**, which will store the number of rectangles found.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-01.png)
 
-Изключително важно е да успеем да си представим задачата, преди да започнем да я решаваме. В нашия случай се изисква да търсим правоъгълници в координатна система. Нещото, което знаем е, че **лявата точка** винаги ще има координата **`х`, по-малка** от **дясната**. Съответно **горната** винаги ще има **по-малка** координата **`у`** от **долната**. За да намерим всички правоъгълници, ще трябва да направим **цикъл**, подобен на този от предходната задача, но този път **не всеки следващ цикъл** ще започва от **следващото число**, защото някои от **координатите** може да са **равни** (например **`left`** и **`top`**).
+It is very important to be able to imagine the problem before we begin to solve it. In our case it is required to search for rectangles in a coordinate system. he thing we know is that the **left point** will always have the coordinate **`x`, smaller** than **the right** one. Accordingly, **the upper one** will always have a smaller **`y`** coordinate than **the lower one**. To find all the rectangles, we'll have to create **a loop** similar to the previous problem, but this time, **not every next loop** will start from **the next number** because some of **the coordinates** can be equal (for example **`left`** and **`top`**).
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-02.png)
 
-С променливите **`left`** и **`right`** ще следим координатите по **хоризонталата**, а с **`top`** и **`bottom`** - по **вертикалата**. Важното тук е да знаем кои координати кои са, за да можем да изчислим правилно страните на правоъгълника. Сега трябва да намерим **лицето на правоъгълника** и да направим проверка дали то е **по-голямо** или **равно** на **`m`**. Едната **страна** ще е **разликата между `left` и `right`**, а **другата -  между `top` и `bottom`**. Тъй като координатите евентуално може да са разменени, ще ползваме **абсолютни стойности**. Отново добавяме и **брояча** в цикъла, като броим **само четириъгълниците**, които изписваме. Важно е да забележим, че поредността на изписване е **`left`**, **`top`**, **`right`**, **`bottom`**, тъй като така е зададено в условието.
+With the variables **`left`** and **`right`** we will track the coordinates on **the horizontal**, and with **`top`** and **`bottom`** - on **the vertical** way. The important thing here is knowing the corresponding coordinates so we can correctly calculate the sides of the rectangle. Now we have to find **the area of the rectangle** and check if it is **greater than** or **equal** to **`m`**.  One **side** will be **the difference between `left` and `right`** and **the other one – between `top` and `bottom`**. Since the coordinates may be eventually interchanged, we will use **absolute values**. Again, we add **the counter** in the loop, counting **only the rectangles** we write. It is important to note that the writing order is **`left`**, **`top`**, **`right`**, **`bottom`**, as it is set in the problem's description.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-03.png)
 
-Накрая принтираме “**No**”, ако не съществуват такива правоъгълници.
+Finally, we print "**No**" if there are no such rectangles.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/661#11](https://judge.softuni.bg/Contests/Practice/Index/661#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#11](https://judge.softuni.bg/Contests/Practice/Index/661#11).
