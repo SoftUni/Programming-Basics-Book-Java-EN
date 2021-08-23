@@ -53,7 +53,7 @@ In software development, we regularly need to write loops, dozens of times a day
 
 **Try it yourself**, in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
 
-### Example: numbers from 1000, ending with 7
+### Example: Numbers Ending in 7 
 
 Write a program that finds all numbers within the range [**1 … 1000**], that end with 7. 
 
@@ -120,7 +120,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#3
 
 ### Example: Max Number
 
-Write a program that reads **n whole numbers** (**n** > 0) and findes the **the Max Number** (the largest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
+Write a program that reads **n whole numbers** (**n** > 0) and finds the **the Max Number** (the smallest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
 #### Sample input and output
 
@@ -143,65 +143,65 @@ We enter the first number **`n`** (the number of integers that are goint to be e
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#4](https://judge.softuni.bg/Contests/Practice/Index/655#4).
 
 
-### Пример: най-малко число
+### Example: Min Number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-малкото** измежду тях. Първо се въвежда броя числа **n**, след тях още **n** числа по едно на ред. 
+Write a program that reads **n whole numbers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Exapmles: 
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход | 
+| Input | Output | 
 | --- | --- |
 | 2<br>100<br>99 | 99 |
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е абсолютно аналогична с предходната, само че започване с друга неутрална начална стойност.
+The problem is completely identical to the previous one but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#5](https://judge.softuni.bg/Contests/Practice/Index/655#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#5](https://judge.softuni.bg/Contests/Practice/Index/655#5).
 
 
-### Пример: лява и дясна сума
+### Пример: Left and Right Sum
 
-Да се напише програма, която въвежда **2 \* n цели числа** и проверява дали **сумата на първите n числа** (лява сума) е равна на **сумата на вторите n числа** (дясна сума). При равенство се печата **"Yes" + сумата**, иначе се печата **"No" + разликата**. Разликата се изчислява като положително число (по абсолютна стойност). Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads **2 \* n whole numbers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо въвеждаме числото **n**, след това първите **n** числа (**лявата** половина) и ги сумираме. Продължаваме с въвеждането на още **n** числа (**дясната** половина) и намираме и тяхната сума. Изчисляваме **разликата** между намерените суми по абсолютна стойност: **`Math.abs(leftSum - rightSum)`**. Ако разликата е **0**, отпечатваме **"Yes" + сумата**, в противен случай - отпечатваме **"No" + разликата**.
+Input the number **n**, after that the first **n** numbers (**left** half) and sum them up. Input the second **n** numbers (**right** half) and find their sum. We calculate the **difference**  between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + difference**.
 
 ![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#6](https://judge.softuni.bg/Contests/Practice/Index/655#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#6](https://judge.softuni.bg/Contests/Practice/Index/655#6).
 
 
-### Пример: четна / нечетна сума
+### Example: Odd Even Sum 
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали **сумата на числата на четни позиции** е равна на **сумата на числата на нечетни позиции**. При равенство печата **"Yes" + сумата**, иначе печата **"No" + разликата**. Разликата се изчислява по абсолютна стойност. Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads **n цели числа** and checks is **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 4<br>10<br>50<br>60<br>20 | Yes<br>Sum = 70 |
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Въвеждаме числата едно по едно и изчисляваме двете **суми** (на числата на **четни** позиции и на числата на **нечетни** позиции). Както в предходната задача, изчисляваме абсолютната стойност на разликата и отпечатваме резултата (**"Yes" + сумата** при разлика 0 или **"No" + разликата** в противен случай).
+We input the numbers one by one and calculate the two **sums** (of the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
