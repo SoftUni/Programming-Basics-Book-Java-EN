@@ -46,7 +46,7 @@ Print on the console **n** text rows, depicting **the fortress**, exactly like t
 
 ### Hints and Guidelines
 
-We can see from the task that the **input data** will be only one line which will contains **an integer** within the range [**3 … 1000**]. Therefore, we will use a **variable** from type **`int`**.
+We can see from the task that the **input data** will be only one line which will contains **an integer** within the range [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-01.png)
 
@@ -116,7 +116,7 @@ Print on the console **2 * (n - 2) + 1**  text rows, depicting the **butterfly**
 
 ### Hints and Guidelines
 
-From the task we can see that the **input data** will be only one line which will contains an **integer** within the range [**3 … 1000**]. That is why we will use **a variable** from type **`int`**.
+From the task we can see that the **input data** will be only one line which will contains an **integer** within the range [**3 … 1000**]. That is why we will use **a variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-01.png)
 
@@ -169,158 +169,161 @@ Print on the console text lines which depict **the warning sign STOP** as in the
 
 ### Hints and Guidelines
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще използваме **променлива** от тип **`int`**.
+We can see from the task explanation that **the input data** will come from only one line which contains an **integer** in the range of [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/03.Stop-01.png)
 
-Можем да **разделим** фигурата на **3 части** - горна, средна и долна. **Горната част** се състои от две подчасти - начален ред и редове, в които знака се разширява. **Началния ред** е съставен от начало **`.`**, среда **`_`** и край **`.`**. След разглеждане на примерите можем да кажем, че началото е с големина **`n + 1`** и е добре да отделим тази **стойност** в отделна **променлива**.
+We can **divide** the figure into **3 parts** - upper, middle and lower. **The upper part** contains two sub-parts -  first row and rows in which the sign widens. **The first row** is made of a beginning **`.`**, middle part **`_`** and an end **`.`**. After looking at the examples we can say that the beginning is with size **`n + 1`** so it is good to separate this **value** in a separate **variable**.
 
 ![](assets/chapter-6-2-images/03.Stop-02.png)
 		
-Трябва да създадем и втора **променлива**, в която ще пазим **стойността** на **средата на началния ред** и е с големина **`2 * n + 1`**.
+We must also create a second **variable**, in which we will store the **value** of the **middle of the first row** which has a size of **`2 * n + 1`**.
 
 ![](assets/chapter-6-2-images/03.Stop-03.png)
 		
-След като вече сме декларирали и инициализирали двете променливи, можем да отпечатаме на конзолата началния ред. Нека не забравяме преминаването на нов ред на конзолата със **`System.out.println(…)`**.
+After we have declared and initialized the two variables, we can print the first row on the console. Let's not forget moving to a new line on the console with **`System.out.println(…)`**.
 
 ![](assets/chapter-6-2-images/03.Stop-04.png)
 		
-За да начертаем редовете, в които знака се **"разширява"**, трябва да създадем **цикъл**, който да се завърти **`n`** брой пъти. Структурата на един ред се състои от начало **`.`**, **`//`** + среда **`_`** + **`\\`** и край **`.`**. За да можем да използваме отново създадените **променливи**, трябва да намалим **`dots`** с 1 и **`underscores`** с 2, защото ние вече сме **отпечатали** първия ред, а точките и долните черти в следващия ред от фигурата **намаляват**. 
+In order to draw the rows in which the sign is getting **"wider"**, we have to create **a loop**, to rotate **`n`** times. The structure of a row contains a beginning **`.`**, **`//`** + middle part **`_`** + **`\\`** and an end **`.`**. In order to reuse the already created **variables**, we have to decrease the **`dots`** with 1 and the **`underscores`** with 2, because we have already **printed** the first row, and the dots and underscores in the next rows of the figure are **decreasing**. 
 
 ![](assets/chapter-6-2-images/03.Stop-05.png)
 		
-На всяка следваща итерация **началото** и **краят** намаляват с 1, а **средата** се увеличава с 2.
+In each following iteration the **beginning** and the **end** are decreasing with 1, and the **middle part** increases by 2.
 
 ![](assets/chapter-6-2-images/03.Stop-06.png)
 		
-**Средната част** от фигурата има начало **`//`** + **`_`**, среда **`STOP!`** и край **`_`** + **`\\`**. Броят на долните черти **`_`** е **`(underscores - 5) / 2`**.
+**The middle part** of the figure has a beginning **`//`** + **`_`**, middle part **`STOP!`** and an end **`_`** + **`\\`**. The count of the underscores **`_`** is **`(underscores - 5) / 2`**.
 
 ![](assets/chapter-6-2-images/03.Stop-07.png)
 		
-**Долната част** на фигурата, в която знакът се **смалява**, можем да направим като отново създадем **цикъл**, който да се завърти **`n`** брой пъти. Структурата на един ред е начало **`.`** + **`\\`**, среда **`_`** и край **`//`** + **`.`**. Броят на **точките** при първата итерация на цикъла трябва да е 0 и на всяка следваща да се **увеличава** с едно. Следователно можем да кажем, че големината на **точките в долната част от фигурата** е равна на **`i`**.
+**The lower part** of the figure where the sign **decreases**, can by done again by creating a **loop**, which rotates **`n`** times. The structure of a single line is a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first iteration should be 0 and in each following one it **increases** by one. Therefore, we can say that the size of the **dots in the lower part of the figure** is equals to **`i`**.
 
 ![](assets/chapter-6-2-images/03.Stop-08.png)
 		
-За да работи нашата програма правилно, трябва на всяка итерация от **цикъла** да **намаляваме** броя на **`_`** с **2**.
+In order for our program to work properly, in each iteration of the **loop** we need to **decrease** the number of **`_`** with **2**.
 
 ![](assets/chapter-6-2-images/03.Stop-09.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/658#2](https://judge.softuni.bg/Contests/Practice/Index/658#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/658#2](https://judge.softuni.bg/Contests/Practice/Index/658#2).
 
 
-## Задача: стрелка
-Да се напише програма, която прочита от конзолата **цяло нечетно число n** и чертае **вертикална стрелка** с размери като в примерите по-долу.
+## Problem: Arrow
 
-### Входни данни
-Входът е **цяло нечетно число n** в интервала [**3 … 79**].
+Write a program that has an input from the console **an odd integer n** and draws a **vertical arrow** with size as in the examples below.
 
-### Изходни данни
-Да се отпечата на конзолата вертикална стрелка, при която "**`#`**" (диез) очертава стрелката, а "**`.`**" - останалото.
+### Input Data
 
-### Примерен вход и изход
+The input is an **integer odd number n** in the range of [**3 … 79**].
 
-|Вход|Изход|Вход|Изход|
+### Output Data
+
+Print a vertical arrow on the console, in which "**`#`**" (sharp) marks the outline of the arrow, and the "**`.`**" - the rest.
+
+### Sample Input and Output
+
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>.###.</code><br><code>.#.#.</code><br><code>##.##</code><br><code>.#.#.</code><br><code>..#..</code><br>|5|<code>..#####..</code><br><code>..#...#..</code><br><code>..#...#..</code><br><code>..#...#..</code><br><code>###...###</code><br><code>.#.....#.</code><br><code>..#...#..</code><br><code>...#.#...</code><br><code>....#....</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |9|<code>....#########....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>#####.......#####</code><br><code>.#.............#.</code><br><code>..#...........#..</code><br><code>...#.........#...</code><br><code>....#.......#....</code><br><code>.....#.....#.....</code><br><code>......#...#......</code><br><code>.......#.#.......</code><br><code>........#........</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 79**]. По тази причина ще използваме **променлива** от тип **`int`**.
+We can see from the task explanation that **the input data** will come from only one line which contains an **integer** in the range of [**3 … 79**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/04.Arrow-01.png)
 		
-Можем да разделим фигурата на **3 части** - горна, средна и долна. **Горната част** се състои от две подчасти - начален ред и тяло на стрелката. От примерите виждаме, че броят на **външните точки** в началния ред и в тялото на стрелката са **`(n - 1) / 2`**. Тази стойност можем да запишем в **променлива** **`outerDots`**. 
+We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts - starting row and body of the arrow. We can see from the examples that the number of the **external dots** in the starting row and in the body of the arrow are **`(n - 1) / 2`**. We can write this value in a **variable** **`outerDots`**. 
 
 ![](assets/chapter-6-2-images/04.Arrow-02.png)
 		
-Броят на **вътрешните точки** в тялото на стрелката е **`(n - 2)`**. Трябва да създадем **променлива** с име **`innerDots`**, която  ще пази тази стойност.
+The number of the **internal dots** in the body of the arrow is **`(n - 2)`**. We need to create a **variable** with name **`innerDots`**, which will store this value.
 
 ![](assets/chapter-6-2-images/04.Arrow-03.png)
 		
-От примерите можем да видим структурата на началния ред. Трябва да използваме декларираните и инициализирани от нас **променливи** **`outerDots`** и **`n`**, за да отпечатаме **началния ред**. Не трябва да забравяме, че трябва да отидем на нов ред със **`System.out.println();`**.
+We can see from the examples the structure of the first row. We must use the declared and initialized **variables** **`outerDots`** and **`n`**, in order to print the **starting row**. We must not forget that we have to move to a new line with **`System.out.println();`**.
 
 ![](assets/chapter-6-2-images/04.Arrow-04.png)
 
-За да нарисуваме на конзолата **тялото на стрелката**, трябва да създадем **цикъл**, който да се повтори **`n - 2`** пъти.
+In order to draw on the console the **body of the arrow**, we have to create a **loop**, which rotates **`n - 2`** times.
 
 ![](assets/chapter-6-2-images/04.Arrow-05.png)
 
-**Средата на фигурата** е съставена от начало **`#`**, среда **`.`** и край **`#`**. От примерите виждаме, че броят на **`#`** е равен на **`outerDots`**, увеличен с 1 и за това можем да използваме отново същата **променлива**.
+**The middle part of the figure** consists of a beginning **`#`**, middle part **`.`** and an end **`#`**. We see from the examples that the number of the **`#`** is equals to **`outerDots`** increased by 1 and that is why we can use again the same **variable**.
 
 ![](assets/chapter-6-2-images/04.Arrow-06.png)
 
-За да начертаем **долната част на стрелката**, трябва да зададем нови стойности на двете **променливи** **`outerDots`** и **`innerDots`**.
+To draw the **lower part of the arrow**, we need to assign new values to the **variables** **`outerDots`** and **`innerDots`**.
 
 ![](assets/chapter-6-2-images/04.Arrow-07.png)
 
-**Цикъла**,  който ще направим, трябва да се завърти **`n - 2`** пъти и отделно ще отпечатаме последния ред от фигурата. На всяка итерация **`outerDots`** се увеличава с 1, а **`innerDots`** намалява с 2.
+**The loop**,  we are going to make must rotate **`n - 2`** times and we need to print the last row of the figure separately. On each iteration **`outerDots`** increases by 1, and **`innerDots`** decreases by 2.
 
 ![](assets/chapter-6-2-images/04.Arrow-08.png)
 		
-**Последният ред** от нашата фигура е съставен от начало **`.`**, среда **`#`** и край **`.`**. Броят на **`.`** е равен на **`outerDots`**.
+**The last row** of our figure is made of a beginning **`.`**, middle part **`#`** and an end **`.`**. The number of the **`.`** is equals to **`outerDots`**.
    
 ![](assets/chapter-6-2-images/04.Arrow-09.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/658#3](https://judge.softuni.bg/Contests/Practice/Index/658#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/658#3](https://judge.softuni.bg/Contests/Practice/Index/658#3).
 
 
-## Задача: брадва
+## Problem: Axe
 
-Да се напише програма, която прочита **цяло число n** и чертае брадва с размери, показани по-долу.
-Ширината на брадвата е **`5 * N`**  колони.
+Write a program that takes as an input an **integer n** and draws an axe with size as shown below.
+The width of the axe is **`5 * N`** columns.
 
-### Входни данни
+### Input Data
 
-Входът е **цяло число n** в интервала [**2..42**].
+The input is an **integer n** in the range of [**2..42**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **брадва**, точно както е в примерите.
+Print on the console an **axe**, exactly like the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2|<code>------\*\*--</code><br><code>------\*-\*-</code><br><code>\*\*\*\*\*\*\*-\*-</code><br><code>------\*\*\*-</code><br>|5|<code>---------------\*\*--------</code><br><code>---------------\*-\*-------</code><br><code>---------------\*--\*------</code><br><code>---------------\*---\*-----</code><br><code>---------------\*----\*----</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----\*----</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----\*----</code><br><code>---------------\*----\*----</code><br><code>--------------\*\*\*\*\*\*\*\*---</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |8|<code>------------------------\*\*--------------</code><br><code>------------------------\*-\*-------------</code><br><code>------------------------\*--\*------------</code><br><code>------------------------\*---\*-----------</code><br><code>------------------------\*----\*----------</code><br><code>------------------------\*-----\*---------</code><br><code>------------------------\*------\*--------</code><br><code>------------------------\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>------------------------\*-------\*-------</code><br><code>-----------------------\*---------\*------</code><br><code>----------------------\*-----------\*-----</code><br><code>---------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----</code><br>|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За решението на задачата е нужно първо да изчислим големината на **тиретата от ляво**, **средните тирета**, **тиретата от дясно** и цялата дължина на фигурата.
+In order to solve the problem, we first need to calculate the **dashes on the left**, **the middle dashes**, **the dashes on the right** and the whole length of the figure.
 
 ![](assets/chapter-6-2-images/05.Axe-01.png)
 
-След като сме декларирали и инициализирали **променливите**, можем да започнем да изчертаваме фигурата като започнем с **горната част**. От примерите можем да разберем каква е структурата на **първия ред** и да създадем цикъл, който се повтаря **`n`** брой пъти. На всяка итерация от цикъла **средните тирета** се увеличават с 1, а **тиретата от дясно** се намаляват с 1.
+After we have declared and initialized the **variables**, we can begin drawing the figure by starting with the **upper part**. We can see from the examples what is the structure of the **first row** and to create a loop which rotates **`n`** times. On each iteration the **middle dashes** increase by 1, and the **dashes on the right** decrease by 1.
 
 ![](assets/chapter-6-2-images/05.Axe-02.png)
 
-За да можем да използваме отново създадените **променливи** при чертането на дръжката на брадвата, трябва да намалим **средните тирета** с 1,а **тиретата от дясно** да увеличим с 1.
+In order to use the created **variables** when drawing the handle of the ax you need to decrease the **middle dashes** by 1, and the **dashes on the left** to increase by 1.
 
 ![](assets/chapter-6-2-images/05.Axe-03.png)
 
-**Дръжката на брадвата** можем да нарисуваме, като завъртим цикъл, който се повтаря **`n - 2`** пъти. От примерите можем да разберем, каква е нейната структура.
+**The handle of the axe** we can draw by rotating the loop **`n - 2`** times. We can see in the examples what its structure is.
 
 ![](assets/chapter-6-2-images/05.Axe-04.png)
 
-**Долната част** на фигурата, трябва да разделим на две подчасти - **глава на брадвата** и **последния ред от фигурата**. **Главата на брадвата** ще отпечатаме на конзолата, като направим цикъл, който да се повтаря **`n / 2 - 1`** пъти. На всяка итерация **тиретата от ляво** и **тиретата от дясно** намаляват с 1, а **средните тирета** се увеличават с 2.
+**The lower part** of the figure we have to divide into 2 subparts - **the head of the axe** and the **last row from the axe**. **The head of the axe** we will print on the console, as we create a loop which rotates **`n / 2 - 1`** times. On each iteration the **dashes on the left** and **the dashes on the right** decrease by 1, and the **middle dashes** increase by 2.
 
 ![](assets/chapter-6-2-images/05.Axe-05.png)
 
-За **последния ред** от фигурата, можем отново да използваме трите, вече декларирани и инициализирани променливи **`leftDashes`**, **`middleDashes`**, **`rightDashes`**.
+For the **last row** of the figure we can use the three declared and initialized variables **`leftDashes`**, **`middleDashes`**, **`rightDashes`**.
 
 ![](assets/chapter-6-2-images/05.Axe-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/658#4](https://judge.softuni.bg/Contests/Practice/Index/658#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/658#4](https://judge.softuni.bg/Contests/Practice/Index/658#4).
