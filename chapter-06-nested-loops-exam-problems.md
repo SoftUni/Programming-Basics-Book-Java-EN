@@ -316,7 +316,7 @@ In order to use the created **variables** when drawing the handle of the ax you 
 
 ![](assets/chapter-6-2-images/05.Axe-04.png)
 
-**The lower part** of the figure we have to divide into 2 subparts - **the head of the axe** and the **last row from the axe**. **The head of the axe** we will print on the console, as we create a loop which rotates **`n / 2 - 1`** times. On each iteration the **dashes on the left** and **the dashes on the right** decrease by 1, and the **middle dashes** increase by 2.
+**The lower part** of the figure we have to divide into 2 subparts - **the head of the axe** and the **last row from the axe**. **The head of the axe** we will print on the console as we create a loop which rotates **`n / 2 - 1`** times. On each iteration the **dashes on the left** and **the dashes on the right** decrease by 1, and the **middle dashes** increase by 2.
 
 ![](assets/chapter-6-2-images/05.Axe-05.png)
 
