@@ -300,7 +300,7 @@ Print on the console an **axe**, exactly like the examples.
 
 ### Hints and Guidelines
 
-In order to solve the problem, we first need to calculate the **dashes on the left**, **the middle dashes**, **the dashes on the right** and the whole length of the figure.
+In order to solve the problem, first we need to calculate the **dashes on the left**, **the middle dashes**, **the dashes on the right** and the whole length of the figure.
 
 ![](assets/chapter-6-2-images/05.Axe-01.png)
 
