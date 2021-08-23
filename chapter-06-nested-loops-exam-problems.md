@@ -308,7 +308,7 @@ After we have declared and initialized the **variables**, we can begin drawing t
 
 ![](assets/chapter-6-2-images/05.Axe-02.png)
 
-In order to use the created **variables** when drawing the handle of the ax you need to decrease the **middle dashes** by 1, and the **dashes on the left** to increase by 1.
+In order to use the created **variables** when drawing the handle of the ax you need to decrease the **middle dashes** by 1, and the **dashes on the right** to increase by 1.
 
 ![](assets/chapter-6-2-images/05.Axe-03.png)
 
