@@ -45,55 +45,55 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#0
 
 You should get **100 точки** (fully accurate solution).
 
-## Code Snippet за for цикъл в IntelliJ IDEA
+## Code Snippet for for loop in IntelliJ IDEA
 
-Докато програмираме, постоянно се налага да пишем цикли, десетки пъти всеки ден. Затова в повечето среди за разработка (IDE) има **шаблони за код** (**code snippets**) за писане на цикли. Един такъв шаблон е **шаблонът за `for` цикъл в IntelliJ IDEA**. Напишете **`fori`** в редактора за Java код в IntelliJ IDEA и **натиснете** [**Enter**]. IntelliJ IDEA ще разгъне за вас шаблон и ще напише цялостен **`for` цикъл**, единствено трябва да добавите крайната стойност:
+In software development, we regularly need to write loops, dozens of times a day. That is why in most integrated development environments (IDE) there are **code snippets** for writing loops. One such exapmle is the **snippet for `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
-**Опитайте сами**, за да усвоите умението да ползвате шаблона за код за **`for` цикъл** в IntelliJ IDEA.
+**Try it yourself**, in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
 
-### Пример: числа до 1000, завършващи на 7
+### Example: numbers from 1000, ending with 7
 
-Да се напише програма, която намира всички числа в интервала [**1 … 1000**], които завършват на 7. 
+Write a program that finds all numbers within the range [**1 … 1000**], that end with 7. 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата можем да решим като комбинираме **`for` цикъл** за преминаваме през числата от 1 до 1000 и **проверка** за всяко число дали завършва на 7. Има и други решения, разбира се, но нека решим задачата чрез **завъртане на цикъл + проверка**:
+We can solve the problem by combining a **`for` loop** which will go through the numbers from 1 to 1000 and a **condition** to check if they end with 7. There are other solutions too, but let's solve the problem using a **loop + condition**:
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#1](https://judge.softuni.bg/Contests/Practice/Index/655#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1](https://judge.softuni.bg/Contests/Practice/Index/655#1).
 
 
-### Пример: всички латински букви
+### Example: all latin letters
 
-Да се напише програма, която отпечатва буквите от латинската азбука: **a, b, c, …, z**.
+Write a program which prints the letters from the latin alphabet: **a, b, c, …, z**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Полезно е да се знае, че **`for` циклите** не работят само с числа. Може да решим задачата като завъртим **`for` цикъл**, който преминава последователно през всички букви от латинската азбука:
+It is useful to know that the **`for` loops** don't work only with numbers. We can solve the problem by running a **`for` loop** that passes sequentially through all letters in the latin alphabet:
 
 ![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#2](https://judge.softuni.bg/Contests/Practice/Index/655#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#2](https://judge.softuni.bg/Contests/Practice/Index/655#2).
 
 
-### Пример: сумиране на числа
+### Example: Summing of numbers
 
-Да се напише програма, която **въвежда `n` цели числа и ги сумира**.
+Write a program that **reads `n` whole numbers from the console and calculates the sum**.
 
-* От първия ред на входа се въвежда броят числа **`n`**.
-* От следващите **`n`** реда се въвежда по едно число.
-* Числата се сумират и накрая се отпечатва резултатът.
+* The first line of the input is an integer **`n`** denoting the number of integers which will be summed.
+* The following **`n`** lines consist of one integer.
+* Calculate the sum and print the result.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>10<br>20 | 30 |
 | 3<br>-10<br>-20<br>-30 | -60 |
@@ -101,30 +101,30 @@ You should get **100 точки** (fully accurate solution).
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата за сумиране на числа по следния начин:
- - Четем входното число **`n`**.
- - Започваме първоначално със сума **`sum = 0`**.
- - Въртим цикъл от 1 до **`n`**. На всяка стъпка от цикъла четем число **`num`** и го добавяме към сумата **`sum`**.
- - Накрая отпечатваме получената сума **`sum`**.
+We can solve the problem by calculating the sum of numbers the following way:
+ - We read the input number **`n`**.
+ - Initially we start with **`sum = 0`**.
+ - We run a loop from 1 to **`n`**. On each step of the loop, we read the input number **`num`** and add it to the **`sum`**.
+ - Finally we print the calculated result **`sum`**.
  
-Ето и сорс кодa на решението:
+Below you can find the source code for the solution:
 
 ![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#3](https://judge.softuni.bg/Contests/Practice/Index/655#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#3](https://judge.softuni.bg/Contests/Practice/Index/655#3).
 
 
-### Пример: най-голямо число
+### Example: Max Number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-голямото** измежду тях. На първия ред на входа се въвежда броят числа **n**. След това се въвеждат самите числа, по едно на ред. Примери:
+Write a program that reads **n whole numbers** (**n** > 0) and findes the **the Max Number** (the largest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>100<br>99 | 100 | 
 | 3<br>-10<br>20<br>-30 | 20 |
@@ -132,15 +132,15 @@ You should get **100 точки** (fully accurate solution).
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо въвеждаме едно число **`n`** (броят числа, които предстои да бъдат въведени). Задаваме на текущия максимум **`max`** първоначална неутрална стойност, например **-10000000000000** (или **`Integer.MIN_VALUE`**). С помощта на **`for` цикъл**, чрез който итерираме **n-1 пъти**, прочитаме по едно цяло число **`num`**. Ако прочетеното число **`num`** е по-голямо от текущия максимум **`max`**, присвояваме стойността на **`num`** в променливата **`max`**. Накрая, в **`max`** трябва да се е запазило най-голямото число. Отпечатваме го на конзолата.
+We enter the first number **`n`** (the number of integers that are goint to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** that is iterated **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally **`max`** will contain the highest number and we print it on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#4](https://judge.softuni.bg/Contests/Practice/Index/655#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#4](https://judge.softuni.bg/Contests/Practice/Index/655#4).
 
 
 ### Пример: най-малко число
