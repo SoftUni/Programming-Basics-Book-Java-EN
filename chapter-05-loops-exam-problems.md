@@ -1,29 +1,29 @@
-# Глава 5.2. Повторения (цикли) – изпитни задачи
+# Chapter 5.2. Loops – Exam Problems
 
-В предходната глава научихме как да изпълним даден блок от команди **повече от веднъж**. Затова въведохме **`for` цикъл** и разгледахме някои от основните му приложения. Целта на настоящата глава е да затвърдим знанията си, решавайки няколко по-сложни задачи с цикли, давани на приемни изпити. За някои от тях ще покажем примерни подробни решения, а за други ще оставим само напътствия.
-Преди да се захванем за работа е добре да си припомним конструкцията на **цикъла `for`**:
+In the previous chapter, we learned how to run a block of code **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to cement our knowledge by solving some more complex problems with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave only guidance.
+Before we get to work it’s best if we take another look at the construction of the **`for` loop**:
 
 ![](assets/chapter-5-2-images/00.For-construction.png)
 
-**For циклите** се състоят от:
- * Инициализационен блок, изпълнява се само веднъж в началото преди да се провери условието за повторение за първи път. В случая се декларира променливата-брояч (**`int i`**) и се задава нейна начална стойност
- * Условие за повторение (**`i <= 10`**), изпълняващо се веднъж, преди всяка итерация на цикъла.
- * Обновяване на брояча (**`i++`**) – този код се изпълнява след всяка итерация.
- * Тяло на цикъла - съдържа произволен блок със сорс код.
+**For loops** consist of:
+ * Initialization block is run once in the beginning before the compiler checks the condition for the loop. In this case, the variable counter is declared (**`int i`**) and its initial value is set.
+ * The repeat condition (**`i <= 10`**),  is run once before each iteration.
+ * Counter update (**`i++`**) – this code runs after every iteration.
+ * The loop body - can contain one line of code or a whole block of code.
 
  
-## Изпитни задачи
+## Exam Problems
 
-Да решим няколко задачи с цикли от изпити в СофтУни.
+Let’s solve some problems with loops from exams in SoftUni.
 
 
-## Задача: хистограма
+## Problem: Histogram
 	
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв процент **p1** са под 200, процент __p2__ са от 200 до 399, процент **p3** са от 400 до 599, процент **p4** са от 600 до 799 и останалите **p5** процента са от 800 нагоре. Да се напише програма, която изчислява и отпечатва процентите **p1**, **p2**, **p3**, **p4** и **p5**.
+We are given **n whole numbers** within the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent __p2__ are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent from 800 and above. Let us write a program that calculates and prints the percentages in the console **p1**, **p2**, **p3**, **p4** and **p5**.
 
-**Пример**: имаме n = **20** и числа: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+**Example**: we have n = **20** and the numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
-| **Група**   | **Числа**                                       | **Брой числа** | **Процент**                     |
+| **Group**   | **Numbers**                                       | **Number count** | **Percent**                     |
 |-------------|-------------------------------------------------|:---------------|---------------------------------|
 | < 200       | 53, 7, 56, 180, 12, 7, 150, 2, 199, 46, 128, 65 | 12             | p1 = 12 / 20 * 100 = 60.00%     |
 | 200 … 399   | 250, 200                                        | 2              | p2 = 2 / 20 * 100 = 10.00%      |
@@ -31,23 +31,23 @@
 | 600 … 799   | 680, 600, 799                                   | 3              | p4 = 3 / 20 * 100 = 15.00%      |
 | ≥ 800       | 920, 800                                        | 2              | p5 = 2 / 20 * 100 = 10.00%      |
 
-### Входни данни
+### Input Data
 
-На първия ред от входа стои цялото число **n** (1 ≤ **n** ≤ 1000), което представлява броя редове с числа, които ще ни бъдат подадени. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата, върху които да бъде изчислена хистограмата.
+In the first line of input, there must be a whole number **n** (1 ≤ **n** ≤ 1000), that represents how many lines of numbers we should enter. On each of the following **n lines** , we have **one whole number** in the range [**1 … 1000**] – those are the numbers we use to calculate the histogram.
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **хистограма от 5 реда**, всеки от които съдържа число между 0% и 100%, форматирано с точност две цифри след десетичния знак (например 25.00%, 66.67%, 57.14%).
+Print on the console **a histogram of 5 lines**, each line should contain a percentage from 0% to 100%, and format it up to two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
 
-### Примерен вход и изход
+### Exemplary Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -63,10 +63,10 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -82,8 +82,8 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
