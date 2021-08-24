@@ -1,403 +1,412 @@
-# Глава 6.1. Вложени цикли
+# Chapter 6.1 Nested Loops
 
-В настоящата глава ще разгледаме **вложените цикли** и как да използваме **`for`** цикли за **чертане** на различни **фигурки на конзолата**, които се състоят от символи и знаци, разположени в редове и колони на конзолата. Ще използваме **единични** и **вложени цикли** (цикли един в друг), **изчисления** и **проверки**, за да отпечатваме на конзолата прости и не чак толкова прости фигурки по зададени размери.
+This chapter will discuss **nested loops in the Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`for` loop** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=96SoFtFTPBc">https://www.youtube.com/watch?v=96SoFtFTPBc</a>.
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=96SoFtFTPBc">https://www.youtube.com/watch?v=96SoFtFTPBc</a>.
 </div>
 
 
-### Пример: правоъгълник от 10 x 10 звездички
+### Example: A rectangle with a size of 10 x 10 asterisks
 
-Да се начертае в конзолата правоъгълник от **10 x 10** звездички.
+Write a program that draw, on the console, a rectangle with a size of **10 x 10** asterisks.
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|(няма)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
+|(no input)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
-За изпълнението на задачата ще прибегнем до малка хитрост, ще използваме метод. В глава 10 ще се запознаем подробно с това какво представляват методите и как се използват. Методът ще ни позволи да изпълнем един и същ код повече от един път и на повече от едно място в дадена програма. На този етап няма да разкриваме повече от концепцията на методите.
+#### Hint and Guidelines
+To solve the task, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-Как работи примерът? Инициализира се управляваща променлива на **цикъла `i = 0`** и тя се увеличава на всяка итерация, докато е **по-малка от 10** (проверката се извършва след всяко изпълнение на тялото на цикъла и след итерацията). Така кодът в тялото на цикълa се изпълнява точно **10 пъти**. Кодът в тялото на цикъла ще се извика за всеки ред на правоъгълника. В метода ще се използва класа **`StringBuffer`**, който при всяко завъртане на цикъла **`for`** (този в метода), ще "залепи" по една звездичка, като по този начин ще създаде ред от 10 звездички. След като приключи изпълнението на цикъла, низът ще бъде върнат на основния цикъл и ще се изведе полученият ред. Това ще се повтори за всички 10 итерации, като по този начин на всяко завъртане на цикъла ще получаваме по цял един ред.
+How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the body of the loop, and after the iteration, a check about the state of the variable is performed. Thus the code in the body of the loop is executed exactly **ten times** ie. for each row of the rectangle. In the body of the loop, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
 
 
-### Пример: правоъгълник от N x N звездички
+### Example: A rectangle with a size of N x N asterisks
 
-Да се напише програма, чийто вход е цяло положително число **n** и извежда в конзолата **правоъгълник от N x N звездички**.
+Write a program that reads an integer **n** from the console, and as output, draws a **rectangle with a size of n x n asterisks**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-За решаване на тази задача, ще използваме класа **`Scanner`**, който ще ни позволи да прихванем подадения размер на фигурата.
+To perform the task, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
 
 
-## Вложени цикли
+## Nested Loops
 
-Вложените цикли представляват конструкция, при която **в тялото на един цикъл** (външен) **се изпълнява друг цикъл** (вътрешен). За всяко завъртане на външния цикъл, вътрешният се извърта **целият**. Това се случва по следния начин:
+Nested loops are construction in which **in the body of one loop** statement (called outer), **another loop statement is performed** (called inner). For each iteration of the outer loop statement, the inner one is performed **the whole**. This happens as follows:
 
- - При стартиране на изпълнение на вложени цикли първо **стартира външният цикъл**: извършва се **инициализация** на неговата управляваща променлива и след проверка за край на цикъла, се изпълнява кодът в тялото му.
- - След това се **изпълнява вътрешният цикъл**. Извършва се инициализация на началната стойност на управляващата му променлива, прави се проверка за край на цикъла и се изпълнява кодът в тялото му.
- - При достигане на зададената стойност за **край на вътрешния цикъл**, програмата се връща една стъпка нагоре и се продължава започналото изпълнение предходния (външния) цикъл. Променя се с една стъпка управляващата променлива за външния цикъл, проверява се дали условието за край е удовлетворено и **започва ново изпълнение на вложения (вътрешния) цикъл**.
- - Това се повтаря докато променливата на външния цикъл достигне условието за **край на цикъла**.
+ - When starting the execution of nested loops, first **the outer loop starts** which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+ - Then **the inner loop is executed**, which includes the same steps: the control variable is initialized, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+ - When the condition for **the end of the inner loop** is met, the program returns one step up, and the started execution of the outer loop continues. This results that the variable of the outer loop is changing (incremented), then checks whether the end condition of the outer loop is satisfied. If not, **a new execution of the nested (inner) loop starts**.
+ - This is repeated until the outer loop variable reaches the **end of loop** condition.
 
-Ето и един **пример**, с който нагледно да илюстрираме вложените цикли. Целта е да се отпечата отново правоъгълник от **`n`** * **`n`** звездички, като за всеки ред се извърта цикъл от **1** до **`n`**, а за всяка колона се извърта вложен цикъл от **1** до **`n`**:
+Here is an **example** with which to illustrate the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
 
 ![](assets/chapter-6-1-images/00.Nested-loops-01.png)
 
-Да разгледаме примера по-горе. След инициализацията на **външния (outer)** цикъл, започва да се изпълнява неговото **тяло**, което съдържа **втория (вложен или още вътрешен (inner)) цикъл**. Той извежда на един ред **`numberOfstars`** на брой звездички. След като **вътрешният** цикъл **приключи** изпълнението си, управлението на програмата се връща при първата итерация на външния и след това **външният ще продължи**. В тялото на външния цикъл е добавен ред (**`System.out.println()`**), който ще се грижи при приключването на  изпълнението на вътрешния цикъл да се преминава на следващия ред. Без този код всички звездички ще бъдат изведени на един ред. Ако във вътрешния цикъл вместо **`print()`** използваме **`println()`**, всички звездички ще се изведат на отделен ред. Можете да опитате и да се уверите сами. Следва **инкрементиране** на променливата (увеличаване, в нашия случай с 1) от **външния** цикъл и отново ще бъде изпълнен целия **вътрешен** цикъл. Вътрешният цикъл ще се изпълни толкова пъти, колкото се изпълнява тялото на външния цикъл, в случaя **`numberOfstars`** пъти.
+How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which in turn contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
-### Пример: квадрат от звездички
+### Example: A square with a size of 10 x 10 asterisks
 
-Да се начертае на конзолата квадрат от **N x N** звездички:
+Write a program that draws on the console a square of **N x N** asterisks: 
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Задачата е аналогична на предходната. Тук обаче е необходимо да се обмисли как да бъде изведен интервал след звездичките така, че да няма излишни интервали в началото или края.
+The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
 
 
-### Пример: триъгълник от долари
+### Example: A triangle of dollar signs
 
-Да се напише програма, която въвежда число **n** и печата **триъгълник от долари**.
+Write a program that reads an integer number **n** from the console and returns as output **a triangle of dollar signs**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход
+|Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
 |3|<code>$</code><br><code>$ $</code><br><code>$ $ $</code>|4|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code>|5|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Задачата е **сходна** с тези за рисуване на **правоъгълник** и **квадрат**. Отново ще използваме **вложени цикли**, но тук има **уловка**. Разликата е в това, че **броят на колонките**, които трябва да отпечатаме, зависи от **реда**, на който се намираме, а не от входното число **`n`**. От примерните входни и изходни данни забелязваме, че **броят на доларите зависи** от това на кой **ред** се намираме към момента на печатането, т.е. 1 знак долар означава първи ред, 2 знака долар означават втори ред и т.н. Нека разгледаме долния пример по-подробно. Виждаме, че **променливата** на **вложения** цикъл е обвързана с променливата на **външния**. По този начин нашата програма печата желания триъгълник.
+The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** on which **line** we are at the time of printing, ie. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
 
 
-### Пример: квадратна рамка
+### Example: Square frame 
 
-Да се напише програма, която въвежда цяло положително число **n** и чертае на конзолата **квадратна рамка** с размер **n \* n**.
+Write a program that reads an integer number **n** from the console and returns as output **a square frame** with a size of **n \* n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>+ - +</code><br><code>&#124; - &#124;</code><br><code>+ - +</code>|4|<code>+ - - +</code><br><code>&#124; - - &#124;</code><br><code>&#124; - - &#124;</code><br><code>+ - - +</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Можем да решим задачата по следния начин:
-* Четем от конзолата числото **`n`**.
-* Отпечатваме **горната част**: първо знак **`+`**, после **n-2** пъти **`-`** и накрая знак **`+`**.
-* Отпечатваме **средната част**: печатаме **n-2** реда като първо печатаме знак **`|`**, после **n-2** пъти **`-`** и накрая отново знак **`|`**. Това можем да го постигнем с вложени цикли.
-* Отпечатваме **долната част**: първо **`+`**, после **n-2** пъти **`-`** и накрая **`+`**.
+We can solve the task as follows:
+* We read an integer **`n`** from the console.
+* We print **the upper part** of the frame: first the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**.
+* We print **the middle part** of the frame: we print **n-2** lines as first print the sign **`|`**, then **n-2** times the sign **`-`** and finally again the sign **`|`**. We can achieve this with nested loops.
+* We print **the lower part** of the frame: first print the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**. 
 
-Ето и примерна имплементация на описаната идея, с вложени цикли:
+Here is an example implementation of the described logic, above, with nested loops: 
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
 
 
-### Пример: ромб от звездички
+### Example: A diamond of asterisks 
 
-Да се напише програма, която въвежда цяло положително число **n** и извежда в конзолата **ромб от звездички** с размер **n**.
+Write a program that reads an integer number **n** from the console and returns as output **a diamond of asterisks** with a size of **n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>\*</code>|2|<code>&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;</code><br>|
 
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-За да решим поставената задача е необходимо мислено да разделим ромба на **две части**: **горна** (включва **и** средния ред) и **долна**. За **извеждането** в конзолата на всяка една част ще използваме **два** цикъла, като читателя сам трябва да открие зависимостта между **`n`** и променливите в циклите.
+To solve the task, we divide (mentally) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
 
-За първия цикъл може да използваме следните насоки:
-* Отпечатвaме **`n-row`** интервала.
-* Отпечатваме **`*`**.
-* Отпечатваме **`row-1`** пъти **` *`**.
+For the upper part of the rhombus (first loop) we can use the following guidelines:
+* We print **`n-row`** intervals.
+* We print **`*`**.
+* We print **`row-1`** times **`*`**. 
 
-**Втората** (долна) част ще изведем по **аналогичен** начин, което отново оставяме читателя да се опита да направи сам.
+We will use the **similar** way to output the **lower** part of the rhombus, but we leave the reader to try to do it himself. 
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
 
 
-### Пример: коледна елха
+### Example: Christmas tree
 
-Да се напише програма, която въвежда число **n** (1 ≤ n ≤ 100) и извежда "коледна елха" с височина **n+1**.
+Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the console and returns as output **Christmas tree** with a height of **n+1**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</code><br><code>\*&nbsp;&#124;&nbsp;\*</code>|2|<code>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;</code><br><code>\*\*&nbsp;&#124;&nbsp;\*\*</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките (`*`) и празните места преди и след тях**, **средната** част е **` | `**, а **последната** част са отново **звездички** (`*`), като този път **празни** места има само **преди** тях. Отпечатването може да бъде постигнато само с **един цикъл** и отново ще прибегнем до метода, който изпозлвахме в началото. 
+As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
 
 
-## Чертане на по-сложни фигури
+## Drawing more complex figures
 
-Да разгледаме как можем да чертаем на конзолата фигури с по-сложна логика на конструиране, за които трябва повече да помислим преди да почнем да пишем.
+Let's look few exercises about how we can draw figures on the console with more complex logic. To solve these tasks, we need to think more about the program logic before we start writing.
 
-### Пример: слънчеви очила
-Да се напише програма, която въвежда цяло число **n** (3 ≤ n ≤ 100) и печата слънчеви очила с размери **5\*n x n** като в примерите:
+### Example: Sunglasses 
 
-|Вход|Изход|Вход|Изход|
+Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the console and returns as output **sunglasses** with a size of **5\*n x n**, just like examples below.
+
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code><br><code>\*////\*&#124;&#124;&#124;\*////\*</code><br><code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code>|4|<code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br><code>\*//////\*&#124;&#124;&#124;&#124;\*//////\*</code><br><code>\*//////\*&nbsp;&nbsp;&nbsp;&nbsp;\*//////\*</code><br><code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-От примерите виждаме, че очилата могат да се разделят на **три части** – горна, средна и долна. По-долу е част от кода, с който задачата може да се реши.
+As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the task.
 
-При рисуването на горния и долния ред трябва да се изпечатат **`2 * n`** звездички, **`n`** интервала и **`2 * n`** звездички.
+When drawing the top and bottom rows, use **`2 * n`** asterisks, **`n`** spaces, and **`2 * n`** asterisks as output.
 
 ![](assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-При печатането на **средната** част трябва да **проверим** дали редът е **`(n-1) / 2 - 1`**, тъй като от примерите е видно, че на **този ред** трябва да печатаме **вертикални чертички** вместо интервали.
+When printing the **middle** part, we need to **check** whether the line is **`(n-1) / 2 - 1`**, because as the examples show on **this line**, we need to print **vertical dashes** instead of spaces.
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
 
 
-### Пример: къщичка
+### Example: House
+Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like examples below.
 
-Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **n x n**, точно като в примерите:
-
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>**</code><br><code>&#124;&#124;</code><br>|3|<code>-\*-</code><br><code>\*\*\*</code><br><code>&#124;\*&#124;</code>|4|<code>-\*\*-</code><br><code>\*\*\*\*</code><br><code>&#124;\*\*&#124;</code><br><code>&#124;\*\*&#124;</code>
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Разбираме от условието на задачата, че къщичката е с размери **`n` x `n`**. Това, което виждаме от примерните вход и изход, е че:
+According to the requirements of the task, the house is with a size of **`n` x `n`**, but from the input and output data, we can see the following:
 
-* Къщичката е разделена на 2 части: **покрив и основа**. 
+* The house consists of two parts: **roof and base**.
 
 ![](assets/chapter-6-1-images/09.House-01.png)
 
-* Когато **`n`** е четно число, върхът на къщичката е "тъп".
-* Когато **`n`** е нечетно число, **покривът** е с един ред по-голям от **основата**.
+* When **`n`** is an even number, the roof of the house is obtuse.
+* When **`n`** is odd, **the roof** is one row larger than **the base**.
 
-##### Покрив
-* Съставен е от **звезди** (`*`) и **тирета** (`-`).
-* В най-високата си част има една или две звезди, спрямо това дали **n** e нечетно или четно, както и тирета.
-* В най-ниската си част има много звезди и малко или никакви тирета.
-* С всеки един ред по-надолу, **звездите** се увеличават с 2, а **тиретата** намаляват с 2.
+##### The roof
+* It consists of **asrerisks** (`*`) and **dashes** (`-`). 
+* At the top part of the roof, we have one or two stars depending on whether **`n`** is even or odd (also related to the dashes). 
+* In the lowest part, we have many stars and a few or no dashes.  
+* At each row of the roof (looking from top to bottom), the stars are increased by two, and the dashes are decreased by two.
 
-##### Основа
-* Широка е **`n`** на брой реда.
-* Съставена е от **звезди** (`*`) и **вертикални черти** (`|`).
-* Редовете представляват 2 **вертикални черти** - по една в началото и в края на реда, както и **звезди** между вертикалните черти с дължина на низа **`n - 2`**.  
-
-Прочитаме **`n`** от конзолата и записваме стойността в променлива от тип **`int`**.  
+##### The base
+* The height is **`n`** rows.
+* It consists of **asrerisks** (`*`) and **pipes** (`|`).   
+* Each row consists of two **pipes** (one at the beginning and one at the end of the row) and a sequence of **`n - 2`** **asterisks** between the pipes.
+ 
+We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Много е важно да проверяваме дали са валидни входните данни!</b> В тези задачи не е проблем директно да обръщаме прочетеното от конзолата в тип <b><code>int</code></b>, защото изрично е казано, че ще получаваме валидни целочислени числа. Ако обаче правим по-сериозни приложения, е добра практика да проверяваме входните данни. Какво ще стане, ако вместо число потребителят въведе буквата "А"?</td>
+<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current tasks, it is not a problem to directly convert the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
-За да начертаем **покрива**, записваме колко ще е началният брой **звезди** в променлива **`stars`**:
-* Ако **`n`** е **четно** число, ще са 2 броя.
-* Ако е **нечетно**, ще е 1 брой.
+To draw **the roof**, we write down how many **asterisks** we start within a variable called **`stars`**:
+* If **`n`** is **even**, they are two.
+* If **`n`** is **odd** it is one
 
 ![](assets/chapter-6-1-images/09.House-03.png)
 
-Изчисляваме дължината на **покрива**. Тя е равна на половината от **`n`**. Резултата записваме в променливата **`roofLength`**.
+We calculate the length of **the roof**, and it equals half of **`n`**. Assign the result to the variable **`roofLength`*.
 
 ![](assets/chapter-6-1-images/09.House-04.png)
 
-Важно е да се отбележи че, когато **`n`** е нечетно число, дължината на покрива е по-голяма с един ред от тази на **основата**. В езика **Java**, когато два числа от целочислен тип се делят и има остатък, то резултатът ще е число без остатъка.
+It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of **the base**. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
 
-Пример:
+Example:
 
 ```java
 int result = 3 / 2; // резултат 1
 ```
 
-Ако искаме да закръглим резултата нагоре, трябва да използваме метода **`Math.ceil(…)`**:
+If we want to round up the result, we need to use the method **`Math.ceil(…)`**: 
 
 ```java
 int result = (int) Math.ceil(3 / 2f);
 ```
 
-В този пример делението не е от 2 целочислени числа. "`f`" след число показва, че даденото число е от тип **`float`** (число с плаваща запетая). Резултатът от **`3 / 2f`** е **`1.5f`**. **`Math.ceil(…)`** закръгля делението нагоре. В нашият случай **`1.5f`** ще стане 2. **`(int)`** се използва, за да може да трансформираме типа обратно в **`int`**.
+In this example, the division is not between two integers. The letter "`f`" after a number shows that this number is of **`float`** type (a floating-point number). The result of **`3 / 2f`** is **`1.5f`**. **`Math.ceil(…)`** method rounds up the result and, in this case, **`1.5f`** will become 2. We write **`(int)`** before **`Math.ceil(…)`**, so we can transfer the result back to **`int`** type and assign it to the variable **`result`**.
 
-След като сме изчислили дължината на покрива, завъртаме цикъл от 0 до **`roofLength`**. На всяка итерация ще:
-* Изчисляваме броя **тирета**, които трябва да изрисуваме. Броят ще е равен на **`(n - stars) / 2`**. Записваме го в променлива **`padding`**.
+After we have calculated the length of the roof, we use a loop from 0 to **`roofLength`**. On each iteration we will:
+
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. Assign it in variable **`padding`**.
 
 ![](assets/chapter-6-1-images/09.House-05.png)
 
-* Отпечатваме на конзолата: "**тирета**" (**`padding`** на брой пъти) + "**звезди**" (**`stars`** пъти) + "**тирета**" (**`padding`** пъти). 
+* Print on the console: "**dashes**" (*`padding`** times) + "**asterisks**" (**`stars`** times) + "**dashes**" (**`padding`** times).
 
 ![](assets/chapter-6-1-images/09.House-06.png)
 
-* Преди да свърши итерацията на цикъла добавяме 2 към **`stars`** (броя на **звездите**).
+* Before the iteration is over, we add 2 to **`stars`** (the number of the **asterisks**).
 
 ![](assets/chapter-6-1-images/09.House-07.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Не е добра идея да правим събирания на много на брой символни низове по показания по-горе начин, защото това води до <b>проблеми със скоростта</b> (performance issues). За повече информация посетете:  <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
+<td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
 </tr></table>
 
-След като сме приключили с **покрива**, е време за **основата**. Тя е по-лесна за печатане:
-* Започваме с цикъл от **0** до **n** (изключено).
-* Отпечатваме на конзолата: **`|`** + **`*`** (**`n - 2`** на брой пъти) + **`|`**.
+After we have finished with the roof, it is time for the base. It is easier to print:
+* We use loop from **0** to **n** (not inclusive).
+* We print on the console: **`|`** + **`*`** (**`n - 2`** times) + **`|`**.
 
 ![](assets/chapter-6-1-images/09.House-08.png)
 
-Ако всичко сме написали както трябва, задачата ни е решена.
+#### Test the code in the Judge System
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
 
 
-### Пример: диамант
+### Example: Diamond 
 
-Да се напише програма, която въвежда цяло число **n** (1 ≤ **n** ≤ 100) и печата диамант с размери **n**, като в следните примери:
+Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from the console and returns as output **a diamond** with a size of **n**, just like examples below.
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |1|<code>\*</code><br>|2|<code>\*\*</code>|3|<code>-\*-</code><br><code>\*-\*</code><br><code>-\*-</code>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |4|<code>-\*\*-</code><br><code>\*--\*</code><br><code>-\*\*-</code>|5|<code>--\*--</code><br><code>-\*-\*-</code><br><code>\*---\*</code><br><code>-\*-\*-</code><br><code>--\*--</code><br>|6|<code>--\*\*--</code><br><code>-\*--\*-</code><br><code>\*----\*</code><br><code>-\*--\*-</code><br><code>--\*\*--</code><br>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Това, което знаем от условието на задачата, е че диамантът е с размер **`n` x `n`**.
+According to the requirements of the task, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
 
-От примерните вход и изход можем да си направим изводите, че всички редове съдържат точно по **`n`** символа и всички редове, с изключение на горните върхове, имат по **2 звезди** (**`*`**). Можем мислено да разделим диаманта на 2 части:
-* **Горна** част. Тя започва от горният връх до средата.
-* **Долна** част. Тя започва от реда след средата до най-долния връх (включително).
+* All lines contain exactly **`n`** characters, and all lines, except the upper and the bottom ones, have **two asterisks** (**`*`**).
 
-##### Горна част
-* Ако **n** е **нечетно**, то тя започва с **1 звезда** (**`*`**).
-* Ако **n** е **четно**, то тя започва с **2 звезди** (**`**`**).
-* С всеки ред надолу, звездите се отдалечават една от друга.
-* Пространството преди, между, и след **звездите** (**`*`**) е запълнено с **тирета** (**`-`**).
+We can divide (mentally) the diamond into **two parts**: 
+* **Upper** part. Include from the top of the diamond and to the middle of the diamond (includes **and** the middle row).
+* **Lower** part. Include from the row immediately after the middle of the diamond and to the bottom of the diamond(inclusive).
 
-##### Долна част
-* С всеки ред надолу, звездите се събират една към друга. Това означава, че пространството (**тиретата**) между тях намалява, а пространството (**тиретата**) отляво и отдясно се увеличава.
-* В най-долната си част е с 1 или 2 **звезди**, спрямо това дали **n** е нечетно или четно.
+##### Upper part
+* If **n** is **odd**, begins with **1 asterisk** (**`*`**).
+* If **n** is **even**, begins with **2 asterisks** (**`**`**).
+* With each row down, the asterisks move away from each other.
+* The space before, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
 
-##### Горна и долна част на диаманта
-* На всеки ред звездите са заобиколени от външни **тирета**, с изключение на средния ред.
-* На всеки ред има пространство между двете **звезди**, с изключение на първия и последния ред (понякога **звездата е 1**).
+##### Lower part
+* With each row down, the asterisks come together. It means that the space (**dashes**) between them decreases, and the space (**dashes**) on the left and right increases.
+* At its bottom, it has 1 or 2 **asterisks**, depending on whether **n** is odd or even.
 
-Прочитаме стойността на **n** от конзолата и я записваме в променлива от тип **`int`**.  
+##### Upper and lower part
+* On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except for the middle row.
+* Each row has a space between the two **asterisks**, except for the first and last row (sometimes **the asterisk is one**).
+
+##### Reading the Input Data
+
+We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/10.Diamond-01.png)
 
-Започваме да чертаем горната част на диаманта. Първото нещо, което трябва да направим, е да изчислим началната стойност на външната бройка **тирета `leftRight`** (тиретата от външната част на **звездите**). Тя е равна на **`(n - 1) / 2`**, закръглено надолу.
+##### Printing the upper part of the diamond
+
+We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded down.
 
 ![](assets/chapter-6-1-images/10.Diamond-02.png)
 
-След като сме изчислили **`leftRight`**, започваме да чертаем **горната част** на диаманта. Може да започнем, като завъртим **цикъл** от **`0`** до **`n / 2 + 1`** (закръглено надолу).  
+After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded down).
 
-При всяка итерация на цикъла трябва да се изпълнят следните стъпки:
-* Рисуваме по конзолата левите **тирета** (с дължина **`leftRight`**) и веднага след тях първата **звезда**.
+At each iteration of the loop the following steps are performed:
+* We draw as an output on the console **dashes** on the left side of the diamond (with length equals to **`leftRight`**) and right after them the first **asterisk**.
 
 ![](assets/chapter-6-1-images/10.Diamond-03.png)
 
-* Ще изчислим разстоянието между двете **звезди**. Може да го направим като извадим от **n** дължината на външните **тирета**, както и числото 2 (бройката на **звездите**, т.е. очертанията на диаманта). Резултата от тази разлика записваме в променлива **`mid`**. 
+* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, ie. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-04.png)
 
-* Ако **`mid`** е по-малко от 0, то тогава знаем, че на реда трябва да има 1 звезда. Ако е по-голямо или равно на 0, то тогава трябва да начертаем **тирета** с дължина **`mid`** и една **звезда** след тях.
-* Рисуваме на конзолата десните външни **тирета** с дължина **`leftRight`**. 
+* If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equals to **`mid`** and one **asterisk** after them.
+* We draw as an output on the console **dashes** on the right side of the diamond with length equals to **`leftRight`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-05.png)
 
-* В края на цикъла намаляваме **`leftRight`** с 1 (**звездите `*`** се отдалечават).
+* In the end of the loop we decrease **`leftRight`** by 1 (**the asterisks `*`** are moving away from each other).
 
-Готови сме с горната част.
+We are ready with the upper part.
 
-Рисуването на долната част е доста подобна на рисуването на горната част. Разликите са, че вместо да намаляваме **`leftRight`** с 1 към края на цикъла, ще увеличаваме **`leftRight`** с 1 в началото на цикъла. Също така, **цикълът ще е от 0 до `(n - 1) / 2`**.   
+##### Printing the lower part of the diamond
+
+Printing the lower part is similar to that of the upper part. The differences are: 
+* Increase instead of decrease **`leftRight`** with one, but at the beginning of the loop
+* **The loop will be from 0 to `(n - 1) / 2`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-06.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Повторението на едно и също парче код се смята за лоша практика</b>, тъй като кодът става труден за поддръжка. Да си представим, че имаме код (напр. логиката за чертането на ред от диаманта) на още няколко места в програмата и се налга да направим някаква промяна. За целта би било необходимо да коригираме кода на всяко едно място, където сме сложили този код. А сега нека се замислим върху следния казус: Какво би станало, ако същият този код трябва да се използва не 1, 2 или 3 пъти, а десетки пъти. Един от подходите за справяне с този проблем е използването на <b>методи</b>. Можете да потърсите допълнителна информация за тях в Интернет, или да прегледате <a href="chapter-10-methods.md">глава “10” (Методи)</a>.</td>
+<td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
 
 
-## Какво научихме от тази глава?
+## What we learned in this chapter?
 
-Научихме се да чертаем фигури с вложени **`for`** цикли:
+We learned to draw figures with nested **`for`** loops:
 
 ```java
 for (int r = 1; r <= 5; r++)
@@ -409,4 +418,4 @@ for (int r = 1; r <= 5; r++)
 }
 ```
 
-Научихме се, също и как **да използваме методи** за да избягваме повторението на едно и също парче код няколко пъти.
+We also learned that we can **use methods** to avoid repeating the code multiple times. 
