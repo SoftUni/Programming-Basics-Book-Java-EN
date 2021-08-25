@@ -94,71 +94,71 @@ Print on the console **a histogram of 5 lines**, each line should contain a perc
 </tbody>
 </table>
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Програмата, която решава този проблем, можем да разделим мислено на три части:
+The program that solves this problem can be split into three parts:
 
-  * **Прочитане на входните данни** – в настоящата задача това включва прочитането на числото **n**, последвано от **n на брой цели числа**, всяко на отделен ред.
-  * **Обработка на входните данни** – в случая това означава разпределяне на числата по групи и изчисляване на процентното разделение по групи.
-  * **Извеждане на краен резултат** – отпечатване на хистограмата на конзолата в посочения формат.
+  * **Reading the input data** – in the current problem, this entails reading the number **n**, followed by **n count of whole numbers**, each on a separate line.
+  * **Processing the input data** – in this case, that means allocating the numbers into groups and calculating the percentage by a group.
+  * **Printing the final result** – printing the histogram in the console in the specified format.
   
-Преди да продължим напред ще направим едно малко отклонение от настоящата тема, а именно ще споменем накратко, че в програмирането всяка променлива е от някакъв **тип данни**. В тази задача ще използваме числовите типове **`int`** за **цели числа** и **`double`** за **дробни**.
+Before we continue, we will take a small detour from the current topic, namely, we will briefly mention, that in coding every variable is some kind of **data type**. We will use numeral data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this problem.
 
-Сега ще преминем към имплементацията на всяка от горепосочените точки.
+Now we are going to proceed with the implementation of the above-made points.
 
-#### Прочитане на входните данни
+#### Reading the input data
   
-Преди да преминем към самото прочитане на входните данни трябва да си **декларираме променливите**, в които ще ги съхраняваме. Това      означава да им изберем подходящ тип данни и подходящи имена.
+Before we move on to reading the input data we have to **declare the variables**, in which we are storing them. This      means that we have to choose the right data type and appropriate names.
   
 ![](assets/chapter-5-2-images/01.Histogram-01.png)
 
-В променливата **`n`** ще съхраняваме броя на числата, които ще четем от конзолата. Избираме **тип `int`**, защото в условието е упоменато, че **`n` e цяло число** в диапазона от 1 до 1000. За променливите, в които ще пазим процентите, избираме **тип `double`**, тъй като се очаква те **не винаги да са цели числа**. Допълнително си декларираме и променливите **`cntP1`**, **`cntP2`** и т.н., в които ще пазим броя на числата от съответната група, като за тях отново избираме **тип `int`**.
+In the variable **`n`** , we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because in the condition is mentioned, that **`n` is a whole number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **we can’t expect that they are always going to be whole numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`** and so on, in which we will store the count of numbers in the corresponding group, and for them, we chose again the **`int` type**.
 
-След като сме си декларирали нужните променливи, можем да пристъпим към прочитането на числото **`n`** от конзолата:
+After we have declared the needed variables, we can proceed with reading the number **`n`** from the console:
 
 ![](assets/chapter-5-2-images/01.Histogram-02.png)
 
-#### Обработка на входните данни
+#### Processing the input data
   
-За да прочетем и разпределим всяко число в съответната му група, ще си послужим с **`for` цикъл** от **0** до **`n`** (броя на числата).  Всяка итерация на цикъла ще прочита и разпределя **едно единствено** число (**`currentNumber`**) в съответната му група. За да определим  дали едно число принадлежи към дадена група, **правим проверка в съответния ѝ диапазон**. Ако това е така - увеличаваме броя на числата в тази група (**`cntP1`**, **`cntP2`** и т.н.) с 1.  
+For the reading and distributing every number in its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers).  Every iteration of the loop we’ll read and distribute **only one** number (**`currentNumber`**) in its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. And if the above is true we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
-След като сме определили колко числа има във всяка група, можем да преминем към изчисляването на процентите, което е и главна цел на задачата. За това ще използваме следната формула:
+After we determine how many numbers each group has, we can move on to calculating the percentage, which is the main point of the problem. For this, we’ll use the following formula:
 
-<p align="center"><strong>(процент на група) = (брой числа в група) * 100 / (брой на всички числа)</strong></p>
+<p align="center"><strong>(group percentage) = (count of numbers in group) * 100 / (count of all numbers)</strong></p>
 
-Тази формула в програмния код изглежда по следния начин:
+This formula in code looks like the following:
 
 ![](assets/chapter-5-2-images/01.Histogram-04.png)
 
-Ако разделим на **100** (число, тип **`int`**) вместо на **100.0** (число, тип **`double`**), ще се извърши така нареченото **целочислено деление** и в променливата ще се запази само цялата част от делението, а това не е желания от нас резултат. Например: **5 / 2 = 2**, а **5 / 2.0 = 2.5**. Имайки това предвид, формулата за първата променлива ще изглежда така: 
+If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), we’ll perform the so-called **integer division** and in the variable will be stored only the whole part of the division, and this is not what we want as a result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
 
 ![](assets/chapter-5-2-images/01.Histogram-05.png)
 
-За да стане още по-ясно какво се случва, нека разгледаме следния пример:
+To make things even clearer, let’s take a look at this example:
 
-|Вход|Изход|
+|Input|Output|
 |--------|---------|
 |**3**<br>1<br>2<br>999|66.67%<br>0.00%<br>0.00%<br>0.00%<br>33.33%|
 
-В случая **`n = 3`**.
-За цикъла имаме:
-   -   	**`i = 0`** - прочитаме числото 1, което е по-малко от 200 и попада в първата група (**`p1`**), увеличаваме брояча на групата (**`cntP1`**) с 1.
-   -   	**`i = 1`** – прочитаме числото 2, което отново попада в първата група (**`p1`**) и увеличаваме брояча ѝ (**`cntP1`**) отново с 1.
-   -   	**`i = 2`** – прочитаме числото 999, което попада в последната група (**`p5`**), защото е по-голямо от 800, и увеличаваме брояча на групата (**`cntP5`**) с 1.
+In the case of **`n = 3`**.
+For the loop we have:
+   -   	**`i = 0`** - we read the number 1, which is lesser than 200 and falls in the first group (**`p1`**), and we increment the group counter (**`cntP1`**) by 1.
+   -   	**`i = 1`** – we read the number 2, which again falls in the first group (**`p1`**) and we increment the counter (**`cntP1`**) again by 1.
+   -   	**`i = 2`** – we read the number 999, which falls in the last group (**`p5`**), because it is greater than 800, and we increment the group counter (**`cntP5`**) by 1.
    
-След прочитането на числата в група **`p1`** имаме 2 числа, а в **`p5`** имаме 1 число. В другите групи **нямаме числа**. Като приложим гореспоменатата формула, изчисляваме процентите на всяка група. Ако във формулата умножим по **100**, вместо по **100.0** ще получим за група **`p1`** 66%, а за група **`p5`** – 33% (няма да има дробна част).
+After we read the numbers in group **`p1`** we have 2 numbers, and in **`p5`** we have 1 number. We have **no numbers** in the other groups. When applying the above-mentioned formula, we calculate the percentages of each group. When we multiply within the formula by **100**, instead of **100.0** we’ll attain for group **`p1`** 66%, and for group **`p5`** – 33% (we won’t have a fractional part).
 
-#### Извеждане на краен резултат
+#### Final Output
   
-Остава само да отпечатаме получените резултати. В условието е казано, че процентите трябва да са **с точност две цифри след десетичната точка**. Това ще постигнем, като в метода **`String.format(…)`** зададем формат “**`%.2f%%`**”:
+We are left with printing the results. The condition states, that the percentages must be **within two points after the decimal point**. We are going to achieve this by, as in the method **`String.format(…)`** we set the format “**`%.2f%%`**”:
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
-### Тестване в Judge системата
+### Testing using the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#0](https://judge.softuni.bg/Contests/Practice/Index/656#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#0](https://judge.softuni.bg/Contests/Practice/Index/656#0).
 
 
 ## Задача: умната Лили
