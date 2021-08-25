@@ -161,9 +161,9 @@ We are left with printing the results. The condition states, that the percentage
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#0](https://judge.softuni.bg/Contests/Practice/Index/656#0).
 
 
-## Задача: умната Лили
+## Problem: Smart Lilly
 
-Лили вече е на **N години**. За всеки свой **рожден ден** тя получава подарък. За **нечетните** рождени дни (1, 3, 5, …, n) получава **играчки**, а за всеки **четен** (2, 4, 6, …, n) получава **пари**. За **втория рожден ден** получава **10.00 лв.**, като **сумата се увеличава с 10.00 лв. за всеки следващ четен рожден ден** (2 -> 10, 4 -> 20, 6 -> 30 и т.н.). През годините Лили тайно е спестявала парите. **Братът** на Лили, в годините, в които тя **получава пари**, **взима по 1.00 лев** от тях. Лили **продала играчките**, получени през годините, **всяка за P лева** и добавила сумата към спестените пари. С парите искала да си **купи пералня за X лева**. Напишете програма, която да пресмята **колко пари е събрала** и дали ѝ **стигат да си купи пералня**.
+Lilly is **N years old**. For her every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, as **he amount of money increases by 10.00 USD. for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** in the years when she **received money**, **he takes 1.00 USD** every time. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough ** to buy a washing machine**.
 
 ### Входни данни
 
