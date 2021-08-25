@@ -43,7 +43,7 @@ We can solve the problem using a **`for` loop** , which will assign values from 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#0](https://judge.softuni.bg/Contests/Practice/Index/655#0).
 
 
-You should get **100 точки** (fully accurate solution).
+You should get **100 points** (fully accurate solution).
 
 ## Code Snippet for for loop in IntelliJ IDEA
 
@@ -53,7 +53,7 @@ In software development, we regularly need to write loops, dozens of times a day
 
 **Try it yourself**, in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
 
-### Example: Numbers Ending in 7 
+### Example: Numbers Ending in 7
 
 Write a program that finds all numbers within the range [**1 … 1000**], that end with 7. 
 
@@ -68,7 +68,7 @@ We can solve the problem by combining a **`for` loop** which will go through the
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1](https://judge.softuni.bg/Contests/Practice/Index/655#1).
 
 
-### Example: all latin letters
+### Example: Latin Letters 
 
 Write a program which prints the letters from the latin alphabet: **a, b, c, …, z**.
 
@@ -83,7 +83,7 @@ It is useful to know that the **`for` loops** don't work only with numbers. We c
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#2](https://judge.softuni.bg/Contests/Practice/Index/655#2).
 
 
-### Example: Summing of numbers
+### Example: Sum Numbers 
 
 Write a program that **reads `n` whole numbers from the console and calculates the sum**.
 
@@ -166,7 +166,7 @@ The problem is completely identical to the previous one but this time we will st
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#5](https://judge.softuni.bg/Contests/Practice/Index/655#5).
 
 
-### Пример: Left and Right Sum
+### Example: Left and Right Sum
 
 Write a program that reads **2 \* n whole numbers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
 
