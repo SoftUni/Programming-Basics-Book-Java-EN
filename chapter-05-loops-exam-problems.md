@@ -222,17 +222,17 @@ We begin again by choosing the appropriate **data types** and names for the vari
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-За да решим задачата, ще се нуждаем от няколко помощни променливи – за **броя на играчките** (**`numberOfToys`**), за **спестените пари** (**`savedMoney`**) и за **парите, получени на всеки рожден ден** (**`moneyForBirthday`**). Като присвояваме на **`moneyForBirthday`** първоначална стойност 10, тъй като по условие е дадено, че първата сума, която Лили получава, е 10 лв.
+For us to solve the problem, we are going to need some helper variables – for the **toy count** (**`numberOfToys`**), for the **saved money** (**`savedMoney`**) and for the **money she receives each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly gets is 10 USD.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
-С **`for` цикъл** преминаваме през всеки рожден ден на Лили. Когато броячът в нашия цикъл (което съответства на годините на Лили) е **четно число**, това означава, че Лили е **получила пари** и съответно прибавяме тези пари към общите ѝ спестявания. Едновременно с това **изваждаме по 1 лев** - парите, които брат ѝ взема. След това **увеличаваме** стойността на променливата **`moneyForBirthday`**, т.е. увеличаваме с 10 сумата, която тя ще получи на следващия си рожден ден. Обратно, когато броячът (годините на Лили) е **нечетно число**, увеличаваме броя на **играчките**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) **на 2** – когато остатъкът е 0, числото е четно, а при остатък 1 - нечетно.
+Using a **`for` loop** we iterate through each of Lilly’s birthdays. When the counter in our loop (which equates to Lilly’s age) is an **even number**, this means that Lilly **receives money** and we add it up to her savings. Simultaneously with this, we **subtract 1 USD** - the money her brother takes. After that, we **increase** the variable **`moneyForBirthday`**, i.e. we increase by 10 the sum she will get on her next birthday. The opposite of that when the counter (Lilly's age) is an **odd number**, we increase the **toy counter**. We do the parity check by **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, when we have a remainder of 1 - it is odd.
 
-Към спестяванията на Лили прибавяме и парите от продадените играчки:
+We also add the money from the sold toys to Lilly’s savings:
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
-Накрая остава да отпечатаме получените резултати, като се съобразим с форматирането, указано в условието, т.е. сумата трябва да е **закръглена до две цифри след десетичния знак**:
+And so we are left with printing the results, we have to take into consideration the formating specified in the description, i.e. sum needs to be **rounded up to 2 digits after the decimal point**:
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
