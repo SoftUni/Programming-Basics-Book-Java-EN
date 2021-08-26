@@ -207,18 +207,18 @@ Print on the console a single line:
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
 <td valign="top"><p><strong>She has saved 550 USD.</strong>. <strong>She sold</strong> <strong>11 toys</strong> <strong>3 USD.</strong> each = <strong>33 USD</strong>. Her brother <strong>has taken for 10 years 1 USD each year</strong> = <strong>10USD</strong>. <strong>The remainder</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
-<strong>573 &lt; 1570.98</strong> – <strong>не е успяла</strong> да купи пералня. <strong>Не ѝ достигат</strong> 1570.98–573 = <strong>997.98 лв.</strong></p></td>
+<strong>573 &lt; 1570.98</strong> – <strong>she did not manage to</strong> buy a washing machine. <strong>The insufficiency amount is</strong> 1570.98–573 = <strong>997.98 USD.</strong></p></td>
 </tr>
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Решението на тази задача, подобно на предходната, също можем да разделим мислено на три части – **прочитане** на входните данни, **обработката** им и **извеждане** на резултат.
+The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** them and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-Отново започваме с избора на подходящи **типове данни** и имена на променливите. За годините на Лили (**`age`**) и единичната цена на играчката (**`presentPrice`**) по условие е дадено, че ще са **цели числа**. Затова ще използваме **типа `int`**. За цената на пералнята (**`priceOfWashingMachine`**) знаем, че е **дробно число и избираме `double`**. В кода по-горе **декларираме** и **инициализираме** (присвояваме стойност) променливите.
+We begin again by choosing the appropriate **data types** and names for the variables. For Lilly’s years (**`age`**) and the unit price of one toy (**`presentPrice`**), the condition states it has to be **whole numbers**. That’s why we’ll use the **`int` type**. For the washing machine price (**`priceOfWashingMachine`**) we know, that it is a **real number and we choose `double`**. In the code above we **declare** and **initialize** (assign the value) to the variables.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
