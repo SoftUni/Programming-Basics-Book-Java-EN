@@ -165,48 +165,48 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#0
 
 Lilly is **N years old**. For her every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, as **he amount of money increases by 10.00 USD. for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** in the years when she **received money**, **he takes 1.00 USD** every time. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
-### Входни данни
+### Input Data
 
-От конзолата се прочитат **3 числа**, всяко на отделен ред:
+Output Data **3 numbers** from the console, each on a separate line:
 
-   - **Възрастта** на Лили – **цяло число** в интервала [**1 … 77**].
-   - **Цената на пералнята** – число в интервала [**1.00 … 10 000.00**].
-   - **Единична цена на играчка** – **цяло число** в интервала [**0 … 40**].
+   - Lilly’s **age** – **whole number** in the range of [**1 … 77**].
+   - **Price of the washing machine** – number in the range of [**1.00 … 10 000.00**].
+   - **Unit price of each toy** – **whole number** in the range of [**0 … 40**].
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата един ред:
+Print on the console a single line:
 
-  * Ако парите на Лили са достатъчни:
-    * “**Yes! {N}**” – където **N** е остатъка пари след покупката.
-  * Ако парите не са достатъчни:
-    * “**No! {М}**” – където **M** е сумата, която не достига.
-  * Числата **N** и **M** трябва да са **форматирани до втория знак след десетичната точка**.
+  * If Lilly’s money is enough:
+    * “**Yes! {N}**” – where **N** is the remaining money after the purchase.
+  * If the money is not enough:
+    * “**No! {М}**” – where **M** is the insufficient amount.
+  * The numbers **N** and **M** must be **formatted up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Коментари</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">10<br>170.00<br>6</td>
 <td valign="top">Yes! 5.00</td>
-<td valign="top"><p><strong>Първи рожден ден</strong> получава <strong>играчка</strong>; <strong>2ри</strong> -> <strong>10 лв.</strong>; 3ти -> играчка; <strong>4ти</strong>  -> 10 + 10 = <strong>20 лв.</strong>; 5ти -> играчка; <strong>6ти</strong> -> 20 + 10 = <strong>30 лв.</strong>; 7ми -> играчка; <strong>8ми</strong> -> 30 + 10 = <strong>40 лв.</strong>; 9ти -> играчка; <strong>10ти</strong> -> 40 + 10 = <strong>50 лв</strong>.<br>
-<strong>Спестила е</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 лв.</strong>. Продала е <strong>5 играчки по 6 лв. = 30 лв.</strong>.<br>
-<strong>Брат ѝ взел 5 пъти по 1 лев = 5 лв</strong>. <strong>Остават</strong> -> 150 + 30 – 5 = <strong>175 лв</strong>.
-<strong>175 &gt;= 170</strong> (цената на пералнята) <strong>успяла</strong> е да я купи и са ѝ <strong>останали</strong> 175-170 = <strong>5 лв</strong>.
+<td valign="top"><p><strong>For her first birthday,</strong> she receives <strong>a toy</strong>; <strong>2nd</strong> -> <strong>10 USD.</strong>; 3rd -> toy; <strong>4th</strong>  -> 10 + 10 = <strong>20 USD.</strong>; 5th -> toy; <strong>6th</strong> -> 20 + 10 = <strong>30 USD.</strong>; 7th -> toy; <strong>8th</strong> -> 30 + 10 = <strong>40 USD.</strong>; 9th -> toy; <strong>10th</strong> -> 40 + 10 = <strong>50 USD</strong>.<br>
+<strong>She has saved</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 USD.</strong>. She sold <strong>5 toys for 6 USD. each = 30 USD.</strong>.<br>
+<strong>Her brother took 1 USD. 5 times = 5 USD</strong>. <strong>Remaining amount</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>.
+<strong>175 &gt;= 170</strong> (price of the washing machine) <strong>She was able</strong> to buy it and has a <strong>remaining amount of money</strong> 175-170 = <strong>5 USD</strong>.
 </p></td>
 </tr>
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>Спестила е 550 лв.</strong>. <strong>Продала</strong> е <strong>11 играчки</strong> по <strong>3 лв.</strong> = <strong>33 лв</strong>. Брат ѝ <strong>взимал 10 години по 1 лев</strong> = <strong>10лв</strong>. <strong>Останали</strong> 550 + 33 – 10 = <strong>573 лв.</strong> <br>
+<td valign="top"><p><strong>She has saved 550 USD.</strong>. <strong>She sold</strong> <strong>11 toys</strong> <strong>3 USD.</strong> each = <strong>33 USD</strong>. Her brother <strong>has taken for 10 years 1 USD each year</strong> = <strong>10USD</strong>. <strong>The remainder</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
 <strong>573 &lt; 1570.98</strong> – <strong>не е успяла</strong> да купи пералня. <strong>Не ѝ достигат</strong> 1570.98–573 = <strong>997.98 лв.</strong></p></td>
 </tr>
 </tbody>
