@@ -120,7 +120,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#3
 
 ### Example: Max Number
 
-Write a program that reads **n whole numbers** (**n** > 0) and finds the **the Max Number** (the smallest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
+Write a program that inputs **n whole numbers** (**n** > 0) and finds the **the Max Number** (the smallest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
 #### Sample input and output
 
@@ -145,7 +145,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#4
 
 ### Example: Min Number
 
-Write a program that reads **n whole numbers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Exapmles: 
+Write a program that inputs **n whole numbers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Exapmles: 
 
 #### Sample input and output
 
@@ -168,7 +168,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#5
 
 ### Example: Left and Right Sum
 
-Write a program that reads **2 \* n whole numbers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
+Write a program that inputs **2 \* n whole numbers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
 
 #### Sample input and output
 
@@ -189,7 +189,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#6
 
 ### Example: Odd Even Sum 
 
-Write a program that reads **n цели числа** and checks is **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
+Write a program that inputs **n whole numbers** and checks is **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
 
 #### Sample input and output
 
@@ -205,80 +205,80 @@ We input the numbers one by one and calculate the two **sums** (of the numbers o
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-**`+=`** е често използван **комбиниран оператор за присвояване**, добавя стойността на десния операнд към левия операнд и присвоява крайния резултат на левия операнд.
-**C += A** е еквивалентно на **C = C + A**.
+**`+=`** is **combined assigment operator** that is being frequently used, it adds the value of the right to the left operand and then assignes the result to the left operand. 
+**C += A** is equivalent to **C = C + A**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#7](https://judge.softuni.bg/Contests/Practice/Index/655#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#7](https://judge.softuni.bg/Contests/Practice/Index/655#7).
 
 
-### Пример: сумиране на гласните букви
+### Exapmle: Vowels Sum 
 
-Да се напише програма, която въвежда **текст** (стринг), изчислява и отпечатва **сумата от стойностите на гласните букви** според таблицата по-долу:
+Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
 | a | e | i | o | u | 
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 2 | 3 | 4 | 5 |
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход | Вход | Изход | 
+| Input | Output | Input | Output | 
 | --- | --- | --- | --- |
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Прочитаме входния текст **`s`**, зануляваме сумата и завъртаме цикъл от **0** до **`s.length() - 1`** (дължината на текста -1). Проверяваме всяка буква **`s.charAt(i)`** дали е гласна и съответно добавяме към сумата стойността ѝ.
+We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it's a vowel and add its value to the sum. 
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#8](https://judge.softuni.bg/Contests/Practice/Index/655#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#8](https://judge.softuni.bg/Contests/Practice/Index/655#8).
 
 
-## Какво научихме от тази глава?
+## What have we learned from this chapter?
 
-Можем да повтаряме блок код с **`for` цикъл**:
+We can repeat block of code using **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-Можем да четем поредица от **`n`** числа от конзолата:
+We can read series of **`n`** number from the console:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Упражнения: повторения (цикли)
+## Exercises: Repetitons (Loops)
 
-След като се запознахме с циклите, идва време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение.
+After we got acquainted with the loops it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Lets solve а some problems for exersise.
 
-### Създаване на нов проект в IntelliJ IDEA
+### Creating new project in IntelliJ IDEA
 
-Създаваме нов проект в IntelliJ IDEA, за да организираме по-добре решенията на задачите за упражнение, като за всяка задача трябва да създадем по един отделен клас.
+We start by creating a new project in IntelliJ IDEA to better organise our solutions for the exersise. For each task we will create a separate class.
 
-Стартираме IntelliJ IDEA, избираме: **[Create New Project]**.
+Start IntelliJ IDEA and select: **[Create New Project]**.
 
 ![](assets/chapter-5-1-images/10.New-project-01.png)
 
-след това в лявото поле избираме Java, ако не сме посочили **PROJECT SDK: ** избираме пътя до инсталираната Java **JDK** директор след което натискаме **[Next]**.
+after that in the left field select Java, if **PROJECT SDK: ** is empty we select the path to the Java **JDK** installation directory and click **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-02.png)
 
-На следващия прозорец отново избираме **[Next]**.
+In the next window we again click **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-03.png)
 
-Наименуваме проекта (Project name:) **Loops** и избираме директория където да го запазим (Project location:).
-След което натискаме **[Finish]**.
+We name the project (Project name:) **Loops** and select the directory where the project will be saved (Project location:).
+After that we click **[Finish]**.
 
 ![](assets/chapter-5-1-images/10.New-project-04.png)
  
-На следващият прозорец избираме **[OK]** за да създадем **Project location**, ако не сме създали предварително.
+In the next window we click on the **[OK]** button to create **Project location** if the directory doesn't exist.
 
 ![](assets/chapter-5-1-images/10.New-project-05.png)
 
-Така създадохме нов проект. Ако в левият прозорец натиснем триъгълника пред **Loops**, ще се отвори и самата структура на проекта.
+We created a new project. If we click the triangle in front of **Loops** in the left window we will open the structure of project.
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
