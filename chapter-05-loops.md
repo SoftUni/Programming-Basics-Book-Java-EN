@@ -261,16 +261,16 @@ Start IntelliJ IDEA and select: **[Create New Project]**.
 
 ![](assets/chapter-5-1-images/10.New-project-01.png)
 
-after that in the left field select Java, if **PROJECT SDK: ** is empty we select the path to the Java **JDK** installation directory and click **[Next]**.
+after that in the left field select Java, if **PROJECT SDK: ** is empty we select the path to the Java **JDK** installation directory and click on the button **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-02.png)
 
-In the next window we again click **[Next]**.
+In the next window we again click on the button **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-03.png)
 
 We name the project (Project name:) **Loops** and select the directory where the project will be saved (Project location:).
-After that we click **[Finish]**.
+After that we click on the button **[Finish]**.
 
 ![](assets/chapter-5-1-images/10.New-project-04.png)
  
@@ -278,7 +278,7 @@ In the next window we click on the **[OK]** button to create **Project location*
 
 ![](assets/chapter-5-1-images/10.New-project-05.png)
 
-We created a new project. If we click the triangle in front of **Loops** in the left window we will open the structure of project.
+We created a new project. If we click on the triangle in front of **Loops** in the left window we will open the structure of project.
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
