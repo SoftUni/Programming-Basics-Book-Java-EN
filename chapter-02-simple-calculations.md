@@ -1,27 +1,27 @@
 # Chapter 2.1. Simple Calculations
 
+In this chapter, we are going to get familiar with the following concepts and programming techniques:
 -	What is **system console**?
-In this chapter we are going to get familiar with the following concepts and programming techniques:
 - How to **read numbers** from the system console?
 - How to work with **data types and variables**, which are necessary to process numbers and the operations between them?
-- How to **print** output (a number) on the console?
+- How to **print** (a number) on the console?
 - How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation?
 
 ## Video
 
 <div class="video-player">
-  Watch a video tutorial on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
+  Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
 </div>
 
 ## The System Console
 
-Usually called "**the console**", the system console or more computer console, represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
+The system console or the computer console, usually called just a **console**,  represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
 
-Generally, the system console represents a text terminal which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. Usually, it looks like a black colored window, in which we write and perform **console commands** and print the result in the form of a text. In **Windows** the console looks like this:
+Generally, the system console represents a text terminal which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. Usually, it looks like a black-colored window, in which we write and perform **console commands** and print the result in the form of a text. In **Windows**, the console looks like this:
 
 ![](/assets/chapter-2-1-images/00.Console-example.png)
 
-In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows it is called **Command Prompt**, while in Linux and macOS it is called **Terminal**. The console runs console applications. They read text as an input from the command line and print the output as a text on the console. In this book we are going to learn programming mostly through creating **console applications**.
+In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows, it is called **Command Prompt**, while in Linux and macOS, it is called **Terminal**. The console runs console applications. They read the text as input from the command line and print the output as a text on the console. In this book, we are going to learn programming mostly through creating **console applications**.
 
 This is how the console looks in **Linux**:
 
