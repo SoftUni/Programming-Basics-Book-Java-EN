@@ -13,7 +13,7 @@ In this chapter, we are going to get familiar with the following concepts and pr
   Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
 </div>
 
-## The System Console
+## The system console
 
 The system console or the computer console, usually called just a **console**,  represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
 
@@ -27,26 +27,26 @@ This is how the console looks in **Linux**:
 
 ![](/assets/chapter-2-1-images/00.Linux-terminal-example.png)
 
-## Reading Integers From The Console
+## Reading integers from the console
 
-In **Java** we have several options to read an input from **the console**. One is through the use of the built-in class **`Scanner`** which we are going to use now and the other one is using the  **`BufferedReader`**. The second is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
+In **Java** we have several options to read an input from **the console**. The one way is via the built-in class **` Scanner`**, which we will use now, and the other is via **` BufferedReader`**. The second one is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
 
-In order to read an **Integer** (not a float) **number** from the console first we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line above:
+То read an **integer** (not floating-point number) from the console we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line at the top:
 
 ```java
 import java.util.Scanner;
 ```
 
-Then in the `main(…)` method of the program we have to create a new `Scanner` instance which to attach to the system input. After the created `scanner` reader we can read integers, floating-point numbers, text, etc. For example, with `.nextInt()` we read the next following integer given as input:
+Then in the `main(…)` method of the program, we have to create a new `Scanner` instance used to attach the system input. After that (via the created `scanner` reader) we can read integers, floating-point numbers, text, etc. For example, with `.nextInt()` we read the next integer given as input:
 
 ```java
 Scanner scanner = new Scanner(System.in);
 int num = scanner.nextInt();
 ```
 
-Now in the variable **`num`** of integer type **`int`** we have read given as input from **the console**.
+In the example above, in the variable **`num`** of integer type **`int`**, we will have a value read as input from **the console**.
 
-Java is **highly typed language**, this means that the variables have type which is determine at compile time and can not change on the go (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
+Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
 ### Example: Calculating a Square Area With Side **а**
  
