@@ -21,11 +21,11 @@ In programming, we can compare values using the following **operators**:
 
 When comparing values, the result is of the Boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
 
-### Examples for Comparing Numbers
+### Examples for comparing numbers
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-### Comparison Operators
+### Comparison operators
 
 In Java, we can use the following comparison operators when comparing numbers:
 
@@ -57,7 +57,7 @@ The following example demonstrates how to use comparison operators in expression
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-## Simple If Conditions
+## Simple If conditions
 
 In programming, we often **check given conditions** and perform different actions depending on the result. This is done by **`if`** conditional statement, which has the following structure:
 
@@ -68,7 +68,7 @@ if (condition) {
 }
 ```
 
-### Example: Excellent Grade
+### Example: Excellent grade
 
 **Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -76,13 +76,13 @@ if (condition) {
 
 Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**" text.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here:
 [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
 
-## If-Else Conditions
+## If-Else conditions
 
 Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning **if(condition)**) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
 
@@ -96,18 +96,18 @@ if (condition) {
 }
 ```
 
-### Example: Excellent Grade or Not
+### Example: Excellent grade or not
 
 Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
 
-## The Curly Brackets {} After If / Else 
+## The curly brackets {} after If / Else 
 
 When we have **only one command** in the body of the **`if` construction**, we can **skip the curly brackets**. When we want to execute **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
@@ -135,11 +135,11 @@ Executing the code with curly brackets will output the following result on the c
 <td>Both use cases are <strong>correct</strong> and could be used depending on the concrete case and/or particular requirements, but always must be careful and check with expected results.</td>
 </tr></table>
 
-### Example: Even or Odd Number
+### Example: Even or odd number
 
 Write a program that checks whether an integer is **even** or **odd**.
 
-### Hint and Guidelines
+### Hint and guidelines
 
 We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns a **remainder by dividing** two numbers.
 
@@ -149,16 +149,16 @@ Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Example: The greater Number
+### Example: The greater number
 
 Write a program that reads two integer numbers, from the console, and return the greater of them. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
-### Hint and Guidelines
+### Hint and guidelines
 
 Our first task is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what we have learned so far.
 
@@ -168,12 +168,12 @@ Executing the above code will output the following result for numbers 3 and 5:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
-## Variable Scope
+## Variable scope
 
 Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
 
@@ -181,7 +181,7 @@ In the example below we will get an **error**, because on the last line we are t
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-## Sequence of If-Else Conditions
+## Sequence of If-Else conditions
 
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. In such cases, we can apply the construction  **`if-else if… -else`**. For this purpose, we use the following format:
 
@@ -197,11 +197,11 @@ if (condition) {
 }
 ```
 
-### Example: Digits 0..9 to Text
+### Example: Digits 0..9 to text
 
 Print the digit in rage from 1 to 9 in English (digit is read from the console). 
 
-### Hint and Guidelines
+### Hint and guidelines
 
 First, we read the digit from the console. Then using a **sequence of conditions** and print the relevant English word:
 
@@ -224,12 +224,12 @@ if (num == 1) {
 
 The program logic from the above example **sequentially compares** the input digit from the console with the numbers from 1 to 9. **Each following comparison is being performed only in case the preceding comparison is false**. If none of the **`if`** statements return true, then the last **`else` clause** is executed.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-## Exercises: Sequence of If-Else Conditions
+## Exercises: Sequence of If-Else conditions
 
 To consolidate our knowledge of the conditional constructions **`if`** and **`if-else`**, let's solve several practical problems.
 
@@ -245,7 +245,7 @@ An **integer** is read from the console - the number of points. A **bonus score*
  - If the integer is **even** -> +1 bonus score
  - If the integer is odd, with **last digit equals 5** -> +2 bonus score 
  
-#### Sample Input and Output
+#### Sample input and output
 
 | Input | Output |
 | --- | ---- |
@@ -253,8 +253,6 @@ An **integer** is read from the console - the number of points. A **bonus score*
 | 175 | 37<br>212 |
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
-
-#### Sample Input and Output
 
 We can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
 
@@ -264,7 +262,7 @@ Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
 
@@ -273,7 +271,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5
 
 Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the times of these from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **zeroed at the front** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Sample Input and Output
+#### Sample input and output
 
 | Input | Output |
 | --- | ---- |
@@ -282,7 +280,7 @@ Three athletes finish in a particular number of **seconds** (between **1** and *
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 The task has several solutions, but in the context of this chapter, we can do the following:
 First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, we will have to calculate the number of minutes and seconds in the range 0 to 59:
@@ -298,7 +296,7 @@ Another solution, which does not use **`if-else`** constructs, is more appropria
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
 
@@ -323,7 +321,7 @@ The program will receive three input lines:
 - Second line: input unit.
 - Third line: output unit (for the result).
 
-#### Sample Input and Output
+#### Sample input and output
 
 | Input | Output |
 | --- | ---- |
@@ -331,7 +329,7 @@ The program will receive three input lines:
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the condition, we can convert **between meters and some other unit**. Then, first calculate the result from converting the input number in meters, doing a set of checks to define the input unit. Then calculate the output unit.
 
@@ -341,7 +339,7 @@ Read the input data. We can use the **`toLowerCase()`** function, which will mak
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
 
@@ -364,7 +362,7 @@ By pressing, a combination of buttons [**Shift + F9**], you run the current prog
 
 By pressing, a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints**, which suspend program execution at a specific point.
 
-## Exercises: Simple Conditions
+## Exercises: Simple conditions
 
 To get a better understanding of what we learned, let's solve a few practical exercises.
 
@@ -385,7 +383,7 @@ We now have an empty Java project:
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Exercise: Check for Excellent Grade
+### Exercise: Check for excellent grade
 
 The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
 
@@ -398,7 +396,7 @@ The first task of the exercises on the topic is to write a **program that reads 
 | 5.5 | Excellent! |
 | 5.49 | (no output) |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**].
 
@@ -420,7 +418,7 @@ To do this, go to the body of the method **`main (string [] args)`** and place t
 
  ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
@@ -429,7 +427,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0
  ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
-### Exercise: Excellent Grade or Not
+### Exercise: Excellent grade or not
 
 The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
@@ -442,7 +440,7 @@ The next task of the exercises on the topic is to write a **program that reads i
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
 
@@ -455,14 +453,14 @@ We already have a class with one console application in it. It remains to **writ
  ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Exercise: Even or Odd Number
+### Exercise: Even or odd number
 
 The next task is to write a **program that reads input data from the console**. As input data enter **an integer**. As output print **even** or **odd**.
 
@@ -475,7 +473,7 @@ The next task is to write a **program that reads input data from the console**. 
 | 25 | odd |
 | 1024 | even |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
   
@@ -485,12 +483,12 @@ In the main method, **`public static void main()`** write the code to solve the 
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Exercise: Find the Greater Number
+### Exercise: Find the greater number
 
 The next task is to write a **program that reads input data from the console**. As input data, enter **two integers** each on a separate line. As output print the greater integer of them.
 
@@ -503,7 +501,7 @@ The next task is to write a **program that reads input data from the console**. 
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
 
@@ -513,7 +511,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
@@ -531,11 +529,11 @@ The next task is to write a **program that reads input data from the console**. 
 | 9 | nine |
 | 10 | number too big |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To solve the problem, we can use sequential **`if-else`** statements to cover **all eleven possible cases**.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
@@ -552,11 +550,11 @@ The next task is to write a **program that reads input data from the console**. 
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To solve the problem is necessary one **`if-else`** statement.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
 
@@ -573,7 +571,7 @@ The next task is to write a **program that reads input data from the console**. 
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
 
@@ -592,11 +590,11 @@ The next task is to write a **program that reads input data from the console**. 
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 Before comparing words, turn them to lowercase so that the size of the letters (uppercase/lowercase) does not affect: **`String wordFirst = scanner.next().toLowerCase().`**
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
 
@@ -622,7 +620,7 @@ The next task is to write a **program that reads input data from the console**. 
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
 
@@ -649,7 +647,7 @@ Format the output up to **3 digits after the decimal point**.
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
 
@@ -668,11 +666,11 @@ The next task is to write a **program that reads input data from the console**. 
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To solve the problem, add 15 minutes and do a few checks. If the minutes exceed 59, **increase the hours by 1** and **decrease the minutes by 60**. Similarly, consider the case when the hours exceed 23. When printing the minutes, check for **leading zero**.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
 
@@ -688,7 +686,7 @@ The next task is to write a **program that reads input data from the console**. 
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
 
@@ -705,10 +703,10 @@ The next task is to write a **program that reads input data from the console**. 
 | 42 | forty two |
 | 6  | six |
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To solve the problem, first, check for **one-digit numbers**, and if the number is one-digit, print the appropriate text for it. Then check for **two-digit numbers**. Print them in two parts: left part (**tens** = number / 10) and right part (**units** = number% 10). If the number has three digits, it must be 100 and considered as a special case.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
