@@ -1,6 +1,6 @@
 # Chapter 8.1. Practical Exam Preparation – Part I
 
-In **the current chapter** we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
+In **the current chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 
 ## Video
@@ -14,7 +14,7 @@ In **the current chapter** we will examine a few **problems** with a level of **
 
 ## Practical exam on “Programming Basic”
 
-The **"Programming Basics"** course ends with **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** ne of the **topics** studied in the course. The themes of the problems are as follows:
+The **"Programming Basics"** course ends with a **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** one of the **topics** studied in the course. The themes of the problems are as follows:
 
 - Problem with simple calculations \(no conditions\)
 - Problem with simple condition
@@ -25,9 +25,9 @@ The **"Programming Basics"** course ends with **practical exam**. It includes **
 
 ## The Online Evaluation System (Judge)
 
-**All exams and exercises** from this book are automatically **tested** through the online **Judge система**: [https://judge.softuni.bg](https://judge.softuni.bg). For **each** of the problems there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system you can log in with your **softuni.bg account**.
+**All exams and exercises** from this book are automatically **tested** through the online **Judge system**: [https://judge.softuni.bg](https://judge.softuni.bg). For **each** of the problems, there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system, you can log in with your **softuni.bg account**.
 
-**How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
+**How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile it as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
 
 ## Simple Calculations – Problems
@@ -39,7 +39,7 @@ The **"Programming Basics"** course ends with **practical exam**. It includes **
 <table>
    <tr>
       <td width="60%">
-        <b>А triangle in the plane</b> is defined by the coordinates of its three vertices. First the vertex <b>(x1, y1)</b> is set. СThen the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b>, which <b>lie on a common horizontal line</b> (i.e. they have the same Y coordinates). Write a program that calculates <b>the area of the triangle</b> by the coordinates of its three vertices.
+        <b>A triangle in the plane</b> is defined by the coordinates of its three vertices. First, the vertex <b>(x1, y1)</b> is set. Then the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b>, which <b>lie on a common horizontal line</b> (i.e. they have the same Y coordinates). Write a program that calculates <b>the area of the triangle</b> by the coordinates of its three vertices.
       </td>
       <td>
          <img src="assets/chapter-8-1-images/01.Triangle-area-01.png"/>
@@ -68,15 +68,15 @@ Print on the console **the area of the triangle**.
 
 #### Hints and Guidelines
 
-It is very important when facing such types of tasks where some coordinates are given to pay attention to **the order** in which they are submitted, and to properly understand which of the coordinates we will use and how. In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes incorrect. First, we write the code that reads the input data:
+It is very important when facing such types of tasks where some coordinates are given to pay attention to **the order** in which they are submitted and to properly understand which of the coordinates we will use and how. In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes incorrect. First, we write the code that reads the input data:
 
 ![](assets/chapter-8-1-images/01.Triangle-area-03.png)
 
-We have to calculate **the side** and **the height** of the triangle. From the pictures, as well as the condition **`y2 = y3`**, we notice that the one **side** is always parallel to the horizontal axis. This means that its **length** is equal to the length of the segment between its coordinates **`x2` and `x3`**, which is equal to the difference between the larger and the smaller coordinates. Analogically, we can calculate **the height**. It will always be equal to the difference between **`y1` and `y2`** (or **`y3`**, as they are equal). Since we do not know if **`x2`** is greater than **`x3`**, or **`y1`** will be below or above the triangle side, we will use **the absolute values** of the difference to always get positive numbers, because one segment cannot have a negative length.
+We have to calculate **the side** and **the height** of the triangle. From the pictures, as well as the condition **`y2 = y3`**, we notice that the one **side** is always parallel to the horizontal axis. This means that its **length** is equal to the length of the segment between its coordinates **`x2` and `x3`**, which is equal to the difference between the larger and the smaller coordinates. Analogically, we can calculate **the height**. It will always be equal to the difference between **`y1` and `y2`** (or **`y3`**, as they are equal). Since we do not know if **`x2`** is greater than **`x3`**, or **`y1`** will be below or above the triangle side, we will use **the absolute values** of the difference to always get positive numbers because one segment cannot have a negative length.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-04.png)
 
-we will calculate it using our familiar formula for finding an **area of a triangle**. An important thing to consider is that although we get only integers at an input, **the area** will not always be an integer. That's why we use a variable of **`double`** type for the area. We have to convert the right side of the equation, because if we give whole numbers as equation parameters, our result will also be an integer.
+we will calculate it using our familiar formula for finding an **area of a triangle**. An important thing to consider is that although we get only integers at an input, **the area** will not always be an integer. That's why we use a variable of **`double`** type for the area. We have to convert the right side of the equation because if we give whole numbers as equation parameters, our result will also be an integer.
 
 
 ![](assets/chapter-8-1-images/01.Triangle-area-05.png)
@@ -115,11 +115,11 @@ Print on the console **the minimum number of courses** needed to transport the b
 
 |Input|Output|Comments|
 |----|----|----|
-|355<br>3<br>10|12|We have **3** workers, each transporting **10** bricks per course. In total, workers are transporting **30** bricks per course. To transport **355** bricks, exactly **12** courses are needed: **11** complete courses carry **330** bricks and the last **12**-th course carries the last **25** bricks.|
+|355<br>3<br>10|12|We have **3** workers, each transporting **10** bricks per course. In total, workers are transporting **30** bricks per course. To transport **355** bricks, exactly **12** courses are needed: **11** complete courses carry **330** bricks and the last twelfth course carries the last **25** bricks.|
 
 |Input|Output|Comments|
 |----|----|----|
-|5<br>12<br>30|1|We have **5** workers, each transporting **30** bricks per course. In total, workers are transporting **150** bricks per course. In order to transport **5** bricks, only **1** course is sufficient (although incomplete, with only 5 bricks).|
+|5<br>12<br>30|1|We have **5** workers, each transporting **30** bricks per course. In total, workers are transporting **150** bricks per course. To transport **5** bricks, only **1** course is sufficient (although incomplete, with only 5 bricks).|
 
 #### Hints and Guidelines
 
@@ -127,7 +127,7 @@ The input is standard, and we only need to be careful about the sequence in whic
 
 ![](assets/chapter-8-1-images/02.Bricks-01.png)
 
-ПWe calculate how many **bricks** the workers transport in a single course.
+We calculate how many **bricks** the workers transport in a single course.
 
 ![](assets/chapter-8-1-images/02.Bricks-02.png)
 
@@ -155,9 +155,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#1
 #### Input
 
 The console reads **3 integer numbers** (one per line):
-- On the first line the number "first" is read – **one end of the segment**.
-- On the second line the number "second" is read – **the other end of the segment**.
-- On the third line the number "point" is read – **the location of the point**.
+- On the first line, the number "first" is read – **one end of the segment**.
+- On the second line, the number "second" is read – **the other end of the segment**.
+- On the third line, the number "point" is read – **the location of the point**.
 
 All input numbers are integers in the range [**-1000 … 1000**].
 
@@ -187,7 +187,7 @@ We read the input from the console.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-04.png)
 
-Since we do not know which **point** is on the left and which is on the right, we will create two variables to mark this. ТSince the **left point** is always the one with the smaller **x coordinate**, we will use **`Math.Min(…)`** to find it.  Accordingly, **the right one** is always the one with a larger **x coordinate** and we will use **`Math.Max(…)`**. We will also find the distance from **point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.Abs(…)`** to get a positive result.
+Since we do not know which **point** is on the left and which is on the right, we will create two variables to mark this. Since the **left point** is always the one with the smaller **x coordinate**, we will use **`Math.Min(…)`** to find it.  Accordingly, **the right one** is always the one with a larger **x coordinate** and we will use **`Math.Max(…)`**. We will also find the distance from **point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.Abs(…)`** to get a positive result.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-05.png)
 
@@ -226,7 +226,7 @@ All input numbers are integers in the range **[-1000 … 1000]**.
 
 Print on the console "**in**" or "**out**" – whether the point is **inside** or **outside** the figure (the outline counts as inside).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |----|----|----|----|
@@ -238,18 +238,18 @@ Print on the console "**in**" or "**out**" – whether the point is **inside** o
 
 #### Hints and Guidelines
 
-In order to find whether the **point** is in the figure, we will divide **the figure** into 2 rectangles:
+To find whether our **point** is in the figure, we will divide **the figure** into 2 rectangles:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-02.png)
 ![](assets/chapter-8-1-images/04.Point-in-figure-03.png)
 
-A sufficient condition is **the point** to be located in one of them, in order to be in **the figure**.
+A sufficient condition is **a point** to be located in one of them, to be in **the figure**.
 
 We read the input data from the console:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-04.png)
 
-We will initialize two variables that will mark whether **the point** is in one of the rectangles. When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It is enough **only one** of them to be **`true`**, so that the point is in the figure.
+We will initialize two variables that will mark whether **the point** is in one of the rectangles. When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It is enough **only one** of them to be **`true`** so that the point is in the figure.
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
@@ -264,13 +264,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#3
 
 ### Problem: Date After 5 days
 
-There are two numbers given - **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **5 days a particular date**. For example, 5 days after **28.03** is the date **2.04**. e assume that the months: April, June, September and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
+There are two numbers given - **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **5 days a particular date**. For example, 5 days after **28.03** is the date **2.04**. e assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
 #### Input
 
 The input is read from the console and consists of two lines:
--	On the first line we read an integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
--	On the second line we read an integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February,  …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
+-	On the first line, we read an integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
+-	On the second line, we read an integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February,  …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
 
 #### Output
 
@@ -300,7 +300,7 @@ We increase **the day** by 5.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-03.png)
 
-We check if **the day** has not exceeded the number of days in the **month**. If so, we must deduct the days of the month from the obtained day in order to calculate which day of the next month our day corresponds to.
+We check if **the day** has not exceeded the number of days in the **month**. If so, we must deduct the days of the month from the obtained day to calculate which day of the next month our day corresponds to.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-04.png)
 
@@ -308,7 +308,7 @@ After we have passed to the **next month**, this should be noted by increasing t
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-05.png)
 
-The only thing that remains is to print the result on the console. It is important to **format the output** correctly to display the leading zero in the first 9 months. This is done by adding a **formatting string**** **`%02d`** at the second element. **`0`** shpws what number must me used in that place, and **`2`** shows the number of digits that must be filled with the corresponding number.
+The only thing that remains is to print the result on the console. It is important to **format the output** correctly to display the leading zero in the first 9 months. This is done by adding a **formatting string**** **`%02d`** at the second element. **`0`** shows what number must be used in that place, and **`2`** shows the number of digits that must be filled with the corresponding number.
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
@@ -319,7 +319,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#4
 
 ### Problem: Sums of 3 Numbers
 
-There are **3 integers** given.  Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5** and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
+There are **3 integers** given.  Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
 #### Input
 
@@ -382,11 +382,11 @@ We are given **n** integers: **a1, a2, …, an**. Calculate the sums:
 
 #### Input
 
-The input data is read from the console. The first line holds an integer **n (0 ≤ n ≤ 1000)**. On the next **n** lines we are given **n** integers in the range [**-1000 … 1000**]: **a1, a2, …, an**.
+The input data is read from the console. The first line holds an integer **n (0 ≤ n ≤ 1000)**. On the next **n** lines, we are given **n** integers in the range [**-1000 … 1000**]: **a1, a2, …, an**.
 
 #### Output
 
-On the console we should print 3 lines containing the 3 sums in a format such as in the example.
+On the console, we should print 3 lines containing the 3 sums in a format such as in the example.
 
 #### Sample Input and Output
 
@@ -404,7 +404,7 @@ Since we do not know in advance how many numbers we will process, we will take t
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-02.png)
 
-To find out in which of **the three sums** we need to add the number, we will divide its **sequence number into three** and we will use the remainder. We will use the variable **`i`**, which tracks **the number of runs** of the loop, in order to find out which sequence number we are at. When the remainder of **`i/3`** is **zero**, it means we will add this number to **the first** sum, when it is **1** to the **second** one, and when it is **2** to **the third** one.
+To find out in which of **the three sums** we need to add the number, we will divide its **sequence number into three** and we will use the remainder. We will use the variable **`i`**, which tracks **the number of runs** of the loop, to find out which sequence number we are at. When the remainder of **`i/3`** is **zero**, it means we will add this number to **the first** sum, when it is **1** to the **second** one, and when it is **2** to **the third** one.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-03.png)
 
@@ -423,11 +423,11 @@ A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate *
 
 #### Input
 
-The input data is read from the console. The first line holds an integer **n** (**0 ≤ n ≤ 1000**). On the following **n** lines we are given **n** integers in the range [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
+The input data is read from the console. The first line holds an integer **n** (**0 ≤ n ≤ 1000**). On the following **n** lines, we are given **n** integers in the range [**-1000 … 1000**]: **a1**, **a2**, **…**, **an**.
 
 #### Output
 
-On the console we must print one number – **the length** of the longest increasing sequence.
+On the console, we must print one number – **the length** of the longest increasing sequence.
 
 #### Sample Input and Output
 
@@ -437,11 +437,11 @@ On the console we must print one number – **the length** of the longest increa
 
 #### Hints and Guidelines
 
-To solve this problem, we need to think in a bit **more algorithmic way**.  A **sequence of numbers** is given to us, and we need to check whether each **subsequent** one will be **larger than the previous one**, and if so, we count how long is the sequence in which this condition is fulfilled. Then we have to find **which sequence** of these is **the longest** one. To do this, let's create some variables that we will use during solving the problem.
+To solve this problem, we need to think in a bit **more algorithmic way**.  A **sequence of numbers** is given to us, and we need to check whether each **subsequent** one will be **larger than the previous one** and if so, we count how long is the sequence in which this condition is fulfilled. Then we have to find **which sequence** of these is **the longest** one. To do this, let's create some variables that we will use during solving the problem.
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-01.png)
 
-he variable **`n`** is **the count of numbers** we get from the console. In **`countCurrentLongest`** we will keep **the number of elements** in the increasing sequence we are **currently counting**. For example, in the sequence: 5, 6, 1, 2, 3 **`countCurrentLongest`** will be 2 when we reach **the second element** of the counting (5, **6**, 1, 2, 3) and will become 3 when we reach the **last element** (5, 6, 1, 2, **3**), because the increasing row 1, 2, 3 has 3 elements. We will use **`countLongest`** to keep the **longest** increasing sequence. The other variables are **`a`** – the number we are **currently in**, and **`aPrev`** – **the previous number** which we will compare with **`a`** to see if the row is **growing**.
+The variable **`n`** is **the count of numbers** we get from the console. In **`countCurrentLongest`** we will keep **the number of elements** in the increasing sequence we are **currently counting**. For example, in the sequence: 5, 6, 1, 2, 3 **`countCurrentLongest`** will be 2 when we reach **the second element** of the counting (5, **6**, 1, 2, 3) and will become 3 when we reach the **last element** (5, 6, 1, 2, **3**), because the increasing row 1, 2, 3 has 3 elements. We will use **`countLongest`** to keep the **longest** increasing sequence. The other variables are **`a`** – the number we are **currently in**, and **`aPrev`** – **the previous number** which we will compare with **`a`** to see if the row is **growing**.
 
 We begin to run the numbers and check if the present number **`a`** is larger than the previous **`aPrev`** one. If this is true, then the row **is growing**, and we need to increase its number by **1**. This is stored in the variable that tracks the length of the sequence we are currently in – **`countCurrentLongest`**. If the number **`a`** is **not greater** than the previous one, it means that **a new sequence** starts, and we have to start the count from **1**. Finally, after all the checks are done, **`aPrev`** becomes **the number** we are **currently** using, and we start the loop from the beginning with **the next** entered **`a`**.
 
@@ -464,7 +464,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#7
 
 ## Drawing Figures in the console – Problems
 
-**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. A logical deductions, simple calculations and checks might be required. The problem checks the students abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
+**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. Logical deductions, simple calculations, and checks might be required. The problem checks the students' abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
 
 ### Problem: Perfect Diamond
 
@@ -490,35 +490,35 @@ The diamond should be printed on the console as in the examples below.
 
 #### Hints and Guidelines
 
-От примерни изходни резултати виждаме, че ще се налага да печатаме повтарящи се символи. Затова предварително пишем метод, чрез който ще повтаряме един и същ символ толкова пъти, колкото ни е нужно.
+From the given input results we can see that we are required to print repeating symbols. That's why in advance we type a method that we will use to repeat the same symbol that times as we need it.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-01.png)
 
-In tasks for drawing figures, the most important thing to consider is **the sequence** in which we will draw. Which items are **repeated** and with what **steps**?  We can clearly see that **the top and bottom** parts of the diamond are the **same**. The easiest way to solve the problem is by creating **a loop** that draws the **upper part**, and then **another loop** that draws the **bottom part** (opposite to the top one).
+In tasks for drawing figures, the most important thing to consider is **the sequence** in which we will draw. Which items are **repeated** and with what **steps**?  We can see that **the top and bottom** parts of the diamond are the **same**. The easiest way to solve the problem is by creating **a loop** that draws the **upper part**, and then **another loop** that draws the **bottom part** (opposite to the top one).
 
-Ще си прочетем числото **`n`** от конзолата.
+We will read the number **n** from the console.
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-02.png)
 
-We start painting **the top half** of the diamond. We clearly see that **each row** starts with a **few empty spaces and <code>*</code>**. If we take a closer look, we will notice that **the empty spaces** are always equal to **`n` – the number of lines** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces**, and the **first asterisk**. Let's not forget to use **`System.out.print(…)`** instead of **`System.out.println(…)`**, to stay on **the same line**. At the end of the line we write **`System.out.println(…)`**, to go to **a new line**. Notice that we start counting from **1, not from 0**. Next, we will only add a few times **`-*`** to **finish the line**.
+We start painting **the top half** of the diamond. We see that **each row** starts with a **few empty spaces and <code>*</code>**. If we take a closer look, we will notice that **the empty spaces** are always equal to **`n` – the number of lines** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces**, and the **first asterisk**. Let's not forget to use **`System.out.print(…)`** instead of **`System.out.println(…)`**, to stay on **the same line**. At the end of the line, we write **`System.out.println(…)`**, to go to **a new line**. Notice that we start counting from **1, not from 0**. Next, we will only add a few times **`-*`** to **finish the line**.
 
 Here is part of the code for the **top of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-03.png)
 
-What remains is to **complete each line** with the required number of **`-*`** elements. On each row we have to add **`i-1`** such **items** (on the first 1-1 -> 0, the second -> 1, etc.)
+What remains is to **complete each line** with the required number of **`-*`** elements. On each row, we have to add **`i-1`** such **items** (on the first 1-1 -> 0, the second -> 1, etc.)
 
-Ето и пълния код за начертаване на **горната част на диаманта**:
+Here is the complete code for drawing **the top of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-04.png)
 
-За да изрисуваме **долната част** на диаманта, трябва да обърнем **горната** на обратно. Ще броим от **`n - 1`**, тъй като ако започнем от **`n`**, ще изрисуваме средния ред два пъти. Не забравяйте да смените **стъпката** от **`++` на `--`**.
+To draw the **bottom part** of the diamond, we have to reverse **the upper part**. We will count from **`n-1`**, because if we start from **`n`**, we will draw the middle row twice. Do not forget to change **the step** from **`++` to `--`**.
 
 Here is the complete code for drawing **the top of the diamond**:
 
 ![](assets/chapter-8-1-images/09.Perfect-diamond-05.png)
 
-What remains is **to assemble the whole program** by first reading the input, printing the top part of the diamond and then the bottom part of the diamond.
+What remains is **to assemble the whole program** by first reading the input, printing the top part of the diamond, and then the bottom part of the diamond.
 
 #### Testing in the Judge System
 
@@ -527,7 +527,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#8
 
 ### Problem: Rectangle with Stars in the Center
 
-Write a program that reads from the console an integer **n** and draws a **rectangle** with size **n with two asterisks is its center** as in the examples below.
+Write a program that reads from the console an integer **n** and draws a **rectangle** with size **n with two asterisks in its center** as in the examples below.
 
 #### Input
 
@@ -549,7 +549,7 @@ The rectangle should be printed on the console as in the examples below.
 
 #### Hints and Guidelines
 
-With this problem we also notice that we will have to type the same symbol several times. To make things easier we type a method, with which we will type the same symbol fast and easy.
+With this problem, we also notice that we will have to type the same symbol several times. To make things easier we type a method, with which we will type the same symbol fast and easily.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-01.png)
 
@@ -561,13 +561,13 @@ The first thing we can easily notice is that **the first and last rows** contain
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-03.png)
 
-From the examples we see that **the middle** part of the figure always has **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw a **rectangle without the asterisks**. Each row has for **the beginning and the end** the symbol **`%`** and between them **2 * n - 2** empty spaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code for the **last line after the loop**.
+From the examples, we see that **the middle** part of the figure always has an **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw a **rectangle without the asterisks**. Each row has for **the beginning and the end** the symbol **`%`** and between them **2 * n - 2** empty spaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code for the **last line after the loop**.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
 We can **start and test the code so far**. Everything without the two asterisks in the middle should work correctly.
 
-Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. The line with the asterisks has **`n-2` empty spaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two stars** and again **`n-2` empty spaces**. We leave out of the check the two percent at the beginning and at the end of the row.
+Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. The line with the asterisks has **`n-2` empty spaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two stars**, and again **`n-2` empty spaces**. We leave out of the check the two percent at the beginning and the end of the row.
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-05.png)
 
@@ -578,7 +578,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#9
 
 ## Nested Loops with more complex logic – Problems
 
-**The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think in an algorithmic way** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples for exam problems.
+**The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think algorithmically** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples of exam problems.
 
 
 ### Problem: Increasing 4 Numbers
@@ -609,7 +609,7 @@ We will read the input data from the console. We also create the additional vari
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
-It will be easier to solve the problem if we logically divide it **in parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**. 
+It will be easier to solve the problem if we logically divide it **into parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think about how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**. 
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-02.png)
 
@@ -617,7 +617,7 @@ We can test the incomplete program to see if it's accurate so far. It must print
 
 Since each **next number** of the row must be **greater** than **the previous one**, the second loop will run around **`i + 1`** (the next greater number). Accordingly, if **there is no sequence** of two incremental numbers (**`a`** and **`b`** are equal), the second loop **will not be fulfilled**, and nothing will be printed on the console.
 
-**Similarly**, what remains is to implement **the nested loops** for **four numbers**. We will add an **increase of the counter** that we initialized in order to know if **there is such a sequence**.
+**Similarly**, what remains is to implement **the nested loops** for **four numbers**. We will add an **increase of the counter** that we initialized to know if **there is such a sequence**.
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-03.png)
 
@@ -636,7 +636,7 @@ By a given number **n** and **a minimum area m**, generate all possible rectangl
 
 **(left, top) (right, bottom) -> area**
 
-Rectangles are defined using the top left and bottom right corner. The following inequalities are in effect:
+Rectangles are defined using the top left and bottom right corners. The following inequalities are in effect:
 -	**-n ≤ left < right ≤ n**
 -	**-n ≤ top < bottom ≤ n**
 
@@ -669,7 +669,7 @@ Read the input data from the console. We will also create a **counter**, which w
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-01.png)
 
-It is very important to be able to imagine the problem before we begin to solve it. In our case it is required to search for rectangles in a coordinate system. he thing we know is that the **left point** will always have the coordinate **`x`, smaller** than **the right** one. Accordingly, **the upper one** will always have a smaller **`y`** coordinate than **the lower one**. To find all the rectangles, we'll have to create **a loop** similar to the previous problem, but this time, **not every next loop** will start from **the next number** because some of **the coordinates** can be equal (for example **`left`** and **`top`**).
+It is very important to be able to imagine the problem before we begin to solve it. In our case, it is required to search for rectangles in a coordinate system. The thing we know is that the **left point** will always have the coordinate **`x`, smaller** than **the right** one. Accordingly, **the upper one** will always have a smaller **`y`** coordinate than **the lower one**. To find all the rectangles, we'll have to create **a loop** similar to the previous problem, but this time, **not every next loop** will start from **the next number** because some of **the coordinates** can be equal (for example **`left`** and **`top`**).
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-02.png)
 
