@@ -118,7 +118,7 @@ Here are some examples of data types:
 - type **int number**: 1, 2, 3, 4, 5, …
 - type **double number**: 0.5, 3.14, -1.5, …
 - type **a letter from the alphabet** (symbol): 'a', 'b', 'c', …
-- type **text** (string): "Здрасти", "Hi", "Beer", …
+- type **text** (string): "Hello", "Hi", "Beer", …
 - type **day of the week**: Monday, Tuesday, …
 
 ## Reading floating-point numbers from the console
@@ -303,7 +303,7 @@ NaN
 
 ## Concatenating text and numbers
 
-The operator **`+`** besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
+The operator **`+`** besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
 
 ```Java
 String firstName = "Maria";
@@ -332,18 +332,18 @@ System.out.println(sum);  // The sum is: 4
 ```
 
 
-## Numerical Expressions
+## Numerical expressions
 
-In programming we can calculate **numerical expressions**, for example:
+In programming, we can calculate **numerical expressions**, for example:
 
 ```Java
 int expr = (3 + 5) * (4 – 2);
 ```
-The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets it is calculated first**, but we already know all of that from school math.
+The standard rule for the precedence of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**, but we already know all of that from math.
 
-### Example: Calculating Trapezoid Area
+### Example: Calculating trapezoid area
 
-Let’s write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
+Write a program that reads as input from the console the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -355,7 +355,7 @@ double area = (b1 + b2) * h / 2.0;
 System.out.println("Trapezoid area = " + area);
 ```
 
-If we start the program and enter values for the sides: 3, 4 and 5, we will obtain the following result:
+If we start the program and enter values for sides: 3, 4, and 5, we will obtain the following result:
 ```
 3
 4
@@ -363,14 +363,14 @@ If we start the program and enter values for the sides: 3, 4 and 5, we will obta
 Trapezoid area = 17.5
 ```
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
 
 
-### Example: Circle Area and Perimeter 
+### Example: Circle area and perimeter 
 
-Let’s write a program which when enter a **radius r** of a circle **calculates the area and the perimeter** of the circle / round.
+Write a program that reads as input from the console a **radius r** of a circle, and **calculates its area and perimeter**.
 
 Formulas:
 -	Area = π \* r \* r
@@ -386,22 +386,22 @@ System.out.println("Area = " + Math.PI * r * r);
   // Math.PI - вградена в Java константа за π
 System.out.println("Perimeter = " + 2 * Math.PI * r);
 ```
-НLet’s test the program with **radius `r = 10`**:
+Let’s test the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-05.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
 
 
-### Example: 2D Rectangle Area
+### Example: 2D rectangle area
 
-A rectangle is given with the **coordinates of two of its opposite angles**. Calculate its **area and perimeter**:
+A rectangle is given with the **coordinates of two of its opposite angles**. Write a program that calculates its **area and perimeter**:
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
 
-In this tast we must take into account, that if from the bigger `x` we subtract the smaller `x`, we will obtain the length of the rectangle. Identically, if from the bigger `y` we subtract the smaller `y` we will obtain the height of the rectangle. What is left is to multiply both sides. Here is an example of an implementation of the described logic:
+In this tasк, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -411,7 +411,7 @@ double y1 = Double.parseDouble(scanner.nextLine());
 double x2 = Double.parseDouble(scanner.nextLine());
 double y2 = Double.parseDouble(scanner.nextLine());
 
-// Изчисляване страните на правоъгълника:
+// Calculate the sides of the rectangle:
 double width = Math.max(x1, x2) - Math.min(x1, x2);
 double height = Math.max(y1, y2) - Math.min(y1, y2);
 
@@ -422,25 +422,25 @@ System.out.println(decimalFormat.format(2 * (width + height)));
 
 We use **`Math.max(a, b)`** to find the bigger value from **`a`** and **`b`** and identically **`Math.min(a, b)`** to find the smaller of both values.
 
-When the program is executed with the values from the coordinate system given in the condition we obtain the following result:
+When the program is executed with the values from the coordinate system above we obtain the following result:
 
 ![](/assets/chapter-2-1-images/04.Console-output-06.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
 
 
-## What we learned in this chapter?
+## What we have learned in this chapter?
 
-To summarize what we learned from this chapter of the book:
-- **Reading text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).
+To summarize what have we learned in this chapter of the book:
+- **Reading a text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).
 - **Reading an integer**: **`int num = Integer.parseInt(scanner.nextLine());`**.
 - **Reading a floating-point number**: **`double num = Double.parseDouble(scanner.nextLine());`**.
 - **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
 - **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
 
-## Exercises: Simple Calculations
+## Exercises: Simple calculations
 
 Let's solidify what we learned in this chapter with some exercises.
 
