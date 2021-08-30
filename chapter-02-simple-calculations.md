@@ -592,46 +592,46 @@ First, we create a **new Java class** with the name “Greeting” in the projec
 Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/649#2](hhttps://judge.softuni.bg/Contests/Practice/Index/649#2).
 
 
-### Exercise: Concatenating Text and Numbers
+### Exercise: Concatenating text and numbers
 
-Write a Java program, that reads from the console a first name, last name, age and city and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
+Write a Java program, that reads from the console a first name, last name, age, and city, and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
 #### Hints and guidelines
 
-We add to the existing IntelliJ IDEA Project one more Java Class with name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
+We add to the existing IntelliJ IDEA Project one more Java class with the name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
 
 ![](assets/chapter-2-1-images/10.Concatenate-data-01.png)
 
-**The code**, that prints the message described in the problem requirements should be finished.
+You should write **the code** that prints the message described in the requirements.
 
 ![](assets/chapter-2-1-images/10.Concatenate-data-02.png)
 
-In the picture above the code is blurred on purpose, in order for you to think of a way to finish it yourself.
+In the picture above, the code is consciously blurred on purpose, in order for you to think of a way to finish it yourself.
 
-СNext, the solution should be tested locally using [**Ctrl+Shift+F10**] and by entering an exemplary input data.
+Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sample input data.
 
 #### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
 
 
-### Exercise: Trapezoid Area
+### Exercise: Trapezoid аrea
 
-Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for trapezoid area is **(b1 + b2) * h / 2**.
+Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for the area of trapezoid is **(b1 + b2) * h / 2**.
 
-On the figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
+Тhe figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
 #### Hints and guidelines
 
-Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with name "`TrapezoidArea`" and to write **the code that reads the input from the console, calculates the trapezoid area and prints it**:
+Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with the name "`TrapezoidArea`" and to write **the code that reads the input from the console, then calculates the area of the trapezoid, and prints it** as an output on the console:
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-02.png)
 
-The code on the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
+The code on the picture is consciously blurred for you to give a thought and finish yourself.
 
-**Test** your solution locally using [**Ctrl+Shift+F10**] and enter an exemplary data.
+**Test** your solution locally using [**Ctrl+Shift+F10**] and by entering sample input data.
 
 #### Testing in the Judge system
 
