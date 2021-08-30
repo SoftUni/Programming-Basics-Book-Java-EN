@@ -98,20 +98,20 @@ At the last line **`System.out.println(area);`** prints the calculated value of 
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0).
 
-#### Reading Floating-Point Numbers From the Console
+#### Reading floating-point numbers from the console
 
-Try to rework the above program so that it accepts not only integers (`int`) but floating-point numbers as well (`double`). We can use `scanner.nextDouble()`. We will learn more about the floating-point numbers after a while. 
+Try to rewrite the above program to accept as input data not only integers (`int`) but floating-point numbers (`double`). You can use `scanner.nextDouble()`. Later in this chapter, we will learn more about floating-point numbers.
 
 
-## Calculations in Programming
+## Calculations in programming
 
-We know about the computers that they are machines which process data. All **data** is stored in the computer memory (RAM memory) in **variables**. Variables are named areas of memory which stores data from certain type, for example number or text. Each **variable** in Java has **name**, **type** and **value**. This is how we can define a variable as at the same time with the declaration we also assign value to it:
+We know about computers that they are machines that process data. All **data** is stored in the computer memory (Random-access memory(RAM)) in **variables**. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each **variable** in Java has **name**, **type** and **value**. In the example below, you can see how to define a variable, and at the same time to assign value to it:
 
 ![](/assets/chapter-2-1-images/03.Declaring-variables-01.png)
 
-After processing, the data is stored again in variables (somewhere in the memory set aside by our program).
+After processing, the data is stored again in variables (somewhere in a reserved area allocated in memory by our program).
 
-## Data Types and Variables
+## Data types and variables
 
 In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **letter**, **text** (string), **date**, **colour**, **image**, **list** and others.
 Here are some examples of data types:
@@ -121,9 +121,9 @@ Here are some examples of data types:
 - type **text** (string): "Здрасти", "Hi", "Beer", …
 - type **day of the week**: Monday, Tuesday, …
 
-## Reading Floating-Point Numbers from the Console
+## Reading floating-point numbers from the console
 
-In order to read **floating-point number** from the console it is again neccessary to **declare variable**, to point out **the type of the number**, and to use the standard command to read information from the system console:
+To read **floating-point number** from the console, again it is neccessary to **declare variable**, to point out **the type of the number**, and to use the standard command to read information from the system console:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -131,9 +131,9 @@ Scanner scanner = new Scanner(System.in);
 Double num = scanner.nextDouble();
 ```
 
-### Example: Converting Inches into Centimeters
+### Example: Converting inches into centimeters
 
-Let’s write a program that reads a floating-point number in inches and converts it to centimeters:
+Write a program that reads a floating-point number (representing inches) as an input from the console, converts it to centimeters, and print the result as output:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -145,16 +145,16 @@ System.out.print("Centimeters = ");
 System.out.println(centimeters);
 ```
 
-Let’s start the program and make sure that when a value in inches is entered we obtain a correct output in centimeters:
+Run the program and make sure that when entering a value in inches, we obtain a correct output in centimeters:
 
 ![](assets/chapter-2-1-images/04.Console-output-01.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
 
 
-## Reading and Printing Text
+## Reading and printing text
 
 To read a text (string) from the console, again **we declare new variable** and use the standard **command for reading a text from the console**:
 
@@ -163,11 +163,11 @@ Scanner scanner = new Scanner(System.in);
 
 String str = scanner.nextLine();
 ```
-Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because by default the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If it is not parse to a number, for the program **each number** will be just **text** with which **we can not do** arithmetic operations.
+Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because by default, the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If we do not parse to a number, each number will be just **text** for the program, and **we can not do** arithmetic operations with them.
 
-### Example: Greeting by Name
+### Example: Greeting by name
 
-Let’s write a program which enters the name of the user and greets them with the text "**Hello, *име***".
+Write a program that reads the user's name as input from the console and greets him with the text **Hello, *name***, where ***name*** is the name read as input data.
 
 ```Java 
 Scanner scanner = new Scanner(System.in);
@@ -176,11 +176,11 @@ String name = scanner.nextLine();
 System.out.printf("Hello, %s!", name);
 ```
 
-In this case the expression **`%s`** is replaced with the **first** passed argument which now this is the variable **`name`**:
+In this case the expression **`%s`** is replaced with the **first** passed argument, which is the variable **`name`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#2](https://judge.softuni.bg/Contests/Practice/Index/649#2).
 
