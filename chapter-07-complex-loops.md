@@ -27,8 +27,7 @@ In chapter **"Repetitions (Loops)"** we learnt how the **`for`** loop works and 
 
 The **step** is that **part** of the **`for`** loop construction that states **how** much to **increase** or **decrease** the value of its **leading** variable.  It is declared last in the  **`for`** loop block.
 
-Най-често е с **размер `1`** и в такъв случай, вместо да пишем **`i += 1`** или **`i -= 1`**, можем да използваме операторите 
-**`i++`** или **`i--`**. Ако искаме стъпката ни да е **различна от 1**, при увеличение използваме оператора **`i += (размера на стъпката)`**, а при намаляване **`i -= (размера на стъпката)`**. При стъпка 10, цикълът би изглеждал по следния начин: 
+It most often has a **size `1`** and in that case instead of writing **`i += 1`** or **`i -= 1`**, we can use the **`i++`** or **`i--`** operators. If we want the step to be **different than 1**, we use the operator **`i += (step size)`** to increment and **`i -= (step size)`** to decrement. For a step size of 10, the loop would look like this:
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
@@ -46,9 +45,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-with-step3-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#0](https://judge.softuni.bg/Contests/Practice/Index/659#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#0](https://judge.softuni.bg/Contests/Practice/Index/659#0).
 
 
 ### Пример: числата от N до 1 в обратен ред
@@ -65,9 +64,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 ![](assets/chapter-7-1-images/02.Numbers-from-n-to-1-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#1](https://judge.softuni.bg/Contests/Practice/Index/659#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1](https://judge.softuni.bg/Contests/Practice/Index/659#1).
 
 
 ### Пример: числата от 1 до 2^n с for цикъл
@@ -78,9 +77,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 ![](assets/chapter-7-1-images/03.Powers-of-two-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#2](https://judge.softuni.bg/Contests/Practice/Index/659#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#2](https://judge.softuni.bg/Contests/Practice/Index/659#2).
 
 
 ### Пример: четни степени на 2
@@ -95,9 +94,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#3](https://judge.softuni.bg/Contests/Practice/Index/659#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#3](https://judge.softuni.bg/Contests/Practice/Index/659#3).
 
 
 ## While цикъл
@@ -128,9 +127,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 ![](assets/chapter-7-1-images/05.Sequence-2k-plus-1-01.png)
  
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#4](https://judge.softuni.bg/Contests/Practice/Index/659#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#4](https://judge.softuni.bg/Contests/Practice/Index/659#4).
 
 
 ### Пример: число в диапазона [1 … 100]
@@ -148,9 +147,9 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 ![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#5](https://judge.softuni.bg/Contests/Practice/Index/659#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5](https://judge.softuni.bg/Contests/Practice/Index/659#5).
 
 
 ## Най-голям общ делител (НОД)
@@ -204,9 +203,9 @@ print а;
 
 ![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#6](https://judge.softuni.bg/Contests/Practice/Index/659#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6](https://judge.softuni.bg/Contests/Practice/Index/659#6).
 
 
 ## Do-while цикъл
@@ -234,9 +233,9 @@ print а;
 
 ![](assets/chapter-7-1-images/08.Factorial-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#7](https://judge.softuni.bg/Contests/Practice/Index/659#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#7](https://judge.softuni.bg/Contests/Practice/Index/659#7).
 
 
 ### Пример: сумиране на цифрите на число
@@ -260,9 +259,9 @@ print а;
 <code><strong>n / 10</strong></code>: <b>изтрива</b> последната цифра на <strong><code>n</code></strong>.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#8](https://judge.softuni.bg/Contests/Practice/Index/659#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#8](https://judge.softuni.bg/Contests/Practice/Index/659#8).
 
 
 ## Безкрайни цикли и операторът break
@@ -330,9 +329,9 @@ print а;
 
 ![](assets/chapter-7-1-images/10.Prime-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#9](https://judge.softuni.bg/Contests/Practice/Index/659#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#9](https://judge.softuni.bg/Contests/Practice/Index/659#9).
 
 
 ### Пример: оператор break в безкраен цикъл
@@ -355,9 +354,9 @@ print а;
 
 Забележка: макар кодът по-горе да е коректен, той няма да работи, ако вместо числа потребителят въведе текст, например “**Invalid number**”. Тогава парсването на текста към число ще се счупи и програмата ще покаже **съобщение за грешка (изключение)**. Как да се справим с този проблем и как да прихващаме и обработваме изключения чрез **`try-catch` конструкцията** ще научим след малко.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#10](https://judge.softuni.bg/Contests/Practice/Index/659#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#10](https://judge.softuni.bg/Contests/Practice/Index/659#10).
 
 
 ## Вложени цикли и операторът break
@@ -388,9 +387,9 @@ print а;
 
 По този начин, когато **`i + j = 2`**, програмата ще направи променливата **`hasToEnd = true`** и ще излезе от вътрешния цикъл. При следващото завъртане на външния цикъл, чрез **`if`** проверката, програмата няма да може да стигне до вътрешния цикъл и ще прекъсне изпълнението си.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#11](https://judge.softuni.bg/Contests/Practice/Index/659#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#11](https://judge.softuni.bg/Contests/Practice/Index/659#11).
 
 
 ## Справяне с грешни данни: try-catch
@@ -431,9 +430,9 @@ print а;
 
 ![](assets/chapter-7-1-images/12.Valid-even-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#12](https://judge.softuni.bg/Contests/Practice/Index/659#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#12](https://judge.softuni.bg/Contests/Practice/Index/659#12).
 
 Сега вече решението трябва да работи винаги: независимо дали въвеждаме цели числа, невалидни числа (например твърде много цифри) или текстове, които не съдържат числа.
 
@@ -483,9 +482,9 @@ Fn = Fn-1 + Fn-2
 
 ![](assets/chapter-7-1-images/13.Fibonacci-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#13](https://judge.softuni.bg/Contests/Practice/Index/659#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#13](https://judge.softuni.bg/Contests/Practice/Index/659#13).
 
 
 ### Задача: пирамида от числа
@@ -517,9 +516,9 @@ Fn = Fn-1 + Fn-2
 
 ![](assets/chapter-7-1-images/14.Number-pyramid-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#14](https://judge.softuni.bg/Contests/Practice/Index/659#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#14](https://judge.softuni.bg/Contests/Practice/Index/659#14).
 
 
 ### Задача: таблица с числа
@@ -547,9 +546,9 @@ Fn = Fn-1 + Fn-2
 
 ![](assets/chapter-7-1-images/15.Number-table-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/659#15](https://judge.softuni.bg/Contests/Practice/Index/659#15).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#15](https://judge.softuni.bg/Contests/Practice/Index/659#15).
 
 
 ## Какво научихме от тази глава?
