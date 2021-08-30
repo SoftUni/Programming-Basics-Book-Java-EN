@@ -504,15 +504,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0
 
 ### Exercise: Inches to centimeters
 
-Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **it multiplies the inches by 2.54** (because one inch = 2.54 centimeters).
+Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **multiply the inches by 2.54** (because one inch = 2.54 centimeters).
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-First, we create **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
+First, we create a **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-01.png)
 
-A dialogue window shows up in which we write file’s name. In our case this is "InchesToCentimeters" → [**OK**]:
+A dialogue window appears in which we write the file’s name. In our case this is "InchesToCentimeters" → [**OK**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-02.png)
 
@@ -520,7 +520,7 @@ Next, we have to write the **program code**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-03.png)
 
-**We start the program** with the right button of the mouse on the window of the current program. We choose [**Run InchesToCentim...main()**] or we press [**Ctrl+Shift+F10**]. This shortcut starts the program in the current Java class (the one in which we wrote last):
+**We start the program** with the right click on the window of the current program. We choose [**Run InchesToCentim...main()**] or we press [**Ctrl+Shift+F10**]. This shortcut starts the program in the current Java class (the one in which we wrote last):
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-04.png)
 
@@ -528,7 +528,7 @@ We obtain the following result:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.png)
 
-Now **let's switch to the previous program / task** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
+Now **let's switch to the previous program/task** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.png)
 
@@ -536,31 +536,31 @@ If we use [**Shift+F10**] or press one of the two green arrows (located at the t
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-07.png)
 
-The last compiled program will be executed (**InchesToCentimeters**). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:
+the last compiled program will be executed (**InchesToCentimeters**). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
 
-**Switching between projects** is very easy, isn't it? Just choose the file with the source code of the program, double click it and when it starts, the program from the current file is being executed.
+**Switching between projects** is an easy task, isn't it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.
 
-Let's test with floating-point numbers, for example with **2.5**:
+Let's test with floating-point numbers, for example, with **2.5**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>В зависимост от регионалните настройки на операционната система, е възможно вместо <b>десетична точка</b> (US настройки) да се използва <b>десетична запетая</b> (BG настройки).</td>
+<td>Depending on the regional settings of the operating system, it is possible to use <b> decimal point </b> (US settings) instead of <b> decimal comma </b> (BG settings).</td>
 </tr></table>
 
 If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-10.png)
 
-It is recommended to **change the settings of your computer**, in order to use a **decimal point**:
+It is recommended to **change the settings of your computer**, to use a **decimal point**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-11.png)
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
 
@@ -569,13 +569,13 @@ The solution should be accepted as a completely correct one:
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
 
 
-### Problem: Greeting by Name
+### Exercise: Greeting by name
 
 Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-First, we create **new Java class** with name “Greeting” in the project “SimpleCalculations”:
+First, we create a **new Java class** with the name “Greeting” in the project “SimpleCalculations”:
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-01.png)
 
@@ -587,16 +587,16 @@ First, we create **new Java class** with name “Greeting” in the project “S
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-03.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/649#2](hhttps://judge.softuni.bg/Contests/Practice/Index/649#2).
 
 
-### Problem: Concatenating Text and Numbers
+### Exercise: Concatenating Text and Numbers
 
 Write a Java program, that reads from the console a first name, last name, age and city and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 We add to the existing IntelliJ IDEA Project one more Java Class with name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
 
@@ -610,12 +610,12 @@ In the picture above the code is blurred on purpose, in order for you to think o
 
 СNext, the solution should be tested locally using [**Ctrl+Shift+F10**] and by entering an exemplary input data.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
 
 
-### Problem: Trapezoid Area
+### Exercise: Trapezoid Area
 
 Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for trapezoid area is **(b1 + b2) * h / 2**.
 
@@ -623,7 +623,7 @@ On the figure below shows a trapezoid with bases 8 and 13 and height 7. It has a
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with name "`TrapezoidArea`" and to write **the code that reads the input from the console, calculates the trapezoid area and prints it**:
 
@@ -633,40 +633,40 @@ The code on the picture is purposely blurred, in order for you to give it a thou
 
 **Test** your solution locally using [**Ctrl+Shift+F10**] and enter an exemplary data.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
 
 
-### Problem: Circle Area and Perimeter
+### Exercise: Circle Area and Perimeter
 
 Write a program that reads from the console **a number r** r and calculates and prints **the area and perimeter of the circle**/**round** with **radius r**.
 
-#### Sample Input and Output
+#### Sample input and output
 
 | Input  |           Output                                          |    
 |-----|--------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 For the calculations you may use the following formulas:
 -	**`Area = Math.PI * r * r`**.
 -	**`Perimeter = 2 * Math.PI * r`**.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
 
 
-### Problem: Rectangle Area
+### Exercise: Rectangle Area
 
 **A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
 
-#### Sample Input and Output
+#### Sample input and output
 
 |               Input                        |       Output         |
 |-----------------------------------------|-------------------|
@@ -674,16 +674,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5
 |30<br>40<br>70<br>-10                   |2000<br>180         |
 |600.25<br>500.75<br>100.50<br>-200.5    |350449.6875<br>2402 |
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
 
 
-### Problem: Triangle Area
+### Exercise: Triangle Area
 
 Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area, 2)`**.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |       Input           |         Output         |
 |--------------------|---------------------|
@@ -692,16 +692,16 @@ Write a program that reads from the console **a side and height of a triangle** 
 | 7.75 <br>8.45        | Triangle area = 32.74 |
 | 1.23456 <br>4.56789  | Triangle area = 2.82  |
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#7](https://judge.softuni.bg/Contests/Practice/Index/649#7).
 
 
-### Problem: Converter – from °C Degrees to °F Degrees
+### Exercise: Converter – from °C Degrees to °F Degrees
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](http://bfy.tw/3rGh "Търсене в Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few examples:
 
-#### Sample Input and Output
+#### Sample input and output
 
 | Input | Output |
 |----|-----|
@@ -710,16 +710,16 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 | -5.5 |  22.1 |
 | 32.3 | 90.14 |
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#8](https://judge.softuni.bg/Contests/Practice/Index/649#8).
 
 
-### Problem: Converter – from Radians to Degrees
+### Exercise: Converter – from Radians to Degrees
 
 Write a program, that reads **ъan angle in [radians](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) and converts it to **[degrees](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |  Input  | Output |
 |------|-----|
@@ -728,16 +728,16 @@ Write a program, that reads **ъan angle in [radians](https://bg.wikipedia.org/w
 | 0.7854 |   45  | 
 | 0.5236 |   30  |
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#9](https://judge.softuni.bg/Contests/Practice/Index/649#9).
 
 
-### Problem: Converter – USD to BGN
+### Exercise: Converter – USD to BGN
 
 Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** след десетичния знак. after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |  Input  |    Output  |
 |------|---------|
@@ -745,12 +745,12 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 |   100  | 179.55 BGN|
 |  12.5  | 22.44 BGN |
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#10](https://judge.softuni.bg/Contests/Practice/Index/649#10).
 
 
-### Problem:	\* Currency Converter
+### Exercise:	\* Currency Converter
 
 Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
@@ -760,7 +760,7 @@ Write a program for **conversion of money from one currency into another**. It h
 
 **The input** is **sum for conversion**, **input currency** and **output currency**. **The output** is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point. 
 
-#### Sample Input and Output
+#### Sample input and output
 
 |        Input        |   Input  |
 |------------------|--------|
@@ -769,16 +769,16 @@ Write a program for **conversion of money from one currency into another**. It h
 | 12.35<br>EUR<br>GBP| 9.53 GBP |  
 |150.35<br>USD<br>EUR|138.02 EUR|
  
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#11](https://judge.softuni.bg/Contests/Practice/Index/649#11).
 
 
-### Problem: ** Date Calculations – 1000 Days on the Earth
+### Exercise: ** Date Calculations – 1000 Days on the Earth
 
 Write a program that enters a **birth date** in format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |   Input   |	 Output  |
 |--------|--------|
@@ -788,10 +788,10 @@ Write a program that enters a **birth date** in format **`dd-MM-yyyy`** and calc
 |01-01-2012|27-09-2014|
 |14-06-1980|11-03-1983|
 
-#### Hints and Guidelines 
+#### Hints and guidelines 
   * Look for information about the data type **`Date`**, **`Calendar`** and **`SimpleDateFormat`** in Java and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help you can solve the problem without the need to calculate days, months and leap years.
   * **Don't print** anything additional on the console except for the wanted date!
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#12](https://judge.softuni.bg/Contests/Practice/Index/649#12).
