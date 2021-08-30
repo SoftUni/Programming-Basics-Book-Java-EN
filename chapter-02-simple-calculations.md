@@ -48,9 +48,9 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Example: Calculating a Square Area With Side **а**
+### Example: Calculating a square area with side **`а`**
  
-For example, let us look at the following program which **reads an integer** from the console, **multiplies it** by itself (squares it) and **prints the result** from the multiplication. This is how we can calculate the square area by given side length read from the cosnole. The whole source code of the program follows. Write it in file with name `SquareArea.java`, or else you will have a compile time error:
+As an example, let us look at a program. The task is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
 ```Java
 // Put this code in the file: SquareArea.java
@@ -70,15 +70,15 @@ public class SquareArea {
     }
 }
 ```
-Here is how the program would work when we have a square with a side length equal to 15:
+Here is how the program would work when we have a square with a side's length equal to 15:
 
 ![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
 
-Try to write a wrong number, for example, "**hello**". You will get an error message during runtime (exception). 
+Test the program with an invalid integer (as an input), for example, "**hello**". You will get an error message during runtime (exception). 
 
 ![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
 
-This is normal because **Java** is highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
+It is normal because **Java** is a highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a new input (a number in the example above).
 
 #### How Does the Example Work?
 
