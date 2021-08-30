@@ -18,14 +18,14 @@ Write a program that draw, on the console, a rectangle with a size of **10 x 10*
 |---|---|
 |(no input)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 To solve the task, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
 How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the body of the loop, and after the iteration, a check about the state of the variable is performed. Thus the code in the body of the loop is executed exactly **ten times** ie. for each row of the rectangle. In the body of the loop, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
 
@@ -38,13 +38,13 @@ Write a program that reads an integer **n** from the console, and as output, dra
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To perform the task, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
 
@@ -72,13 +72,13 @@ Write a program that draws on the console a square of **N x N** asterisks:
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
 
@@ -91,13 +91,13 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|---|---|
 |3|<code>$</code><br><code>$ $</code><br><code>$ $ $</code>|4|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code>|5|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** on which **line** we are at the time of printing, ie. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
 
@@ -114,7 +114,7 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 We can solve the task as follows:
 * We read an integer **`n`** from the console.
@@ -126,7 +126,7 @@ Here is an example implementation of the described logic, above, with nested loo
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
 
@@ -144,7 +144,7 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 To solve the task, we divide (mentally) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
 
@@ -157,7 +157,7 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
 
@@ -174,13 +174,13 @@ Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the co
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
 
@@ -201,7 +201,7 @@ Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the co
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the task.
 
@@ -213,7 +213,7 @@ When printing the **middle** part, we need to **check** whether the line is **`(
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
 
@@ -230,7 +230,7 @@ Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from th
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 According to the requirements of the task, the house is with a size of **`n` x `n`**, but from the input and output data, we can see the following:
 
@@ -310,7 +310,7 @@ After we have finished with the roof, it is time for the base. It is easier to p
 
 ![](assets/chapter-6-1-images/09.House-08.png)
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
 
@@ -331,7 +331,7 @@ Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from th
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Hint and Guidelines
+#### Hint and guidelines
 
 According to the requirements of the task, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
 
@@ -399,7 +399,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 <td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
-#### Test the code in the Judge System
+#### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
 
