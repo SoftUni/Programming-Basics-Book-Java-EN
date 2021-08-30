@@ -185,11 +185,11 @@ In this case the expression **`%s`** is replaced with the **first** passed argum
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#2](https://judge.softuni.bg/Contests/Practice/Index/649#2).
 
 
-## Concatenating Text and Numbers
+## Concatenating text and numbers
 
-When printing a text, numbers and other data on the console **we can join them** by using templates **`%s`**, **`%d`**, **`%f`** etc. In programming, these templates are called **placeholders**, depending on the type of the variable, different symbols are used to declare different types of arguments. The main ones are `%s` for text (string), `%d` for int numbers, `%f` for floating-point numbers.
+When printing a text, numbers and other data on the console **we can join them** by using templates **`%s`**, **`%d`**, **`%f`**, etc. In programming, these templates are called **placeholders**. Depending on the type of the variable, via different symbols we declare different types of arguments. The main ones are `%s` for text (string), `%d` for integers, `%f` for floating-point numbers.
 
-This is **example** for printing formatted text with (**placeholders**):
+Here is **example** for printing formatted text with (**placeholders**):
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -202,22 +202,22 @@ System.out.printf("You are %s %s, a %d-years old person from %s.",
   firstName, lastName, age, town);
 ```
 
-This is the result, which we will get after the execution of the example:
+Here is the result, which we will get after the execution of the example:
 
 ![](assets/chapter-2-1-images/04.Console-output-03.png)
 
-Notice how every variable should be passed in the **order in which we want it to be printed** and correspond to the **type passed in the placeholder**. Practically, the template (**placeholder**) accepts variables of **every type**.
+Pay attention to the order of variables in the System.out.printf() method. Each variable is in the **order we want to print it** and corresponds to the **type in the placeholder**. Essentially, the template (**placeholder**) accepts variables of **every type**.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
 
 
-## Arithmetic Operations
+## Arithmetic operations
 
 Let’s look at the basic arithmetic operations in programming.
 
-### Summing up Numbers (operator **`+`**)
+### Summing up numbers (operator **`+`**)
 
 We can sum up numbers using the operator **`+`**:
 
@@ -227,9 +227,9 @@ int b = 7;
 int sum = a + b; // резултатът е 12
 ```
 
-### Subtracting Numbers (оператор **`-`**)
+### Subtracting numbers (оператор **`-`**)
 
-Subtracting Numbers is done by the operator **`-`**:
+Subtracting numbers is done by the operator **`-`**:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -240,11 +240,11 @@ int result = a - b;
 System.out.println(result);
 ```
 
-Here is the result of the execution of this program (with numbers 10 and 3):
+Here is the result of the execution of the program above (with numbers 10 and 3):
 
 ![](assets/chapter-2-1-images/04.Console-output-04.png)
 
-### Multiplying Numbers (operator **`*`**)
+### Multiplying numbers (operator **`*`**)
 
 For multiplication of numbers we use the operator **`*`**:
 
@@ -254,42 +254,43 @@ int b = 7;
 int product = a * b; // 35
 ```
 
-### Dividing Numbers (operator **`/`**)
+### Dividing numbers (operator **`/`**)
 
-Dividing numbers is done using the **`/`**. It works differently with integers and floating-point numbers.
-*	When we divide two integers **an integer division** is applied and the obtained output is without its fractional part. Example: 11 / 3 = 3.
-*	When we divide two numbers and at least one of them is a float number **a floating division** is applied and the obtained result is a float number, just like in math. Example 11 / 4.0 = 2.75. When it cannot be done with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
+We divide numbers using the operator **`/`**. It works differently with integers and floating-point numbers.
+
+*	When we divide two integers, **an integer division** is applied, and the obtained output is without its fractional part. Example: 11 / 3 = 3.
+*	When we divide two numbers, and at least one of them is a floating-point number **a fractional division** is applied, and the obtained result is a floatting-point number, just like in math. Example 11 / 4.0 = 2.75. When division is not with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
 * The integer **division by 0** causes an **exception** during runtime (`Java.lang.ArithmeticException`).
-* Float number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
+* Floating-point number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
 
 Here are a few examples with the division operator:
 
 ```Java
 int a = 25;
-int i = a / 4;      // извършваме т.нар. целочислено деление:
-                    // резултатът от тази операция ще бъде 6 – дробната част се отрязва, 
-                    // тъй като извършваме деление с цели числа
-int f = a / 4.0;    // 6.25 – дробно деление. Изрично сме указали числото 4 да се интерпретира
-                    // като дробно, като сме добавили десетичната точка, следвана от нула
-int error = a / 0;  // Грешка: целочислено деление на 0
+int i = a / 4;      // we perform the so-called integer division:
+                    // the result of this operation will be 6 - the fractional part is cut off, 
+                    // as we perform division by integers
+int f = a / 4.0;    // 6.25 - fractional division. We have explicitly specified that the number 4 should be interpreted as a fraction, 
+                    // adding the decimal point followed by zero
+int error = a / 0;  // Error: integer division by 0
 ```
 
-Let's look at some examples for **integer division** (remember that when we **divide integers** in Java the result is **an integer**):
+Let's look at a few examples for **integer division** (remember that when we **divide integers** in Java the result is **an integer**):
 
 ```Java
 int a = 25;
-System.out.println(a / 4);  // Целочислен резултат: 6
-System.out.println(a / 0);  // Грешка: деление на 0
+System.out.println(a / 4);  // Integer result: 6
+System.out.println(a / 0);  // Error: integer division by 0
 ```
 Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails and works correctly with the special values **+&#8734;** и **-&#8734;**:
 
 ```Java
 int a = 15;
-System.out.println(a / 2.0);   	 // Дробен резултат: 7.5
-System.out.println(a / 0.0);     // Резултат: Infinity
-System.out.println(-a / 0.0);    // Резултат: -Infinity
-System.out.println(0.0 / 0.0);   // Резултат: NaN (Not a Number), т.е. резултатът
-                                 // от операцията не е валидна числена стойност
+System.out.println(a / 2.0);   	 // Fractional result: 7.5
+System.out.println(a / 0.0);     // Result: Infinity
+System.out.println(-a / 0.0);    // Result: -Infinity
+System.out.println(0.0 / 0.0);   // Result: NaN (Not a Number), i.e. the result 
+                                 // of the operation is not a valid numeric value
 ```
 
 When printing the values **&#8734;** and **-&#8734;** the console output may be `?`, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters and special characters. The example above would most probably give the following result:
@@ -300,7 +301,7 @@ When printing the values **&#8734;** and **-&#8734;** the console output may be 
 NaN
 ```
 
-## Concatenating Text and Numbers
+## Concatenating text and numbers
 
 The operator **`+`** besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
 
