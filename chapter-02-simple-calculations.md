@@ -48,7 +48,7 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Example: Calculating a square area with side **`а`**
+### Example: Calculating a square area with side **а**
  
 As an example, let us look at a program. The task is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
@@ -84,17 +84,17 @@ It is normal because **Java** is a highly typed language. Later on, we will find
 
 The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
 
-The next line **`System.out.print("a = ");`** prints an informative message which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`** and not **`System.out.println(…);`** and this way the cursor stays on the same line.
+The following line **`System.out.print("a = ");`** prints an informative message which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`** and not **`System.out.println(…);`** and this way the cursor stays on the same line.
 
-The next line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with name **`a`**.
+The following line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with a name **`a`**.
 
-The next command **`int area = a * a;`** keeps in a new variable **`area`** the result of the multiplication of **`a`** by **`a`**.
+The following line **` int area = a * a;`** keeps the result of the multiplication of **` a`** by **`a`** in a new variable with a name **` area`**.
 
-Next command **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`** and not **`System.out.println("…");`** and this way the cursor stays on the same line in order to print the calculated area of the square afterwards.
+The following line **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`** and not **`System.out.println("…");`** and this way the cursor stays on the same line to print the calculated area of the square afterward.
 
-The last command **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
+At the last line **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0).
 
