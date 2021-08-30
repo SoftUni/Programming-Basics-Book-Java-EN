@@ -7,25 +7,25 @@ Having learnt what **`for` loops** are and what they serve for, it is now time t
   * **`do-while`** loops
   * **infinite** loops
 
-В настоящата тема ще разберем и какво представлява операторът **`break`**, както и **как** чрез него да **прекъснем** един цикъл. Също така, използвайки **`try-catch`** конструкцията, ще се научим да следим за **грешки** по време на изпълнението на програмата ни. 
+In the current chapter we will also get acquainted with the **`break`** statement and **how** to **terminate** a loop with it. We will also learn how to keep track of **errors** during the execution of our program, using a **`try-catch`** block. 
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch a video tutorial on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=kaJSrGrvakQ">
   https://www.youtube.com/watch?v=kaJSrGrvakQ</a>.
 </div>
 
 
-## Цикли със стъпка
+## Loops with a step
 
-В главата **"Повторения (цикли)"** научихме как работи **`for`** цикълът и вече знаем кога и с каква цел да го използваме. В тази тема ще обърнем **внимание** на една определена и много важна **част от конструкцията** му, а именно **стъпката**.  
+In chapter **"Repetitions (Loops)"** we learnt how the **`for`** loop works and we already know when and for what purpose to use it. In this chapter we will pay **attention** to a certain and very important **part of its construction**, namely the **step**. 
 
-### Какво представлява стъпката?
+### What is a step?
 
-**Стъпката** е тази **част** от конструкцията на **`for`** цикъла, която указва с **колко** да се **увеличи** или **намали** стойността на **водещата** му променлива. Тя се декларира последна в скелета на **`for`** цикъла.
+The **step** is that **part** of the **`for`** loop construction that states **how** much to **increase** or **decrease** the value of its **leading** variable.  It is declared last in the  **`for`** loop block.
 
 Най-често е с **размер `1`** и в такъв случай, вместо да пишем **`i += 1`** или **`i -= 1`**, можем да използваме операторите 
 **`i++`** или **`i--`**. Ако искаме стъпката ни да е **различна от 1**, при увеличение използваме оператора **`i += (размера на стъпката)`**, а при намаляване **`i -= (размера на стъпката)`**. При стъпка 10, цикълът би изглеждал по следния начин: 
