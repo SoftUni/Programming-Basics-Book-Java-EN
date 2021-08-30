@@ -1,11 +1,11 @@
-# Chapter 7.1. Complex loops
+# Chapter 7.1. More complex loops
 
-След като научихме какво представляват и за какво служат **`for` циклите**, сега предстои да се запознаем с **други видове цикли**, както и с някои **по-сложни конструкции за цикъл**. Те ще разширят познанията ни и ще ни помагат в решаването на по-трудни и по-предизвикателни задачи. По-конкретно, ще разгледаме как се ползват следните програмни конструкции:
+Having learnt what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops** as well as some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
 
-  * цикли **със стъпка**
-  * **`while`** цикли
-  * **`do-while`** цикли
-  * **безкрайни** цикли
+  * loops **with a step**
+  * **`while`** loops
+  * **`do-while`** loops
+  * **infinite** loops
 
 В настоящата тема ще разберем и какво представлява операторът **`break`**, както и **как** чрез него да **прекъснем** един цикъл. Също така, използвайки **`try-catch`** конструкцията, ще се научим да следим за **грешки** по време на изпълнението на програмата ни. 
 
