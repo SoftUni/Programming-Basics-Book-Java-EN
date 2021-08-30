@@ -48,7 +48,7 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Example: Calculating a square area with side **а**
+### Example: Calculating the area of the square with side **а**
  
 As an example, let us look at a program. The task is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
@@ -383,7 +383,7 @@ Scanner scanner = new Scanner(System.in);
 System.out.print("Enter circle radius. r = ");
 double r = Double.parseDouble(scanner.nextLine());
 System.out.println("Area = " + Math.PI * r * r); 
-  // Math.PI - вградена в Java константа за π
+  // Math.PI - built-in function in Java
 System.out.println("Perimeter = " + 2 * Math.PI * r);
 ```
 Let’s test the program with **radius `r = 10`**:
@@ -442,11 +442,11 @@ To summarize what have we learned in this chapter of the book:
 
 ## Exercises: Simple calculations
 
-Let's solidify what we learned in this chapter with some exercises.
+To consolidate our knowledge of simple calculations, let's solve several exercises.
 
-### Blank IntelliJ IDEA Solution (Project)
+### Blank IntelliJ IDEA solution (Project)
 
-We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **unite logically a few interconnected projects**.
+We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **consolidate logically a few interconnected projects**.
 
 In the current practical exercise we will use a **Project with a couple of tasks (Java classes)** to organize the solutions of the tasks from the exercises – every task in a separate Java class and all of them in a common project.
 
@@ -461,7 +461,7 @@ Select from the dialog window [**Java**], in the field Project SDK we specify wh
 
 ![](assets/chapter-2-1-images/06.New-project-03.png)
 
-Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, after that we click [**Finish**]:
+Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, and after that we click [**Finish**]:
 
 ![](assets/chapter-2-1-images/06.New-project-04.png)
 
@@ -471,29 +471,29 @@ Now we have **empty IntelliJ IDEA Project** (without any Java classes in it whic
 
 The purpose of this project is to add in it **`.java` class per problem** from the exercises.
 
-### Problem: Calculating Square Area
+### Exercise: Calculating the area of the square 
 
-The first exercise from this topic is the following: write a console program that **inputs an integer `a` and calculates the area** of a square with side **`a`**. The task is trivial and easy: **input a number** from the console, **multiply it by itself** and **print the obtained result** on the console.
+The first task from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The task is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We create **new Java class** in existing IntelliJ IDEA project. On the **src** folder right-click with the mouse. Choose [**New**] → [**Java Class**]:
+We create a **new Java class** in the existing IntelliJ IDEA project. On the **src** folder, right-click with the mouse. Choose [**New**] → [**Java Class**]:
 
 ![](assets/chapter-2-1-images/07.Square-area-01.png)
 
-A **dialogue window** will open for choosing name to the Java class, for example “SquareArea”:
+A **dialogue window** will open for choosing а name to the Java class, for example, “SquareArea”:
 
 ![](assets/chapter-2-1-images/07.Square-area-02.png)
 
-We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class `Main` method(as it is shown on the picture) and we go to the main method's body **`Main(string[] args)`**, and write the following code between the opening and closing curly brackets:
+We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class a `Main` method(as in the picture below). In the body of the `Main` method **`Main(string[] args)`** we write the following code between the opening and closing curly brackets:
 
 ![](assets/chapter-2-1-images/07.Square-area-03.png)
 
-The code inputs an integer through **`a = Integer.parseInt(scanner.nextLine())`**, afterwards it calculates **`area = a * a`** and finally prints the value of the variable **`area`**. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
+As we can see in the code above, we read as input data an integer and assign it to a variable **`a`** (line **`int a = Integer.parseInt(scanner.nextLine())`**), afterwards we calculate the area (line **`int area = a * a`**) and finally prints the value of the variable **`area`** on the console. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
 
 ![](assets/chapter-2-1-images/07.Square-area-04.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
 
@@ -502,7 +502,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0
 ![](assets/chapter-2-1-images/07.Square-area-06.png)
 
 
-### Problem: Inches to Centimeters
+### Exercise: Inches to centimeters
 
 Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **it multiplies the inches by 2.54** (because one inch = 2.54 centimeters).
 
