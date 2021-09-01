@@ -366,11 +366,11 @@ The input consists of number **n**, followed by **2*n integers** one per line.
 
 #### Hints and Guidelines
 
-Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **“Yes”** + стойността, в противен случай - **“No”** + разликата.
+We read the input numbers **in pairs**. For each pair we calculate the **sum** ѝ. While reading the input pairs, for each pair except the first one, we have to calculate **the difference with the previous one**. In order to do that we need to store the sum of the previous pair in a separate variable.  Finally, we find the **largest difference** between two pairs. If it's **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/655#11](https://judge.softuni.bg/Contests/Practice/Index/655#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#11](https://judge.softuni.bg/Contests/Practice/Index/655#11).
 
 
 ## Упражнения: графични и уеб приложения
