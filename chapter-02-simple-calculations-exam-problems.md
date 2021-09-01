@@ -1,21 +1,20 @@
-# Chapter 2.2. Simple calculations - Exam Problems
+# Chapter 2.2. Simple calculations - Exam problems
 
-In the previous chapter we got familiar with the system console and how to work with it – how to **read numbers** from the console and how to **print an output** on the console. We went through the main arithmetical operations and briefly mentioned data types. In this chapter we will practice and consolidate what we have learned so far by solving a few **more complicated problems** given .
+In the previous chapter, we got familiar with the system console and how to work with it – how to **read numbers** from the console and **print an output** on the console. We went through the bacis arithmetical operations and briefly mentioned data types. In this chapter, we will practice and consolidate what we have learned so far. We will solve a few **more complicated examples** given as exams tasks.
 
+## Reading numbers from the console
 
-## Reading Numbers from the Console
+Before moving on to the examples, we will recall the most important of the material we have studied in the previous chapter. We will start with reading numbers from the console.
 
-Before jumping into the practical problems we are going to revise the most important aspects of what we have studied in the previous chapter. We will start with reading numbers from the console.
+### Reading an integer
 
-### Reading an Integer
-
-We need to create a variable to store the numbers (for example **`num`**) and to use the standard command to read data from the console in combination with the function **`Integer.parseInt(…)`** which converts text into number:
+We need to create a variable to store the number (for example **`num`**) and to use the standard command to read data from the console in combination with the function **`Integer.parseInt(…)`** which converts text into an integer:
 
 ```java
 int num = Integer.parseInt(scanner.nextLine());
 ```
 
-### Reading a Floating-Point Number
+### Reading a floating-point number
 
 We read a floating-point number the same way we read an integer, but this time we use the function **`double.parseDouble(…)`**:
 
@@ -23,47 +22,47 @@ We read a floating-point number the same way we read an integer, but this time w
 double num = Double.parseDouble(scanner.nextLine());
 ```
 
-## Printing text through formatted specificators (format specifiers)
+## Printing text using format specifiers
 
-**Format specifier** is an expression which is going to be replaced with a particular value while printing the output. The method **`System.out.printf(…)`** supports printing a string based on a formatted specificators where the first argument which we need to pass is the formatted string followed by the number of arguments, equal to the number of specificators.
+The **format specifier** is an expression that will be replaced with a particular value while printing the output. The method **`System.out.printf(…)`** supports printing a string using format specifiers with the following format **`System.out.printf("format-string"[, arg1, arg2, … ])`**. As the first parameter of the method, we put the formatted string. As the second parameter of the method, we put so many arguments as the number of specifiers in the formatted string.
 
 ```java
 System.out.printf("You are %s %s, a %d-years old person from %s.",
   firstName, lastName, age, town);
 ```
 
-## Arithmetic Operators
+## Arithmetic operators
 
-Let's revise the main arithmetic operators for simple calculations.
+Let us recall basic arithmetic operators for simple calculations.
 
 ### Operator +
 
 ```java
-int result = 3 + 5; // резултатът е 8
+int result = 3 + 5; // the result is 8
 ```
 
 ### Operator -
 
 ```java
-int result = 3 - 5; // резултатът е -2
+int result = 3 - 5; // the result is -2
 ```
 
 ### Operator *
 
 ```java
-int result = 3 * 5; // резултатът е 15
+int result = 3 * 5; // the result is 15
 ```
 
 ### Operator /
 
 ```java
-int result = 7 / 3; // резултатът е 2 (целочислено деление)
-double result2 = 5 / 2.0; // резултатът е 2.5 (дробно деление)
+int result = 7 / 3; // the result is е 2 (integer division)
+double result2 = 5 / 2.0; // the result is е 2.5 (fractional division)
 ```
 
 ## Concatenation
 
-By using the operator **`+`** between string variables (or between a string and a number) we have the so-called concatenation (cobining strings).
+When using the operator **`+`** between string variables (or between a string and a number), the result is so-called concatenation (cobining strings).
 
 ```java
 String firstName = "Ivan";
@@ -73,7 +72,7 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 // Ivan Ivanov is 19 years old
 ```
 
-## Exam Problems
+## Exam problems
 
 Now, after we revised how to make simple calculations and how to read and print numbers from the console let's move to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
 
