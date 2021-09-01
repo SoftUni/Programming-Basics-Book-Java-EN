@@ -1,6 +1,6 @@
-# Chapter 2.2. Simple calculations - Exam problems
+# Chapter 2.2. Simple calculations - Exam tasks
 
-In the previous chapter, we got familiar with the system console and how to work with it – how to **read numbers** from the console and **print an output** on the console. We went through the bacis arithmetical operations and briefly mentioned data types. In this chapter, we will practice and consolidate what we have learned so far. We will solve a few **more complicated examples** given as exams tasks.
+In the previous chapter, we got familiar with the system console and how to work with it – how to **read numbers** from the console and **print an output** on the console. We went through the bacis arithmetical operations and briefly mentioned data types. In this chapter, we will practice and consolidate what we have learned so far. We will solve a few **more complicated tasks** given as exams tasks.
 
 ## Reading numbers from the console
 
@@ -72,50 +72,50 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 // Ivan Ivanov is 19 years old
 ```
 
-## Exam problems
+## Exam tasks
 
-Now, after we revised how to make simple calculations and how to read and print numbers from the console let's move to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
+Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the tasks. We will solve several **tasks from a SoftUni entrance exam**.
 
-## Problem: Training Lab
+## Task: Classroom
 
-**A training lab** has a rectangular size **l** for **w** metres without columns on the inside. The hall is divided into two parts- left and right, with a hallway - approximately in the middle. In both parts there are **rows with desks**. In the back of the hall there is a big **entrance door**. In the front there is a **department** with podium for the lecturer. A single **working place** occupies **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and due to the **department** (кwhich has size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** at the described location (look at the figure).
+**A classroom** has a rectangular size **l** and **w** meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a podium with a **chair** for the teacher. A single **working place** occupies **70 x 120 cm** (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** has a width of at least **100 cm**. It is known that because of the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and because of the **teacher's chair** (which has a size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the classroom as input data and calculates the **number of working places in it** as it is described (look at the figure below).
 
-### Input Data
+### Input data
 
-Are read from the console **2 numbers**, one per line: **l** (length in meters) and **w** (width in meters).
+As input data, we will read **2 numbers** from the console, each on a separate line: **l** (length in meters) and **w** (width in meters).
 
 Constraints: **3 ≤ w ≤ l ≤ 100**.
 
-### Output Data
+### Output data
 
-Print on the console one integer number: **the number of working places** in the training lab.
+Print on the console one integer number: **the number of working places** in the classroom.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input   | Output | Diagram |
 |---------|-------|--------|
 |15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
 |8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
 
-#### Clarification of the Examples
+#### Explanations to the examples
 
-In the first example, the hall length is 1500 cm. There could be located **12 rows** (12 \* 120 cm = 1440 + 60 cm residue). The hall width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm residue). **Number of places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 places for podium and entrance door).
+In the first example, the classroom length is 1500 cm. There could be located **12 rows** (12 \* 120 cm = 1440 + 60 cm residue). The classroom width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm residue). **Number of working places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 working places for podium and entrance door).
 
-In the second example, the hall length is 840 cm. There could be located **7 rows** (7 \* 120 cm = 840, without residue). The hall width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located **6 desks per row** (6 \* 70 cm = 420 cm, without residue). **Number of places = 7 * 6 - 3** = 42 - 3 = **39** (We have 7 rows with 6 working places per row = 42 minus 3 laces for podium and entrance door).
+In the second example, the classroom length is 840 cm. There could be located **7 rows** (7 \* 120 cm = 840, without residue). The classroom width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located **6 desks per row** (6 \* 70 cm = 420 cm, without residue). **Number of working places = 7 * 6 - 3** = 42 - 3 = **39** (We have 7 rows with 6 working places per row = 42 minus 3 working places for podium and entrance door).
 
-### Hints and Guidelines
+### Hints and guidelines
 
-Try to solve the problem on your own first. If you do not succeed, go through the hints.
+Try to solve the problem on your own first. If you fail, use the hints and guidelines below.
 
-#### Idea for Solution
+#### An idea for a solution
 
-As with any programming task is **important to build an idea for its solution** before we start to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab where the number depends on the hall length and height. We notice that the provided input will be in **meters** and the information about how much space the working places and hallway take will be in **centimeters**. To do the calculations, we will use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution.  
+In any programming task, the **important part is to build an idea for its solution** before starting to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a classroom where the number depends on the length and height of the room. We notice that the provided input data will be in **meters**, but we have the sizes for working places, and the hallway is in **centimeters**. To do the calculations, we must use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. We use the first option for the presented solution.  
 
-Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations with integer, fractional part can be obtained. **In a variable we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the places which are lost because of the entrance door and podium). This is how we calculate the needed value. 
+Next, we have to calculate **how many columns and how many rows** with desks will fit in the classroom. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations, as a result, we can receive a number with integer and fractional parts. **In a variable, we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (lost the working places because of the entrance door and podium), and we will receive the required value.
 
-#### Choosing Data Types
+#### Choosing data types
 
-From the example, we see that a real number with whole and fractional part can be given as an input, therefore, it is not appropriate to choose data type **`int`**. This is why we use **`double`**. Choosing data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one also has **more than one way to be solved**. Two methods will be shown here. 
+From the example input data, it looks like we can get a number with integer and fractional parts. For that reason, it is not appropriate to choose **` int`** data type. Therefore we will use **`double`**. Selecting the correct data type for the variables depends on the method we choose to solve the task. Any programming task as and this one also has **more than one way to be solved**. We will describe two methods. 
 
 #### Solution
 
@@ -128,19 +128,19 @@ The first thing we have to do is read the input from the console. With **`scanne
 
 ![](assets/chapter-2-2-images/01.Training-lab-03.png)
 
-Let’s move to the calculations. The special part here is that after dividing the numbers, we have to store only the integer part the result in a variable. 
+Let’s move to the calculations. The special part here is that after dividing the numbers, we have to store only the integer part of the result in a variable. 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Търсете в Google!</b> Whenever we have an idea how to solve a particular problem but we do not know how to write it in Java or we are dealing with one that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
+<td><b>Search Google!</b> Whenever we have an idea of how to solve a particular problem, but we do not know how to write it in Java, the easiest way to solve it is by looking for information on the net. If we are dealing with a problem that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. as it works with data types of type **`double`**. For the number of rows and columns we create variables of the same type.  
+In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. Аs the method works with **`double`** data type, we create variables of the same type for the number of rows and columns.
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 
-Second variant: As we already know, the operator for division **`/`** operates differently on integers and decimals. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search how to convert the real numbers that we have as values for the height and the width into integers and then divide them. 
+As a second solution, we can use: As we already know, the operator for division **`/`** operates differently on integers and floating-point numbers. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search for a way to convert the floating-point numbers of the height and the width of the classroom into integers and then divide them.
 
-In this case, there could be  **data loss** after having removed the fractional part so it is necessary that it is converted **expressly** (explicit typecasting). We use the operator for converting data **`(type)`**, by replacing the word **type** with the needed **тdata type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
+In this case, there could be **data loss** after removing the fractional part, so it is necessary for the conversion to be indicated **explicitly** (explicit typecasting). To indicate explicit conversion, we use the operator for converting data **`(type)`** by replacing the word **type** with the needed **data type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
 
 ![](assets/chapter-2-2-images/01.Training-lab-05.png)
 
@@ -148,12 +148,12 @@ With **`System.out.println(…)`** we print the result on the console.
 
 ![](assets/chapter-2-2-images/01.Training-lab-06.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#0](https://judge.softuni.bg/Contests/Practice/Index/650#0).
 
 
-## Problem: Vegetable Market
+## Task: Vegetable market
 
 A gardener is selling his harvest on the vegetables market. He is selling **vegetables for N levs per kg** andи **fruits for M levs per kg**. Write a program that **дcalculates the earnings of the harvest in Euro** (As we assume that **one euro** is equals to **1.94 лв.**).
 
