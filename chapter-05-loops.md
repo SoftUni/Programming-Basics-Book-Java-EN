@@ -282,21 +282,21 @@ We created a new project. If we click on the triangle in front of **Loops** in t
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
-За да създадем в нашият проект **пакет**, който да съдържа всички класове с решенията на задачите за упражнение, натискаме десен бутон на мишката върху **src**, избираме **New** -> **Package** и наименуваме пакета **tasks** (с малка първа буква).
+In order to create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **tasks** (with small letter).
 
 ![](assets/chapter-5-1-images/10.New-project-07.png)
 
-За да създадем нов клас за първото упражнение, натискаме десен бутон на мишката върху **tasks**, избираме **New** -> **Java Class** и наименуваме класа **Task_01** (с главна първа буква).
+In order to create new class for the first task, right-click with the mouse on **tasks**, select **New** -> **Java Class** and name it **Task_01** (with its first letter as a capital letter).
 
 ![](assets/chapter-5-1-images/10.New-project-08.png)
 
 ![](assets/chapter-5-1-images/10.New-project-09.png)
 
-След тези промени структурата на проекта ще изглежда по следния начин:
+After these changes the structure of the project should look like this:
  
 ![](assets/chapter-5-1-images/10.New-project-10.png)
  
- Като за всяко следващо упражнение създадем нов клас, по описания по-горе начин за създаване на клас. 
+For each subsequent exercise we will create a new class in the way described above. 
  
 ### Задача: Елемент, равен на сумата на останалите
 
