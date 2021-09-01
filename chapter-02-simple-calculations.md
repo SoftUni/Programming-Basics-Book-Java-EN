@@ -224,7 +224,7 @@ We can sum up numbers using the operator **`+`**:
 ```Java
 int a = 5;
 int b = 7;
-int sum = a + b; // резултатът е 12
+int sum = a + b; // the result is 12
 ```
 
 ### Subtracting numbers (оператор **`-`**)
