@@ -5,7 +5,7 @@ In the present chapter we will get familiar with how to **repeat blocks of comma
 ## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
+  Watch the video lesson on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=MMLI-dGB3Ms">
   https://www.youtube.com/watch?v=MMLI-dGB3Ms</a>.
 </div>
