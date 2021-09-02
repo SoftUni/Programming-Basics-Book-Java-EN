@@ -76,9 +76,9 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 
 Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the tasks. We will solve several **tasks from a SoftUni entrance exam**.
 
-## Task: Classroom
+## Task: Training lab
 
-**A classroom** has a rectangular size **l** and **w** meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a podium with a **chair** for the teacher. A single **working place** occupies **70 x 120 cm** (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** has a width of at least **100 cm**. It is known that because of the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and because of the **teacher's chair** (which has a size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the classroom as input data and calculates the **number of working places in it** as it is described (look at the figure below).
+**A training lab** has a rectangular size **l** and **w** meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a podium with a **chair** for the teacher. A single **working place** occupies **70 x 120 cm** (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** has a width of at least **100 cm**. It is known that because of the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and because of the **teacher's chair** (which has a size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the classroom as input data and calculates the **number of working places in it** as it is described (look at the figure below).
 
 ### Input data
 
@@ -99,9 +99,9 @@ Print on the console one integer number: **the number of working places** in the
 
 #### Explanations to the examples
 
-In the first example, the classroom length is 1500 cm. There could be located **12 rows** (12 \* 120 cm = 1440 + 60 cm residue). The classroom width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm residue). **Number of working places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 working places for podium and entrance door).
+In the first example, the training lab length is 1500 cm. There could be located **12 rows** (12 \* 120 cm = 1440 + 60 cm residue). The training lab width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm residue). **Number of working places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 working places for podium and entrance door).
 
-In the second example, the classroom length is 840 cm. There could be located **7 rows** (7 \* 120 cm = 840, without residue). The classroom width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located **6 desks per row** (6 \* 70 cm = 420 cm, without residue). **Number of working places = 7 * 6 - 3** = 42 - 3 = **39** (We have 7 rows with 6 working places per row = 42 minus 3 working places for podium and entrance door).
+In the second example, the training lab length is 840 cm. There could be located **7 rows** (7 \* 120 cm = 840, without residue). The training lab width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located **6 desks per row** (6 \* 70 cm = 420 cm, without residue). **Number of working places = 7 * 6 - 3** = 42 - 3 = **39** (We have 7 rows with 6 working places per row = 42 minus 3 working places for podium and entrance door).
 
 ### Hints and guidelines
 
@@ -109,9 +109,9 @@ Try to solve the problem on your own first. If you fail, use the hints and guide
 
 #### An idea for a solution
 
-In any programming task, the **important part is to build an idea for its solution** before starting to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a classroom where the number depends on the length and height of the room. We notice that the provided input data will be in **meters**, but we have the sizes for working places, and the hallway is in **centimeters**. To do the calculations, we must use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. We use the first option for the presented solution.  
+In any programming task, the **important part is to build an idea for its solution** before starting to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab where the number depends on the length and height of the room. We notice that the provided input data will be in **meters**, but we have the sizes for working places, and the hallway is in **centimeters**. To do the calculations, we must use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. We use the first option for the presented solution.  
 
-Next, we have to calculate **how many columns and how many rows** with desks will fit in the classroom. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations, as a result, we can receive a number with integer and fractional parts. **In a variable, we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (lost the working places because of the entrance door and podium), and we will receive the required value.
+Next, we have to calculate **how many columns and how many rows** with desks will fit in the training lab. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations, as a result, we can receive a number with integer and fractional parts. **In a variable, we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (lost the working places because of the entrance door and podium), and we will receive the required value.
 
 #### Choosing data types
 
@@ -138,7 +138,7 @@ In this case, we can try with the following search: *java get whole number part 
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 
-As a second solution, we can use: As we already know, the operator for division **`/`** operates differently on integers and floating-point numbers. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search for a way to convert the floating-point numbers of the height and the width of the classroom into integers and then divide them.
+As a second solution, we can use: As we already know, the operator for division **`/`** operates differently on integers and floating-point numbers. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search for a way to convert the floating-point numbers of the height and the width of the training lab into integers and then divide them.
 
 In this case, there could be **data loss** after removing the fractional part, so it is necessary for the conversion to be indicated **explicitly** (explicit typecasting). To indicate explicit conversion, we use the operator for converting data **`(type)`** by replacing the word **type** with the needed **data type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
 
@@ -389,66 +389,67 @@ This code would print a correct result, but it is **hard to read**. It won't be 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#3](https://judge.softuni.bg/Contests/Practice/Index/650#3).
 
 
-## Problem: Daily Earnings
+## Таск: Daily earnings
 
-Ivan is a programmer in an **American company** and he works from home **approximately N days per month** and earns **approximately M dollars per day**. At the end of the year, Ivan **gets bonus** which is **equals to 2.5 monthly salaries**. From what he earned during the year **withhold 25% for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in leva per day as he spends them in Bulgaria. It is accepted that one year has exactly **365 days**. **The exchange rate of dollar** to leva will be **read from the console**.
+Ivan is a programmer in an **American company** and he works from home **N days per month** and earns **M USD per day**. At the end of the year, Ivan **gets a bonus** which is **equals 2.5 monthly salaries**. From what he earned during the year, **the withholding tax is 25%**. Write a program that **calculates the amount of Ivan's net average earning** in BGN per day because he spends it in Bulgaria. We accept that one year has exactly **365 days**. **The exchange rate of USD** to BGN will be **read from the console**.
 
-### Input Data
+### Input data
 
-They are read from the console **3 numbers**: 
-* On the first line – **working days in the month**. Integer in the range of [**5 … 30**].
-* On the second line – **earned money per day**. Floating-point number in the range of [**10.00 … 2000.00**].
-* On the third line – **exchange rate to leva** /1 dollar = X leva/. Floating-point number in the range of [**0.99 … 1.99**].
+As input data, we will read **3 numbers** from the console, each on a separate line:
+* On the first line – **working days of the month**. Integer in the range of [**5 … 30**].
+* On the second line – **money earned per day**. Floating-point number in the range of [**10.00 … 2000.00**].
+* On the third line – **exchange rate USD to BGN** /1 USD = X BGN/. Floating-point number in the range of [**0.99 … 1.99**].
 
-### Output Data
+### Output data
 
-On the console **to print 1 number – approximately daily earnings in leva**. The result should be **rounded up to the second digit after the decimal point**.
+On the console **print average earning in BGN per day**. The result should be **rounded up to the second digit after the decimal point**.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input        | Output          |Input        | Output            | Input         | Output    |
 |---------------|------------------|-------------|------------------|-------------|------------------|
 |21<br>75.00<br>1.59|74.61| 15<br>105<br>1.71|80.24|22<br>199.99<br>1.50|196.63|
 
 **Explanation**:
-* **1 monthly salary** = 21 \* 75 = 1575 dollars.
-* **Annual income** = 1575 \* 12 + 1575 \* 2.5 = 22837.5 dollars.
-* **Taxes** = 25% от 22837.5 = 5709.375 leva.
-* **Net annual income** = 17128.125 dollars = 27233.71875 leva.
-* **Average earning per day** = 27233.71875 / 365 = 74.61 leva.
+* **Monthly salary** = 21 \* 75 = 1575 USD.
+* **Annual income** = 1575 \* 12 + 1575 \* 2.5 = 22837.5 USD.
+* **Taxes** = 25% от 22837.5 = 5709.375 USD.
+* **Net annual income** = 17128.125 dollars = 27233.71875 BGN.
+* **Average earning per day** = 27233.71875 / 365 = 74.61 BGN.
 
-### Hints and Guidelines
+### Hints and guidelines
 
-Firstly, we have to analyze the task and think of a way to solve it. Then we will choose data types and finally we will write the code.
+Firstly, we have to analyze the task and think of a way to solve it. Then we will choose data types, and finally, we will write the code.
 
-#### Idea for Solution
+#### An idea for a solution
 
-Let's first calculate **how much the monthly salary** of Ivan is. We do that by **multiplying the working days per month by his daily earnings**. **We multiply the result** by 12 so as to calculate his salary for 12 months and then **by 2.5** in order to calculate the bonus. After having summed up the two values we calculate his **annual income**. From it **we have to reduce 25% for taxes**. We can do this by multipling his total income by **0.25** and subtract the result from it. Depending on the exchange rate we **exchange the dollars to leva**. After that **we divide the result by the days in a year** which we accepts that they are 365.     
+Let's first calculate **how much the monthly salary** of Ivan is. We will do this by **multiplying the working days per month by the money he earns per day**. **We multiply the result** by 12 to calculate his yearly salary, and then multiply yearly salary **by 2.5** to calculate the bonus. Adding the two values obtained, we will calculate his total **annual income**. **We have to subtract 25% from it for taxes**. We can do this by multiplying the total income by **0.25** and subtracting the result from it. Then we **exchange the USD to BGN** and **divide the result by the days of a year**, which we assume are 365. 
 
-#### Choosing Data Types
-
-**The working days per month** are given as an **integer**, therefore, we can declare a variable of **type `int`**. For the **earned money** as well as for the **exchange rate of dollar to leva** we will obtain **a floating-point number** so we use for them **`double`**. As **`double`** is the type with **the higher scope** and the output should also be **a floating-point number** we use double for the other variables that we create as well. 
+#### Choosing data types
+ 
+**The working days per month** are given as an **integer**, so we can declare a variable of **type `int`**. For the **earned money** and for the **exchange rate of USD to BGN**, we will obtain **a floating-point number**, so for them, we use **`double`** as type. As **`double`** is the type with **the bigger size** and the output should also be **a floating-point number**, we use **`double`** for the other variables we create.
 
 #### Solution
 
-Again: after we have an idea on how to solve the problem and we have considered the data types that we are going to use, we can start **writing the program**. As in the previous tasks we can divide the solution into three smaller tasks: 
-* **Reading the input**.
-* **Doing the calculations**.
-* **Printing the output** on the console.
+Again: after we have an idea on how to solve the task, and we have considered the data types that we will use, we can start **writing the code**. As in the previous tasks we can divide the solution into three smaller tasks: 
+
+* **Read** the input.
+* **Performe** calculations.
+* **Print** the output on the console.
 
 **We declare the variables** that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseInt/Double(…)`**. 
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-01.png)
 
-Doing the Calculations: 
+We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-02.png)
 
-We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators** because this way the code becomes **more easily readable** and chances of making a mistake are smaller. 
+We could write an expression that calculates the annual income without brackets as well. Multiplication is an operation that has a higher priority over addition and performs first. Despite that, **it is a good practice to use brackets when using more operators** because the code becomes **more easily readable** and chances of making a mistake are smaller. 
 
-Finally, we have to print the result on the console. We notice that **the number has to be rounded up to the second digit after the decimal point**. For this purpose we can use **formatted specificators**, an item that will be replaced by a particular value when printing. In Java for **formatting specificator** is used `%` followed by a specific letter (specificator). We can format an integer or a floating-point number by using **F**/**f**, or **D**/**d**. It is followed by a whole positive number specifying the number of digits after the decimal point (you can read more about formatting in the book ["Въведение в програмирането с Java" (стр. 137-143)](http://www.introprogramming.info/intro-java-book/read-online/glava4-vhod-i-izhod-ot-konzolata/#_Toc243587243).
+Finally, we have to print the result on the console. We notice that **the number has to be round up to the second digit after the decimal point**. For this purpose, we can use **formatted specifiers**, an item that will be replaced by a particular value when printing. In Java, for **formatting specifier** is used `%` followed by a specific letter (specifier). We can format an integer or a floating-point number by using **F**/**f**, or **D**/**d**. In the case of a floating-point number, before the letter, we put a dot and a whole positive number specifying the number of digits after the decimal point.
 
-We see the final result like this:
+The final result is as follows:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-03.png)
 
