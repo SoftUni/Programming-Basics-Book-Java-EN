@@ -159,7 +159,7 @@ A gardener sells the harvest from his garden on the vegetable market. He sells *
 
 ### Input data
 
-They are read from the console **4 numbers**, one per line:
+As input data, we will read **4 numbers** from the console, each on a separate line:
 * First line – the price of the vegetables, per kilogram – a floating-point number.
 * Second line – the price of the fruits, per kilogram – a floating-point number.
 * Third line – total kilograms of vegetables – an integer.
@@ -224,29 +224,29 @@ The task does not specify special output format, so we just need to calculate th
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#1](https://judge.softuni.bg/Contests/Practice/Index/650#1).
 
 
-## Problem: Change Tiles
+## Task: Change of tiles
 
-The tiles on the ground in front of an apartment building need changing. The ground has a **square shape with side of N meters**. The tiles are **wide W meters** and **length L meters**. There is one bench on the ground with **width of "M" meters and length of "O" meters**. The tiles under it do not need to be replaced. Each tile is replaced for **0.2 minutes**.
+It is needed to be placed tiles on the ground in front of the apartment building. The place is **square with a side of N meters**. The tiles are **W meters wide** and **L meters long**. There is a bench in the area with **a width of M meters** and **a length of O meters**. There is no need to put tiles under it. To place each tile requires **0.2 minutes**.
 
-Write a program that reads the size of the ground, the tiles and the bench from the console and calculates **how many tiles are needed to** cover the ground and calculates **is the total time for replacing the tiles**.
+Write a program that reads from the console the dimensions of the ground, the tiles, and the bench. Then calculates **how many tiles are needed** to cover the place and calculates **the time to place all the tiles**. 
 
-**Example**: **ground** with size 20 м. mm has area of 400 кв.м. **A bench** that is 1 м. wide and 2 м. long has area of 2 кв.м. One **tile** is 5 м. wide and 4 м. long and has area of = 20 кв.м. **The area** that needs to be covered is **400 - 2 = 398 кв.м.** They are needed **398 / 20 = 19.90 tiles**. The needed **time** is **19.90 * 0.2 = 3.98 minutes.**
+**Example**: A **ground** with size 20 m. has area of 400 sq.m. **A bench** that is 1 m. wide and 2 m. long has area of 2 sq.m. One **tile** is 5 m. wide and 4 m. long and has area of = 20 sq.m. **The area** that needs to be covered is **400 - 2 = 398 sq.m.** The tiles that are needed are **398 / 20 = 19.90**. The needed **time** is **19.90 * 0.2 = 3.98 minutes.**
 
-### Input Data
+### Input data
 
-They are read from the console **5 numbers**:
+As input data, we will read **5 numbers** from the console, each on a separate line:
 
-* **N – length** of a **side** of the ground within the range of [**1 … 100**].
-* **W – width** per **tile** in the range of [**0.1 … 10.00**].
-* **L – length** per **tile** in the range of [**0.1 … 10.00**].
-* **М – width** of the **bench** in the range of [**0 … 10**].
-* **О – length** of the **bench** in the range of [**0 … 10**].
+* **N – the length** of a **side** of the ground within the range of [**1 … 100**].
+* **W – the width** of a **tile** in the range of [**0.1 … 10.00**].
+* **L – the length** of a **tile** in the range of [**0.1 … 10.00**].
+* **М – the width** of the **bench** in the range of [**0 … 10**].
+* **О – the length** of the **bench** in the range of [**0 … 10**].
 
-### Output Data
+### Output data
 
-Print on the console **two numbers**: **number of tiles** needed for the repair and **the time for placing them**. Each on a new line.
+Print on the console **two numbers**, еach on a new line: **number of tiles** needed for the repair and **the time for placing them**. 
 
-## Sample Input and Output
+## Sample input and output
 
 | Input        | Output    | Input    | Output            |
 |---------------|------------|-----------|--------------------|
@@ -254,49 +254,50 @@ Print on the console **two numbers**: **number of tiles** needed for the repair 
 
 **Explanation of the example:**
 
-* **total area** = 20 \* 20 = 400.
-* **area of the bench** = 1 \* 2 = 2.
-* **are for replacing** = 400 – 2 = 398.
-* **area of the tiles** = 5 \* 4 = 20.
-* **needed tiles** = 398 / 20 = 19.9.
-* **needed time** = 19.9 \* 0.2 = 3.98.
+* **Total area** = 20 \* 20 = 400.
+* **Bench area** = 1 \* 2 = 2.
+* **Coverage area ** = 400 – 2 = 398.
+* **Tile area** = 5 \* 4 = 20.
+* **Required tiles** = 398 / 20 = 19.9.
+* **Time required** = 19.9 \* 0.2 = 3.98.
 
-### Hints and Guidelines
+### Hints and guidelines
 
-Let's make a draft to clarify the task requirements. It can look the following way:
+Let's make a drawing to clarify the task requirements. It can look like this:
 
 ![](assets/chapter-2-2-images/03.Change-tiles-01.png)
 
-### Idea for Solution
+### An idea for a solution
 
-It is required to calculate **the number of tiles** which have to be placed as well as the **time** for replacing them. In order to **calculate the number of tiles** we have to calculate the **area that needs to be covered** and to **divide it by the area per tile**. The ground is square, therefore, we find the total area by multiplying its side by its value **`N * N`**. After that, we calculate **the area that the bench takes up** by multiplying its two sides as well **`M * O`**. After subtracting the area of the bench from the area of the whole ground we obtain the area that needs to be repaired. 
+We need to calculate **the number of tiles** to cover the ground and the **time** for placing them. To **calculate the number of tiles**, we have to calculate the **area that needs to be covered** and to **divide it by the area per tile**. The ground is square, and we find the total area using the formula **`N * N`**. After that, we calculate **the area of the bench** by multiplying its two sides **`M * O`**. After that, to obtain the area that needs to be cover, we subtract the area of the bench from the area of the ground.
 
-We calculate the area of a single tile by **multiplying** its two sides with one another - **`W * L`**. As we already saied, now we have to **divide** the area for covering by the area of a single tile. This way we find the number of necessary tiles which we multiply by **0.2** (the time needed for changing single tile). Now, we have the wanted output. 
+We calculate the area of a single tile by **multiplying** its two sides with one another - **`W * L`**. As we already saied, now we have to **divide** the area to cove by the area of a single tile. In this way, we find the number of necessary tiles, which we multiply by **0.2** (the time needed for changing single tile). Now, we have the required output.
 
-### Choosing Data Types
+### Choosing data types
 
-The length of the side of the ground, the width and the length of the bench will be given as **integer numbers**, therefore, in order to store their values we can declare **variables of type `int`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`double`**. The output will be a floating-point number as well so the variables will be of type **`double`**. 
+Input data for the length of the side of the ground, the width, and the length of the bench are **integer numbers**, so to keep their values, we will declare **variables of type `int`**. For the width and the length of the tiles we will read floating-point numbers, so we will use variables of type **`double`**. The output will be a floating-point number, so used variables will be of **`double`** type. 
 
 ### Solution
 
-As in the previous tasks we can divide the solution into three smaller tasks:
-* **Reading** the input.
-* **Doing** the calculations.
-* **Printing** the input on the console.
+As in the previous tasks, we can divide the solution into three subtasks:
+* **Read** the input.
+* **Performe** calculations.
+* **Print** the input on the console.
 
-The first thing we have to do is go through **the input** of the task. It is important to pay attention to the sequence they are given in. With **`scanner.nextLine()`** we read values from the console and with **`Integer.parseInt(…)`** and **`Double.ParseInt(…)`** we convert the particular string value into **`int`** and **`double`**.
+The first thing we have to do is go through **the input data** of the task. It is important to pay attention to the sequence of reading input data. With **`scanner.nextLine()`** we read values from the console and with **`Integer.parseInt(…)`** and **`Double.ParseInt(…)`** we convert the particular string value into **`int`** and **`double`**.
 
 ![](assets/chapter-2-2-images/03.Change-tiles-02.png)
 
-After we have initialized the variables and have stored the corresponding values in them we move to the **calculations**. As the values of the variables **`n`**, **`a`** and **`b`** which we work with are stored in variables of type **`int`** we can also declare for the results **variables of the same type**.  
+Once we have initialized the variables and saved the corresponding values in them, we proceed to the **calculations**. As the values of the variables **`n`**, **`a`** and **`b`** that we work with are stored in variables of type **`int`**, we can also declare for the results **variables of the same type**.  
+
 
 ![](assets/chapter-2-2-images/03.Change-tiles-03.png)
 
-The variables **`w`** and  **`h`** are of type **`double`**, therefore, for the **area of a single tile** we create a variable of the same type. Finally **we calculate the values that we have to print** on the console. **The number** of needed **tiles** we get by **dividing the area that needs to be covered by the area of a single tile**. When dividing two numbers, one of which is **floating-point number** the result is also a **floating-point number**. In order for the calculations to be correct we store the result in a variable of type **`double`**. The task does not specify special formatting or rounding of the output so we just print the values with **`System.out.println(…)`**. 
+The variables **`w`** and  **`h`** are of type **`double`**, so for the **area of a single tile** we create a variable of the same type. Finally **we calculate the values that we have to print** on the console. **The number** of needed **tiles** we get by **dividing the area that needs to be covered by the area of a single tile**. When dividing two numbers, one of which is **floating-point number** the result is also a **floating-point number**. For the calculations to be correct we store the result in a variable of type **`double`**. The task does not specify special formatting or rounding of the output, so we just print the values with **`System.out.println(…)`**. 
 
 ![](assets/chapter-2-2-images/03.Change-tiles-04.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#2](https://judge.softuni.bg/Contests/Practice/Index/650#2).
 
