@@ -179,9 +179,9 @@ Print on the console **one floating-point number: the earnings of all fruits and
 
 **Explanations to the first example:**
 
-* The vegetables cost: 0.194 lv. \* 10 kg. = **1.94 lv.**
-* The fruits cost: 19.4 lv. \* 10 kg.  = **194 lv.**
-* Total: **195.94 lv. = 101 euro**. 
+* The vegetables cost: 0.194 BGN \* 10 kg. = **1.94 BGN**
+* The fruits cost: 19.4 BGN \* 10 kg.  = **194 BGN**
+* Total: **195.94 BGN = 101 EUR**. 
 
 
 ### Hints and guidelines
