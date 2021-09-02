@@ -256,7 +256,7 @@ Print on the console **two numbers**, еach on a new line: **number of tiles** n
 
 * **Total area** = 20 \* 20 = 400.
 * **Bench area** = 1 \* 2 = 2.
-* **Coverage area ** = 400 – 2 = 398.
+* **Coverage area** = 400 – 2 = 398.
 * **Tile area** = 5 \* 4 = 20.
 * **Required tiles** = 398 / 20 = 19.9.
 * **Time required** = 19.9 \* 0.2 = 3.98.
