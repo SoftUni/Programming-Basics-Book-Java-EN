@@ -1,6 +1,6 @@
 # Chapter 7.1. More complex loops
 
-Having learnt what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops** as well as some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
+Having learnt what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops**, as well as some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
 
   * loops **with a step**
   * **`while`** loops
@@ -31,17 +31,17 @@ It most often has a **size `1`** and in that case instead of writing **`i += 1`*
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **стъпката** във **`for`** цикъл.
+The following is a series of sample tasks, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
-### Пример: числата от 1 до N през 3
+### Example: Numbers 1...N with Step 3
 
-Да се напише програма, която отпечатва числата **от 1 до n** със **стъпка 3**. Например, **ако n = 100**, то резултатът ще е: **1, 4, 7, 10, …, 94, 97, 100**.
+Write a program to print the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
 
-Можем да решим задачата чрез следната поредица от действия (алгоритъм):
+We can solve the problem through the following sequence of actions (algorithm):
 
-  * Четем числото **`n`** от входа на конзолата.
-  * Изпълняваме **`for` цикъл** от **1** до **`n`** с размер на стъпката **3**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We read the number **`n`** from the console input.
+  * We run a **`for` loop** from **1** to **`n`** with a step size of **3**.
+  * We print the value of the current step in **the body of the loop**.
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-with-step3-01.png)
 
