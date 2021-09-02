@@ -33,9 +33,9 @@ It most often has a **size `1`** and in that case instead of writing **`i += 1`*
 
 The following is a series of sample tasks, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
-### Example: Numbers 1...N with Step 3
+### Example: Numbers from 1 to N with Step 3
 
-Write a program to print the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
+Write a program that prints the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
 
 We can solve the problem through the following sequence of actions (algorithm):
 
@@ -50,17 +50,17 @@ We can solve the problem through the following sequence of actions (algorithm):
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#0](https://judge.softuni.bg/Contests/Practice/Index/659#0).
 
 
-### Пример: числата от N до 1 в обратен ред
+### Example: Numbers from N to 1 in reverse order
 
-Да се напише програма, която отпечатва числата **от n до 1 в обратен ред** (стъпка -1). Например, **ако n = 100**, то резултатът ще е: **100, 99, 98, …, 3, 2, 1**.
+Write a program that prints the numbers **from n to 1 in reverse order** (step -1). For example, **if n = 100**, the result will be **100, 99, 98, …, 3, 2, 1**.
 
-Можем да решим задачата по следния начин:
+We can solve the problem in the following way:
 
-  * Четем числото **`n`** от входа на конзолата.
-  * Създаваме **`for` цикъл**, като присвояваме **`int i = n`** .
-  * Обръщаме условието на цикъла: **`i >= 1`**.
-  * Дефинираме размера на стъпката: **-1**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We read the number **`n`** from the console input.
+  * We run a **`for` loop** in which we assign **`int i = n`**.
+  * We reverse the loop condition: **`i >= 1`**.
+  * We define the step size as: **-1**.
+  * We print the value of the current step in **the body of the loop**.
 
 ![](assets/chapter-7-1-images/02.Numbers-from-n-to-1-01.png)
 
@@ -69,11 +69,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#0
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1](https://judge.softuni.bg/Contests/Practice/Index/659#1).
 
 
-### Пример: числата от 1 до 2^n с for цикъл
+### Example: Numbers from 1 to 2^n with a for loop
 
-В следващия пример ще разгледаме ползването на обичайната стъпка с размер 1, но с малко по-различна логика в тялото на цикъла.
+In the following example, we will have a look at using the usual step with size 1, but with a slightly different logic in the body of the loop.
 
-Да се напише програма, която отпечатва числата **от 1 до 2^n** (две на степен n). Например, **ако n = 10**, то резултатът ще е **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
+Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of n). For example, **if n = 10**, the result will be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
 ![](assets/chapter-7-1-images/03.Powers-of-two-01.png)
 
@@ -82,15 +82,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#2](https://judge.softuni.bg/Contests/Practice/Index/659#2).
 
 
-### Пример: четни степени на 2
+### Example: Even powers of 2
 
-Да се отпечатат **четните** степени на **2** до **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. Например, ако **n = 10**, то резултатът ще е **1, 4, 16, 64, 256, 1024**.
+Print the **even** powers of **2** to **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, the result will be **1, 4, 16, 64, 256, 1024**.
 
-Ето една идея как можем да решим задачата:
+Here is a way to solve the problem:
 
-  * Създаваме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-  * За **стъпка** на цикъла задаваме стойност **2**.
-  * В **тялото на цикъла**: отпечатваме стойността на текущото число и **увеличаваме текущото число `num` 4 пъти** (според условието на задачата).
+  * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
+  * We set a value of **2** for the **step** of the loop.
+  * We print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem) in **the body of the loop**.
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
