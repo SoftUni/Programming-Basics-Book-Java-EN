@@ -120,9 +120,9 @@ From the example input data, it looks like we can get a number with integer and 
 #### Solution
 
 It is time to go to the solution. We can divide it into three smaller tasks: 
-* **Reading** an input.
-* **Doing** the calculations.
-* **Printing** the output on the console.
+* **Read** the input.
+* **Performe** calculations.
+* **Print** the output on the console.
 
 The first thing we have to do is read the input from the console. With **`scanner.nextLine()`** we read the values from the console and with the function **`Double.parseDouble(…)`** we convert the string (text) value into **`double`**. 
 
@@ -204,7 +204,7 @@ The **output** should also be a **floating-point number**. This means that the r
 
 It is time to move on to the solution. We can mentally divide it into three subtasks:
 * **Read** the input.
-* **Performe ** calculations.
+* **Performe** calculations.
 * **Print** the output on the console.
 
 To read the input data, we declare variables, being careful to name them in such a way that it tells us what values the variables contain. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
@@ -302,7 +302,7 @@ The variables **`w`** and  **`h`** are of type **`double`**, so for the **area o
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#2](https://judge.softuni.bg/Contests/Practice/Index/650#2).
 
 
-## Problem: Money
+## Task: Money
 
 Some time ago **Pesho bought bitcoins**. He will now go on a trip aroung Europe **and he will need euro**. Besides bitcoins, he has and **Chinese yuan**. Pesho wants **to exchange his money in euro** for the excursion. Write a program, which **calculates how much euro** he can buy depending on the following rates:
 
