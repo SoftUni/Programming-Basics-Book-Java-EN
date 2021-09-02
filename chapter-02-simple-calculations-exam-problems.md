@@ -155,59 +155,59 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#0
 
 ## Task: Vegetable market
 
-A gardener is selling his harvest on the vegetables market. He is selling **vegetables for N levs per kg** andи **fruits for M levs per kg**. Write a program that **дcalculates the earnings of the harvest in Euro** (As we assume that **one euro** is equals to **1.94 лв.**).
+A gardener sells the harvest from his garden on the vegetable market. He sells **vegetables for N BGN per kilogram** and **fruits for M BGN per kilogram**. Write a program to calculate the earnings from the harvest in EUR (assuming that one EUR is equal to BGN 1.94).
 
-### Input Data
+### Input data
 
 They are read from the console **4 numbers**, one per line:
-* First line – vegetables price per kilogram – a floating-point number.
-* Second line – fruit price per kilogram – a floating-point number.
-* Third line – : total kilograms of vegetables – an integer.
+* First line – the price of the vegetables, per kilogram – a floating-point number.
+* Second line – the price of the fruits, per kilogram – a floating-point number.
+* Third line – total kilograms of vegetables – an integer.
 * Fourth line – total kilograms of fruits – an integer.
 
 **Constraints**: all numbers will be in the range of **0.00** to **1000.00**.
 
-### Output Data
+### Output data
 
-Print on the console **one floating-point number: the earnings of all fruits and vegetables in Euro**.
+Print on the console **one floating-point number: the earnings of all fruits and vegetables in EUR**.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input   | Output  | Input    | Output      |
 |-----------|----------|-----------|----------------|
 |0.194<br>19.4<br>10<br>10|101 | 1.5<br>2.5<br>10<br>10|20.6185567010309| 
 
-**Clarifications for the first example:**
+**Explanations to the first example:**
 
-* Vegetables cost: 0.194 lv. \* 10 kg. = **1.94 lv.**
-* Fruits cost: 19.4 lv. \* 10 kg.  = **194 lv.**
+* The vegetables cost: 0.194 lv. \* 10 kg. = **1.94 lv.**
+* The fruits cost: 19.4 lv. \* 10 kg.  = **194 lv.**
 * Total: **195.94 lv. = 101 euro**. 
 
 
-### Hints and Guidelines
+### Hints and guidelines
 
-First, we will give a few ideas and particular hints for solving the problem followed by the essential part of the code.
+First, we will give a few ideas and particular hints for solving the task, followed by the essential part of the code.
 
-#### Idea for Solution
+#### An idea for a solution
 
-Let's first go through the problem requirements. In this case, we have to calculate the **total income** from the harvest. It is equal to the **sum of the earnings from the fruits and vegetables**, which we can calculate by multiplying **the price per kilogram by the quantity**. The input is given in leva and the output should be in EUR. It is assumed that 1 Euro equals 1.94lv,therefore, in order to get the wanted **output value, we have to divide the sum by 1.94**.
+Let's first go through the problem requirements. In this case, we have to calculate the **total income** from the harvest. It is equal to the **sum of the profit from the fruits and vegetables**, which we can calculate by multiplying **the price per kilogram by the quantity**. Our input data is in leva, and the output should be in EUR. According to the condition 1 Euro equals 1.94lv,so to obtain the requested **output value, we have to divide the sum by 1.94**.
 
-#### Choosing Data Types
+#### Choosing data types
 
-After we have a clear idea of how to solve the task we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of **`int`**. The prices of the fruits and vegetables are said to be **floating-point numbers** so the variables will be of type **`double`**.
+After we have a clear idea of how to solve the task, we can proceed to choose appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, so the variables we declare to store their values will be of **`int`**. The prices of the fruits and vegetables are said to be **floating-point numbers**, so the variables will be of type **`double`**.
 
-We can also declare two variables to store the income from the fruits and vegetables separately. As we are multiplying a variable of type **`int`** (total kilograms) with one of type **`double`** (price) the result should also be of type **`double`**. Let's clarify that: generally **operators work with arguments of the same type**. Therefore, in order to multiply values of different data types we have to convert them into the same type. When there are types of different scopes in one expression the one with the highest scope is the one the other types are converted to, in this case **`double`**. As there isn't danger of data loss **the conversion is implicit** (implicit) and is automatically done by the compiler.  
+We can also declare two variables to store the income from the fruits and vegetables separately. As we are multiplying a variable of type **`int`** (total kilograms) with another of **`double`** type (price), and the result should also be of type **`double`**. Let's clarify that generally **operators work with arguments of the same type**. Therefore, to multiply values of different data types, we have to convert them into the same type.When there are different types in one expression, conversion is done to the highest type, in this case, in this case **`double`**. Because this conversion does not suggest data loss **the conversion is implicit** and is automatically done by the compiler.  
 
 The **output** should also be a **floating-point number**. This means that the result will be stored in a variable of type **`double`**.
 
 #### Solution 
 
-It is time to get to the solution. We can divide it into three smaller tasks: 
-* **Reading** the input.
-* **Doing** the calculations.
-* **Printing** the output on the console.
+It is time to move on to the solution. We can mentally divide it into three subtasks:
+* **Read** the input.
+* **Performe ** calculations.
+* **Print** the output on the console.
 
-In order to read the input we declare variables which we have to name carefully so that they can give us a hint about the values they store. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
+To read the input data, we declare variables, being careful to name them in such a way that it tells us what values the variables contain. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-01.png)
 
@@ -215,11 +215,11 @@ We do the necessary calculations:
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-02.png)
 
-The task does not specify special output format so we just have to calculate the requested value and print it on the console. As in mathematics and so in programming, division has a priority over addition. However, in this task first we have to **calculate the sum** of the two input values and then we have to **divide by 1.94**. In order to give priority to addition we can use brackets. With **`System.out.println(…)`** we print the output on the console.  
+The task does not specify special output format, so we just need to calculate the required value and print it on the console. As in mathematics and so in programming, the division has a priority over addition. However, in this task first, we have to **calculate the sum** of the two input values, and then we have to **divide by 1.94**. To give priority to the addition, we can use brackets. With **`System.out.println(…)`**, we print the output on the console.  
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-03.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#1](https://judge.softuni.bg/Contests/Practice/Index/650#1).
 
