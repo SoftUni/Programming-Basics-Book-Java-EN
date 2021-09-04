@@ -90,7 +90,7 @@ Here is a way to solve the problem:
 
   * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
   * We set a value of **2** for the **step** of the loop.
-  * We print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem) in **the body of the loop**.
+  * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem).
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
@@ -113,17 +113,17 @@ In programming, the **` while` loop** is used when we want to **repeat** the exe
 The following is a series of sample problems, the solution of which will help us better understand the use of the **`while`** loop.
 
 
-### Пример: редица числа 2k+1
+### Example: Sequence of 2k+1 numbers
 
-Да се напише програма, която отпечатва всички **числа ≤ n** от редицата: **1, 3, 7, 15, 31**, …, като приемем, че всяко следващо число = **предишно число \* 2 + 1**.
+Write a program that prints all **numbers ≤ n** from the sequence: **1, 3, 7, 15, 31**, …, having in mind that each next number = **previous number \* 2 + 1**.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-* Създаваме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-* За условие на цикъла слагаме **текущото число <= n**.
-* В **тялото на цикъла**: oтпечатваме стойността на текущото число и увеличаваме текущото число, използвайки формулата от условието на задачата.
+* We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
+* We put the **current number <= n** as the loop condition.
+* In **the body of the loop**, we print the value of the current number and increase the current number, using the formula from the problem.
 
-Ето и примерна реализация на описаната идея:
+Here is a sample representation of the described steps:
 
 ![](assets/chapter-7-1-images/05.Sequence-2k-plus-1-01.png)
  
@@ -132,18 +132,18 @@ The following is a series of sample problems, the solution of which will help us
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#4](https://judge.softuni.bg/Contests/Practice/Index/659#4).
 
 
-### Пример: число в диапазона [1 … 100]
+### Example: Numbers in range [1 … 100]
 
-Да се въведе цяло число в диапазона [**1 … 100**]. Ако въведеното число е невалидно, да се въведе отново. В случая, за невалидно число ще считаме всяко такова, което **не е** в зададения диапазон.
+Enter an integer in the range [**1 … 100**]. If it is invalid, input an integer again. In this case, we will consider any number that **is not** in the specified range as invalid.
 
-За да решим задачата, можем да използваме следния алгоритъм:
+We can solve the problem through the following algorithm:
 
-* Създаваме променлива **`num`**, на която присвояваме целочислената стойност, получена от входа на конзолата.
-* За условие на цикъла слагаме израз, който е **`true`**, ако числото от входа **не е** в диапазона посочен в условието.
-* В **тялото на цикъла**: oтпечатваме съобщение със съдържание "**Invalid number!**" на конзолата, след което присвояваме нова стойност за **`num`** от входа на конзолата.
-* След като вече сме валидирали въведеното число, извън тялото на цикъла отпечатваме стойността на числото.
+* We create a variable **`num`** to which we assign the integer value, obtained from the console input.
+* For a loop condition, we put an expression that is **`true`** if the number of the input **is not** in the range specified in the problem condition.
+* In **the body of the loop**: we print a message "**Invalid number!**" on the console and then we assign a new value to **`num`** from the console input.
+* Having validated the input number, we print its value outside the body of the loop.
 
-Ето и примерна реализация на алгоритъма чрез **`while` цикъл**:
+Here is a sample representation of the algorithm, using a **`while` цикъл**:
 
 ![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.png)
 
