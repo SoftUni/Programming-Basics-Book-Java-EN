@@ -31,7 +31,7 @@ It most often has a **size `1`** and in that case instead of writing **`i += 1`*
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
-The following is a series of sample tasks, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
+The following is a series of sample problems, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
 ### Example: Numbers from 1 to N with Step 3
 
@@ -99,18 +99,18 @@ Here is a way to solve the problem:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#3](https://judge.softuni.bg/Contests/Practice/Index/659#3).
 
 
-## While цикъл
+## While loop
 
-Следващият вид цикли, с които ще се запознаем, се наричат **`while` цикли**. Специфичното при тях е, че повтарят блок от команди, **докато дадено условие е истина**. Като структура се различават от тази на **`for`** циклите, даже имат опростен синтаксис.
+The next type of loops we will get acquainted with are called **'while' loops**. What is specific about them is that they repeat a block of commands, **as long as a given condition is true**. Their structure differs from that of the **`for`** loops, they even have a simplified syntax.
 
 
-### Какво представлява while цикълът?
+### What is a while loop?
 
-В програмирането **`while` цикълът** се използва, когато искаме да **повтаряме** извършването на определена логика, докато **е в сила дадено условие**. Под "**условие**", разбираме всеки **израз**, който връща **`true`** или **`false`**. Когато **условието** стане **грешно**, **`while`** цикълът **прекъсва** изпълнението си и програмата **продължава** с изпълнението на останалия код след цикъла. Конструкцията за **`while` цикъл** изглежда по този начин:
+In programming, the **` while` loop** is used when we want to **repeat** the execution of a certain logic while **a given condition is met**. We define '**condition**' as any **expression** that returns **'true'** or **'false'**. When the **condition** is **false**, the **`while`** loop terminates and the program **continues** with the execution of the code following the loop. The **`while` loop** construction looks like this:
 
 ![](assets/chapter-7-1-images/00.While-loop-01.png)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **`while`** цикъла.
+The following is a series of sample problems, the solution of which will help us better understand the use of the **`while`** loop.
 
 
 ### Пример: редица числа 2k+1
