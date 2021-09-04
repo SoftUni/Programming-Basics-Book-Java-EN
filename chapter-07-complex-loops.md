@@ -152,14 +152,14 @@ Here is a sample representation of the algorithm, using a **`while` цикъл**
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5](https://judge.softuni.bg/Contests/Practice/Index/659#5).
 
 
-## Най-голям общ делител (НОД)
+## Greatest Common Divisor (CGD)
 
-Преди да продължим към следващата задача, е необходимо да се запознаем с определението за **най-голям общ делител** (**НОД**).
+Before proceeding to the next problem, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
 
-**Определение за НОД**: най-голям общ делител на две **естествени** числа **a** и **b** е най-голямото число, което дели **едновременно** и **a**, и **b** без остатък. Например:
+**Definition of GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that divides **simultaneously** both **a** and **b** without a remainder. For example:
 
 
-|a|b|НОД| 
+|a|b|GCD| 
 |:---:|:---:|:---:| 
 |24|16|8|
 |67|18|1|
@@ -168,16 +168,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5
 |10|10|10|
 |100|88|4|
 
-## Алгоритъм на Евклид
+## The Euclidean algorithm
 
-В следващата задача ще използваме един от първите публикувани алгоритми за намиране на НОД - **алгоритъм на Евклид**:
+In the next problem we will use **the Euclidean algorithm**, one of the first published algorithms for finding the GCD:
 
-**Докато** не достигнем остатък 0:
+**Until** we reach a remainder of 0:
 
-* Делим по-голямото число на по-малкото.
-* Вземаме остатъка от делението.
+* We divide the larger number by the smaller one.
+* We take the remainder of the division.
 
-**Псевдо-код** за алгоритъма на Евклид:
+**Pseudocode** for the Euclidean algorithm:
 
 ```java
 while b ≠ 0
