@@ -152,7 +152,7 @@ Here is a sample representation of the algorithm, using a **`while` цикъл**
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5](https://judge.softuni.bg/Contests/Practice/Index/659#5).
 
 
-## Greatest Common Divisor (CGD)
+## Greatest Common Divisor (GCD)
 
 Before proceeding to the next problem, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
 
@@ -187,19 +187,19 @@ while b ≠ 0
 print а;
 ```
 
-### Пример: най-голям общ делител (НОД)
+### Example: Greatest Common Divisor (GCD)
 
-Да се въведат **цели** числа **a** и **b** и да се намери **НОД(a, b)**.
+Enter **integers** **a** and **b** and find **GCD(a, b)**.
 
-Ще решим задачата чрез **алгоритъма на Евклид**:
+We will solve the problem using **the Euclidean algorithm**:
 
-* Създаваме променливи **`a`** и **`b`**, на които присвояваме **целочислени** стойности, взети от входа на конзолата.
-* За условие на цикъла слагаме израз, който е **`true`**, ако числото **`b`** **е различно** от **0**.
-* В **тялото на цикъла** следваме указанията от псевдо кода:
-   * Създаваме временна променлива, на която присвояваме **текущата** стойност на **`b`**.
-   * Присвояваме нова стойност на **`b`**, която е остатъка от делението на **`a`** и **`b`**.
-   * На променливата **`a`** присвояваме **предишната** стойност на променливата **`b`**.
-* След като цикълът приключи и сме установили НОД, го отпечатваме на екрана.
+* We create **`a`** and **`b`** variables to which we assign the **integer** values, obtained from the console input.
+* For a loop condition, we put an expression that is **`true`** if the **`b`** number **is different** than **0**.
+* In **the body of the loop**: we follow the conditions of the pseudocode: 
+   * We create a temporary variable to which we assign the **current** value of **`b`**.
+   * We assign a new value to **`b`**, which is the remainder of the division of **`a`** and **`b`**.
+   * We assign the **previous** value of the **`b`** variable to **`a`**.
+* Once the loop is complete and we have found the GCD, we print it on the screen.
 
 ![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.png)
 
