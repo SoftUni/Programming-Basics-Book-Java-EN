@@ -1,16 +1,16 @@
-# Chapter 4.2. More Complex Conditions – Exam Problems
+# Chapter 4.2. More complex conditions – Exam tasks
 
-The previous chapter introduced you to **nested conditions** in Java. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the **`switch-case`** conditional statement that allows selecting from a list of options. Now we are going to solve some practical exercises and make sure we have in-depth understanding of the material, by discussing a number of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
+In the previous chapter, we got familiar with the **nested conditional** constructions in the Java language. Through them, the logic in a program can be represented by **`if` conditional statements** that are nested in each other. We also looked at the conditional **`switch-case`** construction, which allows you to choose from a list of options. We should practice and consolidate what we have learned so far by looking at a few more complex exam tasks. Before moving on to the tasks, we will recall the conditional constructions:
 
 
-## Nested Conditions
+## Nested conditions
 
 ```java
 if (condition1) {
     if (condition2) {
-        // тяло; 
+        // body of if construction
     } else {
-        // тяло;
+        // body of else construction
     }
 }
 ```
@@ -20,27 +20,27 @@ if (condition1) {
 </tr></table>
 
 
-## Switch-case Conditions
+## Switch-case conditions
 
 When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
 ```java
-switch (селектор) {
+switch (selector) {
     case стойност1:
-        конструкция;
+        //code to be executed
         break;
     case стойност2:
-        конструкция;
+        //code to be executed 
         break;
     default:
-        конструкция;
+        //code to be executed 
         break;
 }
 ```
 
 The structure consists of:
-* Selector - an expression that calculates a particular value. The type of the selector can be **an integer**, **`string`** or **`enum`**.
-* multiple **`case`** labels followed by commands after them, ending with **`break`**.
+* Selector - an expression that is calculated to some specific value. The type of the selector can be **an integer**, **`string`** or **`enum`**.
+* Multiple **`case`** labels followed by code to be executed, ending with **`break`**.
 
 
 ## Exam Problems
