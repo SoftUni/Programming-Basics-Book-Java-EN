@@ -236,91 +236,91 @@ And so we are left with printing the results, we have to take into consideration
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-В случая избрахме да използваме **условния оператор (`?:`)** (наричан още тернарен оператор), тъй като записът е по-кратък. Синтаксисът му е следният: **`операнд1 ? операнд2 : операнд3`**. Първият операнд трябва да е от **булев тип** (т.е. да връща **`true/false`**). Ако **`операнд1`** върне стойност **`true`**, то ще се изпълни **`операнд2`**, а ако върне **`false`** – **`операнд3`**. В нашия случай проверяваме дали **събраните пари** от Лили стигат за една пералня. Ако те са повече или равни на цената на пералнята, то проверката **`savedMoney >= priceOfWashingMachine`** ще върне **`true`** и ще се отпечата „**Yes! …**“, а ако са по-малко – резултатът ще е **`false`** и ще се отпечата “**No! …**”. Разбира се, вместо тернарния оператор, можем да използваме и **`if-else`** за проверката.
+In this case, we chose to use the **conditional operator (`?:`)** (also called the ternary operator), because it’s shorter to write. The syntax is as follows: **`operand1 ? operand2 : operand3`**. The first operand needs to be **boolean type** (i.e. to return **`true/false`**). If **`operand1`** returns **`true`**, **`operand2`** will be executed, and if it returns **`false`** – **`operand3`** will be executed. In our case, we check if the **saved money** by Lilly is enough for the washing machine. If they are more or equal to the price of the washing machine, the check **`savedMoney >= priceOfWashingMachine`** will return **`true`** and will print out „**Yes! …**“, and if they are less the result will be **`false`** and will print “**No! …**”. Of course, instead of the ternary operand, we can use **`if-else`** for checks.
 
-Повече за тернарния оператор: [https://www.programiz.com/java-programming/ternary-operator](https://www.programiz.com/java-programming/ternary-operator)
+More about the ternary operator: [https://www.programiz.com/java-programming/ternary-operator](https://www.programiz.com/java-programming/ternary-operator)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#1](https://judge.softuni.bg/Contests/Practice/Index/656#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#1](https://judge.softuni.bg/Contests/Practice/Index/656#1).
 
 
-## Задача: завръщане в миналото
+## Problem: Back to the past
 
-Иванчо е на **18 години** и получава наследство, което се състои от **X сума пари** и **машина на времето**. Той решава **да се върне до 1800 година**, но не знае **дали парите** ще **са достатъчни**, за да живее без да работи. Напишете **програма, която пресмята** дали Иванчо **ще има достатъчно пари**, за да не се налага да работи **до дадена година включително**. Като приемем, че **за всяка четна** (1800, 1802 и т.н.) година ще **харчи 12 000 долара**. За **всяка нечетна** (1801,1803  и т.н.) ще харчи **12 000 + 50 * [годините, които е навършил през дадената година]**.
+Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without the need to work. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от конзолата и **съдържа точно 2 реда**:
-  * **Наследените пари** – реално число в интервала [**1.00 … 1 000 000.00**].
-  * **Годината, до която трябва да живее (включително)** – цяло число в интервала [**1801 … 1900**].
+The input is read from the console and **contains exactly 2 lines**:
+  * **Inheritance money** – a real number in the range of [**1.00 … 1 000 000.00**].
+  * **The year he needs to live in the past (inclusive)** – a whole number in the range of [**1801 … 1900**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечата** на конзолата **1 ред**. **Сумата** трябва да е **форматирана** до **два знака след десетичния знак**:
-  * Ако **парите са достатъчно**:
-    * „**Yes! He will live a carefree life and will have {N} dollars left.**“ – където **N** са парите, които ще му останат.
-  *	Ако **парите НЕ са достатъчно**:
-    * „**He will need {М} dollars to survive.**“ – където **M** е сумата, която **НЕ достига**.
+**Print** on the console **1 line**. The **sum** must be **formatted** up to **two symbols after the decimal point**:
+  * If the **money is enough**:
+    * „**Yes! He will live a carefree life and will have {N} dollars left.**“ – where **N** is the money, which he will remain with.
+  *	If the **money is NOT enough**:
+    * „**He will need {М} dollars to survive.**“ – where **M** is the amount that is **NOT enough**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">50000<br>1802</td>
 <td valign="top">Yes! He will live a carefree life and<br> will have 13050.00 dollars left.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
- 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи 12000</strong> долара <br>
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 50000 – 12000 = <strong>38000</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 + <strong>19*50</strong> = 12950 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 38000 – 12950 = <strong>25050</strong><br>
-1802 &rarr; <strong>четна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 25050 – 12000 = <strong>13050</strong></p></td>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+ 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends 12000</strong> dollars <br>
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Remain 50000 – 12000 = <strong>38000</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 + <strong>19*50</strong> = 12950 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 38000 – 12950 = <strong>25050</strong><br>
+1802 &rarr; <strong>even</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 25050 – 12000 = <strong>13050</strong></p></td>
 </tr>
 <tr>
 <td valign="top">100000.15<br>1808</td>
 <td valign="top">He will need 12399.85 dollars<br> to survive.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 100000.15 – 12000 = <strong>88000.15</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Remaining 100000.15 – 12000 = <strong>88000.15</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Remaining</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
 <strong>…</strong><br>
-1808 &rarr; <strong>четна</strong> &rarr; -399.85 - 12000 = -12399.85<br>
-<strong>12399.85 не достигат</strong>
+1808 &rarr; <strong>even</strong> &rarr; -399.85 - 12000 = -12399.85<br>
+<strong>12399.85 insufficient amount</strong>
 </p></td>
 </tr>
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Методът за решаване на тази задача не е по-различен от тези на предходните, затова започваме **деклариране и инициализиране** на нужните променливи:
+The method for solving this problem isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-В условието е казано, че годините на Иванчо са 18, ето защо при декларацията на променливата **`years`** ѝ задаваме начална стойност **18**. Другите променливи прочитаме от конзолата. 
+The condition states, that Ivan is 18 years old, so when we declare the variable **`years`** we assign its initial value of **18**. The rest of the variables we read from the console. 
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-С помощта на **`for` цикъл** ще обходим всички години. **Започваме от 1800** – годината, в която Иванчо се връща, и стигаме **до годината, до която той трябва да живее**. В цикъла проверяваме дали текущата година е **четна** или **нечетна**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) на 2. Ако годината е **четна**, изваждаме от наследството (**`heritage`**) **12000**, a ако е **нечетна**, изваждаме от наследството (**`heritage`**) **12000 + 50 * (годините на Иванчо)**.
+With the help from the **`for` loop**, we’ll iterate through all the years. **We begin from 1800** – the year that Ivan goes back to, and we go to **the year he must live in the past**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's years)**.
 
-Накрая остава да отпечатаме резултатите, като за целта правим **проверка дали наследството** (**`heritage`**) му е било достатъчно да живее без да работи или не. Ако наследството (**`heritage`**) е **положително число**, отпечатваме: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, а ако е **отрицателно число**: „**`He will need {М} dollars to survive.`**“. Не забравяме да форматираме сумата до два знака след десетичната точка.
+Finally, we are left with printing the results, by performing a **check if the inheritance** (**`heritage`**) was enough for him to live without the need to work or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {М} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
 
-**Hint**: Обмислете използването на функцията **`Math.abs(…)`** при отпечатване на изхода, когато наследството е недостатъчно.
+**Hint**: Consider using the **`Math.abs(…)`** function when printing the output if the inheritance isn’t enough.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#2](https://judge.softuni.bg/Contests/Practice/Index/656#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2](https://judge.softuni.bg/Contests/Practice/Index/656#2).
 
 
 ## Задача: болница
