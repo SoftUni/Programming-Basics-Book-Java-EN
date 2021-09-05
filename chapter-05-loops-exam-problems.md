@@ -39,7 +39,7 @@ In the first line of input, there must be a whole number **n** (1 ≤ **n** ≤ 
 
 Print on the console **a histogram of 5 lines**, each line should contain a percentage from 0% to 100%, and format it up to two digits after the decimal point (for example 25.00%, 66.67%, 57.14%).
 
-### Exemplary Input and Output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -323,45 +323,45 @@ Finally, we are left with printing the results, by performing a **check if the i
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2](https://judge.softuni.bg/Contests/Practice/Index/656#2).
 
 
-## Задача: болница
+## Problem: Hospital
 
-За даден период от време, всеки ден в болницата пристигат пациенти за преглед. Тя разполага **първоначално** със **7 лекари**. Всеки лекар може да преглежда **само по един пациент на ден**, но понякога има недостиг на лекари, затова **останалите пациенти се изпращат в други болници**. **Всеки трети ден** болницата прави изчисления и **ако броят на непрегледаните пациенти е по-голям от броя на прегледаните, се назначава още един лекар**. Като назначаването става преди да започне приемът на пациенти за деня.
+For the given time period, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily acceptance begins.
 
-Напишете програма, която изчислява **за дадения период броя на прегледаните и непрегледаните пациенти**.
+Write a program, that calculates **for a given period the number of treated and untreated patients**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от **конзолата** и съдържа:
-  * На първия ред – **периода**, за който трябва да направите изчисления. **Цяло число** в интервала [**1 … 1000**].
-  * На следващите редове (равни на броя на дните) – **броя пациенти**, които пристигат за преглед за **текущия ден**. Цяло число в интервала [**0 … 10 000**].
+The input is read from **the console** and contains:
+  * On the first row – **the period**, for which you need to make the calculations. **Whole number** in the range of [**1 … 1000**].
+  * On the next lines (equal to the number of days) – **patient count**, who arrive for treatment the **current day**. Whole number in the range of [**0 … 10 000**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечатат** на конзолата **2 реда**:
+**Print** on the console **2 lines**:
 
-* На **първия ред**: “**Treated patients: {брой прегледани пациенти}.**”
-* На **втория ред**: “**Untreated patients: {брой непрегледани пациенти}.**”
+* On **the first line**: “**Treated patients: {number of treated patients}.**”
+* On **the second line**: “**Untreated patients: {number of untreated patients}.**”
 
-### Примерен вход и изход
+### Sample Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">4<br>7<br>27<br>9<br>1</td>
 <td valign="top">Treated patients: 23.<br>Untreated patients: 21.</td>
-<td valign="top"><p><strong>1 ден</strong>: 7 прегледани и 0 непрегледани пациента за деня<br>
-<strong>2 ден</strong>: 7 прегледани и 20 непрегледани пациента за деня<br>
-<strong>3 ден</strong>: До момента прегледаните пациенти са общо 14,<br> а непрегледаните – 20 –> Назначава се нов лекар <br>–>
-8 прегледани и 1 непрегледан пациент за деня<br>
-<strong>4 ден</strong>: 1 прегледан и 0 непрегледани пациента за деня<br>
-<strong>Общо: 23 прегледани и 21 непрегледани пациенти.</strong></p></td>
+<td valign="top"><p><strong>Day 1</strong>: 7 treated and 0 untreated patients for the day<br>
+<strong>Day 2</strong>: 7 treated and 20 untreated patients for the day<br>
+<strong>Day 3</strong>: To this moment the treated patients are 14,<br> and the untreated – 20 –> New doctor is hired <br>–>
+8 treated and 1 untreated patients for the day<br>
+<strong>Day 4</strong>: 1 treated and 0 untreated patients for the day<br>
+<strong>In total: 23 treated and 21 untreated patients.</strong></p></td>
 </tr>
 </tbody>
 </table>    
@@ -369,8 +369,8 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -385,12 +385,12 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2
 </tbody>
 </table>    
 
-### Насоки и подсказки
-Отново започваме, като си **декларираме и инициализираме** нужните променливи: 
+### Hints and Guidelines
+So we begin again, by **declaring and initializing** the necessary variables: 
 
 ![](assets/chapter-5-2-images/04.Hospital-01.png)
 
-Периодът, за който трябва да направим изчисленията, прочитаме от конзолата и запазваме в променливата **`period`**. Ще се нуждаем и от няколко помощни променливи: броя на излекуваните пациенти (**`treatedPatients`**), броя на неизлекуваните пациенти (**`untreatedPatients`**) и броя на докторите (**`countOfDoctors`**), който първоначално е 7.
+The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some helper variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which by default is 7.
 
 ![](assets/chapter-5-2-images/04.Hospital-02.png)
 
