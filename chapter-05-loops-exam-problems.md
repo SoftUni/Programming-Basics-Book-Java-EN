@@ -394,26 +394,26 @@ The period which we have to make the calculations is read from the console and w
 
 ![](assets/chapter-5-2-images/04.Hospital-02.png)
 
-С помощта на **`for` цикъл** обхождаме всички дни в дадения период (**`period`**). За всеки ден прочитаме от конзолата броя на пациентите (**`currentPatients`**). Увеличаването на докторите по условие може да стане **всеки трети ден**, **НО** само ако броят на непрегледаните пациенти е **по-голям** от броя на прегледаните. За тази цел проверяваме дали денят е трети – чрез аритметичния оператор за деление с остатък (**`%`**): **`day % 3 == 0`**.
+With the help of a **`for` loop**, we iterate through the days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Increasing the number of doctors by the condition can happen **every third day**, **BUT** if only the number of the untreated patients are **greater** than the treated ones. With this in mind, we perform this check using the arithmetical operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 
-Например:
- * Ако денят е **трети**, остатъкът от делението на **3** ще бъде **0** (**`3 % 3 = 0`**) и проверката **`day % 3 == 0`** ще върне **`true`**.
- * Ако денят е **втори**, остатъкът от делението на **3** ще бъде **2** (**`2 % 3 = 2`**) и проверката ще върне **`false`**.
- * Ако денят е **четвърти**, остатъкът от делението ще бъде **1** (**`4 % 3 = 1`**) и проверката отново ще върне **`false`**.
+For example:
+ * If it’s the **third one**, the remainder from the division by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
+ * If it’s the **second one**, the remainder from the division by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
+ * If it’s the **forth one**, the remainder from the division will be **1** (**`4 % 3 = 1`**) and again the check will return **`false`**.
 
-Ако проверката **`day % 3 == 0`** върне **`true`**, ще се провери дали и броят на неизлекуваните пациенти е по-голям от този на излекуваните: **`untreatedPatients > treatedPatients`**. Aко резултатът отново е **`true`**, тогава ще се увеличи броят на лекарите (**`countOfDoctors`**).
+If the check **`day % 3 == 0`** returns **`true`**, the program will check if the untreated patient’s count is greater than the treated ones: **`untreatedPatients > treatedPatients`**. If again the result is **`true`**, then we’ll increase the number of doctors (**`countOfDoctors`**).
 
-След това проверяваме броя на пациентите за деня (**`currentPatients`**) дали е по-голям от броя на докторите (**`countOfDoctors`**). Ако броят на пациентите е **по-голям**:
- - Увеличаваме стойността на променливата **`treatedPatients`** с броя на докторите (**`countOfDoctors`**).
- - Увеличаваме стойността на променливата **`untreatdPatients`** с броя на останалите пациенти, който изчисляваме, като от всички пациенти извадим броя на докторите (**`currentPatients - countOfDoctors`**).
+After that, we check the number of patients for the day (**`currentPatients`**) whether it’s greater than the number of doctors (**`countOfDoctors`**). If the patient number is **greater**:
+ - We increase the value of the variable **`treatedPatients`** with the number of doctors (**`countOfDoctors`**).
+ - We increase the value of the variable **`untreatdPatients`** with the number of the rest of the patients, which we calculate, by subtracting the number of the doctors from all the patients (**`currentPatients - countOfDoctors`**).
  
-Ако броят на пациентите **не е по-голям**, увеличаваме само променливата **`treatedPatients`** с броя на пациентите за деня (**`currentPatients`**).
+If the patient count is **lesser**, we increase only the variable **`treatedPatients`** with the number of patients for the day (**`currentPatients`**).
 
-Накрая трябва само да отпечатаме броя на излекуваните и броя на неизлекуваните пациенти.
+And finally, we are left with printing the number of treated patients and also the untreated ones.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#3](https://judge.softuni.bg/Contests/Practice/Index/656#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3](https://judge.softuni.bg/Contests/Practice/Index/656#3).
 
 
 ## Задача: деление без остатък
