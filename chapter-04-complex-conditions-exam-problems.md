@@ -95,7 +95,7 @@ If the student arrives with more than one minute difference compared to the exam
 ### Hints and guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <tdIt is recommended <b>that you read the condition of a task several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
+    <td>It is recommended <b>that you read the condition of a task several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
 #### Input data processing
 
