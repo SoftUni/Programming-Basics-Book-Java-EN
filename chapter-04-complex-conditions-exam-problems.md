@@ -160,37 +160,37 @@ Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, 
 Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/654#0](https://judge.softuni.bg/Contests/Practice/Index/654#0).
 
 
-## Problem: Trip
+## Task: Trip
 
-Strange, but most people start planning their vacations in advance. A young programmer has a **certain budget** and spare time in a particula **season**.
+Most people plan their vacations. A young programmer has a **fixed budget** and spare time in a particular **season**.
 
-Write a program that accepts **as an input the budget and the season**, and **as an output** to print **where will rest** the programmer and **the amount of money that he will spend**.
+Write a program that accepts **as an input the budget and the season**, and **as an output** to print **where the programmer will rest** and **the amount of money he will spend**.
 
-budget determines the destination, and the season determines what amount of the budget will be spent. If the season is  **summer**, he will go **camping**, and if it is **winter - in a hotel**. If it is in **Europe**, regardless of the season, the programmer will stay in a **hotel**. Each **camping** or **hotel**, according to the destination, has **its own price**, which corresponds to a particular **percentage of the budget**:
+The budget determines the destination and the season what amount of the budget will be spent. If the season is **summer**, he will go **camping**, and if it is **winter - in a hotel**. If it is in **Europe**, regardless of the season, the programmer will stay in a **hotel**. Each **camping** or **hotel**, according to the destination, has **its price**, which corresponds to a particular **percentage of the budget**:
 
-- If **100 lv. or less** – somewhere in **Bulgaria**.
+- If **100 BGN or less** – somewhere in **Bulgaria**.
   - **Summer** – **30%** of the budget.
   - **Winter** – **70%** of the budget.
-- If **1000 lv. or less** – somewhere on the **Balkans**.
+- If **1000 BGN or less** – somewhere on the **Balkans**.
   - **Summer** – **40%** of the budget.
   - **Winter** – **80%** of the budget.
-- If **more than 1000 lv**. – somewhere in **Europe**.
+- If **more than 1000 BGN**. – somewhere in **Europe**.
   - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
 
-### Input Data
+### Input data
 
 The input data will be read from the console and will consist of **two lines**:
 
 - On **the first** line we receive the **budget** - **a floating-point number** int the range of [**10.00 … 5000.00**].
 - On **the second** line – **one** of the two possible seasons: "**summer**" or "**winter**".
 
-### Input Data
+### Output data
 
 On the console must be printed **two lines**.
 
-- On the **first** line – "**Somewhere in {destination}**" between "**Bulgaria**", "**Balkans**" and "**Europe**".
+- On the **first** line – "**Somewhere in {destination}**", where {destination} is "**Bulgaria**", "**Balkans**" or "**Europe**".
 - On the **second** line – "{**Vacation type**} – {**Spent money**}":
-  - **The vacation** can be between "**Camp**" and "**Hotel**".
+  - **The vacation** can be "**Camp**" or "**Hotel**".
   - **The amount of money** has to be **rounded up to the second digit after the decimal point**.
 
 ### Sample Input and Output
@@ -203,21 +203,21 @@ On the console must be printed **two lines**.
 |678.53<br>winter|Somewhere in Balkans<br>Hotel - 542.82|
 |1500<br>summer|Somewhere in Europe<br>Hotel - 1350.00|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-Typically, as for the other tasks, we can separate the solution into the following parts: reading the input data, doing calculations, printing the result..
+Like the other tasks, we can separate the solution of our task into the following parts: reading the input data, doing calculations, printing the result.
 
 #### Input data processing
 
-While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For higher level of calculation accuracy, we can pick **`BigDecimal`** as a variable for the budget and for the season - **`string`**. 
+While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`BigDecimal`** as a type for the budget and **`string`** for the season. 
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>Always take into consideration what <b>value type</b> is passed in the input data, as well as what type these need to be converted to, in order for the program conditions to work properly!</td>
+    <td>Always consider, what is the **type** in the input data, as well as to what data type they need to be converted to, so created program constructs to work correctly!</td>
 </tr></table>
 
-**Example**: When you need to do money calculations in a task, use **`BigDecimal`** for higher level of accuracy.
+**Example**: When you need to do calculations related to money, use **`BigDecimal`** for a higher level of accuracy.
 
 #### Calculations
 
@@ -225,22 +225,22 @@ Let's create and initialize the variables needed for applying the logic and calc
 
 ![](assets/chapter-4-2-images/02.Trip-02.png)
 
-Similarly to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
+Similar to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
 
-When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the passed budget**, i.e. our main logic is divided into two cases: 
-* If the budget is **less than** a particular value.
-* If it is **less than** other value or is **more than** the specified border value. 
+When examining once again the requirements, we notice that the decision of where the vacation will take place depends on the **amount of the budget** we receive as input data, i.e., in our logic, we have two cases: 
+* If the budget is **less than or equals** a particular value.
+* If it is **less than or equals** other value or is **more than** the specified border value. 
 
-Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or less conditions in the solution. **Think why!**
+Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or fewer conditions in the solution. **Think why!**
 
-After that, we need to apply a condition to check the value of the **given season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**.
+After that, we need to check the value of the **given season**. Based on the result, we will determine what percentage of the budget will use, and where the programmer will stay – in a **hotel** or a **camp**.
 
 Let's choose and create the needed format for the output data, which we will use further in the code:
 ```java
 DecimalFormat formatter = new DecimalFormat("0.00");
 ```
 
-This is a sample code that may be used to implement the above idea:
+Here is a sample code that we can use to implement the described logic above:
 
 ![](assets/chapter-4-2-images/02.Trip-03.png)
 
@@ -252,13 +252,13 @@ and finish the conditions with:
 
 ![](assets/chapter-4-2-images/02.Trip-05.png)
 
-We always can initialize a given value of the parameter and then make only one check. **This saves us a logic step**.
+We always can initialize the variable with a given value and then make only one check. **This saves us a logic step**.
 
-For ecample, the following block:
+For example, the following code:
 
 ![](assets/chapter-4-2-images/02.Trip-03.png)
 
-can be shortened to this type:
+can be shortened to this:
 
 ![](assets/chapter-4-2-images/02.Trip-06.png)
 
@@ -268,7 +268,7 @@ It remains to print the obtained result on the console:
 
 ![](assets/chapter-4-2-images/02.Trip-07.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
 
