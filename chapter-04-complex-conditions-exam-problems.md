@@ -26,10 +26,10 @@ When the program operation depends on the value of a variable, instead of doing 
 
 ```java
 switch (selector) {
-    case стойност1:
+    case value1:
         //code to be executed
         break;
-    case стойност2:
+    case value2:
         //code to be executed 
         break;
     default:
@@ -43,27 +43,27 @@ The structure consists of:
 * Multiple **`case`** labels followed by code to be executed, ending with **`break`**.
 
 
-## Exam Problems
+## Exam tasks
 
-Now, after we refreshed our knowledge on how to use and nest conditional statements in order to implement more complex conditions and program logic, let's solve some exam problems.
+Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam tasks.
 
 
-## Problem: On Time for the Exam
+## Task: On Time for the exam
 
-A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrive **at the time when the exam starts or up to half an hour earlier**. If the student arrive **more than 30 minutes earlier**, the student **has come too early**. If he arrive **after the time when the exam starts**, he is **late**. 
+A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrives **at the time when the exam starts or up to half an hour earlier**. If the student arrives **more than 30 minutes earlier**, the student **has come too early**. If he arrives **after the time when the exam starts**, he is **late**. 
 
-Write a program that has an input for the exam starting time and the time of the student arrival, and prints if the student has arrive **on time**, or if he has **arrive early** or if he is **late**, as well as **how many hours or minutes** the student has arrive too early or too late.
+Write a program that has as input data for the exam starting time and the student arrival time, and prints if the student has arrive **on time**, or if he has **arrive early** or if he is **late**, as well as **how many hours or minutes** the student was early or late.
 
-### Input Data
+### Input data
 
-From the console are read **four integers** (one per line):
+From the console, we read as input data **four integers** (one per line):
 
 - The first line contains **exam starting time(hours)** – an integer from 0 to 23.
-- The second line contains **exam starting time(minutes)** – an integers from 0 to 59.
+- The second line contains **exam starting time(minutes)** – an integer from 0 to 59.
 - The third line contains **hour of arrival** – an integer from 0 to 23.
 - The fourth line contains **minutes of arrival** – an integer from 0 to 59.
 
-### Output Data
+### Output data
 
 Print on the first line:
 
@@ -74,11 +74,11 @@ Print on the first line:
 If the student arrives with more than one minute difference compared to the exam starting time, print on the next line:
 
 - "**mm minutes before the start**" for arriving less than an hour earlier.
-- "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print the minutes using 2 digits, for example "1:05".
+- "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print the minutes using two digits, for example, "1:05".
 - "**mm minutes after the start**" for arriving less than an hour late.
-- "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print the minutes using 2 digits, for example "1:03".
+- "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print the minutes using two digits, for example, "1:03".
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output | Input | Output |
 |---|---|---|---|
@@ -92,18 +92,18 @@ If the student arrives with more than one minute difference compared to the exam
 |11<br>30<br>10<br>55|Early<br>35 minutes before the start|
 |11<br>30<br>12<br>29|Late<br>59 minutes after the start|
 
-### Hints and Guidelines
+### Hints and guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>It is recommended <b>to read a few more times the task</b> of a given problem by taking notes and sketching examples as you think about them before you start writing code.</td></tr></table>
+    <tdIt is recommended <b>that you read the condition of a task several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
-#### Processing the Input Data
+#### Input data processing
 
 According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
 
-Looking at the expected output, we can create variables that contain the different output data types, in order to avoid using the so called **"magic strings"** in the code.
+Looking at the expected output, we can create variables that contain the different output data types to avoid using the so-called **"magic strings"** in the code.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
 
@@ -117,45 +117,45 @@ Let's also calculate the **arrival time** of the student.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.png)
 
-What remains is to calculate the difference between the two times, in order to determine **when** and **what time compared to the exam time** the student has arrived.
+It remains for us to calculate the difference between the two times, to determine **when** and **what time compared to the exam time** the student has arrived.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
-Our next step is to do the required **checks and calculations**,and finally we will print the output. Let's separate the code into **two** parts: 
+Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts: 
 
-- First, let's show when the student arrived – is he **early**, **late** or **on time**. In order to do that, we will use an **`if-else`** statement.
-- After that, we will show the **time difference**, if the student arrives in a **different time** from the starting **time of the exam**.
+- First, let's show when the student arrived – is he **early**, **late** or **on time**. Тo do that, we will use an **`if-else`** statement.
+- After that, we will show the **time difference** if the student arrives in a **different time** from the starting **time of the exam**.
 
-In order to spare one additional check (**`else`**), we can, by default, assume that the student was late. 
+To spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
-that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if the **difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
+According to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if the **difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
-In all other cases we assume that the student is **late**, which we did **by default**. Therefore, no additional check is needed.
+In all other cases, we assume that the student is **late**, which we did **by default**. Therefore, no additional check is needed.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-Finally, we need to find out and print **what is the time difference between exam start time and student arrival time**, , as well as whether the time difference indicates the time of arrival **before or after the exam start**.
+Finally, we need to find out and print **what is the time difference between exam start time and student arrival time**. Also, whether this difference shows the time of arrival **before or after the exam start**.
 
-We check whether the time difference is **more than** one hour, in order to print hours and minutes in the required **format**, or if it is **less than** one hour,  in order to print **only minutes** as a format and description. 
+We also check whether the time difference is **more than** one hour, to print hours and minutes in the required **format**, or if it is **less than** one hour, to print **only minutes** in the required format and description. 
 
 We also need to do one more check – whether the time of the student arrival is **before** or **after** the exam start time.
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Printing the Result
+#### Printing the result
 
-Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time (**not even a minute difference**), we do not need to print a second result. This is why we apply the following **condition**:
+Finally, it remains to print the result on the console. According to the requirements, if the student arrived right in time (**not even a minute difference**), we do not need to print a second result. This is why we do the following **check**:
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
-Actually, for the purposes of the task, printing the result **on the console** can be done on a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
+Printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
 
-Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web aplication**. Then, on how many places in the code you will need to do changes? Are you sure you won't miss some places?
+Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web aplication**. Then, on how many places in the code we need to do changes? Are you sure you won't miss some places?
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
+<td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It must be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/654#0](https://judge.softuni.bg/Contests/Practice/Index/654#0).
 
@@ -207,7 +207,7 @@ On the console must be printed **two lines**.
 
 Typically, as for the other tasks, we can separate the solution into the following parts: reading the input data, doing calculations, printing the result..
 
-#### Processing the Input Data
+#### Input data processing
 
 While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For higher level of calculation accuracy, we can pick **`BigDecimal`** as a variable for the budget and for the season - **`string`**. 
 
@@ -315,7 +315,7 @@ Print on the console **one line**:
 
 The problem is not complex, but there are a lot of code lines to write.
 
-#### Processing the Input Data
+#### Input data processing
 
 After reading the requirements, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
@@ -416,7 +416,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 We will read the input data and do the calculations described in the task requirements, in order to check if the money will be sufficient.
 
-#### Processing the Input Data
+#### Input data processing
 
 Let's carefully read the requirements and look at what we expect to take as an **input data**, what is expected to **return as a result**, as well as what are the **main steps** when breaking the **logic circuit**.
 
@@ -508,7 +508,7 @@ The input data is read from the **console** and contains **exactly two lines**:
 
 We will read the input data and do the calculations according to the provided price list and the discount rules, and finally print the result.
 
-#### Processing the Input Data
+#### Input data processing
 
 According to the task we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 
