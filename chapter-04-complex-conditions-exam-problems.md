@@ -273,32 +273,32 @@ It remains to print the obtained result on the console:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
 
 
-## Problem: Operations Between Numbers
+## Task: Operations between numbers
 
-Write a program that reads **two integers (N1 и N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is **even** or **odd**. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case must be printed **a special notification**.
+Write a program that reads as input data **two integers (N1 и N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
 
-### Input Data
+### Input data
 
-Are read from the console **3 lines**:
+The input data will be read from the console and will consist of **three lines**:
 
-- **N1** – **integer** within the range [**0 … 40 000**].
-- **N2** – **integer** within the range [**0 … 40 000**].
-- **Operator** – **one character** among: "**+**", "**-**", "**\***", "**/**", "**%**".
+- On the **first** line **N1** – **integer** within the range [**0 … 40 000**].
+- On the **second** line **N2** – **integer** within the range [**0 … 40 000**].
+- On the **third** line **Operator** – **one character** among: "**+**", "**-**", "**\***", "**/**", "**%**".
 
-### Output Data
+### Output data
 
-Print on the console **one line**:
+Print **one line** on the console:
 
-- If the operation is **summing up**, **subtraction** or **multiplying**:
+- If the operation is **addition**, **subtraction** or **multiplying**:
   - **"{N1} {operator} {N2} = {output} – {even/odd}"**.
 - If the operation is **division**:
-  - **"{N1} / {N2} = {output}"** – the result is **formatted** up to the **second digit after the decimal point**.
+  - **"{N1} / {N2} = {output}"** – the result is **formatted** to the **second digit after the decimal point**.
 - If the operation is **modular division**:
   - **"{N1} % {N2} = {remainder}"**.
 - In case of **dividing by 0 (zero)**:
   - **"Cannot divide {N1} by zero"**.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output | Input | Output |
 |---|---|---|---|
@@ -311,57 +311,57 @@ Print on the console **one line**:
 |10<br>1<br>-|10 - 1 = 9 - odd|
 |7<br>3<br>\*|7 * 3 = 21 - odd|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-The problem is not complex, but there are a lot of code lines to write.
+The task is not complicated, but there are many lines of code to write.
 
 #### Input data processing
 
-After reading the requirements, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
+After reading the condition, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
 ![](assets/chapter-4-2-images/03.Operations-01.png)
 
 #### Calculations
 
-Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the result from the calculations**, and the other one we will use for the **final output** of the program.
+Let's create and initialize the variables needed for the logic and calculations. In one variable, we will store **the result from the calculations**, and in the other one, we will use it for the **final output** of the program.
 
 ![](assets/chapter-4-2-images/03.Operations-02.PNG)
 
-When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply print the result.
+Reading the condition carefully, we understand that there are cases where we don't need to do **any** calculations but simply print the result.
 
-Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is **division** or **modular division**, and then initialize the output.
+Therefore, we can first check if the second number is **`0`** (zero), whether the operation is **division** or **modular division**, and then initialize the output.
 
 ![](assets/chapter-4-2-images/03.Operations-03.png)
 
-Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply only **one condition** - whether it is needed to **recalculate** and **replace** this output. 
+Let's put the result as a value upon initializing the **`output`** parameter. This way we, can make only **one check** - whether it is necessary to **recalculate** and **replace** this result. 
 
-Based on the approach that we choose, our next condition will be either a simple **`else`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
+Based on the approach that we choose, our next check will be either a simple **`else`** or a single **`if`**. In the body of this check, using additional checks, according to the submitted operator, we can divide the logic according to the **structure** of the expected **output**.
 
-From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) or **multiplying** (**`*`**) the expected output has the same structure: **"{N1} {operator} {N2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure.
+From the condition we can see that for **addition** (**`+`**), **subtraction** (**`-`**) or **multiplication** (**`*`**) the expected output has the same structure: **"{N1} {operator} {N2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure.
 
 ![](assets/chapter-4-2-images/03.Operations-04.png)
 
-We finish the solution by applying conditions for summing up, subtraction and multiplying:
+We finish the solution by applying conditions for addition, subtraction and multiplication:
 
 ![](assets/chapter-4-2-images/03.Operations-05.PNG)
 
-For short and clear conditions, such as the above example for even and odd number, you can use a **ternary operator**. Let's look at the possibility to apply a condition **with** and **without** ternary operator.
+For short and clear check, such as the above example for even and odd numbers, you can use a **ternary operator**. Let's look at the possible check **with** and **without** ternary operator.
 
-**Without using a ternary operator** the code is longer but easier to read:
+**Without using a ternary operator** the code is longer but easy to read:
 
 ![](assets/chapter-4-2-images/03.Operations-06.png)
 
-**Upon using a ternary operator** he code is much shorter but may require additional efforts to read and understand the logic:
+**Upon using a ternary operator** the code is much shorter but may require additional efforts to read and understand the logic:
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Printing the Output
+#### Printing the output
 
-Finally, what remains is to print the calculated result on the console:
+Finally, we need to show the calculated result to the console:
 
 ![](assets/chapter-4-2-images/03.OperatioA group of football fansns-08.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#2](https://judge.softuni.bg/Contests/Practice/Index/654#2).
 
