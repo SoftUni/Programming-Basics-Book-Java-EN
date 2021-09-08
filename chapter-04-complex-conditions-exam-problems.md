@@ -459,78 +459,78 @@ Finally, we need to print the calculated result on the console.
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
 
 
-## Problem: Hotel Room
+## Task: Hotel room
 
 A hotel offers **two types of rooms**: **studio and apartment**.
 
-Write a program that calculates **the price of the whole stay for a studio and apartment**. **The prices** depend on **the month** of the stay:
+Write a program that calculates **the price of the entire stay for a studio and apartment**. **The prices** depend on **the month** of the accommodation:
 
 | **May and October** | **June and September** | **July and August** |
 |---|---|---|
-|Studio – **50** lv./per night|Studio – **75.20** lv./per night|Studio – **76** lv./per night|
-|Apartment – **65** lv./per night|Apartment – **68.70** lv./per night|Apartment – **77** lv./per night|
+|Studio – **50** BGN/per night|Studio – **75.20** BGN/per night|Studio – **76** BGN/per night|
+|Apartment – **65** BGN/per night|Apartment – **68.70** BGN/per night|Apartment – **77** BGN/per night|
 
-he following **discounts** are offered:
+The following **discounts** are offered:
 
 - For **studio**, in case of more than **7** nights in **May and October**: **5%** discount.
 - For **studio**, in case of more than **14** nights in **May and October**: **30%** discount.
 - For **studio**, in case of more than **14** nights in **June and September**: **20%** discount.
 - For **apartment**, in case of more than **14** nights, **no matter the month: 10%** discount.
 
-### Input Data
+### Input data
 
 The input data is read from the **console** and contains **exactly two lines**:
 
-- On the **first** line is the **month** – May, June, July, August, September or October.
+- On the **first** line is the **month** – May, June, July, August, September, or October.
 - On the **second** line is the **number of nights** – integer in the range of [**0 … 200**].
 
-### Output Data
+### Output data
 
-**Print** on the console **two lines**:
+**Print two lines** on the console:
 
-- On the first line: "**Apartment: { price for the whole stay } lv.**"
-- On the second line: "**Studio: { price for the whole stay } lv.**"
+- On the first line: "**Apartment: { price for the whole stay } BGN**"
+- On the second line: "**Studio: { price for the whole stay } BGN**"
 
-**The price for the whole stay** must be formatted up to **two symbols after the decimal point**.
+**The price for the entire stay** must be formatted up to **two digits after the decimal point**.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output |Comments |
 |---|---|---|
-|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| In **май**, for more than **14 nights**, we decrease the price of the **studio with 30%** (50 – 15 = 35), and for the **apartment – with 10%** (65 – 6.5 =58.5).<br>The whole stay in the **apartment – 877.50** lv.<br>The whole stay in the **studio – 525.00** lv.|
+|May<br>15|Apartment: 877.50 BGN<br>Studio: 525.00 BGN| In **may**, for more than **14 nights**, we decrease the price of the **studio with 30%** (50 – 15 = 35), and for the **apartment – with 10%** (65 – 6.5 =58.5).<br>The entire stay in the **apartment – 877.50** BGN<br>The entire stay in the **studio – 525.00** BGN|
 
 | Input | Output |
 |---|---|
-|June<br>14|Apartment: 961.80 lv.<br>Studio: 1052.80 lv.|
-|August<br>20|Apartment: 1386.00 lv.<br>Studio: 1520.00 lv.|
+|June<br>14|Apartment: 961.80 BGN<br>Studio: 1052.80 BGN|
+|August<br>20|Apartment: 1386.00 BGN<br>Studio: 1520.00 BGN|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-We will read the input data and do the calculations according to the provided price list and the discount rules, and finally print the result.
+First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally print the result.
 
 #### Input data processing
 
-According to the task we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
+According to the condition, we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 
-Let's process and store the input data in appropriate parameters:
+Let's process and store the input data in appropriate variables:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-01.png)
 
 #### Calculations
 
-Now let's create and initialize the needed variables for the calculations:
+Let's create and initialize the variables needed for the calculations:
 
 ![](assets/chapter-4-2-images/05.Hotel-room-02.png)
 
-While looking at the task we see that the main logic depends on the **month** which is given, as well as the number of **nights**.
+Looking again at the condition, we notice that our basic logic depends on what **month** we receive as input data and the number of **nights**.
 
-In general, there are different approaches and ways to apply the above conditions, but let's look at the basic **`switch-case`**, as in the different **`case` blocks** we will use conditional statements such as **`if`** and **`if-else`**.
+In general, there are different approaches and ways to make the checks in question, but let's focus on the **`switch-case`** construction, and in the different **`case` blocks**, we will use conditional statements such as **`if`** and **`if-else`**.
 
-Let's start with the first group of months: **May** and **October**. For this two months **the price for the stay is the same** for both types of accommodation - in the **studio** and in the **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of nights**, and recalculate the **relevant price** (if needed).
+Let's start with the first group of months: **May** and **October**. For these two months **the price for the stay is the same** for both types of accommodation - **studio** and **apartment**. Therefore, it is necessary to make an internal check against the **number of nights** to recalculate the **corresponding price** (if needed).
 
 ![](assets/chapter-4-2-images/05.Hotel-room-03.png)
 
-For the following months the **logic** and the **calculations** will be **identical**. 
+For the following months, the **logic** and the **calculations** are **identical**. 
 
 ![](assets/chapter-4-2-images/05.Hotel-room-04.png)
 
@@ -540,13 +540,12 @@ After calculating the relevant prices and the total amount for the stay - let's 
 
 ![](assets/chapter-4-2-images/05.Hotel-room-06.png)
 
-In order to calculate the output parameters, we will use the **method** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**.
-This method **rounds to decimal** number up to a **specified number of characters** after the decimal point as well as we have control of any type of rounding  - **`RoundingMode`**. For this purpose, we give the method an integer (**`int`**) with which we indicate to which sign the rounding and value of a given enumeration should be **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). In our case, we will round the decimal number up to **two digits** after the decimal point with type of rounding **`HALF_UP`**.
+To calculate the output parameters, we use the **method** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**. This method **rounds a decimal number** to a **specified number of digits** after the decimal point, and we have control of any rounding type - **`RoundingMode`**. For this purpose, we give the method an integer (**`int`**) with which we indicate till which sign we want to round the number and value of a given enumeration **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). In our case, we will round the decimal number up to **two digits** after the decimal point with rounding type **`HALF_UP`**.
 
-#### Printing the Result
+#### Printing the result
 
 Finally, what remains is to print the calculated results on the console.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#4](https://judge.softuni.bg/Contests/Practice/Index/654#4).
