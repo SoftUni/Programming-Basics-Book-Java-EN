@@ -359,6 +359,7 @@ For short and clear check, such as the above example for even and odd numbers, y
 
 Finally, we need to show the calculated result to the console:
 
+![](assets/chapter-4-2-images/03.Operations-08.png)
 ![](assets/chapter-4-2-images/03.OperatioA group of football fansns-08.png)
 
 ### Testing in the Judge system
