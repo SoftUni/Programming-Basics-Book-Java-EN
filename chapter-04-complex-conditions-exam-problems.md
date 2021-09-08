@@ -360,41 +360,40 @@ For short and clear check, such as the above example for even and odd numbers, y
 Finally, we need to show the calculated result to the console:
 
 ![](assets/chapter-4-2-images/03.Operations-08.png)
-![](assets/chapter-4-2-images/03.OperatioA group of football fansns-08.png)
 
 ### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#2](https://judge.softuni.bg/Contests/Practice/Index/654#2).
 
 
-## Problem: Game Tickets
+## Task: Game tickets
 
-**A group of football fans** decided to buy **tickets for Euro Cup 2016**. The ticket price sis determine by **two** categories:
+**A group of football fans** decided to buy **tickets for Euro 2016**. The ticket price is determined according to **two** categories:
 
-- **VIP** – **499.99** leva
-- **Normal** – **249.99** leva
+- **VIP** – **499.99** BGN
+- **Normal** – **249.99** BGN
 
 The fans **have a certain budget**, and **the number of people** in the group determines what percentage of the budget **should be set aside for transport**:
 
-- **From 1 to 4** – 75% from the budget
-- **From 5 to 9** – 60% from the budget
-- **From 10 to 24** – 50% from the budget
-- **From 25 to 49** – 40% from the budget
-- **50 or more** – 25% from the budget
+- **From 1 to 4** – 75% of the budget
+- **From 5 to 9** – 60% of the budget
+- **From 10 to 24** – 50% of the budget
+- **From 25 to 49** – 40% of the budget
+- **50 or more** – 25% of  the budget
 
-Write a program that **calculates whether the money left in the budget** will be enough for **buying tickets in the chosen category**, as well as **how much money** will be **left or they will need**.
+Write a program that **calculates, whether with the rest money from the budget** they can **buy tickets for the selected category**, as well as **how much money** they will have **left or will need**.
 
-### Input Data
+### Input data
 
 The input is read from the **console** and contains **exactly 3 lines**:
 
-- On the **first** line is the **budget** – a floating-point number in the range of [**1 000.00 … 1 000 000.00**.
+- On the **first** line is the **budget** – a floating-point number in the range of [**1 000.00 … 1 000 000.00**].
 - On the **second** line is the **category** – "**VIP**" or "**Normal**".
 - On the **third** line is the **number of people in the group** – an integer in the range of [**1 … 200**].
 
-### Output Data
+### Output data
 
-**Print** on the console **one line**:
+**Print one line** on the console:
 
 - If **the budget is enough**:
   - "**Yes! You have {N} leva left.**" – where **N is the remaining amount** of the group.
@@ -403,7 +402,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output | Explanations |
 |---|---|---|
@@ -413,49 +412,49 @@ The input is read from the **console** and contains **exactly 3 lines**:
 |---|---|---|
 |30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 people: 40%** of the budget are spent on **transport**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: The ticket **price is** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Money needed** 24499.51 - 18000 = **6499.51**|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-We will read the input data and do the calculations described in the task requirements, in order to check if the money will be sufficient.
+We will read the input data and do the calculations described in the condition to check if the money will be sufficient.
 
 #### Input data processing
 
-Let's carefully read the requirements and look at what we expect to take as an **input data**, what is expected to **return as a result**, as well as what are the **main steps** when breaking the **logic circuit**.
+Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result,**, and what are the **main steps** when dividing the **logic**.
 
-For a start, let's process and save the input data in **appropriate** for this **variables**:
+To begin with, let's process and save the input data in **appropriate variables**:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-01.png)
 
 #### Calculations
 
-Let's create and initialize the needed variables for doing the calculations:
+Let's create and initialize the needed variables for the calculations:
 
 ![](assets/chapter-4-2-images/04.Match-tickets-02.png)
 
-Let's review the requirements once again. We need to do **two** blocks of calculations. 
+Let's review the condition again. We need to do **two** different calculations. 
 
-From the first calculations we must understand what part of the budget has to be spent on **transport**. For the logic of these calculations we will notice that it only matters **the number of people in the group**. Therefore, we will create the logic according to the number of fans.
+The first calculations are about what part of the budget we will have to set aside for **transport**. For the logic of these calculations, we will notice that only **the number of people in the group** matters. Therefore, we will make a logical breakdown by the number of fans.
 
 We will use a conditional construction - a series of **`if-else`** blocks.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-From the second calculations we need to find out what amount will be needed for purchasing **the tickets for the group**. According to the task, it only depends on the type of tickets which we need to buy. 
+The second calculations are about what amount we will need to buy **tickets for the group**. According to the condition, it depends only on the type of tickets, we have to buy. 
 
 Let's use **`switch-case`** conditional construction.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-Once we have calculated the **transport costs** and **the tickets costs**, what remains is to calculate the final result and see **whether it will succeed** the group of fans to attend the Euro Cup 2016 or **not** with this parameters given. 
+Once we have calculated the **transport** and **the tickets** costs, what remains is to calculate the final result and see **whether it will succeed** the group of fans to attend the Euro 2016 or **not** with these parameters given. 
 
-For printing the result, in order to skip one **`else` condition** we will assume that the group can, by default, attend Euro Cup 2016.
+For printing the result, in order to skip one **`else` condition**, we will assume that the group can, by default, attend Euro 2016.
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Printing the Result
+#### Printing the result
 
 Finally, we need to print the calculated result on the console.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
 
