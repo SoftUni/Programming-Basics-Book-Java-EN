@@ -1,24 +1,24 @@
 # Chapter 10. Methods
 
-In this chapter, we will introduce you to **methods** and you will learn their **definition**, as well as what their **base concepts** are while working with them. You will learn why it's a **good practice** to use them, how to **define** and **declare** them. We will also introduce you to the **parameters** and **return value of a method**, as well as how to use that return value. In the end, we will peek at **best practices** when using methods.
+In this chapter, we will introduce you to **methods**. We will learn what they are, what is their **base concepts** when working with them. We will learn why it is a **good practice** to use them, how to **declare** and **call** them. We will also introduce you to the **parameters** and **return value of a method** and how to use that return value. At the end of this chapter, we will look at the **established practices** when using methods.
 
 ## What is "method"?
 
-Until this moment, we have found out that while **writing** a programming code for an exercise, **separating** the exercise into different **parts**, favors us a lot. Every part is responsible for a **corresponding action** and by doing so it's **easier** to solve the problem, and the **readability** and the debugging of the code are better.
+So far, we have found out that while **writing** a code for a program that solve a task, **separating** the task into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the task, and the **readability** and the debugging of the code are better.
 
-A block of code designed to perform a particular task and which we have separated logically is called a **method**. **Methods – slices of code, that are named** by us in a specific way. They can be called numerous times when we need them, and they will be run that many times as we want to.
+A block of code designed to perform a particular task, which we have logically separated is called a **method**. **Methods – pieces of code, that are named** by us in a certain way and could be called as many times as we need.
 
-One **method** can be **invoked** that many times, as we think is needed for solving a problem. That **saves** us from repeating the same code and **reduces** the opportunities of making a mistake while editing the repeated code. 
+A **method** can be **called** as many times as we think we need to solve a problem. That **saves** us from repeating the same code several times, **reduces** the possibility of making a mistake while editing the repeated code.
 
 ### Simple methods
 
-Simple methods are responsible for running a specific **action**, that will **help** us solve a problem. Those actions can be printing a string on the console, doing a conditional statement, doing a loop, etc.
+Simple methods are responsible for running a specific **action** that will **help** us to solve a problem. Those actions can be printing a string on the console, performing some checks, performing a loop, etc.
 
-Let's see an **example of a simple method**:
+Let's look at the following **example of a simple method**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-This **method** has the task to print a header, that is a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The round brackets **`( `** and **`)`** are always after the name, no matter how we have named the method. Later we will take a look at how we have to name a method we are working with. For now, we will only say that the **name of a method must define the action** that is doing.
+This **method** has the task to print a header containing a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The parentheses **`( `** and **`)`** always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the **name of a method must describe the action** he performs.
 
 The **body** of the method consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the method.
 
