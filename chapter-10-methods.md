@@ -24,15 +24,15 @@ The **body** of the method consists of **programming code**, which is located be
 
 ### Why should we use methods?
 
-Up to this moment, we have found out that, methods help us with **separating long exercises into smaller parts**, which leads to a **simple solution** of the corresponding problem. This makes our program, not just well structured, **easy readable** but also more understandable.
+Up to this moment, we have found out that, methods help us with **separating big tasks into smaller parts**, which leads to a **simple solution** of the corresponding problem. It makes our program, not just well structured, **easy readable** but also more understandable.
 
-Using methods we **escape repeating** of programming code. **Repeating** code is a **bad practice** because it makes **harder maintenance** for the programmer to do which leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change every occurrence of repeating code. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. This is exactly why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
+Using methods, we **escape repeating** of programming code. **Repeating** code is a bad practice, as it makes it very difficult to maintain the program and leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change at every occurrence it. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. It is why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
 
-Methods offer us an **opportunity** to use **code several times**. With solving more and more exercises, we will conclude that using already defined methods saves us a lot of time and effort.
+Methods offer us an **opportunity** to use **code several times**. With solving more and more tasks, we will conclude that using already defined methods saves us much time and effort.
 
 ### Declaring methods
 
-In Java language, you can **declare** methods inside a class, i.e. between the opening **`{`** and closing **`}`** brackets of the class. Declaring is registering the method in the program so that it can be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program that we write.
+In Java language, you can **declare** methods inside a class, i.e., between the opening **`{`** and closing **`}`** brackets of the classbut not in the declaration of another method. The declaration is the registration of the method in the program, and thus the method will be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program we write.
 
 ![](assets/chapter-10-images/02.Declaring-methods-01.png)
 
@@ -40,16 +40,16 @@ With the next example, we will look at the mandatory elements in the declaration
 
 ![](assets/chapter-10-images/02.Declaring-methods-02.png)
 
-* **Type of the returned value**. In this case, the type is **`double`**, which means that the method will **return a result**, which is of **`double`** type. The returned value can be **`int`**, **`double`**, **`string`**, **etc.**, and also **`void`**. If the type is **`void`**, this means that the method **doesn't return** a result, but only **does a particular operation**.
-* **Method name**. The name of the method is **defined by us**, but we shouldn't forget that it has to **describe the function**, which is executed by the code in its body. In the example, the name is **`GetSquare`**, which tells us that this method is made to find the area of a square.
-* **Parameters list**. It is declared between the parentheses **`(`** and **`)`** that we write after its name. This is where we list all the **parameters** that the method will use. There can be **only one** parameter, **multiple** ones or it could be an **empty** list. If there aren't any parameters, we will write only the parentheses **`()`**. In this example, we declare the parameter **`double num`**.
-* **`static`** declaration in the method description. For the moment you can accept that we write **`static`** always when we declare a method, and later when we get familiar with object-oriented programming (OOP), we will learn about the difference between **static methods** (shared for the whole class) and **methods of an object**, which work on the data of a certain instance of the class (object).
+* **The type of the returned value**. In this case, the type is **`double`**, which means that the method will **return a result**, which is of **`double`** type. The returned value can be **`int`**, **`double`**, **`string`**, **etc.**, and also **`void`**. If the type is **`void`**, this means that the method **doesn't return** a result, but only **does a particular operation**.
+* **Method name**. The name of the method is **defined by us**, but we should not forget that it has to **describe the function**, executed by the code in its body. In the example, the name is **`GetSquare`**, which tells us that this method calculates the area of a square.
+* **Parameters list** is declared between the parentheses **`(`** and **`)`** that we write after its name. Here we list all the **parameters** that the method will use. There can be **only one** parameter, **multiple** ones, or it could be an **empty** list. If there are no parameters, we will write only the parentheses **`()`**. In this example, we declare one parameter with a name **` side`** and with a type **` double`**.
+* **`static`** declaration in the method description. For the moment, we can accept that we write **`static`** always when we declare a method. Later, when we get familiar with object-oriented programming (OOP), we will learn about the difference between **static methods** (shared for the whole class) and **methods of an object**, which work on the data of a particular instance of the class (object).
 
-When declaring methods, you must follow the **sequence** of its base elements – first is the **keyword `static`**, then the **type of the returned value**, then **method name**, and in the end **list of parameters**, surrounded by parentheses **`()`**. 
+When declaring methods, you must follow the **sequence** of its base elements – first is the **keyword `static`** then the **type of the returned value**, then **method name**, and finally **list of parameters**, surrounded by parentheses **`()`**. 
 
-After we have declared a method, its **implementation (body)** follows. In the body of the method we write down **the algorithm**, by which it solves a problem, i.e. the body contains the code (program block), which applies the method's **logic**. In the shown example we are calculating the area of a square, which is **`side * side`**. 
+After we have declared a method, its **implementation (body)** follows. In the body of the method, we write down **the algorithm**, by which it solves a problem, i.e., the body contains the code (program block), which applies the method's **logic**. In the example above we calculate the area of a square, which is **`side * side`**. 
 
-When declaring a variable in the body of a method, it is called a **local** variable of the method. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
+When declaring a variable in the body of a method, it is called a **local** variable. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
 ### Invoking a method
 
