@@ -51,68 +51,68 @@ After we have declared a method, its **implementation (body)** follows. In the b
 
 When declaring a variable in the body of a method, it is called a **local** variable. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
-### Invoking a method
+### Calling a method
 
-**Invoking** a method means **starting to execute the code**, which is in **the body of the method**. This happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as one of the given parameters when declaring the method. Here is an example:
+**Calling** a method means **starting to execute the code**, which is in **the body of the method**. It happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as one of the given parameters when declaring the method. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
-A method can be invoked from **several places** in the program. One way is to call it inside **the main method**.
+A method can be called from **several places** in the program. One way is to call it inside **the main method**.
 
 ![](assets/chapter-10-images/03.Invoking-methods-02.png)
 
-A method can also be invoked from **the body of another method**, which is **not** the main method of the program.
+A method can also be called from **the body of another method**, which is **not** the main method of the program.
 
 ![](assets/chapter-10-images/03.Invoking-methods-03.png)
 
-A method can be called from **its own body**. This is called **recursion** and you can find more about it on [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) or google it.
+A method can be called from **its own body**. It is called **recursion** and you can find more about it on [Wikipedia](https://en.wikipedia.org/wiki/Recursion) or google it.
 
 It is important to know that if a method is declared in a class, it can be called before the line, on which it has been declared.
 
-### Example: Blank Receipt
+### Example: Blank receipt
 
-Write a method that prints a blank receipt. The method should call another three methods: one to print the header, one for the middle part of the receipt, and one for the lower part.
+Write a method that prints a blank receipt. The method should call another three methods: one to print the upper part, one for the middle part of the receipt, and one for the bottom part.
 
 |Part of cash receipt|Text|
 |---|---|
 |Upper part|CASH RECEIPT<br>------------------------------|
 |Middle part|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
-|Lower part|------------------------------<br>(c) SoftUni|
+|Bottom part|------------------------------<br>(c) SoftUni|
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
 |(no input)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-The first step is to create a **`void`** method to **print the upper part** of the receipt (header). Let's give it a meaningful name, which describes what the method does, e.g. **`PrintReceiptHeader`**. In its body write the code from the example below:
+The first step is to create a **`void`** method to **print the upper part** of the receipt (header). Let's give it a meaningful name, which describes what the method does, e.g., **`PrintReceiptHeader`**. In its body, write the code from the example below:
 
 ![](assets/chapter-10-images/04.Print-receipt-01.png)
 
-In the same way, we'll create two more methods **to print the middle part** of the receipt (body) **`PrintReceiptBody`** and **to print the lower part** of the receipt (footer) **`PrintReceiptFooter`**.
+In the same way, we'll create two more methods: one **to print the middle part** of the receipt (body) **`PrintReceiptBody`** and another **to print the bottom part** of the receipt (footer) **`PrintReceiptFooter`**.
 
-After this we will create **another method**, which will invoke the three methods we already wrote, one after the other:
+After this we will create **another method**, which will call the three methods we already wrote, one after the other:
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-In the end, we'll **invoke** the **`PrintReceipt`** method from the body of the **`Main`** method of our program:
+Finally, we'll **call** the **`PrintReceipt`** method from the body of the **`Main`** method of our program:
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.bg/Contests/Practice/Index/665#0](https://judge.softuni.bg/Contests/Practice/Index/665#0).
 
 
-## Methods with Parameters
+## Methods with parameters
 
-Frequently to solve a problem, the method by which we do this needs **additional information**, which depends on its purpose. This is precisely the information that **the method parameters** are, and its behavior depends on them. 
+Often to solve a problem, the method by which we achieve this needs **additional information**, which depends on its purpose. This information represents the **parameters of the method** , and its behavior depends on them. 
 
-### Using Parameters in Methods
+### Using parameters in methods
 
-As we observed above, **the parameters can be zero, one or more**. When declaring them you should divide them with a comma. They can be of any type (**`int`**, **`string`**, etc.), and there is an example below to show how they can be used by the method.
+As we noted above, **the parameters can be zero, one or more**. When declaring them, you should divide them with a comma. They can be of any type (**`int`**, **`string`**, etc.), and below is an example of how they are used by the method.
 
 We **declare** the method and its **list** of **parameters**, then we write the code that the method executes.
 
@@ -122,17 +122,17 @@ After that **call** the method and **give it particular values**:
 
 ![](assets/chapter-10-images/05.Method-parameters-02.png)
 
-When **declaring parameters**, we can use **various** types of variables, and we should be careful that every parameter has a **type** and **name**. It is important to note that when calling the method, we must pass to its **values** for the parameters in **the order**, in which they are **declared**. If the parameters are first **`int`** and after that **`string`**, when calling the method, we can't give it first a **`string`** and then **`int`**. We can only change places of given parameters if we write the name of the parameter beforehand, as you will see below in one of the examples. This is generally not a good practice!
+When **declaring parameters**, we can use **various** types of variables, and we should be careful that every parameter has a **type** and **name**. It is important to note that when calling the method, we must pass to its **values** for the parameters in **the order**, in which they are **declared**. If the parameters are first **`int`** and after that **`string`**, when calling the method, we can't give it first a **`string`** and then **`int`**. 
 
 Let's look at the example for declaring a method, which has several parameters of different types.
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-### Example: Sign of an Integer
+### Example: Sign of an integer
 
 Create a method that prints the sign of an integer **n**.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
@@ -140,24 +140,24 @@ Create a method that prints the sign of an integer **n**.
 |-5|The number -5 is negative.|
 |0|The number 0 is zero.|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-The first step is **creating** a method and giving it a descriptive name, e.g. **`PrintSign`**. This method will have only one parameter of **`int`** type. 
+The first step is **creating** a method and giving it a descriptive name, e.g., **`PrintSign`**. This method will have only one parameter of **`int`** type. 
 
 ![](assets/chapter-10-images/06.Print-sign-01.png)
 
-The next step is **implementing** the logic by which the program will check what the sign of the number is. You can see from the examples that there are three cases – the number is larger than, equal to, or lower than zero, which means that we'll make three verifications in our method.
+The next step is **implementing** the logic by which the program will check what the sign of the number is. You can see from the examples that there are three cases – the number is greater than, equals to, or less than zero, which means that we'll make three verifications in our method.
 
 The next step is to read the input number and to call the new method from the body of the **`main`** method.
 
 ![](assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#1](https://judge.softuni.bg/Contests/Practice/Index/665#1).
 
 
-### Example: Printing a Triangle
+### Example: Printing a triangle
 
 Create a method that prints a triangle as shown in the examples.
 
