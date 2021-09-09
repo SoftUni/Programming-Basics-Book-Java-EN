@@ -504,38 +504,38 @@ Finally, we have to print out the obtained results, by following the specified f
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4](https://judge.softuni.bg/Contests/Practice/Index/656#4).
 
 
-## Задача: логистика
+## Problem: Logistics
 
-Отговаряте за логистиката на различни товари. **В зависимост от теглото** на всеки товар е нужно **различно превозно средство** и струва **различна цена на тон**:
+It’s your responsibility of the logistics of various types of cargo. **Depending on the weight** of each cargo is needed a **different vehicle type**, and **the cost will vary per ton**:
 
- * До **3 тона** – **микробус** (200 лева на тон).
- * От **над 3 и до 11 тона** – **камион** (175 лева на тон).
- * **Над 11 тона – влак** (120 лева на тон).
+ * Up to **3 tons** – **minibus** (200 USD per ton).
+ * **Upward of 3 and up to 11 tons** – **lorry** (175 USD per ton).
+ * **Over 11 tons – train** (120 USD per ton).
 
-Вашата задача е да изчислите **средната цена на тон превозен товар**, както и **колко процента от товара** се превозват с **всяко превозно средство**.
+It’s your task to calculate, **the average price per ton of transported cargo**, and also **what percentage of cargo** is transported by **the various vehicle types**.
 
 ### Input Data
 
-От конзолата се четат **поредица от числа**, всяко на отделен ред:
- * **Първи ред**: **брой на товарите** за превоз – **цяло число** в интервала [**1 … 1000**].
- * На всеки следващ ред се подава **тонажът на поредния товар** – **цяло число** в интервала [**1 … 1000**].
+From the console, we must read a **sequence of numbers**, each on a separate line:
+ * **First line**: **cargo count** for transport – **whole number** in the range of [**1 … 1000**].
+ * On each of the next lines, we input **the weight of the current cargo** – **whole number** in the range of [**1 … 1000**].
 
 ### Output Data
 
-Да се отпечатат на конзолата **4 реда**, както следва:
- * **Ред #1** – **средната цена на тон превозен товар** (закръглена до втория знак след десетичната точка).
- * **Ред #2** – **процентът** товар, превозван с **микробус** (между 0.00% и 100.00%, закръглен до втория знак след десетичната точка).
- * **Ред #3** – **процентът** товар, превозвани с **камион** (между 0.00% и 100.00%).
- * **Ред #4** – **процентът** товар, превозвани с **влак** (между 0.00% и 100.00%).
+Print out on the console **4 lines**, as follows:
+ * **Line #1** – **average price per ton of cargo** (rounded up to the second symbol after the decimal point).
+ * **Line #2** – **percentage** of cargo, transported by **minibus** (between 0.00% and 100.00%, rounded up to the second symbol after the decimal point).
+ * **Line #3** – **percentage** of cargo, transported by **lorry** (between 0.00% and 100.00%).
+ * **Line #4** – **percentage** of cargo, transported by **train** (between 0.00% and 100.00%).
  
 ### Sample Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -543,14 +543,14 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4
 <td valign="top">4<br>1<br>5<br>16<br>3</td>
 <td valign="top">143.80<br>16.00%<br>20.00%<br>64.00%</td>
 <td valign="top">
-С <b>микробус</b> се превозват два от товарите <b>1</b> + <b>3</b>, общо <b>4</b> тона.<br>
-С <b>камион</b> се превозва един от товарите: <b>5</b> тона.<br>
-С <b>влак</b> се превозва един от товарите: <b>16</b> тона.<br>
-<b>Сумата</b> от всички товари е: 1 + 5 + 16 + 3 = <b>25</b> тона.<br>
-Процент товар <b>с микробус</b>: 4/25*100 = <b>16.00%</b><br>
-Процент товар <b>с камион</b>: 5/25*100 = <b>20.00%</b><br>
-Процент товар <b>с влак</b>: 16/25*100 = <b>64.00%</b><br>
-<b>Средна цена</b> на тон превозен товар: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
+Two of the cargoes are transported by <b>minibus</b> <b>1</b> + <b>3</b>, in total <b>4</b> tons.<br>
+One of the shipments is transported by <b>lorry</b>: <b>5</b> tons.<br>
+One of the shipments is transported by <b>train</b>: <b>16</b> tons.<br>
+<b>The sum</b> of all the cargo is: 1 + 5 + 16 + 3 = <b>25</b> tons.<br>
+Percentage cargo <b>by minibus</b>: 4/25*100 = <b>16.00%</b><br>
+Percentage cargo <b>by lorry</b>: 5/25*100 = <b>20.00%</b><br>
+Percentage cargo <b>by train</b>: 16/25*100 = <b>64.00%</b><br>
+<b>Average price</b> per ton of transported cargo: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
 </td>
 </tr>
 </tbody>
@@ -559,10 +559,10 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -577,22 +577,22 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4
 
 ### Hints and Guidelines
 
-Първо **ще прочетем теглото на всеки товар** и ще **сумираме** колко тона се превозват съответно с **микробус**, **камион** и **влак** и ще изчислим и **общите тонове** превозени товари. Ще пресметнем **цените за всеки вид транспорт** според превозените тонове и **общата цена**. Накрая ще  пресметнем и отпечатаме **общата средна цена на тон** и **каква част от товара е превозена с всеки вид транспорт процентно**.
+Firstly **we have to read the weight of each cargo** and will **sum up** how many tons are transported by **minibus**, **lorry** and **train** and we are going to calculate **the total tons** of transported cargo. We will calculate **the prices for each type of transport** determined by the total transported tonnage and **the total price**. In the end, we’ll calculate and print **the total average price per ton** and **how much cargo is being transported by each transport type**.
 
-Декларираме си нужните променливи, например: **`countOfLoads`** – броя на товарите за превоз (прочитаме ги от конзолата), **`sumOfTons`** – сумата от тонажа на всички товари, **`microbusTons`**, **`truckTons`**, **`trainTons`** – променливи, пазещи сумата от тонажа на товарите, превозвани съответно с микробус, камион и влак.
+We declare the needed variables, for example: **`countOfLoads`** – the number of shipments for transport (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`microbusTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by minibus, lorry and train.
 
-Ще ни трябва **`for` цикъл** от **`0`** до **`countOfLoads-1`**, за да обходим всички товари. За всеки товар **прочитаме теглото му** (в тонове) от конзолата и го запазваме в променлива, например **`tons`**. Прибавяме към сумата от тонажа на всички товари (**`sumOfTons`**) теглото на текущия товар (**`tons`**). След като сме прочели теглото на текущия товар, **трябва да определим кое превозно средство ще се ползва за него** (микробус, камион или влак). За целта ще ни трябват **`if-else`** проверки:
+We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`**, for us to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) weight of the current cargo (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (minibus, lorry or train). For this task, we’re going to need **`if-else`** statements:
 
- * Ако стойността на променливата **`tons`** е **по-малка от 3**, увеличаваме стойността на променливата **`microbusTons`** със стойността на **`tons`**: 
+ * If the value of the variable **`tons`** is **less than 3**, increase the value of **`microbusTons`** by the value of **`tons`**: 
  
    ```java
    microbusTons += tons;
    ```
    
- * Иначе, ако стойността **`tons`** е **до 11**, увеличаваме **`truckTons`** с **`tons`**.
- * Ако **`tons`** e **повече от 11**, увеличаваме **`trainTons`** с **`tons`**.
+ * Otherwise, if the value of **`tons`** is **up to 11**, we increase **`truckTons`** by **`tons`**.
+ * If **`tons`** is **more than 11**, we increase **`trainTons`** by **`tons`**.
 
-Преди да отпечатаме изхода трябва да **изчислим процента на тоновете, превозвани с всяко превозно средство** и **средната цена на тон**. За средната цена на тон ще си декларираме още една помощна променлива **`totalPrice`**, в която ще **сумираме общата цена на всички превозвани товари** (с микробус, камион и влак). Средната цена ще получим, разделяйки **`totalPrice`** на **`sumOfTons`**. Остава **сами да изчислите** процента на тоновете, превозвани с всяко превозно средство, и да отпечатате резултатите, спазвайки формата в условието.
+Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more helper variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by minibus, lorry and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **You’re left with calculating** the percentages of the tonnage, transported by each transport type, and printing out the results, adhering to the formatting specified in the description.
 
 ### Testing in the Judge System
 
