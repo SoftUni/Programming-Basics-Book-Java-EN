@@ -485,61 +485,61 @@ In this chapter, we have learned base concepts about working with methods:
 
 ## Exercises
 
-To improve what we have learned we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
+To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
 
-### Problem: "Hello, Name!"
+### Task: "Hello, Name!"
 
 Write a method that takes a name as a parameter and prints on the console "*Hello, \<name\>!*".
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
 |Peter|Hello, Peter!|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-Define a method **`printName(String name)`** and implement it, after which read a name from the console in the main program and invoke the method by feeding it the name.
+Define a method **`printName(String name)`** and implement it, after which read a name from the console in the main program and invoke the method by giving him the name.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#7](https://judge.softuni.bg/Contests/Practice/Index/665#7).
 
 
-### Problem: Min Method
+### Task: Min method
 
 Create a method **`getMin(int a, int b)`**, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method **`getMin(…)`**, which you have already created.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-Define a method **`getMin(int a, int b)`** and implement it.After that call it from the main method as shown in the example below. To find the minimum of 3 numbers, first, find the minimum of the first two and then the result from their result and the third one.
+Define a method **`getMin(int a, int b)`** and implement it. After that, call it from the main method, as shown in the example below. To find the minimum of 3 numbers, first, find the minimum of the first two and then the result from their result and the third one.
 
 ```java
 int min = getMin(getMin(num1, num2), num3);
 ```
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#8](https://judge.softuni.bg/Contests/Practice/Index/665#8).
 
 
-### Problem: String Repeater
+### Task: String repeater
 
-Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this print the result on the console.
+Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this, print the result on the console.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 Write method and add the input string to the result in the for loop:
 
@@ -547,47 +547,47 @@ Write method and add the input string to the result in the for loop:
 
 Keep in mind that **in Java concatenating strings in loops leads to a bad performance** and is not recommended. Learn more at: https://stackoverflow.com/questions/1235179.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#9](https://judge.softuni.bg/Contests/Practice/Index/665#9).
 
 
-### Problem: N-th Digit
+### Task: N-th digit
 
-Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that print the result on the console.
+Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that, print the result on the console.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |83746<br>2|4|93847837<br>6|8|2435<br>4|2|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-To do the algorithm use a **`while`** loop, until the given number equals 0. At each iteration of the **`while`** loop check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
+To do the algorithm, use a **`while`** loop, until the given number equals 0. At each iteration of the **`while`** loop, check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#10](https://judge.softuni.bg/Contests/Practice/Index/665#10).
 
 
-### Problem: Integer to Base
+### Task: Integer to base
 
 Write a method **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|Input|Output|
 |---|----|---|---|---|---|
 |3<br>2|11|4<br>4|10|9<br>7|12|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
-* Calculate **the remainder** of the number, divided by the base.
-* **Insert the remainder** at the beginning of the string.
-* **Divide** the number to the base.
-* **Repeat** the algorithm until the input integer equals 0.
+To solve the task, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
+* We calculate **the remainder** of the number, divided by the base.
+* **We insert the remainder** at the beginning of the string.
+* **We divide** the number to the base.
+* **We repeat** the algorithm until the input integer equals 0.
 
 Write the missing logic in the method below:
 
@@ -601,12 +601,12 @@ static String integerToBase(int number, int toBase) {
 }
 ```
 
-#### Testing in the Judge System 
+#### Testing in the Judge system 
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#11](https://judge.softuni.bg/Contests/Practice/Index/665#11).
 
 
-### Problem: Notifications
+### Task: Notifications
 
 Write a program, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
 - When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
@@ -615,39 +615,39 @@ Write a program, which takes an integer **`n`** and **`n` input messages** and p
 
 Print on the console **each read message**, formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
 
-The problem should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is invoked by the **`main()`** method:
+The task should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is called in the **`main()`** method:
 
 ![](assets/chapter-10-images/18.Notifications-01.png)
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
 |4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code>|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 Define and implement the four shown methods.
 
-In **`ReadAndProcessMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that invoke the method for printing the given type of message.
+In **`ReadAndProcessMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that call the method for printing the given type of message.
 
 If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter.  Creating more than one **`Scanner`** which reads from the console might not work as expected.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#12](https://judge.softuni.bg/Contests/Practice/Index/665#12).
 
 
-### Problem: Numbers to Words
+### Task: Numbers to words
 
 Write a method **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
 * Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
-* If the number is larger than **999**, you must print "**too large**".
-* If the number is smaller than **-999**, you must print "**too small**".
+* If the number is greater than **999**, you must print "**too large**".
+* If the number is less than **-999**, you must print "**too small**".
 * If the number is **negative**, you must print "**minus**" before it.
 * If the number is not built up of three digits, you shouldn't print it.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -657,7 +657,7 @@ Write a method **`letterize(number)`**, which reads an integer and prints it in 
 |---|---|---|---|
 |4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 We can first print **the hundreds** as a text - (the number / 100) % 10, after that **the tens** –  (the number / 10) % 10 and at the end **the ones** – (the number % 10).
 
@@ -665,20 +665,20 @@ The first special case is when the number is exactly **rounded to 100** (e.g. 10
 
 The second special case is when the number formed by the last two digits of the input number is **less than 10**  (e.g. 101, 305, 609, etc.). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
 
-The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** (e.g. 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
+The third special case is when the number formed by the last two digits of the input number is **greater than 10 and less than 20** (e.g. 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#13](https://judge.softuni.bg/Contests/Practice/Index/665#13).
 
 
-### Problem: String Encryption
+### Task: String encryption
 
 Write a method **`encrypt(char letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
 * At the beginning of the string, which represents the result, we will insert the symbol which matches the following condition:
   * ASCII code of the letter + the last digit of the ASCII code of the letter.
-* After that at the end of the string, which represents the result, you concatenate the character which matches the following condition:
+* After that, at the end of the string, which represents the result, you concatenate the character which matches the following condition:
   * ASCII code of the letter - the first digit of the ASCII code of the letter.
 * The method should return the encrypted string.
 
@@ -689,7 +689,7 @@ Example:
   * At **the beginning** of the string, which represents the result, concatenate the symbol, which you get from the sum of the ASCII code + the last digit &rarr; 106 + 6 &rarr; 112 &rarr; **p**.
   * At **the end** of the string, which represents the result, concatenate the symbol, which you get from subtracting the ASCII code – the first digit &rarr; 106 - 1 &rarr; 105 &rarr; **i**.
 
-Using the method shown above, write a program that takes **a sequence of characters**, **encrypts them** and prints the result on one line.
+Using the method shown above, write a program that takes **a sequence of characters**, **encrypts them**, and prints the result on one line.
 
 The input data will always be valid. The Main method must read the data given by the user – an integer **`n`**, followed by a character for each of the following **`n`** lines.
 
@@ -698,7 +698,7 @@ Encrypt the symbols and add them to the encrypted string. In the end, as a resul
 Example:
 * S, o, f, t, U, n, i &rarr; V83Kp11nh12ez16sZ85Mn10mn15h
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
@@ -708,12 +708,12 @@ Example:
 |---|---|
 |7<br>B<br>i<br>r<br>a<br>H<br>a<br>x| H66<n15hv14qh97XJ72Ah97xx10w |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-Our variable from type **`String`** which will store the value of the result, will have an initial value of **`String str = ""`** (Empty String). The loop should iterate **`n`** times, and in every iteration, we will add to our variable the encrypted symbol.
+Our variable from type **`String`**, which will store the value of the result, will have an initial value of **`String str = ""`** (Empty String). The loop should iterate **`n`** times, and in every iteration, we will add to our variable the encrypted symbol.
 
-To find the first and the last digit from the ASCII code, we will use the algorithm, that we have used when solving the "Integer to Base" problem.
+To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the "Integer to Base" task.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#14](https://judge.softuni.bg/Contests/Practice/Index/665#14).
