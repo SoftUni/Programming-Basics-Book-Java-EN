@@ -416,17 +416,17 @@ And finally, we are left with printing the number of treated patients and also t
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3](https://judge.softuni.bg/Contests/Practice/Index/656#3).
 
 
-## Задача: деление без остатък
+## Problem: Division without remainder
 
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв **процент p1 се делят без остатък на 2**, **процент p2** се **делят без остатък на 3**, **процент p3** се **делят без остатък на 4**. Да се напише програма, която изчислява и отпечатва процентите p1, p2 и p3.
-**Пример:** имаме **n = 10** числа: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+We are given **n whole numbers** in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
+**Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Деление без остатък на:</strong></th>
-<th align="left"><strong>Числа</strong></th>
-<th align="left"><strong>Брой</strong></th>
-<th align="left"><strong>Процент</strong></th>
+<th align="left"><strong>Division without remainder by:</strong></th>
+<th align="left"><strong>Numbers</strong></th>
+<th align="left"><strong>Count</strong></th>
+<th align="left"><strong>Percent</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -451,28 +451,28 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 </tbody>
 </table>   
 
-### Входни данни
+### Input Data
 
-На първия ред от входа стои цялото число **n** (1 ≤ **n** ≤ 1000) – брой числа. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата, които да бъдат проверени на колко се делят.
+On the first line of input is the whole number **n** (1 ≤ **n** ≤ 1000) – count of numbers. On the next **n lines** we have **one whole number** in the range of [**1 … 1000**] – the numbers that have to be checked for division.
 
-### Изходни данни
+### Output Data
 
-Да се отпечатат на конзолата **3 реда**, всеки от които съдържа процент между 0% и 100%, с точност две цифри след десетичния знак, например 25.00%, 66.67%, 57.14%.
- * На **първия ред** – процентът на числата, които **се делят на 2**.
- * На **втория ред** – процентът на числата, които **се делят на 3**.
- * На **третия ред** – процентът на числата, които **се делят на 4**.
+Print on the console **3 lines**, each one containing a percentage between 0% and 100%, with accuracy up to two symbols after the decimal point, for example 25.00%, 66.67%, 57.14%.
+ * On the **first line** – the percentage of numbers that **are divisible by 2**.
+ * On the **second line** – the percentage of numbers that **are divisible by 3**.
+ * On the **third line** – the percentage of numbers that **are divisible by 4**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -488,20 +488,20 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 </tbody>
 </table>   
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-За тази и следващата задача ще трябва сами да напишете програмния код, следвайки дадените напътствия.
+For the current problem and the next one you’ll need to write the code by yourself, following the given guidelines.
 
-Програмата, която решава текущия проблем, е аналогична на тази от задача **Хистограма**, която разгледахме по-горе. Затова можем да започнем с декларацията на нужните ни променливи:
-Примерни имена на променливи може да са: **`n`** – брой на числата (който трябва да прочетем от конзолата) и **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – помощни променливи, пазещи броя на числата от съответната група.
+This program that solves the current problem is an analogue to the **Histogram** problem, which we reviewed earlier. So that’s why we can start by declaring the needed variables:
+Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – helper variables, containing the count of numbers in the corresponding group.
 
-За да прочетем и разпределим всяко число в съответната му група, ще трябва да завъртим **`for` цикъл** от **`0`** до **`n`** (броя на числата). Всяка итерация на цикъла трябва да прочита и разпределя **едно единствено число**. Различното тук е, че **едно число може да попадне в няколко групи едновременно**, затова трябва да направим **три отделни `if` проверки за всяко число** – съответно дали се дели на 2, 3 и 4 (**`if-else`** конструкция в този случай няма да ни свърши работа, защото след като намери съвпадение се прекъсва по-нататъшното проверяване на условията) и да увеличим стойността на променливата, която пази броя на числата в съответната група.
+To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Every iteration of the loop we have to read and assign **only one number**. The difference here is that **one number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match its stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
 
-Накрая трябва да отпечатате получените резултати, като спазвате посочения формат в условието.
+Finally, we have to print out the obtained results, by following the specified formatting.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#4](https://judge.softuni.bg/Contests/Practice/Index/656#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4](https://judge.softuni.bg/Contests/Practice/Index/656#4).
 
 
 ## Задача: логистика
@@ -514,13 +514,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 
 Вашата задача е да изчислите **средната цена на тон превозен товар**, както и **колко процента от товара** се превозват с **всяко превозно средство**.
 
-### Входни данни
+### Input Data
 
 От конзолата се четат **поредица от числа**, всяко на отделен ред:
  * **Първи ред**: **брой на товарите** за превоз – **цяло число** в интервала [**1 … 1000**].
  * На всеки следващ ред се подава **тонажът на поредния товар** – **цяло число** в интервала [**1 … 1000**].
 
-### Изходни данни
+### Output Data
 
 Да се отпечатат на конзолата **4 реда**, както следва:
  * **Ред #1** – **средната цена на тон превозен товар** (закръглена до втория знак след десетичната точка).
@@ -528,7 +528,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
  * **Ред #3** – **процентът** товар, превозвани с **камион** (между 0.00% и 100.00%).
  * **Ред #4** – **процентът** товар, превозвани с **влак** (между 0.00% и 100.00%).
  
-### Примерен вход и изход
+### Sample Input and Output
 
 <table>
 <thead>
@@ -575,7 +575,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 </tbody>
 </table>
 
-### Насоки и подсказки
+### Hints and Guidelines
 
 Първо **ще прочетем теглото на всеки товар** и ще **сумираме** колко тона се превозват съответно с **микробус**, **камион** и **влак** и ще изчислим и **общите тонове** превозени товари. Ще пресметнем **цените за всеки вид транспорт** според превозените тонове и **общата цена**. Накрая ще  пресметнем и отпечатаме **общата средна цена на тон** и **каква част от товара е превозена с всеки вид транспорт процентно**.
 
@@ -594,6 +594,6 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 
 Преди да отпечатаме изхода трябва да **изчислим процента на тоновете, превозвани с всяко превозно средство** и **средната цена на тон**. За средната цена на тон ще си декларираме още една помощна променлива **`totalPrice`**, в която ще **сумираме общата цена на всички превозвани товари** (с микробус, камион и влак). Средната цена ще получим, разделяйки **`totalPrice`** на **`sumOfTons`**. Остава **сами да изчислите** процента на тоновете, превозвани с всяко превозно средство, и да отпечатате резултатите, спазвайки формата в условието.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/656#5](https://judge.softuni.bg/Contests/Practice/Index/656#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#5](https://judge.softuni.bg/Contests/Practice/Index/656#5).
