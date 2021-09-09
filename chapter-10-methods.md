@@ -161,19 +161,19 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#1
 
 Create a method that prints a triangle as shown in the examples.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |3|1<br>1 2<br>1 2 3<br>1 2<br>1|4|1<br>1 2<br>1 2 3<br>1 2 3 4 <br>1 2 3<br>1 2<br>1|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-Before creating a method to print a row with a given beginning and an end, we must read the input number from the console. After that, we choose a meaningful name, which describes its purpose, e.g. **`printLine`**, and implements it.
+Before creating a method to print a row with a given beginning and an end, we must read the input number from the console. After that, we choose a meaningful name, which describes its purpose, e.g., **`printLine`**, and implements it.
 
 ![](assets/chapter-10-images/07.Print-triangle-01.png)
 
-From the drawing exercises, we remember that it is good practice **to divide the figure into several parts**. To make it easier we will divide the triangle into three parts – upper, middle, and lower.
+From the drawing exercises, we remember that it is а good practice **to divide the figure into several parts**. To make it easier, we will divide the triangle into three parts – upper, middle, and bottom.
 
 The next step is to print **the upper half** of the triangle using a loop:
 
@@ -183,32 +183,32 @@ After that, we will print the **middle part**:
 
 ![](assets/chapter-10-images/07.Print-triangle-03.png)
 
-In the end, we will print the **bottom part** from the triangle but this time with a reverse loop.
+Finally, we will print the **bottom part** from the triangle, but this time with a reverse loop.
 
 ![](assets/chapter-10-images/07.Print-triangle-04.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#2](https://judge.softuni.bg/Contests/Practice/Index/665#2).
 
 
-### Example: Draw a Filled Square
+### Example: Draw a filled square
 
 Print on the console a filled square with side **n**, as in the examples below.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>--------</code><br><code>-\\/\\/\\/-</code><br><code>-\\/\\/\\/-</code><br><code>--------</code>|5|<code>----------</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>----------</code>|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 The first step is to read the input from the console. After that, we need to create a method, which will print the first and the last rows because they are the same. Let's remember that we must give it **a descriptive name** and give it as **a parameter** the length of the side. We will use the constructor's **`new String`**. 
 
 ![](assets/chapter-10-images/08.Draw-filled-square-01.png)
 
-Our next step is to create a method that will draw the middle rows on the console. Again, give it a descriptive name i.e. **`printMiddleRow`**.
+Our next step is to create a method that will draw the middle rows on the console. Again, give it a descriptive name i.e., **`printMiddleRow`**.
 
 ![](assets/chapter-10-images/08.Draw-filled-square-02.png)
 
@@ -216,18 +216,18 @@ Finally, call the methods in the **`main()`** method of the program to draw the 
 
 ![](assets/chapter-10-images/08.Draw-filled-square-03.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#3](https://judge.softuni.bg/Contests/Practice/Index/665#3).
 
 
-## Returning Result from a Method
+## Returning result from a method
 
-Up to this point, we have viewed methods that do a specific task. For example printing a text, number, or a figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of method in this part.
+So far, we have looked at methods that do a specific task, for example, printing a text, number, or figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of method in the following lines.
 
-### Types of Returned Values
+### Types of returned values
 
-Up until now, we saw some examples, in which when declaring methods, we used the keyword **`void`**, which shows that the method **does not** return a result, but just executes a certain action.
+So far, we saw some examples, in which when declaring methods, we used the keyword **`void`**, which shows that the method **does not** return a result, but just executes a certain action.
 
 ![](assets/chapter-10-images/09.Return-types-01.png)
 
@@ -241,19 +241,19 @@ If we **replace** **`void`** with **a type** of some variable, this will tell th
 
 We should note that **the result** returned by the method can be of **a type, compatible with the type of the returned value** of the method. For example, if the declared type of the returned value is **`double`**, we can return a value of **`int`** type.
 
-### The "Return" Operator
+### The "return" operator
 
-To obtain a result from the method we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** the method invoker a certain **value**, which is defined by the expression after the **`return`** operator.
+To obtain a result from the method, we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** to the method's caller, a **value** that is defined by the expression after the **`return`** operator.
 
-In the example below there is a method that reads two names from the console, concatenates them, and returns them as a result. The return value is of **`String`** type:
+In the example below, there is a method that reads two names from the console, concatenates them, and returns them as a result. The return value is of **`String`** type:
 
 ![](assets/chapter-10-images/10.Return-operator-01.png)
 
-The **`return`** operator can also be used in **`void`** methods. This way the method will stop its execution without returning a value, and after it, there shouldn't be an expression, which should be returned. In this case, we use **`return`** only to exit the method.
+The **`return`** operator can also be used in **`void`** methods. This way, the method will stop its execution without returning a value, and after it, there shouldn't be an expression, which should be returned. In this case, we use **`return`** only to exit the method.
 
-**There are cases** where **`return`** can be called from multiple places in the method, but only if there are **certain** input conditions.
+**There are cases** where **`return`** can be called, from multiple places in the method, but only if there are **certain** input conditions.
 
-We have a method in the example below, which compares two numbers and returns a result respectively **`-1`**, **`0`**, or **`1`** depending on if the first argument is smaller, equal, or, larger than the second argument, given to the method. The method uses the keyword **`return`** in three different places, to return three different values according to the logic of comparing the numbers:
+We have a method in the example below, which compares two numbers and returns a result respectively **`-1`**, **`0`**, or **`1`** depending on if the first argument is less than, equals to, or greater than the second argument, given to the method. The method uses the keyword **`return`** in three different places, to return three different values according to the logic of comparing the numbers:
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
@@ -291,7 +291,7 @@ Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
 ```
 
-### Example: Calculating Triangle Area
+### Example: Calculating triangle area
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
