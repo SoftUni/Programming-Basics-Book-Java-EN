@@ -295,13 +295,13 @@ int age = Integer.parseInt(scanner.nextLine());
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|
 |---|---|
 |3<br>4|6|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 The first step is to read the input. After that, **create** a method, but this time be careful when **declaring** to give it the correct **type** of data we want the method to return, which is **`double`**
 
@@ -311,7 +311,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 
 ![](assets/chapter-10-images/11.Calculate-triangle-area-02.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#4](https://judge.softuni.bg/Contests/Practice/Index/665#4).
 
@@ -320,13 +320,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#4
 
 Write a method that calculates and returns the result the power of a number. 
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |2<br>8|256|3<br>4|81|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 Our first step is to read the input data from the console. The next step is to create a method that will take two parameters (the number and the power) and return, as a result, a number of a **`double`** type.
 
@@ -334,16 +334,16 @@ Our first step is to read the input data from the console. The next step is to c
 
 After we have done the calculations, we have to only print the result in the **`main()`** method of the program.
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5](https://judge.softuni.bg/Contests/Practice/Index/665#5).
 
 
-## Method Overloading
+## Method overloading
 
-In many programming languages, the same methods can be declared in **different variants** with the **same name and different parameters**. This goes by the term “**method overloading**”. Now let's see how to write these overloaded methods.
+In many programming languages, the same methods can be declared in **different variants** with the **same name and different parameters**. It is known as “**method overloading**”. Now let's see how to write these overloaded methods.
 
-### Method Signature
+### Method signature
 
 In programming methods are **identified** through the elements of their declaration: **name** of the method + a list of its **parameters**. These two elements define its specification, the so-called “**method signature**”.
 
@@ -353,13 +353,13 @@ In this example, the method's signature is its name (**`print`**), together with
 
 If our program holds several **methods with the same name**, but with **different lists of parameters (signatures)**, we can say that we use **method overloading**.
 
-### Overloading Methods
+### Overloading methods
 
-As we mentioned, if you use **the same name for several methods with different signatures**, this means that you are **overloading a method**. The code below shows how three different methods can use the same name, but have different signatures and execute different actions.
+As we mentioned, if you use **the same name for several methods with different signatures**, this means that you are **overloading a method**. The code below shows how three different methods can use the same name but have different signatures and execute different actions.
 
 ![](assets/chapter-10-images/14.Method-overloading-01.png)
 
-### Signature and Return Value Type
+### Signature and return value type
 
 It is important to say that **the returned type as a result** of the method **is not a part of its signature**. If the returned type was a part of the signature, then the compiler doesn't know which method exactly to call (there is ambiguity).
 
@@ -367,19 +367,19 @@ Let's look at the following **example**: we have two methods with different retu
 
 ![](assets/chapter-10-images/14.Method-overloading-02.png)
 
-### Example: Greater of Two Values
+### Example: Greater of two values
 
 The input is two values of the same type. The values can be of **`int`**, **`char`**, or **`String`** type. Create a method **`getMax()`** that returns, as a result, the greater of the two values.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |int<br>2<br>16|16|char<br>a<br>z|z|string<br>Ivan<br>Todor|Todor|
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-To complete our task we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.
+To complete our task, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-01.png)
 
@@ -387,7 +387,7 @@ Following the logic of the previous method, we create another one with the same 
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-02.png)
 
-The next method we need to create will compare strings. The logic here is a bit different from the previous two methods because variables of **`String`** type cannot be compared with the operators **`<`** and **`>`**. We will use the method **`compareTo(…)`**, which returns a numerical value: larger than 0 (the compared object is larger), smaller than 0 (the compared object is smaller), and 0 (the two objects are the same).
+The next method we need to create will compare strings. The logic here is a bit different from the previous two methods because variables of **`String`** type cannot be compared with the operators **`<`** and **`>`**. We will use the method **`compareTo(…)`**, which returns a numerical value: greater than 0 (the compared object is larger), less than 0 (the compared object is smaller), and 0 (the two objects are the same).
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-03.png)
 
@@ -395,22 +395,22 @@ The last step is to read the input data, use the appropriate variables, and invo
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-04.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#6](https://judge.softuni.bg/Contests/Practice/Index/665#6).
 
 
-## Naming Methods. Best Practices when working with methods
+## Naming methods. Best practices when working with methods
 
 In this chapter, we will introduce you to some of the **best practices** when working with methods. They will be related to naming, organizing our code and its structure. 
 
-### Naming Methods
+### Naming methods
 
-When we name a method it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **task** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
+When we name a method, it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **task** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
 
 It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets  **`( `** and **`)`** are always after the name of the method.
 
-Every method must do an independent task and the name must describe its role.
+Every method must do an independent task, and the name must describe its role.
 
 Here are some examples of **correctly** named methods:
 * **`findStudent`**
@@ -424,11 +424,11 @@ Some examples of **badly** named methods:
 *	**`SampleMethod`**
 *	**`DirtyHack`**
 
-If we can't come up with a good name it's probably because our method does more than one job or it doesn't have a clear task. We must think of a way to divide the method into different methods.
+If we can't come up with a good name, it's probably because our method does more than one job or it doesn't have a clear task. We must think of a way to divide the method into several separate methods.
 
 ### Naming parameters of methods
 
-When naming **the parameters** of a method you can apply almost the same rules as with the methods themselves. The difference here is that it is good for the names of the parameters to use a noun or a couple of an adjective and a noun, and when naming the parameters, we use the **`lowerCamelCase`** convention, i.e. **each word except for the first one starts with uppercase**. We should note that it is a good practice that the name of the parameter **shows** what **unit** is used when working with it.
+When naming **the parameters** of a method you can apply almost the same rules as with the methods themselves. The difference here is that it is good for the names of the parameters to use a noun or a couple of an adjective and a noun, and when naming the parameters, we use the **`lowerCamelCase`** convention, i.e., **each word except for the first one starts with uppercase**. We should note that it is a good practice that the name of the parameter **shows** what **unit** is used when working with it.
 
 Here are some examples of **correctly** named parameters of methods:
 * **`firstName`**
@@ -446,16 +446,16 @@ Some examples of **incorrectly** named parameters:
 * **`LastName`**
 * **`last_name`**
 
-### Good Practices When Working with Methods
+### Good practices when working with methods
 
 We must keep in mind that a method must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
-As we have already said the name must be clear and descriptive. Another **good practice** is to **avoid** methods that are longer than our screen. If this happens it's recommended to **split** the method into smaller ones as shown in the example below.
+As we have already said, the name must be clear and descriptive. Another **good practice** is to **avoid** methods that are longer than our screen. If this happens, it's recommended to **split** the method into smaller ones, as shown in the example below.
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
 ### Structure and formatting of the code
 
-When writing methods we must keep in mind to follow a correct **indication** (move more inward blocks of the code).
+When writing methods, we must keep in mind to follow a correct **indentation** (offset blocks of code).
 
 Here are some examples of **correctly** formatted Java code:
 
@@ -465,22 +465,22 @@ Some examples of **incorrectly** formatted Java code:
 
 ![](assets/chapter-10-images/16.Good-practice-02.png)
 
-When the headline row of the method is **too long**, it's recommended to be split into several rows, and every row after the first should be moved 2 tabulations to right (for clear readability):
+When the headline row of the method is **too long**, it's recommended to divide it into several rows, moving each row after the first one with two  tabs to the right (for better readability):
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-Another good practice is to **leave an empty row** between methods, after loops, and conditional statements. You should always try to **avoid** writing **long rows and complicated expressions**. Over time you will find out that improves the readability and saves time.
+Another good practice is to **leave an empty row** between methods, after loops, and conditional statements. You should **avoid** writing **long rows and complicated expressions**. Over time you will find out that improves the readability and saves time.
 
 We recommend you to always **use curly brackets for the body of conditional statements and loops**. The brackets don't just improve the readability but also reduce the possibility of making a mistake.
 
 ## What have we learned from this chapter?
 
-In this chapter we have learned base concepts about working with methods:
-* Learned that **the goal** of a method is to **split** programs with many rows to code with smaller and shorter parts.
-* Comprehended the idea of the **structure** of methods and how to **declare** and **invoke** them by their name.
-* Looked into different examples of methods with **parameters** and how to use them in our program.
-* Learned what is **signature** and **return value** of the method as well as what is the role of the **`return`** operator.
-* Studied **good practices** for working with methods, how to name them and their parameters and how to format our code and others.
+In this chapter, we have learned base concepts about working with methods:
+* We learned that **the goal** of a method is to **split** programs with many rows of code into smaller and shorter parts.
+* We got acquainted with the **structure** of methods and how to **declare** and **call** them by their name.
+* We looked into different examples of methods with **parameters** and how to use them in our program.
+* We learned what the **signature** and the **return value** of the method are and what the role of the **` return`** operator is in the methods.
+* We learned about **good practices** for working with methods, how to name them and their parameters, how to format our code, and others.
 
 
 ## Exercises
