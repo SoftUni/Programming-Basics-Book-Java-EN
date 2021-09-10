@@ -110,7 +110,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#0
 
 Our task is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to the given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
 
-### Input Data
+### Input data
 
 Input data should be read from the console. It consists of 3 lines:
 
@@ -118,11 +118,12 @@ Input data should be read from the console. It consists of 3 lines:
    * The second line contains an integer: **end year**.
    * The third line contains an integer: **the search weight** for the dates.
 
-Input data will always be valid and will always be in the format described. No need to check.
+Input data will always be valid and will always be in the format described. There is no need to check.
 
-### Output Data
+### Output data
 
 The result should be printed on the console as consecutive dates in **"dd-mm-yyyy" format**, sorted by date in ascending order. Each string must be in a separate line. If there are no existing magic dates, print "**No**".
+
 ### Constraints
 
    * The start and final years are integer numbers in the range [**1900-2100**].
@@ -130,7 +131,7 @@ The result should be printed on the console as consecutive dates in **"dd-mm-yyy
    * Allowed program time: 0.25 seconds.
    * Allowed memory: 16 MB.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output      | Input | Output  |
 |------|------------|------|------------|
@@ -140,62 +141,62 @@ The result should be printed on the console as consecutive dates in **"dd-mm-yyy
 |------|------------|------|------------|
 |2012<br>2014<br>80|09-01-2013<br>17-01-2013<br>23-03-2013<br>11-07-2013<br>01-09-2013<br>10-09-2013<br>09-10-2013<br>17-10-2013<br>07-11-2013<br>24-11-2013<br>14-12-2013<br>23-11-2014<br>13-12-2014<br>31-12-2014|2011<br>2012<br>14<br>|01-01-2011<br>10-01-2011<br>01-10-2011<br>10-10-2011|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the problem.
+We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the task.
 
-Having the start and the end year, it is nice to know how we will go through every date, not to worry about how many days there are in the month and whether it is a leap year, and so on.
+Having the start and end year, it is good to understand how we will go through each date, without being confused by how many days there are in the month and whether it is a leap year, and so on.
 
-#### Loop through Dates
+#### Loop through dates
 
-For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as the first argument the year, as second argument the month, and as the third argument the day of the month:
+For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class, in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console, and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as the first argument the year, as second argument the month, and as the third argument the day of the month:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-01.png)
 
-Once we have the start date, we want to create a **loop that runs until we exceed the final year** (or until we pass December 31 in the final year if we compare the full dates), increasing each day by 1 day.
+Once we have the start date, we want to create a **loop that runs until we exceed the final year** (or until we pass December 31 in the final year if we compare the full dates), increasing each day by one day.
 
-To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us, to decide where to skip the next month, how many days there is a month, and everything around the leap years.
+To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us whether to skip the next month, how many days there is a month, and everything around the leap years.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-02.png)
 
 **Caution**: since the **`LocalDate.plusDays(…)`** method returns the "new" date, it is important to assign the result, not just to call the method!
 
-In the end, our loop may look like this:
+Finally, our loop may look like this:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-03.png)
 
 **Note**: we can achieve the same result with a **`for` loop**: the **initialization** of the date goes to the first part of **`for`**, the condition is preserved and the** step** is the increase by 1 day.
 
-#### Calculating Date Weight
+#### Calculating date weight
 
-Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**), and **4 for the year** (**`d5`** to **`d8`**). This means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e. not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. By using the division and partition operations on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`**, and **`getYear()`** properties, we can retrieve each digit.
+Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**), and **4 for the year** (**`d5`** to **`d8`**). It means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e., not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. Using the operations of division and remainder on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`**, and **`getYear()`** properties, we can retrieve each digit.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-04.png)
 
-Let's also explain one of the more interesting lines here. Let's take the second digit of the year for example (**`d6`**). We divide the year by 100, and we take a remainder of 10. What do we do? First, we eliminate the last 2 digits of the year by dividing by 100 (Example: **`2018/100 = 20`**). With the remainder of 10, we take the last digit of the resulting number (**`20 % 10 = 0`**) and so we get 0, which is the second digit of 2018.
+Let us also explain one of the more interesting lines here. Take, for example, the second digit of the year (**`d6`**). We divide the year by 100, and we take a remainder of 10. What do we do? First, we eliminate the last 2 digits of the year by dividing by 100 (Example: **`2018/100 = 20`**). With the remainder of 10, we take the last digit of the resulting number (**`20 % 10 = 0`**) and so we get 0, which is the second digit of 2018.
 
-What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications** as shown in the example, we will simply apply a grouping. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**, we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`** for grouping when we have multiplication and summing up. Applying the same simplification for the other multiplications, we get the following formula:
+What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications** as shown in the example, we will apply a grouping. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**, we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`** for grouping when we have multiplication and addition. Applying the same simplification for the other multiplications, we get the following formula:
 
 ![](assets/chapter-9-1-images/02.Magic-dates-05.png)
 
-#### Printing the Output
+#### Printing the output
 
-Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight we want**, to know if it should be printed or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data in our required format, we will use **`DateTimeFormatter`** class.
+Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight**, to know if it should be printed, or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data as required in the task, we will use **`DateTimeFormatter`** class.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-06.png)
 
 ***Caution***: Since we iterate over the dates from initial to final, they will always be ordered in ascending order as it is in the requirements.
 
-Finally, if we have not found an eligible date, we will have a **`false`** value in the **`found`** variable and we will be able to print **`No`**.
+Finally, if we have not found an eligible date, we will have a **`false`** value in the **`found`** variable, and we will be able to print **`No`**.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-07.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#1](https://judge.softuni.bg/Contests/Practice/Index/663#1).
 
 
-## Problem: Five Special Letters
+## Task: Five special letters
 
 Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`** so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
