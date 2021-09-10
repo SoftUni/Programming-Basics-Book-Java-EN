@@ -298,34 +298,34 @@ Then we will do the same with the other 4, checking each time with the following
 
 The **`.indexOf(…)`** method returns **the index of the particular element if it is found, or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter, and we'll not add it.
 
-#### Calculating Weight
+#### Calculating weight
  
-Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter, we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example by using a **`switch`** construction.
+Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter, we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example, by using a **`switch`** construction.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-07.png)
 
-Once we have the value of that letter, we should **multiply it by its position**. Because the indexes in the string differ by 1 from the actual positions, i.e. index 0 is position 1, index 1 is position 2, etc., we will add 1 to the indexes.
+Once we have the value of that letter, we should **multiply it by its position**. Because the indexes in the string differ by 1 from the actual positions, i.e., index 0 is position 1, index 1 is position 2, etc., we will add 1 to the indexes.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-08.png)
 
 All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
-#### Preparing the Output
+#### Preparing the output
 
 Whether a word needs to be printed is determined by its weight. We need a condition to determine if **the current weight is in the range** [**start … end**] passed to the input at the start of the program. If this is the case, we print the **full** word (**`fullWord`**).
 
 **Be careful** not to print the word with unique letters. It was only needed to calculate the weight!
 
-The words are **separated with a space** and we'll accumulate them in an intermediate variable **`result`**, which is defined as an empty string at the beginning.
+The words are **separated with a space**, and we will accumulate them in an intermediate variable **`result`**, which is defined as an empty string at the beginning.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-09.png)
 
-#### Final Touches
+#### Final touches
 
-The condition is met **unless we do not have a single word in the entered range**. To find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string) if it does, we print **`No`**, otherwise we print the whole string without the last space (using the **`.trim ()`**) method.
+The condition is met **unless we do not have a single word in the entered range**. To find out, if we have found a word, we can check whether the string **`result`** has its initial value (i.e., an empty string). If it does, we print **`No`** else print the whole string without the last space (using the **`.trim ()`**) method.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-10.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#2](https://judge.softuni.bg/Contests/Practice/Index/663#2).
