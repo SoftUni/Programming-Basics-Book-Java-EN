@@ -222,18 +222,17 @@ First, **we remove the repeating letters** and get **`bcd`**. Then we apply the 
 
 **Another example**: `weight("cadae") = weight("cade") = 1 * 47 + 2 * 5 + 3 * 7 + 4 * (-32) = -50`.
 
-### Input Data
-
+### Input data
 
 The input data is read from the console. It consists of two numbers:
 * The number for our **start**.
 * The number for our **end**.
 
-Input data will always be valid and will always be in the format described. No need to check.
+Input data will always be valid and will always be in the format described. There is no need to check.
 
-### Output Data
+### Output data
 
-The result should be printed on the console as a sequence of strings, **arranged in alphabetical order**. Each string must be separated from the next one by a single space. If the weight of any of the 5 letter strings does not exist within the specified range, print "**No**".
+The result should be printed on the console as a sequence of strings, **sorted in alphabetical order**. Each string must be separated from the next one by a single space. If the weight of any of the 5 letter strings does not exist within the specified range, print "**No**".
 
 ### Constraints
 
@@ -241,7 +240,7 @@ The result should be printed on the console as a sequence of strings, **arranged
 * Allowed program time: 0.25 seconds.
 * Allowed memory: 16 MB.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input  | Output     | Comment                                    |
 | ------ | -----------| -------------------------------------------|
@@ -259,7 +258,7 @@ The result should be printed on the console as a sequence of strings, **arranged
 | ------| -------|
 |300<br>400| No|
 
-### Hints and Guidelines
+### Hints and guidelines
 
 Like every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
 
@@ -267,9 +266,9 @@ Like every problem, we start the solution by **reading and processing the input 
 
 We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters**, and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
 
-#### Generating All Combinations
+#### Generating all combinations
 
-To generate **all combinations with a length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. To generate **any combinations of length 2** using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`**, and **`i5`**.
+To generate **all combinations with a length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. To generate **any combinations of length 2**, using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, and we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`**, and **`i5`**.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-02.png)
 
@@ -287,17 +286,17 @@ This way we already have generated all 5-letter combinations and can proceed wit
 
 **Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 
-#### Removing Repetitive Letters
+#### Removing repetitive letters
 
-Once we have the finished string, we have to remove all the repeating symbols. We will do this by adding **the letters from left to right in a new string and each time before adding a letter, we will check if it already exists** – if it does, we will skip it and if it doesn't, we will add it. To begin with, we will add the first letter to the starting string.
+Once we have the finished string, we have to remove all the repeating symbols. We will do this by adding **the letters from left to right in a new string, and each time before adding a letter, we will check if it already exists** – if it does, we will skip it, and if it doesn't, we will add it. To begin with, we will add the first letter to the starting string.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-05.png)
 
-Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. This can be done with a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done lazily by copy-paste.
+Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. We can use a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done lazily by copy-paste.
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-06.png)
 
-The **`.indexOf(…)`** method returns **the index of the particular element if it is found or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter and we'll not add it.
+The **`.indexOf(…)`** method returns **the index of the particular element if it is found, or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter, and we'll not add it.
 
 #### Calculating Weight
  
