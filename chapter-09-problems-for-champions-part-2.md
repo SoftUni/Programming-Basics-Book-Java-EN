@@ -135,11 +135,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#0
 
 ## Task: Numerical expression
 
-Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
+Bonny is an extremely powerful witch. Because her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
-To use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying**, and/or **division**.
+To use an "Expression spell" the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **addition**, **subtraction**, **multiplication**, and/or **division**.
 
-The expression is solved without considering the mathematical rules for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets, but no nested brackets:
+The expression is solved without considering the mathematical rules for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets but no nested brackets:
 - An expression containing **(…(…)…) is an invalid one**.
 - An expression containing **(…)…(…) is a valid one**.
 
@@ -153,15 +153,15 @@ is solved in the following way:
 
 ![](assets/chapter-9-2-images/02.X-expression-02.png)
 
-Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
+Bonny is pretty but not as wise, so she will need our help to master the power of Expressions.
 
-### Input Data
+### Input data
 
-The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means the **end of the mathematical expression**.
+The input data consists of a single text line passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means the **end of the mathematical expression**.
 
-The input data is always valid and always in the described format. No need to validate it.
+The input data is always valid and always in the described format. There is no need to validate it.
 
-### Output Data
+### Output data
 
 The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression rounded up to the **second digit after the decimal point**.
 
@@ -169,71 +169,71 @@ The output data must be printed on the console. The output consists of one line:
 
 - The expressions will consist of a maximum of **2500 symbols**.
 - The numbers of each mathematical expression will be within the range [**1 … 9**].
-- The operators in the mathematical expressions will always be among **`+`** (summing up), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplying).
+- The operators in the mathematical expressions will always be among **`+`** (addition), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplication).
 - The result of the mathematical expression will be within the range [**-100000.00 … 100000.00**].
 - Allowed execution time: **0.1 seconds**.
 - Allowed memory: **16 MB**.
 
-### Sample Input and Output
+### Sample input and output
 
 |Input|Output|Input|Output|
 |---------------------|----|-----------------------------------|--------|
 | 4+6/5+(4\*9–8)/7\*2=|8.57|3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)= | 110.63|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required.
+As usual, we will first read and process the input, then we will solve the task, and finally, we will print the result, formatted as required.
 
-#### Reading the Input Data
+#### Reading the input data
 
-The input data will consist of exactly one text line read from the console. Here we have **two ways** to process the input. The first way is by **reading the entire line using the `bufferReader.readLine()`** ( where **`bufferReader`** is a variable from type **`BufferedReader`**) and accessing each symbol (**`char`**) of the line via a **`foreach` loop**. The second one is by **reading the input symbol by symbol using the `bufferReader.read()` command** and processing each symbol.
+The input data will consist of only one text line read from the console. Here we have **two ways** to process the input. The first way is by **reading the entire line using the `bufferReader.readLine()`** ( where **`bufferReader`** is a variable from type **`BufferedReader`**) and accessing each symbol (**`char`**) of the line via a **`foreach` loop**. The second one is by **reading the input symbol by symbol using the `bufferReader.read()` command** and processing each symbol.
 
 We will use the second option to solve the problem.
 
 ![](assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Algorithm for Solving the Problem
+#### Algorithm for solving the task
 
-For the tasks of our problem we will need two variables:
-* One variable, that will hold the **current result**.
+For the tasks of our problem, we will need two variables:
+* One variable that will hold the **current result**.
 * Another variable to hold our **current operator**. 
 
 ![](assets/chapter-9-2-images/02.X-expression-04.png)
 
-About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number can be summed to our result.
+About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number is added to our result.
 
-After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task, we know that **every expression is ending with `=`**. This means that we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
+After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task, we know that **every expression is ending with `=`**. It means we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
 
 ![](assets/chapter-9-2-images/02.X-expression-05.png)
 
 The next step is the processing of our **`symbol`** variable. We have 3 possible cases for it:
-* If the symbol is a **start of a sub-expression placed in brackets** i.e. the found symbol is a **`(`**.
+* If the symbol is a **start of a sub-expression placed in brackets**, i.e., the found symbol is a **`(`**.
 * If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is a **number**. (* We can also use directly `'0'` and `'9'` symbols or their **ASCII codes***.)
-* If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
+* If the symbol is an **operator**, i.e., it is **`+`**, **`-`**, **`*`** or **`/`**.
 
 ![](assets/chapter-9-2-images/02.X-expression-06.png)
 
 Let's examine the actions that we need to undertake in the relevant cases that we defined:
 * If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expressionOperator` variable**.
-* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
+* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e., if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
 
 ![](assets/chapter-9-2-images/02.X-expression-07.png)
 
-* If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
+* If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). It means that we will have a local result for the sub-expression and a local operator.
 
 ![](assets/chapter-9-2-images/02.X-expression-08.png)
 
-After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
+After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described logic for calculating expressions. It is why we believe the reader should not have a problem with it.
 
-After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expressionOperator`**.
+After completing the calculation of the result of our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expressionOperator`**.
 
 ![](assets/chapter-9-2-images/02.X-expression-09.png)
 
-#### Formatting the Output
+#### Formatting the output
 
-The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
+The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two digits after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#1](https://judge.softuni.bg/Contests/Practice/Index/664#1).
 
