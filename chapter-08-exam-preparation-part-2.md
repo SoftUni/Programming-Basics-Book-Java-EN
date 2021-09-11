@@ -1,7 +1,6 @@
-# Chapter 8.2. Preparation for practical exam – part II
+# Chapter 8.2. Preparation for a practical exam – part II
 
-In this chapter we will look at a **practical exam on basics of programming**, held at SoftUni on December 18, 2016. The exam covers the learning material studied from this book and from the "Programming Basics" course at SoftUni.
-
+In this chapter, we will look at a **practical exam on basics of programming** held at SoftUni on December 18, 2016. The tasks give a good idea of what we can expect at the entrance exam in programming at SoftUni. The exam covers the learning material studied from this book and the "Programming Basics" course at SoftUni.
 
 ## Video
 
@@ -10,29 +9,26 @@ In this chapter we will look at a **practical exam on basics of programming**, h
   href="https://www.youtube.com/watch?v=m9OscwPmZQE">
   https://www.youtube.com/watch?v=m9OscwPmZQE</a>.
 </div>
-<script src="/assets/js/video.js"></script>
 
+## Exam tasks
 
-## The Exam Problems
+Traditionally, the entrance exam in SoftUni consists of **6 practical programming tasks**:
+ - Simple task (without checks).
+ - A task with a single condition.
+ - A task with more complex conditions.
+ - A task with a single loop.
+ - A task with nested loops (drawing a figure on the console).
+ - A task with nested loops and more complex logic.
 
-Traditionally, the entrance exam in SoftUni consists of **6 practical problems of programming**:
- - Simple problems (no conditions).
- - A problem with a single condition.
- - A problem with more complex conditions.
- - A problem with a single loop.
- - A problem with nested loops (drawing a figure on the console).
- - A problem with nested loops and more complex logic.
+Let's look at a **real exam topic**, the tasks it contains, and their solutions.
 
-Let's look at a **real exam topic**, the problems it contains and their solutions.
+## Task: Distance
 
-
-## Problem: Distance
-
-Write a program that calculates **what is the distance passed by a car (in kilometers)**, for whick we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. In order to calculate the distance, you need to **convert the minutes into hours** \(e.g. 70 minutes = 1.1666 hours\).
+Write a program that calculates **what is the distance passed by a car (in kilometers)**, for whick we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(e.g., 70 minutes = 1.1666 hours\).
 
 ### Input data
 
-The input comes from the console and consists of **4 lines**:
+The input is read from the console and consists of **4 lines**:
 * The **initial speed** in km/h – an integer within the range [**1 … 300**].
 * The **first time** in minutes – an integer within the range [**1 … 1000**].
 * The **second time** in minutes – an integer within the range [**1 … 1000**].
@@ -51,70 +47,71 @@ Print a number on the console: **kilometers passed**, formatted up to the **seco
 | Input | Output | Comments |
 |-----|-----|-----|
 |140<br>112<br>75<br>190|917.12|**Distance with initial speed**: 140 km/h \* 1.86 hours (112 min) = **261.33 km**<br>**After speed increase**: 140 + 10% = 154.00 km/h \* 1.25 hours (75 min) = **192.5 km**<br>**After speed decrease**: 154.00 - 5% = 146.29 km/h \* 3.16 hours (190 min) = **463.28 km**<br>**Total number of km passed**: **917.1166 km**|
+
 ## Hints and Guidelines
 
-It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy task. Let's **separate** the problem into a few **sub-problems** and try to **solve** each of them one by one, which will lead us to the final result:
+It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy task. Let's **separate** the task into a few **sub-tasks** and try to **solve** each task one by one, which will lead us to the final result:
 
-* Our **initial** sub-problem will be to **read the input data** entered by the user, and **store them in appropriate variables**.
-* **Execution** of the main programming **logic**, which in our case is a batch of simple calculations of the properties that we already have.
-* **Calculation** and shaping up the end **result**.
+* Our **initial** sub-task will be to **read the input data** entered by the user, and **store them in appropriate variables**.
+* **Execution** of the main programming **logic**, which in our case is a batch of simple calculations of the data that we already have.
+* **Calculation** and format the **result**.
 
 **The main** part of the programming logic **is** to **calculate** what will be the **distance passed after all changes** in speed. As during **execution** of the program, part of the **data** that we have **is modified**, we could **separate** the program **code** into a few **logically** separated **parts**:
 
 * **Calculation** of the **distance** passed with initial speed.
 * Change of **speed** and calculation of the **distance** passed.
 * Last change of **speed** and **calculation**.
-* **Summing up**.
+* **Addition of the above**.
 
-For **reading** data from the **console** we use **`Scanner`**:
+For **reading** data from the **console**, we use **`Scanner`**:
 
 ![](assets/chapter-8-2-images/01.Distance-01.png)
 
-By the task condition **input data** are being entered on **four** separate rows, therefore, we should execute the previous code a total of four times. 
+By the task condition **input data** is being entered on **four** separate rows, therefore, we should execute the previous code a total of four times. 
 
 ![](assets/chapter-8-2-images/01.Distance-02.png)
 
-To perform **calculations** we choose to use a type **`double`**.
+To perform **calculations**, we choose to use a type **`double`**.
 
-You can read more about the different **data typesи**in Java programming language here: [http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
+You can read more about the different **data types**in Java programming language here: [http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
 
-This way we solved successfully the first sub-problem. The next step is to **convert the input data** into appropriate **types**, зin order to be able to perform the needed calculations. We choose to use the type **`Integer`** or **`int`**, as an appropriate type, because the condition of the problem says that the input data must be within a particular range, for which this data type is completely sufficient. We will do the **conversion** in the following way:
+This way, we successfully solved the first sub-task. The next step is to **convert the input data** into appropriate **types** to perform the needed calculations. We choose to use **`Integer`** or **`int`** type because the condition of the task says that the input data must be within a particular range, for which this data type is sufficient. We will do the **conversion** in the following way:
 
 ![](assets/chapter-8-2-images/01.Distance-03.png)
 
-We initially **store** one variable that will be used multiple times. This centralization approach gives us **flexibility** and possibility to modify the end result of the program with minimum efforts. In case we need to change the value, we must do it in **only once place in the code**, which saves us time and effort. 
+Initially, **we save** a variable that we will use multiple times. This approach of centralization gives us **flexibility** and the opportunity to change the overall result of the program with minimal effort. In case, we need to change the value, we need to do it **only in one place in the code**, which saves us time and effort.
 
 ![](assets/chapter-8-2-images/01.Distance-04.png)
 
 <table>
 <tr>
 <td width=10%><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><strong>Avoiding repetitive code</strong> (централизация на програмната логика) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large applications in a real work environment, and its exercising in an initial stage of training will help you build a quality programming style.
+<td><strong>Avoiding repetitive code</strong> (centralization of program logic) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large-scale applications in a real work environment, and practicing it in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
 </table>
 
-We calculate the **travel time** (in hours) by dividing the time by 60 (minutes in an hour). The **travel distance** is calculated by multiplying the starting speed by the time passed (in hours). After that we change the speed by increasing it by **10%**, as per the task description. ПCalculating the **percentage**, as well as the following **distances** passed, is done in the following way:
+We calculate the **travel time** (in hours) by dividing the time by 60 (minutes in an hour). The **travel distance** is calculated by multiplying the starting speed by the time passed (in hours). After that, we change the speed by increasing it by **10%**, as per the task description. Calculating the **percentage**, as well as the following **distances** passed, is done in the following way:
 
-* **The time frame** (in hours) is calculated by dividing the provided time frame in minutes by the minutes that are contained in an hour (60).
-* **The distance passed** is calculated by multiplying the time frame (in hours) by the speed that is obtained after the increase.
-* The next step is to **decrease the speed** by **5%**, as per the problem description.
-* We calculate the **remaining distance** in the manner described in the first two points.
+* **The time interval** (in hours) is calculated by dividing the provided time interval in minutes by the minutes in an hour (60).
+* **The distance passed** is calculated by multiplying the time interval (in hours) by the speed obtained after the increase.
+* The next step is to **decrease the speed** by **5%**, as per the task description.
+* We calculate the **remaining distance** as described in the first two points.
 
 ![](assets/chapter-8-2-images/01.Distance-05.png)
 
-Up until now we were able to solve two of the most important sub-problems, namely the **data input** and **their processing**. What remains is to **calculate the end result**. As by the description we are required to **format it** up to **2** symbols after the decimal point, we can do this in the following manner:
+So far, we solved two of the most important sub-tasks, namely the **data input** and **their processing**. What remains is to **calculate the result**. Since it is required to **format it** up to **2** characters after the decimal point, we can do it as follows:
 
 ![](assets/chapter-8-2-images/01.Distance-06.png)
 
-If you worked accurately and wrote the program using the input data given in the task description, you will be convinced that it works properly.
+If you have worked correctly and run the program with the input data from the task condition, you will see that it works correctly.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#0](https://judge.softuni.bg/Contests/Practice/Index/662#0).
 
 
-## Problem: Changing Tiles
+## Task: Changing tiles
 
 Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height towards it. We must **calculate how many tiles are needed,** in order to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
 
