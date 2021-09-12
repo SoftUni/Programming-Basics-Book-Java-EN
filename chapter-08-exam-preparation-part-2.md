@@ -110,7 +110,6 @@ If you have worked correctly and run the program with the input data from the ta
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#0](https://judge.softuni.bg/Contests/Practice/Index/662#0).
 
-
 ## Task: Changing tiles
 
 Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height to it. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
@@ -171,7 +170,6 @@ We can find the result by **calculating the total amount** needed to cover the e
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#1](https://judge.softuni.bg/Contests/Practice/Index/662#1).
 
-
 ## Task: Flowers shop
 
 A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
@@ -185,7 +183,7 @@ On holidays, prices of all flowers are **increased by 15%.** The following **dis
 * For purchasing 10 or more roses in winter – **10% of the price** of the whole bouquet.
 * For purchasing more than 20 flowers in total in any season – **20% of the price** of the whole bouquet.
 
-**Discounts are made in the above described order and can be combined! All discounts are valid after increasing of the price on a holiday!**
+**Discounts are made in the above-described order and can be combined! All discounts are valid after the price increase for a holiday!**
 
 The price for arranging a bouquet is always **2 lv**. Write a program that calculates the **price of a bouquet**.
 
@@ -195,14 +193,14 @@ The input is read from the **console** and contains **exactly 5 lines**:
 * The first line contains **the number of purchased chrysanthemums** – an integer within the range [**0 … 200**].
 * The second line contains **the number of purchased roses** – an integer within the range [**0 … 200**].
 * The third line contains **the number of purchased tulips** – an integer within the range [**0 … 200**].
-* The fourth line indicates **the season** – [**Spring, Summer, Autumn, Winter**].
+* The fourth line shows **the season** – [**Spring, Summer, Autumn, Winter**].
 * The fifth line specifies **if the day is a holiday** – [**Y = yes / N = no**].
 
 ### Output Data
 
-Print on the console 1 number – **the price of flowers**, formatted up to the second digit after the decimal point.
+Print on the console 1 number – **the price of flowers**, formatted up to the second character after the decimal point.
 
-#### Sample Input and Output
+#### Sample input and output
 
 |Input|Output|Comments|
 |---|---|---|
@@ -216,9 +214,9 @@ Print on the console 1 number – **the price of flowers**, formatted up to the 
 |---|---|
 |10<br>10<br>10<br>Autumn<br>N|101.20|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-After carefully reading the requirements, we understand that once again we need to do **simple calculations**, however this time we will need **additional** logical **conditions**. We need to pay more **attention** to the moment of **making changes** in the final price, in order to be able to properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. For a start, we will separate the already **defined** values in **variables**, like we did in the previous tasks:
+After carefully reading the condition, we understand that we need to do **simple calculations**, but this time we will need **additional** logical **checks**. We need to pay more **attention** to the moment of **making changes** in the final price, so that we can properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. To begin with, we will separate the already **defined** values into **variables**, as we did in the previous tasks:
 
 ![](assets/chapter-8-2-images/03.Flowers-01.png)
 
@@ -226,22 +224,22 @@ We do the same for the rest of the defined values:
 
 ![](assets/chapter-8-2-images/03.Flowers-02.png)
 
-Our next sub-task is to **read** properly **the input** data from the console.e will do that in the familiar way, but this time we will **combine two** separate functions – one for **reading** a line from the console and another one for its **conversion** into a numeric data type:
+Our next sub-task is to **read** correctly **the input** data from the console. We will do it in the familiar way, but this time we will **combine two** separate functions – one for **reading** a line from the console and another one for its **conversion** into a numeric data type:
 
 ![](assets/chapter-8-2-images/03.Flowers-03.png)
 
-Let's think of the most appropriate way to **structure** our programming logic. By the requirements it becomes clear that the path of the program is divided mainly into two parts: **spring / summer** and **autumn / winter**. We can do the separation by conditional statement, by storing variables in advance for the **prices** of the individual flowers, as well as for the **end result**.
+Let's think of the most appropriate way to **structure** our programming logic. It is clear from the condition that the path of the program is divided mainly into two parts: **spring / summer** and **autumn / winter**. We can do the separation by conditional construction, by storing variables in advance for the **prices** of the individual flowers and the **final result**.
 
 ![](assets/chapter-8-2-images/03.Flowers-04.png)
 
-What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the end result. 
+What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the final result. 
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#2](https://judge.softuni.bg/Contests/Practice/Index/662#2).
 
 
-# Problem: Grades
+# Task: Grades
 
 Write a program that **calculates statistics for grades** in an exam. At the beginning, the program reads the **number of students** who attended the exam and for **each student – their grade**. At the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, as well as the **average grade** of the exam.
 
