@@ -48,7 +48,7 @@ Print a number on the console: **kilometers passed**, formatted up to the **seco
 |-----|-----|-----|
 |140<br>112<br>75<br>190|917.12|**Distance with initial speed**: 140 km/h \* 1.86 hours (112 min) = **261.33 km**<br>**After speed increase**: 140 + 10% = 154.00 km/h \* 1.25 hours (75 min) = **192.5 km**<br>**After speed decrease**: 154.00 - 5% = 146.29 km/h \* 3.16 hours (190 min) = **463.28 km**<br>**Total number of km passed**: **917.1166 km**|
 
-## Hints and Guidelines
+## Hints and guidelines
 
 It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy task. Let's **separate** the task into a few **sub-tasks** and try to **solve** each task one by one, which will lead us to the final result:
 
@@ -113,33 +113,33 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#0
 
 ## Task: Changing tiles
 
-Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height towards it. We must **calculate how many tiles are needed,** in order to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
+Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height to it. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
 
-### Input Data
+### Input data
 
-The following 7 lines must be read from the console:
-* **Savings**
-* **Floor width**
-* **Floor length**
-* **Side of the triangle*
-* **Height of the triangle**
-* **Price of a tile**
-* **Workman fee**
+The following 7 lines are read from the console:
+* **The savings**
+* **The width of the floor**
+* **The length of the floor**
+* **The side of the triangle*
+* **The height of the triangle**
+* **The price of a tile**
+* **The amount for the workman**
 
-**All** numbers must be real numbers within the range [**0.00 … 5000.00**].
+**All** numbers are real numbers in the range [**0.00 … 5000.00**].
 
-### Output Data
+### Output data
 
 The following must be printed on the console as a **single line**:
 
 * If the money **is sufficient**:
-   * “{Remaining funds} lv left.”
+   * “{The remaining money} lv left.”
 * If the money **IS NOT sufficient**:
-   * “You'll need {Insufficient funds} lv more.”
+   * “You'll need {Needed money} lv more.”
 
-The result must be **formatted up to the second symbol** after the decimal point.
+The result must be **formatted up to the second character** after the decimal point.
 
-### Sample Input and Output
+### Sample input and output
 
 | Input | Output | Comments |
 |-----|-----|-----|
@@ -149,30 +149,30 @@ The result must be **formatted up to the second symbol** after the decimal point
 |-----|-----|-----|
 |1000<br>5.55<br>8.95<br>0.90<br>0.85<br>13.99<br>321|You'll need 1209.65 lv more.|**Floor area** &rarr; 5.55 \* 8.95 = **49.67249**<br>**Tile area** &rarr; 0.9 \* 0.85 / 2 = **0.3825**<br>**Needed tiles** &rarr; 49.67249 / 0.3825 = 129.86… = **130 + 5 spare tiles** = **135**<br>**Total amount** &rarr; 135 \* 13.99 + 321 (workman) = **2209.65**<br>**2209.65 > 1000** &rarr; **1209.65 lv are insufficient**|
 
-## Hints and Guidelines
+## Hints and guidelines
 
-The following task requires our problem to accept more input data and to perform a larger number of calculations, despite the fact that the solution is **identical**.Accepting the input data is done in the **familiar way**. Note that the **Input** part of the condition states that all input data must be in **real numbers**, and for that reason we would use **`decimal`** type.
+The task requires our program to accept more input data and perform more calculations, even though that the solution is **identical**. Reading the input data is done in the **familiar way**. Note that the **Input** part of the condition states that all input data are **real numbers**, and for that reason we would use the **`decimal`** type.
 
-Now that we already have everything for executing the programming logic, we can move to the next part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The requirement is that tiles have **triangular** shape, which can cause confusion, but practically, the task needs just **basic calculations**. БWe can calculate the **common part of the floor** by the formula for finding rectangle area, as well as the **area of a single tile** using the relevant formula for triangle area.
+Now that we already have everything to execute the programming logic, we can move to the next part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The condition is that tiles have **triangular** shape, which can confuse, but practically, the task needs just **basic calculations**. We can calculate the **common part of the floor** by the formula for finding rectangle area, and the **area of a single tile** using the relevant formula for triangle area.
 
-In order to calculate the **number of tiles** that are needed, **we divide the floor area by the area of a single tile** (we should not forget to add the 5 additional tiles, that were mentioned in the requirements).
+To calculate the **number of tiles** that are needed, **we divide the floor area by the area of a single tile** (we should not forget to add the 5 additional tiles, that were mentioned in the condition).
 
 <table>
 <tr>
 <td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Pay attention that the requirements state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>Math.ceil(…)</strong></code>.
+<td>Pay attention that the condition state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>Math.ceil(…)</strong></code>.
 </td>
 </tr>
 </table>
 
-We can find the end result by **calculating the total amount** that is needed to cover the entire floor, by **summing up the tile price and the price that will be paid to the workman**, that we have from the input data. We can figure out that **the total costs** for tiles can be calculated by **multiplying the number of tiles by the price per tile**. We fill find out whether the amount that we have will be sufficient by comparing the savings (based on the input data) and the total costs.
+We can find the result by **calculating the total amount** needed to cover the entire floor, by **adding the tile price with the price for the workman**, which we have from the input data. We can guess that **the total costs** for tiles can be calculated by **multiplying the number of tiles by the price per tile**. Whether the amount that we have will be sufficient, we understand by comparing the savings (from the input data) and the total costs.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#1](https://judge.softuni.bg/Contests/Practice/Index/662#1).
 
 
-## Problem: Flowers Shop
+## Task: Flowers shop
 
 A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
 
