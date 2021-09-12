@@ -238,7 +238,7 @@ What remains is to perform **a few checks** regarding **the discounts** of the d
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#2](https://judge.softuni.bg/Contests/Practice/Index/662#2).
 
-# Task: Grades
+## Task: Grades
 
 Write a program that **calculates statistics for grades** in an exam. At the beginning, the program reads the **number of students** who attended the exam and for **each student – their grade**. At the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, and the **average grade** of the exam.
 
@@ -299,20 +299,19 @@ The **final result** is formed in the well know fashion – **up to the second c
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#3](https://judge.softuni.bg/Contests/Practice/Index/662#3).
 
-
 ## Task: Christmas hat
 
 Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with width of **4 \* `n` + 1 columns** and height of **2 \* `n` + 5 rows**, as in the examples below.
 
-### Input Data
+### Input data
 
 The input is read from the console – an **integer `n`** within the range [**3 … 100**].
 
-### Output Data
+### Output data
 
 Print on the console a **Christmas hat**, exactly like in the examples.
 
-### Sample Input and Output
+### Sample input and output
 
 |Input|Output|
 |:-----:|:-----:|
@@ -322,7 +321,7 @@ Print on the console a **Christmas hat**, exactly like in the examples.
 |:-----:|:-----:|
 |7|<code>............./&#124;\\.............</code><br><code>.............\\&#124;/.............</code><br><code>.............\*\*\*.............</code><br><code>............\*-\*-\*............</code><br><code>...........\*--\*--\*...........</code><br><code>..........\*---\*---\*..........</code><br><code>.........\*----\*----\*.........</code><br><code>........\*-----\*-----\*........</code><br><code>.......\*------\*------\*.......</code><br><code>......\*-------\*-------\*......</code><br><code>.....\*--------\*--------\*.....</code><br><code>....\*---------\*---------\*....</code><br><code>...\*----------\*----------\*...</code><br><code>..\*-----------\*-----------\*..</code><br><code>.\*------------\*------------\*.</code><br><code>\*-------------\*-------------\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-### Hints and Guidelines
+### Hints and guidelines
 
 In tasks requiring **drawing** on the console, most often the user inputs **an integer** that is related to the **total size of the figure** that we need to draw. As the task requirements mention how the total length and width of the figure are calculated, we can use them as **starting points**. In the examples it is clear that regardless of the input data, we always have **first two rows** that are almost identical.
 
@@ -351,7 +350,7 @@ The sequence of drawing in the body of the loop is the following:
 
 In case we have worked correctly, we will obtain figures identical to those in the examples.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#4](https://judge.softuni.bg/Contests/Practice/Index/662#4).
 
