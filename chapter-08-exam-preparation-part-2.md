@@ -355,9 +355,9 @@ In case we have worked correctly, we will obtain figures identical to those in t
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#4](https://judge.softuni.bg/Contests/Practice/Index/662#4).
 
 
-## Problem: Letters Combination
+## Task: Letters combination
 
-Write a program that prints on the console **all combinations of 3 letters** within a specified range, by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
+Write a program that prints on the console **all combinations of 3 letters** within a specified range by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
 
 ### Input data
 
@@ -370,7 +370,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 Print on a single line **all combinations**, corresponding to the requirements, followed by **their number**, separated by a space.
 
-### Sample Input and Output
+### Sample input and output
 
 |Input|Output|Comments|
 |---|---|---|
@@ -384,26 +384,26 @@ Print on a single line **all combinations**, corresponding to the requirements, 
 |---|---|
 |a<br>c<br>z|aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc 27|
 
-### Hints and Guidelines
+### Hints and guidelines
 
-By requirements, we have input data on **3 lines**, each of which is represented by one character of the **ASCII table** ([http://www.asciitable.com](http://www.asciitable.com)). We could use an already **defined function** in Java, to read only one symbol from the console and save it in a variable with type **`char`**: 
+According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([http://www.asciitable.com](http://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
 
 ![](assets/chapter-8-2-images/06.Letters-01.png)
 
-Let's think of how we can achieve the **end result**. n case the task requirement is to print all characters, from the starting to the end one (by skipping a particular letter), what should we do? 
+Let's think of how we can achieve the **final result**. The task condition is to print all characters from the starting to the end (by skipping a particular letter), what should we do? 
 
-The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. One of the advantages of Java, is that we have the opportunity to use a different data type for a loop variable:
+The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. One of the advantages of Java is that we have the opportunity to use a different data type for a loop variable:
 
 ![](assets/chapter-8-2-images/06.Letters-02.png)
 
-The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the end result of our task? We must find a **way** to print **3 characters**, as required, instead of **1**. Running such a program very much looks like a slot machine. We often win in slots, if we arrange a few identical characters on a row. et's say that the machine has space for three characters. When we **stop** on a particular **character** on the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a slot machine works.
+The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the end result of our task? We must find a **way** to print **3 characters**, as required, instead of **1**. The execution of the program is very similar to a gaming machine. We usually win there if we manage to arrange several identical symbols. Let's say that the machine has space for three characters. When we **stop** on a particular **character** on the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a gaming machine works.
 
-We use a **loop** that runs through **all characters** from the starting to the end letter included. On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e. does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way we have three nested loops, as we will print the characters in the body of the **latter**.
+We use a **loop** that runs through **all characters** from the starting to the end letter, included. On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e., does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way, we have three nested loops, as we will print the characters in the body of the **latter**.
 
 ![](assets/chapter-8-2-images/06.Letters-03.png)
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space.
 
-### Testing in the Judge System
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#5](https://judge.softuni.bg/Contests/Practice/Index/662#5).
