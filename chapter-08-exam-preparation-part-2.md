@@ -120,7 +120,7 @@ The following 7 lines are read from the console:
 * **The savings**
 * **The width of the floor**
 * **The length of the floor**
-* **The side of the triangle*
+* **The side of the triangle**
 * **The height of the triangle**
 * **The price of a tile**
 * **The amount for the workman**
