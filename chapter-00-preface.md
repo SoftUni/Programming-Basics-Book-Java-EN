@@ -38,13 +38,13 @@ If you prefer a different language, select it from the list above.
 
 ## Programming is learned by a lot of writing, not reading!
 
-If someone thinks they will read a book and learn to program without writing code and solving problems, this is definitely a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of problems, seriously and persistently for years.
+If someone thinks it will read a book and learn to program without writing code and solving problems, this is a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of tasks, seriously and persistently for years.
 
-You need **to solve a lot of problems**, to make mistakes, to fix, to search for solutions and information from the Internet, to try, to experiment, to find better solutions, to get used to the code, syntax, the programming language, the development environment, to search for errors and debugging the broken code, the algorithmic thinking, breaking the problems into smaller parts, gaining experience and raising your skills every day, because when you learn to write code, this is only the **first step to the profession of the "software engineer"**. You have a lot to learn, really!
+You need to: **solve a lot of tasks**, to make mistakes, to fix, to search for solutions and information from the Internet, to try, to experiment, to find better solutions, to get used to the code, syntax, the programming language, the development environment, to search for errors and debugging the broken code, the algorithmic thinking, breaking the tasks into smaller parts, gaining experience and raising your skills every day, because when you learn to write code, this is only the **first step to the profession of the "software engineer"**. You have a lot to learn!
 
-We advise the reader, as a minimum, **to try out all the examples from the book**, to play with them, to change them and test them. Even more important than the examples are **the exercises** because they develop the programmer's practical skills. This book provides nearly **150 practical coding exercises**, so it is a good foundation for developing coding and algorithmic thinking skills.
+We advise the reader, as a minimum, **to try out all the examples from the book**, to play with them, to change them, and test them. Even more important than the examples are **the exercises** because they develop the programmer's practical skills. This book provides nearly **150 practical coding exercises**, so it is a good foundation for developing coding and algorithmic thinking skills.
 
-**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni we purposefully **focus on practice** and problem solving, and in most courses code writing occupies over 70% of the entire course.
+**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the tasks is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
 
 </tr></table>
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -53,40 +53,41 @@ We advise the reader, as a minimum, **to try out all the examples from the book*
 
 ## About Software University (SoftUni)
 
-[The Software University (SoftUni)](https://softuni.org) is **the largest training center for software engineers in the South-Eastern Europe**. Tens of thousands of students pass through the university every year. SoftUni was founded in 2014, as a continuation of the hard work of [**Dr. Svetlin Nakov**](https://nakov.com) in training **skillful software engineering professionals** by a practical, contemporary and high-quality education, that combines fundamental knowledge with modern software technologies and a lot of practice.
+[The Software University (SoftUni)](https://softuni.org) is **the largest training center for software engineers in South-Eastern Europe**. Tens of thousands of students pass through the university every year. SoftUni was founded in 2014 as a continuation of the hard work of [**Dr. Svetlin Nakov**](https://nakov.com) in training **skillful software engineering professionals** by a practical, contemporary and high-quality education that combines fundamental knowledge with modern software technologies and a lot of practice.
 
-### SoftUni: High-Quality Practical Tech Education
+### SoftUni: High-quality practical tech education
 
-The Software University provides **quality education**, **profession**, **job** and **diploma** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful and strong **connection between education and industry** by collaboration with hundreds of software companies, provides job and internship of its students, creates quality professionals for the software industry and directly responds to the needs of employers via the training process.
-### Free Programming Courses at SoftUni
+The Software University provides **quality education**, **profession**, **job** and **diploma** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful and strong **connection between education and industry** by collaborating with hundreds of software companies, provides job and internships of its students, creates quality professionals for the software industry, and directly responds to the needs of employers via the training process.
 
-SoftUni organizes **free programming courses for beginners**: online and physically in few locations. The purpose is to give a chance to **everyone who is interested** in programming and technologies to **try programming** and check if they are interested and if they would get seriously involved in software development. You can sign up for the free course in **programming basics** using the SoftUni application page: [https://softuni.org](https://softuni.org).
+### Free programming courses at SoftUni
 
-The free programming basics courses at SoftUni have the purpose to introduce you to **basic programming constructions** in the software development world, that you can use in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops**, defining and calling **methods** and other approaches for building programming logic. The trainings are **highly practically oriented** which means that **the emphasis is strongly on exercises**, and you get the opportunity to apply your knowledge during the learning process.
+SoftUni organizes **free programming courses for beginners**: online and on-site in few locations. The purpose is to give a chance to **everyone interested** in programming and technologies to **try programming**, checks if they are interested and if they would get seriously involved in software development. You can sign up for the free course in **programming basics** using the SoftUni application page: [https://softuni.org](https://softuni.org).
+
+The free programming basics courses at SoftUni aim to introduce you to **basic programming constructions** in the software development world, that you can use in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops**, defining and calling **methods** and other approaches for building programming logic. The trainings are **highly practically oriented**, which means that **the emphasis is strongly on exercises**, and you get the opportunity to apply your knowledge during the learning process.
 
 This **programming book** accompanies the free programming lessons for beginners at SoftUni and serves as an additional teaching aid to help the learning process.
 
-### The Automated Judge System
+### The automated Judge system
 
-**The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real time**: you submit the solution and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution you get all the points for this problem. For partially correct solution you get part of the points for the task. For a completely wrong solution you get 0 points.
+**The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real-time**: you submit the solution, and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution, you get all the points for this problem. For a partially correct solution, you get part of the points for the task. For a completely wrong solution, you get 0 points.
 
 This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.png)
 
-**All problems from the current book are available for testing in SoftUni judge** and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the task requirements.
+**All problems from the current book are available for testing in SoftUni judge**, and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the task requirements.
 
 Keep in mind some **specifics about SoftUni judge**:
-* For each task the **judge system keeps the best score you had**. Therefore, if you upload a solution with wrong code or lower score compared to the previous one, the system won't take away your points.
-* The output of your program is **compared** by the system to a strictly expected result. Every **unnecessary symbol, missing comma or space** may lead to 0 points on a particular test. The **output** that the judge expects is **described in the requirements of every task** and **nothing else should be added**. 
+* For each task the **judge system keeps the best score you had**. Therefore, if you upload a solution with the wrong code or a lower score compared to the previous one, the system won't take away your points.
+* The output of your program is **compared** by the system to a strictly expected result. Every **unnecessary symbol, missing comma, or space** may lead to 0 points on a particular test. The **output** that the judge expects is **described in the requirements of every task** and **nothing else should be added**. 
 
-**Example:** If the output requires to print a number (e.g. `25`), do not display any descriptive messages such as `The result is: 25`, just print as it is required, i.e. only the number.
+**Example:** If the output requires printing a number (e.g. `25`), do not display any descriptive messages such as `The result is: 25`. Print the output as it is required, i.e., only the number.
 
 The SoftUni judge system is **available any time** via its website: [https://judge.softuni.org](https://judge.softuni.org).
-* To sign in use your authentication for the SoftUni website: [https://softuni.org](https://softuni.org).
+* To sign in, use your authentication for the SoftUni website: [https://softuni.org](https://softuni.org).
 * Using the SoftUni system is **free** and it's not bound with the participation in SoftUni's courses.
 
-We are convinced that after sending a few tasks **you will like getting instant feedback** for your solutions and the Judge system will become your favorite assistant in your programming practice.
+We are convinced that after a few submitted tasks, **you will like to receive instant feedback** for your solutions, and the Judge system will become your favorite assistant in learning programming.
 
-## How to Become a Software Developer?
+## How to become a software developer?
 
 Dear readers, probably many of you have the ambition to become programmers and develop software for a living, or work in the IT area. That's why we have prepared for you a **short guide on "How to become a programmer"**, so we can help you take the first steps towards this desired profession.
 
