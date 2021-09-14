@@ -200,17 +200,17 @@ You can find all these **free teaching materials** on the SoftUni Foundation's w
 -->
 ## The story of this book
 
-The general head of the project for creating the **free programming book for beginners** with an open-source code is **[Dr. Svetlin Nakov](https://nakov.com)**. He is the main ideologist and author of the learning content of the training **course "Programming Basics" in SoftUni**, which was used as the basis of the book. 
+The main driver and project manager for the creation of this **free open-source programming book** are **[Dr. Svetlin Nakov](https://nakov.com)**. He is the main ideologist and author of the learning content of the training **course "Programming Basics" in SoftUni**, which was used as the basis of the book. 
 
-Everything started with the mass **free programming basics courses** that have been conducted in the whole country since 2014, when the SoftUni initiative was launched. At the beginning these courses had larger range and covered more theory, but in 2016 Dr. Svetlin Nakov completely revised, updated and simplified the whole method of teaching, strongly emphasizing on practice. This is how the core of the **learning content of this book was created**.
+Everything started with the mass **free programming basics courses** that have been conducted in the whole country since 2014 when the SoftUni initiative was launched. In the beginning, these courses had a larger range and covered more theory. In 2016 Dr. Svetlin Nakov completely reworked, updated, and simplified the whole method of teaching, strongly emphasizing practice. This is how the core of the **learning content of this book was created**.
 
-The free courses at SoftUni for introduction to programming, are probably the most massive trainings ever conducted in South-Eastern Europe. Until 2017 the course in programming basics **was held over 150 times, in around 40 Bulgarian towns and cities** in person and multiple times online with over 50 000 participants. It was completely natural to write a **book** for the tens of thousands of participants at the SoftUni basic programming course.
-Following the principle of **free software and free knowledge**, Svetlin Nakov led a **team of volunteers** and started this open-source project. At first the idea was to create a **free book** for the basics of programming in C# programming language and later to extend the initiative with other similar books in various popular programming languages (like Java, JavaScript and Python).
+The free courses at SoftUni for introduction to programming are probably the most massive trainings ever conducted in South-Eastern Europe. Until 2017 the course in programming basics **was held over 150 times, in around 40 Bulgarian towns and cities** in person and multiple times online with over 50 000 participants. It was completely natural to write a **book** for the tens of thousands of participants at the SoftUni basic programming course.
+Following the principle of **free software and free knowledge**, Svetlin Nakov led a **team of volunteers** and started this open-source project. At first, the idea was to create a **free book** for the basics of programming in the C# programming language and later extend the initiative with other similar books in various popular programming languages (like Java, JavaScript and Python).
 This book is almost a mirror translation to Java from its original version in C#.
 
-The project is part of the hard work of the **[Software University Foundation](http://softuni.foundation)** to create and distribute an open learning content to teach software engineers and IT professionals.
+The project is part of the hard work of the **[Software University Foundation](http://softuni.foundation)** to create and distribute open learning content to teach software engineers and IT professionals.
 
-### Authors Team
+### Authors team
 
 This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order.)
 
@@ -221,7 +221,8 @@ The book is based on its initial C# variant ([Introduction to Programming with C
 > Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Zhulieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva
 
 Book cover design: Marina Shiderova.
-## Official Book Web Site
+
+## Official book web site
 
 The book **Programming Basics with C#** is available for free at the following web address:
 
@@ -229,42 +230,43 @@ The book **Programming Basics with C#** is available for free at the following w
 
 This is the **official book site** and any new version will be uploaded there. The book is mirrored in the other programming languages mentioned on the website.
 
-## Discussion Forum for Your Questions
+## Discussion forum for your questions
 
 Ask your **questions about basic programming book** at the **SoftUni's Facebook page** or in the official **SoftUni discussion forum**:
 
 <p align="center"><strong><a href="https://www.facebook.com/softuni.org">https://fb.com/softuni.org</a></strong></p>
 <p align="center"><strong><a href="http://forum.softuni.org">http://forum.softuni.org</a></strong></p>
 
-In these discussion channels you will get **proper response to any question associated with the content of this book** also any other questions about programming. The SoftUni community is so big that you will get a response **within a few minutes**. The trainers, assistants and mentors at SoftUni also respond to your questions. Note that the forum can hold questions in different languages (English, Bulgarian and others), but if you ask in English, you will get an answer in English.
+In this discussion forum, you will get **proper response to any question associated with the content of this book** also any other programming questions. The SoftUni community is so big that you will get a response **within a few minutes**. The trainers, assistants, and mentors at SoftUni also respond to your questions. Note that the forum can hold questions in different languages (English, Bulgarian, and others), but if you ask in English, you will get an answer in English.
 
-Because of the big number of learners, you can find in the forum practically any **solution of any exercise, shared by your colleague**. Thousands of students already got the answer on the same exercise, so if you are late you can check the forum. Even though the exercises in "Programming Basics" are changing at some point, the sharing at SoftUni is always welcome and encouraged, that's why you will easily find solutions and guidance for any exercise.
+Due to a large number of students, you can find in the forum practically any **solution of any exercise, shared by your colleague**. Thousands of students already got the answer to the same exercise, so if you are late you can check the forum. Even though the exercises in "Programming Basics" are changing at some point, the sharing at SoftUni is always welcome and encouraged, that's why you will easily find solutions and guidance for any exercise.
 
-If you do have a specific question, for example if you spend many hours on certain piece of code and it doesn't work correctly, you can always **ask in the forum**. You will be surprised how friendly are the SoftUni's forum participants.
+If you have a specific question, for example, if you spend many hours on a certain piece of code and it doesn't work correctly, you can always **ask in the forum**. You will be surprised how friendly are SoftUni's forum participants.
 
-## Official Facebook Page of the Book
+## Official facebook page of the book
 
 The book has an **official Facebook page** where you can track the news about the book series "Programming Basics", new releases, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
-## License and Distribution
+## License and distribution
 
 The book is distributed **freely** in electronic format under an open license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
-The book is published and distributed **on paper** by SoftUni and you can buy a hard copy from online bookstores like Amazon.
+The book is published and distributed **on paper** by SoftUni, and you can buy a hard copy from online bookstores like Amazon.
 
 You can find the **source code** of the book in GitHub: https://github.com/SoftUni/Programming-Basics-Book-Java-EN.
 
 International Standard Book Number (ISBN): **978-619-00-0636-7**.
 
-## Reporting Bugs
+## Reporting bgs
 
 If you find **mistakes**, inaccuracies or bugs in the book, you can report them in the official bug tracker of the project:
 
 <p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Java-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-Java-BG/issues</a></strong></p>
 
-We do not promise to fix everything you send us, but we do want to **always improve the quality** of the book, so the reported errors and reasonable suggestions will be reviewed.
+We do not promise to fix everything you send us, but we do want to **continually improve the quality** of the book, so that reported undoubted errors and all reasonable suggestions will be considered.
+
 ## Enjoy reading!
 
-Don't forget **to write code** in large quantities, to **test the examples** that you'll find in the end of each chapter and more importantly **to solve the problems from the exercises**. You won't learn to program from just reading the book, what will help is to solve as many problems as you can find!
+Don't forget **to write code** in large quantities, to **test the examples** that you'll find at the end of each chapter and more importantly **to solve the tasks from the exercises**. You won't learn to program from just reading the book, so solve as many tasks as you can find!
