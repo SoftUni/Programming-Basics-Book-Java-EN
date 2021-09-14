@@ -1,29 +1,29 @@
 # Preface
 
-The book "**Programming Basics with Java**" introduces the readers with writing **programming code** at a beginners level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for further more in-depth study of programming and prepares the reader for the entrance exam at SoftUni.
+The book **Programming Basics with Java** introduces the readers to writing **programming code** at a beginners level (basic coding skills), working with **the development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for a furthermore in-depth study of programming and prepares the reader for the entrance exam at SoftUni.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td></tr></table>
+<td>This book only gives you <b>the first steps to programming</b>. It covers basic skills that you must develop for years, to reach a high enough level and start working as a programmer.</td></tr></table>
 
-The book is used as unofficial **textbook for school-level programming courses** in the high schools, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools**.
+The book is used as unofficial **textbook for school-level programming courses**: in the high schools, studying professions like **Programmer**, **Application Programmer** and **System Programmer**, as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools**.
 
-## Who Is This Book Intended For?
+## Who is this book intended for?
 
-That book is suitable for **absolute beginners in programming** who want to try what programming is and learn the main constructions for writing programming code that are used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
+This book is suitable for **absolute beginners in programming** who want to try what programming is and learn the basic constructions for writing program code used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
 
-For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend to sign up for it **completely free**, because one learns programming by doing it, not by reading it! During the course you will get free access to lessons, explanations and demonstrations on site or online (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, access to trainers, assistants and mentors, as well as forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
+For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course you will get free access to lessons, explanations and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, instructors, assistants and mentors. Also, you will get free access to  forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
 
-The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions, who want to gain technical knowledge and check if programming is what they like to do and understand if they would like to develop in the software development field.
+The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions. The course is suitable for everyone who want to gain technical knowledge and check if programming is what it will like to do and understand if they would like to develop in the software development field.
 
-**A new group starts each month.** The "Programming Basics" course at SoftUni is organized regularly using a few different programming languages as basis. So, just check it out! The course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org).
+**A new group starts each month.** The Programming Basics course at SoftUni is organized regularly using a few different programming languages as basis. So, check it out! This course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org).
 
-## Why Did We Choose Java?
+## Why did we choose java?
 
-For this book, we choose the **Java** because it is a **modern programming language** for high-level programming, open source, easy to learn and **suitable for beginners**. Using Java is **widespread**, with a well-developed ecosystem, numerous libraries and technology frameworks, and accordingly, it gives many **perspectives** for development. Java combines paradigms of procedural, object-oriented and functional programming in a modern way with easy syntax although it is more descriptive than Python and JavaScript. In this book, we will use **Java** language and **IntelliJ IDEA** development environment, which are available for free.
+For this book, we choose the **Java** because it is a **modern programming language** for high-level programming, open-source, easy to learn, and **suitable for beginners**. Using Java is **widespread**, with a well-developed ecosystem, numerous libraries and technology frameworks, and accordingly, it gives many **perspectives** for development. Java combines paradigms of procedural, object-oriented, and functional programming in a modern way with easy syntax although it is more descriptive than Python and JavaScript. In this book, we will use **Java** language and **IntelliJ IDEA** development environment, which are available for free.
 
 As we will explain later, **the programming language that we start with, does not make a significant difference**, but we still need to use some programming language, and in this book we choose Java specifically. The book can also be found mirrored in other programming languages such as C#  and JavaScript (see [https://java-book.softuni.org](https://java-book.softuni.org)).
 
-## The Book in Other Programming Languages: Java, JavaScript, Python, C++
+## The book in other programming languages: Java, JavaScript, Python, C++
 
 This book on programming for beginners is available in several programming languages (or is in the process of being adapted for them):
 
@@ -36,7 +36,7 @@ This book on programming for beginners is available in several programming langu
 
 If you prefer a different language, select it from the list above.
 
-## Programming Is Learned by a Lot of Writing, Not Reading!
+## Programming is learned by a lot of writing, not reading!
 
 If someone thinks they will read a book and learn to program without writing code and solving problems, this is definitely a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of problems, seriously and persistently for years.
 
