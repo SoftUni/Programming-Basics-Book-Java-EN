@@ -94,7 +94,7 @@ Dear readers, probably many of you have the ambition to become programmers and d
 You can become a programmer (working in a software company) after **at least 1-2 years of intensive training and coding every day**, solving thousands of programming tasks, developing several more serious practical projects and gaining a lot of experience with code writing and software development. You can't become a programmer for a month or two! The profession of software engineer requires **a lot of knowledge**, covered with **a lot of practice**.
 
 There are **4 main skill groups** that all programmers must have. Most of these skills are resistant in time and are not significantly affected by the development in specific technologies (which are constantly changing). These are the skills that **any good programmer** has and to which every beginner must strive:
-* **coding **(20%)
+* **coding** (20%)
 * **algorithmic thinking** (30%)
 * **computer science and software engineering concepts** (25%)
 * **languages and software technologies** (25%)
