@@ -55,7 +55,7 @@ To **read** the **input** we will declare two integer variables **`int`**: **`n`
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
-Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** -  **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
+Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** - **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
 
 #### Process the Input and Print the Output
 
@@ -72,11 +72,11 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 * We can **read** a variable of type **`char`** from the console by using the following structure:
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-04.png)
-    
+
 * We can convert an **uppercase** character **to lowercase** by using the built-in function in Java:
-    
+
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-05.png)
-    
+
 * When reading characters from the console, we can directly convert uppercase letters to lowercase letters **by combining the two lines above**:
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-06.png)
@@ -114,7 +114,7 @@ Print on the console **all magic numbers**, separated by **space**.
 
 ### Hints and Guidelines
 
-**The solution** of the magic numbers problem follows **the same** principle (again we have to generate all combinations for a number of elements). Try to solve the problem yourself by following these steps.
+**The solution** of the magic numbers problem follows **the same** principle (again we have to generate all combinations for several elements). Try to solve the problem yourself by following these steps.
 
 -	Declare and initialize a **variable** of type **`int`** and read the **input** from the console.
 -	Nest **six `for` loops** into each other, one for each digit of the required 6-digit numbers.
@@ -122,16 +122,16 @@ Print on the console **all magic numbers**, separated by **space**.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-01.png)
 
-In the previous chapter we reviewed other loop constructions. Let's check a sample solution of the same problem, where we use a **`while`** cycle.
+In the previous chapter, we reviewed other loop constructions. Let's check a sample solution of the same problem, where we use a **`while`** cycle.
 First, we have to store the **entered magic number** in a suitable variable. After that, we initialize 6 variables - one for each of the six digits of the numbers we have to output as a **result**.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-02.png)
 
-After that,  we start constructing the **`while`** loops.
+After that, we start constructing the **`while`** loops.
 - We initialize the **first digit**: **`d1 = 0`**.
 - We set a **condition for each** loop: the digit has to be lower than or equal to 9.
-- At the **start** of each loop we set the value of the **next** digit, in this case: **`d2 = 0`**. In the nested **`for`** loops we initialize the variables in the inner loops with each incrementation of the outer loops. We want to achieve the same behaviour here as well.
-- At the **end** of each loop we **increase** the digit by one: **`d++`**.
+- At the **start** of each loop, we set the value of the **next** digit, in this case: **`d2 = 0`**. In the nested **`for`** loops, we initialize the variables in the inner loops with each incrementation of the outer loops. We want to achieve the same behavior here as well.
+- At the **end** of each loop, we **increase** the digit by one: **`d++`**.
 - In the **innermost** loop we do the **check** and, if necessary, print on the console.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-03.png)
@@ -140,7 +140,7 @@ Let's remove the **`if`** check from the innermost loop. Now, let's initialize e
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-04.png)
 
-As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. In order to practice each type of loop, try to solve each of the following problems by using every type of loop we've learned so far.
+As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. To practice each type of loop, try to solve each of the following problems by using every type of loop we've learned so far.
 
 ### Test in the Judge System
 
@@ -149,7 +149,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#1
 
 ## Problem: Stop Number
 
-Write a program that prints on the console all numbers from **N** to **M** that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise print all numbers up to N** that meet the condition.
+Write a program that prints on the console all numbers from **N** to **M** that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise, print all numbers up to N** that meet the condition.
 
 ### Input
 
@@ -186,11 +186,11 @@ The problem can be divided into **four** logical parts:
 
 **The first** part is easy - we read **three** integer numbers from the console, so we use **`int`**.
 
-We're also familiar with the **second** part - the initialization of a **`for`** loop. There's a little **catch** here - the problem requires us to print the numbers in **reversed order**. This means that the **initial** value of the variable **`i`** will be the **greater number**, and from the examples we can see that this is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggests that the step will **decrease i by 1**.
+We're also familiar with the **second** part - the initialization of a **`for`** loop. There's a little **catch** here - the problem requires us to print the numbers in **reversed order**. This means that the **initial** value of the variable **`i`** will be the **greater number**, and from the examples, we can see that this is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggest that the step will **decrease i by 1**.
 
 ![](assets/chapter-7-2-images/04.Stop-number-01.png)
 
-After we have initialized the **`for`** loop, it is time for the **third** part of the problem - to **check** the condition if the given **number is divisible by both 2 and 3 without remainder**. We will do this by using one simple **`if`** condition, that we will let the reader construct themselves.
+After we have initialized the **`for`** loop, it is time for the **third** part of the problem - to **check** the condition if the given **number is divisible by both 2 and 3 without remainder**. We will do this by using one simple **`if`** condition, that we will let the reader construct.
 
 The other **tricky** part in this problem is that, apart from the check above, we need an **additional** one - if the **number is equal to the "stop" number** entered from the console on the third line. To reach this check, the number we're checking has to pass the check above. That's why we add one more **`if`** statement **nested in the previous one**. If the condition is **true**, we have to stop printing. We can achieve this with the **`break`** operator which will lead us **out** of the **`for`** loop.
  
@@ -247,8 +247,8 @@ Write a program that reads from the console 1 integer within the range [**100 â€
 - If none of the conditions above is true, **add** to it **its third digit**.
 
 Print on the console **N lines**, each containing **M numbers** that are the result of the actions above, where:
-- N = sum of the first and second digit of the number.
-- M = sum of the first and third digit of the number.
+- N = sum of the first and second digits of the number.
+- M = sum of the first and third digits of the number.
 
 ### Input
 
@@ -262,7 +262,7 @@ Print on the console **all integers** that are the result of the calculations ab
 
 |Input|Output|Comments|
 |---|---|---|
-|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 Ð¸ (1 + 2) = 3 &rarr; lines with 3 numbers on each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor by 3 &rarr; 121 + 2 = 123|
+|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 and (1 + 2) = 3 &rarr; lines with 3 numbers on each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor by 3 &rarr; 121 + 2 = 123|
 
 |Input|Output|Comments|
 |---|---|---|
