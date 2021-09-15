@@ -373,176 +373,177 @@ We read the input numbers **in pairs**. For each pair we calculate the **sum** �
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#11](https://judge.softuni.bg/Contests/Practice/Index/655#11).
 
 
-## Упражнения: графични и уеб приложения
+## Exercise: Graphical and web applications
 
-В настоящата глава се запознахме с **циклите** като конструкция в програмирането, която ни позволява да повтаряме многократно дадено действие или група от действия. Сега нека си поиграем с тях. За целта ще начертаем няколко фигурки, които се състоят от голям брой повтарящи се графични елементи, но този път не на конзолата, а в графична среда, използвайки "**графика с костенурка**". Ще е интересно. И никак не е сложно. Опитайте!
+In the current chapter we learned about **loops** кas a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them.  In order to do that we will draw some figures that will consist of a large number of repeating graphical elements. This time we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
-### Задача: чертане с костенурка – графично GUI приложение
+### Problem: Turtle Graphics GUI Application
 
-Целта на следващото упражнение е да си поиграем с една **библиотека за рисуване**, известна като **“графика с костенурка” (turtle graphics)**. Ще изградим графично приложение, в което ще **рисуваме различни фигури**, придвижвайки нашата **“костенурка”** по екрана чрез операции от типа “отиди напред 100 позиции”, “завърти се надясно на 30 градуса”, “отиди напред още 50 позиции”. Приложението ще изглежда приблизително така:
+The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
-Нека първо се запознаем с **концепцията за рисуване “Turtle Graphics”**. Може да разгледаме следните източници:
-  * Дефиниция на понятието “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
-  * Статия за “turtle graphics” в Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-  * Интерактивен онлайн инструмент за чертане с костенурка – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
+Let's get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
+  * Definition of “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
+  * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
+  * Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-Започваме, като създаваме нов **Java проект** в **IntelliJ IDEA**. След това, добавяме нов пакет **`app`** (описано е как се прави по-рано в тази глава). Сваляме **`MyTurtle.java`** и **`jturtle-0.1.1.jar`** от [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** е предварително написан клас, който ще ни помогне по-бързо да се запознаем с библиотеката **`jturtle-0.1.1.jar`**, която управлява **костенурката**. Като използваме файл навигатор, копираме **`MyTurtle.java`** в директорията **`app`** на създадения проект. След това трябва да добавим външната библиотека **`jturtle-0.1.1.jar`** в нашия проект. Това става по следния начин:
-  * Избираме от **File** менюто **Project Structure** (CTRL + SHIFT + ALT + S).
-  * Натискаме **Select Modules** в левия панел.
-  * Натискаме **Dependencies** таба.
-  * Натискаме **'+'** → **JARs or directories**.
+We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter it is described how this is done). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is how this is done:
+  * Select **Project Structure** from the **File** menu (CTRL + SHIFT + ALT + S).
+  * Click on **Select Modules** in the left pane.
+  * Click on the **Dependencies** tab.
+  * Click **'+'** → **JARs or directories**.
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-На следващия прозорец задаваме пътя до **jturtle-0.1.1.jar**, след това натискаме [**ОК**].
+In the next window select the path to **jturtle-0.1.1.jar** and click [**ОК**].
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-На следващия прозорец маркираме само **classes** кутийката, след това натискаме [**ОК**].
+In the next window mark the box **classes** and click [**ОК**].
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-На следващия прозорец избираме [**ОК**] и сме готови да отворим **`MyTurtle.java`**.
+In the next window click [**ОК**] and we are ready to open **`MyTurtle.java`**.
   
 ![](assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
-#### Основни методи на класа `Turtle`
+#### Main methods in `Turtle`class
 
-Това е основните действия в класа `Turtle`, с които чертаем:
+These are the main actions in `Turtle` class with which we draw:
 
-| Връщана <br> стойност | Метод и неговото описание |
+| Return <br> value | Method and its description |
 | ------ | ---------------------------------------- |
-| Turtle | **back**(double distance) – мести костенурката назад | 
-| Turtle | **bk**(double distance) – работи като **back**(double distance) |
-| Turtle | **forward**(double distance) – мести костенурката напред |
-| Turtle | **fd**(double distance) – работи като **forward**(double distance) |
-| Turtle | **hideTurtle**() – скрива костенурката |
-| Turtle | **ht**() – действието е същото като **hideTurtle**() |
-| Turtle | **home**() – измества костенурката обратно до началната й позиция, обърната на север |
-| Turtle | **left**(double degrees) – завърта костенурката на ляво(в градуси) |
-| Turtle | **lt**(double degrees) – действа като **left**(double degrees) |
-| Turtle | **penDown**() – закача писалка за костенурката, която оставя линия, когато костенурката се движи |
-| Turtle | **pd**() – работи като **penDown**() |
-| Turtle | **penUp**() – откача писалката от костенурката |
-| Turtle | **penWidth**(int newWidth) – задава широчина на писалката |
-| Turtle | **right**(double degrees) – завърта костенурката на дясно (в градуси) |
-| Turtle | **rt**(double degrees) – работи като **right**(double degrees) |
-| Turtle | **setColor**(Color color) – задава цвят на писалката |
-| Turtle | **setLineWidth**(double lineWidth) – задава дебелина на линията |
-| Turtle | **setPenColor**(Color color) – задава цвят на писалката за чертане |
-| Turtle | **setPos**(double x, double y) – измества костенурката на нова позиция с координати(x, y) |
-| Turtle | **showTurtle**() – показва костенурката |
-| Turtle | **st**() – работи като **showTurtle**() |
-| Turtle | **speed**(double newSpeed) – задава скорост на костенурката |
+| Turtle | **back**(double distance) – moves the turtle back | 
+| Turtle | **bk**(double distance) – works as **back**(double distance) |
+| Turtle | **forward**(double distance) – moves the turtle forward |
+| Turtle | **fd**(double distance) – works as **forward**(double distance) |
+| Turtle | **hideTurtle**() – hides the turtle |
+| Turtle | **ht**() – works as **hideTurtle**() |
+| Turtle | **home**() – moves the turtle back to its original position pointing north |
+| Turtle | **left**(double degrees) – rotates the turtle to the left(in degrees) |
+| Turtle | **lt**(double degrees) – works as **left**(double degrees) |
+| Turtle | **penDown**() – attaches a pen to the turtle, which leaves a line when the turtle moves |
+| Turtle | **pd**() – works as **penDown**() |
+| Turtle | **penUp**() – detaches the pen from the turtle |
+| Turtle | **penWidth**(int newWidth) – sets the width of the pen |
+| Turtle | **right**(double degrees) – rotates the turtle to the right(in degrees) |
+| Turtle | **rt**(double degrees) – works as **right**(double degrees) |
+| Turtle | **setColor**(Color color) – sets the color of the pen |
+| Turtle | **setLineWidth**(double lineWidth) – sets the thickness of the line |
+| Turtle | **setPenColor**(Color color) – sets the drawing colot of the pen |
+| Turtle | **setPos**(double x, double y) – moves the turtle to a new position with coordinates(x, y) |
+| Turtle | **showTurtle**() – shows the turtle |
+| Turtle | **st**() – works as **showTurtle**() |
+| Turtle | **speed**(double newSpeed) – sets the speed of the turtle |
 
-За да създадем метод който чертае триъгълник, в **`MyTurtle.java`** намираме празния метода **`drawTriangle()`** и написваме следния код: 
+To create a method that draws a triangle in **`MyTurtle.java`** we find the empty method **`drawTriangle()`** and write the following code: 
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-07.png)
 
-Този код мести и върти костенурката, която в началото е в центъра на екрана (в средата на формата), и чертае равностранен триъгълник. Може да го редактирате и да си поиграете с него.
+This code moves and rotates the turtle, which is initially in the center of the screen (in the middle of the shape) and draws an equilateral triangle. 
+You can edit and play with it.
 
 **Стартираме** приложението с [**Shift + F10**]. Тестваме го дали работи (натискаме [**Draw**] бутона няколко пъти):
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-08.png)
 
-Сега може да променим и усложним кода на **костенурката**, като добавим следния код към нашия метод **`drawTriangle()`**: 
+Now we can change and make the code of the **turtle** more complicated, by adding the following to our method **`drawTriangle()`**: 
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-09.png)
 
-Отново **стартираме** приложението с [**Shift + F10**]. Тестваме дали работи новата програма за костенурката:
+Again, **start** the application with [**Shift + F10**]. Test if the new program for the turtle works:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
-Вече нашата костенурката чертае по-сложни фигури.
+Now our turtle is drawing more complex shapes.
 
-Нека напишем кода и за останалите два бутона: целта на бутона [**Reset**] е да изтрие начертаната графика и да позиционира костенурката в нейната начална позиция, допълваме метода **`resetTurtle()`** със следния код:
+Let's write the code for the other two buttons: the purpose of the button [**Reset**] is to delete the drawn graphic and position the turtle in its starting position. We add the following code to the method **`resetTurtle()`** :
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
-Целта на бутона [**Hide / Show Turtle**] е да показва или скрива костенурката, допълваме метода **`showTurtle()`** със следния код:: 
+The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle. We add the following code to the method **`showTurtle()`** : 
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
-Отново **стартираме** приложението с [**Shift + F10**] и тестваме, дали двата бутона работят коректно.
+Again, **start** the application with [**Shift + F10**] and test if the two button work correctly.
 
-### Задача: * чертане на шестоъгълник с костенурката
+### Problem: * Draw a Hexagon with the Turtle
 
-Добавете бутон [**Hexagon**], който чертае правилен шестоъгълник:
+Add [**Hexagon**] button which draws a regular hexagon:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
 
-**Подсказка:**
+**Hint:**
 
-В цикъл повторете 6 пъти следното:
-* Ротация на 60 градуса.
-* Движение напред 100.
+Repeat 6 times the following in a loop:
+* 60 degrees rotation.
+* Forward step of 100.
 
-### Добавяне на нов бутон за чертане на фигура
+### Adding a new button for drawing a shape
 
-За добавяне нов бутон за чертане на нова фигура, може да проследим логиката в **`MyTurtle.java`** за бутона [**Draw**] и да създадем нов бутон за чертане на шестоъгълник **Hexagon**.
+To add a new button for drawing a new shape, we can trace the logic in **`MyTurtle.java`** for the button [**Draw**] and create new button for drawing a **Hexagon**.
 
-Първо добавяме новата фигура в **`enum Shape`**:
+First we add the new figure in **`enum Shape`**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-20.png)
 
-Създаваме нов бутон и му добавяме **`ActionListener`**, който присвоява на **`shape`** новата **`enum`** стойност:
+We create a new button and add **`ActionListener`**, which assigns to **`shape`** the new **`enum`** value:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-18.png)
 
-След това добавяме новия бутон в **`bList`**:
+Then add the new button in **`bList`**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-19.png)
 
-Създаваме нов метод **`drawHex()`**, чрез който костенурката чертае шестоъгълник.
-Задължително в края на метода **`shape = ""`**, този ред предотвратява многократното изпълнение на нашия метод!
+Create a new method **`drawHex()`** through which the turtle draws a hexagon.
+Mandatory at the end of the method **`shape = ""`** because this line will prevent the repeated execution of our method!
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-21.png)
 
-В **`Thread t`** добавяме **`case "Hexagon`"**, който да извиква метода **`drawHex()`**:
+In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
-### Задача: * чертане на звезда с костенурката
+### Problem: * Draw a Star with the Turtle
 
-Добавете бутон [**Star**], който чертае звезда с 5 върха (**петолъчка**), като на фигурата по-долу:
+Add [**Star**] button which draws a star with 5 vertices (**star pentagon**) as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
-**Подсказка:**
+**Hint:**
 
-Сменете цвета: **`turtle.setPenColor(Color.green);`**. 
+Change the color: **`turtle.setPenColor(Color.green);`**. 
 
-В цикъл повторете 5 пъти следното:
-* Движение напред 200.
-* Ротация на 144 градуса.
+Repeat 5 times the following in a loop:
+* Forward step of 200.
+* 144 degrees rotation.
 
-### Задача: * чертане на спирала с костенурката
+### Problem: * Draw a Spiral with the Turtle
 
-Добавете бутон [**Spiral**], който чертае спирала с 20 върха като на фигурата по-долу:
+Add a [**Spiral**] button which draws a spiral with 20 vertices as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
-**Подсказка:**
+**Hint:**
 
-Чертайте в цикъл, като движите напред и завъртате. С всяка стъпка увеличавайте постепенно дължината на движението напред и завъртайте на 60 градуса.
+Draw in a loop by moving ahead and rotating. In each step, decrease gradually the length of the forward step and rotate 60 degrees.
 
-### Задача: * чертане на слънце с костенурката
+### Problem: * Draw a Sun with the Turtle
 
-Добавете бутон [**Sun**], който чертае слънце с 36 върха като на фигурата по-долу:
+Add [**Sun**] button which draws a sun with 36 vertices as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-### Задача: * чертане на спирален триъгълник с костенурката
+### Problem: * Draw a Spiral Triangles with the Turtle
 
-Добавете бутон [**Triangle**], който чертае три триъгълника с по 22 върха като на фигурата по-долу:
+Add [**Triangle**] button which draws three triangles with 22 vertices each as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
-**Подсказка:**
+**Hint:**
 
-Чертайте в цикъл като движите напред и завъртате. С всяка стъпка увеличавайте с 10 дължината на движението напред и завъртайте на 120 градуса. Повторете 3 пъти за трите триъгълника.
+Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles.
 
-Ако имате проблеми с примерния проект по-горе попитайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have a problem with the exercises above ask for help in the official **SoftUni forum**: https://softuni.bg/forum.
