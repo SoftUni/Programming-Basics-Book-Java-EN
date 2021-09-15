@@ -208,7 +208,7 @@ We will solve the problem using **the Euclidean algorithm**:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6](https://judge.softuni.bg/Contests/Practice/Index/659#6).
 
 
-## Do-while цикъл
+## Do-while loop
 
 The next type of loops we will get acquainted with is the **`do-while`**. It resembles the **`while`** loop by structure but there is a significant difference between the two. It consists in the fact that **`do-while`** will execute its body **at least once**. Why is this happening? In the **`do-while`** loop construction, the **condition** is always checked **after** its body, which ensures that the code will be **executed** after the **first loop iteration** and **the check for the loop termination** will be applied to each subsequent iteration of the **`do-while`**. 
 
