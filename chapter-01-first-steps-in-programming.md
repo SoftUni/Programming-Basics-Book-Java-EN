@@ -298,14 +298,14 @@ Top work! Let us now tackle the **exercises**. You remember that learning how to
 ## First steps in programming – Exercises
 Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
 
-### Problem: console-based program 'Expression'
+### Exercise: console-based program 'Expression'
 Write a console-based Java program that **calculates** and **prints** the value of the following numerical expression:
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
 
-Note: **you are not allowed to previously calculate the value** (for example with Windows Calculator).
+Note: **you are not allowed to previously calculate the value** (for example, with Windows Calculator).
 
-### Hints and Guidelines
-Create a **new Java file** and name it **`Expression`**. Then we find the method **`static void main(String[] args)`** and start writing in its body (the space **between the opening and closing curly braces**). We need to **write the code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`System.out.printIn(…)`** command by writing it within its brackets:
+### Hints and guidelines
+Create a **new Java file** and name it **`Expression`**. Then we find the method **`static void main(String[] args)`** and start writing in its body (the space **between the opening and closing curly braces**). We need to **write the code**, which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`System.out.printIn(…)`** command by writing it within its brackets:
 
 ![](assets/chapter-1-images/02.Expression-01.png)
 
@@ -313,20 +313,20 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-### Testing in the Judge System
+### Testing in the Judge system
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#1](https://judge.softuni.bg/Contests/Practice/Index/646#1).
 
 ![](assets/chapter-1-images/02.Expression-03.png)
 
-### Problem: Numbers from 1 to 20
+### Exercise: Numbers from 1 to 20
 Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
-### Hints and Guidelines
+### Hints and guidelines
 Create a new Java class and name it **`Nums1to20`** (right click on the **`src`** folder -> [New] -> [Java Class])
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-Inside the **`static void main(String[] args`** method write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
+Inside the **`static void main(String[] args`** method, write 20 **`print()`** commands, each on a separate line, to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
 ![](assetschapter-1-images03.Numbers-1-to-20-02.png)
 
@@ -338,12 +338,11 @@ Let's now **start the program** and check whether the result is what we're expec
 20
 ```
 
-### Testing in the Judge System
-Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/646#2](https://judge.softuni.bg/Contests/Practice/Index/646#2).
+### Testing in the Judge system
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#2](https://judge.softuni.bg/Contests/Practice/Index/646#2).
 Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
 
-### Problem: Triangle of 55 stars
+### Exercise: Triangle of 55 stars
 Write a Java console program that **prints a triangle of 55 stars** on 10 lines:
 ```
 *
@@ -358,21 +357,20 @@ Write a Java console program that **prints a triangle of 55 stars** on 10 lines:
 **********
 ```
 
-### Hints and Guidelines
-Create a **new Java console application** and name it **TriangleOf55Stars**. Inside we need to write code that prints the triangle if stars, using commands like the ones below:
+### Hints and guidelines
+Create a **new Java console application** and name it **TriangleOf55Stars**. Inside we need to write code that prints the triangle of stars, using commands like the ones below:
 ```java
 System.out.println();
 System.out.println();
 …
 ```
-### Testing in the Judge System
-Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/646#3](https://judge.softuni.bg/Contests/Practice/Index/646#3).
+### Testing in the Judge system
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#3](https://judge.softuni.bg/Contests/Practice/Index/646#3).
 
-Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
+Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar but more complex approach (a loop within another loop). It is completely fine if you can't figure it out, you will remember this problem when we learn about loops in a few chapters.
 
-### Problem: Rectangle Area
-Write a Java program which receives two numbers **a** and **b**, then calculates and prints the area of a rectangle with sides **a** and **b**.
+### Exercise: Rectangle Area
+Write a Java program that receives two numbers, **a** and **b**, then calculates and prints the area of a rectangle with sides **a** and **b**.
 
 ### Sample input and output
 | a | b | area | 
@@ -381,8 +379,8 @@ Write a Java program which receives two numbers **a** and **b**, then calculates
 | 7 | 8 | 56 |
 | 12 | 5 | 60 | 
  
-### Hints and Guidelines
-Create a **new Java console application**. We'll use the following code to read our numbers:
+### Hints and guidelines
+Create a **new Java console application**. We will use the following code to read our numbers:
 ```java
 import java.util.Scanner;
 
@@ -396,31 +394,31 @@ public class RectangleArea {
     }
 }
 ```
-In order to read input data from the console, we import and use the `java.util.Scanner` class, which we'll look at in detail a little later. For now, just accept that reading number is achieved like in the example above.
+To read input data from the console, we import and use the `java.util.Scanner` class, which we will look at in detail a little later. For now, just accept that the reading number is achieved as in the example above.
 
-What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming we multiply using the **`*`** operator.
+What is left is to finish the program to calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming, we multiply using the **`*`** operator.
 
 ### Test your solution
-Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 – their product, as output):
+Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input, and the program prints 14 – their product, as output):
 ```
 2
 7
 14
 ```
 
-### Testing in the Judge System
-Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
+### Testing in the Judge system
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
 
-### \* Problem: Square of Stars
+### \* Exercise: Square of Stars
 Write a **Java console program** which **reads** a whole positive number N from the console and **prints a square of N stars on the console**, like in the examples below.
+
 ### Sample input and output
 | Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
 
-### Hints and Guidelines
-Create a new **Java console program**. In order to read the number N (2 ≤ N ≤100), we use the following code:
+### Hints and guidelines
+Create a new **Java console program**. To read the number N (2 ≤ N ≤100), we use the following code:
 ```java
 Scanner console = new Scanner(System.in);
 int n = Integer.parseInt(console.nextLine());
@@ -430,17 +428,17 @@ int n = Integer.parseInt(console.nextLine());
 
 Don't forget to import the `java.util.Scanner` class and put your code in the `main(…)` method of your program's main class .Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Look up information on the Internet.
 
-**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you to **look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. 
+**Caution**: this task is more complex than the rest and is presented to you at this point purposefully. It is marked with a star to provoke you to **look for information on the Internet**. It is one of the most important skills you have to develop while you're learning to program. It is what you'll be doing every day if you work as a developer, so don't be scared to try it out. 
 
-### Testing in the Judge System
+### Testing in the Judge system
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#5](https://judge.softuni.bg/Contests/Practice/Index/646#5).
 
 ## Console, graphical and web applications
-With **console applications**, as you can figure out yourselves, **all operations** for reading input and printing output are done through the **console**. There the **input data is inserted**, which is read from the application, also in it, is **printed the output data** after or during the runtime of the program.
+With **console applications**, as you can figure out yourselves, **all operations** for reading input and printing output are done through the **console**. There the **input data is inserted**, which is read from the application also in it, is **printed the output data** after or during the runtime of the program.
 
-While the console application uses the **text console**, web applications use **web-based user interface**. To receive their performance are needed two things - a **web server** and a **web browser**, as the browser plays the main role in the **visualization of the data and the interaction with the user**. Web applications are much more pleasant for the user, they visually look better, and a mouse and touch screen can be used (for tablets and smartphones), but behind all of that stands programming. And this is why we **have to learn to program** and we have already made our first very little steps towards.
+While the console application uses the **text console**, web applications use **web-based user interface**. To receive their performance are needed two things - a **web server** and a **web browser**, as the browser plays the main role in the **visualization of the data and the interaction with the user**. Web applications are much more pleasant for the user, they visually look better, and a mouse and touch screen can be used (for tablets and smartphones), but behind all of that stands programming. And this is why we **have to learn to program**. We have already made our first steps.
 
-**Graphical (GUI) applications** have a **visual user interface**, directly into your computer or mobile device, without a web browser. Graphical applications (or otherwise said, desktop applications) **contain one or more graphical windows**, in which are situated certain **controllers** (text fields, buttons, pictures, tables and others), **serving for dialog with the user** in a more intuitive way. Similar to them are the mobile applications in your telephone or your tablet we use forms, text fileds, buttons and other controls and we control them by programming code. This is why we are learning how to write code now **the code is everywhere in the software development**.
+**Graphical (GUI) applications** have a **visual user interface**, directly into your computer or mobile device, without a web browser. Graphical applications (or otherwise said, desktop applications) **contain one or more graphical windows**, which consist of specific **controllers** (text fields, buttons, pictures, tables, and others), **serving for dialog with the user** more intuitively. Similar to them are the mobile applications in your telephone or your tablet, we use forms, text fields, buttons, and other controls, and we control them by programming code. It is why we are learning how to write code now **the code is everywhere in software development**.
 
 ## Exercises graphical and web applications
 Now we are about to build one simple **web application** and one simple **graphical application**, in order to take a look at what we will be able to create when we progress with programming and software development. We are not going to look through the details about the used techniques and constructions fundamentally, rather we are just going to take a look at the arrangement and functionality of our creation. After we progress with our knowledge, we will be able to do bigger and more complex software applications and systems. We hope that the examples given below will **enlighten your interest**, rather than make you give up.
