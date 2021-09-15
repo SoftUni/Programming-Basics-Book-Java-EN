@@ -1,6 +1,6 @@
 # Chapter 1. First Steps in Programming
 
-In this chapter, we are going to figure out **what programming is** in its core. We will get familiar with the idea of **programming languages** and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward we will exercise with a few tasks we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni** and in the end, we will get familiar with the typical errors, which are made often when writing code and how to avoid them.
+In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few tasks we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
 
 ## Video
 <div class="video-player">
@@ -10,22 +10,22 @@ In this chapter, we are going to figure out **what programming is** in its core.
 </div>
 
 ## What does it mean to program
-To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
+To program means to give instructions to the computer, for example, *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there is a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
 ## Computer programs
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Java**. In this book we'll cover programming in general, as well as Python's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Java**. In this book we will cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
-Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a specific recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they are cooked, and finally, move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a specific task, for example, if we want to print a series of numbers in ascending order, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 
-To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **IntelliJ**.
+To make creating programs, writing program code (commands), executing it, and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **IntelliJ**.
 
-### Programming languages, compilers, interpeters and environments for development
-**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
+### Programming languages, compilers, interpreters, and environments for development
+**Programming languages** are artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process, and execute. With the help of programming languages, we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been compiled, the program can be directly executed by the microprocessor in cooperation with the operating system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift, and Go work with compilers.
 
-Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, **interpreted languages' errors are found during run time**, after the program has already started working.
+Some programming languages don't use a compiler but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence and understands not only single commands and series of commands but also other language constructs (checks, iterations, functions, etc.). PHP, Python, and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, **interpreted languages' errors are found during run time** after the program has already started working.
 
 **The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a **text editor** for writing code, a **programming language**, a **compiler** or **interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
@@ -35,34 +35,34 @@ For programming with the **Java language** the most commonly used development en
 
 Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/packages](https://eclipse.org/downloads/packages), **NetBeans** [https://netbeans.org/downloads](https://netbeans.org/downloads) and **JDeveloper** [http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html) and many others. In the current book, we are going to use IntelliJ IDEA.
 
-If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it**: [https://repl.it/languages/java](https://repl.it/languages/java).
+If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it** [https://repl.it/languages/java](https://repl.it/languages/java).
 
-### Low and high level languages, runtime environments
-A program is, in essence, a **set of instructions** that ask the computer to carry out certain tasks. They are entered by the programmer and **executed unconditionally by the machine**.
+### Low- and high-level languages, runtime environments
+A program is, in essence, a **set of instructions** that ask the computer to carry out specific tasks. They are entered by the programmer and **executed unconditionally by the machine**.
 
-There are different types of **programming languages**. **Lowest-level** languages can be used to write the very **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like **JavaScript**, **C#** and **Python** are used to create application software, like programs for reading mail or chatting.
+There are different types of **programming languages**. **Lowest-level** languages are used to write the **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages are utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines), and other system components and programs. Even higher-level languages like **JavaScript**, **C#**, and **Python** are used to create application software, like programs for reading mail or chatting.
 
-**Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
+**Low-level languages** command hardware directly and require a lot of effort, and a vast number of commands, to carry out a specific task. **Higher-level languages** require less code to achieve the same result but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
+Most of the software we use daily like music players, video players, GSP programs, etc., is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP, etc.
 
-**Java is a compiled language**, and this means that we are writing commands, which are being compiled before they are executed. The code, writen in Java, is not compiled to machine code for a certain processor, but to a specific for the language code, **called Java bytecode**. Due to that, the execution of a program, written in Java, requires a virtual machine - **Java Virtual Machine** (JVM). 
+**Java is a compiled language**, and this means that we are writing commands, which are being compiled before they are executed. The code, written in Java, is not compiled to machine code for a specific processor, but for a specific language, **called Java bytecode**. Due to that, the execution of a program, written in Java, requires a virtual machine - **Java Virtual Machine** (JVM). 
 
-The Java compiler, the virtual machine and number of libraries stand inside the core of the **Java platform**. The Java platform is developed in a few variations
+The Java compiler, the virtual machine, and many libraries stand inside the core of the **Java platform**. The Java platform is developed in a few variations
 
-- **Java Standard Edition** (Java SE) – the basic version, which is used for development of client applications and the so called Java applets.
-- **Java Enterprise Edition** (Java EE) – based on the Standard Edition, it is mostly used with server applications in the internet, but besides that, it includes a big number of other software technologies.
-- **Java Micro Edition** (Java ME) – a standalone light version for working on devices with limited computing power like mobile phones, smartphones, PDA devices and others.
+- **Java Standard Edition** (Java SE) – the basic version, which is used for the development of client applications and the so-called Java applets.
+- **Java Enterprise Edition** (Java EE) – based on the Standard Edition, it is mostly used with server applications on the internet, but besides that, it includes many other software technologies.
+- **Java Micro Edition** (Java ME) – a standalone light version for working on devices with limited computing power like mobile phones, smartphones, PDA devices, and others.
 
 ### Computer programs - compilation and execution
-As we have already mentioned, the program is a **sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to accomplish some kind of result.
+As we have already mentioned, the program is a **sequence of commands**, in other words, it describes a sequence of calculations, evaluations, iterations, and all kinds of similar operations, which aim to accomplish some result.
 
-The program is written in text format, and the text of the program itself is called a **source code**. It gets compiled to an executable file (for example `Program.cs` gets compiled to `Program.exe`) or it it is executed directly from the .NET environment.
+The program is written in text format, and the text of the program itself is called a **source code**. It is compiled to an executable file (for example, `Program.cs` is compiled to `Program.exe`), or it is executed directly from the .NET environment.
 
-The process of compilation of the code before  its execution is used only in compiled languages like C#, Java and C++. With scripts and interpreted languages, like JavaScript, Python and PHP, the source code gets executed step by step by an interpreter.
+The compilation process of the code, before its execution, is used only in compiled languages like C#, Java, and C++. Scripts and interpreted languages, like JavaScript, Python, and PHP, the source code gets executed step by step by an interpreter.
 
 ### Computer programs – examples
-Let's start with a very simple example of a short Java program, which consists of a single command.
+Let us start with a simple example Java program, which consists of a single command.
 
 #### Example – a command which prints a given text
 Our first program will consist of a **single Java command** which prints the word *"Hello"*
@@ -70,29 +70,29 @@ Our first program will consist of a **single Java command** which prints the wor
 System.out.println("Hello");
 ```
 
-In a moment we'll get to know **how to execute this command** but for now, we'll just stick to what commands in programming consist of. Let's have a look at a few more examples.
+In a moment, we will get to know **how to execute this command**, but for now, we will just stick to what commands in programming consist of. Let us have a look at a few more examples.
 
 #### Example: A program which checks whether a word contains another word
-We can check whether the word "alright" contains the word "right" using the **contains** method:
+We can check whether the word "alright" consist of the word "right" using the **contains** method:
 ```java
 System.out.println("alright".contains("right"));
 ```
 
 #### Example: A program which converts Bulgarian levs into euro
-Let's have a look at another simple program which reads a number of levs (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
+Let us have a look at another simple program which reads a number of levs (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
 ```java
 Scanner console = new Scanner(System.in);
 double leva = Double.parseDouble(console.nextLine());
 double euro = leva / 1.95583;
 System.out.println(euro);
 ```
-We looked at **three examples of computer programs**: two single-command, and one consisting of a sequence of three commands. Let's now move on to the more exciting bit: writing, compiling and executing our own programs in **Java**.
+We looked at **three examples of computer programs**: two with a single command, and one consisting of a sequence of three commands. Let us now move on to the more exciting bit: writing, compiling and executing our programs in **Java**.
 
 ## How do we write a console program?
 Let's go through the necessary **steps to create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Java programs from this book and the exercises that go along with it.
 
 ## Java development kit (JDK)
-In order to create programs using the Java programming language, we need to install the **Java Development Kit**. It includes a **virtual machine**, a **Java compiler** and numerous **helper tools**. JDK should not be confused for a runtime environment – **Java Runtime Environment** (JRE). Installing JRE will allow us to open and work with Java programs, but won't give us the ability to develop our own.
+To create programs using the Java programming language, we need to install the **Java Development Kit**. It includes a **virtual machine**, a **Java compiler** and numerous **helper tools**. JDK should not be confused for a runtime environment – **Java Runtime Environment** (JRE). Installing JRE will allow us to open and work with Java programs but won't give us the ability to develop our own.
 
 ## Installing JDK
 JDK is distributed freely and can be downloaded from this link: https://oracle.com/technetwork/java/javase/downloads.  Choose the latest version of **Java SE** (Java Standard Edition).
@@ -112,24 +112,24 @@ Press the **[Next]** button a few times until the Java development Kit starts in
 ![](assets/chapter-1-images/00.Jdk-4.png)
 
 When it's finished, close the installer with the **[Close]** button.
-Installation on a Linux environment may be completely different, but most often you need to install a standard package from the central repository `sudo apt install default-jdk`.
+Installation on a Linux environment may be completely different, but most often, you need to install a standard package from the central repository `sudo apt install default-jdk`.
 
 ## Development environment (IDE)
-As was already noted, we need a development environment (IDE – Integrated Development Environment) in order to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
--	Suitable for Java programming are the IntelliJ IDEA, Eclipse and NetBeans environments.
+As was already noted, we need a development environment (IDE – Integrated Development Environment) to program. The IDE is a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+-	Suitable for Java programming are the IntelliJ IDEA, Eclipse, and NetBeans environments.
 
 ## Installing IntelliJ IDEA
-Let's start by installing the **integrated environment** **IntelliJ IDEA Community** (version 2019, current as at May 2019).
-**The community version** of IntelliJ IDEA is **freely distributed** by JetBrains and can be downloaded from this link: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
-The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2019). After we download and run the installation file, we're greeted by the following screen:
+Let us start installing the **integrated environment** **IntelliJ IDEA Community** (version 2019, current as of May 2019).
+**The community version** of IntelliJ IDEA is **free distributed** by JetBrains and can be downloaded from this link: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
+The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2019). After we download and run the installation file, appear the following screen:
 
 ![](assets/chapter-1-images/00.Intellij-idea-1.png)
 
-We click the **[Next]** button and we'll see the following window displayed:
+We click the **[Next]** button, and we will see the following window displayed:
 
 ![](assets/chapter-1-images/00.Intellij-idea-2.png)
 
-We click the **[Next]** button one more time and IntelliJ IDEA's installation panel gets loaded on the screen.
+We click the **[Next]** button one more time, and IntelliJ IDEA's installation panel gets loaded on the screen.
 
 ![](assets/chapter-1-images/00.Intellij-idea-3.png)
 
@@ -139,7 +139,7 @@ We save the folder's name in the start menu and click **[Install]**. The followi
 
 ![](assets/chapter-1-images/00.Intellij-idea-4.png)
 
-When the process is finished, tick the **[Run IntelliJ IDEA]** box and hit **[Finish]** which will wrap up the installation and run the development environment.
+When the process is finished, tick the **[Run IntelliJ IDEA]** box and hit **[Finish]**, which will wrap up the installation and run the development environment.
 
 ![](assets/chapter-1-images/00.Intellij-idea-5.png)
 
@@ -147,7 +147,7 @@ We choose **[Create New Project]** from IntelliJ IDEA's welcome screen:
 
 ![](assets/chapter-1-images/00.Intellij-idea-6.png)
 
-A window which shows we haven't chosen a software development kit (SDK) gets displayed:
+A window that shows we haven't chosen a software development kit (SDK) gets displayed:
 
 ![](assets/chapter-1-images/00.Intellij-idea-7.png)
 
@@ -155,31 +155,31 @@ We click **[New]** and find the route to the **Java Development Kit** (JDK) we a
 
 ![](assets/chapter-1-images/00.Intellij-idea-8.png)
 
-Then we simply select the JDK installation folder and click **[OK]**. That's it. We're ready to start working with **IntelliJ IDEA**.
+Then we select the JDK installation folder and click **[OK]**. That is it. We are ready to start working with **IntelliJ IDEA**.
 
 ### Older versions of IntelliJ IDEA
-Using older versions of IntelliJ IDEA is possible, but definitely **not advisable**, as they might not contain some of the newest development options which may result in some of the examples from this book not compiling.
+Using older versions of IntelliJ IDEA is possible but **not advisable**. Older versions might not contain some of the newest development options, and some of the examples from this book may not be compile.
 
 ### Online development environments
-There are also **online development environments** which allow you to write code directly in your browser. They are not the most convenient but if you have no other options, you can use them at the start your education and install IntelliJ IDEA later. You can find useful links here:
-- For Java we can use the following online Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
+There are also **online development environments** which allow you to write code directly in your browser. They are not the most convenient, but if you have no other options, you can use them at the start of your education and install IntelliJ IDEA later. You can find useful links here:
+- For Java, we can use the following online Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
 - For C# we can use **.NET Fiddle**: [https://dotnetfiddle.net](https://dotnetfiddle.net).
-- For JavaScript we can write JS code directly in our browser by pressing **[F12]**.
+- For JavaScript, we can write JS code directly in our browser by pressing **[F12]**.
 
 ### Project solutions and Projects in IntelliJ IDEA
-The IntelliJ IDEA project uses **logic to group the numerous files** that make up a certain application or component. A single **IntelliJ IDEA project** consists of several **Java source files**, configuration files and other resources. Each Java source file can have several **definitions and types** (classes or other definitions). **Classes** contain methods (actions), which are comprised of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.
+The IntelliJ IDEA project uses **logic to group the numerous files** that make up a specific application or component. A single **IntelliJ IDEA project** consists of several **Java source files**, configuration files, and other resources. Each Java source file can have several **definitions and types** (classes or other definitions). **Classes** contain methods (actions), which consist of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for a good organization of our work files.
 
 ### Example: creating a 'Hello Java' console program
-Let's get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we'll create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
+Let us get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we will create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
 
 ![](assets/chapter-1-images/01.Hello-java-01.png)
 
 ![](assets/chapter-1-images/01.Hello-java-02.png)
 
-IntelliJ IDEA will create an empty Java program for us and we'll just need to write the code for it.
+IntelliJ IDEA will create a blank Java program for us and we will need to write the code for it.
 
 #### Writing program code
-Java programs' source code is written between the curly brace of the **`main(String[] args)`** section. This is the main method (action) executed when starting a Java program. Press [Enter] after the opening bracket and we can start writing. In regards to text formatting, program code is written with an indentation which help when reviewing and debugging it. 
+Java programs' source code is written between the curly brackets of the **`main(String[] args)`** section. It is the main method (action) executed when starting a Java program. Press [Enter] after the opening bracket, and we can start writing. In regards to text formatting, program code is written with an indentation which helps when reviewing and debugging it. 
 
 ![](assets/chapter-1-images/01.Hello-java-03.png)
 
@@ -192,40 +192,40 @@ And here's what our program in IntelliJ IDEA should look like:
 
 ![](assets/chapter-1-images/01.Hello-java-04.png)
 
-The **`System.out.printIn("Hello java")`** command in the Java language allows us to print the text message **`"Hello Java"`** on the console ('out.printIn(…)'). The message needs to be enclosed in quotes which signify text. At the end of every Java command we place a semicolon **`;`** which indicates the end of a command (meaning it doesn't continue on the next row).
+The **`System.out.printIn("Hello Java")`** command in the Java language allows us to print the text message **`"Hello Java"`** on the console ('out.printIn(…)'). The message needs to be enclosed in quotes that signify text. At the end of every Java command we place a semicolon **`;`** that indicates the end of a command (meaning it doesn't continue on the next row).
 
-This command is quite typical for programming: we signify we need a certain **object** (a **`PrintStream`** object named **`out`** located in the object **`System`**, in this case) to be found and a certain **`action`** (printing something, passed within brackets, in this case) to be performed on it. In more technical terms, we call the method **`printIn(…)`** from the class **`PrintStream`**, part of the **`System`** class, and pass as a parameter to it the text literal **`Hello Java`**.
+This command is quite typical for programming: signify we need a certain **object** (a **`PrintStream`** object named **`out`** located in the object **`System`**, in this case) to be found, and a certain **`action`** (printing something, passed within brackets, in this case) to be performed on it. In more technical terms, we call the method **`printIn(…)`** from the class **`PrintStream`**, part of the **`System`** class, and pass as a parameter to it the text **`Hello Java`**.
 
 #### Classes and files in Java
-**Java** is an **object-oriented language** hence why every Java program consists of at least one **class**. If the Java class is public, its name needs to match the name of the file + **`.java`**. In the above example, the **`Main`** class, defined with **`public class Main {…}`**, is located in a file named **`Main.java`** in the project's **`src`** folder. Were it called **`HelloJava`**, its source code would need to be located in a file named **`HelloJava.java`**. Otherwise, we'd get a compile time error. 
+**Java** is an **object-oriented language** hence why every Java program consists of at least one **class**. If the Java class is public, its name needs to match the name of the file + **`.java`**. In the above example, the **`Main`** class, defined with **`public class Main {…}`**, is located in a file named **`Main.java`** in the project's **`src`** folder. Were it called **`HelloJava`**, its source code would need to be located in a file named **`HelloJava.java`**. Otherwise, we'd get a compile-time error. 
 
 #### Starting the program
 We start the program by pressing **[Ctrl + Shift + F10]**. If there are no errors, the program will execute. The result will be displayed on the console (the window at the very bottom of IntelliJ IDEA).
 
 ![](assets/chapter-1-images/01.Hello-java-05.png)
 
-The result of the program is actually the following message:
+The result of the program is the following message:
 ```java
 Hello Java
 ```
 The additional **`Process finished with exit code 0`** message is written last in the console and signifies that the program has ended with no errors.
 
 #### Testing the program in the Judge system
-Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real time by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
-The program we just wrote can be tested here:
+Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real-time by the system. Each solution goes through a series of of hidden tests, and every test that passes grants the user certain points.
+The program that we just wrote can be tested here:
 [https://judge.softuni.bg/Contests/Practice/Index/646#0](https://judge.softuni.bg/Contests/Practice/Index/646#0).
 We need to paste the program's entire source code in the black field and make sure we've selected **Java code** from the dropdown menu.
 
 ![](/assets/chapter-1-images/01.Hello-java-06.png)
 
-Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
+Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds, which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
 
 ![](/assets/chapter-1-images/01.Hello-java-07.png)
 
 The Judge System will display one of the following possible results in the table:
 * **Number of points** (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
-    - If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
-    - If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
+    - If our solution is **correct**, all tests are marked in green, and we receive **100 points**.
+    - If our solution is **incorrect**, some tests are marked in red, and we receive less than 100 or 0 points.
 * If there are syntactic errors in our program, we receive a **compile time error message**.
 
 ### How do I register at SoftUni Judge?
