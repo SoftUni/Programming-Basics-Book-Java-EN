@@ -1,4 +1,4 @@
-# Chapter 1. First Steps in Programming
+# Chapter 1. First steps in programming
 
 In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few tasks we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
 
@@ -119,9 +119,9 @@ As was already noted, we need a development environment (IDE – Integrated Deve
 -	Suitable for Java programming are the IntelliJ IDEA, Eclipse, and NetBeans environments.
 
 ## Installing IntelliJ IDEA
-Let us start installing the **integrated environment** **IntelliJ IDEA Community** (version 2019, current as of May 2019).
+Let us start installing the **integrated environment** **IntelliJ IDEA Community** (version 2021, current as of September 2021).
 **The community version** of IntelliJ IDEA is **free distributed** by JetBrains and can be downloaded from this link: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
-The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2019). After we download and run the installation file, appear the following screen:
+The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2021). After we download and run the installation file, appear the following screen:
 
 ![](assets/chapter-1-images/00.Intellij-idea-1.png)
 
@@ -232,7 +232,7 @@ The Judge System will display one of the following possible results in the table
 Just use your id (Username + Password) for the [softuni.bg](softuni.bg) website. If you haven't yet registered, go right ahead – it's just a standard website registration and takes no more than a minute.
 
 ## Typical mistakes in Java programs
-One mistake we often see with beginners is that they write their **code outside the body of the `main(String[] args)` method**. This causes an error because the integrated environment or the compiler cannot read the commands issued in the program correctly. Here's an example of an incorrect program:
+One mistake that often sees with beginners is that they write their **code outside the body of the `main(String[] args)` method**. It causes an error because the integrated environment or the compiler cannot read the commands issued in the program correctly. Here is an example of an incorrect program:
 ```java
 static void main(String[] args)
 {
@@ -240,7 +240,7 @@ static void main(String[] args)
 System.out.println("Hello SoftUni");
 ```
 
-Another usual mistakes is mixing up **capital and lowercase letters**. They matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
+Another usual mistake is mixing up **capital and lowercase letters**. They matter when we call commands and can impede proper functioning. Here is an example of such a mistake:
 ```java
 static void main(String[] args)
 {
@@ -248,9 +248,9 @@ static void main(String[] args)
 }
 ```
 
-In the example above **`PrintIn`** is written incorrectly and the capital **`P`** needs to be changed to lowercase.
+In the example above, **`PrintIn`** is written incorrectly, and the capital letter **`P`** needs to be changed to lowercase.
 
-The missing **semicolon** `(;)`** at the end of commands is one of the timeless issues for beginner programmers. Skipping this symbol leads to the **program functioning improperly** and it's very often left **unnoticed**. Here's an example of incorrect code:
+The missing **semicolon** `(;)`** at the end of commands is one of the timeless issues for beginner programmers. Skipping this symbol leads to the **program functioning improperly**, and it is very often left **unnoticed**. Here is an example of incorrect code:
 ```java
 static void main(String[] args)
 {
@@ -258,7 +258,7 @@ static void main(String[] args)
 }
 ```
 
-A missing **quotation mark** or **closing bracket** can also cause issues. As with the *semicolon*, this will lead to the program either **functioning improperly** or not executing at all. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example of an incorrect program with a lonely opening quotation mark:
+A missing **quotation mark** or **closing bracket** can also cause issues. As with the *semicolon*, this will lead to the program either **function improperly** or not executing at all. Such mistakes are hard to notice, especially with large amounts of code. Here is an example of an incorrect program with a lonely opening quotation mark:
 ```java
 static void main(String[] args)
 {
@@ -266,7 +266,7 @@ static void main(String[] args)
 }
 ```
 
-This program will return a **compile time error** and even before that, the code will be underlined to draw the programmer's attention towards the error (missing closing quotation mark).
+This program will return a **compile-time error**, and even before that, the code will be underlined to draw the programmer's attention towards the error (missing closing quotation mark).
 Another beginner's frequent mistake is trying to write the **`main(…)`** method outside the class:
 ```java
 public class Example {
@@ -291,11 +291,11 @@ public class Example {
 ```
 
 ## What did we learn in this chapter?
-First of all, we learned **what programming is** – **issuing commands written in a computer language** which the machine can understand and carry out. We also found out **what a computer program is** – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Java programming language** and learned **how to create simple console programs using IntelliJ IDEA**. We followed Java's program code structure, one example of which is that issuing of commands mainly happens in the **`static void main(String[] args)`** section, within the curly braces. We looked at printing with the function **`System.out.printIn(…)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
+First of all, we learned **what programming is** – **issuing commands written in a computer language** which the machine can understand and carry out. We also found out **what a computer program is** – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Java programming language** and learned **how to create simple console programs using IntelliJ IDEA**. We followed Java's program code structure, one example of which is that issuing of commands mainly happens in the **`static void main(String[] args)`** section, within the curly brackets. We looked at printing with the function **`System.out.printIn(…)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
-Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
+Top work! Let us now tackle the **exercises**. You remember that learning how to program involves a lot of code writing and problem-solving, right? Let us do just that and put what we have learned into practice.
 
-## First Steps in Programming – Exercises
+## First steps in programming – Exercises
 Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
 
 ### Problem: console-based program 'Expression'
