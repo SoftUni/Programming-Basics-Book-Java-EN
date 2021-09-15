@@ -210,26 +210,26 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6
 
 ## Do-while цикъл
 
-Следващият цикъл, с който ще се запознаем, е **`do-while`**, в превод - **прави-докато**. По структура, той наподобява **`while`**, но има съществена разлика между тях. Тя се състои в това, че **`do-while`** ще изпълни тялото си **поне веднъж**. Защо се случва това? В конструкцията на **`do-while`** цикъла, **условието** винаги се проверява **след** тялото му, което от своя страна гарантира, че при **първото завъртане** на цикъла, кодът ще се **изпълни**, а **проверката за край на цикъл** ще се прилага върху всяка **следваща** итерация на **`do-while`**. 
+The next type of loops we will get acquainted with is the **`do-while`**. It resembles the **`while`** loop by structure but there is a significant difference between the two. It consists in the fact that **`do-while`** will execute its body **at least once**. Why is this happening? In the **`do-while`** loop construction, the **condition** is always checked **after** its body, which ensures that the code will be **executed** after the **first loop iteration** and **the check for the loop termination** will be applied to each subsequent iteration of the **`do-while`**. 
 
 ![](assets/chapter-7-1-images/00.Do-while-01.png)
 
-Следва обичайната поредица от примерни задачи, чиито решения ще ни помогнат да разберем по-добре **`do-while`** цикъла.
+The following is the usual series of sample problems, the solution of which will help us better understand the use of the **`do-while`** loop.
 
 
-### Пример: изчисляване на факториел
+### Example: Calculating factorial
 
-За естествено число **n** да се изчисли **n! = 1 \* 2 \* 3 \* … \* n**. Например, ако **n = 5**, то резултатът ще бъде: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
+Calculate **n! = 1 \* 2 \* 3 \* … \* n**, where **n** is a natural number. For example, if **n = 5**, the result will be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
-Ето как по-конкретно можем да пресметнем факториел:
+Here is how we can calculate the factorial:
 
-* Създаваме променливата **`n`**, на която присвояваме целочислена стойност взета от входа на конзолата.
-* Създаваме още една променлива - **`fact`**, чиято начална стойност е 1. Нея ще използваме за изчислението и съхранението на факториела.
-* За условие на цикъла ще използваме **`n > 1`**, тъй като всеки път, когато извършим изчисленията в тялото на цикъла, ще намаляваме стойността на **`n`** с 1.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`fact`**, която е резултат от умножението на текущата стойност на **`fact`** с текущата стойност на **`n`**.
-   * Намаляваме стойността на **`n`** с **-1**.
-* Извън тялото на цикъла отпечатваме крайната стойност на факториела.
+* We create the variable **`n`** to which we assign the **integer** value, obtained from the console input.
+* We create another variable - **`fact`**, the initial value of which is 1. We will use it to calculate and store the factorial.
+* For a loop condition, we will use **`n > 1`**, since each time we perform the calculations in the body of the loop, we will reduce the value of **`n`** by 1.
+* In **the body of the loop**: 
+   * We assign a new value to **`fact`**, which is the result of multiplying the current value of **`fact`** by the current value of **` n` **.
+   * We decrease the value of **`n`** by **-1**.
+* We print the final value of the factorial outside the body of the loop.
 
 ![](assets/chapter-7-1-images/08.Factorial-01.png)
 
@@ -238,19 +238,19 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#7](https://judge.softuni.bg/Contests/Practice/Index/659#7).
 
 
-### Пример: сумиране на цифрите на число
+### Example: Sum of a number's digits
 
-Да се сумират цифрите на цяло **положително** число **n**. Например, ако **n = 5634**, то резултатът ще бъде: 5 + 6 + 3 + 4 = **18**.
+Sum the digits of a **positive** integer **n**. For example, if **n = 5634**, the result will be: 5 + 6 + 3 + 4 = **18**.
 
-Можем да използваме следната идея, за да решим задачата:
+We can use the following idea to solve the problem:
 
-* Създаваме променливата **`n`**, на която присвояваме стойност, равна на въведеното от потребителя число.
-* Създаваме втора променлива - **`sum`**, чиято начална стойност е 0. Нея ще използваме за изчислението и съхранението на резултата.
-* За условие на цикъла ще използваме **`n > 0`**, тъй като след всяко изчисление на резултата в тялото на цикъла, ще премахваме последната цифра от **`n`**.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`sum`**, която е резултат от събирането на текущата стойност на **`sum`** с последната цифра на **`n`**.
-   * Присвояваме нова стойност на **`n`**, която е резултат от премахването на последната цифра от **`n`**.
-* Извън тялото на цикъла отпечатваме крайната стойност на сумата.
+* We create the variable **`n`** to which we assign a value equal to the number entered by the user.
+* We create a second variable - **`sum`**, the initial value of which is 0. We will use it to calculate and store the result.
+* For a loop condition, we will use **`n > 0`**, since we will remove the last digit of ** `n` ** after each calculation of the result in the body of the loop.
+* In the body of the loop:
+   * We assign a new value to **`sum`**, which is the result of the sum of the current value of **`sum`** and the last digit of **`n`**.
+   * We assign a new value to **`n`**, which is the result of removing the last digit of  **`n`**.
+* We print the final value of the sum outside the body of the loop.
 
 ![](assets/chapter-7-1-images/09.Sum-of-digits-01.png)
 
