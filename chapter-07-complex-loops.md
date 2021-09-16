@@ -313,7 +313,7 @@ Here are a few examples of composite numbers:
 <td>We can optimize the algorithm by checking the divisors to <code><strong>√n</strong></code> instead to <code><strong>n-1</strong></code>. Think about the reason why.</td>
 </tr></table>
 
-### Пример: проверка за просто число. Оператор break
+### Example: Prime number verification. The break operator
 
 Да се провери дали едно число **n** е просто. Това ще направим като проверим дали **n** се дели на числата между 2 и √n.
 
