@@ -288,29 +288,29 @@ We already know that the infinite loop executes a certain code to infinity, but 
 <td>The <b><code>break</code></b> operator stops the loop execution at the moment it is called and continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed and, accordingly the rest of the code in the body of the loop will not be executed. </td>
 </tr></table>
 
-### Пример: прости числа
+### Example: Prime numbers
 
-В следващата задача се изисква да направим **проверка за просто число**. Преди да продължим към нея, нека си припомним какво са простите числа.
+The next problem we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
 
-**Определение**: едно цяло число е **просто**, ако се дели без остатък единствено на себе си и на 1. По дефиниция простите числа са положителни и по-големи от 1. Най-малкото просто число е **2**.
+**Definition**: an integer is **prime** if it is divisible without remainder only to itself and to 1. By definition, prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
-Можем да приемем, че цяло число **n** е просто, ако **n > 1** и **n** не се дели на число между **2** и **n-1**.
+We can assume that an integer **n** is prime, if **n > 1** and **n** is not divisible by any of the numbers between **2** and **n-1**.
 
-Първите няколко прости числа са: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
+The first few prime numbers are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
 
-За разлика от тях, **непростите (композитни) числа** са такива числа, чиято композиция е съставена от произведение на прости числа.
+In contrast, **non-prime (composite) numbers** are such numbers that are composed of the product of prime numbers.
 
-Ето няколко примерни непрости числа: 
+Here are a few examples of composite numbers:
 * **10** = 2 * 5
 * **42** = 2 * 3 * 7
 * **143** = 13 * 11
 
-**Алгоритъм за проверка** дали дадено цяло число е **просто**: проверяваме дали **n > 1** и **n** се дели на **2**, **3**, …, **n-1** без остатък.
-* Ако се раздели на някое от числата, значи е **композитно**.
-* Ако не се раздели на никое от числата, значи е **просто**.
+**Verification algorithm** whether an integer is **prime**: we check if **n > 1** and **n** are divisible by **2**, **3**, …, **n-1** without remainder.
+* If it is divisible by any of the numbers, it is **composite**.
+* If it is not divisible by any of the numbers, then it is **prime**.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Можем да оптимизираме алгоритъма, като вместо проверката да е до <code><strong>n-1</strong></code>, да се проверяват делителите до <code><strong>√n</strong></code>. Помислете защо.</td>
+<td>We can optimize the algorithm by checking the divisors to <code><strong>√n</strong></code> instead to <code><strong>n-1</strong></code>. Think about the reason why.</td>
 </tr></table>
 
 ### Пример: проверка за просто число. Оператор break
