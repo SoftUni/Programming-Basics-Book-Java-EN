@@ -255,8 +255,8 @@ We can use the following idea to solve the problem:
 ![](assets/chapter-7-1-images/09.Sum-of-digits-01.png)
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td><code><strong>n % 10</strong></code>: <b>връща</b> последната цифра на числото <code><strong>n</strong></code>.<br>
-<code><strong>n / 10</strong></code>: <b>изтрива</b> последната цифра на <strong><code>n</code></strong>.</td>
+<td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
+<code><strong>n / 10</strong></code>: <b>deletes</b> the last digit of <strong><code>n</code></strong>.</td>
 </tr></table>
 
 #### Testing in the Judge system
@@ -264,11 +264,11 @@ We can use the following idea to solve the problem:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#8](https://judge.softuni.bg/Contests/Practice/Index/659#8).
 
 
-## Безкрайни цикли и операторът break
+## Infinite loops and break operator
 
-До момента се запознахме с различни видове цикли, като научихме какви конструкции имат те и как се прилагат. Следва да разберем какво е **безкраен цикъл**, кога възниква и как можем да **прекъснем** изпълнението му чрез оператора **`break`**.
+So far, we got acquainted with different types of loops and learned about their constructions and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs and how we can **terminate** its execution through the **`break`** operator.
 
-### Безкраен цикъл. Що е то?
+### What is an Infinite loop?
 
 Безкраен цикъл наричаме този цикъл, който **повтаря безкрайно** изпълнението на тялото си. При **`while`** и **`do-while`** циклите проверката за край е условен израз, който **винаги** връща **`true`**. Безкраен **`for`** възниква, когато **липсва условие за край**. 
 
