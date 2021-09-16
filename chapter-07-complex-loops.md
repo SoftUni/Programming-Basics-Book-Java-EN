@@ -270,22 +270,22 @@ So far, we got acquainted with different types of loops and learned about their 
 
 ### What is an Infinite loop?
 
-Безкраен цикъл наричаме този цикъл, който **повтаря безкрайно** изпълнението на тялото си. При **`while`** и **`do-while`** циклите проверката за край е условен израз, който **винаги** връща **`true`**. Безкраен **`for`** възниква, когато **липсва условие за край**. 
+An infinite loop is the one that **repeats infinitely** the execution of its body. An infinite loop is the one that **repeats infinitely** the execution of its body. Тhe end check of the **`while`** and **`do-while`** loops is a conditional expression that **always** returns **`true`**. An infinite **`for`** occurs when there is **no condition to end the loop**. 
 
-Ето как изглежда **безкраен `while`** цикъл:
+Here is what an **infinite `while`** loop looks like:
 
 ![](assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
 
-А така изглежда **безкраен `for`** цикъл:
+And here is what an **infinite `for`** loop looks like:
 
 ![](assets/chapter-7-1-images/00.Infinite-for-loop-01.png)
 
-### Оператор break
+### The break operator
 
-Вече знаем, че безкрайният цикъл изпълнява определен код до безкрайност, но какво става, ако желаем в определен момент при дадено условие, да излезем принудително от цикъла? На помощ идва операторът **`break`**, в превод - **спри, прекъсни**.
+We already know that the infinite loop executes a certain code to infinity, but what if we want to forcibly exit the loop under a given condition at some point? In this situation, the **`break`** operator comes in handy.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Операторът <b><code>break</code></b> спира изпълнението на цикъла към момента, в който е извикан, и продължава от първия ред след края на цикъла. Това означава, че текущата итерация на цикъла няма да бъде завършена до край и съответно останалата част от кода в тялото на цикъла няма да се изпълни.</td>
+<td>The <b><code>break</code></b> operator stops the loop execution at the moment it is called and continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed and, accordingly the rest of the code in the body of the loop will not be executed. </td>
 </tr></table>
 
 ### Пример: прости числа
