@@ -7,7 +7,7 @@
 * [3.2. Simple conditions – exam tasks](chapter-03-simple-conditions-exam-problems.md)
 * [4.1. More complex conditions](chapter-04-complex-conditions.md)
 * [4.2. More complex conditions – exam tasks](chapter-04-complex-conditions-exam-problems.md)
-* [5.1. Loops)](chapter-05-loops.md)
+* [5.1. Loops](chapter-05-loops.md)
 * [5.2. Loops - exam tasks](chapter-05-loops-exam-problems.md)
 * [6.1. Nested loops](chapter-06-nested-loops.md)
 * [6.2. Nested loops – exam tasks](chapter-06-nested-loops-exam-problems.md)
