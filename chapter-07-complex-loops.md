@@ -315,17 +315,17 @@ Here are a few examples of composite numbers:
 
 ### Example: Prime number verification. The break operator
 
-Да се провери дали едно число **n** е просто. Това ще направим като проверим дали **n** се дели на числата между 2 и √n.
+Check if a number **n** is prime. To do so, we will check if **n** is divisible by the numbers between 2 and √n. 
 
-Ето го алгоритъмът за проверка за просто число, разписан постъпково:
+Here is the algorithm for prime number verification, described in steps:
 
-* Създаваме променливата **`n`**, на която присвояваме цяло число въведено от входа на конзолата.
-* Създаваме булева променлива **`isPrime`** с начална стойност **`true`**, **ако числото е по-голямо или равно на две** (защото по дефиниция числа като 0, 1, -1 и -2 не са прости). Приемаме, че едно число е просто до доказване на противното.
-* Създаваме **`for`** цикъл, на който като начална стойност за променливата на цикъла задаваме 2, за условие **текущата ѝ стойност `<= √n`**. Стъпката на цикъла е 1.
-* В **тялото на цикъла** проверяваме дали **`n`**, разделено на **текущата стойност** има остатък. Ако от делението **няма остатък**, то променяме **`isPrime`** на **`false`** и излизаме принудително от цикъла чрез оператор **`break`**.
-* В зависимост от стойността на **`isPrime`** отпечатваме дали числото е просто (**`true`**) или съответно съставно (**`false`**).
+* We create the variable **`n`** to which we assign the **integer** value, obtained from the console input.
+* We create a boolean variable - **`isPrime`** with an initial value **`true`** **if the number is equal or greater than two** (since by definition numbers such as 0, 1, -1 and -2 and non-prime).  We assume that a number is prime until proven otherwise.
+* We create a **`for`** loop, we assign 2 as an initial value of the loop variable and **its current value `<= √n`** as a condition. The step of the loop is 1.
+* In **the body of the loop** we check if **`n`** divided by **the current value** has a remainder. If there is no remainder, we change the value of **`isPrime`** to **`false`** and forcibly terminate the loop with a **`break`** operator.
+* Depending on the **`isPrime`** value, we print whether the number is prime (**`true`**) or composite (**`false`**).
 
-Ето и примерна имплементация на описания алгоритъм:
+Here is a sample implementation of the described algorithm:
 
 ![](assets/chapter-7-1-images/10.Prime-numbers-01.png)
 
@@ -334,25 +334,25 @@ Here are a few examples of composite numbers:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#9](https://judge.softuni.bg/Contests/Practice/Index/659#9).
 
 
-### Пример: оператор break в безкраен цикъл
+### Example: Break operator in an infinite loop
 
-Да се напише програма, която проверява дали едно число **n** е четно, и ако е - да се отпечатва на екрана. За четно считаме число, което се дели на 2 без остатък. При невалидно число да се връща към повторно въвеждане и да се изписва съобщение, което известява, че въведеното число не е четно.
+Write a program that checks if a number **n** is even – if it is, print in on the screen. An even number is each number that is divisible by 2 without a remainder. In the case of an invalid number, it should be re-input and a message stating that the number is not even should be displayed. 
 
-Ето една идея как можем да решим задачата:
+Here is an idea how to solve the problem:
 
-* Създаваме променлива **`n`**, на която присвояваме начална стойност **0**.
-* Създаваме безкраен **`while`** цикъл, като за условие ще зададем **`true`**.
-* В **тялото на цикъла**:
-   * Вземаме целочислена стойност от входа на конзолата и я присвояваме на **`n`**.
-   * Ако **числото е четно**, излизаме от цикъла чрез **`break`**. 
-   * В **противен случай** извеждаме съобщение, което гласи, че **числото не е четно**. Итерациите продължават, докато не се въведе четно число.
-* Отпечатваме четното число на екрана.
+* We create a variable **`n`**, wo which we assign an initial value of **0**.
+* We create an infinite **`while`** loop and we put **`true`** as a condition.
+* In **the body of the loop**:
+   * We take the intiger obtained by the console input and assign it to **`n`**.
+   * If **the number is even**, we exit the loop with a **`break`**. 
+   * **Otherwise**, we display a message stating that **the number is not eveb**. The iterations continue until an even number is entered.
+* We print the even number on the screen.
 
-Ето и примерна имплементация на идеята:
+Here is a sample implementation of the idea:
 
 ![](assets/chapter-7-1-images/11.Enter-even-number-01.png)
 
-Забележка: макар кодът по-горе да е коректен, той няма да работи, ако вместо числа потребителят въведе текст, например “**Invalid number**”. Тогава парсването на текста към число ще се счупи и програмата ще покаже **съобщение за грешка (изключение)**. Как да се справим с този проблем и как да прихващаме и обработваме изключения чрез **`try-catch` конструкцията** ще научим след малко.
+Note: although the code above is correct, it will not work if the user enters text instead of numbers, for example "** Invalid number **". Then the parsing of the text to a number will break and the program will display **error message (exception)**. We will learn in a while how to deal with this problem and how to catch and handle exceptions using the **`try-catch` construct**.
 
 #### Testing in the Judge system
 
