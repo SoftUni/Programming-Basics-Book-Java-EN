@@ -359,19 +359,19 @@ Note: although the code above is correct, it will not work if the user enters te
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#10](https://judge.softuni.bg/Contests/Practice/Index/659#10).
 
 
-## Вложени цикли и операторът break
+## Nested loops and the break operator
 
-След като вече научихме какво са **вложените цикли** и как работи операторът **`break`**, е време да разберем как работят двете заедно. За по-добро разбиране, нека стъпка по стъпка да напишем **програма**, която трябва да направи всички възможни комбинации от **двойки числа**. Първото число от комбинацията е нарастващо от 1 до 3, а второто е намаляващо от 3 до 1. Задачата трябва да продължи изпълнението си, докато **`i + j`** **не** е равно на 2 (т.е. **`i = 1`** и **`j = 1`**).
+Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3 and the second one is decreasing from 3 to 1. The problem must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
 
-Желаният резултат е:
+The desired result is:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png)
 
-Ето едно **грешно решение**, което изглежда правилно на пръв поглед:
+Here is one **wrong solution**, which seems correct at first glance:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.png)
 
-Ако оставим програмата ни по този начин, резултатът ни ще е следният:
+If we leave our program this way, the result will be the following:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png)
 
