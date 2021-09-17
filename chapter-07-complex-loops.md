@@ -375,17 +375,17 @@ If we leave our program this way, the result will be the following:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png)
 
-Защо се получава така? Както виждаме, в резултата **липсва "1 1"**. Когато програмата стига до там, че **`i = 1`** и **`j = 1`**, тя влиза в **`if`** проверката и изпълнява **`break`** операцията. По този начин се **излиза от вътрешния цикъл**, но след това продължава изпълнението на външния. **`i`** нараства, програмата влиза във вътрешния цикъл и принтира резултата.
+Why does this happen? As we can see, the result ** is missing '1 1' **. When the program reaches the point that ** `i 1` ** and **` j 1` **, it enters the ** `if` ** check and performs the **` break` ** operation. Thus, we **exit the inner loop**, but then the execution of the outer loop continues. **'i'** increases, the program enters the inner loop and prints the result.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Когато във <b>вложен цикъл</b> използваме оператора <b><code>break</code></b>, той прекъсва изпълнението <b>само</b> на вътрешния цикъл.</td>
+<td>When we use the <b><code>break</code></b> operator in a <b>nested loop</b>, it interrupts the execution of the inner loop <b>only</b>.</td>
 </tr></table>
 
-Какво е **правилното решение**? Един начин за решаването на този проблем е чрез деклариране на **`bool` променлива**, която следи за това, дали трябва да продължава въртенето на цикъла. При нужда от изход (излизане от всички вложени цикли), се прави **`true`** променливата и се излиза от вътрешния цикъл с **`break`**, а при последваща проверка се напуска и външния цикъл. Ето и примерна имплементация на тази идея:
+What is **the correct solution**? One way of solving this problem is by declaring a **`bool` variable**, which keeps track if the loop should continue. In case of need of exit (from all nested loops), the **'true'** variable is made and exits the internal cycle with a **'break'** and the outer loop is left upon subsequent verification. Here is a sample implementation of this idea:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
-По този начин, когато **`i + j = 2`**, програмата ще направи променливата **`hasToEnd = true`** и ще излезе от вътрешния цикъл. При следващото завъртане на външния цикъл, чрез **`if`** проверката, програмата няма да може да стигне до вътрешния цикъл и ще прекъсне изпълнението си.
+Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and exit the inner loop. Upon the next rotation of the outer loop due to the **`if`** check, the program will not be able to reach the inner loop and will interrupt its execution. 
 
 ### Testing in the Judge system
 
