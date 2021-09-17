@@ -392,13 +392,13 @@ Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and e
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#11](https://judge.softuni.bg/Contests/Practice/Index/659#11).
 
 
-## Справяне с грешни данни: try-catch
+## Error handling: try-catch
 
-Последното, с което ще се запознаем в тази глава, е как да "улавяме" **грешни данни** чрез конструкцията **`try-catch`**.
+The last thing we will get familiar with in this chapter is how to "catch" **errors** with the **`try-catch`** construction.
 
-### Какво е try-catch?
+### What is try-catch?
 
-Програмната конструкция **`try-catch`** служи за **прихващане и обработка на изключения (грешки)** по време на изпълнението на програмата.
+The **`try-catch`** program construction is used to **intercept and handle exceptions (errors)** during the program execution.
 
 В програмирането **изключенията** представляват уведомление за дадено събитие, което нарушава нормалната работа на една програма. Такива изключителни събития **прекъсват изпълнението** на програмата ни и тя търси кой да обработи настъпилата ситуация. Ако не намери, изключението се отпечатва на конзолата (програмата “гърми”). Ако намери, **изключението се обработва** и програмата продължава нормалното си изпълнение без да “гърми”. След малко ще видим как точно става това.
 
