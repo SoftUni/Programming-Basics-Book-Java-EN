@@ -551,9 +551,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#15](https://judge.softuni.bg/Contests/Practice/Index/659#15).
 
 
-## Какво научихме от тази глава?
+## What did we learn in this chapter?
 
-Можем да използваме **`for`** цикли със **стъпка**:
+We can use the **`for`** loops with a **step**:
 
 ```java
 for (int i = 1; i <= n; i+=3) {
@@ -561,7 +561,7 @@ for (int i = 1; i <= n; i+=3) {
 }
 ```
 
-Циклите **`while`** / **`do-while`** се повтарят докато е в сила дадено **условие**:
+The **`while`** / **`do-while`** loops are repeated as long as a given **condition** is true:
 
 ```java
 int num = 1;
@@ -570,7 +570,7 @@ while (num <= n) {
 }
 ```
 
-Ако се наложи да **прекъснем** изпълнението на цикъл, го правим с оператора **`break`**:
+If we need to **interrupt** the loop execution, we use the **`break`** operator:
 
 ```java
 int n = 0;
@@ -584,7 +584,7 @@ while (true) {
 System.out.println("Even number entered: {0}", n);
 ```
 
-Вече знаем как да прихващаме **грешки** по време на изпълнението на програмата ни:
+We already know how to catch **errors** during the execution of our program:
 
 ```java
 try {
@@ -593,5 +593,5 @@ try {
 } catch (Exception ex) {
     System.out.println("Invalid number.");
 }
-// Ако Integer.parseInt(…) гръмне, ще се изпълни catch { … } блокът
+// If Integer.parseInt(…) fails, the catch { … } block will be executed
 ```
