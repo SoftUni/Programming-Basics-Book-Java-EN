@@ -487,32 +487,32 @@ Sample implementation:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#13](https://judge.softuni.bg/Contests/Practice/Index/659#13).
 
 
-### Задача: пирамида от числа
+### Problem: Numbers pyramid
 
-Да се отпечатат **числата 1 … n в пирамида** като в примерите по долу. На първия ред печатаме едно число, на втория ред печатаме две числа, на третия ред печатаме три числа и т.н. докато числата свършат. На последния ред печатаме толкова числа, колкото останат докато стигнем до **n**.
+Print **the numbers 1… n in a pyramid** as in the examples below. On the first line we print one number, on the second line we print two numbers, on the third line we print three numbers, etc. until the numbers run out. On the last line we print as many numbers as we have left until we get to **n**.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-|Вход |Изход                 |Вход |Изход          |Вход      |Изход                         |
+|Input |Output                 |Input |Output          |Input      |Output                         |
 |-----|----------------------|-----|---------------|----------|------------------------------|
 |7    |1<br>2 3<br>4 5 6<br>7|5    |1<br>2 3<br>4 5|10        |1<br>2 3<br>4 5 6<br>7 8 9 10 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Можем да решим задачата с **два вложени цикъла** (по редове и колони) с печатане в тях и излизане при достигане на последното число. Ето идеята, разписана по-подробно:
+We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, described in more details:
 
-* Създаваме променлива **`n`**, на която присвояваме целочислена стойност от входа на конзолата.
-* Създаваме променлива **`num`** с начална стойност 1. Тя ще пази броя на отпечатаните числа. При всяка итерация ще я **увеличаваме** с **1** и ще я принтираме.
-* Създаваме **външен** **`for`** цикъл, който ще отговаря за **редовете** в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална стойност 0. За условие слагаме **`row < n`**. Размерът на стъпката е 1.
-* В тялото на цикъла създаваме **вътрешен** **`for`** цикъл, който ще отговаря за **колоните** в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална стойност 0. За условие слагаме **`col < row`** (**`row`** = брой цифри на ред). Размерът на стъпката е 1.
-* В тялото на вложения цикъл:
-   * Проверяваме дали **`col > 1`**, ако да – принтираме разстояние. Ако не направим тази проверка, а директно принтираме разстоянието, ще имаме ненужно такова в началото на всеки ред.
-   * **Отпечатваме** числото **`num`** в текущата клетка на таблицата и го **увеличаваме с 1**.
-   * Правим проверка за **`num > n`**. Ако **`num`** е по-голямо от **`n`**, **прекъсваме** въртенето на **вътрешния цикъл**.
-* Отпечатваме **празен ред**, за да преминем на следващия.
-* Отново проверяваме дали **`num > n`**. Ако е по-голямо, **прекъсваме** изпълнението на **програмата ни** чрез **`break`**.
+* We create a **`n`** variable to which we assign the integer value, obtained from the console input.
+* We create a **`num`** variable with an initial value 1. It will keep the number of printed numbers.  At each iteration we will **increase** it by **1** and print it.
+* We create an **outer** **`for`** loop, which will be responsible for the **rows** in the table. We name the loop variable as **`row`** and we assign an initial value 0 to it. We set **`row < n`** as a condition. The size of the step is 1.
+* In the body of the loop we create an **inner** **`for`** loop, which will be responsible for the **columns** in the table. We name the loop variable as **`col`** and we assign an initial value 0 to it. We set **`col < row`** (**`row`** = number of digits per line) as a condition. The size of the step is 1.
+* In the body of the loop:
+   * We check if **`col > 1`**, if yes – we print space. If we don't perform this check and directly print space, we will have an unnecessary one at the beginning of each line.
+   * We **print** the number **`num`** in the current cell of the table and **increase it with 1**.
+   * We perform a check for **`num > n`**. If **`num`** is greater than **`n`**, we **break** the rotation of the **inner loop**.
+* We print a **blank line** to proceed to the next one.
+* We check again if **`num > n`**. If it's greater, we **interrupt** the execution of our **program** with a **`break`**.
 
-Ето и примерна имплементация:
+Here is a sample implementation:
 
 ![](assets/chapter-7-1-images/14.Number-pyramid-01.png)
 
@@ -521,28 +521,28 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#14](https://judge.softuni.bg/Contests/Practice/Index/659#14).
 
 
-### Задача: таблица с числа
+### Problem: Numbers table
 
-Да се отпечатат числата 1 … n в таблица като в примерите по-долу.
+Print the numbers 1 … n in a table as per the examples below.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-|Вход |Изход|Вход|Изход|
+|Input |Output|Input|Output|
 |--------|-----|-------|-----|
 |3|1 2 3<br>2 3 2<br>3 2 1|4|1 2 3 4<br>2 3 4 3<br>3 4 3 2<br>4 3 2 1|
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Можем да решим задачата с **два вложени цикъла** и малко изчисления в тях:
+We can solve the problem with **two nested loops** and a little bit of calculations inside:
 
-* Четем от конзолата размера на таблицата в целочислена променлива **`n`**.
-* Създаваме **`for`** цикъл, който ще отговаря за редовете в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална **стойност 0**. За условие слагаме **`row < n`**. Размерът на стъпката е 1.
-* В **тялото на цикъла** създаваме вложен **`for`** цикъл, който ще отговаря за колоните в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална **стойност 0**. За условие слагаме **`col < n`**. Размерът на стъпката е 1.
-* В **тялото на вложения цикъл**:
-   * Създаваме променлива **`num`**, на която присвояваме резултата от **текущият ред + текущата колона + 1** (+1, тъй като започваме броенето от 0).
-   * Правим проверка за **`num > n`**. Ако **`num`** е **по-голямо** от n, присвояваме нова стойност на **`num`** равна на **два пъти n - текущата стойност за `num`**. Това правим с цел да не превишаваме **`n`** в никоя от клетките на таблицата.
-    * Отпечатваме числото от текущата клетка на таблицата.
-* Отпечатваме **празен ред** във външния цикъл, за да преминем на следващия ред.
+* We read from the console the table size in an integer variable **`n`**.
+* We create a **`for`** loop, which will be responsible for the table rows. We name the loop variable as **`row`** and assign an initial **value 0** to it. We set **`row < n`** as a condition. The size of the step is 1.
+* In **the body of the loop** we create a nested **`for`** loop, which will be responsible for the table columns. We name the loop variable as **`col`** and assign an initial **value 0** to it. We set **`col < n`** as a condition. The size of the step is 1.
+* In **the body of the nested loop**:
+   * We create a **`num`** variable, to which we assign the result of **current row + current column + 1** (+1, since we start counting from 0).
+   * We perform a check if **`num > n`**. If **`num`** is **greater** than n, we assign a new value of **two times n - current value of `num`** to **`num`**. We do this in order to not exceed **`n`** in any of the table cells.
+    * We print the number from the current table cell.
+* We print a **blank line** in the outer loop to proceed to the next one.
 
 ![](assets/chapter-7-1-images/15.Number-table-01.png)
 
