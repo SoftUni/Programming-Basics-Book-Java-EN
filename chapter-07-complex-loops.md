@@ -437,15 +437,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits) or texts that do not contain numbers.
 
 
-## Задачи с цикли
+## Problems with loops
 
-В тази глава се запознахме с няколко нови вида цикли, с които могат да се правят повторения с по-сложна програмна логика. Да решим няколко задачи, използвайки новите знания.
+In this chapter we have introduced several new types of loops that can be used to make repetitions with more complex program logic. Let's solve several problems using the new knowledge.
 
-### Задача: числа на Фибоначи
+### Problem: Fibonacci numbers
 
-Числата на Фибоначи в математиката образуват редица, която изглежда по следния начин: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**
+In mathematics, Fibonacci numbers form a series that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**
 
-**Формулата** за образуване на редицата е:
+**The formula** to form the sequence is:
 
 ```java
 F0 = 1
@@ -453,9 +453,9 @@ F1 = 1
 Fn = Fn-1 + Fn-2
 ```
 
-#### Примерен вход и изход
+#### Sample input and output
 
-|Вход (n)|Изход|Коментар|
+|Input (n)|Output|Comment|
 |----|-----|---------|
 |10|89|F(11) = F(9) + F(8)|
 |5|8|F(5) = F(4) + F(3)|
@@ -463,22 +463,22 @@ Fn = Fn-1 + Fn-2
 |0|1| |
 |1|1| |
 
-Да се въведе **цяло** число **n** и да се пресметне **n-тото число на Фибоначи**.
+Enter an **integer** number **n** and calculate the **n-number of Fibonacci**.
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Идея за решаване на задачата:
+An idea to solve the problem:
 
-* Създаваме **променлива `n`**, на която присвояваме целочислена стойност от входа на конзолата.
-* Създаваме променливите **`f0`** и **`f1`**, на които присвояваме стойност **1**, тъй като така започва редицата.
-* Създаваме **`for`** цикъл с условие **текущата стойност `i < n - 1`**.
-* В **тялото на цикъла:**
-   * Създаваме **временна** променлива **`fNext`**, на която присвояваме следващото число в поредицата на Фибоначи.
-   * На **`f0`** присвояваме текущата стойност на **`f1`**.
-   * На **`f1`** присвояваме стойността на временната променлива **`fNext`**.
-* Извън цикъла отпечатваме числото n-тото число на Фибоначи.
+* We create a **`n` variable** to which we assign the **integer** value, obtained from the console input.
+* We create **`f0`** и **`f1`** variables to which we assign value **1**, since this is how the sequence begins.
+* We create a **`for`** loop with a condition **current value `i < n - 1`**.
+* In the **body of the loop:**
+   * We create a **temporary** variable **`fNext`** to which we assign the next number of Fibonacci sequence.
+   * We assign the current value of **`f1`** to **`f0`**.
+   * We assign the value of the temporary variable **`fNext`** to **`f1`**.
+* We print the n-number of Fibonacci outside the loop.
 
-Примерна имплементация:
+Sample implementation:
 
 ![](assets/chapter-7-1-images/13.Fibonacci-01.png)
 
