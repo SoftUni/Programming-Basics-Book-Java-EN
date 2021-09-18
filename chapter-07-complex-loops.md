@@ -400,33 +400,33 @@ The last thing we will get familiar with in this chapter is how to "catch" **err
 
 The **`try-catch`** program construction is used to **intercept and handle exceptions (errors)** during the program execution.
 
-В програмирането **изключенията** представляват уведомление за дадено събитие, което нарушава нормалната работа на една програма. Такива изключителни събития **прекъсват изпълнението** на програмата ни и тя търси кой да обработи настъпилата ситуация. Ако не намери, изключението се отпечатва на конзолата (програмата “гърми”). Ако намери, **изключението се обработва** и програмата продължава нормалното си изпълнение без да “гърми”. След малко ще видим как точно става това.
+In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such exceptional events **interrupt the execution** of our program and it is looking for something to handle the situation. If it does not find it, the exception is printed on the console (the program "fails"). If it finds, **the exception is processed** and the program continues its normal execution without "failing". In a bit, we will see exactly how this happens.
 
-Когато настъпи изключение, се казва, че изключението е било **"хвърлено" (throw exception)**. От там идва и изразът **"улавям изключение" (catch exception)**.
+When an exception occurs, the exception is said to have been **”thrown” (throw exception)**. Hence the expression **”catch exception”**
 
-### Конструкция на try-catch
+### The try-catch construction
 
-Конструкцията **`try-catch`** има различни варианти, но за сега ще се запознаем само с най-основния от тях, при който **`catch`** блокът ще прихване всяка грешка в променлива с име **`ex`**: 
+The **`try-catch`** construction has different types, but for now we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex `**
 
  ![](assets/chapter-7-1-images/00.Try-catch-01.png)
  
-В следващата задача ще видим нагледно, как да се справим в ситуация, в която потребителят въвежда вход, различен от число (например **`string`** вместо **`int`**), чрез **`try-catch`**.
+In the next task we will see how to handle a situation in which the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
 
-### Пример: справяне с грешни числа чрез try-catch
+### Example: Handling invalid numbers with try-catch
 
-Да се напише програма, която проверява дали едно число **n** е четно и ако е, да се отпечатва на екрана. При **невалидно въведено** число да се изписва съобщение, че въведения вход не е валидно число и въвеждането да продължи отново.
+Write a program that checks if a number **n** is even – if it is, print in on the screen. Upon entering an **invalid number**, a message should be displayed that the entered input is not a valid number and another input should be made.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-* Създаваме безкраен **`while`** цикъл, като за условие ще зададем **`true`**.
-* В тялото на цикъла:
-	* Създаваме **`try-catch`** конструкция.
-	* В **`try`** блока пишем програмната логика за четене на потребителския вход, парсването му до число и проверката за четност.
-	* При **четно число** го отпечатваме и излизаме от цикъла (с **`break`**). Програмата си е свършила работата и приключва.
-	* При **нечетно число** отпечатваме съобщение, че се изисква четно число, без да излизаме от цикъла (защото искаме той да се повтори отново).
-	* Ако **хванем изключение** при изпълнението на **`try`** блока, изписваме съобщение за невалидно въведено число (и цикълът съответно се повтаря, защото не излизаме изрично от него).
+* We create an infinite **`while`** loop, for which we set a condition **`true`**.
+* In the body of the loop:
+	* We create a **`try-catch`** construction.
+	* In the **`try`** block we write the programming logic for reading the user input, parsing it to a number, and the check for even number.
+	* If **the number is even**, we print it and exit the loop (with **`break`**). The program is done and it ends.
+	* If **the number is odd**, we print a message that an even number is required, without exiting the loop (since we want it to be repeated again).
+	* If we **catch an exception** upon executing the **`try`** block, we write a message for an invalid input number (and the loop is repeated because we do not explicitly exit it).
 
-Ето и примерна имплементация на описаната идея:
+Here is a sample implementation of the described idea:
 
 ![](assets/chapter-7-1-images/12.Valid-even-number-01.png)
 
@@ -434,7 +434,7 @@ The **`try-catch`** program construction is used to **intercept and handle excep
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#12](https://judge.softuni.bg/Contests/Practice/Index/659#12).
 
-Сега вече решението трябва да работи винаги: независимо дали въвеждаме цели числа, невалидни числа (например твърде много цифри) или текстове, които не съдържат числа.
+Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits) or texts that do not contain numbers.
 
 
 ## Задачи с цикли
