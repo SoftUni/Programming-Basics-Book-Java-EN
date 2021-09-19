@@ -1,4 +1,4 @@
-# Chapter 5.1. Repetitons (Loops)
+# Chapter 5.1. Repetitions (Loops)
 
 In the present chapter we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its symplest form. Finally, we will solve some practical problems that require repeating series of actions, using loops.
 
