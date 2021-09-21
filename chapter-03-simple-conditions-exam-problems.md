@@ -158,78 +158,81 @@ However, if the check returns **`false`** it means that the amount of water is *
 
 You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#1](https://judge.softuni.bg/Contests/Practice/Index/652#1).
 
-## Задача: поспаливата котка Том
+## Task: the sleepy cat Tom
 
-**Котката Том** обича по цял ден да спи, за негово съжаление стопанинът му си играе с него винаги когато има свободно време. За да се наспи добре, **нормата за игра** на Том е **30 000 минути в година**. Времето за игра на Том **зависи от почивните дни на стопанина му**:
-* Когато е на **работа**, стопанинът му си играе с него **по 63 минути на ден**.
-* Когато **почива**, стопанинът му си играе с него **по 127 минути на ден**.
+**The cat Tom** enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. In order to have a good sleeping routine Tom's **norm for playtime** is **30 000 minutes per year***. Tom's playtime **is dependant on his owner's non-working days**:
+* When Tom's owener is at **work**, Tom's playtime is **63 minutes a day**.
+* When Tom's owener has a **day off**, Tom's playtime is **127 minutes a day**.
 
-Напишете програма, която въвежда **броя почивни дни** и отпечатва дали **Том може да се наспи добре** и колко е **разликата от нормата** за текущата година, като приемем че **годината има 365 дни**.
-   
-**Пример**: 20 почивни дни → работните дни са 345 (365 – 20 = 345). Реалното време за игра е 24 275 минути (345 \* 63 + 20 \* 127).  Разликата от нормата е 5 725 минути (30 000 – 24 275 = 5 725) или 95 часа и 25 минути.
+Your task is to write a program takes as input Tom's owner **number of days off** and prints out whether **Tom has a satisfactory sleeping routine** and how much is **the difference from Tom's norm for playtime** for the current year, assuming that **the year has 365 days**.
 
-### Входни данни
+**Example**: 20 days off → 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ * 63 + 20 \ * 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.
 
-Входът се чете от конзолата и се състои от едно цяло число - **броят почивни дни** в интервала [**0 … 365**].
+### Input data
 
-### Изходни данни
+The input data is read from the console and consists of an integer - **Tom's owner number of days off**, number in the range [**0 … 365**].
 
-На конзолата трябва да се отпечатат **два реда**.
-* Ако времето за игра на Том **е над нормата** за текущата година:
-  * **На първия ред** отпечатайте: **"Tom will run away"**.
-  * **На втория ред** отпечатайте разликата от нормата във формат:  
-   **"{H} hours and {M} minutes more for play"**.
-* Ако времето за игра на Том **е под нормата** за текущата година:
-  * **На първия ред** отпечатайте: **"Tom sleeps well"**.
-  * **На втория ред** отпечатайте разликата от нормата във формат:  
-   **"{H} hours and {M} minutes less for play"**.
+### Output data
 
-### Примерен вход и изход
+**Two lines** are to be printed on the console.
+* If Tom's **playing time** is above the norm for the current year:
+   * **On the first line** print: **"Tom will run away"**.
+   * **On the second line** print the difference from the norm in the format:
+    **"{H} hours and {M} minutes more for play"**.
+* If Tom's **playing time** is below the norm for the current year:
+   * **On the first line** print: **"Tom sleeps well"**.
+   * **On the second line** print the difference from the norm in the format:
+    **"{H} hours and {M} minutes less for play"**.
 
-|Вход|Изход|Вход|Изход|
+### Sample input and output
+
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |20|Tom sleeps well<br>95 hours and 25 minutes less for play|113|Tom will run away<br>3 hours and 47 minutes for play|
 
-### Насоки и подсказки
+### Guidelines and tips
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+To solve the task we'll read from the standart input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Обработка на входните данни и прилежащи изчисления
+#### Input data processing and relevant calculations
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от **един ред**, който ще съдържа в себе си **едно цяло число** в интервала [**0 … 365**]. По тази причина ще използваме променлива от тип **`int`**. 
+The **input data** will be read in a **single line** that will contain a **whole number** in the range [**0 … 365**]. That's why the variable that'll store the value is going to be of type **`int`**.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
-За да решим задачата, **първо** трябва да изчислим колко **общо минути** стопанинът на Том си играе с него. От условието виждаме, че освен в **почивните дни**, поспаливата котка трябва да си играе и в **работнитe** за стопанина му. **Числото**, което прочитаме от конзолата, е това на **почивните дни**. 
+Our **first** step is to to calculate how many **minutes in total** has Tom and his master played together. The task states that not only has the sleepy cat played in **off of work days** but also in **working days**. **The number** that we read from the console is the number of **non-working days**.
 
-Следващата ни стъпка е с помощта на това число да **изчислим** колко са **работните дни** на стопанина, тъй като без тях не можем да стигнем до **общото количество минути за игра**. Щом общият брой на дните в годината е ***365***, а броят на почивните дни е **Х**, то това означава, че броят на работните дни е **365 - X**. **Разликата** ще запазим в нова променлива (**`workingDays`**), която ще използваме **само** за тази **стойност**.
+Our next step is to use that number to **calculate** how many are the **working days** of Tom's owner. We need this number because without it we can not get the **total number of playtime minutes**. The total number of days in a year is **365**, the number of off of work days is **X**, it means that the number of working days is **365 - X**. **We will store the difference** in a new variable (**`workingDays`**), which we will use **only** for this **value**.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png)
 
-След като вече имаме **количествата дни за игра**, то вече можем да **изчислим времето за игра** на Том в минути. Неговата **стойност е равна** на **резултата от умножението на работните дни по 63** минути (в условието е зададено, че в работни дни, времето за игра е 63 минути на ден) **събран с резултата от умножението на почивните дни по 127** минути (в условието е зададено, че в почивните дни, времето за игра е 127 минути на ден).
+Now that we have **the number of days to play**, we can now **calculate Tom's playing time** in minutes. Its **value is equal to** the **result of the multiplication of the working days by 63** minutes (in the task it's specified that on working days the playing time is 63 minutes per day) **added to the result of the multiplication of off of work days and 127** minutes (in the task it's specified that on off of work days the playing time is 127 minutes per day).
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
-В условието на задачата за изхода виждаме, че ще трябва да **разпечатаме разликата** между двете стойности в **часове** и **минути**. За тази цел от **общото** време за игра ще **извадим** нормата от **30 000** минути и получената разлика ще **запишем** в **нова** променлива. След това тази променлива ще **разделим целочислено** на 60, за да получим **часовете**, а след това, за да открием колко са **минутите** ще използваме **модулно деление с оператора `%`**, като отново ще разделим променливата на разликата с 60. 
+We need to **print the difference** between **hours** and **minutes**. That's why we'll subtract from the **total** playing time Tom's playtime norm of **30 000** minutes and we'll **store** the result in **new** variable. After that we'll use that new variable to **divide without reminder** to 60 and that's how we'll get the **hours**. To get the number of **minutes** we'll utilize the **modulo operator `%`** and get the reminder of division by 60.
 
-Тук трябва да отбележим, че ако полученото количество **време игра** на Том е **по-малко** от **30 000**, при **изваждането** на нормата от него ще получим **число с отрицателен знак**. За да **неутрализираме** знака в двете деления по-късно, ще използваме **метода `Math.abs(…)`** при намирането на разликата.
+In the condition of the output problem we see that we will have to ** print the difference ** between the two values in ** hours ** and ** minutes **. For this purpose, from the ** total ** playing time we will ** subtract ** the norm of ** 30,000 ** minutes and we will ** save ** the obtained difference in ** new ** variable. Then we will ** divide this variable ** integer ** by 60 to get ** the hours **, and then to find out how many ** minutes ** we will use ** modular division with the operator `%` ** , again dividing the variable of the difference by 60.
+
+Note that if Tom's resulting **playtime** is **less** than **30 000** when we **subtract** the norm we'll get **negative number**. We can **fix** that with the **method `Math.abs(…)`** when subtracting.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
-#### Извършване на проверки
+#### Conditional expressions verification
 
-Времето за игра вече е изчислено, което ни води до **следващата** стъпка - **сравняване** на **времето за игра** на Том с **нормата**, от която зависи дали котката може да се наспива добре. За целта ще използваме **`if-else`** проверка, като в **`if` клаузата** ще проверим дали **времето за игра е по-голямо от 30 000** (нормата). 
+The playing time is already calculated which leads us to **the next** step - Tom's **playtime** and Tom's **norm** **comparison**. We'll use **`if-else`** conditional statement. It'll verify in its **`if` clause** whether **the playtime is larger than 30 000 (norm)**.
 
-#### Обработка на изходните данни
+#### Output data processing
 
 Какъвто и **резултат** да ни върне проверката, то трябва да разпечатаме колко е **разликата в часове и минути**. Това ще направим с **форматен спецификатор** и променливите, в които изчислихме стойностите на часовете и минутите. От дадените примери за изход виждаме, че часовете и минутите са форматирани като цяло число, закръглено до по-ниската стойност. Това ни подсказва, че трябва да използваме метода **`Math.floor(…)`**, когато разпечатваме резултата.
 
+Depending on **the result** of the evaluation of the boolean expression our objective is to print the **difference in hours and minutes**. We'll do that using the **formatting specifier** and the previously computed hour and minutes values. The given output examples show that the printed values are formatted as a rounded down whole number. This is a cue that we should be using **`Math.floor(…)`** when we're printing the result.
+
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
-### Тестване в Judge системата
+### Test your code in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/652#2](https://judge.softuni.bg/Contests/Practice/Index/652#2).
-
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#2](https://judge.softuni.bg/Contests/Practice/Index/652#2).
 
 ## Задача: реколта
 
