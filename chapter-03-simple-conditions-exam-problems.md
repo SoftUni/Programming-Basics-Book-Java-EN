@@ -1,26 +1,24 @@
-# Глава 3.2. Прости проверки – изпитни задачи
+# Chapter 3.2. Simple Conditions – Exam tasks
 
-В предходната глава разгледахме условните конструкции в езика Java, чрез които можем да изпълняваме различни действия в зависимост от някакво условие. Споменахме още какъв е обхва6тът на една променлива (нейният **`scope`**), както и как постъпково да проследяваме изпълнението на нашата програма (т.нар. **дебъгване**). В настоящата глава ще упражним работата с логически проверки, като разгледаме някои задачи, давани на изпити. За целта нека първо си припомним конструкцията на логическата проверка:
+In the previous chapter, we looked at conditional constructions in the Java language, used to perform various actions depending on a condition. We also mentioned the scope of a variable, as well as how to follow line by line the execution of our program (the so-called **debugging**). In this chapter we will practice working with conditional statements, and we'll be looking at some tasks given in actual exams. Let's first retrieve some of the newly acquired knowledge on how the conditional statement is constructed:
 
 ```java
-if (булев израз) {
-    // тяло на условната конструкция;
+if (boolean expression) {
+    // body of the conditional block;
 } else {
-    // тяло на else-конструкция;
+    // body of else-block;
 }
 ```
 
-**`if` проверките** се състоят от:
- * **`if` клауза**
- * булев израз - променлива от булев тип (**`boolean`**) или булев логически израз (израз, който връща резултат **`true/false`**)
- * тяло на конструкцията - съдържа произволен блок със сорс код
- * **`else` клауза** и нейният блок със сорс код (**незадължително**)
-
+**`if` statements** consist of:
+  * **`if` clause**
+  * boolean expression - a variable of boolean type (**`boolean`**) or boolean logical expression (expression that returns a result **`true / false`**)
+  * body - contains any block with source code
+  * **`else` clause** and its source code block (**optional**)
  
-## Изпитни задачи
+## Exam tasks
 
-След като си припомнихме как се пишат условни конструкции, да решим няколко задачи, за да получим практически опит с **`if-else`** конструкцията.
-
+After recalling how to write conditional statements, let's solve a few problems to get practical experience with the ** `if-else` ** statement.
 
 ## Задача: цена за транспорт
 
