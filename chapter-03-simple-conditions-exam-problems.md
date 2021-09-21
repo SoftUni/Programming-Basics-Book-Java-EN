@@ -20,7 +20,7 @@ if (boolean expression) {
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the ** `if-else` ** statement.
 
-## Task: transport price
+## Task: transportation price
 
 A student must travel **n kilometers**. He has a choice between **three modes of transport**:
 * **Taxi**. Starting fee: **0.70** BGN. Daily rate: **0.79** BGN/km. Nightly rate: **0.90** BGN/km.
@@ -65,7 +65,7 @@ Before we begin with the conditional statements it's necessary to **declare** on
 
 ![](assets/chapter-3-2-images/01.Transport-price-02.png)
 
-#### Statement verification and computing the relevant calculations
+#### Expression evaluation and computing the relevant calculations
 
 Once we have **declared and initialized** the input data and the variable that will store the value of the price, we should assess which **conditions** of the task will be the first to **be checked**.
 
@@ -97,63 +97,66 @@ We **have successfully computed the price of the cheapest transportation** so we
 
 You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#0](https://judge.softuni.bg/Contests/Practice/Index/652#0).
 
-## Задача: тръби в басейн
+## Task: pipes in a pool
 
-Басейн с **обем V** има **две тръби**, от които се пълни. **Всяка тръба има определен дебит** (литрите вода, минаващи през една тръба за един час). Работникът пуска тръбите едновременно и излиза за **N часа**. Напишете програма, която изкарва състоянието на басейна, **в момента, когато работникът се върне**. 
+A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified hourly flow rate** (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for **N hours**. Your task is to write a program that prints out the state of the pool, **at the moment the worker comes back**.
 
-### Входни данни
+### Input data
 
-От конзолата се четат **четири реда**:
-* Първият ред съдържа числото **V – обем на басейна в литри** – цяло число в интервала [**1 … 10000**].
-* Вторият ред съдържа числото **P1 – дебит на първата тръба за час** – цяло число в интервала [**1 … 5000**].
-* Третият ред съдържа числото **P2 – дебит на втората тръба за час** – цяло число в интервала [**1 … 5000**].
-* Четвъртият ред съдържа числото **H – часовете, в които работникът отсъства** – число с плаваща запетая в интервала [**1.0 … 24.00**].
+**Four lines** are read from the console:
+* The first line contains the number **V - pool volume in liters** - integer in the range [**1… 10000**].
+* The second line contains the number **P1 - hourly flow rate of the first tube** - integer in the interval [**1 … 5000**].
+* The third line contains the number **P2 - hourly flow rate of the second tube** - integer in the range [**1 … 5000**].
+* The fourth line contains the number **H - number of hours that the employee is absent** - a floating point number in the interval [**1.0 … 24.00**].
 
-### Изходни данни
+### Output data
 
-Да се отпечата на конзолата **едно от двете възможни състояния**:
-* До колко се е запълнил басейна и коя тръба с колко процента е допринесла. На всички проценти да се вземе само цялата част (т.е. да се направи закръгляне надолу).
-  * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
-* Aко басейнът се е препълнил – с колко литра е прелял за даденото време, число с плаваща запетая.
-  * "For **[x]** hours the pool overflows with **[y]** liters."
-\* **Имайте предвид**, че поради **вземането на цялата част на дробно число** се **губят данни** и e нормално **сборът на процентите да е 99%, а не 100%**.
+Print on the console **one of two possible states**:
+* How full is the pool and each pipe's percentage contribution. Use the whole number before the decimal point of a percentage (i.e. round down).
+   * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
+* If the pool has overflowed - how many liters over the pool's volume has the pool overflowed for the given time, floating point number.
+   * "For **[x]** hours the pool overflows with **[y]** liters."
+\ * **Have in mind** that due to **the percentage rounding** some data may be **lost** and it's okay for **the sum of the percentages to be 99% and not 100%**.
 
-### Примерен вход и изход
+### Sample input and output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 | ---- | ----- | ---- | ---- |
 |1000<br>100<br>120<br>3 |The pool is 66% full. Pipe 1: 45%. Pipe2: 54%. |100<br>100<br>100<br>2.5|For 2.5 hours the pool overflows with 400 liters.|
 
-### Насоки и подсказки
+### Guidelines and tips
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+To solve the task we'll read from the standart input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Обработка на входните данни
+#### Input data processing
 
-От условието на задачата виждаме, че в програмата ни трябва да има **четири реда**, от които четем **входните данни**. Чрез първите **три** ще въвеждаме **цели числа** и по тази причина **променливите**, в които ще запазваме стойностите, ще бъдат от тип **`int`**. За **четвъртия** ред ни е казано, че ще бъде **число**, което е **с плаваща запетая**, затова и **променливата**, която ще използваме, е от тип **`double`**.
+By definition our program has to have **four lines** that are going to read and store **the input data**. The first **three** are going to store **whole numbers** and this is a reason we pick the **`int`** type for those **variables**. On the **fourth** line we are supposed to get a floating point **number** and that's why the **variable** that we're going to use is of type **`double`**.
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
-Следващата ни стъпка е да **декларираме и инициализираме** променлива, в която ще изчислим с колко **литра** се е **напълнил** басейна за **времето**, в което работникът е **отсъствал**. Изчисленията ще направим като **съберем** стойностите на дебита на **двете тръби** и ги **умножим** по **часовете**, които са ни зададени като вход.
+Our next step is to **declare and initialize** a variable that will store the computed value for **the amount of water that the pool has filled up with while the worker has been away**. The calculation is made by **summing up the flow rate of the two pipes** and **multiplying them** by the input **hours H**.
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
-#### Извършване на проверки и обработка на изходните данни
+#### Expression evaluation and computing the relevant calculations
 
-След като вече имаме и **стойността на количеството** вода, което е минало през **тръбите**, следва стъпката, в която трябва да **сравним** това количество с обема на самия басейн. 
+Once we have the **the amount** of water that has passed through the **pipes**, the next step is to **compare** it with the volume of the pool.
 
-Това ще направим с проста **`if-else`** проверка, в която условието ще е дали **количеството вода е по-малко от обема на басейна**. Ако проверката върне **`true`**, то трябва да разпечатаме един **ред**, който да съдържа в себе си **съотношението** между количеството **вода, минало през тръбите**, и **обема на басейна**, както и **съотношението на количеството вода** от всяка една тръба спрямо **обема на басейна**. 
+We will do this with a simple **`if-else`** conditional statement, in which the condition will be whether **the amount of water is less than the volume of the pool**. If the check returns **`true`**, then we need to print a **line** that contains **the ratio** between **the amount of water that has passed through the pipes** and the volume of pool**, as well as **the ratio of the amount of water** from each pipe to **pool volume**.
 
 Съотношението е нужно да бъде изразено в **проценти**, затова и всички изчисления до момента в този ред ще бъдат **умножени по 100**. Стойностите ще бъдат вмъкнати с **форматиращи низове** и тъй като има условие **резултата в проценти** да се форматира до **цяло число**, то за целта ще използваме метода **`Math.floor(…)`**.
+
+The ratio needs to be expressed in **percentage** that's why we'll **multiply by 100** the result of all the prior calculations on this line. The values will be interpolated using **formatting strings** and rounded down to **integer** with **`Math.floor (…)`** (it's a requirement of the task).
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
 Ако проверката обаче върне резултат **`false`**, то това означава, че количеството вода е **по-голямо** от **обема** на басейна, съответно той е **прелял**. Отново изхода трябва да е на **един ред**, но този път съдържа в себе си само **две стойности** - тази на **часовете**, в които работникът е отсъствал, и **количеството вода**, което е **разлика** между **влязлата вода** и **обема на басейна**.
 
-### Тестване в Judge системата
+However, if the check returns **`false`** it means that the amount of water is **greater** than **the volume** of the pool, respectively it has **overflowed**. Again, the output must be **one line** but this time it should contain only **two values** - **away time in hours** of the worker and **the amount of overflowed water**.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/652#1](https://judge.softuni.bg/Contests/Practice/Index/652#1).
+### Test your code in the Judge system
 
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#1](https://judge.softuni.bg/Contests/Practice/Index/652#1).
 
 ## Задача: поспаливата котка Том
 
