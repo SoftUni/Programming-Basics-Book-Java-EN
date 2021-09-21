@@ -20,83 +20,82 @@ if (boolean expression) {
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the ** `if-else` ** statement.
 
-## Задача: цена за транспорт
+## Task: transport price
 
-Студент трябва да пропътува **n километра**. Той има избор измежду **три вида транспорт**:
-* **Такси**. Начална такса: **0.70** лв. Дневна тарифа: **0.79** лв./км. Нощна тарифа: **0.90** лв./км.
-* **Автобус**. Дневна / нощна тарифа: **0.09** лв./км. Може да се използва за разстояния минимум **20** км.
-* **Влак**. Дневна / нощна тарифа: **0.06** лв./км. Може да се използва за разстояния минимум **100** км.
+A student must travel **n kilometers**. He has a choice between **three modes of transport**:
+* **Taxi**. Starting fee: **0.70** BGN. Daily rate: **0.79** BGN/km. Nightly rate: **0.90** BGN/km.
+* **Bus**. Daily/Nightly rate: **0.09** BGN/km. Can be used for distances minimum **20** km.
+* **Train**. Daily/Nightly rate: **0.06** BGN/km. Can be used for distances at least **100** km
 
-Напишете програма, която въвежда броя **километри n** и **период от деня** (ден или нощ) и изчислява **цената на най-евтиния транспорт**.
+Write a program that enters the number of **kilometers n** and the **period of the day** (day or night) and computes ** the price of the cheapest transport **.
 
-### Входни данни
+### Input data
 
-От конзолата се четат **два реда**:
-* Първият ред съдържа числото **n** – брой километри – цяло число в интервала [**1 … 5000**].
-* Вторият ред съдържа дума "**day**" или "**night**" – пътуване през деня или през нощта.
+**Two lines** are read from the console:
+* The first line contains the number **n** - number of kilometers - integer in the interval [**1… 5000**].
+* The second line contains the word "**day**" or "**night**" - trip during the day or at night.
 
-### Изходни данни
+### Output data
 
-Да се отпечата на конзолата **най-ниската цена** за посочения брой километри.
+Print on the console **the lowest price** for the specified number of kilometers.
 
-### Примерен вход и изход
+### Sample input and output
 
-| Вход        | Изход       | Вход        | Изход       |
+| Input        | Output       | Input        | Output       |
 |----------|----------|----------|----------|
 |5<br>day    |4.65        |7<br>night  |7           |
 
-| Вход        | Изход       | Вход        | Изход       |
+| Input        | Output       | Input        | Output       |
 |----------|----------|----------|----------|
 |25<br>day   |2.25        |180<br>night|10.8        |
 
-### Насоки и подсказки
+### Guidelines and tips
 
-Ще прочетем входните данни и в зависимост от разстоянието ще изберем най-евтиния транспорт. За целта ще използваме няколко проверки.
+We will read the input data and depending on the distance we will choose the cheapest transport. For this purpose we will use several conditional statements.
 
-#### Обработка на входните данни
+#### Input data processing
 
-Първоначалната ни стъпка е да създадем обект от тип **`java.util.Scanner`**, в чийто конструктор подаваме "входния поток" (**`System.in`**), от който четем. В условието на задачата е дадена **информация за входа и изхода**. Съответно, първите **два реда** от решението ще съдържат декларирането и инициализирането на двете **променливи**, в които ще пазим **стойностите на входните данни**. 
+Our first step is to create an object of type **`java.util.Scanner`**. We pass in its constructor the "input stream" (**`System.in`**) that we are goind to read from. In the definition of the task we have **information about the input and output**. The first **two lines** of the solution will contain the declaration and initialization of the two **variables** that will store the **the values of the input data**.
 
-За **първия ред е упоменато**, че съдържа **цяло число**, затова и променливата, която ще бъде декларирана, е от тип **`int`**. За **втория ред** указанието е, че съдържа **дума**, съответно променливата е от тип **`String`**. 
+**The first line is mentioned** to contain **an integer**, so the variable that will be declared is of type **`int`**. For the **second line** the instruction is that it contains a **word**, respectively the variable is of type **`String`**.
 
 ![](assets/chapter-3-2-images/01.Transport-price-01.png)
 
-Преди да започнем проверките е нужно да **декларираме** и една **променлива**, в която ще пазим стойността на **цената за транспорт**.
+Before we begin with the conditional statements it's necessary to **declare** one **variable** that will store the value of the **transport price**.
 
 ![](assets/chapter-3-2-images/01.Transport-price-02.png)
 
-#### Извършване на проверки и съответните изчисления
+#### Statement verification and computing the relevant calculations
 
-След като вече сме **декларирали и инициализирали** входните данни и променливата, в която ще пазим стойността на цената, трябва да преценим кои **условия** от задачата първо **ще бъдат проверени**. 
+Once we have **declared and initialized** the input data and the variable that will store the value of the price, we should assess which **conditions** of the task will be the first to **be checked**.
 
-От условието е видно, че тарифите на две от превозните средства **не зависят** от това дали е **ден** или **нощ**, но тарифата на третия превоз (такси) **зависи**. По тази причина **първата проверка** ще е именно дали е **ден или нощ**, за да стане ясно коя тарифа на таксито ще се **използва**. За целта **декларираме още една променлива**, в която ще пазим стойността на **тарифата на таксито**.
+It is evident from the task that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of the third transport (taxi) does. This is a reason to pick our **first condition** to verify whether it's **day or night** and determine which taxi rate will be **in effect**. To achieve that **we declare another variable** that will store the value of the **taxi fare**.
 
 ![](assets/chapter-3-2-images/01.Transport-price-03.png)
 
-За да изчислим **тарифата на таксито**, ще използваме проверка от типа **`if-else`** и чрез нея променливата за цената на таксито ще си присвои **стойност**. 
+Computing the **taxi rate** is performed with an **`if-else`** statement. That's how we taxi price variable is assigned a **value**.
 
 ![](assets/chapter-3-2-images/01.Transport-price-04.png)
 
-След като е направено и това, вече може да пристъпим към изчислението на самата **цена за транспорта**. Ограниченията, които присъстват в условието на задачата, са относно **разстоянието**, което студента иска да пропътува. По тази причина, ще построим **`if-else`** конструкция, с чиято помощ ще открием **цената** за транспорта в зависимост от подадените километри.
+Once that's done, we can now proceed to the computation of the **full transportation price**. Another condition for the price defined in the task is about the **travelling distance** with a chosen vehicle. Naturally to do that we pick an **`if-else`** condition that we use to determine the **price** for the transport depending on the entered kilometers.
 
 ![](assets/chapter-3-2-images/01.Transport-price-05.png)
 
-Първо правим проверка дали километрите са **под 20**, тъй като от условието е видно, че **под 20** километра студента би могъл да използва само **такси**. Ако условието на проверката е **вярно** (връща **`true`**), променливата, която е създадена, за да пази стойността на цената на транспорта (**`price`**), ще си **присвои** съответната стойност. Тази стойност е равна на **първоначалната такса**, която **събираме** с неговата **тарифа**, **умножена** по **разстоянието**, което студента трябва да измине. 
+First we check if the kilometers are **below 20**, since it's specified in the task that the student could only use **taxi** for destinations that are **below 20** kilometers away. If the expression in the first conditional statement is evaluated to **true** then the variable that stores the transportation price (**`price`**) will be **assigned** the corresponding value. This value is equal to the **initial rate**, which we **sum up** with its **rate** **multiplied** by **the distance** that the student has to travel.
 
-Ако условието на променливата **не е вярно** (връща **`false`**), следващата стъпка е програмата ни да провери дали километрите са **под 100**. Правим това, защото от условието е видно, че в този диапазон може да се използва и **автобус** като транспортно средство. **Цената** за километър на автобуса **е по-ниска** от тази на таксито. Следователно, ако резултата от проверката е **верен**, то в блок тялото на **`else if`**, на променливата за цената на транспорта (**`price`**) трябва да присвоим **стойност**, равна на резултата от **умножението** на **тарифата** на автобуса по **разстоянието**. 
+If the expression in the first conditional statement is evaluated to **false** then the next step of the program is to check if the distance is **below 100**. The reason we're doing that is because it's possible to use a **bus** as transportation vehicle in this distance range. **The price** per kilometer for the bus **is lower** than the taxi price. Therefore, the result of the expression evaluation is **true**, then here's the place to assign the **value** of the transportation price variable (**`price`**) which equals to the reasult of the **multiplication** of the **distance** and the **bus rate** .
 
-Ако и тази проверка **не даде `true`** като резултат, остава в тялото на **`else`** на променливата за цена да присвоим **стойност**, равна на **резултата** от **умножението** на **разстояниетo** по **тарифата** на влака. Това се прави, тъй като влакът е **най-евтиния** вариант за транспорт при даденото разстояние.
+In the case of the second check **not returning `true`** as a result, the program ends up in the **`else`** block and assigns a **value** equal to the **result** of the **multiplication** of the **distance** and the **train rate**. We do that because the train is the **cheapest** transportation vehicle for the given distance.
 
-#### Отпечатване на изходните данни
+#### Printing the output data
 
-След като сме направили **проверките** за разстоянието и сме **изчислили цената на най-евтиния транспорт**, следва да я **отпечатаме**. В условието на задачата **няма** изисквания как да бъде форматиран резултата и по тази причина ще отпечатаме само **променливата**.
+We **have successfully computed the price of the cheapest transportation** so we're almost at the end of the task. The only thing left is to print out the result that we have to the console. In our task there's no requirement for the result output and that's why we choose to keep it simple and just print the **variable** (**`price`**).
 
 ![](assets/chapter-3-2-images/01.Transport-price-06.png)
 
-### Тестване в Judge системата
+### Test your code in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/652#0](https://judge.softuni.bg/Contests/Practice/Index/652#0).
-
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#0](https://judge.softuni.bg/Contests/Practice/Index/652#0).
 
 ## Задача: тръби в басейн
 
