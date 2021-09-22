@@ -19,7 +19,7 @@ In programming, we can compare values using the following **operators**:
 * Operator **`==`** (equas)
 * Operator **`!=`** (not equals)
 
-When comparing values, the result is of the Boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
+When comparing values, the result is of boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
 
 ### Examples for comparing numbers
 
@@ -31,7 +31,7 @@ In Java, we can use the following comparison operators when comparing numbers:
 
 <table>
 <tr>
-<th>Description of the Operator</th> <th>Notation</th>
+<th>Operator description</th> <th>Notation</th>
 </tr>
 <tr>
 <td>Equals to</td><td align="center"> == </td>
@@ -63,7 +63,7 @@ In programming, we often **check given conditions** and perform different action
 
 ```java
 if (condition) {
-    // body of if construction
+    // body of if conditional statement
 	// single command or block of code to be executed if the condition is true  
 }
 ```
@@ -74,7 +74,7 @@ if (condition) {
 
 ![](assets/chapter-3-1-images/01.Еxcellent-result-01.png)
 
-Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**" text.
+Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**".
 
 #### Test the code in the Judge system
 
@@ -84,7 +84,7 @@ Test your solution here:
 
 ## If-Else conditions
 
-Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning **if(condition)**) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
+Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the boolean expression (defined at the beginning **if(condition)**) returns **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – the code described in the curly brackets right after the **`if`** clause will be executed, otherwise if the condition returns **negative** (**`false`**) result – the code described in the curly brackets after the **`else`** clause will be executed. The format of the construction is:
 
 ```java
 if (condition) {
@@ -109,7 +109,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
 
 ## The curly brackets {} after If / Else 
 
-When we have **only one command** in the body of the **`if` construction**, we can **skip the curly brackets**. When we want to execute **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
+When we have **only one command** in the body of the **`if` statement**, we can **skip the curly brackets**. When we want to execute a **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
@@ -123,7 +123,7 @@ Executing the above code will output the following result on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
-Here is the same example, but with using curly brackets: 
+Here is the same example, but using curly brackets: 
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
@@ -132,7 +132,7 @@ Executing the code with curly brackets will output the following result on the c
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Both use cases are <strong>correct</strong> and could be used depending on the concrete case and/or particular requirements, but always must be careful and check with expected results.</td>
+<td>Both use cases are <strong>correct</strong> and could be used depending on the situation and/or the specific requirements, but you always must be careful and check the expected results.</td>
 </tr></table>
 
 ### Example: Even or odd number
@@ -141,7 +141,7 @@ Write a program that checks whether an integer is **even** or **odd**.
 
 ### Hint and guidelines
 
-We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns a **remainder by dividing** two numbers.
+We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns the **remainder of dividing** two numbers.
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
@@ -156,11 +156,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2
 
 ### Example: The greater number
 
-Write a program that reads two integer numbers, from the console, and return the greater of them. Print the output in the following format: “Greater number: x”, where the x is the returned number.
+Write a program that reads two integer numbers, from the console, and return the greater one. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
 ### Hint and guidelines
 
-Our first task is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what we have learned so far.
+Our first task is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what you have learned so far.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
@@ -175,9 +175,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 
 ## Variable scope
 
-Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
+Each variable has a scope in which it exists, called **variable scope**. This scope determines where the variable lives, in other words the scope where you can use it. In Java, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of an `if` statement will not be available outside of it**, unless we have defined it above in the code.
 
-In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the if statement (in this case we will receive notification from the **IDE** about variable scope).
+In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the block (in this case we will receive notification from the **IDE** about variable scope).
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
@@ -187,23 +187,23 @@ Sometimes we need to do a sequence of conditions before we decide what actions o
 
 ```java
 if (condition) {
-    // body of if construction
-} else if (условие2) {
-    // body of if construction
-} else if (условие3) {
-    // body of if construction
+    // body of if statement
+} else if (condition2) {
+    // body of if statement
+} else if (condition3) {
+    // body of if statement
 } … else {
-    // body of else construction
+    // body of else statement
 }
 ```
 
 ### Example: Digits 0..9 to text
 
-Print the digit in rage from 1 to 9 in English (digit is read from the console). 
+Print a given digit, in rage from 1 to 9, in English (the digit is read from the console). 
 
 ### Hint and guidelines
 
-First, we read the digit from the console. Then using a **sequence of conditions** and print the relevant English word:
+First, we read the digit from the console. Then using a **sequence of conditions** we determine the corresponding English word and finally print it to the console:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -231,7 +231,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4
 
 ## Exercises: Sequence of If-Else conditions
 
-To consolidate our knowledge of the conditional constructions **`if`** and **`if-else`**, let's solve several practical problems.
+To consolidate our knowledge of the conditional statements **`if`** and **`if-else`**, let's solve several practical tasks.
 
 
 ### Exercise: Bonus score
@@ -269,7 +269,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5
 
 ### Exercise: Summing Up seconds
 
-Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the times of these from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **zeroed at the front** (2 -> "02", 7 -> "07", 35 -> "35").
+Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the time of each athlete from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **formatted with a zero at the front if they're less than 10** (2 -> "02", 7 -> "07", 35 -> "35").
 
 #### Sample input and output
 
@@ -283,7 +283,7 @@ Three athletes finish in a particular number of **seconds** (between **1** and *
 #### Hint and guidelines
 
 The task has several solutions, but in the context of this chapter, we can do the following:
-First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, we will have to calculate the number of minutes and seconds in the range 0 to 59:
+First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, we will have to calculate the number of minutes and seconds in the range from 0 to 59:
 
 - If the result is between 0 and 59, print 0 minutes + calculated seconds.
 - If the result is between 60 and 119, print 1 minute + calculate seconds minus 60.
@@ -292,7 +292,7 @@ First, sum up the three numbers to get the total result in seconds. Since **1 mi
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-Another solution, which does not use **`if-else`** constructs, is more appropriate because you can use it for greater time values:
+A different solution that does not use **`if-else`** statement is more appropriate because you can use it for greater time values:
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
@@ -303,7 +303,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6
 
 ### Exercise: Unit converter
 
-Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the table below when a conversion from one unit to another:
+Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the conversion table below to convert a value from one unit to another:
 
 | Input Unit | Output Unit |
 | :-------------: | :--------------: |
@@ -331,7 +331,7 @@ The program will receive three input lines:
 
 #### Hint and guidelines
 
-Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the condition, we can convert **between meters and some other unit**. Then, first calculate the result from converting the input number in meters, doing a set of checks to define the input unit. Then calculate the output unit.
+Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the task, we can easily convert values if we **use meters as our base unit**. Afterwards calculate the result from the conversion of the input number in meters, performing a set of checks to define the input unit. Then calculate directly the output unit.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
@@ -346,35 +346,34 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7
 
 ## Debugging
 
-There were probably errors in the code you wrote so far. There is a way to find errors more easily, using a tool. In the following section, we will look at one of them.
-
+There were probably errors in the code you wrote so far. There is an easier way to find errors, use a tool. In the following section, we will look at one.
 ### What is "Debugging"?
 
-**Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**, of logic that follows, defined variables and how they are changed, and so on.
+**Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**. Of the logic that follows, the defined variables and how they are changed, and so on.
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
 
 ### Debugging with IntelliJ Idea
 
-By pressing, a combination of buttons [**Shift + F9**], you run the current program in **debug mode**. To move to **the next line** in the code, use the [**F7**] button.
+By pressing a combination of buttons [**Shift + F9**] you run the current program in **debug mode**. To move to **the next line** in the code, use the [**F7**] button.
 
 ![](assets/chapter-3-1-images/00.Debugging-02.png)
 
-By pressing, a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints**, which suspend program execution at a specific point.
+By pressing a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints** which suspend program execution at a specific point.
 
 ## Exercises: Simple conditions
 
-To get a better understanding of what we learned, let's solve a few practical exercises.
+To get a better understanding of what we have learned, let's solve a few practical exercises.
 
 ### Empty project in IntelliJ Idea
 
-Create a new project with name **Java** in IntelliJ Idea and leave all others options by default. In order to better organize the solutions of the tasks from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
+Create a new project with name **Java** in IntelliJ Idea and leave all other options at their default state. In order to better organize the solutions of the tasks from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
 
 Run IntelliJ Idea. Create a new **Java project:** [**File**] → [**New**] → [**Project**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-01.png)
 
-Choose **Java** from the left panel and anything else leaves it by default, and press [**Next**]. In the next dialog box, we have an option to create a project from a template. Usually, we will do this, but now we can skip it and press [**Next**]. In the last dialog box, enter the project's name and storage location, and then click [**Finish**].
+Choose **Java** from the left panel and leave anything else at its default state, press [**Next**]. In the next dialog box, we have an option to create a project from a template. Usually, we will do this, but now we can skip it and just press [**Next**]. In the last dialog box, enter the project's name and storage location, and then click [**Finish**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-02.png)
 ![](assets/chapter-3-1-images/00.IntelliJ-03.png)
