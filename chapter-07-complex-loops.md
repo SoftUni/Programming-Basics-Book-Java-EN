@@ -439,9 +439,9 @@ Now the solution should always work whether we enter integers, invalid numbers (
 
 ## Tasks with loops
 
-In this chapter we have introduced several new types of loops that can be used to make repetitions with more complex program logic. Let's solve several problems using the new knowledge.
+In this chapter, we have introduced several new types of loops that we can use to make repetitions with more complex program logic. Let's solve several tasks using the new knowledge.
 
-### Problem: Fibonacci numbers
+### Task: Fibonacci numbers
 
 In mathematics, Fibonacci numbers form a series that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**
 
@@ -463,17 +463,17 @@ Fn = Fn-1 + Fn-2
 |0|1| |
 |1|1| |
 
-Enter an **integer** number **n** and calculate the **n-number of Fibonacci**.
+Write a program in which we enter an **integer** number **n** and calculate the **n-number of Fibonacci**.
 
 #### Hints and guidelines
 
-An idea to solve the problem:
+An idea to solve the task:
 
-* We create a **`n` variable** to which we assign the **integer** value, obtained from the console input.
-* We create **`f0`** и **`f1`** variables to which we assign value **1**, since this is how the sequence begins.
+* We create a **`n` variable**, to which we assign the **integer** value obtained from the console input.
+* We create **`f0`** и **`f1`** variables to which we assign value **1** since this is how the sequence begins.
 * We create a **`for`** loop with a condition **current value `i < n - 1`**.
 * In the **body of the loop:**
-   * We create a **temporary** variable **`fNext`** to which we assign the next number of Fibonacci sequence.
+   * We create a **temporary** variable **`fNext`** to which we assign the next number of the Fibonacci sequence.
    * We assign the current value of **`f1`** to **`f0`**.
    * We assign the value of the temporary variable **`fNext`** to **`f1`**.
 * We print the n-number of Fibonacci outside the loop.
@@ -487,9 +487,9 @@ Sample implementation:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#13](https://judge.softuni.bg/Contests/Practice/Index/659#13).
 
 
-### Problem: Numbers pyramid
+### Task: Numbers pyramid
 
-Print **the numbers 1… n in a pyramid** as in the examples below. On the first line we print one number, on the second line we print two numbers, on the third line we print three numbers, etc. until the numbers run out. On the last line we print as many numbers as we have left until we get to **n**.
+Print **the numbers 1… n in a pyramid** as in the examples below. On the first line, we print one number on the second line, we print two numbers, on the third line, we print three numbers, etc., until the numbers run out. On the last line, we print as many numbers as we have left until we get to **n**.
 
 #### Sample input and output
 
@@ -499,16 +499,16 @@ Print **the numbers 1… n in a pyramid** as in the examples below. On the first
 
 #### Hints and guidelines
 
-We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, described in more details:
+We can solve the task with **two nested loops** (by rows and columns) by printing in them and leaving when reaching the last number. Here is the idea, described in more detail:
 
-* We create a **`n`** variable to which we assign the integer value, obtained from the console input.
-* We create a **`num`** variable with an initial value 1. It will keep the number of printed numbers.  At each iteration we will **increase** it by **1** and print it.
-* We create an **outer** **`for`** loop, which will be responsible for the **rows** in the table. We name the loop variable as **`row`** and we assign an initial value 0 to it. We set **`row < n`** as a condition. The size of the step is 1.
-* In the body of the loop we create an **inner** **`for`** loop, which will be responsible for the **columns** in the table. We name the loop variable as **`col`** and we assign an initial value 0 to it. We set **`col < row`** (**`row`** = number of digits per line) as a condition. The size of the step is 1.
+* We create a **`n`** variable, to which we assign the integer value obtained from the console input.
+* We create a **`num`** variable with an initial value of 1. It will keep the number of printed numbers. At each iteration, we will **increase** it by **1** and print it.
+* We create an **outer** **`for`** loop, which will be responsible for the **rows** in the table. We name the loop variable as **`row`** and assign it an initial value 0. We set **`row < n`** as a condition. The size of the step is 1.
+* In the body of the loop, we create an **inner** **`for`** loop, which will be responsible for the **columns** in the table. We name the loop variable as **`col`** and assign it an initial value 0. We set **`col < row`** (**`row`** = number of digits per line) as a condition. The size of the step is 1.
 * In the body of the loop:
-   * We check if **`col > 1`**, if yes – we print space. If we don't perform this check and directly print space, we will have an unnecessary one at the beginning of each line.
+   * We check if **`col > 1`** and if yes – we print space. If we don't perform this check and directly print space, we will have an unnecessary one at the beginning of each line.
    * We **print** the number **`num`** in the current cell of the table and **increase it with 1**.
-   * We perform a check for **`num > n`**. If **`num`** is greater than **`n`**, we **break** the rotation of the **inner loop**.
+   * We perform a check for **`num > n`**. If **`num`** is greater than **`n`**, we **break** the **inner loop**.
 * We print a **blank line** to proceed to the next one.
 * We check again if **`num > n`**. If it's greater, we **interrupt** the execution of our **program** with a **`break`**.
 
@@ -521,7 +521,7 @@ Here is a sample implementation:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#14](https://judge.softuni.bg/Contests/Practice/Index/659#14).
 
 
-### Problem: Numbers table
+### Task: Numbers table
 
 Print the numbers 1 … n in a table as per the examples below.
 
@@ -533,14 +533,14 @@ Print the numbers 1 … n in a table as per the examples below.
 
 #### Hints and guidelines
 
-We can solve the problem with **two nested loops** and a little bit of calculations inside:
+We can solve the task with **two nested loops** and a little bit of calculations inside:
 
 * We read from the console the table size in an integer variable **`n`**.
-* We create a **`for`** loop, which will be responsible for the table rows. We name the loop variable as **`row`** and assign an initial **value 0** to it. We set **`row < n`** as a condition. The size of the step is 1.
-* In **the body of the loop** we create a nested **`for`** loop, which will be responsible for the table columns. We name the loop variable as **`col`** and assign an initial **value 0** to it. We set **`col < n`** as a condition. The size of the step is 1.
+* We create a **`for`** loop, which is responsible for the table rows. We name the loop variable as **`row`** and assign it an initial **value 0**. We set **`row < n`** as a condition. The size of the step is 1.
+* In **the body of the loop**, we create a nested **`for`** loop, which is responsible for the table columns. We name the loop variable as **`col`** and assign it an initial **value 0**. We set **`col < n`** as a condition. The size of the step is 1.
 * In **the body of the nested loop**:
    * We create a **`num`** variable, to which we assign the result of **current row + current column + 1** (+1, since we start counting from 0).
-   * We perform a check if **`num > n`**. If **`num`** is **greater** than n, we assign a new value of **two times n - current value of `num`** to **`num`**. We do this in order to not exceed **`n`** in any of the table cells.
+   * We perform a check if **`num > n`**. If **`num`** is **greater** than n, we assign a new value of **two times n - current value of `num`** to **`num`**. We do this to not exceed **`n`** in any of the table cells.
     * We print the number from the current table cell.
 * We print a **blank line** in the outer loop to proceed to the next one.
 
