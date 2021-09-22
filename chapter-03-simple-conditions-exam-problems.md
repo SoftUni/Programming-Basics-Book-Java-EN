@@ -224,8 +224,6 @@ The playing time is already calculated which leads us to **the next** step - Tom
 
 #### Output data processing
 
-Какъвто и **резултат** да ни върне проверката, то трябва да разпечатаме колко е **разликата в часове и минути**. Това ще направим с **форматен спецификатор** и променливите, в които изчислихме стойностите на часовете и минутите. От дадените примери за изход виждаме, че часовете и минутите са форматирани като цяло число, закръглено до по-ниската стойност. Това ни подсказва, че трябва да използваме метода **`Math.floor(…)`**, когато разпечатваме резултата.
-
 Depending on **the result** of the evaluation of the boolean expression our objective is to print the **difference in hours and minutes**. We'll do that using the **formatting specifier** and the previously computed hour and minutes values. The given output examples show that the printed values are formatted as a rounded down whole number. This is a cue that we should be using **`Math.floor(…)`** when we're printing the result.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
@@ -234,71 +232,71 @@ Depending on **the result** of the evaluation of the boolean expression our obje
 
 You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#2](https://judge.softuni.bg/Contests/Practice/Index/652#2).
 
-## Задача: реколта
+## Task: harvest
 
-От лозе с **площ X кв. м.** се заделя **40% от реколтата** за производство на вино. От **1 кв.м. лозе** се изкарват **Y килограма грозде**. За **1 литър вино** са **нужни 2,5 кг. грозде**. Желаното количество вино **за продан е Z литра.**
+There's a vineyard that has **area of X sq. M.**. **40% of the harvest** is allocated for wine production. The yield from **1sq.m. vineyard** is **Y kilograms of grapes**. To produce **1 liter of wine** is used **2.5kg grapes**. The desired amount of wine **for sale is Z liters**.
 
-Напишете програма, която **пресмята колко вино може да се произведе** и дали това количество **е достатъчно**. **Ако е достатъчно, остатъкът се разделя по равно между работниците на лозето.**
+Your task is to write a program that **calculates the possible amount of produced wine** and validates if it's **enough**. **If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.**
 
-### Входни данни
+### Input data
 
-Входът се чете от конзолата и се състои от **точно 4 реда**:
-* 1-ви ред: **X кв.м е лозето** – цяло число в интервала [**10 … 5000**].
-* 2-ри ред: **Y грозде за един кв.м.** – реално число в интервала [**0.00 … 10.00**].
-* 3-ти ред: **Z нужни литри вино** – цяло число в интервала [**1 … 600**].
-* 4-ти ред: **брой работници** – цяло число в интервала [**1 … 20**].
+**Four lines** are read from the console:
+* The first line contains the area of the vineyard **X sq.m** - integer in the interval [**10 … 5000**].
+* The second line contains the grapes yield per square meter **Y** - real number in the interval [**0.00 … 10.00**].
+* The third line contains the desired amount of wine **Z liters** - an integer in the range [**1 … 600**].
+* The fourth line contains the **number of workers** - integer in the interval [**1 … 20**].
 
-### Изходни данни
+### Output data
 
-На конзолата трябва да се отпечата следното:
-* Ако **произведеното** вино е **по-малко от нужното**:
-  * **"It will be a tough winter! More {недостигащо вино} liters wine needed.**"  
-   \* Резултатът трябва да е **закръглен към по-ниско цяло число**.
-* Ако **произведеното** вино е **повече от нужното**:
-  * **"Good harvest this year! Total wine: {общо вино} liters."**  
-   \* Резултатът трябва да е **закръглен към по-ниско цяло число**.
-  * **"{Оставащо вино} liters left -> {вино за 1 работник} liters per person."**  
-   \* И двата резултата трябва да са **закръглени към по-високото цяло число**.
+The following is expected to be printed on the console:
+* If the **produced** wine is **less than the required**:
+   * **"It will be a tough winter! More {insufficient wine} liters wine needed.**"
+      * The result should be **rounded down**.
+* If the **produced** wine is **sufficient**:
+   * **"Good harvest this year! Total wine: {total wine} liters."**
+      * The result must be **rounded down**.
+   * **"{Wine left} liters left -> {wine for 1 worker} liters per person."**
+      * Both results must be **rounded up**.
 
-### Примерен вход и изход
+### Sample input and output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |650<br>2<br>175<br>3|Good harvest this year! Total wine: 208 liters.<br>33 liters left → 11 liters per person.|1020<br>1.5<br>425<br>4|It will be a tough winter! More 180 liters wine needed.|
 
-### Насоки и подсказки
+### Guidelines and tips
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+To solve the task we'll read from the standart input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Обработка на входните данни и прилежащи изчисления
+#### Input data processing and related calculations
 
-Първо трябва да **проверим** какви ще са **входните данни** и да изберем какви **променливи** ще използваме. 
+First we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
 ![](assets/chapter-3-2-images/04.Harvest-01.png)
 
-За да решим задачата е нужно да **изчислим** колко **литра вино** ще получим на база **входните данни**. От условието на задачата виждаме, че за да **пресметнем** количеството **вино в литри**, трябва първо да разберем какво е **количеството грозде в килограми**, което ще се получи от тази реколта. За тази цел ще **декларираме** една **променлива**, на която ще присвоим **стойност**, равна на **40%** от резултата от **умножението** на площта на лозето и количеството грозде, което се получава от 1 кв. м.
+To solve the task we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The task defines a formula that requires the **weight of the yeilded grapes in kg.**. We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yeilded grapes per square meter.
 
-След като сме извършили тези пресмятания, сме готови да **пресметнем** и **количеството вино в литри**, което ще се получи от тази реколта. За тази цел **декларираме** още една **променлива**, в която ще пазим това **количество**, а от условието стигаме до извода, че за да го пресметнем, е нужно да **разделим количеството грозде в килограми на 2.5**. 
+Once we have made these calculations, we are ready to **insert** them in the task formula. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to **weight of the yeilded grapes in kg. divided by 2.5**.
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
-#### Извършване на проверки и обработка на изходните данни
+#### Expression evaluation and processing the output data
 
-Вече сме направили нужните пресмятания и **следващата стъпка** е да **проверим** дали **получените литри** вино са **достатъчни**. За целта ще използваме **проста условна конструкция** от типа **`if-else`**, като в условието ще **проверим** дали **литрите вино** от реколтата са **повече от** или **равни** на **нужните литри**. 
+Our **next step** is to **check** if the **produced wine** is **enough**. We'll use a simple **`if-else` conditional statement** with a clause that **verifies** if the **amount of wine in liters** produced from the harves is **more than** or **equal** to the **desired liters**.
 
-Ако проверката върне резултат **`true`**, от условието на задачата виждаме, че на **първия ред** трябва да разпечатаме **виното, което сме получили от реколтата**. За да спазим условието **тази стойност** да бъде **закръглена до по-ниското цяло число**, ще използваме метода **`Math.floor(…)`** при разпечатването й чрез **форматен спецификатор**. 
+If the expression evaluation returns **`true`**, then on the **first line** we should print **the amount of wine produced by this harvers**. It's required that **this value** should be **rounded down**. To comply with the requirement we'll use the method **`Math.floor(…)`** when printing it using the **formatting specifier**.
 
-На втория ред има изискване да разпечатаме резултатите, като ги **закръглим към по-високото цяло число**, което ще направим с метода **`Math.ceil(…)`**. Стойностите, които трябва да разпечатаме, са на **оставащото количество вино** и **количеството вино, което се пада на един работник**. Оставащото количество вино е равно на **разликата** между **получените литри вино** и **нужните литри вино**. Стойността на това количество ще изчислим в нова променлива, която ще декларираме и инициализираме в **блок тялото** на **`if`**, **преди** разпечатването на първия ред. Количеството вино, което **се полага на един работник**, ще изчислим като **оставащото вино** го **разделим** на **броя** на работниците. 
+The requirement for the second line is to print the interpolated values **rounded up**. We'll use the method **`Math.ceil(…)`**. The values that we have to print are **the wine that's left** and **the amount of wine that is to be given to each worker**. The wine that's left is equal to the **difference** between **the produced liters of wine** and **the desired liters of wine**. The result of this computation we'll store in a new variable that we'll declare and initialize in the **body block** of the **`if` statement** prior to printing the first line. The **amount of wine that is to be given to each worker** we'll get by **dividing** the **difference** to **the number of workers**.
 
 ![](assets/chapter-3-2-images/04.Harvest-03.png)
 
-Ако проверката ни върне резултат **`false`** от условието на задачата виждаме, че трябва да **разпечатаме разликата** от **нужните литри** и **получените от тази реколта литри вино**. Има условие резултата да е **закръглен към по-ниското цяло число**, което ще направим с метода **`Math.floor(…)`**.
+If the expression evaluation returns **`false`**, then we need to **print the difference** between **desired liters of wine** and **the produced liters of wine from this harvest**. It's required that **this value** should be **rounded down**. To comply with the requirement we'll use the method **`Math.floor(…)`** when printing it using the **formatting specifier**.
 
 ![](assets/chapter-3-2-images/04.Harvest-04.png)
 
-### Тестване в Judge системата
+### Test your code in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/652#3](https://judge.softuni.bg/Contests/Practice/Index/652#3).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#3](https://judge.softuni.bg/Contests/Practice/Index/652#3).
 
 
 ## Задача: фирма
