@@ -101,7 +101,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#3
 
 ## While loop
 
-The next type of loops we will get acquainted with are called **'while' loops**. What is specific about them is that they repeat a block of commands, **as long as a given condition is true**. Their structure differs from that of the **`for`** loops, they even have a simplified syntax.
+The next type of loops we will get acquainted with are called **'while' loops**. What is specific about them is that they repeat a block of commands, **as long as a given condition is true**. Their structure differs from the **`for`** loops, and they even have a simplified syntax.
 
 
 ### What is a while loop?
@@ -110,14 +110,14 @@ In programming, the **` while` loop** is used when we want to **repeat** the exe
 
 ![](assets/chapter-7-1-images/00.While-loop-01.png)
 
-The following is a series of sample problems, the solution of which will help us better understand the use of the **`while`** loop.
+The following is a series of examples, the solution of which will help us better understand the use of the **`while`** loop.
 
 
 ### Example: Sequence of 2k+1 numbers
 
 Write a program that prints all **numbers ≤ n** from the sequence: **1, 3, 7, 15, 31**, …, having in mind that each next number = **previous number \* 2 + 1**.
 
-Here is how we can solve the problem:
+Here is how we can solve the task:
 
 * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
 * We put the **current number <= n** as the loop condition.
@@ -136,14 +136,14 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#4
 
 Enter an integer in the range [**1 … 100**]. If it is invalid, input an integer again. In this case, we will consider any number that **is not** in the specified range as invalid.
 
-We can solve the problem through the following algorithm:
+We can solve the task through the following algorithm:
 
-* We create a variable **`num`** to which we assign the integer value, obtained from the console input.
-* For a loop condition, we put an expression that is **`true`** if the number of the input **is not** in the range specified in the problem condition.
-* In **the body of the loop**: we print a message "**Invalid number!**" on the console and then we assign a new value to **`num`** from the console input.
+* We create a variable **`num`**, to which we assign the integer value obtained from the console input.
+* For a loop condition, we put an expression, that is **`true`**, if the number of the input **is not** in the range specified in the task condition.
+* In **the body of the loop**: we print a message "**Invalid number!**" on the console, and then we assign a new value to **`num`** from the console input.
 * Having validated the input number, we print its value outside the body of the loop.
 
-Here is a sample representation of the algorithm, using a **`while` цикъл**:
+Here is a sample representation of the algorithm, using a **`while` loop**:
 
 ![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.png)
 
@@ -154,7 +154,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5
 
 ## Greatest Common Divisor (GCD)
 
-Before proceeding to the next problem, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
+Before proceeding to the next task, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
 
 **Definition of GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that divides **simultaneously** both **a** and **b** without a remainder. For example:
 
@@ -170,7 +170,7 @@ Before proceeding to the next problem, it is necessary to get acquainted with th
 
 ## The Euclidean algorithm
 
-In the next problem we will use **the Euclidean algorithm**, one of the first published algorithms for finding the GCD:
+In the next task, we will use **the Euclidean algorithm**, one of the first published algorithms for finding the GCD:
 
 **Until** we reach a remainder of 0:
 
@@ -191,15 +191,15 @@ print а;
 
 Enter **integers** **a** and **b** and find **GCD(a, b)**.
 
-We will solve the problem using **the Euclidean algorithm**:
+We will solve the task using **the Euclidean algorithm**:
 
-* We create **`a`** and **`b`** variables to which we assign the **integer** values, obtained from the console input.
+* We create **`a`** and **`b`** variables, to which we assign the **integer** values obtained from the console input.
 * For a loop condition, we put an expression that is **`true`** if the **`b`** number **is different** than **0**.
 * In **the body of the loop**: we follow the conditions of the pseudocode: 
-   * We create a temporary variable to which we assign the **current** value of **`b`**.
+   * We create a temporary variable, to which we assign the **current** value of **`b`**.
    * We assign a new value to **`b`**, which is the remainder of the division of **`a`** and **`b`**.
    * We assign the **previous** value of the **`b`** variable to **`a`**.
-* Once the loop is complete and we have found the GCD, we print it on the screen.
+* Once the loop is complete and, we have found the GCD, we print it on the screen.
 
 ![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.png)
 
@@ -210,7 +210,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6
 
 ## Do-while loop
 
-The next type of loops we will get acquainted with is the **`do-while`**. It resembles the **`while`** loop by structure but there is a significant difference between the two. It consists in the fact that **`do-while`** will execute its body **at least once**. Why is this happening? In the **`do-while`** loop construction, the **condition** is always checked **after** its body, which ensures that the code will be **executed** after the **first loop iteration** and **the check for the loop termination** will be applied to each subsequent iteration of the **`do-while`**. 
+The next type of loop we will get acquainted with is the **`do-while`**. It resembles the **`while`** loop by structure, but there is a significant difference between the two. It consists in the fact that **`do-while`** will execute its body **at least once**. Why is this happening? At **`do-while`** loop construction, the **condition** is always checked **after** its body, which ensures that the code will be **executed** after the **first loop iteration**, and **the check for the loop termination** will be applied to each subsequent iteration of the **`do-while`**. 
 
 ![](assets/chapter-7-1-images/00.Do-while-01.png)
 
@@ -223,11 +223,11 @@ Calculate **n! = 1 \* 2 \* 3 \* … \* n**, where **n** is a natural number. For
 
 Here is how we can calculate the factorial:
 
-* We create the variable **`n`** to which we assign the **integer** value, obtained from the console input.
-* We create another variable - **`fact`**, the initial value of which is 1. We will use it to calculate and store the factorial.
+* We create the variable **`n`**, to which we assign the **integer** value obtained from the console input.
+* We create another variable - **`fact`**, with the initial value of 1. We will use it to calculate and store the factorial.
 * For a loop condition, we will use **`n > 1`**, since each time we perform the calculations in the body of the loop, we will reduce the value of **`n`** by 1.
 * In **the body of the loop**: 
-   * We assign a new value to **`fact`**, which is the result of multiplying the current value of **`fact`** by the current value of **` n` **.
+   * We assign a new value to **`fact`**, which is the result of multiplying the current values of **`fact`** and **` n` **.
    * We decrease the value of **`n`** by **-1**.
 * We print the final value of the factorial outside the body of the loop.
 
@@ -242,13 +242,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#7
 
 Sum the digits of a **positive** integer **n**. For example, if **n = 5634**, the result will be: 5 + 6 + 3 + 4 = **18**.
 
-We can use the following idea to solve the problem:
+We can use the following idea to solve the task:
 
 * We create the variable **`n`** to which we assign a value equal to the number entered by the user.
-* We create a second variable - **`sum`**, the initial value of which is 0. We will use it to calculate and store the result.
+* We create a second variable - **`sum`**, with the initial value of 0. We will use it to calculate and store the result.
 * For a loop condition, we will use **`n > 0`**, since we will remove the last digit of ** `n` ** after each calculation of the result in the body of the loop.
 * In the body of the loop:
-   * We assign a new value to **`sum`**, which is the result of the sum of the current value of **`sum`** and the last digit of **`n`**.
+   * We assign a new value to **`sum`**, equals to the sum of the current value of **`sum`** and the last digit of **`n`**.
    * We assign a new value to **`n`**, which is the result of removing the last digit of  **`n`**.
 * We print the final value of the sum outside the body of the loop.
 
@@ -270,7 +270,7 @@ So far, we got acquainted with different types of loops and learned about their 
 
 ### What is an Infinite loop?
 
-An infinite loop is the one that **repeats infinitely** the execution of its body. An infinite loop is the one that **repeats infinitely** the execution of its body. Тhe end check of the **`while`** and **`do-while`** loops is a conditional expression that **always** returns **`true`**. An infinite **`for`** occurs when there is **no condition to end the loop**. 
+An infinite loop is the one that **repeats infinitely** the execution of its body. An infinite loop is the one that **repeats infinitely** the execution of its body. For **`while`** and **`do-while`** loops the chaeck for the end of a loop is a conditional expression that **always** returns **`true`**. An infinite **`for`** occurs when there is **no condition to end the loop**. 
 
 Here is what an **infinite `while`** loop looks like:
 
@@ -282,7 +282,7 @@ And here is what an **infinite `for`** loop looks like:
 
 ### The break operator
 
-We already know that the infinite loop executes a certain code to infinity, but what if we want to forcibly exit the loop under a given condition at some point? In this situation, the **`break`** operator comes in handy.
+We already know that the infinite loop executes a specific code to infinity, but what if we want to forcibly exit the loop under a given condition at some point? In this situation, the **`break`** operator comes in handy.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>The <b><code>break</code></b> operator stops the loop execution at the moment it is called and continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed and, accordingly the rest of the code in the body of the loop will not be executed. </td>
@@ -290,9 +290,9 @@ We already know that the infinite loop executes a certain code to infinity, but 
 
 ### Example: Prime numbers
 
-The next problem we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
+The next task we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
 
-**Definition**: an integer is **prime** if it is divisible without remainder only to itself and to 1. By definition, prime numbers are positive and greater than 1. The smallest prime number is **2**.
+**Definition**: an integer is **prime** when it is divisible without remainder only to itself and 1. By definition, prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
 We can assume that an integer **n** is prime, if **n > 1** and **n** is not divisible by any of the numbers between **2** and **n-1**.
 
@@ -319,10 +319,10 @@ Check if a number **n** is prime. To do so, we will check if **n** is divisible 
 
 Here is the algorithm for prime number verification, described in steps:
 
-* We create the variable **`n`** to which we assign the **integer** value, obtained from the console input.
-* We create a boolean variable - **`isPrime`** with an initial value **`true`** **if the number is equal or greater than two** (since by definition numbers such as 0, 1, -1 and -2 and non-prime).  We assume that a number is prime until proven otherwise.
-* We create a **`for`** loop, we assign 2 as an initial value of the loop variable and **its current value `<= √n`** as a condition. The step of the loop is 1.
-* In **the body of the loop** we check if **`n`** divided by **the current value** has a remainder. If there is no remainder, we change the value of **`isPrime`** to **`false`** and forcibly terminate the loop with a **`break`** operator.
+* We create the variable **`n`**, to which we assign the **integer** value obtained from the console input.
+* We create a boolean variable - **`isPrime`** with an initial value **`true`** **if the number is equal or greater than two** (since by definition, numbers such as 0, 1, -1, and -2 are non-prime).  We assume that a number is prime until proven otherwise.
+* We create a **`for`** loop, and we assign 2 as an initial value of the loop variable and **its current value `<= √n`** as a condition. The step of the loop is 1.
+* In **the body of the loop**, we check if **`n`** divided by **the current value** has a remainder. If there is no remainder, we change the value of **`isPrime`** to **`false`** and forcibly terminate the loop with a **`break`** operator.
 * Depending on the **`isPrime`** value, we print whether the number is prime (**`true`**) or composite (**`false`**).
 
 Here is a sample implementation of the described algorithm:
@@ -336,23 +336,23 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#9
 
 ### Example: Break operator in an infinite loop
 
-Write a program that checks if a number **n** is even – if it is, print in on the screen. An even number is each number that is divisible by 2 without a remainder. In the case of an invalid number, it should be re-input and a message stating that the number is not even should be displayed. 
+Write a program that checks if a number **n** is even – if it is, prints it on the screen. An even number is each number that is divisible by 2 without a remainder. In the case of an invalid number, it should be re-input, and a message stating that the number is not even should be displayed. 
 
-Here is an idea how to solve the problem:
+Here is an idea how to solve the task:
 
-* We create a variable **`n`**, wo which we assign an initial value of **0**.
-* We create an infinite **`while`** loop and we put **`true`** as a condition.
+* We create a variable **`n`**, to which we assign an initial value of **0**.
+* We create an infinite **`while`** loop, and put **`true`** as a condition.
 * In **the body of the loop**:
    * We take the intiger obtained by the console input and assign it to **`n`**.
    * If **the number is even**, we exit the loop with a **`break`**. 
-   * **Otherwise**, we display a message stating that **the number is not eveb**. The iterations continue until an even number is entered.
+   * **Otherwise**, we display a message stating that **the number is not even**. The iterations continue until an even number is entered.
 * We print the even number on the screen.
 
 Here is a sample implementation of the idea:
 
 ![](assets/chapter-7-1-images/11.Enter-even-number-01.png)
 
-Note: although the code above is correct, it will not work if the user enters text instead of numbers, for example "** Invalid number **". Then the parsing of the text to a number will break and the program will display **error message (exception)**. We will learn in a while how to deal with this problem and how to catch and handle exceptions using the **`try-catch` construct**.
+Note: although the code above is correct, it will not work if the user enters text instead of numbers, for example, "** Invalid number **". Then the parsing of the input text to a number will break, and the program will display **error message (exception)**. Later in this chapter, we will learn how to deal with this problem and how to catch and handle exceptions using the **`try-catch` construct**.
 
 #### Testing in the Judge system
 
@@ -361,7 +361,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 
 ## Nested loops and the break operator
 
-Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3 and the second one is decreasing from 3 to 1. The problem must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
+Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3, and the second one is decreasing from 3 to 1. The task must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
 
 The desired result is:
 
@@ -381,50 +381,50 @@ Why does this happen? As we can see, the result ** is missing '1 1' **. When the
 <td>When we use the <b><code>break</code></b> operator in a <b>nested loop</b>, it interrupts the execution of the inner loop <b>only</b>.</td>
 </tr></table>
 
-What is **the correct solution**? One way of solving this problem is by declaring a **`bool` variable**, which keeps track if the loop should continue. In case of need of exit (from all nested loops), the **'true'** variable is made and exits the internal cycle with a **'break'** and the outer loop is left upon subsequent verification. Here is a sample implementation of this idea:
+What is **the correct solution**? One way of solving this task is by declaring a **`bool` variable**, which keeps track of whether the loop should continue. In case of need to exit (from all nested loops), the variable is set to **'true'** and exits the internal cycle with a **'break'**, and at the next check, will exit from the outer loop. Here is a sample implementation of this idea:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
-Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and exit the inner loop. Upon the next rotation of the outer loop due to the **`if`** check, the program will not be able to reach the inner loop and will interrupt its execution. 
+Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and exit the inner loop. Upon the next iteration of the outer loop due to the **`if`** check, the program will not reach the inner loop and interrupt its execution. 
 
 ### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#11](https://judge.softuni.bg/Contests/Practice/Index/659#11).
 
 
-## Error handling: try-catch
+## Error handling: try-catch construction
 
-The last thing we will get familiar with in this chapter is how to "catch" **errors** with the **`try-catch`** construction.
+The last thing we will get familiar with within this chapter is how to "catch" **errors** with the **`try-catch`** construction.
 
 ### What is try-catch?
 
 The **`try-catch`** program construction is used to **intercept and handle exceptions (errors)** during the program execution.
 
-In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such exceptional events **interrupt the execution** of our program and it is looking for something to handle the situation. If it does not find it, the exception is printed on the console (the program "fails"). If it finds, **the exception is processed** and the program continues its normal execution without "failing". In a bit, we will see exactly how this happens.
+In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such exceptional events **interrupt the execution** of our program, and it is looking for something to handle the situation. If it does not find it, the exception is printed on the console (the program "fails"). If it finds, **the exception is processed** and the program continues its normal execution without "failing". In a bit, we will see how this happens.
 
-When an exception occurs, the exception is said to have been **”thrown” (throw exception)**. Hence the expression **”catch exception”**
+When an exception occurs, the exception is said to have been **”thrown” (throw exception)**. Hence the expression **”catch exception”**.
 
 ### The try-catch construction
 
-The **`try-catch`** construction has different types, but for now we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex `**
+The **`try-catch`** construction has different types, but for now, we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex `**
 
  ![](assets/chapter-7-1-images/00.Try-catch-01.png)
  
-In the next task we will see how to handle a situation in which the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
+In the next task, we will see how to handle a situation where the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
 
 ### Example: Handling invalid numbers with try-catch
 
-Write a program that checks if a number **n** is even – if it is, print in on the screen. Upon entering an **invalid number**, a message should be displayed that the entered input is not a valid number and another input should be made.
+Write a program that checks if a number **n** is even – if it is, print in on the screen. Upon entering an **invalid number**, a message appears stating that the input data is not a valid number, and another input data must be made.
 
 Here is how we can solve the problem:
 
-* We create an infinite **`while`** loop, for which we set a condition **`true`**.
+* We create an infinite **`while`** loop, for which we set **`true`** as a condition.
 * In the body of the loop:
 	* We create a **`try-catch`** construction.
-	* In the **`try`** block we write the programming logic for reading the user input, parsing it to a number, and the check for even number.
-	* If **the number is even**, we print it and exit the loop (with **`break`**). The program is done and it ends.
-	* If **the number is odd**, we print a message that an even number is required, without exiting the loop (since we want it to be repeated again).
-	* If we **catch an exception** upon executing the **`try`** block, we write a message for an invalid input number (and the loop is repeated because we do not explicitly exit it).
+	* In the **`try`** block, we write the programming logic for reading the user input, parsing it to a number, and then check for an even number.
+	* If **the number is even**, we print it and exit the loop (with **`break`**). The program is done, and it ends.
+	* If **the number is odd**, we print a message that an even number is required, without exiting the loop (since we want to repeat the step with entering input data).
+	* If we **catch an exception** upon executing the **`try`** block, we write a message for an invalid input number, and the loop is repeated because we do not explicitly exit it.
 
 Here is a sample implementation of the described idea:
 
@@ -434,10 +434,10 @@ Here is a sample implementation of the described idea:
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#12](https://judge.softuni.bg/Contests/Practice/Index/659#12).
 
-Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits) or texts that do not contain numbers.
+Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits), or texts that do not contain numbers.
 
 
-## Problems with loops
+## Tasks with loops
 
 In this chapter we have introduced several new types of loops that can be used to make repetitions with more complex program logic. Let's solve several problems using the new knowledge.
 
