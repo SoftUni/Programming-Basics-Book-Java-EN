@@ -18,7 +18,7 @@ if (boolean expression) {
  
 ## Exam tasks
 
-After recalling how to write conditional statements, let's solve a few problems to get practical experience with the ** `if-else` ** statement.
+After recalling how to write conditional statements, let's solve a few problems to get practical experience with the **`if-else`** statement.
 
 ## Task: transportation price
 
@@ -144,13 +144,9 @@ Once we have the **the amount** of water that has passed through the **pipes**, 
 
 We will do this with a simple **`if-else`** conditional statement, in which the condition will be whether **the amount of water is less than the volume of the pool**. If the check returns **`true`**, then we need to print a **line** that contains **the ratio** between **the amount of water that has passed through the pipes** and the volume of pool**, as well as **the ratio of the amount of water** from each pipe to **pool volume**.
 
-Съотношението е нужно да бъде изразено в **проценти**, затова и всички изчисления до момента в този ред ще бъдат **умножени по 100**. Стойностите ще бъдат вмъкнати с **форматиращи низове** и тъй като има условие **резултата в проценти** да се форматира до **цяло число**, то за целта ще използваме метода **`Math.floor(…)`**.
-
 The ratio needs to be expressed in **percentage** that's why we'll **multiply by 100** the result of all the prior calculations on this line. The values will be interpolated using **formatting strings** and rounded down to **integer** with **`Math.floor (…)`** (it's a requirement of the task).
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
-
-Ако проверката обаче върне резултат **`false`**, то това означава, че количеството вода е **по-голямо** от **обема** на басейна, съответно той е **прелял**. Отново изхода трябва да е на **един ред**, но този път съдържа в себе си само **две стойности** - тази на **часовете**, в които работникът е отсъствал, и **количеството вода**, което е **разлика** между **влязлата вода** и **обема на басейна**.
 
 However, if the check returns **`false`** it means that the amount of water is **greater** than **the volume** of the pool, respectively it has **overflowed**. Again, the output must be **one line** but this time it should contain only **two values** - **away time in hours** of the worker and **the amount of overflowed water**.
 
@@ -211,8 +207,6 @@ Now that we have **the number of days to play**, we can now **calculate Tom's pl
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
 We need to **print the difference** between **hours** and **minutes**. That's why we'll subtract from the **total** playing time Tom's playtime norm of **30 000** minutes and we'll **store** the result in **new** variable. After that we'll use that new variable to **divide without reminder** to 60 and that's how we'll get the **hours**. To get the number of **minutes** we'll utilize the **modulo operator `%`** and get the reminder of division by 60.
-
-In the condition of the output problem we see that we will have to ** print the difference ** between the two values in ** hours ** and ** minutes **. For this purpose, from the ** total ** playing time we will ** subtract ** the norm of ** 30,000 ** minutes and we will ** save ** the obtained difference in ** new ** variable. Then we will ** divide this variable ** integer ** by 60 to get ** the hours **, and then to find out how many ** minutes ** we will use ** modular division with the operator `%` ** , again dividing the variable of the difference by 60.
 
 Note that if Tom's resulting **playtime** is **less** than **30 000** when we **subtract** the norm we'll get **negative number**. We can **fix** that with the **method `Math.abs(…)`** when subtracting.
 
@@ -297,7 +291,6 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 ### Test your code in the Judge system
 
 You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#3](https://judge.softuni.bg/Contests/Practice/Index/652#3).
-
 
 ## Task: company
 
