@@ -1,19 +1,19 @@
 # Chapter 7.1. More complex loops
 
-Having learnt what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops**, as well as some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
+Having learned what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops** and some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
 
   * loops **with a step**
   * **`while`** loops
   * **`do-while`** loops
   * **infinite** loops
 
-In the current chapter we will also get acquainted with the **`break`** statement and **how** to **terminate** a loop with it. We will also learn how to keep track of **errors** during the execution of our program, using a **`try-catch`** block. 
+In the current, chapter we will also get acquainted with the **`break`** statement and **how** to **terminate** a loop using it. We will also learn how to keep track of **errors** during the execution of our program, using a **`try-catch`** block. 
 
 
 ## Video
 
 <div class="video-player">
-  Watch a video tutorial on this chapter here: <a target="_blank"
+  Watch a video lesson on this chapter here: <a target="_blank"
   href="https://www.youtube.com/watch?v=kaJSrGrvakQ">
   https://www.youtube.com/watch?v=kaJSrGrvakQ</a>.
 </div>
@@ -21,7 +21,7 @@ In the current chapter we will also get acquainted with the **`break`** statemen
 
 ## Loops with a step
 
-In chapter **"Repetitions (Loops)"** we learnt how the **`for`** loop works and we already know when and for what purpose to use it. In this chapter we will pay **attention** to a certain and very important **part of its construction**, namely the **step**. 
+In chapter **"Repetitions (Loops)"**, we learned how the **`for`** loop works, and we already know when and for what purpose to use it. In this topic, we will pay **attention** to a specific and very important **part of its construction**, namely the **step**. 
 
 ### What is a step?
 
@@ -31,13 +31,13 @@ It most often has a **size `1`** and in that case instead of writing **`i += 1`*
 
 ![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
-The following is a series of sample problems, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
+The following is a series of examples, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
-### Example: Numbers from 1 to N with Step 3
+### Example: Numbers from 1 to N with step 3
 
 Write a program that prints the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
 
-We can solve the problem through the following sequence of actions (algorithm):
+We can solve the task through the following sequence of actions (algorithm):
 
   * We read the number **`n`** from the console input.
   * We run a **`for` loop** from **1** to **`n`** with a step size of **3**.
@@ -54,7 +54,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#0
 
 Write a program that prints the numbers **from n to 1 in reverse order** (step -1). For example, **if n = 100**, the result will be **100, 99, 98, …, 3, 2, 1**.
 
-We can solve the problem in the following way:
+We can solve the task in the following way:
 
   * We read the number **`n`** from the console input.
   * We run a **`for` loop** in which we assign **`int i = n`**.
@@ -71,7 +71,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1
 
 ### Example: Numbers from 1 to 2^n with a for loop
 
-In the following example, we will have a look at using the usual step with size 1, but with a slightly different logic in the body of the loop.
+In the following example, we will have a look at using the usual step with size 1 but with a slightly different logic in the body of the loop.
 
 Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of n). For example, **if n = 10**, the result will be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
@@ -86,11 +86,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#2
 
 Print the **even** powers of **2** to **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, the result will be **1, 4, 16, 64, 256, 1024**.
 
-Here is a way to solve the problem:
+Here is a way to solve the task:
 
   * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
   * We set a value of **2** for the **step** of the loop.
-  * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem).
+  * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the task).
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
