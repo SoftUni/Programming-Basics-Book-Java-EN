@@ -299,61 +299,62 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#3](https://judge.softuni.bg/Contests/Practice/Index/652#3).
 
 
-## Задача: фирма
+## Task: company
 
-Фирма получава заявка за изработването на проект, за който са необходими определен брой часове. Фирмата разполага с **определен брой дни**. **През 10% от дните** служителите са на обучение и **не могат да работят** по проекта. Един нормален **работен ден във фирмата е 8 часа**. Проектът е важен за фирмата и всеки **служител задължително работи** по проекта в **извънработно време по 2 часа** на ден.
+A company is requested to develop a project that is estimated for a given number of hours. The company has **a certain number of days** to do that. **In 10% of those days** its employees are being onboarded and **are not ready to work** on the project. A normal **working day at this company lasts for 8 hours**. The project is important for the company and every **employee is obliged to work** on this project **overtime for 2 hours** per day.
 
-**Часовете** трябва да са **закръглени към по-ниско цяло число** (например → **6.98 часа** се закръглят на **6 часа**).
+**The hours** should be **rounded down** (e.g. **6.98 hours** are rounded to **6 hours**).
 
-Напишете програма, която изчислява дали **фирмата може да завърши проекта навреме** и **колко часа не достигат или остават**.
+Your task is to write a program that **calculates if the company is going to finish the project on time** and **how many hours more are needed for the completion of the project** or if the execution was successful **how many dedicated working hours are left at hand**.
 
-### Входни данни
+### Input data
 
-Входът се чете от **конзолата** и съдържа **точно 3 реда**:
-* На първия ред са **необходимите часове** – цяло число в интервала [**0 … 200 000**].
-* На втория ред са **дните, с които фирмата разполага** – цяло число в интервала [**0 … 20 000**].
-* На третия ред е **броят на всички служители** – цяло число в интервала [**0 … 200**].
+**Three lines** are read from the console:
+* The first line contains the necessary **number of working hours** - an integer in the interval [**10 … 200 000**].
+* The second line contains the **days that the company has to finish the project** - an integer in the interval [**0 … 20 000**].
+* The third line contains **the number of all employees** - an integer in the range [**1 … 600**].
 
-### Изходни данни
+### Output data
 
+**One line** is expected to be **printed** on the console:
 Да се **отпечата** на конзолата **един ред**:
-* Ако **времето е достатъчно**:
-  * **"Yes!{оставащите часове} hours left."**.
-* Ако  **времето НЕ Е достатъчно**:
-  * **"Not enough time!{недостигащите часове} hours needed."**.
+* If **the time is enough**:
+   * **"Yes! {hours left} hours left**.
+* If **the time is NOT enough**:
+  * **"Not enough time! {hours needed} hours needed."**.
 
-### Примерен вход и изход
+### Sample input and output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |90<br>7<br>3<br>|Yes!99 hours left.|99<br>3<br>1|Not enough time!72 hours needed.|
 
-### Насоки и подсказки
+### Guidelines and tips
 
-За да решим задачата, ще прочетем входа, ще извършим няколко проверки и изчисления и ще отпечатаме резултата.
+To solve the task we'll read from the standart input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Обработка на входните данни
+#### Input data processing
 
-За решението на задачата е нужно **първо** да преценим какви **типове променливи** ще използваме за **входните данни**. 
+First we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
 ![](assets/chapter-3-2-images/05.Firm-01.png)
 
-#### Помощни изчисления
+#### Auxiliary calculations
 
-Следващата стъпка е да изчислим **количеството на работните часове** като умножим работните дни по 8 (всеки ден се работи по 8 часа) с броя на работниците и ги съберем с извънработното време. **Работните дни** са равни на **90% от дните**, с които фирмата разполага. **Извънработното време** е равно на резултата от умножението на броя на служителите с 2 (възможните часове извънработно време), като това също се умножава по броя на дните, с които фирмата разполага. От условието на задачата виждаме, че има условие **часовете** да са **закръглени към по-ниско цяло число**, което ще направим с метода **`Math.floor(…)`**.
+The next step is to calculate **the number of working hours**. This we can do by multiplying the working days by 8 (every working day is 8 hours) and the number of the company's employees. On top of that we should add the overtime too. **The working days** are equal to **90% of the days** that the company has. **The overtime** is equal to the result of the multiplication of the employees and 2 (decided overtime length) and the number of the days that the company has. We can see that the task requires **the working hours** to be **rounded down**. That's something we can easily do by using the method **`Math.floor(…)`**.
 
 ![](assets/chapter-3-2-images/05.Firm-02.png)
 
-#### Извършване на проверки
+#### Performing verifications
 
-След като сме направили изчисленията, които са ни нужни за да разберем стойността на **работните часове**, следва да направим проверка дали тези часове **достигат или остават допълнителни** такива. 
+Once we've made the calculations we need to compute the value of **the working hours** we should check whether these hours **are enough**.
 
-Ако **времето е достатъчно**, разпечатваме резултата, който се изисква в условието на задачата, а именно разликата между **работните часове и необходимите часове** за завършване на проекта. 
+If **the time is enuogh** we print the difference between **the working hours and the estimated hours** for the project.
 
-Ако **времето не е достатъчно**, разпечатваме допълнителните часове, които са нужни за завършване на проекта и са равни на разликата между **часовете за проекта** и **работните часове**. 
+If ** the time is not enough ** we print the additional hours that are needed to finish the project. And that is the difference between **the estimated hours** and **the working hours**.
 
 ![](assets/chapter-3-2-images/05.Firm-03.png)
 
-### Тестване в Judge системата
+### Test your code in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/652#4](https://judge.softuni.bg/Contests/Practice/Index/652#4).
+You can test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#4](https://judge.softuni.bg/Contests/Practice/Index/652#4).
