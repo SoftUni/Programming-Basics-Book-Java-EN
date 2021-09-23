@@ -248,58 +248,57 @@ We can read series of **`n`** numbers from the console:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Exercises: Repetitons (Loops)
+## Exercises: Repetitions (Loops)
 
-After we got acquainted with the loops it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Lets solve а some problems for exersise.
+After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve а some tasks for exercise.
 
 ### Creating new project in IntelliJ IDEA
 
-We start by creating a new project in IntelliJ IDEA to better organise our solutions for the exersise. For each task we will create a separate class.
+We start by creating a new project in IntelliJ IDEA to better organize our solutions for the exercise. For each task, we will create a separate class.
 
 Start IntelliJ IDEA and select: **[Create New Project]**.
 
 ![](assets/chapter-5-1-images/10.New-project-01.png)
 
-after that in the left field select Java, if **PROJECT SDK: ** is empty we select the path to the Java **JDK** installation directory and click on the button **[Next]**.
+After that, on the left side  of the window, select Java. If the **PROJECT SDK:** field is empty, choose the path to the Java **JDK** installation directory and click on the button **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-02.png)
 
-In the next window we again click on the button **[Next]**.
+In the next window, we again click on the button **[Next]**.
 
 ![](assets/chapter-5-1-images/10.New-project-03.png)
 
-We name the project (Project name:) **Loops** and select the directory where the project will be saved (Project location:).
-After that we click on the button **[Finish]**.
+We name the project (Project name:) **Loops** and select the directory where the project will be saved (Project location:). After that, we click on the button **[Finish]**.
 
 ![](assets/chapter-5-1-images/10.New-project-04.png)
  
-In the next window we click on the **[OK]** button to create **Project location** if the directory doesn't exist.
+In the next window, we click on the **[OK]** button to create **Project location** if the directory doesn't exist.
 
 ![](assets/chapter-5-1-images/10.New-project-05.png)
 
-We created a new project. If we click on the triangle in front of **Loops** in the left window we will open the structure of project.
+We created a new project. If we click on the triangle in front of **Loops** on the left side of the window, the structure of the project itself will open.
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
-In order to create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **tasks** (with small letter).
+To create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **tasks** (with a small first letter).
 
 ![](assets/chapter-5-1-images/10.New-project-07.png)
 
-In order to create new class for the first task, right-click with the mouse on **tasks**, select **New** -> **Java Class** and name it **Task_01** (with its first letter as a capital letter).
+To create new class for the first task, right-click with the mouse on **tasks**, select **New** -> **Java Class** and name it **Task_01** (with a capital letter).
 
 ![](assets/chapter-5-1-images/10.New-project-08.png)
 
 ![](assets/chapter-5-1-images/10.New-project-09.png)
 
-After these changes the structure of the project should look like this:
+After these changes, the structure of the project should look like this:
  
 ![](assets/chapter-5-1-images/10.New-project-10.png)
  
-For each subsequent exercise we will create a new class in the way described above. 
+For each subsequent exercise, we will create a new class in the way described above. 
  
-### Problem: Element Equal to the Sum of the Rest
+### Task: An element equal to the sum of the others
 
-Write a program that inputs **n whole numbers** and checks whether among them there is a number equal to the sum of all the rest. If there is such an element, print **"Yes" + its value**, otherwise - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
+Write a program that inputs **n integers** and checks if there is a number among them that is equal to the sum of all others. If there is such an element, print **"Yes" + its value**. Otherwise, print **"No" + the difference between the largest element and the sum of the rest**, as an absolute value. 
 
 #### Sample input and output
 
@@ -311,7 +310,7 @@ Write a program that inputs **n whole numbers** and checks whether among them th
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 We must calculate the **sum** of all elements, find the **largest** of them and check the condition.
 
@@ -320,7 +319,7 @@ We must calculate the **sum** of all elements, find the **largest** of them and 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#9](https://judge.softuni.bg/Contests/Practice/Index/655#9).
 
 
-### Problem: Odd / Even Position 
+### Task: Even \/ Odd position 
 
 Write a program that reads **n numbers** and calculates **the sum**, the **min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
 
@@ -333,18 +332,18 @@ Write a program that reads **n numbers** and calculates **the sum**, the **min**
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-The task combines some of the previous tasks: finding the **min**, **max** and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions of the previous tasks again.
+The task combines several previous tasks: finding the **min**, **max**, and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions to the previous tasks again.
 
-In the current task it is better to work with **fractions** (not integers). The sum, the min and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is equal to the neutral value, we will print **“No”**.
+In the current task, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the result is equal to the neutral value, we will print **“No”**.
 
 #### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#10](https://judge.softuni.bg/Contests/Practice/Index/655#10).
 
 
-### Problem: Equal Pairs 
+### Task: Equal pairs 
 
 There are **2 \* n numbers**. The first and the second form a **pair**, the third and the fourth number also, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal values**.
 
