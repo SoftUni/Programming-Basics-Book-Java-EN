@@ -1,6 +1,6 @@
 # Chapter 6.1 Nested Loops
 
-This chapter will discuss **nested loops in the Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`for` loop** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
+This chapter will discuss **nested loops in Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`single` loops** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
 
 ## Video
@@ -12,22 +12,22 @@ This chapter will discuss **nested loops in the Java language**. We will use **`
 
 ### Example: A rectangle with a size of 10 x 10 asterisks
 
-Write a program that draw, on the console, a rectangle with a size of **10 x 10** asterisks.
+Write a program that draws a rectangle of **10 x 10** asterisks in the console.
 
 |Input|Output|
 |---|---|
 |(no input)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 To solve the task, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the body of the loop, and after the iteration, a check about the state of the variable is performed. Thus the code in the body of the loop is executed exactly **ten times** ie. for each row of the rectangle. In the body of the loop, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
+How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the loop body, and after the iteration, a check about the state of the variable is performed. Thus the code in the loop body is executed exactly **ten times** i.e. for each row of the rectangle. In the loop body, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#0](https://judge.softuni.org/Contests/Practice/Index/657#0).
 
 
 ### Example: A rectangle with a size of N x N asterisks
@@ -38,7 +38,7 @@ Write a program that reads an integer **n** from the console, and as output, dra
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
 To perform the task, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
@@ -46,23 +46,23 @@ To perform the task, we will use the **`Scanner`** class, which allows us to rea
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#1](https://judge.softuni.org/Contests/Practice/Index/657#1).
 
 
 ## Nested Loops
 
-Nested loops are construction in which **in the body of one loop** statement (called outer), **another loop statement is performed** (called inner). For each iteration of the outer loop statement, the inner one is performed **the whole**. This happens as follows:
-
- - When starting the execution of nested loops, first **the outer loop starts** which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+Nested loops are construction in which **in the body of one loop** statement (called outer), **another loop statement is performed** (called inner). For each iteration of the outer loop statement, the inner one is executed **completely**. This happens as follows:
+<!--....is performed **the whole**. This happens as follows: -->
+ - When the execution of nested loops begin, **the outer loop starts** first which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - Then **the inner loop is executed**, which includes the same steps: the control variable is initialized, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - When the condition for **the end of the inner loop** is met, the program returns one step up, and the started execution of the outer loop continues. This results that the variable of the outer loop is changing (incremented), then checks whether the end condition of the outer loop is satisfied. If not, **a new execution of the nested (inner) loop starts**.
  - This is repeated until the outer loop variable reaches the **end of loop** condition.
 
-Here is an **example** with which to illustrate the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
+Here is an **example** that illustrates the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
 
 ![](assets/chapter-6-1-images/00.Nested-loops-01.png)
 
-How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which in turn contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
+How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
 ### Example: A square with a size of 10 x 10 asterisks
 
@@ -72,7 +72,7 @@ Write a program that draws on the console a square of **N x N** asterisks:
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
 The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
@@ -80,7 +80,7 @@ The task is similar to the previous one. Here, it is necessary to consider how t
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#2](https://judge.softuni.org/Contests/Practice/Index/657#2).
 
 
 ### Example: A triangle of dollar signs
@@ -91,15 +91,15 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|---|---|
 |3|<code>$</code><br><code>$ $</code><br><code>$ $ $</code>|4|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code>|5|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
-The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** on which **line** we are at the time of printing, ie. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
+The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#3](https://judge.softuni.org/Contests/Practice/Index/657#3).
 
 
 ### Example: Square frame 
@@ -114,7 +114,7 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
 We can solve the task as follows:
 * We read an integer **`n`** from the console.
@@ -122,13 +122,13 @@ We can solve the task as follows:
 * We print **the middle part** of the frame: we print **n-2** lines as first print the sign **`|`**, then **n-2** times the sign **`-`** and finally again the sign **`|`**. We can achieve this with nested loops.
 * We print **the lower part** of the frame: first print the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**. 
 
-Here is an example implementation of the described logic, above, with nested loops: 
+Here is an example implementation of the described logic above, with nested loops: 
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#4](https://judge.softuni.org/Contests/Practice/Index/657#4).
 
 
 ### Example: A diamond of asterisks 
@@ -144,9 +144,9 @@ Write a program that reads an integer number **n** from the console and returns 
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
-To solve the task, we divide (mentally) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
+To solve the task, we divide (imaginary) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
 
 For the upper part of the rhombus (first loop) we can use the following guidelines:
 * We print **`n-row`** intervals.
@@ -159,7 +159,7 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#5](https://judge.softuni.org/Contests/Practice/Index/657#5).
 
 
 ### Example: Christmas tree
@@ -174,24 +174,24 @@ Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the co
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
-As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
+As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **in front of** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#6](https://judge.softuni.org/Contests/Practice/Index/657#6).
 
 
 ## Drawing more complex figures
 
-Let's look few exercises about how we can draw figures on the console with more complex logic. To solve these tasks, we need to think more about the program logic before we start writing.
+Let's look at a few exercises about how we can draw figures on the console with more complex logic. To solve these tasks, we need to think more about the program logic before we begin writing.
 
 ### Example: Sunglasses 
 
-Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the console and returns as output **sunglasses** with a size of **5\*n x n**, just like examples below.
+Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the console and returns as output **sunglasses** with a size of **5\*n x n**, just like the examples below.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -201,7 +201,7 @@ Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the co
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
 As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the task.
 
@@ -209,17 +209,17 @@ When drawing the top and bottom rows, use **`2 * n`** asterisks, **`n`** spaces,
 
 ![](assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-When printing the **middle** part, we need to **check** whether the line is **`(n-1) / 2 - 1`**, because as the examples show on **this line**, we need to print **vertical dashes** instead of spaces.
+When printing the **middle** part, we need to **check** whether the line is **`(n-1) / 2 - 1`**, because as the example shows on **this line**, we need to print **vertical dashes** instead of spaces.
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#7](https://judge.softuni.org/Contests/Practice/Index/657#7).
 
 
 ### Example: House
-Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like examples below.
+Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -230,9 +230,9 @@ Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from th
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Hint and guidelines
+#### Hints and guidelines
 
-According to the requirements of the task, the house is with a size of **`n` x `n`**, but from the input and output data, we can see the following:
+According to the condition of the task, the house has dimensions of **`n` x `n`**, but from the input and output data, we can see the following:
 
 * The house consists of two parts: **roof and base**.
 
@@ -270,12 +270,12 @@ We calculate the length of **the roof**, and it equals half of **`n`**. Assign t
 
 ![](assets/chapter-6-1-images/09.House-04.png)
 
-It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of **the base**. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
+It is important to note that when **`n`** is an odd number, the length of the roof is one row bigger than **the base** one. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
 
 Example:
 
 ```java
-int result = 3 / 2; // резултат 1
+int result = 3 / 2; // result: 1
 ```
 
 If we want to round up the result, we need to use the method **`Math.ceil(…)`**: 
@@ -312,12 +312,12 @@ After we have finished with the roof, it is time for the base. It is easier to p
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#8](https://judge.softuni.org/Contests/Practice/Index/657#8).
 
 
 ### Example: Diamond 
 
-Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from the console and returns as output **a diamond** with a size of **n**, just like examples below.
+Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from the console and returns as output **a diamond** with a size of **n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -331,29 +331,29 @@ Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from th
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Hint and guidelines
+#### Hints and guidelines
 
 According to the requirements of the task, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
 
 * All lines contain exactly **`n`** characters, and all lines, except the upper and the bottom ones, have **two asterisks** (**`*`**).
 
-We can divide (mentally) the diamond into **two parts**: 
-* **Upper** part. Include from the top of the diamond and to the middle of the diamond (includes **and** the middle row).
-* **Lower** part. Include from the row immediately after the middle of the diamond and to the bottom of the diamond(inclusive).
+We can divide (imaginary) the diamond into **two parts**: 
+* **Upper** part. It starts from the top to the middle of the diamond (includes **and** the middle row).
+* **Lower** part. It starts from the row after the middle up to the bottom tip (inclusive) of the diamond.
 
 ##### Upper part
 * If **n** is **odd**, begins with **1 asterisk** (**`*`**).
 * If **n** is **even**, begins with **2 asterisks** (**`**`**).
 * With each row down, the asterisks move away from each other.
-* The space before, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
+* The space infront, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
 
 ##### Lower part
 * With each row down, the asterisks come together. It means that the space (**dashes**) between them decreases, and the space (**dashes**) on the left and right increases.
 * At its bottom, it has 1 or 2 **asterisks**, depending on whether **n** is odd or even.
 
 ##### Upper and lower part
-* On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except for the middle row.
-* Each row has a space between the two **asterisks**, except for the first and last row (sometimes **the asterisk is one**).
+* On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except the middle row.
+* Each row has a space between the two **asterisks**, except the first and last row (sometimes **the asterisk is one**).
 
 ##### Reading the Input Data
 
@@ -363,23 +363,23 @@ We read an integer **`n`** from the console and assign the value of an integer t
 
 ##### Printing the upper part of the diamond
 
-We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded down.
+We begin drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded downward.
 
 ![](assets/chapter-6-1-images/10.Diamond-02.png)
 
-After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded down).
+After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded downward).
 
 At each iteration of the loop the following steps are performed:
 * We draw as an output on the console **dashes** on the left side of the diamond (with length equals to **`leftRight`**) and right after them the first **asterisk**.
 
 ![](assets/chapter-6-1-images/10.Diamond-03.png)
 
-* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, ie. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
+* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, i.e. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-04.png)
 
-* If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equals to **`mid`** and one **asterisk** after them.
-* We draw as an output on the console **dashes** on the right side of the diamond with length equals to **`leftRight`**.
+* If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equal to **`mid`** and one **asterisk** after them.
+* We draw as an output on the console **dashes** on the right side of the diamond with length equal to **`leftRight`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-05.png)
 
@@ -401,7 +401,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#9](https://judge.softuni.org/Contests/Practice/Index/657#9).
 
 
 ## What we learned in this chapter?
