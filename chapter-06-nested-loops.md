@@ -257,7 +257,7 @@ We read an integer **`n`** from the console and assign the value of an integer t
 ![](assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current tasks, it is not a problem to directly convert the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
+<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current tasks, it is not a problem to convert directly the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
 To draw **the roof**, we write down how many **asterisks** we start within a variable called **`stars`**:
