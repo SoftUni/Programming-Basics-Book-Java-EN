@@ -384,7 +384,7 @@ We now have an empty Java project:
 
 ### Exercise: Check for excellent grade
 
-The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
+The first task of this exercises is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above. 
 
 #### Sample input and output
 
@@ -397,7 +397,7 @@ The first task of the exercises on the topic is to write a **program that reads 
 
 #### Hint and guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**].
+Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**].
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
@@ -405,13 +405,13 @@ A dialog box with two fields will open. In the upper one - enter the name of the
 
  ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
-We already have a class with one console application in it. It remains to write the code to solve the problem.
+We already have a class containing one console application. What's left is to **write the code** that solves the task.
 
-To do this, go to the body of the method **`main (string [] args)`** and place the cursor between the opening and closing curly brackets of the method. If the main method is not created automatically in **IntelliJ Idea**, there is a keyboard shortcut to do this - **`psvm`**. Inside the main method, we write the following code:
+To do that, go to the body of the method **`main (string [] args)`** and place the cursor between the opening and closing curly brackets of the method. If the main method is not created automatically in **IntelliJ Idea**, there is a keyboard shortcut to do this - **`psvm`**. Inside the main method, we write the following code:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
-**Run** the program from the green arrow in front of the class name to **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
@@ -428,7 +428,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0
 
 ### Exercise: Excellent grade or not
 
-The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
+The next task of this exercise is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
 #### Sample input and output
 
@@ -441,13 +441,13 @@ The next task of the exercises on the topic is to write a **program that reads i
 
 #### Hint and guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
+Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**].
 
-We already have a class with one console application in it. It remains to **write the code** to solve the problem. We can help ourselves with the sample code from the picture:
+We already have a class containing one console application. What's left is to **write the code** that solves the task. We can help ourselves with the sample code from this picture:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-**Run** the program from the green arrow in front of the class name to **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
@@ -461,7 +461,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
 
 ### Exercise: Even or odd number
 
-The next task is to write a **program that reads input data from the console**. As input data enter **an integer**. As output print **even** or **odd**.
+The next task is to write a **program that reads input data from the console**. As input data enter **an integer** and output **even** or **odd**.
 
 #### Sample input and output
 
@@ -474,11 +474,11 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
+Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**].
   
-In the main method, **`public static void main()`** write the code to solve the problem. To check if a number is even, we ca use operator **`%`**, which returns **the remainder of integer division by 2** in following way: **`boolean isEven = (number %2 == 0);`**.
+In the main method, **`public static void main()`** write the code to solve the task. To check if a number is even, we can use operator **`%`**, which returns **the remainder of integer division by 2** in the following way: **`boolean isEven = (number %2 == 0);`**.
 
-**Run** the program from the green arrow in front of the class name to **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
@@ -489,7 +489,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2
 
 ### Exercise: Find the greater number
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **two integers** each on a separate line. As output print the greater integer of them.
+The next task is to write a **program that reads input data from the console**. As input data enter **two integers** each on a separate line and output the greater one.
 
 #### Sample input and output
 
@@ -502,11 +502,11 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
+Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the task it's necessary to use one **`if-else`** statement. You can use the code from the image below. Have in mind that it's blurred on purpose.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-**Run** the program from the green arrow in front of the class name to **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
@@ -517,7 +517,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 
 ### Exercise: Write the number (from 0 to 9 ) in English.
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **an integer in range [0 … 9]**. As output, **print the integer in English**. If the integer is outside range, print "**number too big**".
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer in the range [0 … 9]** and output **the integer in English**. If the integer is over the given range, print "**number too big**".
 
 #### Sample input and output
 
@@ -530,7 +530,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-To solve the problem, we can use sequential **`if-else`** statements to cover **all eleven possible cases**.
+To solve the task, we can use sequential **`if-else`** statements to cover **all eleven possible cases**.
 
 #### Test the code in the Judge system
 
@@ -539,7 +539,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4
 
 ### Exercise: Password guess
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as phrase "**s3cr3t!P@ssw0rd**". As output, print "**Welcome**" if the result is true and "**Wrong password!**" if the result is false.
+The next task is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as the phrase "**s3cr3t!P@ssw0rd**". Output "**Welcome**" if the result is true and "**Wrong password!**" otherwise.
 
 #### Sample input and output
 
@@ -551,7 +551,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-To solve the problem is necessary one **`if-else`** statement.
+To solve the task it is necessary to use one **`if-else`** statement.
 
 #### Test the code in the Judge system
 
@@ -560,7 +560,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#8
 
 ### Exercise: Number from 100 to 200
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200**, and **above 200**. As output, print the corresponding message as shown in the table below.
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200** or **above 200**. Output the corresponding message as shown in the table below.
 
 #### Sample input and output
 
@@ -577,7 +577,7 @@ Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/651#
 
 ### Exercise: The same words
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. As output, print "**yes**" or "**no**".
+The next task is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. Output "**yes**" or "**no**".
 
 #### Sample input and output
 
@@ -591,7 +591,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-Before comparing words, turn them to lowercase so that the size of the letters (uppercase/lowercase) does not affect: **`String wordFirst = scanner.next().toLowerCase().`**
+Before comparing words, transform them to lowercase so that the size of the letters (uppercase/lowercase) doesn't affect the comparison: **`String wordFirst = scanner.next().toLowerCase().`**
 
 #### Test the code in the Judge system
 
@@ -600,7 +600,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
 
 ### Exercise: Speed information
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **speed**(a decimal number). As output, print information about the speed.
+The next task is to write a **program that reads input data from the console**. As input data, enter **speed**(a decimal number). Output information about the speed.
 
 * At speed **up to 10** (inclusive), print "**slowly**".
 * At speed **above 10 and up to 50**, print "**average**".
@@ -626,16 +626,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
 
 ### Exercise: Faces of figures
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its fac**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
+The next task is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its face**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
 
 On the first line of input data, read the type of figure (`square`, `rectangle`, `circle`, `triangle`).
 * If the figure is a **square**, on the next line read one number - the length of its side.
 * If the figure is a **rectangle**, on the next two lines read two numbers - the lengths of its sides.
 * If the figure is a **circle**, on the next line read one number - the radius of the circle.
-* If the figure is a **triangle**, on the next two lines read two numbers - the length of its side and the length of the height to it.
+* If the figure is a **triangle**, on the next two lines read two numbers - the length of its side and the length of the adjacent height.
 
-
-Format the output up to **3 digits after the decimal point**.
+Format the output to **3 digits after the decimal point**.
 
 #### Sample input and output
 
@@ -651,9 +650,9 @@ Format the output up to **3 digits after the decimal point**.
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
 
 
-### Exercise: Calculate what will be the time in 15 minutes 
+### Exercise: Calculate what is going to be the time in 15 minutes 
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what time it will be in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. The hours are print in one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
+The next task is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what is going to be the time in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. Ourput the hours either using one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
 #### Sample input and output
 
@@ -667,7 +666,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-To solve the problem, add 15 minutes and do a few checks. If the minutes exceed 59, **increase the hours by 1** and **decrease the minutes by 60**. Similarly, consider the case when the hours exceed 23. When printing the minutes, check for **leading zero**.
+To solve the task, add 15 minutes and perform a few checks. If the minutes exceed 59, **increase the hours by 1** and **decrease the minutes by 60**. Similarly, consider the case when the hours exceed 23. When printing the minutes, check for **leading zero**.
 
 #### Test the code in the Judge system
 
@@ -675,7 +674,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
 
 ### Exercise: Equals three numbers
 
-The next task is to write a **program that reads input data from the console**. As input data, enter **3 integers**. As output, print if they are equals (**yes** / **no**).
+The next task is to write a **program that reads input data from the console**. As input data, enter **3 integers**. Output if they are equal (**yes**/**no**).
 
 #### Sample input and output
 
@@ -690,9 +689,9 @@ The next task is to write a **program that reads input data from the console**. 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
 
 
-### Exercise: \* Write a number from 0 to 100 in English
+### Exercise: Write a number from 0 to 100 in English
 
-The next task is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. As output print  the text in English.
+The next task is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. Output the text in English.
 
 #### Sample input and output
 
@@ -704,7 +703,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and guidelines
 
-To solve the problem, first, check for **one-digit numbers**, and if the number is one-digit, print the appropriate text for it. Then check for **two-digit numbers**. Print them in two parts: left part (**tens** = number / 10) and right part (**units** = number% 10). If the number has three digits, it must be 100 and considered as a special case.
+To solve the task, first, check for **one-digit numbers**, and if the number has only one digit, print the appropriate text for it. Then check for **two-digit numbers**. Print them in two parts: left part (`tens = number / 10`) and right part (`units = number % 10`). If the number has three digits, it must be 100 and considered a special case.
 
 #### Test the code in the Judge system
 
