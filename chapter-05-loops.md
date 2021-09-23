@@ -347,9 +347,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1
 
 There are **2 \* n numbers**. The first and the second form a **pair**, the third and the fourth number also, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal values**.
 
-In case the value is the same, print **"Yes, value=…" + the value**, otherwise print the  **maximum difference** between two consecutive pairs in the following format - **"No, maxdiff=…" + the maximum difference**. 
+If the value is the same, print **"Yes, value=…" + the value** otherwise, print the  **maximum difference** between two consecutive pairs in the following format - **"No, maxdiff=…" + the maximum difference**. 
 
-The input consists of number **n**, followed by **2*n integers** one per line.
+The input consists of number **n**, followed by **2\*n integers**, one per line.
 
 #### Sample input and output
 
@@ -362,9 +362,9 @@ The input consists of number **n**, followed by **2*n integers** one per line.
 | 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | values = {-1, -1}<br>equal values | 
 | 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | values = {1, -1}<br>differences = {2}<br>max difference = 2 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We read the input numbers **in pairs**. For each pair we calculate the **sum** ѝ. While reading the input pairs, for each pair except the first one, we have to calculate **the difference with the previous one**. In order to do that we need to store the sum of the previous pair in a separate variable.  Finally, we find the **largest difference** between two pairs. If it's **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
+We read the input numbers **in pairs**. For each pair, we calculate the **sum**. While reading the input pairs, for each pair, except the first one, we have to calculate **the difference with the previous one**. To do that, we need to store the sum of the previous pair in a separate variable. Finally, we find the **largest difference** between two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
 #### Testing in the Judge system
 
@@ -373,20 +373,20 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1
 
 ## Exercise: Graphical and web applications
 
-In the current chapter we learned about **loops** кas a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them.  In order to do that we will draw some figures that will consist of a large number of repeating graphical elements. This time we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
+In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
-### Problem: Turtle Graphics GUI Application
+### Task: Turtle graphics GUI application
 
-The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
+The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will: **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
-Let's get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
+Let us get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
   * Definition of “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
   * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
   * Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter it is described how this is done). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is how this is done:
+We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter we described how to do it). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore, we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is done as follows:
   * Select **Project Structure** from the **File** menu (CTRL + SHIFT + ALT + S).
   * Click on **Select Modules** in the left pane.
   * Click on the **Dependencies** tab.
@@ -398,11 +398,11 @@ In the next window select the path to **jturtle-0.1.1.jar** and click [**ОК**]
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-In the next window mark the box **classes** and click [**ОК**].
+In the next window, mark the box **classes** and click [**ОК**].
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-In the next window click [**ОК**] and we are ready to open **`MyTurtle.java`**.
+In the next window, click [**ОК**], and we are ready to open **`MyTurtle.java`**.
   
 ![](assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
@@ -442,11 +442,11 @@ To create a method that draws a triangle in **`MyTurtle.java`** we find the empt
 This code moves and rotates the turtle, which is initially in the center of the screen (in the middle of the shape) and draws an equilateral triangle. 
 You can edit and play with it.
 
-**Стартираме** приложението с [**Shift + F10**]. Тестваме го дали работи (натискаме [**Draw**] бутона няколко пъти):
+**We start** the application with [** Shift + F10**]. We test it if it works (press the [**Draw**] button several times):
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-08.png)
 
-Now we can change and make the code of the **turtle** more complicated, by adding the following to our method **`drawTriangle()`**: 
+Now we can change and make the code of the **turtle** more complicated by adding the following to our method **`drawTriangle()`**: 
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-09.png)
 
@@ -456,7 +456,7 @@ Again, **start** the application with [**Shift + F10**]. Test if the new program
 
 Now our turtle is drawing more complex shapes.
 
-Let's write the code for the other two buttons: the purpose of the button [**Reset**] is to delete the drawn graphic and position the turtle in its starting position. We add the following code to the method **`resetTurtle()`** :
+Let us write the code for the other two buttons: the purpose of the button [**Reset**] is to delete the drawn graphic and position the turtle in its starting position. We add the following code to the method **`resetTurtle()`** :
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
@@ -464,9 +464,9 @@ The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
-Again, **start** the application with [**Shift + F10**] and test if the two button work correctly.
+Again, **start** the application with [**Shift + F10**] and test whether both buttons work correctly.
 
-### Problem: * Draw a Hexagon with the Turtle
+### Task: * Draw a hexagon with the turtle
 
 Add [**Hexagon**] button which draws a regular hexagon:
 
@@ -480,9 +480,9 @@ Repeat 6 times the following in a loop:
 
 ### Adding a new button for drawing a shape
 
-To add a new button for drawing a new shape, we can trace the logic in **`MyTurtle.java`** for the button [**Draw**] and create new button for drawing a **Hexagon**.
+To add a new button for drawing a new shape, we can trace the logic in **`MyTurtle.java`** for the button [**Draw**] and create a new button for drawing a **Hexagon**.
 
-First we add the new figure in **`enum Shape`**:
+First, we add the new figure in **`enum Shape`**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-20.png)
 
@@ -494,8 +494,7 @@ Then add the new button in **`bList`**:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-19.png)
 
-Create a new method **`drawHex()`** through which the turtle draws a hexagon.
-Mandatory at the end of the method **`shape = ""`** because this line will prevent the repeated execution of our method!
+Create a new method **`drawHex()`** through which the turtle draws a hexagon. Mandatory at the end of the method **`shape = ""`** because this line will prevent the repeated execution of our method!
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-21.png)
 
@@ -504,9 +503,9 @@ In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 ![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
-### Problem: * Draw a Star with the Turtle
+### Task: * Draw a star with the turtle
 
-Add [**Star**] button which draws a star with 5 vertices (**star pentagon**) as shown in the figure below:
+Add [**Star**] button, which draws a star with 5 vertices (**star pentagon**), as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
@@ -518,30 +517,30 @@ Repeat 5 times the following in a loop:
 * Forward step of 200.
 * 144 degrees rotation.
 
-### Problem: * Draw a Spiral with the Turtle
+### Task: * Draw a spiral with the turtle
 
-Add a [**Spiral**] button which draws a spiral with 20 vertices as shown in the figure below:
+Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
 **Hint:**
 
-Draw in a loop by moving ahead and rotating. In each step, decrease gradually the length of the forward step and rotate 60 degrees.
+Draw in a loop by moving ahead and rotating. Gradually increase the length of the forward movement with each step and turn it 60 degrees.
 
-### Problem: * Draw a Sun with the Turtle
+### Task: * Draw a sun with the turtle
 
-Add [**Sun**] button which draws a sun with 36 vertices as shown in the figure below:
+Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-### Problem: * Draw a Spiral Triangles with the Turtle
+### Task: * Draw a spiral triangles with the turtle
 
-Add [**Triangle**] button which draws three triangles with 22 vertices each as shown in the figure below:
+Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
 **Hint:**
 
-Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles.
+Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times for the three triangles.
 
-If you have a problem with the exercises above ask for help in the official **SoftUni forum**: https://softuni.bg/forum.
+If you have a problem with the exercises above, ask for help in the official **SoftUni forum**: https://softuni.bg/forum.
