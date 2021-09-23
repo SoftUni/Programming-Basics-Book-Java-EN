@@ -1,6 +1,6 @@
 # Chapter 5.1. Repetitions (Loops)
 
-In the present chapter we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its symplest form. Finally, we will solve some practical problems that require repeating series of actions, using loops.
+In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical tasks that require repeating series of actions, using loops.
 
 ## Video
 
@@ -12,25 +12,25 @@ In the present chapter we will get familiar with how to **repeat blocks of comma
 
 ## Repetitions of blocks of code (for loop)
 
-Often in programming we have to  **execute a block of code multiple times**. In order to do that we use the so called **loops**. Let us look at an example of a **`for` loop** that passes sequentially through the numbers from 1 to 10 and prints them: 
+Often in programming, we have to  **execute a block of code multiple times**. To do that, we use the so-called **loops**. Let us look at an example of a **`for` loop** that passes sequentially through the numbers from 1 to 10 and prints them: 
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-The loop starts with the **operator `for`** and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
+The loop starts with the **operator `for`** and passes through all values for a particular variable in a given range, for example, the numbers from 1 to 10 (included), and for each value, it performs a series of commands.
 
-Upon declaring the loop, you can specify a **start value** and an **end value**. **The body of the loop** is enclosed in curly brackets **`{ }`** and represents a block of one or multiple commands. The figure below shows the structure of a **`for` loop**:
+When declaring the loop, an **initial value** and an **end value** are specified. **The body of the loop** is enclosed in curly brackets **`{ }`** and represents a block of one or multiple commands. The figure below shows the structure of a **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-02.png)
 
-In most cases a **`for` loop** is run from **`1`** to **`n`** times(for example from 1 to 10). The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action.  In the example above, the **`i`** variable is assigned values from 1 to 10 and the current value is printed in the body of the loop. The loop repeats 10 times and each of these repetitions is called an "**iteration**".
+In most cases, a **`for` loop** is run from **`1`** to **`n`** times(for example from 1 to 10). The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n, and for each number to perform a particular action. In the example above, the **`i`** variable takes values from 1 to 10, and the current value is printed in the body of the loop. The loop repeats 10 times, and each of these repetitions is called an "**iteration**".
 
 ### Example: Numbers from 1 to 100
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line. 
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We can solve the problem using a **`for` loop** , which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
+We can solve the task using a **`for` loop**, which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
@@ -38,28 +38,27 @@ We can solve the problem using a **`for` loop** , which will assign values from 
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Testing in the Judge System
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#0](https://judge.softuni.bg/Contests/Practice/Index/655#0).
 
-
 You should get **100 points** (fully accurate solution).
 
-## Code Snippet for for loop in IntelliJ IDEA
+## Code Snippet for **`for`** loop in IntelliJ IDEA
 
-In software development, we regularly need to write loops, dozens of times a day. That is why in most integrated development environments (IDE) there are **code snippets** for writing loops. One such exapmle is the **snippet for `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
+In software development, we regularly need to write loops dozens of times a day. That is why in most integrated development environments (IDE), there are **code snippets** for writing loops. One such example is the **snippet for `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet, and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
-**Try it yourself**, in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
+**Try it yourself** in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
 
-### Example: Numbers Ending in 7
+### Example: Numbers ending in 7
 
-Write a program that finds all numbers within the range [**1 … 1000**], that end with 7. 
+Write a program that finds all numbers within the range [**1 … 1000**] that ends with 7. 
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We can solve the problem by combining a **`for` loop** which will go through the numbers from 1 to 1000 and a **condition** to check if they end with 7. There are other solutions too, but let's solve the problem using a **loop + condition**:
+We can solve the task by combining a **`for` loop**, which will go through the numbers from 1 to 1000, and a **condition** to check if they end with 7. There are other solutions too, but let's solve the task using a **loop + condition**:
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
@@ -68,13 +67,13 @@ We can solve the problem by combining a **`for` loop** which will go through the
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1](https://judge.softuni.bg/Contests/Practice/Index/655#1).
 
 
-### Example: Latin Letters 
+### Example: Latin letters 
 
-Write a program which prints the letters from the latin alphabet: **a, b, c, …, z**.
+Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-It is useful to know that the **`for` loops** don't work only with numbers. We can solve the problem by running a **`for` loop** that passes sequentially through all letters in the latin alphabet:
+It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop** that passes sequentially through all letters in the Latin alphabet:
 
 ![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
@@ -83,11 +82,11 @@ It is useful to know that the **`for` loops** don't work only with numbers. We c
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#2](https://judge.softuni.bg/Contests/Practice/Index/655#2).
 
 
-### Example: Sum Numbers 
+### Example: Sum numbers 
 
-Write a program that **reads `n` whole numbers from the console and calculates the sum**.
+Write a program that **reads `n` integers from the console and calculates the sum**.
 
-* The first line of the input is an integer **`n`** denoting the number of integers which will be summed.
+* The first line of the input is an integer **`n`** denoting the number of integers that will be summed.
 * The following **`n`** lines consist of one integer.
 * Calculate the sum and print the result.
 
@@ -101,13 +100,13 @@ Write a program that **reads `n` whole numbers from the console and calculates t
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We can solve the problem by calculating the sum of numbers the following way:
+We can solve the task by calculating the sum of numbers the following way:
  - We read the input number **`n`**.
- - Initially we start with **`sum = 0`**.
- - We run a loop from 1 to **`n`**. On each step of the loop, we read the input number **`num`** and add it to the **`sum`**.
- - Finally we print the calculated result **`sum`**.
+ - Initially, we start with **`sum = 0`**.
+ - We run a loop from 1 to **`n`**, and on each iteration, we read the input number **`num`** and add it to the **`sum`**.
+ - Finally, we print the calculated result **`sum`**.
  
 Below you can find the source code for the solution:
 
@@ -118,9 +117,9 @@ Below you can find the source code for the solution:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#3](https://judge.softuni.bg/Contests/Practice/Index/655#3).
 
 
-### Example: Max Number
+### Example: Max number
 
-Write a program that inputs **n whole numbers** (**n** > 0) and finds the **the Max Number** (the smallest number) among them. The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
+Write a program that inputs **n integers** (**n** > 0) and finds the **the Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
 #### Sample input and output
 
@@ -132,9 +131,9 @@ Write a program that inputs **n whole numbers** (**n** > 0) and finds the **the 
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We enter the first number **`n`** (the number of integers that are goint to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** that is iterated **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally **`max`** will contain the highest number and we print it on the console.
+We enter the first number **`n`** (the number of integers to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** which iterates **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally, **`max`** will contain the highest number, and we print it on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -143,9 +142,9 @@ We enter the first number **`n`** (the number of integers that are goint to be e
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#4](https://judge.softuni.bg/Contests/Practice/Index/655#4).
 
 
-### Example: Min Number
+### Example: Min number
 
-Write a program that inputs **n whole numbers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input, specifies the number of integers **n**. The following **`n`** lines consist of one integer. Exapmles: 
+Write a program that inputs **n integers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples: 
 
 #### Sample input and output
 
@@ -155,9 +154,9 @@ Write a program that inputs **n whole numbers** (**n** > 0) and finds **the Min 
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-The problem is completely identical to the previous one but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
+The task is identical to the previous one, but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
@@ -166,9 +165,9 @@ The problem is completely identical to the previous one but this time we will st
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#5](https://judge.softuni.bg/Contests/Practice/Index/655#5).
 
 
-### Example: Left and Right Sum
+### Example: Left and right sum
 
-Write a program that inputs **2 \* n whole numbers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
+Write a program that inputs **2 \* n integers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
 #### Sample input and output
 
@@ -176,7 +175,7 @@ Write a program that inputs **2 \* n whole numbers** and checks if the **sum of 
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
 Input the number **n**, after that the first **n** numbers (**left** half) and sum them up. Input the second **n** numbers (**right** half) and find their sum. We calculate the **difference**  between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + difference**.
 
@@ -187,9 +186,9 @@ Input the number **n**, after that the first **n** numbers (**left** half) and s
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#6](https://judge.softuni.bg/Contests/Practice/Index/655#6).
 
 
-### Example: Odd Even Sum 
+### Example: Even \/ odd sum 
 
-Write a program that inputs **n whole numbers** and checks is **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. The difference is calculated as a positive number (absolute value). The format of the output must be identical to the examples below.
+Write a program that inputs **n integers** and checks if **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
 #### Sample input and output
 
@@ -199,13 +198,13 @@ Write a program that inputs **n whole numbers** and checks is **the sum of numbe
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We input the numbers one by one and calculate the two **sums** (of the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
+We input the numbers one by one and calculate the two **sums** (the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous task, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-**`+=`** is **combined assigment operator** that is being frequently used, it adds the value of the right to the left operand and then assignes the result to the left operand. 
+**`+=`** is **combined assigment operator** that is used frequently. It adds the value of the right to the left operand and then assignes the result to the left operand. 
 **C += A** is equivalent to **C = C + A**.
 
 #### Testing in the Judge system
@@ -213,7 +212,7 @@ We input the numbers one by one and calculate the two **sums** (of the numbers o
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#7](https://judge.softuni.bg/Contests/Practice/Index/655#7).
 
 
-### Exapmle: Vowels Sum 
+### Exapmle: Vowels sum 
 
 Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
@@ -228,9 +227,9 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Hints and Guidelines
+#### Hints and guidelines
 
-We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it's a vowel and add its value to the sum. 
+We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it is a vowel and add its value to the sum. 
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
@@ -241,11 +240,11 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#8
 
 ## What have we learned from this chapter?
 
-We can repeat block of code using **`for` loop**:
+We can repeat a block of code using **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-We can read series of **`n`** number from the console:
+We can read series of **`n`** numbers from the console:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
