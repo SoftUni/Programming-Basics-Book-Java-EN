@@ -1,23 +1,23 @@
-# Chapter 5.2. Loops – Exam Problems
+# Chapter 5.2. Loops – Exam Tasks
 
-In the previous chapter, we learned how to run a block of code **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to cement our knowledge by solving some more complex problems with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave only guidance.
-Before we get to work it’s best if we take another look at the construction of the **`for` loop**:
+In the previous chapter, we learned how to execute a block of commands **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to consolidate our knowledge by solving some more complex tasks with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave guidance only.
+Before we get to work it’s best if we recall the construction of the **`for` loop**:
 
 ![](assets/chapter-5-2-images/00.For-construction.png)
 
 **For loops** consist of:
- * Initialization block is run once in the beginning before the compiler checks the condition for the loop. In this case, the variable counter is declared (**`int i`**) and its initial value is set.
- * The repeat condition (**`i <= 10`**),  is run once before each iteration.
- * Counter update (**`i++`**) – this code runs after every iteration.
+ * Initialization block - executed only once at the beginning before the compiler checks the repeat condition for the first time. In this case, the variable counter (**`int i`**) is declared  and its initial value is set.
+ * The repeat condition (**`i <= 10`**),  ran once before each iteration.
+ * Counter update (**`i++`**) – this code is executed after each iteration.
  * The loop body - can contain one line of code or a whole block of code.
 
  
-## Exam Problems
+## Exam Tasks
 
 Let’s solve some problems with loops from exams in SoftUni.
 
 
-## Problem: Histogram
+## Task: Histogram
 	
 We are given **n whole numbers** within the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent __p2__ are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent from 800 and above. Let us write a program that calculates and prints the percentages in the console **p1**, **p2**, **p3**, **p4** and **p5**.
 
@@ -96,7 +96,7 @@ Print on the console **a histogram of 5 lines**, each line should contain a perc
 
 ### Hints and Guidelines
 
-The program that solves this problem can be split into three parts:
+The program that solves this task can be split into three parts:
 
   * **Reading the input data** – in the current problem, this entails reading the number **n**, followed by **n count of whole numbers**, each on a separate line.
   * **Processing the input data** – in this case, that means allocating the numbers into groups and calculating the percentage by a group.
@@ -161,7 +161,7 @@ We are left with printing the results. The condition states, that the percentage
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#0](https://judge.softuni.bg/Contests/Practice/Index/656#0).
 
 
-## Problem: Smart Lilly
+## Task: Smart Lilly
 
 Lilly is **N years old**. For her every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, as **he amount of money increases by 10.00 USD. for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** in the years when she **received money**, **he takes 1.00 USD** every time. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
@@ -245,7 +245,7 @@ More about the ternary operator: [https://www.programiz.com/java-programming/ter
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#1](https://judge.softuni.bg/Contests/Practice/Index/656#1).
 
 
-## Problem: Back to the past
+## Task: Back to the past
 
 Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without the need to work. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
@@ -323,7 +323,7 @@ Finally, we are left with printing the results, by performing a **check if the i
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2](https://judge.softuni.bg/Contests/Practice/Index/656#2).
 
 
-## Problem: Hospital
+## Task: Hospital
 
 For the given time period, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily acceptance begins.
 
@@ -416,7 +416,7 @@ And finally, we are left with printing the number of treated patients and also t
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3](https://judge.softuni.bg/Contests/Practice/Index/656#3).
 
 
-## Problem: Division without remainder
+## Task: Division without remainder
 
 We are given **n whole numbers** in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
@@ -504,7 +504,7 @@ Finally, we have to print out the obtained results, by following the specified f
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4](https://judge.softuni.bg/Contests/Practice/Index/656#4).
 
 
-## Problem: Logistics
+## Task: Logistics
 
 It’s your responsibility of the logistics of various types of cargo. **Depending on the weight** of each cargo is needed a **different vehicle type**, and **the cost will vary per ton**:
 
