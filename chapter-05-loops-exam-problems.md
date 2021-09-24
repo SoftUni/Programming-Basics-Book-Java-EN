@@ -19,7 +19,7 @@ Let’s solve some problems with loops from exams in SoftUni.
 
 ## Task: Histogram
 	
-We are given **n whole numbers** within the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent __p2__ are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent from 800 and above. Let us write a program that calculates and prints the percentages in the console **p1**, **p2**, **p3**, **p4** and **p5**.
+We are given **n whole numbers** within the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent __p2__ are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Let us write a program that calculates and prints the percentages in the console **p1**, **p2**, **p3**, **p4** and **p5**.
 
 **Example**: we have n = **20** and the numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
