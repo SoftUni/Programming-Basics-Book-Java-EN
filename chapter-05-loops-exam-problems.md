@@ -7,19 +7,19 @@ Before we get to work it’s best if we recall the construction of the **`for` l
 
 **For loops** consist of:
  * Initialization block - executed only once at the beginning before the compiler checks the repeat condition for the first time. In this case, the variable counter (**`int i`**) is declared  and its initial value is set.
- * The repeat condition (**`i <= 10`**),  ran once before each iteration.
+ * Condition for repeatability (**`i <= 10`**),  ran once before each iteration.
  * Counter update (**`i++`**) – this code is executed after each iteration.
- * The loop body - can contain one line of code or a whole block of code.
+ * Loop body - contains an arbitrary block of source code.
 
  
 ## Exam Tasks
 
-Let’s solve some problems with loops from exams in SoftUni.
+Let’s solve some loop tasks from exams in SoftUni.
 
 
 ## Task: Histogram
 	
-We are given **n whole numbers** within the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent __p2__ are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Let us write a program that calculates and prints the percentages in the console **p1**, **p2**, **p3**, **p4** and **p5**.
+An **n number of whole numbers** are given in the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent **p2** are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5** on the console.
 
 **Example**: we have n = **20** and the numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
@@ -33,7 +33,7 @@ We are given **n whole numbers** within the range [**1 … 1000**]. Some percent
 
 ### Input Data
 
-In the first line of input, there must be a whole number **n** (1 ≤ **n** ≤ 1000), that represents how many lines of numbers we should enter. On each of the following **n lines** , we have **one whole number** in the range [**1 … 1000**] – those are the numbers we use to calculate the histogram.
+In first line of the input, there must be a whole number **n** (1 ≤ **n** ≤ 1000), that represents how many lines of numbers we should enter. In each of the following **n lines** , we have **one whole number** in the range [**1 … 1000**] – those are the numbers we use to calculate the histogram.
 
 ### Output Data
 
@@ -96,13 +96,13 @@ Print on the console **a histogram of 5 lines**, each line should contain a perc
 
 ### Hints and Guidelines
 
-The program that solves this task can be split into three parts:
+The program that solves this task can be imaginatively split into three parts:
 
-  * **Reading the input data** – in the current problem, this entails reading the number **n**, followed by **n count of whole numbers**, each on a separate line.
-  * **Processing the input data** – in this case, that means allocating the numbers into groups and calculating the percentage by a group.
-  * **Printing the final result** – printing the histogram in the console in the specified format.
+  * **Reading the input data** – in the current task this involves reading the number **n**, followed by **n count of integers**, each on a separate line.
+  * **Processing the input data** – in this case, this means allocating the numbers into groups and calculating the percentage split by a group.
+  * **Printing the final result** – printing the histogram to the console in the specified format.
   
-Before we continue, we will take a small detour from the current topic, namely, we will briefly mention, that in coding every variable is some kind of **data type**. We will use numeral data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this problem.
+Before we continue, we will take a small deviation from the current topic, namely we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this task.
 
 Now we are going to proceed with the implementation of the above-made points.
 
@@ -124,7 +124,7 @@ For the reading and distributing every number in its corresponding group, we wil
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
-After we determine how many numbers each group has, we can move on to calculating the percentage, which is the main point of the problem. For this, we’ll use the following formula:
+After we determine how many numbers each group has, we can move on to calculating the percentage, which is the main point of the task. For this, we’ll use the following formula:
 
 <p align="center"><strong>(group percentage) = (count of numbers in group) * 100 / (count of all numbers)</strong></p>
 
@@ -214,7 +214,7 @@ Print on the console a single line:
 
 ### Hints and Guidelines
 
-The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** them and **printing the output**.
+The solution to this task, like the previous one can be split into three parts – **reading** the input data, **processing** them and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -222,7 +222,7 @@ We begin again by choosing the appropriate **data types** and names for the vari
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-For us to solve the problem, we are going to need some helper variables – for the **toy count** (**`numberOfToys`**), for the **saved money** (**`savedMoney`**) and for the **money she receives each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly gets is 10 USD.
+For us to solve the task, we are going to need some helper variables – for the **toy count** (**`numberOfToys`**), for the **saved money** (**`savedMoney`**) and for the **money she receives each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly gets is 10 USD.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
@@ -304,7 +304,7 @@ The input is read from the console and **contains exactly 2 lines**:
 
 ### Hints and Guidelines
 
-The method for solving this problem isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
+The method for solving this task isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
@@ -490,9 +490,9 @@ Print on the console **3 lines**, each one containing a percentage between 0% an
 
 ### Hints and Guidelines
 
-For the current problem and the next one you’ll need to write the code by yourself, following the given guidelines.
+For the current task and the next one you’ll need to write the code by yourself, following the given guidelines.
 
-This program that solves the current problem is an analogue to the **Histogram** problem, which we reviewed earlier. So that’s why we can start by declaring the needed variables:
+This program that solves the current task is an analogue to the **Histogram** task, which we reviewed earlier. So that’s why we can start by declaring the needed variables:
 Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – helper variables, containing the count of numbers in the corresponding group.
 
 To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Every iteration of the loop we have to read and assign **only one number**. The difference here is that **one number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match its stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
