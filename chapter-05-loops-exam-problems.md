@@ -102,37 +102,37 @@ The program that solves this task can be imaginatively split into three parts:
   * **Processing the input data** – in this case, this means allocating the numbers into groups and calculating the percentage split by a group.
   * **Printing the final result** – printing the histogram to the console in the specified format.
   
-Before we continue, we will take a small deviation from the current topic, namely we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this task.
+Before we continue, we will take a small deviation from the current topic, namely, we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this task.
 
 Now we are going to proceed with the implementation of the above-made points.
 
 #### Reading the input data
   
-Before we move on to reading the input data we have to **declare the variables**, in which we are storing them. This      means that we have to choose the right data type and appropriate names.
+Before we move on to reading the input data we have to **declare the variables**, in which we are storing them. This means that we have to choose the right data type and appropriate names.
   
 ![](assets/chapter-5-2-images/01.Histogram-01.png)
 
-In the variable **`n`** , we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because in the condition is mentioned, that **`n` is a whole number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **we can’t expect that they are always going to be whole numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`** and so on, in which we will store the count of numbers in the corresponding group, and for them, we chose again the **`int` type**.
+In the variable **`n`** , we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because the condition states, that **`n` is a whole number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **they are not always expected to be whole numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`**, etc, in which we will store the count of numbers in the corresponding group, and for them, we choose the **`int` type** again.
 
-After we have declared the needed variables, we can proceed with reading the number **`n`** from the console:
+Once we have declared the needed variables, we can proceed with reading the number **`n`** from the console:
 
 ![](assets/chapter-5-2-images/01.Histogram-02.png)
 
 #### Processing the input data
   
-For the reading and distributing every number in its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers).  Every iteration of the loop we’ll read and distribute **only one** number (**`currentNumber`**) in its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. And if the above is true we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
+In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers).  Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
-After we determine how many numbers each group has, we can move on to calculating the percentage, which is the main point of the task. For this, we’ll use the following formula:
+After we determined how many numbers each group has, we can move on to calculating the percentage, which is the main point of the task. For this, we’ll use the following formula:
 
 <p align="center"><strong>(group percentage) = (count of numbers in group) * 100 / (count of all numbers)</strong></p>
 
-This formula in code looks like the following:
+This formula in the program code looks like the following:
 
 ![](assets/chapter-5-2-images/01.Histogram-04.png)
 
-If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), we’ll perform the so-called **integer division** and in the variable will be stored only the whole part of the division, and this is not what we want as a result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
+If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), the so-called **integer division** will be performed and only the whole part of the division will be stored in the variable,which is not the desired result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
 
 ![](assets/chapter-5-2-images/01.Histogram-05.png)
 
@@ -144,15 +144,15 @@ To make things even clearer, let’s take a look at this example:
 
 In the case of **`n = 3`**.
 For the loop we have:
-   -   	**`i = 0`** - we read the number 1, which is lesser than 200 and falls in the first group (**`p1`**), and we increment the group counter (**`cntP1`**) by 1.
+   -   	**`i = 0`** - we read the number 1, which is less than 200 and falls in the first group (**`p1`**), and we increment the group counter (**`cntP1`**) by 1.
    -   	**`i = 1`** – we read the number 2, which again falls in the first group (**`p1`**) and we increment the counter (**`cntP1`**) again by 1.
    -   	**`i = 2`** – we read the number 999, which falls in the last group (**`p5`**), because it is greater than 800, and we increment the group counter (**`cntP5`**) by 1.
    
-After we read the numbers in group **`p1`** we have 2 numbers, and in **`p5`** we have 1 number. We have **no numbers** in the other groups. When applying the above-mentioned formula, we calculate the percentages of each group. When we multiply within the formula by **100**, instead of **100.0** we’ll attain for group **`p1`** 66%, and for group **`p5`** – 33% (we won’t have a fractional part).
+After reading the numbers in group **`p1`** we have 2 numbers, and in **`p5`** we have 1 number. We have **no numbers** in the other groups. Applying the above formula, we calculate the percentages of each group. If we multiply within the formula by **100**, instead of **100.0** we’ll attain 66% for group **`p1`**, and 33% for group **`p5`** (there will be no fractional part).
 
 #### Final Output
   
-We are left with printing the results. The condition states, that the percentages must be **within two points after the decimal point**. We are going to achieve this by, as in the method **`String.format(…)`** we set the format “**`%.2f%%`**”:
+All that remains is to print the results. The condition states, that the percentages must be accurate to **two digits after the decimal point**. We can achieve this by setting the format to “**`%.2f%%`**” in the**`String.format(…)`** method:
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
