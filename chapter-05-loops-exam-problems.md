@@ -152,7 +152,7 @@ After reading the numbers in group **`p1`** we have 2 numbers, and in **`p5`** w
 
 #### Final Output
   
-All that remains is to print the results. The condition states, that the percentages must be accurate to **two digits after the decimal point**. We can achieve this by setting the format to “**`%.2f%%`**” in the**`String.format(…)`** method:
+All that remains is to print the results. The condition states, that the percentages must be accurate to **two digits after the decimal point**. We can achieve this by setting the format to “**`%.2f%%`**” in the **`String.format(…)`** method:
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
