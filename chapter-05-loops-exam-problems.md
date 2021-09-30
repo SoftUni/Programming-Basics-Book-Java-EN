@@ -577,22 +577,22 @@ Percentage cargo <b>by train</b>: 16/25*100 = <b>64.00%</b><br>
 
 ### Hints and Guidelines
 
-Firstly **we have to read the weight of each cargo** and will **sum up** how many tons are transported by **minibus**, **lorry** and **train** and we are going to calculate **the total tons** of transported cargo. We will calculate **the prices for each type of transport** determined by the total transported tonnage and **the total price**. In the end, we’ll calculate and print **the total average price per ton** and **how much cargo is being transported by each transport type**.
+First **we have to read the weight of each cargo** and will **sum up** how many tons are transported by **van**, **lorry** and **train** and we are going to calculate **the total tons** of transported cargo. We will calculate **the prices for each type of transport** determined by the total transported tonnage and **the total price**. In the end, we’ll calculate and print **the total average price per ton** and **how much cargo is being transported by each transport type**.
 
-We declare the needed variables, for example: **`countOfLoads`** – the number of shipments for transport (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`microbusTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by minibus, lorry and train.
+We declare the needed variables, for example: **`countOfLoads`** – the number of loads to be transported (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`vanTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by van, lorry and train.
 
-We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`**, for us to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) weight of the current cargo (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (minibus, lorry or train). For this task, we’re going to need **`if-else`** statements:
+We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) the weight of the current load (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (van, lorry or train). For this task, we’re going to need **`if-else`** statements:
 
- * If the value of the variable **`tons`** is **less than 3**, increase the value of **`microbusTons`** by the value of **`tons`**: 
+ * If the value of the variable **`tons`** is **less than 3**, increase the value of **`vanTons`** by the value of **`tons`**: 
  
    ```java
-   microbusTons += tons;
+   vanTons += tons;
    ```
    
  * Otherwise, if the value of **`tons`** is **up to 11**, we increase **`truckTons`** by **`tons`**.
  * If **`tons`** is **more than 11**, we increase **`trainTons`** by **`tons`**.
 
-Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more helper variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by minibus, lorry and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **You’re left with calculating** the percentages of the tonnage, transported by each transport type, and printing out the results, adhering to the formatting specified in the description.
+Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more auxiliary variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by van, lorry and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **It remains to calculate** the percentages of the tonnage, transported by each transport type, and printing out the results, adhering to the formatting specified in the description.
 
 ### Testing in the Judge System
 
