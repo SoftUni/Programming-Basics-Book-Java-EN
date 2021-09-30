@@ -325,15 +325,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2
 
 ## Task: Hospital
 
-For the given time period, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily acceptance begins.
+For a given period of time, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily patient's admission begins.
 
 Write a program, that calculates **for a given period the number of treated and untreated patients**.
 
 ### Input Data
 
 The input is read from **the console** and contains:
-  * On the first row – **the period**, for which you need to make the calculations. **Whole number** in the range of [**1 … 1000**].
-  * On the next lines (equal to the number of days) – **patient count**, who arrive for treatment the **current day**. Whole number in the range of [**0 … 10 000**].
+  * On the first line – **the period**, for which you need to make the calculations. **Whole number** in the range of [**1 … 1000**].
+  * On the next lines (equal to the number of days) – **patient count**, who arrive for treatment at the **current day**. Whole number in the range of [**0 … 10 000**].
 
 ### Output Data
 
@@ -386,15 +386,15 @@ The input is read from **the console** and contains:
 </table>    
 
 ### Hints and Guidelines
-So we begin again, by **declaring and initializing** the necessary variables: 
+We start again, by **declaring and initializing** the necessary variables: 
 
 ![](assets/chapter-5-2-images/04.Hospital-01.png)
 
-The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some helper variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which by default is 7.
+The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some auxiliary variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which by default is 7.
 
 ![](assets/chapter-5-2-images/04.Hospital-02.png)
 
-With the help of a **`for` loop**, we iterate through the days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Increasing the number of doctors by the condition can happen **every third day**, **BUT** if only the number of the untreated patients are **greater** than the treated ones. With this in mind, we perform this check using the arithmetical operator for division with remainder (**`%`**): **`day % 3 == 0`**.
+Using a **`for` loop**, we iterate through all days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Incrementing the number of doctors by condition can be done **every third day**, **BUT** if only the number of the untreated patients is **greater** than the treated ones. For this purpose, we check if the day is the third one, using the arithmetical operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 
 For example:
  * If it’s the **third one**, the remainder from the division by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
