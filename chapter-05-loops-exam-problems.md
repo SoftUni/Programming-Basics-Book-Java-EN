@@ -236,7 +236,7 @@ Finally, we need to print the results, following the formatting specified in the
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-In this case, we chose to use the **conditional operator (`?:`)** (also called the ternary operator), because it’s shorter to write. The syntax is as follows: **`operand1 ? operand2 : operand3`**. The first operand needs to be **boolean type** (i.e. to return **`true/false`**). If **`operand1`** returns **`true`**, **`operand2`** will be executed, and if it returns **`false`** – **`operand3`** will be executed. In our case, we check if the **saved money** by Lilly is enough for the washing machine. If they are more or equal to the price of the washing machine, the check **`savedMoney >= priceOfWashingMachine`** will return **`true`** and will print out „**Yes! …**“, and if they are less the result will be **`false`** and will print “**No! …**”. Of course, instead of the ternary operand, we can use **`if-else`** for checks.
+In this case, we chose to use the **conditional operator (`?:`)** (also called a ternary operator), because it’s shorter to write. The syntax is as follows: **`operand1 ? operand2 : operand3`**. The first operand needs to be **boolean type** (i.e. to return **`true/false`**). If **`operand1`** returns **`true`**, **`operand2`** will be executed, and if it returns **`false`** – **`operand3`** will be executed. In our case, we check if the **saved money** by Lilly is enough for the washing machine. If they are more or equal to the price of the washing machine, the check **`savedMoney >= priceOfWashingMachine`** will return **`true`** and will print out „**Yes! …**“, and if they are less the result will be **`false`** and will print “**No! …**”. Of course, instead of the ternary operand, we can use **`if-else`** checks.
 
 More about the ternary operator: [https://www.programiz.com/java-programming/ternary-operator](https://www.programiz.com/java-programming/ternary-operator)
 
@@ -247,13 +247,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#1
 
 ## Task: Back to the past
 
-Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without the need to work. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
+Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
 ### Input Data
 
 The input is read from the console and **contains exactly 2 lines**:
   * **Inheritance money** – a real number in the range of [**1.00 … 1 000 000.00**].
-  * **The year he needs to live in the past (inclusive)** – a whole number in the range of [**1801 … 1900**].
+  * **The year he needs to live to (inclusive)** – a whole number in the range of [**1801 … 1900**].
 
 ### Output Data
 
@@ -308,7 +308,7 @@ The method for solving this task isn’t much different from the last one, we be
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-The condition states, that Ivan is 18 years old, so when we declare the variable **`years`** we assign its initial value of **18**. The rest of the variables we read from the console. 
+The condition states, that Ivan is 18 years old, so when we declare the variable **`years`** we assign its initial value of **18**. The rest of the variables are read from the console. 
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
