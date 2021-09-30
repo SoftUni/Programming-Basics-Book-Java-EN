@@ -312,9 +312,9 @@ The condition states, that Ivan is 18 years old, so when we declare the variable
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-With the help from the **`for` loop**, we’ll iterate through all the years. **We begin from 1800** – the year that Ivan goes back to, and we go to **the year he must live in the past**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's years)**.
+With the help from the **`for` loop**, we’ll iterate through all the years. **We begin with year 1800** – the year that Ivan goes back to, and we get to **the year he has to live to**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's age)**.
 
-Finally, we are left with printing the results, by performing a **check if the inheritance** (**`heritage`**) was enough for him to live without the need to work or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {М} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
+Finally, it remains to print the results. By performing a **check if the inheritance** (**`heritage`**) was enough to live without working or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {М} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
 
 **Hint**: Consider using the **`Math.abs(…)`** function when printing the output if the inheritance isn’t enough.
 
