@@ -418,7 +418,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3
 
 ## Task: Division without remainder
 
-We are given **n whole numbers** in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
+There are **n whole numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
 <table>
 <thead>
@@ -492,10 +492,10 @@ Print on the console **3 lines**, each one containing a percentage between 0% an
 
 For the current task and the next one you’ll need to write the code by yourself, following the given guidelines.
 
-This program that solves the current task is an analogue to the **Histogram** task, which we reviewed earlier. So that’s why we can start by declaring the needed variables:
-Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – helper variables, containing the count of numbers in the corresponding group.
+The program that solves the current task is analogous to the **Histogram** task, which we reviewed earlier. Therefore, we can start with declaring the needed variables:
+Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – auxiliary variables, containing the count of numbers in the corresponding group.
 
-To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Every iteration of the loop we have to read and assign **only one number**. The difference here is that **one number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match its stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
+To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Each iteration of the loop must read and allocate **only one number**. The difference here is that **a number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match it stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
 
 Finally, we have to print out the obtained results, by following the specified formatting.
 
@@ -506,9 +506,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4
 
 ## Task: Logistics
 
-It’s your responsibility of the logistics of various types of cargo. **Depending on the weight** of each cargo is needed a **different vehicle type**, and **the cost will vary per ton**:
+It’s your responsibility for the logistics of various types of cargo. **Depending on the weight** of each load, a **different vehicle type** is needed, and **the costs will vary per ton**:
 
- * Up to **3 tons** – **minibus** (200 USD per ton).
+ * Up to **3 tons** – **van** (200 USD per ton).
  * **Upward of 3 and up to 11 tons** – **lorry** (175 USD per ton).
  * **Over 11 tons – train** (120 USD per ton).
 
@@ -524,7 +524,7 @@ From the console, we must read a **sequence of numbers**, each on a separate lin
 
 Print out on the console **4 lines**, as follows:
  * **Line #1** – **average price per ton of cargo** (rounded up to the second symbol after the decimal point).
- * **Line #2** – **percentage** of cargo, transported by **minibus** (between 0.00% and 100.00%, rounded up to the second symbol after the decimal point).
+ * **Line #2** – **percentage** of cargo, transported by **van** (between 0.00% and 100.00%, rounded up to the second symbol after the decimal point).
  * **Line #3** – **percentage** of cargo, transported by **lorry** (between 0.00% and 100.00%).
  * **Line #4** – **percentage** of cargo, transported by **train** (between 0.00% and 100.00%).
  
@@ -543,11 +543,11 @@ Print out on the console **4 lines**, as follows:
 <td valign="top">4<br>1<br>5<br>16<br>3</td>
 <td valign="top">143.80<br>16.00%<br>20.00%<br>64.00%</td>
 <td valign="top">
-Two of the cargoes are transported by <b>minibus</b> <b>1</b> + <b>3</b>, in total <b>4</b> tons.<br>
+Two of the cargoes are transported by <b>van</b> <b>1</b> + <b>3</b>, in total <b>4</b> tons.<br>
 One of the shipments is transported by <b>lorry</b>: <b>5</b> tons.<br>
 One of the shipments is transported by <b>train</b>: <b>16</b> tons.<br>
 <b>The sum</b> of all the cargo is: 1 + 5 + 16 + 3 = <b>25</b> tons.<br>
-Percentage cargo <b>by minibus</b>: 4/25*100 = <b>16.00%</b><br>
+Percentage cargo <b>by van</b>: 4/25*100 = <b>16.00%</b><br>
 Percentage cargo <b>by lorry</b>: 5/25*100 = <b>20.00%</b><br>
 Percentage cargo <b>by train</b>: 16/25*100 = <b>64.00%</b><br>
 <b>Average price</b> per ton of transported cargo: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
