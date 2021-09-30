@@ -407,9 +407,9 @@ After that, we check the number of patients for the day (**`currentPatients`**) 
  - We increase the value of the variable **`treatedPatients`** with the number of doctors (**`countOfDoctors`**).
  - We increase the value of the variable **`untreatdPatients`** with the number of the rest of the patients, which we calculate, by subtracting the number of the doctors from all the patients (**`currentPatients - countOfDoctors`**).
  
-If the patient count is **lesser**, we increase only the variable **`treatedPatients`** with the number of patients for the day (**`currentPatients`**).
+If the patient count is **less**, we increase only the variable **`treatedPatients`** with the number of patients for the day (**`currentPatients`**).
 
-And finally, we are left with printing the number of treated patients and also the untreated ones.
+Finally, we only need to print the number of treated and untreated patients.
 
 ### Testing in the Judge System
 
