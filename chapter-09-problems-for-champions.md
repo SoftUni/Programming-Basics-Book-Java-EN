@@ -101,7 +101,7 @@ The previous solution to the problem uses arrays to store the values. Arrays are
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#0](https://judge.softuni.bg/Contests/Practice/Index/663#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#0](https://judge.softuni.org/Contests/Practice/Index/663#0).
 
 
 ## Task: Magic dates
@@ -193,7 +193,7 @@ Finally, if we have not found an eligible date, we will have a **`false`** value
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#1](https://judge.softuni.bg/Contests/Practice/Index/663#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#1](https://judge.softuni.org/Contests/Practice/Index/663#1).
 
 
 ## Task: Five special letters
@@ -328,4 +328,4 @@ The condition is met **unless we do not have a single word in the entered range*
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/663#2](https://judge.softuni.bg/Contests/Practice/Index/663#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#2](https://judge.softuni.org/Contests/Practice/Index/663#2).

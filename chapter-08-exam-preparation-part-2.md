@@ -108,7 +108,7 @@ If you have worked correctly and run the program with the input data from the ta
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#0](https://judge.softuni.bg/Contests/Practice/Index/662#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#0](https://judge.softuni.org/Contests/Practice/Index/662#0).
 
 ## Task: Changing tiles
 
@@ -168,7 +168,7 @@ We can find the result by **calculating the total amount** needed to cover the e
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#1](https://judge.softuni.bg/Contests/Practice/Index/662#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#1](https://judge.softuni.org/Contests/Practice/Index/662#1).
 
 ## Task: Flowers shop
 
@@ -236,7 +236,7 @@ What remains is to perform **a few checks** regarding **the discounts** of the d
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#2](https://judge.softuni.bg/Contests/Practice/Index/662#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#2](https://judge.softuni.org/Contests/Practice/Index/662#2).
 
 ## Task: Grades
 
@@ -297,7 +297,7 @@ The **final result** is formed in the well know fashion – **up to the second c
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#3](https://judge.softuni.bg/Contests/Practice/Index/662#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#3](https://judge.softuni.org/Contests/Practice/Index/662#3).
 
 ## Task: Christmas hat
 
@@ -352,7 +352,7 @@ In case we have worked correctly, we will obtain figures identical to those in t
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#4](https://judge.softuni.bg/Contests/Practice/Index/662#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#4](https://judge.softuni.org/Contests/Practice/Index/662#4).
 
 
 ## Task: Letters combination
@@ -406,4 +406,4 @@ Let's not forget that we also need to print the **total number of valid combinat
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/662#5](https://judge.softuni.bg/Contests/Practice/Index/662#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#5](https://judge.softuni.org/Contests/Practice/Index/662#5).

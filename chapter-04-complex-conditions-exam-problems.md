@@ -157,7 +157,7 @@ Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, 
 
 ### Testing in the Judge system
 
-Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/654#0](https://judge.softuni.bg/Contests/Practice/Index/654#0).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/654#0](https://judge.softuni.org/Contests/Practice/Index/654#0).
 
 
 ## Task: Trip
@@ -270,7 +270,7 @@ It remains to print the obtained result on the console:
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#1](https://judge.softuni.bg/Contests/Practice/Index/654#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#1](https://judge.softuni.org/Contests/Practice/Index/654#1).
 
 
 ## Task: Operations between numbers
@@ -363,7 +363,7 @@ Finally, we need to show the calculated result to the console:
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#2](https://judge.softuni.bg/Contests/Practice/Index/654#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#2](https://judge.softuni.org/Contests/Practice/Index/654#2).
 
 
 ## Task: Game tickets
@@ -456,7 +456,7 @@ Finally, we need to print the calculated result on the console.
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#3](https://judge.softuni.bg/Contests/Practice/Index/654#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#3](https://judge.softuni.org/Contests/Practice/Index/654#3).
 
 
 ## Task: Hotel room
@@ -548,4 +548,4 @@ Finally, what remains is to print the calculated results on the console.
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/654#4](https://judge.softuni.bg/Contests/Practice/Index/654#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#4](https://judge.softuni.org/Contests/Practice/Index/654#4).

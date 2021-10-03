@@ -96,7 +96,7 @@ At the last line **`System.out.println(area);`** prints the calculated value of 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
 
 #### Reading floating-point numbers from the console
 
@@ -151,7 +151,7 @@ Run the program and make sure that when entering a value in inches, we obtain a 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
 
 
 ## Reading and printing text
@@ -182,7 +182,7 @@ In this case the expression **`%s`** is replaced with the **first** passed argum
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#2](https://judge.softuni.bg/Contests/Practice/Index/649#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#2](https://judge.softuni.org/Contests/Practice/Index/649#2).
 
 
 ## Concatenating text and numbers
@@ -210,7 +210,7 @@ Pay attention to the order of variables in the System.out.printf() method. Each 
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
 
 ## Arithmetic operations
@@ -365,7 +365,7 @@ Trapezoid area = 17.5
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
 ### Example: Circle area and perimeter 
@@ -392,7 +392,7 @@ Let’s test the program with **radius `r = 10`**:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
 ### Example: 2D rectangle area
@@ -428,7 +428,7 @@ When the program is executed with the values from the coordinate system above we
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
 
 ## What we have learned in this chapter?
@@ -495,7 +495,7 @@ As we can see in the code above, we read as input data an integer and assign it 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#0](https://judge.softuni.bg/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
 
 ![](assets/chapter-2-1-images/07.Square-area-05.png)
 
@@ -562,7 +562,7 @@ It is recommended to **change the settings of your computer**, to use a **decima
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#1](https://judge.softuni.bg/Contests/Practice/Index/649#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
 
 The solution should be accepted as a completely correct one:
 
@@ -589,7 +589,7 @@ First, we create a **new Java class** with the name “Greeting” in the projec
 
 #### Testing in the Judge system
 
-Test your solution here:  [https://judge.softuni.bg/Contests/Practice/Index/649#2](hhttps://judge.softuni.bg/Contests/Practice/Index/649#2).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649#2](hhttps://judge.softuni.org/Contests/Practice/Index/649#2).
 
 
 ### Exercise: Concatenating text and numbers
@@ -612,7 +612,7 @@ Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sampl
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#3](https://judge.softuni.bg/Contests/Practice/Index/649#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
 
 ### Exercise: Trapezoid area
@@ -635,7 +635,7 @@ The code on the picture is consciously blurred for you to give a thought and fin
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#4](https://judge.softuni.bg/Contests/Practice/Index/649#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
 ### Exercise: Circle area and perimeter
@@ -657,7 +657,7 @@ For the calculations, you can use the following formulas:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5](https://judge.softuni.bg/Contests/Practice/Index/649#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
 ### Exercise: Rectangle area
@@ -676,7 +676,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#5
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#6](https://judge.softuni.bg/Contests/Practice/Index/649#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
 
 ### Exercise: Triangle area
@@ -694,7 +694,7 @@ Write a program that reads from the console **a side and height of a triangle** 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#7](https://judge.softuni.bg/Contests/Practice/Index/649#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#7](https://judge.softuni.org/Contests/Practice/Index/649#7).
 
 
 ### Exercise: Converter – from °C (Celsius) to °F (Fahrenheit)
@@ -712,7 +712,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#8](https://judge.softuni.bg/Contests/Practice/Index/649#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#8](https://judge.softuni.org/Contests/Practice/Index/649#8).
 
 
 ### Exercise: Converter – from  radians to degrees
@@ -730,7 +730,7 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#9](https://judge.softuni.bg/Contests/Practice/Index/649#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#9](https://judge.softuni.org/Contests/Practice/Index/649#9).
 
 
 ### Exercise: Converter – USD to BGN
@@ -747,7 +747,7 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#10](https://judge.softuni.bg/Contests/Practice/Index/649#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#10](https://judge.softuni.org/Contests/Practice/Index/649#10).
 
 
 ### Exercise:	\* Currency converter
@@ -771,7 +771,7 @@ Write a program for **conversion of money from one currency into another**. It h
  
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#11](https://judge.softuni.bg/Contests/Practice/Index/649#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#11](https://judge.softuni.org/Contests/Practice/Index/649#11).
 
 
 ### Exercise: ** Date calculations – 1000 days on the Earth
@@ -794,4 +794,4 @@ Write a program that reads from the console a **birth date** in format **`dd-MM-
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/649#12](https://judge.softuni.bg/Contests/Practice/Index/649#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#12](https://judge.softuni.org/Contests/Practice/Index/649#12).

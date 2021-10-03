@@ -95,7 +95,7 @@ We **have successfully computed the price of the cheapest transportation** so we
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#0](https://judge.softuni.bg/Contests/Practice/Index/652#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#0](https://judge.softuni.org/Contests/Practice/Index/652#0).
 
 ## Task: pipes in a pool
 
@@ -152,7 +152,7 @@ However, if the check returns **`false`** it means that the amount of water is *
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#1](https://judge.softuni.bg/Contests/Practice/Index/652#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#1](https://judge.softuni.org/Contests/Practice/Index/652#1).
 
 ## Task: the sleepy cat Tom
 
@@ -224,7 +224,7 @@ Depending on **the result** of the evaluation of the boolean expression our obje
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#2](https://judge.softuni.bg/Contests/Practice/Index/652#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#2](https://judge.softuni.org/Contests/Practice/Index/652#2).
 
 ## Task: harvest
 
@@ -290,7 +290,7 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#3](https://judge.softuni.bg/Contests/Practice/Index/652#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#3](https://judge.softuni.org/Contests/Practice/Index/652#3).
 
 ## Task: company
 
@@ -349,4 +349,4 @@ If **the time is not enough** we print the additional hours that are needed to f
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/652#4](https://judge.softuni.bg/Contests/Practice/Index/652#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#4](https://judge.softuni.org/Contests/Practice/Index/652#4).

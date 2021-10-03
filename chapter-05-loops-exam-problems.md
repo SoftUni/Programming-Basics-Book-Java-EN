@@ -158,7 +158,7 @@ All that remains is to print the results. The condition states, that the percent
 
 ### Testing using the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#0](https://judge.softuni.bg/Contests/Practice/Index/656#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#0](https://judge.softuni.org/Contests/Practice/Index/656#0).
 
 
 ## Task: Smart Lilly
@@ -242,7 +242,7 @@ More about the ternary operator: [https://www.programiz.com/java-programming/ter
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#1](https://judge.softuni.bg/Contests/Practice/Index/656#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#1](https://judge.softuni.org/Contests/Practice/Index/656#1).
 
 
 ## Task: Back to the past
@@ -320,7 +320,7 @@ Finally, it remains to print the results. By performing a **check if the inherit
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#2](https://judge.softuni.bg/Contests/Practice/Index/656#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#2](https://judge.softuni.org/Contests/Practice/Index/656#2).
 
 
 ## Task: Hospital
@@ -413,7 +413,7 @@ Finally, we only need to print the number of treated and untreated patients.
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#3](https://judge.softuni.bg/Contests/Practice/Index/656#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#3](https://judge.softuni.org/Contests/Practice/Index/656#3).
 
 
 ## Task: Division without remainder
@@ -501,7 +501,7 @@ Finally, we have to print out the obtained results, by following the specified f
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#4](https://judge.softuni.bg/Contests/Practice/Index/656#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#4](https://judge.softuni.org/Contests/Practice/Index/656#4).
 
 
 ## Task: Logistics
@@ -596,4 +596,4 @@ Before we print out the output, we have to **calculate the tonnage percentage of
 
 ### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/656#5](https://judge.softuni.bg/Contests/Practice/Index/656#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#5](https://judge.softuni.org/Contests/Practice/Index/656#5).

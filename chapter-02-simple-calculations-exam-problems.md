@@ -150,7 +150,7 @@ With **`System.out.println(…)`** we print the result on the console.
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#0](https://judge.softuni.bg/Contests/Practice/Index/650#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#0](https://judge.softuni.org/Contests/Practice/Index/650#0).
 
 
 ## Task: Vegetable market
@@ -221,7 +221,7 @@ The task does not specify special output format, so we just need to calculate th
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#1](https://judge.softuni.bg/Contests/Practice/Index/650#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#1](https://judge.softuni.org/Contests/Practice/Index/650#1).
 
 
 ## Task: Change of tiles
@@ -299,7 +299,7 @@ The variables **`w`** and  **`h`** are of type **`double`**, so for the **area o
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#2](https://judge.softuni.bg/Contests/Practice/Index/650#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#2](https://judge.softuni.org/Contests/Practice/Index/650#2).
 
 
 ## Task: Money
@@ -386,7 +386,7 @@ This code would print a correct result, but it is **hard to read**. It won't be 
 
 ## Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#3](https://judge.softuni.bg/Contests/Practice/Index/650#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#3](https://judge.softuni.org/Contests/Practice/Index/650#3).
 
 
 ## Таск: Daily earnings
@@ -455,4 +455,4 @@ The final result is as follows:
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/650#4](https://judge.softuni.bg/Contests/Practice/Index/650#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#4](https://judge.softuni.org/Contests/Practice/Index/650#4).

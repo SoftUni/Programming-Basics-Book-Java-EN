@@ -130,7 +130,7 @@ How can we do that? We will leave the answer to this question to the reader.
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#0](https://judge.softuni.bg/Contests/Practice/Index/664#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#0](https://judge.softuni.org/Contests/Practice/Index/664#0).
 
 
 ## Task: Numerical expression
@@ -235,7 +235,7 @@ The only output that the program must print on the console is the **result of so
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#1](https://judge.softuni.bg/Contests/Practice/Index/664#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#1](https://judge.softuni.org/Contests/Practice/Index/664#1).
 
 
 ## Task: Bulls and Cows
@@ -356,4 +356,4 @@ After completing all conditions, we need to **check whether the bulls and cows i
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/664#2](https://judge.softuni.bg/Contests/Practice/Index/664#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#2](https://judge.softuni.org/Contests/Practice/Index/664#2).

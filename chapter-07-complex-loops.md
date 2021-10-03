@@ -47,7 +47,7 @@ We can solve the task through the following sequence of actions (algorithm):
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#0](https://judge.softuni.bg/Contests/Practice/Index/659#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#0](https://judge.softuni.org/Contests/Practice/Index/659#0).
 
 
 ### Example: Numbers from N to 1 in reverse order
@@ -66,7 +66,7 @@ We can solve the task in the following way:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#1](https://judge.softuni.bg/Contests/Practice/Index/659#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#1](https://judge.softuni.org/Contests/Practice/Index/659#1).
 
 
 ### Example: Numbers from 1 to 2^n with a for loop
@@ -79,7 +79,7 @@ Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#2](https://judge.softuni.bg/Contests/Practice/Index/659#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#2](https://judge.softuni.org/Contests/Practice/Index/659#2).
 
 
 ### Example: Even powers of 2
@@ -96,7 +96,7 @@ Here is a way to solve the task:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#3](https://judge.softuni.bg/Contests/Practice/Index/659#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#3](https://judge.softuni.org/Contests/Practice/Index/659#3).
 
 
 ## While loop
@@ -129,7 +129,7 @@ Here is a sample representation of the described steps:
  
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#4](https://judge.softuni.bg/Contests/Practice/Index/659#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#4](https://judge.softuni.org/Contests/Practice/Index/659#4).
 
 
 ### Example: Numbers in range [1 … 100]
@@ -149,7 +149,7 @@ Here is a sample representation of the algorithm, using a **`while` loop**:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#5](https://judge.softuni.bg/Contests/Practice/Index/659#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#5](https://judge.softuni.org/Contests/Practice/Index/659#5).
 
 
 ## Greatest Common Divisor (GCD)
@@ -205,7 +205,7 @@ We will solve the task using **the Euclidean algorithm**:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#6](https://judge.softuni.bg/Contests/Practice/Index/659#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#6](https://judge.softuni.org/Contests/Practice/Index/659#6).
 
 
 ## Do-while loop
@@ -235,7 +235,7 @@ Here is how we can calculate the factorial:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#7](https://judge.softuni.bg/Contests/Practice/Index/659#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#7](https://judge.softuni.org/Contests/Practice/Index/659#7).
 
 
 ### Example: Sum of a number's digits
@@ -261,7 +261,7 @@ We can use the following idea to solve the task:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#8](https://judge.softuni.bg/Contests/Practice/Index/659#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#8](https://judge.softuni.org/Contests/Practice/Index/659#8).
 
 
 ## Infinite loops and break operator
@@ -331,7 +331,7 @@ Here is a sample implementation of the described algorithm:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#9](https://judge.softuni.bg/Contests/Practice/Index/659#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#9](https://judge.softuni.org/Contests/Practice/Index/659#9).
 
 
 ### Example: Break operator in an infinite loop
@@ -356,7 +356,7 @@ Note: although the code above is correct, it will not work if the user enters te
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#10](https://judge.softuni.bg/Contests/Practice/Index/659#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#10](https://judge.softuni.org/Contests/Practice/Index/659#10).
 
 
 ## Nested loops and the break operator
@@ -389,7 +389,7 @@ Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and e
 
 ### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#11](https://judge.softuni.bg/Contests/Practice/Index/659#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#11](https://judge.softuni.org/Contests/Practice/Index/659#11).
 
 
 ## Error handling: try-catch construction
@@ -432,7 +432,7 @@ Here is a sample implementation of the described idea:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#12](https://judge.softuni.bg/Contests/Practice/Index/659#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#12](https://judge.softuni.org/Contests/Practice/Index/659#12).
 
 Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits), or texts that do not contain numbers.
 
@@ -484,7 +484,7 @@ Sample implementation:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#13](https://judge.softuni.bg/Contests/Practice/Index/659#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#13](https://judge.softuni.org/Contests/Practice/Index/659#13).
 
 
 ### Task: Numbers pyramid
@@ -518,7 +518,7 @@ Here is a sample implementation:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#14](https://judge.softuni.bg/Contests/Practice/Index/659#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#14](https://judge.softuni.org/Contests/Practice/Index/659#14).
 
 
 ### Task: Numbers table
@@ -548,7 +548,7 @@ We can solve the task with **two nested loops** and a little bit of calculations
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/659#15](https://judge.softuni.bg/Contests/Practice/Index/659#15).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#15](https://judge.softuni.org/Contests/Practice/Index/659#15).
 
 
 ## What did we learn in this chapter?

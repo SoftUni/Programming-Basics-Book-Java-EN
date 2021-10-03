@@ -211,9 +211,9 @@ Hello Java
 The additional **`Process finished with exit code 0`** message is written last in the console and signifies that the program has ended with no errors.
 
 #### Testing the program in the Judge system
-Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged in real-time by the system. Each solution goes through a series of of hidden tests, and every test that passes grants the user certain points.
+Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged in real-time by the system. Each solution goes through a series of of hidden tests, and every test that passes grants the user certain points.
 The program that we just wrote can be tested here:
-[https://judge.softuni.bg/Contests/Practice/Index/646#0](https://judge.softuni.bg/Contests/Practice/Index/646#0).
+[https://judge.softuni.org/Contests/Practice/Index/646#0](https://judge.softuni.org/Contests/Practice/Index/646#0).
 We need to paste the program's entire source code in the black field and make sure we've selected **Java code** from the dropdown menu.
 
 ![](/assets/chapter-1-images/01.Hello-java-06.png)
@@ -314,7 +314,7 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 ![](assets/chapter-1-images/02.Expression-02.png)
 
 ### Testing in the Judge system
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#1](https://judge.softuni.bg/Contests/Practice/Index/646#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#1](https://judge.softuni.org/Contests/Practice/Index/646#1).
 
 ![](assets/chapter-1-images/02.Expression-03.png)
 
@@ -339,7 +339,7 @@ Let's now **start the program** and check whether the result is what we're expec
 ```
 
 ### Testing in the Judge system
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#2](https://judge.softuni.bg/Contests/Practice/Index/646#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#2](https://judge.softuni.org/Contests/Practice/Index/646#2).
 Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
 
 ### Exercise: Triangle of 55 stars
@@ -365,7 +365,7 @@ System.out.println();
 …
 ```
 ### Testing in the Judge system
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#3](https://judge.softuni.bg/Contests/Practice/Index/646#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#3](https://judge.softuni.org/Contests/Practice/Index/646#3).
 
 Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar but more complex approach (a loop within another loop). It is completely fine if you can't figure it out, you will remember this problem when we learn about loops in a few chapters.
 
@@ -407,7 +407,7 @@ Test your solution with a few examples. You should receive a result identical to
 ```
 
 ### Testing in the Judge system
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1046#4](https://judge.softuni.org/Contests/Practice/Index/1046#4).
 
 ### \* Exercise: Square of Stars
 Write a **Java console program** which **reads** a whole positive number N from the console and **prints a square of N stars on the console**, like in the examples below.
@@ -431,7 +431,7 @@ Don't forget to import the `java.util.Scanner` class and put your code in the `m
 **Caution**: this task is more complex than the rest and is presented to you at this point purposefully. It is marked with a star to provoke you to **look for information on the Internet**. It is one of the most important skills you have to develop while you're learning to program. It is what you'll be doing every day if you work as a developer, so don't be scared to try it out. 
 
 ### Testing in the Judge system
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/646#5](https://judge.softuni.bg/Contests/Practice/Index/646#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#5](https://judge.softuni.org/Contests/Practice/Index/646#5).
 
 ## Console, graphical and web applications
 With **console applications**, as you can figure out yourselves, **all operations** for reading input and printing output are done through the **console**. There the **input data is inserted**, which is read from the application also in it, is **printed the output data** after or during the runtime of the program.

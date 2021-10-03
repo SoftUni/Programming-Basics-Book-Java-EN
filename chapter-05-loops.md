@@ -40,7 +40,7 @@ We can solve the task using a **`for` loop**, which will assign values from 1 to
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#0](https://judge.softuni.bg/Contests/Practice/Index/655#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#0](https://judge.softuni.org/Contests/Practice/Index/655#0).
 
 You should get **100 points** (fully accurate solution).
 
@@ -64,7 +64,7 @@ We can solve the task by combining a **`for` loop**, which will go through the n
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#1](https://judge.softuni.bg/Contests/Practice/Index/655#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#1](https://judge.softuni.org/Contests/Practice/Index/655#1).
 
 
 ### Example: Latin letters 
@@ -79,7 +79,7 @@ It is good to know that the **`for` loops** don't work only with numbers. We can
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#2](https://judge.softuni.bg/Contests/Practice/Index/655#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#2](https://judge.softuni.org/Contests/Practice/Index/655#2).
 
 
 ### Example: Sum numbers 
@@ -114,7 +114,7 @@ Below you can find the source code for the solution:
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#3](https://judge.softuni.bg/Contests/Practice/Index/655#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#3](https://judge.softuni.org/Contests/Practice/Index/655#3).
 
 
 ### Example: Max number
@@ -139,7 +139,7 @@ We enter the first number **`n`** (the number of integers to be entered). We ass
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#4](https://judge.softuni.bg/Contests/Practice/Index/655#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#4](https://judge.softuni.org/Contests/Practice/Index/655#4).
 
 
 ### Example: Min number
@@ -162,7 +162,7 @@ The task is identical to the previous one, but this time we will start with anot
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#5](https://judge.softuni.bg/Contests/Practice/Index/655#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#5](https://judge.softuni.org/Contests/Practice/Index/655#5).
 
 
 ### Example: Left and right sum
@@ -183,7 +183,7 @@ Input the number **n**, after that the first **n** numbers (**left** half) and s
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#6](https://judge.softuni.bg/Contests/Practice/Index/655#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#6](https://judge.softuni.org/Contests/Practice/Index/655#6).
 
 
 ### Example: Even \/ odd sum 
@@ -209,7 +209,7 @@ We input the numbers one by one and calculate the two **sums** (the numbers on *
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#7](https://judge.softuni.bg/Contests/Practice/Index/655#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#7](https://judge.softuni.org/Contests/Practice/Index/655#7).
 
 
 ### Exapmle: Vowels sum 
@@ -235,7 +235,7 @@ We read the input text **`s`**, after that we null the sum and run a loop from *
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#8](https://judge.softuni.bg/Contests/Practice/Index/655#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#8](https://judge.softuni.org/Contests/Practice/Index/655#8).
 
 
 ## What have we learned from this chapter?
@@ -316,7 +316,7 @@ We must calculate the **sum** of all elements, find the **largest** of them and 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#9](https://judge.softuni.bg/Contests/Practice/Index/655#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#9](https://judge.softuni.org/Contests/Practice/Index/655#9).
 
 
 ### Task: Even \/ Odd position 
@@ -340,7 +340,7 @@ In the current task, it is better to work with **fractions** (not integers). The
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#10](https://judge.softuni.bg/Contests/Practice/Index/655#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#10](https://judge.softuni.org/Contests/Practice/Index/655#10).
 
 
 ### Task: Equal pairs 
@@ -368,7 +368,7 @@ We read the input numbers **in pairs**. For each pair, we calculate the **sum**.
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/655#11](https://judge.softuni.bg/Contests/Practice/Index/655#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#11](https://judge.softuni.org/Contests/Practice/Index/655#11).
 
 
 ## Exercise: Graphical and web applications

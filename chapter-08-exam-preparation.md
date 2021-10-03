@@ -25,7 +25,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 
 ## The Online Evaluation System (Judge)
 
-**All exams and exercises** from this book are automatically **tested** through the online **Judge system**: [https://judge.softuni.bg](https://judge.softuni.bg). For **each** of the problems, there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system, you can log in with your **softuni.bg account**.
+**All exams and exercises** from this book are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system, you can log in with your **softuni.bg account**.
 
 **How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile it as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
@@ -87,7 +87,7 @@ The only thing left is to print the area on the console.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#0](https://judge.softuni.bg/Contests/Practice/Index/661#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#0](https://judge.softuni.org/Contests/Practice/Index/661#0).
 
 
 ### Problem: Moving Bricks
@@ -141,7 +141,7 @@ Finally, we print the result on the console.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#1](https://judge.softuni.bg/Contests/Practice/Index/661#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#1](https://judge.softuni.org/Contests/Practice/Index/661#1).
 
 
 ## Simple Conditions – Problems
@@ -207,7 +207,7 @@ Finally, we print **the distance** previously found.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#2](https://judge.softuni.bg/Contests/Practice/Index/661#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#2](https://judge.softuni.org/Contests/Practice/Index/661#2).
 
 
 ### Problem: Point in a Figure
@@ -255,7 +255,7 @@ We will initialize two variables that will mark whether **the point** is in one 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#3](https://judge.softuni.bg/Contests/Practice/Index/661#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#3](https://judge.softuni.org/Contests/Practice/Index/661#3).
 
 
 ## Complex Conditions – Problems
@@ -314,7 +314,7 @@ The only thing that remains is to print the result on the console. It is importa
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#4](https://judge.softuni.bg/Contests/Practice/Index/661#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#4](https://judge.softuni.org/Contests/Practice/Index/661#4).
 
 
 ### Problem: Sums of 3 Numbers
@@ -366,7 +366,7 @@ Similarly, we will supplement the other two cases. The full code of the program 
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#5](https://judge.softuni.bg/Contests/Practice/Index/661#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#5](https://judge.softuni.org/Contests/Practice/Index/661#5).
 
 
 ## Simple Loops – Problems
@@ -414,7 +414,7 @@ Finally, we will print the result on the console in the required **format**.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#6](https://judge.softuni.bg/Contests/Practice/Index/661#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#6](https://judge.softuni.org/Contests/Practice/Index/661#6).
 
 
 ### Problem: Sequence of Increasing Elements
@@ -459,7 +459,7 @@ Finally, we print the length of **the longest** sequence found.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#7](https://judge.softuni.bg/Contests/Practice/Index/661#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#7](https://judge.softuni.org/Contests/Practice/Index/661#7).
 
 
 ## Drawing Figures in the console – Problems
@@ -522,7 +522,7 @@ What remains is **to assemble the whole program** by first reading the input, pr
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#8](https://judge.softuni.bg/Contests/Practice/Index/661#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#8](https://judge.softuni.org/Contests/Practice/Index/661#8).
 
 
 ### Problem: Rectangle with Stars in the Center
@@ -573,7 +573,7 @@ Now, **in the body** of the loop let's add the **asterisks**. We'll check if we'
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#9](https://judge.softuni.bg/Contests/Practice/Index/661#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#9](https://judge.softuni.org/Contests/Practice/Index/661#9).
 
 
 ## Nested Loops with more complex logic – Problems
@@ -627,7 +627,7 @@ Finally, we will check if **the counter** is equal to **0** and we will print "*
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#10](https://judge.softuni.bg/Contests/Practice/Index/661#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#10](https://judge.softuni.org/Contests/Practice/Index/661#10).
 
 
 ### Problem: Generating Rectangles
@@ -683,4 +683,4 @@ Finally, we print "**No**" if there are no such rectangles.
 
 #### Testing in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/661#11](https://judge.softuni.bg/Contests/Practice/Index/661#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#11](https://judge.softuni.org/Contests/Practice/Index/661#11).

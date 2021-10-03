@@ -83,7 +83,7 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 
 ### Test your code in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#0](https://judge.softuni.bg/Contests/Practice/Index/660#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#0](https://judge.softuni.org/Contests/Practice/Index/660#0).
 
 
 ## Problem: Magic Combination
@@ -144,7 +144,7 @@ As we can see, we can solve the same problem by using different types of loops. 
 
 ### Test in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#1](https://judge.softuni.bg/Contests/Practice/Index/660#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#1](https://judge.softuni.org/Contests/Practice/Index/660#1).
 
 
 ## Problem: Stop Number
@@ -198,7 +198,7 @@ Accordingly, if the **condition** that checks whether the number is equal to the
 
 ### Test in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#2](https://judge.softuni.bg/Contests/Practice/Index/660#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#2](https://judge.softuni.org/Contests/Practice/Index/660#2).
 
 
 ## Problem: Special Numbers
@@ -236,7 +236,7 @@ Solve the problem on your own using what you have learned from the previous two 
 
 ### Test in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#3](https://judge.softuni.bg/Contests/Practice/Index/660#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#3](https://judge.softuni.org/Contests/Practice/Index/660#3).
 
 
 ## Problem: Digits
@@ -274,4 +274,4 @@ Solve the problem **on your own**, using what you have learned from the previous
 
 ### Test in the Judge System
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#4](https://judge.softuni.bg/Contests/Practice/Index/660#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#4](https://judge.softuni.org/Contests/Practice/Index/660#4).

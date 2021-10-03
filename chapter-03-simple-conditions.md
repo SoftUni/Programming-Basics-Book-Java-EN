@@ -79,7 +79,7 @@ Test the code (from the example) locally. Test with different grades, like **4.7
 #### Test the code in the Judge system
 
 Test your solution here:
-[https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
+[https://judge.softuni.org/Contests/Practice/Index/651#0](https://judge.softuni.org/Contests/Practice/Index/651#0).
 
 
 ## If-Else conditions
@@ -104,7 +104,7 @@ Like the example above, read the grade from the console and check if it is excel
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#1](https://judge.softuni.org/Contests/Practice/Index/651#1).
 
 
 ## The curly brackets {} after If / Else 
@@ -151,7 +151,7 @@ Executing the above code will output the following result:
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#2](https://judge.softuni.org/Contests/Practice/Index/651#2).
 
 
 ### Example: The greater number
@@ -170,7 +170,7 @@ Executing the above code will output the following result for numbers 3 and 5:
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#3](https://judge.softuni.org/Contests/Practice/Index/651#3).
 
 
 ## Variable scope
@@ -226,7 +226,7 @@ The program logic from the above example **sequentially compares** the input dig
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#4](https://judge.softuni.org/Contests/Practice/Index/651#4).
 
 
 ## Exercises: Sequence of If-Else conditions
@@ -264,7 +264,7 @@ Executing the above code will output the following result:
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#5](https://judge.softuni.org/Contests/Practice/Index/651#5).
 
 
 ### Exercise: Summing Up seconds
@@ -298,7 +298,7 @@ A different solution that does not use **`if-else`** statement is more appropria
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#6](https://judge.softuni.org/Contests/Practice/Index/651#6).
 
 
 ### Exercise: Unit converter
@@ -341,7 +341,7 @@ Read the input data. We can use the **`toLowerCase()`** function, which will mak
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#7](https://judge.softuni.org/Contests/Practice/Index/651#7).
 
 
 ## Debugging
@@ -419,7 +419,7 @@ To do that, go to the body of the method **`main (string [] args)`** and place t
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#0](https://judge.softuni.org/Contests/Practice/Index/651#0).
 
  ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
 
@@ -454,7 +454,7 @@ We already have a class containing one console application. What's left is to **
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#1](https://judge.softuni.org/Contests/Practice/Index/651#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
@@ -484,7 +484,7 @@ In the main method, **`public static void main()`** write the code to solve the 
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#2](https://judge.softuni.org/Contests/Practice/Index/651#2).
 
 
 ### Exercise: Find the greater number
@@ -512,7 +512,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#3](https://judge.softuni.org/Contests/Practice/Index/651#3).
 
 
 ### Exercise: Write the number (from 0 to 9 ) in English.
@@ -534,7 +534,7 @@ To solve the task, we can use sequential **`if-else`** statements to cover **all
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#4](https://judge.softuni.org/Contests/Practice/Index/651#4).
 
 
 ### Exercise: Password guess
@@ -555,7 +555,7 @@ To solve the task it is necessary to use one **`if-else`** statement.
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#8](https://judge.softuni.org/Contests/Practice/Index/651#8).
 
 
 ### Exercise: Number from 100 to 200
@@ -572,7 +572,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Test the code in the Judge system
 
-Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
+Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/651#9](https://judge.softuni.org/Contests/Practice/Index/651#9).
 
 
 ### Exercise: The same words
@@ -595,7 +595,7 @@ Before comparing words, transform them to lowercase so that the size of the lett
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#10](https://judge.softuni.org/Contests/Practice/Index/651#10).
 
 
 ### Exercise: Speed information
@@ -621,7 +621,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#11](https://judge.softuni.org/Contests/Practice/Index/651#11).
 
 
 ### Exercise: Faces of figures
@@ -647,7 +647,7 @@ Format the output to **3 digits after the decimal point**.
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#12](https://judge.softuni.org/Contests/Practice/Index/651#12).
 
 
 ### Exercise: Calculate what is going to be the time in 15 minutes 
@@ -670,7 +670,7 @@ To solve the task, add 15 minutes and perform a few checks. If the minutes excee
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#13](https://judge.softuni.org/Contests/Practice/Index/651#13).
 
 ### Exercise: Equals three numbers
 
@@ -686,7 +686,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#14](https://judge.softuni.org/Contests/Practice/Index/651#14).
 
 
 ### Exercise: Write a number from 0 to 100 in English
@@ -707,4 +707,4 @@ To solve the task, first, check for **one-digit numbers**, and if the number has
 
 #### Test the code in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#15](https://judge.softuni.org/Contests/Practice/Index/651#15).

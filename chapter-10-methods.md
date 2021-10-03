@@ -103,7 +103,7 @@ Finally, we'll **call** the **`PrintReceipt`** method from the body of the **`Ma
 
 #### Testing in the Judge system
 
-The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.bg/Contests/Practice/Index/665#0](https://judge.softuni.bg/Contests/Practice/Index/665#0).
+The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/665#0](https://judge.softuni.org/Contests/Practice/Index/665#0).
 
 
 ## Methods with parameters
@@ -154,7 +154,7 @@ The next step is to read the input number and to call the new method from the bo
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#1](https://judge.softuni.bg/Contests/Practice/Index/665#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#1](https://judge.softuni.org/Contests/Practice/Index/665#1).
 
 
 ### Example: Printing a triangle
@@ -189,7 +189,7 @@ Finally, we will print the **bottom part** from the triangle, but this time with
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#2](https://judge.softuni.bg/Contests/Practice/Index/665#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#2](https://judge.softuni.org/Contests/Practice/Index/665#2).
 
 
 ### Example: Draw a filled square
@@ -218,7 +218,7 @@ Finally, call the methods in the **`main()`** method of the program to draw the 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#3](https://judge.softuni.bg/Contests/Practice/Index/665#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#3](https://judge.softuni.org/Contests/Practice/Index/665#3).
 
 
 ## Returning result from a method
@@ -313,7 +313,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#4](https://judge.softuni.bg/Contests/Practice/Index/665#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#4](https://judge.softuni.org/Contests/Practice/Index/665#4).
 
 
 ### Example: Power of a number
@@ -336,7 +336,7 @@ After we have done the calculations, we have to only print the result in the **`
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#5](https://judge.softuni.bg/Contests/Practice/Index/665#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#5](https://judge.softuni.org/Contests/Practice/Index/665#5).
 
 
 ## Method overloading
@@ -397,7 +397,7 @@ The last step is to read the input data, use the appropriate variables, and invo
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#6](https://judge.softuni.bg/Contests/Practice/Index/665#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#6](https://judge.softuni.org/Contests/Practice/Index/665#6).
 
 
 ## Naming methods. Best practices when working with methods
@@ -503,7 +503,7 @@ Define a method **`printName(String name)`** and implement it, after which read 
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#7](https://judge.softuni.bg/Contests/Practice/Index/665#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#7](https://judge.softuni.org/Contests/Practice/Index/665#7).
 
 
 ### Task: Min method
@@ -526,7 +526,7 @@ int min = getMin(getMin(num1, num2), num3);
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#8](https://judge.softuni.bg/Contests/Practice/Index/665#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#8](https://judge.softuni.org/Contests/Practice/Index/665#8).
 
 
 ### Task: String repeater
@@ -549,7 +549,7 @@ Keep in mind that **in Java concatenating strings in loops leads to a bad perfor
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#9](https://judge.softuni.bg/Contests/Practice/Index/665#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#9](https://judge.softuni.org/Contests/Practice/Index/665#9).
 
 
 ### Task: N-th digit
@@ -568,7 +568,7 @@ To do the algorithm, use a **`while`** loop, until the given number equals 0. At
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#10](https://judge.softuni.bg/Contests/Practice/Index/665#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#10](https://judge.softuni.org/Contests/Practice/Index/665#10).
 
 
 ### Task: Integer to base
@@ -603,7 +603,7 @@ static String integerToBase(int number, int toBase) {
 
 #### Testing in the Judge system 
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#11](https://judge.softuni.bg/Contests/Practice/Index/665#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#11](https://judge.softuni.org/Contests/Practice/Index/665#11).
 
 
 ### Task: Notifications
@@ -635,7 +635,7 @@ If you are reading from the console a few separate methods, you should keep in m
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#12](https://judge.softuni.bg/Contests/Practice/Index/665#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#12](https://judge.softuni.org/Contests/Practice/Index/665#12).
 
 
 ### Task: Numbers to words
@@ -669,7 +669,7 @@ The third special case is when the number formed by the last two digits of the i
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#13](https://judge.softuni.bg/Contests/Practice/Index/665#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#13](https://judge.softuni.org/Contests/Practice/Index/665#13).
 
 
 ### Task: String encryption
@@ -716,4 +716,4 @@ To find the first and the last digit from the ASCII code, we will use the algori
 
 #### Testing in the Judge system
 
-Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/665#14](https://judge.softuni.bg/Contests/Practice/Index/665#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#14](https://judge.softuni.org/Contests/Practice/Index/665#14).
