@@ -73,7 +73,7 @@ By the task condition **input data** is being entered on **four** separate rows,
 
 To perform **calculations**, we choose to use a type **`double`**.
 
-You can read more about the different **data types**in Java programming language here: [http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](http://www.introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
+You can read more about the different **data types**in Java programming language here: [https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
 
 This way, we successfully solved the first sub-task. The next step is to **convert the input data** into appropriate **types** to perform the needed calculations. We choose to use **`Integer`** or **`int`** type because the condition of the task says that the input data must be within a particular range, for which this data type is sufficient. We will do the **conversion** in the following way:
 
@@ -386,7 +386,7 @@ Print on a single line **all combinations**, corresponding to the requirements, 
 
 ### Hints and guidelines
 
-According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([http://www.asciitable.com](http://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
+According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com](https://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
 
 ![](assets/chapter-8-2-images/06.Letters-01.png)
 

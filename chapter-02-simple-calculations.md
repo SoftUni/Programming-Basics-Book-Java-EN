@@ -699,7 +699,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 ### Exercise: Converter – from °C (Celsius) to °F (Fahrenheit)
 
-Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](http://bfy.tw/3rGh "Търсене в Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
+Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Търсене в Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
 
 #### Sample input and output
 

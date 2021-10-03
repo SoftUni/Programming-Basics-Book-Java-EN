@@ -140,7 +140,7 @@ In this case, we can try with the following search: *java get whole number part 
 
 As a second solution, we can use: As we already know, the operator for division **`/`** operates differently on integers and floating-point numbers. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search for a way to convert the floating-point numbers of the height and the width of the training lab into integers and then divide them.
 
-In this case, there could be **data loss** after removing the fractional part, so it is necessary for the conversion to be indicated **explicitly** (explicit typecasting). To indicate explicit conversion, we use the operator for converting data **`(type)`** by replacing the word **type** with the needed **data type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](http://www.introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
+In this case, there could be **data loss** after removing the fractional part, so it is necessary for the conversion to be indicated **explicitly** (explicit typecasting). To indicate explicit conversion, we use the operator for converting data **`(type)`** by replacing the word **type** with the needed **data type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](https://introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
 
 ![](assets/chapter-2-2-images/01.Training-lab-05.png)
 

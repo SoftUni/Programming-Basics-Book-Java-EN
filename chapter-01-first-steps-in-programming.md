@@ -33,7 +33,7 @@ Some programming languages don't use a compiler but are **directly interpreted**
 
 For programming with the **Java language** the most commonly used development environment is **IntelliJ IDEA**, which is developed and distributed by JetBrains and it can be downloaded free from their website: [https://jetbrains.com/idea](https://jetbrains.com/idea).
 
-Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/packages](https://eclipse.org/downloads/packages), **NetBeans** [https://netbeans.org/downloads](https://netbeans.org/downloads) and **JDeveloper** [http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html) and many others. In the current book, we are going to use IntelliJ IDEA.
+Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/packages](https://eclipse.org/downloads/packages), **NetBeans** [https://netbeans.apache.org/download](https://netbeans.apache.org/download) and **JDeveloper** [https://www.oracle.com/tools/downloads/jdeveloper-12c-downloads.html](https://www.oracle.com/tools/downloads/jdeveloper-12c-downloads.html) and many others. In the current book, we are going to use IntelliJ IDEA.
 
 If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it** [https://repl.it/languages/java](https://repl.it/languages/java).
 

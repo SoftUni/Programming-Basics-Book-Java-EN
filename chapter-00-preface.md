@@ -195,7 +195,7 @@ If you are a **teacher in programming**, informatics or ICT or wish **to become 
 * **Automated testing system for problems** and homeworks (online judge system) that is used by the students, also free.
 * **Video lessons** employing methodical guidance from **the free course for programming teachers** that is regularly held at the SoftUni Foundation.
 
-You can find all these **free teaching materials** on the SoftUni Foundation's website, along with the educational content for a whole sequence of programming and software tech courses. Download them for free here: http://softuni.foundation/projects/applied-software-developer-profession/.
+You can find all these **free teaching materials** on the SoftUni Foundation's website, along with the educational content for a whole sequence of programming and software tech courses. Download them for free here: https://softuni.foundation/projects/applied-software-developer-profession/.
 )
 -->
 ## The story of this book
@@ -208,7 +208,7 @@ The free courses at SoftUni for introduction to programming are probably the mos
 Following the principle of **free software and free knowledge**, Svetlin Nakov led a **team of volunteers** and started this open-source project. At first, the idea was to create a **free book** for the basics of programming in the C# programming language and later extend the initiative with other similar books in various popular programming languages (like Java, JavaScript and Python).
 This book is almost a mirror translation to Java from its original version in C#.
 
-The project is part of the hard work of the **[Software University Foundation](http://softuni.foundation)** to create and distribute open learning content to teach software engineers and IT professionals.
+The project is part of the hard work of the **[Software University Foundation](https://softuni.foundation)** to create and distribute open learning content to teach software engineers and IT professionals.
 
 ### Authors team
 

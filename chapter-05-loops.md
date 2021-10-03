@@ -382,7 +382,7 @@ The purpose of the following exercise is to play with a **drawing library**, als
 ![](assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
 Let us get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
-  * Definition of “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
+  * Definition of “turtle graphics”: [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
   * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
   * Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
