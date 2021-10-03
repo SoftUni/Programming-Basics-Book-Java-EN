@@ -28,8 +28,12 @@ The free book **Programming Basics with Java** introduces readers to writing ent
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
 
-**Download** "Programming Basics with Java" as a PDF:
+## Download the Book
+
+Download the book "**Programming Basics with Java**" in **PDF** format:
 * <a href="#">TODO</a>
+
+## Book Editions
 
 This book is available in several versions in different programming languages:
 * [Programming Basics with Java (English)](https://java-book.softuni.org)
@@ -41,6 +45,8 @@ This book is available in several versions in different programming languages:
 * [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
 * [Programming Basics with C++ (Bulgarian)](https://cpp-book.softuni.bg)
 
+## Book Details
+
 Brief information about this edition:
 * Title: **Programming Basics with Java**
 * Authors: **Svetlin Nakov & Team**
@@ -50,4 +56,10 @@ Brief information about this edition:
 * Source code:: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
 * All authors, editors, translators and **contributors**: Asya Dikova-Kirova, Vaydin Kachanov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Dalev, Zhulieta Atanasova, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Zhulieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva, Marina Shiderova.
 
-Enjoy reading and remember to sign up for the [**Practical Free Course "Programming Basics"**](https://softuni.org/apply) coming together with this book, because programming is learned by practice, code writing and solving many, many tasks, not just by reading!
+## Paper Book
+
+You can **buy a paper copy of the book** from SoftUni: https://softuni.bg/contacts. Contact us via telephone or email for more information.
+
+## Free Practical Programming Course
+
+Enjoy reading and do not forget to **sign up** for the [**Practical Free Course "Programming Basics"**](https://softuni.org) coming together with this book, because programming is learned by practice, code writing and solving many, many problems, not just by reading!
