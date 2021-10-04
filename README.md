@@ -50,15 +50,11 @@ This book is available in several versions in different programming languages:
 Brief information about this edition:
 * Title: **Programming Basics with Java**
 * Authors: **Svetlin Nakov & Team**
-* ISBN: **TODO**
-* Edition: **TODO**
+* ISBN: **978-619-00-1402-7** (9786190014027)
+* Edition: **Faber Publishing, Sofia, Oct 2021**
 * License: **CC-BY-SA**
 * Source code:: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
 * All authors, editors, translators and **contributors**: Asya Dikova-Kirova, Vaydin Kachanov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Dalev, Zhulieta Atanasova, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Zhulieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva, Marina Shiderova.
-
-## Paper Book
-
-You can **buy a paper copy of the book** from SoftUni: https://softuni.bg/contacts. Contact us via telephone or email for more information.
 
 ## Free Practical Programming Course
 
