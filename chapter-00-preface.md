@@ -214,11 +214,11 @@ The project is part of the hard work of the **[Software University Foundation](h
 
 This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order.)
 
-> **Asya Dikova-Kirova, Vaydin Kachanov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Dalev, Zhulieta Atanasova, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev**
+> **Asya Dikova-Kirova, Daniel Tsvetkov, Dimitar Dalev, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Vaydin Kachanov, Ventsislav Petrov, Zhulieta Atanasova**
 
 The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)) which is developed by a large team of authors that has a significant contribution to the current book:
 
-Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Julieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Vuleva.
+Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
 Book cover design: Marina Shiderova.
 
