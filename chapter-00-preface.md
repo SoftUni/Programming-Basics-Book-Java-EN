@@ -17,7 +17,7 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 **A new group starts each month.** The Programming Basics course at SoftUni is organized regularly using a few different programming languages as basis. So, check it out! This course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org).
 
-## Why did we choose java?
+## Why did we choose Java?
 
 For this book, we choose the **Java** because it is a **modern programming language** for high-level programming, open-source, easy to learn, and **suitable for beginners**. Using Java is **widespread**, with a well-developed ecosystem, numerous libraries and technology frameworks, and accordingly, it gives many **perspectives** for development. Java combines paradigms of procedural, object-oriented, and functional programming in a modern way with easy syntax although it is more descriptive than Python and JavaScript. In this book, we will use **Java** language and **IntelliJ IDEA** development environment, which are available for free.
 
