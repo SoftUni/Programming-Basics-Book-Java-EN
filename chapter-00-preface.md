@@ -218,7 +218,7 @@ This book is developed by a broad author's team of **volunteers** who dedicated 
 
 The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)) which is developed by a large team of authors that has a significant contribution to the current book:
 
-> Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Zhulieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva
+Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Julieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Vuleva.
 
 Book cover design: Marina Shiderova.
 
