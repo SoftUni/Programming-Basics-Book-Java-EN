@@ -212,7 +212,7 @@ The project is part of the hard work of the **[Software University Foundation](h
 
 ### Authors team
 
-This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order.)
+This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order):
 
 > **Asya Dikova-Kirova, Daniel Tsvetkov, Dimitar Dalev, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Vaydin Kachanov, Ventsislav Petrov, Zhulieta Atanasova**
 
