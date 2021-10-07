@@ -192,137 +192,135 @@ We have to use a few conditional statements with logical "**OR**" (**`||`**):
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#3](https://judge.softuni.org/Contests/Practice/Index/653#3).
 
 
-## Логическо отрицание
+## Logical Negation
 
-**Логическо отрицание** (оператор **`!`**) означава да **не е изпълнено** дадено условиe.
+**Logical negation** (operator **`!`**) means that a given condition is **not fulfilled**.
 
 |a|!a|
 |:----:|:----:|
 |true|false|
 
-Операторът **`!`** приема като **аргумент** булева променлива и **обръща** стойността ѝ.
+The operator **`!`** accepts as an **argument** a bool variable and **returns** its value.
 
-### Пример: невалидно число
+### Example: Invalid Number
 
-Дадено **число е валидно**, ако е в диапазона [**100 … 200**] или е **0**. Да се направи проверка за **невалидно** число.
+A given **number is valid** if it is in the range [**100 … 200**] or it is **0**. Do a validation for an **invalid** number.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |----|----|
 |75|invalid|
-|150| (няма изход)|
+|150| (no output)|
 |220|invalid|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#4](https://judge.softuni.org/Contests/Practice/Index/653#4).
-
-
-## Операторът скоби **`()`**
-
-Както останалите оператори в програмирането, така и операторите **`&&`** и **`||`** имат приоритет, като в случая **`&&`** е с по-голям приоритет от **`||`**. Операторът **`()`** служи за **промяна на приоритета на операторите** и се изчислява пръв, също както в математиката. Използването на скоби също така придава по-добра четимост на кода и се счита за добра практика. 
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#4](https://judge.softuni.org/Contests/Practice/Index/653#4).
 
 
-## По-сложни логически условия
+## The Parenthesis **`()`** Operator
 
-Понякога условията може да са доста сложни, така че да изискват дълъг булев израз или поредица от проверки. Да разгледаме няколко такива примера.
+Like the rest of the operators in programming, the operators **`&&`** and **`||`** have a priority, as in the case **`&&`** is with higher priority than **`||`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice. 
 
-### Пример: точка върху страна на правоъгълник
 
-Да се напише програма, която проверява дали **точка {x, y}** се намира **върху някоя от страните на правоъгълник {x1, y1} - {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**). Да се отпечата "**Border**" (точката лежи на някоя от страните) или "**Inside / Outside**" (в противен случай).
+## More Complex Conditions - Examples
+
+Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
+
+### Example: Point on a Rectangle Border
+
+Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>-3<br>12<br>3<br>12<br>-1|Border|2<br>-3<br>12<br>3<br>8<br>-1|Inside / Outside|
 
-#### Решение
+#### Solution
 
-Точка лежи върху някоя от страните на правоъгълник, ако:
-* **x** съвпада с **x1** или **x2** и същевременно **y** е между **y1** и **y2** или
-* **y** съвпада с **y1** или **y2** и същевременно **x** е между **x1** и **x2**.
+The point lies on any of the sides of the rectangle if:
+* **x** coincides with **x1** or **x2** and at the same time **y** is between **y1** and **y2** or
+* **y** coincides with **y1** or **y2** and at the same time **x** is between **x1** and **x2**.
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#5](https://judge.softuni.org/Contests/Practice/Index/653#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#5](https://judge.softuni.org/Contests/Practice/Index/653#5).
 
 
-### Пример: магазин за плодове
+### Example: Fruit Shop
 
-Магазин за плодове в **работни дни** продава на следните **цени**:
+A fruit shop during **week days** sells in the following **prices**:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.50<br>1.20<br>0.85<br>1.45<br>2.70<br>5.50<br>3.85|
 
-В почивни дни цените са **по-високи**:
+During the **weekend days** the prices are **higher**:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.70<br>1.25<br>0.90<br>1.60<br>3.00<br>5.60<br>4.20|
 
-Напишете програма, която **чете** от конзолата **плод** (banana / apple / …), **ден от седмицата** (Monday / Tuesday / …) и **количество** (десетично число) и **пресмята цената** според цените от таблиците по-горе. Резултатът да се отпечата **закръглен с 2 цифри след десетичния знак**. При **невалиден ден** от седмицата или **невалидно име** на плод да се отпечата **"error"**.
+Write a program that **reads** from the console a **fruit** (banana / apple / …), **a day of the week** (Monday / Tuesday / …) and **a quantity (a decimal number)** and **calculates the price** according to the prices from the tables above. The result has to be printed **rounded up to 2 digits after the decimal point**. Print **“error”** if it is an **invalid day** of the week or an **invalid name** of a fruit.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |orange<br>Sunday<br>3|2.70|kiwi<br>Monday<br>2.5|6.75|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |grapes<br>Saturday<br>0.5|2.10|tomato<br>Monday<br>0.5|error|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#6](https://judge.softuni.org/Contests/Practice/Index/653#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#6](https://judge.softuni.org/Contests/Practice/Index/653#6).
 
 
-### Пример: търговски комисионни
+### Example: Trade Fees
 
-Фирма дава следните **комисионни** на търговците си според **града**, в който работят и **обема на продажбите s**:
+A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the **volume of sales s**:
 
-|Град|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
+|City|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
 |:----:|:----:|:----:|:----:|:----:|
 |Sofia<br>Varna<br>Plovdiv|5%<br>4.5%<br>5.5%|7%<br>7.5%<br>8%|8%<br>10%<br>12%|12%<br>13%<br>14.5%|
 
-Напишете **програма**, която чете име на **град** (стринг) и обем на **продажбите** (десетично число) и изчислява размера на  комисионната. Резултатът да се изведе закръглен с **2 десетични цифри след десетичния знак**. При **невалиден град или обем на продажбите** (отрицателно число) да се отпечата "**error**".
+Write a **program** that reads the name of a **city** (string) and the volume of **sales** (double) and calculates the rate of the commission fee. The result has to be shown rounded **up to 2 digits after the decimal point**. When there is an **invalid city or volume of sales** (a negative number), print "**error**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |Sofia<br>1500|120.00|Plovidv<br>499.99|27.50|Kaspichan<br>-50|error|
 
-#### Решение
+#### Solution
 
-При прочитането на входа можем да обърнем града в малки букви (с функцията **`.toLowerCase()`**). Първоначално задаваме комисионната да е **`-1`**. Тя ще бъде променена, ако градът и ценовият диапазон бъдат намерени в таблицата с комисионните.
-За да изчислим комисионната според града и обема на продажбите се нуждаем от няколко вложени **`if` проверки**, както е в примерния код по-долу:
+When reading the input, we could convert the city into small letters (with the function **`.toLowerCase()`**). Initially we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions.
+To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#7](https://judge.softuni.org/Contests/Practice/Index/653#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#7](https://judge.softuni.org/Contests/Practice/Index/653#7).
 
-
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е да използваме <b>блокове</b>, които <b>заграждаме</b> с къдрави скоби <b><code>{ }</code></b> след <b><code>if</code></b> и <b><code>else</code></b>. Също така, препоръчително e при писане да <b>отместваме</b> кода <b>след <code>if</code> и <code>else</code></b> с една табулация навътре, за да направим кода по-лесно четим.</td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
 </tr></table>
 
 ## Условна конструкция switch-case
