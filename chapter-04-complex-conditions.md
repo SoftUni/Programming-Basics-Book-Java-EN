@@ -5,7 +5,7 @@ In the **current** chapter, we are going to examine the **nested conditional sta
 ## Nested Conditions
 
 Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**, these are **`if`** or **`if-else`** statements that are placed inside other **`if`** or **`else`** statements.
-  
+
 
 ```java
 if (condition1) {
@@ -90,7 +90,7 @@ Let's take a look at how we can create more complex logical conditions. We can u
 
 ### Logical "AND"
 
-As we saw, in some tasks we have to make **many checks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.  
+As we saw, in some tasks we have to make **many checks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 
 The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
@@ -113,7 +113,7 @@ boolean result = a && b && c && d;
 // false (as d is not being checked)
 ```
 
-Програмата ще се изпълни по **следния** начин: **започва** проверката от **`а`**, **прочита** я и отчита, че има стойност **`true`**, след което **проверява** **`b`**. След като е **отчелa**, че **`a`** и **`b`** връщат стойност **`true`**, **проверява следващия** аргумент. Стига до **`c`** и отчита, че променливата има стойност **`false`**. След като програмата отчете, че аргументът **`c`** има стойност **`false`**, тя изчислява израза **до `c`**, **независимо** каква е стойността на **`d`**. За това проверката на **`d`** се **прескача** и целият израз бива изчислен като **`false`**.
+The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that the argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
 
 ![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
@@ -323,259 +323,256 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
 </tr></table>
 
-## Условна конструкция switch-case
+## Switch-Case Conditional Statement
 
-Конструкцията **`switch-case`** работи като поредица от **`if-else`** блокове. Когато работата на програмата ни зависи от стойността на **една променлива**, вместо да правим последователни проверки с **`if-else`** блокове, можем да **използваме** условната конструкция **`switch`**. Тя се използва за **избор измежду списък с възможности**. Конструкцията сравнява дадена стойност с определени константи и в зависимост от резултата предприема действие.
+The **`switch-case`** condition works as a sequence of **`if-else`** blocks. Whenever the work of our program depends on the value of **one variable**, instead of making consecutive conditions with **`if-else`** blocks, we can **use** the conditional **`switch`** statement. It is being used for **choosing between a list of possibilities**. The statement compares a given value with defined constants and depending on the result, it takes an action.
 
-**Променливата**, която искаме да **сравняваме**, поставяме в **скобите след оператора `switch`** и се нарича "**селектор**". Тук **типът трябва да е сравним** (числа, стрингове). **Последователно** започва **сравняването** с всяка една **стойност**, която **се намира** след **`case` етикетите**.
-При **съвпадение** започва изпълнението на кода от съответното място и продължава, докато стигне оператора **`break`**. В някои програмни езици (като C# например) наличието на **`break`** е **задължително** за **всеки `case`**, който съдържа изпълнение на програмна логика. В **Java** операторът **`break`** може да се изпуска, за да се изпълнява код от друга **`case`** конструкция, докато не се стигне до следващия **`break`** оператор. Макар и позволено от езика **Java**, изпускането на оператор **`break`** след етикет **`case`** се налага изключително рядко и не е добра практика, тъй като води до така нареченото **пропадане** на програмния код. 
-При **липса** на **съвпадение**, се изпълнява **`default`** конструкцията, **ако** такава **съществува**.
+We put **the variable** that we want to **compare**, inside the **brackets after the operator `switch`** and it is called a "**selector**". Here **the type must be comparable** (numbers, strings). **Consecutively**, the program starts **comparing** each **value** that **is found** after the **`case` labels**. 
+Upon a match, the execution of the code from the respective place begins and continues until it reaches the operator **`break`**. In some programming languages (like C#) **`break`** is necessary for **every `case`**, which contains a program logic. In **Java** though, the operator **`break`** can be skipped, until we get to the next **`break`** operator. Even though it is allowed by the language, it's never used and considered a **bad practice**, because it leads to **collapsing** of the program code. If there is **missing** of a **match**, the **`default`** construction is ran, if there is one.
 
 ```java
-switch (селектор) {
+switch (selector) {
 
-    case стойност1:
-        конструкция;
+    case value1:
+        construction;
         break;
-    case стойност2:
-        конструкция;
+    case value2:
+        construction;
         break;
-    case стойност3:
-        конструкция;
+    case value3:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
 
-### Пример: ден от седмицата
+### Example: Day of the Week
 
-Нека напишем програма, която принтира **деня от седмицата** (на английски) според **въведеното число** (1 … 7) или "**Error!**", ако е подаден невалиден ден.
+Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if an invalid input is given.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |-----|-----|
 |1<br>7<br>-1|Monday<br>Sunday<br>Error!|
 
-#### Решение
+#### Solution
 
 ![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Добра практика</b> е на <b>първо</b> място да поставяме онези <b><code>case</code> случаи</b>, които обработват <b>най-често случилите се ситуации</b>, а <b><code>case</code> конструкциите</b>, обработващи <b>по-рядко възникващи ситуации</b>, да оставим в <b>края преди <code>default</code> конструкцията</b>. Друга <b>добра практика</b> е да <b>подреждаме <code>case</code> етикетите</b> в <b>нарастващ ред</b>, без значение дали са целочислени или символни.</td>
+<td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the more rear situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#8](https://judge.softuni.org/Contests/Practice/Index/653#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#8](https://judge.softuni.org/Contests/Practice/Index/653#8).
 
 
-### Множество етикети в switch-case
+### Multiple Labels in Switch-Cases
 
-В **Java** имаме възможността да **използваме множество `case`** етикети, когато те трябва да изпълняват **един и същи** код. При този начин на записване, когато **програмата** ни намери **съвпадение**, ще изпълни **следващия** срещнат код, тъй като **след** съответния **`case`** етикет **липсва код** за изпълнение и **`break`** оператор.
+In **Java** we have the possibility to **use multiple `case`** labels in the **`switch-case`** coonstruction, when they have to execute **the same code**. This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective **`case`** label **there is no code** for execution and a **`break`** operator.
 
 ```java
-switch (селектор) {
+switch (selector) {
 
-    case стойност1:
-    case стойност2:
-    case стойност3:
-        конструкция;
+    case value1:
+    case value2:
+    case value3:
+        construction;
         break;
-    case стойност4:
-    case стойност5:
-        конструкция;
+    case value4:
+    case value5:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
 
-### Пример: вид животно
+### Example: Animal Type
 
-Напишете програма, която принтира вида на животно според името му: 
+Write a program that prints the type of the animal depending on its name: 
 
 * dog -> **mammal**
 * crocodile, tortoise, snake -> **reptile**
 * others -> **unknown**
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |tortoise|reptile|dog|mammal|elephant|unknown|
 
-#### Решение
+#### Solution
 
-Можем да решим задачата чрез **`switch`**-**`case`** проверки с множество етикети по следния начин:
+We can solve the task with **`switch`**-**`case`** conditions with multiple labels in the following way:
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#9](https://judge.softuni.org/Contests/Practice/Index/653#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#9](https://judge.softuni.org/Contests/Practice/Index/653#9).
 
 
-## Какво научихме от тази глава?
+## What have we learned in this chapter?
 
-В настоящата глава научихме как можем да използваме **по-сложни условия и проверки**, логически оператори в условията и **вложени `if`-конструкции**.
+In this chapter we learned how we can use **more complex conditions**, logical operators inside the condition and **nested `if`-constructions**.
 
-### Вложени проверки
+### Nested Conditions
 
 ```java
-if (условие1) {
-    if (условие2) {	
-        // тяло;		
+if (condition1) {
+    if (condition2) {	
+        // body;		
     } else {	
-        // тяло;
+        // body;
     }
 }
 ```
 
-### По-сложни проверки с &&, ||, ! и ()
+### Complex Conditions with &&, \|\|, ! and ()
 
 ```java
 if ((x == left || x == right) && y <= top && y >= bottom)
     System.out.println (…); 
 ```
 
-#### Switch-case проверки
+#### Switch-case Conditions
 
 ```java
-switch (селектор) {
-    case стойност1:
-        конструкция;
+switch (selector) {
+    case value1:
+        construction;
         break;
-    case стойност2:
-    case стойност3:
-        конструкция;
+    case value2:
+    case value3:
+        construction;
         break;
     …
     default:
-        конструкция;
+        construction;
         break;
 }
 ```
 
 
-## Упражнения: по-сложни проверки
+## Exercises: More Complex Conditions 
 
-Нека сега да упражним работата с по-сложни проверки. Да решим няколко практически задачи.
+Let's practice using more complex conditions. We will solve a few practical exercises.
 
-### Задача: кино
+### Problem: Cinema
 
-В една кинозала столовете са наредени в **правоъгълна** форма в **r** реда и **c** колони. Има три вида прожекции с билети на **различни** цени:
+In a cinema hall the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
 
-* **Premiere** – премиерна прожекция, на цена **12.00** лева.
-* **Normal** – стандартна прожекция, на цена **7.50** лева.
-* **Discount** – прожекция за деца, ученици и студенти на намалена цена от **5.00** лева.
+* **Premiere** – a premiere screening, with price **12.00** BGN.
+* **Normal** – a standard screening, with price **7.50** BGN.
+* **Discount** – a screening for children and students on a reduced price – **5.00** BGN.
 
-Напишете програма, която въвежда **тип прожекция** (стринг), брой **редове** и брой **колони** в залата (цели числа) и изчислява **общите приходи** от билети при **пълна зала**. Резултатът да се отпечата във формат като в примерите по-долу - с 2 цифри след десетичния знак.
+Write a program that enters a **type of screening** (string), number of **rows** and number of **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |Premiere<br>10<br>12|1440.00 leva|Normal<br>21<br>13|2047.50 leva|
 
-#### Насоки и подсказки 
+#### Hints and Guidelines
 
-При прочитането на входа можем да обърнем типа на прожекцията в малки букви (с функцията **`.toLowerCase()`**). Създаваме и инициализираме променлива, която ще ни съхранява изчислените приходи. В друга променлива пресмятаме пълния капацитет на залата. Използваме **`switch-case`** условна конструкция, за да изчислим прихода в зависимост от вида на прожекцията и отпечатваме резултата на конзолата в зададения формат (потърсете нужната **Java** функционалност в интернет). 
+While reading the input, we could convert the screening type into small letters (with the function **`.toLowerCase()`**). We create and initialize a variable that will store the calculated income. In another variable we calculate the full capacity of the hall. We use a **`switch-case`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Java** functionality on the internet). . 
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
 ![](assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#10](https://judge.softuni.org/Contests/Practice/Index/653#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#10](https://judge.softuni.org/Contests/Practice/Index/653#10).
 
+### Problem: Volleyball
 
-### Задача: волейбол
+Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday**, when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
+Write a program that calculates **how many times Vladimir has played volleyball** through the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
 
-Влади е студент, живее в София и си ходи от време на време до родния град. Той е много запален по волейбола, но е зает през работните дни и играе **волейбол** само през **уикендите** и в **празничните дни**. Влади играе **в София** всяка **събота**, когато **не е на работа** и **не си пътува до родния град**, както и в **2/3 от празничните дни**. Той пътува до **родния си град h пъти** в годината, където играе волейбол със старите си приятели в **неделя**. Влади **не е на работа 3/4 от уикендите**, в които е в София. Отделно, през **високосните години** Влади играе с **15% повече** волейбол от нормалното. Приемаме, че годината има точно **48 уикенда**, подходящи за волейбол. 
-Напишете програма, която изчислява **колко пъти Влади е играл волейбол** през годината. **Закръглете резултата** надолу до най-близкото цяло число (напр. 2.15 -> 2; 9.95 -> 9).
+The input data is read from the console:
+ * The first line contains the word “**leap**” (leap year) or “**normal**” (a normal year with 365 days).
+ * The second line contains the integer **p** – the count of holidays in the year (which are not Saturday or Sunday).
+ * The third line contains the integer **h** – the count of weekends, in which Vladimir travels to his hometown.
 
-Входните данни се четат от конзолата:
+#### Sample Input and Output
 
-* Първият ред съдържа думата "**leap**" (високосна година) или "**normal**" (нормална година с 365 дни).
-* Вторият ред съдържа цялото число **p** – брой празници в годината (които не са събота или неделя).
-* Третият ред съдържа цялото число **h** – брой уикенди, в които Влади си пътува до родния град.
-
-#### Примерен вход и изход
-
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |leap<br>5<br>2|45|normal<br>3<br>2|38|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |normal<br>11<br>6|44|leap<br>0<br>1|41|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Стандартно прочитаме входните данни от конзолата като за избягване на грешки при въвеждане обръщаме текста в малки букви с функцията **`.toLowerCase()`**. Последователно пресмятаме **уикендите прекарани в София**, **времето за игра в София** и **общото време за игра**. Накрая проверяваме дали годината е **високосна**, правим допълнителни изчисления при необходимост и извеждаме резултата на конзолата **закръглен надолу** до най-близкото **цяло число** (потърсете **Java** клас с такава функционалност в интернет).
+As usual, we read the input data from the console and, to avoid making mistakes, we convert the text into small letters with the function **`.toLowerCase()`**. Consequently, we calculate **the weekends spent in Sofia**, **the time for playing in Sofia** and **the common playtime**. At last, we check whether the year is a **leap**, we make additional calculations when necessary and we print the result on the console **rounded down** to the nearest **integer** (look for a **Java** class with such functionality).
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
 ![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
 
 
-### Задача: * точка във фигурата
+### Problem: * Point in the Figure
 
-Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
+The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-01.png)
 
-Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
+Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**) or on any of the borders of the figure (**border**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>3<br>10|outside|2<br>3<br>1|inside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>2<br>2|border|2<br>6<br>0|border|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|-----|-----|
 |2<br>0<br>6|outside|15<br>13<br>55|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>29<br>37|inside|15<br>37<br>18|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>-4<br>7|outside|15<br>30<br>0|border|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Примерна логика за решаване на задачата (не е единствената правилна):
+A possible logic for solving the task (not the only correct one):
 
-* Може да разделим фигурата на **два правоъгълника** с обща стена:
+* We might split the figure into **two rectangles** with a common side:
 
 <p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-02.png" /></p>
 
-* Една точка е **външна (outside)** за фигурата, когато е едновременно **извън** двата правоъгълника.
-* Една точка е **вътрешна (inside)** за фигурата, ако е вътре в някой от правоъгълниците (изключвайки стените им) или лежи върху общата им стена.
-* В **противен случай** точката лежи на стената на правоъгълника (**border**).
+* A point is **outer (outside)** for the figure, when it is **outside** both of the rectangles.
+* A point is **inner (inside)** for the figure, if it is inside one of the rectangles (excluding their borders) or lies on their common side.
+* In **other case** the point lies on the border of the rectangle (**border**).
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred with the purpose of stimulating logical thinking and solving skills):
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-03.png)
 
-#### Тестване на решението
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/653#12](https://judge.softuni.org/Contests/Practice/Index/653#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#12](https://judge.softuni.org/Contests/Practice/Index/653#12).
