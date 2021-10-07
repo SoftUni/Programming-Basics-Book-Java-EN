@@ -1,11 +1,10 @@
 # Chapter 4.1. More Complex Conditions
 
-In the **current** chapter, we are going to examine the **nested conditional statements** in the **Java** language, by which our program can contain **conditions** that contain other **nested conditional statements**. We call them **"nested"**, because **we put an **`if`** condition** into **another **`if`** condition**. We are going to examine the **more complex logical conditions** through proper examples.
+In the **current** chapter, we are going to examine the **nested conditional statements** in the **Java** language, by which our program can contain **conditions** that contain other **nested conditional statements**. We call them **"nested"** because **we put an **`if`** condition** into **another **`if`** condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
 ## Nested Conditions
 
 Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**, these are **`if`** or **`if-else`** statements that are placed inside other **`if`** or **`else`** statements.
-
 
 ```java
 if (condition1) {
@@ -18,7 +17,6 @@ if (condition1) {
 ```
 
 Nesting of*more than three conditional statements inside each other is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
-
 
 ### Example: Personal Titles
 
@@ -75,7 +73,7 @@ Calculate the price by the given **city** (string), **product** (string) and **q
 
 #### Solution
 
-We **convert** all of the letters into **lower register** using the function **`.toLowerCase()`**, in order to compare products and cities **no matter** what the letters are – small or capital ones.
+We **convert** all of the letters into **lower register** using the function **`.toLowerCase()`**, to compare products and cities **no matter** what the letters are – small or capital ones.
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
@@ -83,14 +81,13 @@ We **convert** all of the letters into **lower register** using the function **`
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#1](https://judge.softuni.org/Contests/Practice/Index/653#1).
 
-
 ## More Complex Conditions
 
 Let's take a look at how we can create more complex logical conditions. We can use the logical "**AND**" (**`&&`**), logical "**OR**" (**`||`**), logical **negation** (**`!`**) and **brackets** (**`()`**).
 
 ### Logical "AND"
 
-As we saw, in some tasks we have to make **many checks at once**. But what happens when in order to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
+As we saw, in some tasks we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 
 The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
@@ -100,7 +97,7 @@ The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fu
 
 ### How does the && Operator work?
 
-The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
+The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
 
 **Example**:
 
@@ -113,7 +110,7 @@ boolean result = a && b && c && d;
 // false (as d is not being checked)
 ```
 
-The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that the argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
+The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
 
 ![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
@@ -129,7 +126,7 @@ Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x
 
 #### Solution
 
-A point is internal for a given polygon, if the following four conditions are applied **at the same time**:
+A point is internal for a given polygon if the following four conditions are applied **at the same time**:
 
 * The point is placed to the right from the left side of the rectangle.
 * The point is placed to the left from the right side of the rectangle.
@@ -142,10 +139,9 @@ A point is internal for a given polygon, if the following four conditions are ap
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#2](https://judge.softuni.org/Contests/Practice/Index/653#2).
 
-
 ## Logical "OR"
 
-The logical **"OR"** (operator **`||`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`&&`**, the logical **"OR"** accepts a few arguments of **bool** (conditional) type and returns **`true`** or **`false`**. We can easily guess that we **obtain** a value **`true`** every time when at least **one** of the arguments has a **`true`** value. This is shown at the truth table below:
+The logical **"OR"** (operator **`||`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`&&`**, the logical **"OR"** accepts a few arguments of **bool** (conditional) type and returns **`true`** or **`false`**. We can easily guess that we **obtain** a value **`true`** whenever at least **one** of the arguments has a **`true`** value. This is shown at the truth table below:
 
 In school, the teacher said: "Ivan or Peter should clean the board". For completing this condition (the board to be clean), it's possible only Ivan to clean it, only Peter to clean it or both of them to do it. 
 
@@ -153,10 +149,9 @@ In school, the teacher said: "Ivan or Peter should clean the board". For complet
 |:-----:|:-----:|:-----:|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
-
 ### How does the || operator work?
 
-We have already learned what the logical **"OR" represents**. But how is it actually being achieved? Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. In order to obtain **`true`** from the expression, it is necessary for **just one** argument to have a **`true`** value. Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
+We have already learned what the logical **"OR" represents**. But how is it being achieved? Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. To obtain **`true`** from the expression, **just one** argument must have a **`true`** value. Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
 Here is one **example** of the **`||`** operator in action:
 
@@ -169,11 +164,11 @@ boolean result = a || b || c || d;
 // true (as c and d are not being checked)
 ```
 
-The programs **checks `a`**, accepts that it has a value **`false`** and continues. Reaching **`b`**, it understands that it has a **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
+The program **checks `a`**, accepts that it has a value **`false`** and continues. Reaching **`b`**, it understands that it has a **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
 
 ### Example: Fruit or Vegetable
 
-Let's check whether a given **product** is **a fruit** or **a vegetable**. The "**fruits**" are: **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**. The "**vegetables**" are: **tomato**, **cucumber**, **pepper** and **carrot**. Everything else is "**unknown**".
+Let's check whether a given **product** is **a fruit** or **a vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper** and **carrot**. Everything else is "**unknown**".
 
 #### Sample Input and Output
 
@@ -191,7 +186,6 @@ We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#3](https://judge.softuni.org/Contests/Practice/Index/653#3).
 
-
 ## Logical Negation
 
 **Logical negation** (operator **`!`**) means that a given condition is **not fulfilled**.
@@ -204,7 +198,7 @@ The operator **`!`** accepts as an **argument** a bool variable and **returns** 
 
 ### Example: Invalid Number
 
-A given **number is valid** if it is in the range [**100 … 200**] or it is **0**. Do a validation for an **invalid** number.
+A given **number is valid** if it is in the range [**100 … 200**] or it is **0**. Validate an **invalid** number.
 
 #### Sample Input and Output
 
@@ -222,11 +216,9 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#4](https://judge.softuni.org/Contests/Practice/Index/653#4).
 
-
 ## The Parenthesis **`()`** Operator
 
 Like the rest of the operators in programming, the operators **`&&`** and **`||`** have a priority, as in the case **`&&`** is with higher priority than **`||`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice. 
-
 
 ## More Complex Conditions - Examples
 
@@ -252,15 +244,13 @@ The point lies on any of the sides of the rectangle if:
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
-
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#5](https://judge.softuni.org/Contests/Practice/Index/653#5).
 
-
 ### Example: Fruit Shop
 
-A fruit shop during **week days** sells in the following **prices**:
+A fruit shop during **weekdays** sells at the following **prices**:
 
 |Fruit|Price|
 |:-----:|:-----:|
@@ -292,7 +282,6 @@ Write a program that **reads** from the console a **fruit** (banana / apple / �
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#6](https://judge.softuni.org/Contests/Practice/Index/653#6).
 
-
 ### Example: Trade Fees
 
 A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the **volume of sales s**:
@@ -311,7 +300,7 @@ Write a **program** that reads the name of a **city** (string) and the volume of
 
 #### Solution
 
-When reading the input, we could convert the city into small letters (with the function **`.toLowerCase()`**). Initially we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions.
+When reading the input, we could convert the city into small letters (with the function **`.toLowerCase()`**). Initially, we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions.
 To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
@@ -320,7 +309,7 @@ To calculate the commission according to the city and volume of sales, we need a
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#7](https://judge.softuni.org/Contests/Practice/Index/653#7).
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, in order to make the code more easily readable.</td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, to make the code more easily readable.</td>
 </tr></table>
 
 ## Switch-Case Conditional Statement
@@ -328,7 +317,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 The **`switch-case`** condition works as a sequence of **`if-else`** blocks. Whenever the work of our program depends on the value of **one variable**, instead of making consecutive conditions with **`if-else`** blocks, we can **use** the conditional **`switch`** statement. It is being used for **choosing between a list of possibilities**. The statement compares a given value with defined constants and depending on the result, it takes an action.
 
 We put **the variable** that we want to **compare**, inside the **brackets after the operator `switch`** and it is called a "**selector**". Here **the type must be comparable** (numbers, strings). **Consecutively**, the program starts **comparing** each **value** that **is found** after the **`case` labels**. 
-Upon a match, the execution of the code from the respective place begins and continues until it reaches the operator **`break`**. In some programming languages (like C#) **`break`** is necessary for **every `case`**, which contains a program logic. In **Java** though, the operator **`break`** can be skipped, until we get to the next **`break`** operator. Even though it is allowed by the language, it's never used and considered a **bad practice**, because it leads to **collapsing** of the program code. If there is **missing** of a **match**, the **`default`** construction is ran, if there is one.
+Upon a match, the execution of the code from the respective place begins and continues until it reaches the operator **`break`**. In some programming languages (like C#) **`break`** is necessary for **every `case`**, which contains a program logic. In **Java** though, the operator **`break`** can be skipped, until we get to the next **`break`** operator. Even though it is allowed by the language, it's never used and considered a **bad practice**, because it leads to **collapsing** of the program code. If there is **missing** a **match**, the **`default`** construction will run, if there is one.
 
 ```java
 switch (selector) {
@@ -351,7 +340,7 @@ switch (selector) {
 
 ### Example: Day of the Week
 
-Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if an invalid input is given.
+Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 
 #### Sample Input and Output
 
@@ -371,10 +360,9 @@ Let's write a program that prints **the day of the week** depending on the **giv
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#8](https://judge.softuni.org/Contests/Practice/Index/653#8).
 
-
 ### Multiple Labels in Switch-Cases
 
-In **Java** we have the possibility to **use multiple `case`** labels in the **`switch-case`** coonstruction, when they have to execute **the same code**. This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective **`case`** label **there is no code** for execution and a **`break`** operator.
+In **Java**, we can **use multiple `case`** labels in the **`switch-case`** construction, when they have to execute **the same code**. This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective **`case`** label **there is no code** for execution and a **`break`** operator.
 
 ```java
 switch (selector) {
@@ -419,10 +407,9 @@ We can solve the task with **`switch`**-**`case`** conditions with multiple labe
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#9](https://judge.softuni.org/Contests/Practice/Index/653#9).
 
-
 ## What have we learned in this chapter?
 
-In this chapter we learned how we can use **more complex conditions**, logical operators inside the condition and **nested `if`-constructions**.
+In this chapter, we learned how we can use **more complex conditions**, logical operators inside the condition and **nested `if`-constructions**.
 
 ### Nested Conditions
 
@@ -461,20 +448,19 @@ switch (selector) {
 }
 ```
 
-
 ## Exercises: More Complex Conditions 
 
 Let's practice using more complex conditions. We will solve a few practical exercises.
 
 ### Problem: Cinema
 
-In a cinema hall the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
+In a cinema hall, the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
 
-* **Premiere** – a premiere screening, with price **12.00** BGN.
-* **Normal** – a standard screening, with price **7.50** BGN.
-* **Discount** – a screening for children and students on a reduced price – **5.00** BGN.
+* **Premiere** – a premiere screening, with a price of **12.00** BGN.
+* **Normal** – a standard screening, with a price of **7.50** BGN.
+* **Discount** – a screening for children and students at a reduced price – **5.00** BGN.
 
-Write a program that enters a **type of screening** (string), number of **rows** and number of **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
+Write a program that enters a **type of screening** (string), a number for **rows** and a number for **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
 
 #### Sample Input and Output
 
@@ -484,7 +470,7 @@ Write a program that enters a **type of screening** (string), number of **rows**
 
 #### Hints and Guidelines
 
-While reading the input, we could convert the screening type into small letters (with the function **`.toLowerCase()`**). We create and initialize a variable that will store the calculated income. In another variable we calculate the full capacity of the hall. We use a **`switch-case`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Java** functionality on the internet). . 
+While reading the input, we could convert the screening type into small letters (with the function **`.toLowerCase()`**). We create and initialize a variable that will store the calculated income. In another variable, we calculate the full capacity of the hall. We use a **`switch-case`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Java** functionality on the internet). 
 
 Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
@@ -496,8 +482,8 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 ### Problem: Volleyball
 
-Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday**, when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
-Write a program that calculates **how many times Vladimir has played volleyball** through the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
+Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
+Write a program that calculates **how many times Vladimir has played volleyball** throughout the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
 
 The input data is read from the console:
  * The first line contains the word “**leap**” (leap year) or “**normal**” (a normal year with 365 days).
@@ -525,7 +511,6 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
-
 
 ### Problem: * Point in the Figure
 
@@ -565,11 +550,11 @@ A possible logic for solving the task (not the only correct one):
 
 <p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-02.png" /></p>
 
-* A point is **outer (outside)** for the figure, when it is **outside** both of the rectangles.
-* A point is **inner (inside)** for the figure, if it is inside one of the rectangles (excluding their borders) or lies on their common side.
-* In **other case** the point lies on the border of the rectangle (**border**).
+* A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
+* A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their common side.
+* In **another case**, the point lies on the border of the rectangle (**border**).
 
-Sample code (parts of the code are blurred with the purpose of stimulating logical thinking and solving skills):
+Sample code (parts of the code are blurred to stimulate logical thinking and solving skills):
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-03.png)
 
