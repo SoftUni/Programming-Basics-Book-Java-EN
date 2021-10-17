@@ -9,11 +9,7 @@
     ],
     "pluginsConfig": {
         "ga": {
-            "token": "TODO"
-        },
-        "meta": {
-            "name": "google-site-verification",
-            "content": "TODO"
+            "token": "UA-11309924-35"
         },
         "sitemap": {
             "hostname": "https://java-book.softuni.org/"
