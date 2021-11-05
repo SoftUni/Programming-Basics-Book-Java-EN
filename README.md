@@ -31,6 +31,7 @@ The free book **Programming Basics with Java** introduces readers to writing ent
 ## Video Lessons
 
 Watch Part #1 of the free video Java Basics course, coming with the book: https://youtu.be/sBheEjlkcVg.
+
 Watch Part #2 of the free video Java Basics course, coming with the book: https://youtu.be/CI8XUpIEoy4.
 
 ## Download the Book
