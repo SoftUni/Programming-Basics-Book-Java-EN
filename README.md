@@ -4,7 +4,7 @@
 
 The free book **Programming Basics with Java** introduces readers to writing entry-level programming code (working with data, checks, loops, and methods) with the Java language.
 
-Watch the free video Java Basics course, coming with the book: https://youtu.be/sBheEjlkcVg.
+Watch the free video Java Basics course, coming with the book: https://youtu.be/watch?v=sBheEjlkcVg&list=PLIF8tJJOPz9KTF_7gKULB3b2dnZBHZuuD.
 
 <a href="#"><img src="/assets/Java-Programming-Basics-Book-Cover.png" alt="Programming Basics with Java Book - Cover" class="readme-book-cover-image"/></a>
 
@@ -55,7 +55,7 @@ Brief information about this edition:
 * ISBN: **978-619-00-1402-7** (9786190014027)
 * Edition: **Faber Publishing, Sofia, Oct 2021**
 * License: **CC-BY-SA**
-* Source code:: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
+* Source code: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
 * All authors, editors, translators and **contributors**: Asya Dikova-Kirova, Vaydin Kachanov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Dalev, Zhulieta Atanasova, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Aleksandar Krastev, Aleksandar Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkov, Zhulieta Atanasova, Zahariya Pehlivanova, Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristiyan Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristiyan Hristov, Hristo Hristov, Tsvetan Iliev, Yulian Linev, Yanitsa Valeva, Marina Shiderova.
 
 ## Free Practical Programming Course
