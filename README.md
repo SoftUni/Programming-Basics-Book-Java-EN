@@ -4,8 +4,6 @@
 
 The free book **Programming Basics with Java** introduces readers to writing entry-level programming code (working with data, checks, loops, and methods) with the Java language.
 
-Watch the free video Java Basics course, coming with the book: https://youtu.be/watch?v=sBheEjlkcVg&list=PLIF8tJJOPz9KTF_7gKULB3b2dnZBHZuuD.
-
 <a href="#"><img src="/assets/Java-Programming-Basics-Book-Cover.png" alt="Programming Basics with Java Book - Cover" class="readme-book-cover-image"/></a>
 
 * [Preface](chapter-00-preface.md)
@@ -29,6 +27,11 @@ Watch the free video Java Basics course, coming with the book: https://youtu.be/
 * [10. Methods](chapter-10-methods.md)
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
+
+## Video Lessons
+
+Watch Part #1 of the free video Java Basics course, coming with the book: https://youtu.be/sBheEjlkcVg.
+Watch Part #2 of the free video Java Basics course, coming with the book: https://youtu.be/CI8XUpIEoy4.
 
 ## Download the Book
 
