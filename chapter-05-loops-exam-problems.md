@@ -1,6 +1,6 @@
-# Chapter 5.2. Loops – Exam Tasks
+# Chapter 5.2. Loops – Exam problems
 
-In the previous chapter, we learned how to execute a block of commands **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to consolidate our knowledge by solving some more complex tasks with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave guidance only.
+In the previous chapter, we learned how to execute a block of commands **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to consolidate our knowledge by solving some more complex problems with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave guidance only.
 Before we get to work it’s best if we recall the construction of the **`for` loop**:
 
 ![](assets/chapter-5-2-images/00.For-construction.png)
@@ -12,12 +12,12 @@ Before we get to work it’s best if we recall the construction of the **`for` l
  * Loop body - contains an arbitrary block of source code.
 
  
-## Exam Tasks
+## Exam problems
 
-Let’s solve some loop tasks from exams in SoftUni.
+Let’s solve some loop problems from exams in SoftUni.
 
 
-## Task: Histogram
+## problem: Histogram
 	
 An **n number of whole numbers** are given in the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent **p2** are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5** on the console.
 
@@ -96,13 +96,13 @@ Print on the console **a histogram of 5 lines**, each line should contain a perc
 
 ### Hints and Guidelines
 
-The program that solves this task can be imaginatively split into three parts:
+The program that solves this problem can be imaginatively split into three parts:
 
-  * **Reading the input data** – in the current task this involves reading the number **n**, followed by **n count of integers**, each on a separate line.
+  * **Reading the input data** – in the current problem this involves reading the number **n**, followed by **n count of integers**, each on a separate line.
   * **Processing the input data** – in this case, this means allocating the numbers into groups and calculating the percentage split by a group.
   * **Printing the final result** – printing the histogram to the console in the specified format.
   
-Before we continue, we will take a small deviation from the current topic, namely, we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this task.
+Before we continue, we will take a small deviation from the current topic, namely, we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this problem.
 
 Now we are going to proceed with the implementation of the above-made points.
 
@@ -124,7 +124,7 @@ In order to read and distribute each number to its corresponding group, we will 
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
-After we determined how many numbers each group has, we can move on to calculating the percentage, which is the main point of the task. For this, we’ll use the following formula:
+After we determined how many numbers each group has, we can move on to calculating the percentage, which is the main point of the problem. For this, we’ll use the following formula:
 
 <p align="center"><strong>(group percentage) = (count of numbers in group) * 100 / (count of all numbers)</strong></p>
 
@@ -161,7 +161,7 @@ All that remains is to print the results. The condition states, that the percent
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#0](https://judge.softuni.org/Contests/Practice/Index/656#0).
 
 
-## Task: Smart Lilly
+## problem: Smart Lilly
 
 Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the amount of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** ,in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
@@ -214,7 +214,7 @@ Print on the console a single line:
 
 ### Hints and Guidelines
 
-The solution to this task, like the previous one can be split into three parts – **reading** the input data, **processing** it and **printing the output**.
+The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** it and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -222,7 +222,7 @@ We begin again by choosing the appropriate **data types** and names of the varia
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-To solve the task, we will need several auxiliary variables – for the **toy count** (**`numberOfToys`**), for the **money saved** (**`savedMoney`**) and for the **money she received each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly got is 10 USD.
+To solve the problem, we will need several auxiliary variables – for the **toy count** (**`numberOfToys`**), for the **money saved** (**`savedMoney`**) and for the **money she received each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly got is 10 USD.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
@@ -245,7 +245,7 @@ More about the ternary operator: [https://www.programiz.com/java-programming/ter
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#1](https://judge.softuni.org/Contests/Practice/Index/656#1).
 
 
-## Task: Back to the past
+## problem: Back to the past
 
 Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
@@ -304,7 +304,7 @@ The input is read from the console and **contains exactly 2 lines**:
 
 ### Hints and Guidelines
 
-The method for solving this task isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
+The method for solving this problem isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
@@ -323,7 +323,7 @@ Finally, it remains to print the results. By performing a **check if the inherit
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#2](https://judge.softuni.org/Contests/Practice/Index/656#2).
 
 
-## Task: Hospital
+## problem: Hospital
 
 For a given period of time, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily patient's admission begins.
 
@@ -416,7 +416,7 @@ Finally, we only need to print the number of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#3](https://judge.softuni.org/Contests/Practice/Index/656#3).
 
 
-## Task: Division without remainder
+## problem: Division without remainder
 
 There are **n whole numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
@@ -490,9 +490,9 @@ Print on the console **3 lines**, each one containing a percentage between 0% an
 
 ### Hints and Guidelines
 
-For the current task and the next one you’ll need to write the code by yourself, following the given guidelines.
+For the current problem and the next one you’ll need to write the code by yourself, following the given guidelines.
 
-The program that solves the current task is analogous to the **Histogram** task, which we reviewed earlier. Therefore, we can start with declaring the needed variables:
+The program that solves the current problem is analogous to the **Histogram** problem, which we reviewed earlier. Therefore, we can start with declaring the needed variables:
 Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – auxiliary variables, containing the count of numbers in the corresponding group.
 
 To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Each iteration of the loop must read and allocate **only one number**. The difference here is that **a number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match it stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
@@ -504,7 +504,7 @@ Finally, we have to print out the obtained results, by following the specified f
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#4](https://judge.softuni.org/Contests/Practice/Index/656#4).
 
 
-## Task: Logistics
+## problem: Logistics
 
 It’s your responsibility for the logistics of various types of cargo. **Depending on the weight** of each load, a **different vehicle type** is needed, and **the costs will vary per ton**:
 
@@ -512,7 +512,7 @@ It’s your responsibility for the logistics of various types of cargo. **Depend
  * **Upward of 3 and up to 11 tons** – **lorry** (175 USD per ton).
  * **Over 11 tons – train** (120 USD per ton).
 
-It’s your task to calculate, **the average price per ton of transported cargo**, and also **what percentage of cargo** is transported by **the various vehicle types**.
+It’s your problem to calculate, **the average price per ton of transported cargo**, and also **what percentage of cargo** is transported by **the various vehicle types**.
 
 ### Input Data
 
@@ -581,7 +581,7 @@ First **we have to read the weight of each cargo** and will **sum up** how many 
 
 We declare the needed variables, for example: **`countOfLoads`** – the number of loads to be transported (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`vanTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by van, lorry and train.
 
-We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) the weight of the current load (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (van, lorry or train). For this task, we’re going to need **`if-else`** statements:
+We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) the weight of the current load (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (van, lorry or train). For this problem, we’re going to need **`if-else`** statements:
 
  * If the value of the variable **`tons`** is **less than 3**, increase the value of **`vanTons`** by the value of **`tons`**: 
  

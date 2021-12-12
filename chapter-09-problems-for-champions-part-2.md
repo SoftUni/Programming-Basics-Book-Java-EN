@@ -1,15 +1,15 @@
-# Chapter 9.2. Task for champions – part II
+# Chapter 9.2. problem for champions – part II
 
-In this chapter we, will review three additional tasks that belong to the category "**for champions**", i.e., they are more complex than the rest of the tasks in this book.
+In this chapter we, will review three additional problems that belong to the category "**for champions**", i.e., they are more complex than the rest of the problems in this book.
 
-## More complex tasks on the studied material
+## More complex problems on the studied material
 
-Before moving on to particular tasks, we must clarify that we can solve them more efficiently with **additional knowledge in programming with Java** (methods, arrays, collections, recursion, etc.). Each solution that we will provide now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge up to the present moment.
+Before moving on to particular problems, we must clarify that we can solve them more efficiently with **additional knowledge in programming with Java** (methods, arrays, collections, recursion, etc.). Each solution that we will provide now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge up to the present moment.
 
 
-## Task: Passion shopping days
+## problem: Passion shopping days
 
-Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior, **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
+Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our problem is to analyze her strange behavior, **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
 
 The **first line** of the input will pass the **amount** that Lina has **before** she starts shopping. Then, upon reading the "**`mall.Enter`**" command, Lina enters the mall and starts shopping we receive the "**`mall.Exit`**" command. When Lina starts shopping, **on each line** of the input, we will receive strings that are **actions performed by Lina**. Each **symbol** in the string is a **purchase or another action**. String commands contain only symbols of the **ASCII table**. The ASCII code of each sign is **related to what Lina must pay** for each of the goods. You need to interpret the symbols in the following way:
 
@@ -58,16 +58,16 @@ When shopping is over, you must print on the console a particular output dependi
 
 ### Hints and guidelines
 
-We will separate the solution of the task into three main parts:
+We will separate the solution of the problem into three main parts:
 - Processing of the **input**.
-- **Algorithm** for solving the task. 
+- **Algorithm** for solving the problem. 
 - Formatting the **output**.
 
 Let's examine each of the parts in detail.
 
 #### Processing the input data
 
-The input of our task consists of a few components:
+The input of our problem consists of a few components:
 - On the **first line, we have all the money** that Lina has for shopping.
 - On **each of the following lines**, we will have kind of **command**.
 
@@ -85,11 +85,11 @@ It is where we need to take into consideration the fact that from the **second i
 
 Here is the place to point out that calling  **`scanner.nextLine()`** after the end of the loop is used for **moving to the first command** for processing.
 
-#### Algorithm for solving the task
+#### Algorithm for solving the problem
 
-The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
+The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the problem requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
-Let's examine the first two sub-tasks for our algorithm. The first sub-task concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second sub-task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`String`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
+Let's examine the first two sub-problems for our algorithm. The first sub-problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second sub-problem is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`String`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
 
 Here is how the code will look like when are using those two types of loops:
 
@@ -119,7 +119,7 @@ We believe the reader should not have difficulties implementing all the other co
 
 #### Formatting the output
 
-At the end of our task we must **print** a particular **output**, depending on the following condition:
+At the end of our problem we must **print** a particular **output**, depending on the following condition:
 
 > - If no purchases have been made – "**No purchases. Money left: {remaining funds} lv.**"
 > - If at least one purchase is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
@@ -133,7 +133,7 @@ How can we do that? We will leave the answer to this question to the reader.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#0](https://judge.softuni.org/Contests/Practice/Index/664#0).
 
 
-## Task: Numerical expression
+## problem: Numerical expression
 
 Bonny is an extremely powerful witch. Because her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
@@ -182,7 +182,7 @@ The output data must be printed on the console. The output consists of one line:
 
 ### Hints and guidelines
 
-As usual, we will first read and process the input, then we will solve the task, and finally, we will print the result, formatted as required.
+As usual, we will first read and process the input, then we will solve the problem, and finally, we will print the result, formatted as required.
 
 #### Reading the input data
 
@@ -192,9 +192,9 @@ We will use the second option to solve the problem.
 
 ![](assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Algorithm for solving the task
+#### Algorithm for solving the problem
 
-For the tasks of our problem, we will need two variables:
+For the problems of our problem, we will need two variables:
 * One variable that will hold the **current result**.
 * Another variable to hold our **current operator**. 
 
@@ -202,7 +202,7 @@ For the tasks of our problem, we will need two variables:
 
 About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number is added to our result.
 
-After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our task, we know that **every expression is ending with `=`**. It means we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
+After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our problem, we know that **every expression is ending with `=`**. It means we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
 
 ![](assets/chapter-9-2-images/02.X-expression-05.png)
 
@@ -238,7 +238,7 @@ The only output that the program must print on the console is the **result of so
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#1](https://judge.softuni.org/Contests/Practice/Index/664#1).
 
 
-## Task: Bulls and Cows
+## problem: Bulls and Cows
 
 We all know the game called "Bulls and Cows"  ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
 * If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
@@ -252,7 +252,7 @@ We all know the game called "Bulls and Cows"  ([https://en.wikipedia.org/wiki/Bu
 |:-------------------:|:---:|:---:|:---:|:---:|:----------:|
 | Suggested number | 9 | 9 | 2 | 4 | Bulls = 0<br>Cows = 2 |
 
-Upon having a particular secret number and number of bulls and cows, our task is **to find all possible suggested numbers*** in ascending order.
+Upon having a particular secret number and number of bulls and cows, our problem is **to find all possible suggested numbers*** in ascending order.
 
 If there are **no suggested numbers** that match the criteria provided from the console, we must print "**No**".
 
@@ -294,7 +294,7 @@ If there are **no suggested numbers** that match the criteria provided from the 
 
 ### Hints and guidelines
 
-We will solve the task in a few steps:
+We will solve the problem in a few steps:
 - We will read the **input data**.
 - We will generate all possible **four-digit combinations** (candidates for verification).
 - For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
@@ -310,7 +310,7 @@ Reading the input data is trivial:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-03.png)
 
-#### Algorithm for solving the task
+#### Algorithm for solving the problem
 
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution has been found:
 

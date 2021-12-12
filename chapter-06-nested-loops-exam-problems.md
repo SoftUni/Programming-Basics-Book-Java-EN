@@ -1,4 +1,4 @@
-# Chapter 6.2. Nested Loops – Exam Tasks
+# Chapter 6.2. Nested Loops – Exam problems
 
 In the previous chapter we got familiar with **nested loops** and to use them **drawing** different kinds of **figures on the console**. We learned how to print different size figures, inventing an appropriate logic to construct them using **single and nested** **`for`** loops in combination with various calculations and program logic:
 
@@ -17,12 +17,12 @@ We also declared our own method **`repeatStr(…)`** which helps us to print **a
 ![](assets/chapter-6-2-images/00.RepeatStr-custom-method-01.png)
 
 
-## Exam Tasks
+## Exam problems
 
-Let's solve several nested loops related exam tasks to practice what we have learned so far and to develop our further algorithmic thinking.
+Let's solve several nested loops related exam problems to practice what we have learned so far and to develop our further algorithmic thinking.
 
 
-## Task: Drawing a Fort
+## problem: Drawing a Fort
 
 Write a program that reads from the console **an integer n** and draws **a fortress** with width **2 * n columns** and height **n rows** like the examples below. The left and right columns on the inside are **n / 2** wide.
 
@@ -46,7 +46,7 @@ Print on the console **n** text rows, depicting **the fortress**, exactly like t
 
 ### Hints and Guidelines
 
-From the task statement we see that the **input data** will be one line only containing **an integer** within the range [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
+From the problem statement we see that the **input data** will be one line only containing **an integer** within the range [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/01.Draw-fort-01.png)
 
@@ -92,7 +92,7 @@ The **fort’s base** structure is same as the **roof** one. It is made of **two
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#0](https://judge.softuni.org/Contests/Practice/Index/658#0).
 
 
-## Task: Butterfly
+## problem: Butterfly
 
 Write a program that reads an **integer n** from the console and draws a **butterfly** with **2 * n - 1 columns**  width and  **2 * (n - 2) + 1 rows** height as in the examples below. Its **left and right sides** are **n – 1** wide.
 
@@ -116,7 +116,7 @@ Print **2 * (n - 2) + 1** text lines, representing the **butterfly** on the cons
 
 ### Hints and Guidelines
 
-From the task statement we see that the **input data** will be read from only one line, which will contain an **integer** in the range [**3 … 1000**]. For this reason, we will use **a variable** of type **`int`**.
+From the problem statement we see that the **input data** will be read from only one line, which will contain an **integer** in the range [**3 … 1000**]. For this reason, we will use **a variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-01.png)
 
@@ -145,7 +145,7 @@ It remains to print the lower wing on the console, which is identical to the upp
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#1](https://judge.softuni.org/Contests/Practice/Index/658#1).
 
 
-## Task: "Stop" Sign
+## problem: "Stop" Sign
 
 Write a program that reads an **integer n** from the console and draws a **STOP warning sign** with size as in the example below.
 
@@ -169,7 +169,7 @@ Print text lines on the console depicting the **STOP warning sign**, just as in 
 
 ### Hints and Guidelines
 
-From the task statement we see that **the input data** will be read from only one line which contains an **integer** in the range of [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
+From the problem statement we see that **the input data** will be read from only one line which contains an **integer** in the range of [**3 … 1000**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/03.Stop-01.png)
 
@@ -210,7 +210,7 @@ For our program to work properly, we need to **reduce** the number of **`i`** by
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#2](https://judge.softuni.org/Contests/Practice/Index/658#2).
 
 
-## Task: Arrow
+## problem: Arrow
 
 Write a program that reads an **odd integer n** from the console and draws a **vertical arrow** pointing down, with dimensions as in the examples below.
 
@@ -234,7 +234,7 @@ Print a vertical arrow on the console with "**`#`**" (hash) outlining the arrow 
 
 ### Hints and Guidelines
 
-From the task condition, we see that **the input data** will be read from only one line which contains an **integer** in the range of [**3 … 79**]. Therefore, we will use a **variable** of type **`int`**.
+From the problem condition, we see that **the input data** will be read from only one line which contains an **integer** in the range of [**3 … 79**]. Therefore, we will use a **variable** of type **`int`**.
 
 ![](assets/chapter-6-2-images/04.Arrow-01.png)
 		
@@ -275,7 +275,7 @@ To draw the **the arrow’s lower part**, we need to assign new values to the **
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#3](https://judge.softuni.org/Contests/Practice/Index/658#3).
 
 
-## Task: Axe
+## problem: Axe
 
 Write a program that takes as an input an **integer n** and draws an axe with size as shown below. 
 The axe is **`5 * N`** columns wide.
@@ -300,7 +300,7 @@ Print on the console an **axe**, exactly like the examples.
 
 ### Hints and Guidelines
 
-In order to solve the task, we first need to calculate the **dashes on the left, the middle dashes, the dashes on the right** and the whole length of the figure.
+In order to solve the problem, we first need to calculate the **dashes on the left, the middle dashes, the dashes on the right** and the whole length of the figure.
 
 ![](assets/chapter-6-2-images/05.Axe-01.png)
 

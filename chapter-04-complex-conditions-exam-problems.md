@@ -1,6 +1,6 @@
-# Chapter 4.2. More complex conditions – Exam tasks
+# Chapter 4.2. More complex conditions – Exam problems
 
-In the previous chapter, we got familiar with the **nested conditional** constructions in the Java language. Through them, the logic in a program can be represented by **`if` conditional statements** that are nested in each other. We also looked at the conditional **`switch-case`** construction, which allows you to choose from a list of options. We should practice and consolidate what we have learned so far by looking at a few more complex exam tasks. Before moving on to the tasks, we will recall the conditional constructions:
+In the previous chapter, we got familiar with the **nested conditional** constructions in the Java language. Through them, the logic in a program can be represented by **`if` conditional statements** that are nested in each other. We also looked at the conditional **`switch-case`** construction, which allows you to choose from a list of options. We should practice and consolidate what we have learned so far by looking at a few more complex exam problems. Before moving on to the problems, we will recall the conditional constructions:
 
 
 ## Nested conditions
@@ -43,12 +43,12 @@ The structure consists of:
 * Multiple **`case`** labels followed by code to be executed, ending with **`break`**.
 
 
-## Exam tasks
+## Exam problems
 
-Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam tasks.
+Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam problems.
 
 
-## Task: On Time for the exam
+## problem: On Time for the exam
 
 A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrives **at the time when the exam starts or up to half an hour earlier**. If the student arrives **more than 30 minutes earlier**, the student **has come too early**. If he arrives **after the time when the exam starts**, he is **late**. 
 
@@ -95,7 +95,7 @@ If the student arrives with more than one minute difference compared to the exam
 ### Hints and guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-    <td>It is recommended <b>that you read the condition of a task several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
+    <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
 #### Input data processing
 
@@ -160,7 +160,7 @@ Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/654#0](https://judge.softuni.org/Contests/Practice/Index/654#0).
 
 
-## Task: Trip
+## problem: Trip
 
 Most people plan their vacations. A young programmer has a **fixed budget** and spare time in a particular **season**.
 
@@ -205,7 +205,7 @@ On the console must be printed **two lines**.
 
 ### Hints and guidelines
 
-Like the other tasks, we can separate the solution of our task into the following parts: reading the input data, doing calculations, printing the result.
+Like the other problems, we can separate the solution of our problem into the following parts: reading the input data, doing calculations, printing the result.
 
 #### Input data processing
 
@@ -225,7 +225,7 @@ Let's create and initialize the variables needed for applying the logic and calc
 
 ![](assets/chapter-4-2-images/02.Trip-02.png)
 
-Similar to the example in the previous task, we can initialize variables with some of the output results, in order to spare additional initialization.
+Similar to the example in the previous problem, we can initialize variables with some of the output results, in order to spare additional initialization.
 
 When examining once again the requirements, we notice that the decision of where the vacation will take place depends on the **amount of the budget** we receive as input data, i.e., in our logic, we have two cases: 
 * If the budget is **less than or equals** a particular value.
@@ -273,7 +273,7 @@ It remains to print the obtained result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#1](https://judge.softuni.org/Contests/Practice/Index/654#1).
 
 
-## Task: Operations between numbers
+## problem: Operations between numbers
 
 Write a program that reads as input data **two integers (N1 и N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
 
@@ -313,7 +313,7 @@ Print **one line** on the console:
 
 ### Hints and guidelines
 
-The task is not complicated, but there are many lines of code to write.
+The problem is not complicated, but there are many lines of code to write.
 
 #### Input data processing
 
@@ -366,7 +366,7 @@ Finally, we need to show the calculated result to the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#2](https://judge.softuni.org/Contests/Practice/Index/654#2).
 
 
-## Task: Game tickets
+## problem: Game tickets
 
 **A group of football fans** decided to buy **tickets for Euro 2016**. The ticket price is determined according to **two** categories:
 
@@ -459,7 +459,7 @@ Finally, we need to print the calculated result on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#3](https://judge.softuni.org/Contests/Practice/Index/654#3).
 
 
-## Task: Hotel room
+## problem: Hotel room
 
 A hotel offers **two types of rooms**: **studio and apartment**.
 

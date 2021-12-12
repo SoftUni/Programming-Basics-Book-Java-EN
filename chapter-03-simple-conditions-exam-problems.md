@@ -1,6 +1,6 @@
-# Chapter 3.2. Simple Conditions – Exam tasks
+# Chapter 3.2. Simple Conditions – Exam problems
 
-In the previous chapter, we looked at conditional constructions in the Java language, used to perform various actions depending on a condition. We also mentioned the scope of a variable, as well as how to follow line by line the execution of our program (the so-called **debugging**). In this chapter, we will practice working with conditional statements, and we'll be looking at some tasks given in actual exams. Let's first retrieve some of the newly acquired knowledge on how the conditional statement is constructed:
+In the previous chapter, we looked at conditional constructions in the Java language, used to perform various actions depending on a condition. We also mentioned the scope of a variable, as well as how to follow line by line the execution of our program (the so-called **debugging**). In this chapter, we will practice working with conditional statements, and we'll be looking at some problems given in actual exams. Let's first retrieve some of the newly acquired knowledge on how the conditional statement is constructed:
 
 ```java
 if (boolean expression) {
@@ -16,11 +16,11 @@ if (boolean expression) {
   * body - contains any block with source code
   * **`else` clause** and its source code block (**optional**)
  
-## Exam tasks
+## Exam problems
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the **`if-else`** statement.
 
-## Task: Transportation price
+## problem: Transportation price
 
 A student must travel **n kilometers**. He has a choice between **three modes of transport**:
 * **Taxi**. Starting fee: **0.70** BGN. Daily rate: **0.79** BGN/km. Nightly rate: **0.90** BGN/km.
@@ -55,7 +55,7 @@ We will read the input data and depending on the distance we will choose the che
 
 #### Input data processing
 
-Our first step is to create an object of type **`java.util.Scanner`**. We pass in its constructor the "input stream" (**`System.in`**) that we are going to read from. In the definition of the task, we have **information about the input and output**. The first **two lines** of the solution will contain the declaration and initialization of the two **variables** that will store **the values of the input data**.
+Our first step is to create an object of type **`java.util.Scanner`**. We pass in its constructor the "input stream" (**`System.in`**) that we are going to read from. In the definition of the problem, we have **information about the input and output**. The first **two lines** of the solution will contain the declaration and initialization of the two **variables** that will store **the values of the input data**.
 
 **The first line is mentioned** to contain **an integer**, so the variable that will be declared is of type **`int`**. For the **second line**, the instruction is that it contains a **word**, respectively the variable is of type **`String`**.
 
@@ -67,9 +67,9 @@ Before we begin with the conditional statements it's necessary to **declare** on
 
 #### Expression evaluation and computing the relevant calculations
 
-Once we have **declared and initialized** the input data and the variable that will store the value of the price, we should assess which **conditions** of the task will be the first to **be checked**.
+Once we have **declared and initialized** the input data and the variable that will store the value of the price, we should assess which **conditions** of the problem will be the first to **be checked**.
 
-It is evident from the task that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of the third transport (taxi) does. This is a reason to pick our **first condition** to verify whether it's **day or night** and determine which taxi rate will be **in effect**. To achieve that **we declare another variable** that will store the value of the **taxi fare**.
+It is evident from the problem that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of the third transport (taxi) does. This is a reason to pick our **first condition** to verify whether it's **day or night** and determine which taxi rate will be **in effect**. To achieve that **we declare another variable** that will store the value of the **taxi fare**.
 
 ![](assets/chapter-3-2-images/01.Transport-price-03.png)
 
@@ -77,11 +77,11 @@ Computing the **taxi rate** is performed with an **`if-else`** statement. That's
 
 ![](assets/chapter-3-2-images/01.Transport-price-04.png)
 
-Once that's done, we can now proceed to the computation of the **full transportation price**. Another condition for the price defined in the task is the **traveling distance** with a chosen vehicle. Naturally to do that we pick an **`if-else`** condition that we used to determine the **price** for the transport depending on the entered kilometers.
+Once that's done, we can now proceed to the computation of the **full transportation price**. Another condition for the price defined in the problem is the **traveling distance** with a chosen vehicle. Naturally to do that we pick an **`if-else`** condition that we used to determine the **price** for the transport depending on the entered kilometers.
 
 ![](assets/chapter-3-2-images/01.Transport-price-05.png)
 
-First, we check if the kilometers are **below 20** since it's specified in the task that the student could only use a **taxi** for destinations that are **below 20** kilometers away. If the expression in the first conditional statement is evaluated to be **true** then the variable that stores the transportation price (**`price`**) will be **assigned** the corresponding value. This value is equal to the **initial rate**, which we **sum up** with its **rate** **multiplied** by **the distance** that the student has to travel.
+First, we check if the kilometers are **below 20** since it's specified in the problem that the student could only use a **taxi** for destinations that are **below 20** kilometers away. If the expression in the first conditional statement is evaluated to be **true** then the variable that stores the transportation price (**`price`**) will be **assigned** the corresponding value. This value is equal to the **initial rate**, which we **sum up** with its **rate** **multiplied** by **the distance** that the student has to travel.
 
 If the expression in the first conditional statement is evaluated to **false** then the next step of the program is to check if the distance is **below 100**. The reason we're doing that is because it's possible to use a **bus** as a vehicle in this distance range. **The price** per kilometer for the bus **is lower** than the taxi price. Therefore, the result of the expression evaluation is **true**, then here's the place to assign the **value** of the transportation price variable (**`price`**) which equals the result of the **multiplication** of the **distance** and the **bus rate**.
 
@@ -89,7 +89,7 @@ In the case of the second check **not returning `true`** as a result, the progra
 
 #### Printing the output data
 
-We **have successfully computed the price of the cheapest transportation** so we're almost at the end of the task. The only thing left is to print out the result that we have on the console. In our task, there's no requirement for the resulting output and that's why we choose to keep it simple and just print the **variable** (**`price`**).
+We **have successfully computed the price of the cheapest transportation** so we're almost at the end of the problem. The only thing left is to print out the result that we have on the console. In our problem, there's no requirement for the resulting output and that's why we choose to keep it simple and just print the **variable** (**`price`**).
 
 ![](assets/chapter-3-2-images/01.Transport-price-06.png)
 
@@ -97,9 +97,9 @@ We **have successfully computed the price of the cheapest transportation** so we
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#0](https://judge.softuni.org/Contests/Practice/Index/652#0).
 
-## Task: pipes in a pool
+## problem: pipes in a pool
 
-A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified hourly flow rate** (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for **N hours**. Your task is to write a program that prints out the state of the pool, **at the moment the worker comes back**.
+A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified hourly flow rate** (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for **N hours**. Your problem is to write a program that prints out the state of the pool, **at the moment the worker comes back**.
 
 ### Input data
 
@@ -126,7 +126,7 @@ Print on the console **one of two possible states**:
 
 ### Hints and guidelines
 
-To solve the task we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
+To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
 #### Input data processing
 
@@ -144,7 +144,7 @@ Once we have **the amount** of water that has passed through the **pipes**, the 
 
 We will do this with a simple **`if-else`** conditional statement, in which the condition will be whether **the amount of water is less than the volume of the pool**. If the check returns **`true`**, then we need to print a **line** that contains **the ratio** between **the amount of water that has passed through the pipes** and the volume of pool**, as well as **the ratio of the amount of water** from each pipe to the **pool volume**.
 
-The ratio needs to be expressed in **percentage** that's why we'll **multiply by 100** the result of all the prior calculations on this line. The values will be interpolated using **formatting strings** and rounded down to **integer** with **`Math.floor (…)`** (it's a requirement of the task).
+The ratio needs to be expressed in **percentage** that's why we'll **multiply by 100** the result of all the prior calculations on this line. The values will be interpolated using **formatting strings** and rounded down to **integer** with **`Math.floor (…)`** (it's a requirement of the problem).
 
 ![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
@@ -154,13 +154,13 @@ However, if the check returns **`false`** it means that the amount of water is *
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#1](https://judge.softuni.org/Contests/Practice/Index/652#1).
 
-## Task: the sleepy cat Tom
+## problem: the sleepy cat Tom
 
 **The cat Tom** enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom's **norm for playtime** is **30 000 minutes per year***. Tom's playtime **is dependant on his owner's non-working days**:
 * When Tom's owner is at **work**, Tom's playtime is **63 minutes a day**.
 * When Tom's owner has a **day off**, Tom's playtime is **127 minutes a day**.
 
-Your task is to write a program that takes as input Tom's owner **number of days off** and prints out whether **Tom has a satisfactory sleeping routine** and how much is **the difference from Tom's norm for playtime** for the current year, assuming that **the year has 365 days**.
+Your problem is to write a program that takes as input Tom's owner **number of days off** and prints out whether **Tom has a satisfactory sleeping routine** and how much is **the difference from Tom's norm for playtime** for the current year, assuming that **the year has 365 days**.
 
 **Example**: 20 days off → 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ * 63 + 20 \ * 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.
 
@@ -188,7 +188,7 @@ The input data is read from the console and consists of an integer - **Tom's own
 
 ### Hints and guidelines
 
-To solve the task we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
+To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
 #### Input data processing and relevant calculations
 
@@ -196,13 +196,13 @@ The **input data** will be read in a **single line** that will contain a **whole
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
-Our **first** step is to calculate how many **minutes in total** has Tom and his master played together. The task states that not only has the sleepy cat played in **days off** but also on **working days**. **The number** that we read from the console is the number of **non-working days**.
+Our **first** step is to calculate how many **minutes in total** has Tom and his master played together. The problem states that not only has the sleepy cat played in **days off** but also on **working days**. **The number** that we read from the console is the number of **non-working days**.
 
 Our next step is to use that number to **calculate** how many are the **working days** of Tom's owner. We need this number because without it we can not get the **total number of playtime minutes**. The total number of days in a year is **365**, the number of days off is **X**, which means that the number of working days is **365 - X**. **We will store the difference** in a new variable (**`workingDays`**), which we will use **only** for this **value**.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png)
 
-Now that we have **the number of days to play**, we can now **calculate Tom's playing time** in minutes. Its **value is equal to** the **result of the multiplication of the working days by 63** minutes (in the task it's specified that on working days the playing time is 63 minutes per day) **added to the result of the multiplication of days off and 127** minutes (in the task it's specified that on days off the playing time is 127 minutes per day).
+Now that we have **the number of days to play**, we can now **calculate Tom's playing time** in minutes. Its **value is equal to** the **result of the multiplication of the working days by 63** minutes (in the problem it's specified that on working days the playing time is 63 minutes per day) **added to the result of the multiplication of days off and 127** minutes (in the problem it's specified that on days off the playing time is 127 minutes per day).
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
@@ -226,11 +226,11 @@ Depending on **the result** of the evaluation of the boolean expression our obje
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#2](https://judge.softuni.org/Contests/Practice/Index/652#2).
 
-## Task: harvest
+## problem: harvest
 
 There's a vineyard that has an **area of X sq. M.** . **40% of the harvest** is allocated for wine production. The yield from **1sq.m. vineyard** is **Y kilograms of grapes**. To produce **1 liter of wine** is used **2.5kg grapes**. The desired amount of wine **for sale is Z liters**.
 
-Your task is to write a program that **calculates the possible amount of produced wine** and validates if it's **enough**. **If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.**
+Your problem is to write a program that **calculates the possible amount of produced wine** and validates if it's **enough**. **If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.**
 
 ### Input data
 
@@ -260,7 +260,7 @@ The following is expected to be printed on the console:
 
 ### Hints and guidelines
 
-To solve the task we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
+To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
 #### Input data processing and related calculations
 
@@ -268,9 +268,9 @@ First, we need to **check** what **input data** is expected and choose an adequa
 
 ![](assets/chapter-3-2-images/04.Harvest-01.png)
 
-To solve the task we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The task defines a formula that requires the **weight of the yielded grapes in kg.** . We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
+To solve the problem we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The problem defines a formula that requires the **weight of the yielded grapes in kg.** . We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
 
-Once we have made these calculations, we are ready to **insert** them into the task formula. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
+Once we have made these calculations, we are ready to **insert** them into the problem formula. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
@@ -292,13 +292,13 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#3](https://judge.softuni.org/Contests/Practice/Index/652#3).
 
-## Task: company
+## problem: company
 
 A company is requested to develop a project that is estimated for a given number of hours. The company has **a certain number of days** to do that. **In 10% of those days**, its employees are being onboarded and **are not ready to work** on the project. A normal **working day at this company lasts for 8 hours**. The project is important for the company and every **employee is obliged to work** on this project **overtime for 2 hours** per day.
 
 **The hours** should be **rounded down** (e.g. **6.98 hours** are rounded to **6 hours**).
 
-Your task is to write a program that **calculates if the company is going to finish the project on time** and **how many hours more are needed for the completion of the project** or if the execution was successful **how many dedicated working hours are left at hand**.
+Your problem is to write a program that **calculates if the company is going to finish the project on time** and **how many hours more are needed for the completion of the project** or if the execution was successful **how many dedicated working hours are left at hand**.
 
 ### Input data
 
@@ -323,7 +323,7 @@ Your task is to write a program that **calculates if the company is going to fin
 
 ### Hints and guidelines
 
-To solve the task we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
+To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
 #### Input data processing
 
@@ -333,7 +333,7 @@ First, we need to **check** what **input data** is expected and choose an adequa
 
 #### Auxiliary calculations
 
-The next step is to calculate **the number of working hours**. This we can do by multiplying the working days by 8 (every working day is 8 hours) and the number of the company's employees. On top of that, we should add the overtime too. **The working days** are equal to **90% of the days** that the company has. **The overtime** is equal to the result of the multiplication of the employees and 2 (decided overtime length) and the number of days that the company has. We can see that the task requires **the working hours** to be **rounded down**. That's something we can easily do by using the method **`Math.floor(…)`**.
+The next step is to calculate **the number of working hours**. This we can do by multiplying the working days by 8 (every working day is 8 hours) and the number of the company's employees. On top of that, we should add the overtime too. **The working days** are equal to **90% of the days** that the company has. **The overtime** is equal to the result of the multiplication of the employees and 2 (decided overtime length) and the number of days that the company has. We can see that the problem requires **the working hours** to be **rounded down**. That's something we can easily do by using the method **`Math.floor(…)`**.
 
 ![](assets/chapter-3-2-images/05.Firm-02.png)
 

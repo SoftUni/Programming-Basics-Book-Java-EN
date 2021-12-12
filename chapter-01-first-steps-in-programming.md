@@ -1,6 +1,6 @@
 # Chapter 1. First steps in programming
 
-In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few tasks we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
+In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few problems we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
 
 ## Video
 <div class="video-player">
@@ -16,7 +16,7 @@ To program means to give instructions to the computer, for example, *play a cert
 **Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Java**. In this book we will cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
-Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a specific recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they are cooked, and finally, move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a specific task, for example, if we want to print a series of numbers in ascending order, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a problem and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a specific recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they are cooked, and finally, move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a specific problem, for example, if we want to print a series of numbers in ascending order, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 
 To make creating programs, writing program code (commands), executing it, and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **IntelliJ**.
 
@@ -38,11 +38,11 @@ Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/pac
 If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it** [https://repl.it/languages/java](https://repl.it/languages/java).
 
 ### Low- and high-level languages, runtime environments
-A program is, in essence, a **set of instructions** that ask the computer to carry out specific tasks. They are entered by the programmer and **executed unconditionally by the machine**.
+A program is, in essence, a **set of instructions** that ask the computer to carry out specific problems. They are entered by the programmer and **executed unconditionally by the machine**.
 
 There are different types of **programming languages**. **Lowest-level** languages are used to write the **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages are utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines), and other system components and programs. Even higher-level languages like **JavaScript**, **C#**, and **Python** are used to create application software, like programs for reading mail or chatting.
 
-**Low-level languages** command hardware directly and require a lot of effort, and a vast number of commands, to carry out a specific task. **Higher-level languages** require less code to achieve the same result but have no direct access to hardware. They are used to develop application software like web and mobile applications.
+**Low-level languages** command hardware directly and require a lot of effort, and a vast number of commands, to carry out a specific problem. **Higher-level languages** require less code to achieve the same result but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
 Most of the software we use daily like music players, video players, GSP programs, etc., is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP, etc.
 
@@ -428,7 +428,7 @@ int n = Integer.parseInt(console.nextLine());
 
 Don't forget to import the `java.util.Scanner` class and put your code in the `main(…)` method of your program's main class .Finish the program so that it prints a square made up of stars. You may need to use `for`-loops. Look up information on the Internet.
 
-**Caution**: this task is more complex than the rest and is presented to you at this point purposefully. It is marked with a star to provoke you to **look for information on the Internet**. It is one of the most important skills you have to develop while you're learning to program. It is what you'll be doing every day if you work as a developer, so don't be scared to try it out. 
+**Caution**: this problem is more complex than the rest and is presented to you at this point purposefully. It is marked with a star to provoke you to **look for information on the Internet**. It is one of the most important skills you have to develop while you're learning to program. It is what you'll be doing every day if you work as a developer, so don't be scared to try it out. 
 
 ### Testing in the Judge system
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#5](https://judge.softuni.org/Contests/Practice/Index/646#5).
@@ -443,7 +443,7 @@ While the console application uses the **text console**, web applications use **
 ## Exercises graphical and web applications
 Now we are about to build one simple **web application** and one simple **graphical application**, in order to take a look at what we will be able to create when we progress with programming and software development. We are not going to look through the details about the used techniques and constructions fundamentally, rather we are just going to take a look at the arrangement and functionality of our creation. After we progress with our knowledge, we will be able to do bigger and more complex software applications and systems. We hope that the examples given below will **enlighten your interest**, rather than make you give up.
 
-### Problem graphical application "Summator for numbers"
+### problem graphical application "Summator for numbers"
 
 Write a **graphical (GUI) application**, which **calculates the sum of two numbers**:
 
@@ -630,7 +630,7 @@ Unlike the console applications that read and write data as text on the console,
 For our web application, we will use **Spring MVC**. It enables us to create a web application with the **Java** programming language in the **IntelliJ IDEA** development environment.
 
 Take the project (the application's skeleton) from this link:
-[https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
+[https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-02.png)
 

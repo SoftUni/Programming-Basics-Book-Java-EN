@@ -4,9 +4,9 @@ In this chapter, we will introduce you to **methods**. We will learn what they a
 
 ## What is "method"?
 
-So far, we have found out that while **writing** a code for a program that solve a task, **separating** the task into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the task, and the **readability** and the debugging of the code are better.
+So far, we have found out that while **writing** a code for a program that solve a problem, **separating** the problem into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
-A block of code designed to perform a particular task, which we have logically separated is called a **method**. **Methods – pieces of code, that are named** by us in a certain way and could be called as many times as we need.
+A block of code designed to perform a particular problem, which we have logically separated is called a **method**. **Methods – pieces of code, that are named** by us in a certain way and could be called as many times as we need.
 
 A **method** can be **called** as many times as we think we need to solve a problem. That **saves** us from repeating the same code several times, **reduces** the possibility of making a mistake while editing the repeated code.
 
@@ -18,17 +18,17 @@ Let's look at the following **example of a simple method**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-This **method** has the task to print a header containing a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The parentheses **`( `** and **`)`** always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the **name of a method must describe the action** he performs.
+This **method** has the problem to print a header containing a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The parentheses **`( `** and **`)`** always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the **name of a method must describe the action** he performs.
 
 The **body** of the method consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the method.
 
 ### Why should we use methods?
 
-Up to this moment, we have found out that, methods help us with **separating big tasks into smaller parts**, which leads to a **simple solution** of the corresponding problem. It makes our program, not just well structured, **easy readable** but also more understandable.
+Up to this moment, we have found out that, methods help us with **separating big problems into smaller parts**, which leads to a **simple solution** of the corresponding problem. It makes our program, not just well structured, **easy readable** but also more understandable.
 
 Using methods, we **escape repeating** of programming code. **Repeating** code is a bad practice, as it makes it very difficult to maintain the program and leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change at every occurrence it. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. It is why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
 
-Methods offer us an **opportunity** to use **code several times**. With solving more and more tasks, we will conclude that using already defined methods saves us much time and effort.
+Methods offer us an **opportunity** to use **code several times**. With solving more and more problems, we will conclude that using already defined methods saves us much time and effort.
 
 ### Declaring methods
 
@@ -223,7 +223,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#
 
 ## Returning result from a method
 
-So far, we have looked at methods that do a specific task, for example, printing a text, number, or figure on the console. There is another type of method that can **return** a **result** from their task. We will look at this type of method in the following lines.
+So far, we have looked at methods that do a specific problem, for example, printing a text, number, or figure on the console. There is another type of method that can **return** a **result** from their problem. We will look at this type of method in the following lines.
 
 ### Types of returned values
 
@@ -379,7 +379,7 @@ The input is two values of the same type. The values can be of **`int`**, **`cha
 
 #### Hints and guidelines
 
-To complete our task, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.
+To complete our problem, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-01.png)
 
@@ -406,11 +406,11 @@ In this chapter, we will introduce you to some of the **best practices** when wo
 
 ### Naming methods
 
-When we name a method, it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **task** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
+When we name a method, it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **problem** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
 
 It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets  **`( `** and **`)`** are always after the name of the method.
 
-Every method must do an independent task, and the name must describe its role.
+Every method must do an independent problem, and the name must describe its role.
 
 Here are some examples of **correctly** named methods:
 * **`findStudent`**
@@ -424,7 +424,7 @@ Some examples of **badly** named methods:
 *	**`SampleMethod`**
 *	**`DirtyHack`**
 
-If we can't come up with a good name, it's probably because our method does more than one job or it doesn't have a clear task. We must think of a way to divide the method into several separate methods.
+If we can't come up with a good name, it's probably because our method does more than one job or it doesn't have a clear problem. We must think of a way to divide the method into several separate methods.
 
 ### Naming parameters of methods
 
@@ -448,7 +448,7 @@ Some examples of **incorrectly** named parameters:
 
 ### Good practices when working with methods
 
-We must keep in mind that a method must do **only one** specific **task**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
+We must keep in mind that a method must do **only one** specific **problem**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
 As we have already said, the name must be clear and descriptive. Another **good practice** is to **avoid** methods that are longer than our screen. If this happens, it's recommended to **split** the method into smaller ones, as shown in the example below.
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
@@ -487,7 +487,7 @@ In this chapter, we have learned base concepts about working with methods:
 
 To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
 
-### Task: "Hello, Name!"
+### problem: "Hello, Name!"
 
 Write a method that takes a name as a parameter and prints on the console "*Hello, \<name\>!*".
 
@@ -506,7 +506,7 @@ Define a method **`printName(String name)`** and implement it, after which read 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#7](https://judge.softuni.org/Contests/Practice/Index/665#7).
 
 
-### Task: Min method
+### problem: Min method
 
 Create a method **`getMin(int a, int b)`**, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method **`getMin(…)`**, which you have already created.
 
@@ -529,7 +529,7 @@ int min = getMin(getMin(num1, num2), num3);
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#8](https://judge.softuni.org/Contests/Practice/Index/665#8).
 
 
-### Task: String repeater
+### problem: String repeater
 
 Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this, print the result on the console.
 
@@ -552,7 +552,7 @@ Keep in mind that **in Java concatenating strings in loops leads to a bad perfor
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#9](https://judge.softuni.org/Contests/Practice/Index/665#9).
 
 
-### Task: N-th digit
+### problem: N-th digit
 
 Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that, print the result on the console.
 
@@ -571,7 +571,7 @@ To do the algorithm, use a **`while`** loop, until the given number equals 0. At
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#10](https://judge.softuni.org/Contests/Practice/Index/665#10).
 
 
-### Task: Integer to base
+### problem: Integer to base
 
 Write a method **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.
 
@@ -583,7 +583,7 @@ Write a method **`integerToBase(number, toBase)`**, which takes as parameters an
 
 #### Hints and guidelines
 
-To solve the task, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
+To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
 * We calculate **the remainder** of the number, divided by the base.
 * **We insert the remainder** at the beginning of the string.
 * **We divide** the number to the base.
@@ -606,7 +606,7 @@ static String integerToBase(int number, int toBase) {
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#11](https://judge.softuni.org/Contests/Practice/Index/665#11).
 
 
-### Task: Notifications
+### problem: Notifications
 
 Write a program, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
 - When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
@@ -615,7 +615,7 @@ Write a program, which takes an integer **`n`** and **`n` input messages** and p
 
 Print on the console **each read message**, formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
 
-The task should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is called in the **`main()`** method:
+The problem should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is called in the **`main()`** method:
 
 ![](assets/chapter-10-images/18.Notifications-01.png)
 
@@ -638,7 +638,7 @@ If you are reading from the console a few separate methods, you should keep in m
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#12](https://judge.softuni.org/Contests/Practice/Index/665#12).
 
 
-### Task: Numbers to words
+### problem: Numbers to words
 
 Write a method **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
 * Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
@@ -672,7 +672,7 @@ The third special case is when the number formed by the last two digits of the i
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#13](https://judge.softuni.org/Contests/Practice/Index/665#13).
 
 
-### Task: String encryption
+### problem: String encryption
 
 Write a method **`encrypt(char letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
@@ -712,7 +712,7 @@ Example:
 
 Our variable from type **`String`**, which will store the value of the result, will have an initial value of **`String str = ""`** (Empty String). The loop should iterate **`n`** times, and in every iteration, we will add to our variable the encrypted symbol.
 
-To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the "Integer to Base" task.
+To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the "Integer to Base" problem.
 
 #### Testing in the Judge system
 

@@ -1,6 +1,6 @@
 # Chapter 5.1. Repetitions (Loops)
 
-In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical tasks that require repeating series of actions, using loops.
+In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical problems that require repeating series of actions, using loops.
 
 ## Video
 
@@ -30,7 +30,7 @@ Write a program that **prints the numbers from 1 to 100**. The program does not 
 
 #### Hints and guidelines
 
-We can solve the task using a **`for` loop**, which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
+We can solve the problem using a **`for` loop**, which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
@@ -58,7 +58,7 @@ Write a program that finds all numbers within the range [**1 … 1000**] that en
 
 #### Hints and guidelines
 
-We can solve the task by combining a **`for` loop**, which will go through the numbers from 1 to 1000, and a **condition** to check if they end with 7. There are other solutions too, but let's solve the task using a **loop + condition**:
+We can solve the problem by combining a **`for` loop**, which will go through the numbers from 1 to 1000, and a **condition** to check if they end with 7. There are other solutions too, but let's solve the problem using a **loop + condition**:
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
@@ -73,7 +73,7 @@ Write a program that prints the letters from the Latin alphabet: **a, b, c, …,
 
 #### Hints and guidelines
 
-It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop** that passes sequentially through all letters in the Latin alphabet:
+It is good to know that the **`for` loops** don't work only with numbers. We can solve the problem by running a **`for` loop** that passes sequentially through all letters in the Latin alphabet:
 
 ![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
@@ -102,7 +102,7 @@ Write a program that **reads `n` integers from the console and calculates the su
 
 #### Hints and guidelines
 
-We can solve the task by calculating the sum of numbers the following way:
+We can solve the problem by calculating the sum of numbers the following way:
  - We read the input number **`n`**.
  - Initially, we start with **`sum = 0`**.
  - We run a loop from 1 to **`n`**, and on each iteration, we read the input number **`num`** and add it to the **`sum`**.
@@ -156,7 +156,7 @@ Write a program that inputs **n integers** (**n** > 0) and finds **the Min Numbe
 
 #### Hints and guidelines
 
-The task is identical to the previous one, but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
+The problem is identical to the previous one, but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
@@ -200,7 +200,7 @@ Write a program that inputs **n integers** and checks if **the sum of numbers on
 
 #### Hints and guidelines
 
-We input the numbers one by one and calculate the two **sums** (the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous task, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
+We input the numbers one by one and calculate the two **sums** (the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
@@ -250,11 +250,11 @@ We can read series of **`n`** numbers from the console:
 
 ## Exercises: Repetitions (Loops)
 
-After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve а some tasks for exercise.
+After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve а some problems for exercise.
 
 ### Creating new project in IntelliJ IDEA
 
-We start by creating a new project in IntelliJ IDEA to better organize our solutions for the exercise. For each task, we will create a separate class.
+We start by creating a new project in IntelliJ IDEA to better organize our solutions for the exercise. For each problem, we will create a separate class.
 
 Start IntelliJ IDEA and select: **[Create New Project]**.
 
@@ -280,11 +280,11 @@ We created a new project. If we click on the triangle in front of **Loops** on t
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
-To create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **tasks** (with a small first letter).
+To create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **problems** (with a small first letter).
 
 ![](assets/chapter-5-1-images/10.New-project-07.png)
 
-To create new class for the first task, right-click with the mouse on **tasks**, select **New** -> **Java Class** and name it **Task_01** (with a capital letter).
+To create new class for the first problem, right-click with the mouse on **problems**, select **New** -> **Java Class** and name it **problem_01** (with a capital letter).
 
 ![](assets/chapter-5-1-images/10.New-project-08.png)
 
@@ -296,7 +296,7 @@ After these changes, the structure of the project should look like this:
  
 For each subsequent exercise, we will create a new class in the way described above. 
  
-### Task: An element equal to the sum of the others
+### problem: An element equal to the sum of the others
 
 Write a program that inputs **n integers** and checks if there is a number among them that is equal to the sum of all others. If there is such an element, print **"Yes" + its value**. Otherwise, print **"No" + the difference between the largest element and the sum of the rest**, as an absolute value. 
 
@@ -319,7 +319,7 @@ We must calculate the **sum** of all elements, find the **largest** of them and 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#9](https://judge.softuni.org/Contests/Practice/Index/655#9).
 
 
-### Task: Even \/ Odd position 
+### problem: Even \/ Odd position 
 
 Write a program that reads **n numbers** and calculates **the sum**, the **min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
 
@@ -334,16 +334,16 @@ Write a program that reads **n numbers** and calculates **the sum**, the **min**
 
 #### Hints and guidelines
 
-The task combines several previous tasks: finding the **min**, **max**, and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions to the previous tasks again.
+The problem combines several previous problems: finding the **min**, **max**, and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions to the previous problems again.
 
-In the current task, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the result is equal to the neutral value, we will print **“No”**.
+In the current problem, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the result is equal to the neutral value, we will print **“No”**.
 
 #### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#10](https://judge.softuni.org/Contests/Practice/Index/655#10).
 
 
-### Task: Equal pairs 
+### problem: Equal pairs 
 
 There are **2 \* n numbers**. The first and the second form a **pair**, the third and the fourth number also, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal values**.
 
@@ -375,7 +375,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
-### Task: Turtle graphics GUI application
+### problem: Turtle graphics GUI application
 
 The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will: **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
@@ -386,7 +386,7 @@ Let us get familiar with **the concept of drawing "Turtle Graphics"**. Take a lo
   * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
   * Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter we described how to do it). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-BG/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore, we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is done as follows:
+We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter we described how to do it). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore, we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is done as follows:
   * Select **Project Structure** from the **File** menu (CTRL + SHIFT + ALT + S).
   * Click on **Select Modules** in the left pane.
   * Click on the **Dependencies** tab.
@@ -466,7 +466,7 @@ The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle
 
 Again, **start** the application with [**Shift + F10**] and test whether both buttons work correctly.
 
-### Task: * Draw a hexagon with the turtle
+### problem: * Draw a hexagon with the turtle
 
 Add [**Hexagon**] button which draws a regular hexagon:
 
@@ -503,7 +503,7 @@ In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 ![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
-### Task: * Draw a star with the turtle
+### problem: * Draw a star with the turtle
 
 Add [**Star**] button, which draws a star with 5 vertices (**star pentagon**), as shown in the figure below:
 
@@ -517,7 +517,7 @@ Repeat 5 times the following in a loop:
 * Forward step of 200.
 * 144 degrees rotation.
 
-### Task: * Draw a spiral with the turtle
+### problem: * Draw a spiral with the turtle
 
 Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in the figure below:
 
@@ -527,13 +527,13 @@ Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in th
 
 Draw in a loop by moving ahead and rotating. Gradually increase the length of the forward movement with each step and turn it 60 degrees.
 
-### Task: * Draw a sun with the turtle
+### problem: * Draw a sun with the turtle
 
 Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-### Task: * Draw a spiral triangles with the turtle
+### problem: * Draw a spiral triangles with the turtle
 
 Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 

@@ -19,7 +19,7 @@ Write a program that draws a rectangle of **10 x 10** asterisks in the console.
 |(no input)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
 #### Hints and guidelines
-To solve the task, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
+To solve the problem, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
@@ -40,7 +40,7 @@ Write a program that reads an integer **n** from the console, and as output, dra
 
 #### Hints and guidelines
 
-To perform the task, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
+To perform the problem, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
@@ -74,7 +74,7 @@ Write a program that draws on the console a square of **N x N** asterisks:
 
 #### Hints and guidelines
 
-The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
+The problem is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
@@ -93,7 +93,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 #### Hints and guidelines
 
-The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
+The problem is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
@@ -116,7 +116,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 #### Hints and guidelines
 
-We can solve the task as follows:
+We can solve the problem as follows:
 * We read an integer **`n`** from the console.
 * We print **the upper part** of the frame: first the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**.
 * We print **the middle part** of the frame: we print **n-2** lines as first print the sign **`|`**, then **n-2** times the sign **`-`** and finally again the sign **`|`**. We can achieve this with nested loops.
@@ -146,7 +146,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 #### Hints and guidelines
 
-To solve the task, we divide (imaginary) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
+To solve the problem, we divide (imaginary) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
 
 For the upper part of the rhombus (first loop) we can use the following guidelines:
 * We print **`n-row`** intervals.
@@ -187,7 +187,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#
 
 ## Drawing more complex figures
 
-Let's look at a few exercises about how we can draw figures on the console with more complex logic. To solve these tasks, we need to think more about the program logic before we begin writing.
+Let's look at a few exercises about how we can draw figures on the console with more complex logic. To solve these problems, we need to think more about the program logic before we begin writing.
 
 ### Example: Sunglasses 
 
@@ -203,7 +203,7 @@ Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the co
 
 #### Hints and guidelines
 
-As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the task.
+As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the problem.
 
 When drawing the top and bottom rows, use **`2 * n`** asterisks, **`n`** spaces, and **`2 * n`** asterisks as output.
 
@@ -232,7 +232,7 @@ Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from th
 
 #### Hints and guidelines
 
-According to the condition of the task, the house has dimensions of **`n` x `n`**, but from the input and output data, we can see the following:
+According to the condition of the problem, the house has dimensions of **`n` x `n`**, but from the input and output data, we can see the following:
 
 * The house consists of two parts: **roof and base**.
 
@@ -257,7 +257,7 @@ We read an integer **`n`** from the console and assign the value of an integer t
 ![](assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current tasks, it is not a problem to convert directly the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
+<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current problems, it is not a problem to convert directly the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
 To draw **the roof**, we write down how many **asterisks** we start within a variable called **`stars`**:
@@ -333,7 +333,7 @@ Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from th
 
 #### Hints and guidelines
 
-According to the requirements of the task, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
+According to the requirements of the problem, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
 
 * All lines contain exactly **`n`** characters, and all lines, except the upper and the bottom ones, have **two asterisks** (**`*`**).
 

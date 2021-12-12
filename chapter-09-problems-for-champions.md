@@ -1,13 +1,13 @@
-# Chapter 9.1. Tasks for champions – part I
+# Chapter 9.1. problems for champions – part I
 
-In this chapter, we will offer the reader **more complex tasks**. They aim to develop **algorithmic skills** and acquire **programming techniques** to solve tasks with higher complexity.
+In this chapter, we will offer the reader **more complex problems**. They aim to develop **algorithmic skills** and acquire **programming techniques** to solve problems with higher complexity.
 
 ## More complex problems on the studied material
 
-We will solve several programming problems that cover the material studied in the book but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to become a **champion of the basics of programming**, we recommend this training to solve such complex tasks to make it easy for you to take exams.
+We will solve several programming problems that cover the material studied in the book but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to become a **champion of the basics of programming**, we recommend this training to solve such complex problems to make it easy for you to take exams.
 
 
-## Task: Crossing sequences
+## problem: Crossing sequences
 
 We have two sequences:
    - **a sequence of Tribonacci** (by analogy with the Fibonacci sequence), where each number is **the sum of the previous three** (with given three numbers)
@@ -58,7 +58,7 @@ On the single line of the output, we must print **the smallest number that occur
 
 ### Hints and guidelines
 
-The task seems quite complicated, so we will break it into simpler sub-tasks.
+The problem seems quite complicated, so we will break it into simpler sub-problems.
 
 #### Processing the input
 
@@ -89,7 +89,7 @@ What we have to take care of is **for every two numbers, our multiplier** (let's
 
 #### Finding common number for the sequences
 
-Once we have generated the numbers in both sequences, we can combine them and build the final solution. How will it look? For **each of the numbers** in the first sequence (starting from the smaller one), we will check if it exists in the other one. The first number that meets this criterion will be **the answer** to the task.
+Once we have generated the numbers in both sequences, we can combine them and build the final solution. How will it look? For **each of the numbers** in the first sequence (starting from the smaller one), we will check if it exists in the other one. The first number that meets this criterion will be **the answer** to the problem.
 
 We will do a **linear** search in the second array. We will leave, the more curious readers, to optimize it using the technique called **binary search** because the second array is generated in sorted form, i.e., it meets the requirement to apply this type of search. The code for finding our solution will look like this:
 
@@ -104,11 +104,11 @@ The previous solution to the problem uses arrays to store the values. Arrays are
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#0](https://judge.softuni.org/Contests/Practice/Index/663#0).
 
 
-## Task: Magic dates
+## problem: Magic dates
 
 **Date** is given in a "**dd-mm-yyyy**" format, e.g. 17-04-2018. We calculate **the weight of that date** by taking all of its digits, multiplying each digit with the others after it, and finally summing up all the results obtained. In our case, we have 8 digits: **17032007**, so the weight is **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
 
-Our task is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to the given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
+Our problem is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to the given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
 
 ### Input data
 
@@ -143,7 +143,7 @@ The result should be printed on the console as consecutive dates in **"dd-mm-yyy
 
 ### Hints and guidelines
 
-We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the task.
+We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the problem.
 
 Having the start and end year, it is good to understand how we will go through each date, without being confused by how many days there are in the month and whether it is a leap year, and so on.
 
@@ -181,7 +181,7 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 #### Printing the output
 
-Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight**, to know if it should be printed, or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data as required in the task, we will use **`DateTimeFormatter`** class.
+Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight**, to know if it should be printed, or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data as required in the problem, we will use **`DateTimeFormatter`** class.
 
 ![](assets/chapter-9-1-images/02.Magic-dates-06.png)
 
@@ -196,7 +196,7 @@ Finally, if we have not found an eligible date, we will have a **`false`** value
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#1](https://judge.softuni.org/Contests/Practice/Index/663#1).
 
 
-## Task: Five special letters
+## problem: Five special letters
 
 Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`** so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
@@ -282,7 +282,7 @@ and **for each digit, we take the letter from the particular position.** This wa
 
 **Another way**: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`'a' + i`** return the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**,  **`'c'`** in case **`i = 2`**, etc.
 
-This way we already have generated all 5-letter combinations and can proceed with the following part of the task.
+This way we already have generated all 5-letter combinations and can proceed with the following part of the problem.
 
 **Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 

@@ -11,7 +11,7 @@ The book is used as unofficial **textbook for school-level programming courses**
 
 This book is suitable for **absolute beginners in programming** who want to try what programming is and learn the basic constructions for writing program code used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
 
-For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course you will get free access to lessons, explanations and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, instructors, assistants and mentors. Also, you will get free access to  forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
+For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course you will get free access to lessons, explanations and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the problem solutions after each topic, instructors, assistants and mentors. Also, you will get free access to  forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
 
 The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions. The course is suitable for everyone who want to gain technical knowledge and check if programming is what it will like to do and understand if they would like to develop in the software development field.
 
@@ -38,13 +38,13 @@ If you prefer a different language, select it from the list above.
 
 ## Programming is learned by a lot of writing, not reading!
 
-If someone thinks it will read a book and learn to program without writing code and solving problems, this is a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of tasks, seriously and persistently for years.
+If someone thinks it will read a book and learn to program without writing code and solving problems, this is a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of problems, seriously and persistently for years.
 
-You need to: **solve a lot of tasks**, to make mistakes, to fix, to search for solutions and information from the Internet, to try, to experiment, to find better solutions, to get used to the code, syntax, the programming language, the development environment, to search for errors and debugging the broken code, the algorithmic thinking, breaking the tasks into smaller parts, gaining experience and raising your skills every day, because when you learn to write code, this is only the **first step to the profession of the "software engineer"**. You have a lot to learn!
+You need to: **solve a lot of problems**, to make mistakes, to fix, to search for solutions and information from the Internet, to try, to experiment, to find better solutions, to get used to the code, syntax, the programming language, the development environment, to search for errors and debugging the broken code, the algorithmic thinking, breaking the problems into smaller parts, gaining experience and raising your skills every day, because when you learn to write code, this is only the **first step to the profession of the "software engineer"**. You have a lot to learn!
 
 We advise the reader, as a minimum, **to try out all the examples from the book**, to play with them, to change them, and test them. Even more important than the examples are **the exercises** because they develop the programmer's practical skills. This book provides nearly **150 practical coding exercises**, so it is a good foundation for developing coding and algorithmic thinking skills.
 
-**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the tasks is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
+**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
 
 </tr></table>
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -69,15 +69,15 @@ This **programming book** accompanies the free programming lessons for beginners
 
 ### The automated Judge system
 
-**The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real-time**: you submit the solution, and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution, you get all the points for this problem. For a partially correct solution, you get part of the points for the task. For a completely wrong solution, you get 0 points.
+**The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real-time**: you submit the solution, and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution, you get all the points for this problem. For a partially correct solution, you get part of the points for the problem. For a completely wrong solution, you get 0 points.
 
 This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.png)
 
-**All problems from the current book are available for testing in SoftUni judge**, and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the task requirements.
+**All problems from the current book are available for testing in SoftUni judge**, and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the problem requirements.
 
 Keep in mind some **specifics about SoftUni judge**:
-* For each task the **judge system keeps the best score you had**. Therefore, if you upload a solution with the wrong code or a lower score compared to the previous one, the system won't take away your points.
-* The output of your program is **compared** by the system to a strictly expected result. Every **unnecessary symbol, missing comma, or space** may lead to 0 points on a particular test. The **output** that the judge expects is **described in the requirements of every task** and **nothing else should be added**. 
+* For each problem the **judge system keeps the best score you had**. Therefore, if you upload a solution with the wrong code or a lower score compared to the previous one, the system won't take away your points.
+* The output of your program is **compared** by the system to a strictly expected result. Every **unnecessary symbol, missing comma, or space** may lead to 0 points on a particular test. The **output** that the judge expects is **described in the requirements of every problem** and **nothing else should be added**. 
 
 **Example:** If the output requires printing a number (e.g. `25`), do not display any descriptive messages such as `The result is: 25`. Print the output as it is required, i.e., only the number.
 
@@ -85,13 +85,13 @@ The SoftUni judge system is **available any time** via its website: [https://jud
 * To sign in, use your authentication for the SoftUni website: [https://softuni.org](https://softuni.org).
 * Using the SoftUni system is **free** and it's not bound with the participation in SoftUni's courses.
 
-We are convinced that after a few submitted tasks, **you will like to receive instant feedback** for your solutions, and the Judge system will become your favorite assistant in learning programming.
+We are convinced that after a few submitted problems, **you will like to receive instant feedback** for your solutions, and the Judge system will become your favorite assistant in learning programming.
 
 ## How to become a software developer?
 
 Dear readers, probably many of you have the ambition to become programmers and develop software for a living or work in the IT area. That's why we have prepared for you a **short guide on "How to become a programmer"**, so we can help you take the first steps towards this desired profession.
 
-You can become a programmer (working in a software company) after **at least 1-2 years of intensive training and coding every day**, solving thousands of programming tasks, developing several more serious practical projects and gaining a lot of experience with code writing and software development. You can't become a programmer for a month or two! The profession of software engineer requires **a lot of knowledge**, covered with **a lot of practice**.
+You can become a programmer (working in a software company) after **at least 1-2 years of intensive training and coding every day**, solving thousands of programming problems, developing several more serious practical projects and gaining a lot of experience with code writing and software development. You can't become a programmer for a month or two! The profession of software engineer requires **a lot of knowledge**, covered with **a lot of practice**.
 
 There are **4 main skill groups** that all programmers must have. Most of these skills are resistant in time and are not significantly affected by the development in specific technologies (which are constantly changing). These are the skills that **any good programmer** has and to which every beginner must strive:
 * **coding** (20%)
@@ -108,16 +108,16 @@ There are **4 main skill groups** that all programmers must have. Most of these 
 
 The skill of coding **can be acquired in a few months** of hard learning and solving practical problems by writing code every day. This book covers only the first point of coding: **working with variables, conditional statements, and loops**. The rest remains to be learned in follow-up trainings, courses, and books.
 
-The book (and the courses based on it) gives only the beginning of one long and serious training on the way to professional programming. If you don't learn perfectly the material from this book, you can't become a programmer. You are going to miss fundamentals, and it will be harder in the future. For this reason, **give enough time to programming basics**: solve many tasks and write code every day for months until you learn to **solve every task from the book very easily**. Then go ahead.
+The book (and the courses based on it) gives only the beginning of one long and serious training on the way to professional programming. If you don't learn perfectly the material from this book, you can't become a programmer. You are going to miss fundamentals, and it will be harder in the future. For this reason, **give enough time to programming basics**: solve many problems and write code every day for months until you learn to **solve every problem from the book very easily**. Then go ahead.
 
 We pay special attention to the fact that **programming language doesn't have significant relevance** for one's coding skill. You can either code or not. If you can code in C#, then you'll easily switch to Java, or C++, or any other language. That's why **coding skills** are heavily studied in the foundational software engineering courses at SoftUni. These are the skills that each programming book for beginners starts with, including this one.
 
 ### Skill #2 – Algorithmic thinking (30%)
 
-The algorithmic (logical, engineering, mathematical, abstract) thinking forms around 30% of the minimum skills of a programmer needed to start the profession. **Algorithmic thinking** is the ability to break a particular task into a logical sequence of steps (algorithm) to find a solution for every separate step and then combine the steps into a working solution. That is the most important skill of any programmer.
+The algorithmic (logical, engineering, mathematical, abstract) thinking forms around 30% of the minimum skills of a programmer needed to start the profession. **Algorithmic thinking** is the ability to break a particular problem into a logical sequence of steps (algorithm) to find a solution for every separate step and then combine the steps into a working solution. That is the most important skill of any programmer.
 
 How to **build algorithmic thinking**?
-* Algorithmic thinking is developed by solving **multiple programming (1000+) tasks**, as diverse as possible. That is the recipe: solving thousands of practical tasks, building algorithms, and implementing the algorithms, along with debugging the issues that come up in the process. 
+* Algorithmic thinking is developed by solving **multiple programming (1000+) problems**, as diverse as possible. That is the recipe: solving thousands of practical problems, building algorithms, and implementing the algorithms, along with debugging the issues that come up in the process. 
 * Sciences like physics, mathematics and identical ones help a lot, but they are not mandatory! People with **engineering and technical skills** usually learn very easily to think logically because they already **have problem-solving skills**, even if it is not algorithmic.
 * The ability to **solving programming problems** (for which algorithmic thinking is needed) is extremely important for a programmer. Many companies test particularly this skill during their job interviews.
 
@@ -142,9 +142,9 @@ As you can guess **the programming language doesn't matter** for the development
 * **web front-end technologies (client-side development)** – HTML, CSS, JS, HTTP, DOM, AJAX, communication with back-end, calling REST API, front-end frameworks, basic design and UX (user experience) concepts
 * **mobile technologies** – mobile apps, Android and iOS development, mobile user interface (UI), calling server logic 
 * **embedded systems** – microcontrollers, digital and analog input and output control, sensor access, peripheral management
-* **operating systems** – working with operating systems (Linux, Windows, etc.), installation, configuration, and basic system administration, process management, memory, file system, users, multitasking, virtualization, and containers
-* **parallel and asynchronous programming** – thread management, asynchronous tasks, promises, common resources, and access synchronization
-* **software engineering** – source control systems, development management, task planning, and management, software development methodologies, software requirements, and prototypes, software design, software architectures, software documentation
+* **operating systems** – working with operating systems (Linux, Windows, etc.), installation, configuration, and basic system administration, process management, memory, file system, users, multiprobleming, virtualization, and containers
+* **parallel and asynchronous programming** – thread management, asynchronous problems, promises, common resources, and access synchronization
+* **software engineering** – source control systems, development management, problem planning, and management, software development methodologies, software requirements, and prototypes, software design, software architectures, software documentation
 * **software testing** – unit testing, test-driven development, QA engineering, error reporting and error tracking, automation testing, build processes, and continuous integration
 
 We need to clarify once again that **the programming language does not matter** for the assimilation of all these skills. They accumulate slowly, over many years of practice in the profession. Some knowledge is fundamental and can be learned theoretically, but for their full understanding and in-depth awareness, you need years of practice.
@@ -263,10 +263,10 @@ International Standard Book Number (ISBN): **978-619-00-0636-7**.
 
 If you find **mistakes**, inaccuracies or bugs in the book, you can report them in the official bug tracker of the project:
 
-<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Java-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-Java-BG/issues</a></strong></p>
+<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues</a></strong></p>
 
 We do not promise to fix everything you send us, but we do want to **continually improve the quality** of the book, so that reported undoubted errors and all reasonable suggestions will be considered.
 
 ## Enjoy reading!
 
-Don't forget **to write code** in large quantities, to **test the examples** that you'll find at the end of each chapter and more importantly **to solve the tasks from the exercises**. You won't learn to program from just reading the book, so solve as many tasks as you can find!
+Don't forget **to write code** in large quantities, to **test the examples** that you'll find at the end of each chapter and more importantly **to solve the problems from the exercises**. You won't learn to program from just reading the book, so solve as many problems as you can find!

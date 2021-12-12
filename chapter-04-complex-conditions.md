@@ -87,7 +87,7 @@ Let's take a look at how we can create more complex logical conditions. We can u
 
 ### Logical "AND"
 
-As we saw, in some tasks we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
+As we saw, in some problems we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 
 The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
@@ -399,7 +399,7 @@ Write a program that prints the type of the animal depending on its name:
 
 #### Solution
 
-We can solve the task with **`switch`**-**`case`** conditions with multiple labels in the following way:
+We can solve the problem with **`switch`**-**`case`** conditions with multiple labels in the following way:
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
@@ -452,7 +452,7 @@ switch (selector) {
 
 Let's practice using more complex conditions. We will solve a few practical exercises.
 
-### Problem: Cinema
+### problem: Cinema
 
 In a cinema hall, the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
 
@@ -480,7 +480,7 @@ Sample code (parts of the code are blurred with the purpose to stimulate your th
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#10](https://judge.softuni.org/Contests/Practice/Index/653#10).
 
-### Problem: Volleyball
+### problem: Volleyball
 
 Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
 Write a program that calculates **how many times Vladimir has played volleyball** throughout the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
@@ -512,7 +512,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
 
-### Problem: * Point in the Figure
+### problem: * Point in the Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
@@ -544,7 +544,7 @@ Write a program that enters an integer **h** and the coordinates of a given **po
 
 #### Hints and Guidelines
 
-A possible logic for solving the task (not the only correct one):
+A possible logic for solving the problem (not the only correct one):
 
 * We might split the figure into **two rectangles** with a common side:
 

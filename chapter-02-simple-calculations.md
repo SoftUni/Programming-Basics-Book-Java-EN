@@ -50,7 +50,7 @@ Java is **highly typed language** this means that the variables have type determ
 
 ### Example: Calculating the area of the square with side **а**
  
-As an example, let us look at a program. The task is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
+As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
 ```Java
 // Put this code in the file: SquareArea.java
@@ -446,9 +446,9 @@ To consolidate our knowledge of simple calculations, let's solve several exercis
 
 ### Blank IntelliJ IDEA solution (Project)
 
-We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of tasks**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **consolidate logically a few interconnected projects**.
+We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of problems**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **consolidate logically a few interconnected projects**.
 
-In the current practical exercise we will use a **Project with a couple of tasks (Java classes)** to organize the solutions of the tasks from the exercises – every task in a separate Java class and all of them in a common project.
+In the current practical exercise we will use a **Project with a couple of problems (Java classes)** to organize the solutions of the problems from the exercises – every problem in a separate Java class and all of them in a common project.
 
 * We start IntelliJ IDEA.
 * We create a new **Project:** [**File**] → [**New**] → [**Project**].
@@ -473,7 +473,7 @@ The purpose of this project is to add in it **`.java` class per problem** from t
 
 ### Exercise: Calculating the area of the square 
 
-The first task from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The task is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
+The first problem from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
 
 #### Hints and guidelines
 
@@ -528,7 +528,7 @@ We obtain the following result:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.png)
 
-Now **let's switch to the previous program/task** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
+Now **let's switch to the previous program/problem** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.png)
 
@@ -540,7 +540,7 @@ the last compiled program will be executed (**InchesToCentimeters**). We can see
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
 
-**Switching between projects** is an easy task, isn't it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.
+**Switching between projects** is an easy problem, isn't it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.
 
 Let's test with floating-point numbers, for example, with **2.5**:
 

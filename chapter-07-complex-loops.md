@@ -1,6 +1,6 @@
 # Chapter 7.1. More complex loops
 
-Having learned what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops** and some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging tasks. In particular, we will have a look at how the following constructs are used:
+Having learned what **`for` loops** are and what they serve for, it is now time to get to know **other types of loops** and some **more complex loops constructs**. They will expand our knowledge and help us solve more difficult and challenging problems. In particular, we will have a look at how the following constructs are used:
 
   * loops **with a step**
   * **`while`** loops
@@ -37,7 +37,7 @@ The following is a series of examples, the solution of which will help us better
 
 Write a program that prints the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
 
-We can solve the task through the following sequence of actions (algorithm):
+We can solve the problem through the following sequence of actions (algorithm):
 
   * We read the number **`n`** from the console input.
   * We run a **`for` loop** from **1** to **`n`** with a step size of **3**.
@@ -54,7 +54,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 Write a program that prints the numbers **from n to 1 in reverse order** (step -1). For example, **if n = 100**, the result will be **100, 99, 98, …, 3, 2, 1**.
 
-We can solve the task in the following way:
+We can solve the problem in the following way:
 
   * We read the number **`n`** from the console input.
   * We run a **`for` loop** in which we assign **`int i = n`**.
@@ -86,11 +86,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 Print the **even** powers of **2** to **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, the result will be **1, 4, 16, 64, 256, 1024**.
 
-Here is a way to solve the task:
+Here is a way to solve the problem:
 
   * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
   * We set a value of **2** for the **step** of the loop.
-  * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the task).
+  * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem).
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
@@ -117,7 +117,7 @@ The following is a series of examples, the solution of which will help us better
 
 Write a program that prints all **numbers ≤ n** from the sequence: **1, 3, 7, 15, 31**, …, having in mind that each next number = **previous number \* 2 + 1**.
 
-Here is how we can solve the task:
+Here is how we can solve the problem:
 
 * We create a variable **`num`** for the current number to which we assign an initial **value of 1**.
 * We put the **current number <= n** as the loop condition.
@@ -136,10 +136,10 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 Enter an integer in the range [**1 … 100**]. If it is invalid, input an integer again. In this case, we will consider any number that **is not** in the specified range as invalid.
 
-We can solve the task through the following algorithm:
+We can solve the problem through the following algorithm:
 
 * We create a variable **`num`**, to which we assign the integer value obtained from the console input.
-* For a loop condition, we put an expression, that is **`true`**, if the number of the input **is not** in the range specified in the task condition.
+* For a loop condition, we put an expression, that is **`true`**, if the number of the input **is not** in the range specified in the problem condition.
 * In **the body of the loop**: we print a message "**Invalid number!**" on the console, and then we assign a new value to **`num`** from the console input.
 * Having validated the input number, we print its value outside the body of the loop.
 
@@ -154,7 +154,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 ## Greatest Common Divisor (GCD)
 
-Before proceeding to the next task, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
+Before proceeding to the next problem, it is necessary to get acquainted with the definition of the **greatest common divisor** (**GCD**).
 
 **Definition of GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that divides **simultaneously** both **a** and **b** without a remainder. For example:
 
@@ -170,7 +170,7 @@ Before proceeding to the next task, it is necessary to get acquainted with the d
 
 ## The Euclidean algorithm
 
-In the next task, we will use **the Euclidean algorithm**, one of the first published algorithms for finding the GCD:
+In the next problem, we will use **the Euclidean algorithm**, one of the first published algorithms for finding the GCD:
 
 **Until** we reach a remainder of 0:
 
@@ -191,7 +191,7 @@ print а;
 
 Enter **integers** **a** and **b** and find **GCD(a, b)**.
 
-We will solve the task using **the Euclidean algorithm**:
+We will solve the problem using **the Euclidean algorithm**:
 
 * We create **`a`** and **`b`** variables, to which we assign the **integer** values obtained from the console input.
 * For a loop condition, we put an expression that is **`true`** if the **`b`** number **is different** than **0**.
@@ -242,7 +242,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 Sum the digits of a **positive** integer **n**. For example, if **n = 5634**, the result will be: 5 + 6 + 3 + 4 = **18**.
 
-We can use the following idea to solve the task:
+We can use the following idea to solve the problem:
 
 * We create the variable **`n`** to which we assign a value equal to the number entered by the user.
 * We create a second variable - **`sum`**, with the initial value of 0. We will use it to calculate and store the result.
@@ -290,7 +290,7 @@ We already know that the infinite loop executes a specific code to infinity, but
 
 ### Example: Prime numbers
 
-The next task we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
+The next problem we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
 
 **Definition**: an integer is **prime** when it is divisible without remainder only to itself and 1. By definition, prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
@@ -338,7 +338,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 Write a program that checks if a number **n** is even – if it is, prints it on the screen. An even number is each number that is divisible by 2 without a remainder. In the case of an invalid number, it should be re-input, and a message stating that the number is not even should be displayed. 
 
-Here is an idea how to solve the task:
+Here is an idea how to solve the problem:
 
 * We create a variable **`n`**, to which we assign an initial value of **0**.
 * We create an infinite **`while`** loop, and put **`true`** as a condition.
@@ -361,7 +361,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 ## Nested loops and the break operator
 
-Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3, and the second one is decreasing from 3 to 1. The task must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
+Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3, and the second one is decreasing from 3 to 1. The problem must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
 
 The desired result is:
 
@@ -381,7 +381,7 @@ Why does this happen? As we can see, the result ** is missing '1 1' **. When the
 <td>When we use the <b><code>break</code></b> operator in a <b>nested loop</b>, it interrupts the execution of the inner loop <b>only</b>.</td>
 </tr></table>
 
-What is **the correct solution**? One way of solving this task is by declaring a **`bool` variable**, which keeps track of whether the loop should continue. In case of need to exit (from all nested loops), the variable is set to **'true'** and exits the internal cycle with a **'break'**, and at the next check, will exit from the outer loop. Here is a sample implementation of this idea:
+What is **the correct solution**? One way of solving this problem is by declaring a **`bool` variable**, which keeps track of whether the loop should continue. In case of need to exit (from all nested loops), the variable is set to **'true'** and exits the internal cycle with a **'break'**, and at the next check, will exit from the outer loop. Here is a sample implementation of this idea:
 
 ![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
@@ -410,7 +410,7 @@ The **`try-catch`** construction has different types, but for now, we will get a
 
  ![](assets/chapter-7-1-images/00.Try-catch-01.png)
  
-In the next task, we will see how to handle a situation where the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
+In the next problem, we will see how to handle a situation where the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
 
 ### Example: Handling invalid numbers with try-catch
 
@@ -437,11 +437,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits), or texts that do not contain numbers.
 
 
-## Tasks with loops
+## problems with loops
 
-In this chapter, we have introduced several new types of loops that we can use to make repetitions with more complex program logic. Let's solve several tasks using the new knowledge.
+In this chapter, we have introduced several new types of loops that we can use to make repetitions with more complex program logic. Let's solve several problems using the new knowledge.
 
-### Task: Fibonacci numbers
+### problem: Fibonacci numbers
 
 In mathematics, Fibonacci numbers form a series that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**
 
@@ -467,7 +467,7 @@ Write a program in which we enter an **integer** number **n** and calculate the 
 
 #### Hints and guidelines
 
-An idea to solve the task:
+An idea to solve the problem:
 
 * We create a **`n` variable**, to which we assign the **integer** value obtained from the console input.
 * We create **`f0`** и **`f1`** variables to which we assign value **1** since this is how the sequence begins.
@@ -487,7 +487,7 @@ Sample implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#13](https://judge.softuni.org/Contests/Practice/Index/659#13).
 
 
-### Task: Numbers pyramid
+### problem: Numbers pyramid
 
 Print **the numbers 1… n in a pyramid** as in the examples below. On the first line, we print one number on the second line, we print two numbers, on the third line, we print three numbers, etc., until the numbers run out. On the last line, we print as many numbers as we have left until we get to **n**.
 
@@ -499,7 +499,7 @@ Print **the numbers 1… n in a pyramid** as in the examples below. On the first
 
 #### Hints and guidelines
 
-We can solve the task with **two nested loops** (by rows and columns) by printing in them and leaving when reaching the last number. Here is the idea, described in more detail:
+We can solve the problem with **two nested loops** (by rows and columns) by printing in them and leaving when reaching the last number. Here is the idea, described in more detail:
 
 * We create a **`n`** variable, to which we assign the integer value obtained from the console input.
 * We create a **`num`** variable with an initial value of 1. It will keep the number of printed numbers. At each iteration, we will **increase** it by **1** and print it.
@@ -521,7 +521,7 @@ Here is a sample implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#14](https://judge.softuni.org/Contests/Practice/Index/659#14).
 
 
-### Task: Numbers table
+### problem: Numbers table
 
 Print the numbers 1 … n in a table as per the examples below.
 
@@ -533,7 +533,7 @@ Print the numbers 1 … n in a table as per the examples below.
 
 #### Hints and guidelines
 
-We can solve the task with **two nested loops** and a little bit of calculations inside:
+We can solve the problem with **two nested loops** and a little bit of calculations inside:
 
 * We read from the console the table size in an integer variable **`n`**.
 * We create a **`for`** loop, which is responsible for the table rows. We name the loop variable as **`row`** and assign it an initial **value 0**. We set **`row < n`** as a condition. The size of the step is 1.
