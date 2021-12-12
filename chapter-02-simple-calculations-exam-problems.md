@@ -94,8 +94,8 @@ Print on the console one integer number: **the number of working places** in the
 
 | Input   | Output | Diagram |
 |---------|-------|--------|
-|15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
-|8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
+|15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.PNG)       | 
+|8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.PNG)        |
 
 #### Explanations to the examples
 
@@ -126,27 +126,27 @@ It is time to go to the solution. We can divide it into three smaller problems:
 
 The first thing we have to do is read the input from the console. With **`scanner.nextLine()`** we read the values from the console and with the function **`Double.parseDouble(…)`** we convert the string (text) value into **`double`**. 
 
-![](assets/chapter-2-2-images/01.Training-lab-03.png)
+![](assets/chapter-2-2-images/01.Training-lab-03.PNG)
 
 Let’s move to the calculations. The special part here is that after dividing the numbers, we have to store only the integer part of the result in a variable. 
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Search Google!</b> Whenever we have an idea of how to solve a particular problem, but we do not know how to write it in Java, the easiest way to solve it is by looking for information on the net. If we are dealing with a problem that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
 In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. Аs the method works with **`double`** data type, we create variables of the same type for the number of rows and columns.
 
-![](assets/chapter-2-2-images/01.Training-lab-04.png)
+![](assets/chapter-2-2-images/01.Training-lab-04.PNG)
 
 As a second solution, we can use: As we already know, the operator for division **`/`** operates differently on integers and floating-point numbers. **When dividing integer with integer** (for example **`int`**), **the result is also an integer**. Therefore, we can search for a way to convert the floating-point numbers of the height and the width of the training lab into integers and then divide them.
 
 In this case, there could be **data loss** after removing the fractional part, so it is necessary for the conversion to be indicated **explicitly** (explicit typecasting). To indicate explicit conversion, we use the operator for converting data **`(type)`** by replacing the word **type** with the needed **data type** and place it **before the variable**. More for converting data types you can find out in the book ["Въведение в програмирането с Java", стр. 119-123](https://introprogramming.info/intro-java-book/read-online/glava3-operatori-i-izrazi/#_Toc243587227).
 
-![](assets/chapter-2-2-images/01.Training-lab-05.png)
+![](assets/chapter-2-2-images/01.Training-lab-05.PNG)
 
 With **`System.out.println(…)`** we print the result on the console.
 
-![](assets/chapter-2-2-images/01.Training-lab-06.png)
+![](assets/chapter-2-2-images/01.Training-lab-06.PNG)
 
 ### Testing in the Judge system
 
@@ -209,15 +209,15 @@ It is time to move on to the solution. We can mentally divide it into three subp
 
 To read the input data, we declare variables, being careful to name them in such a way that it tells us what values the variables contain. With **`scanner.nextLine()`** we read values from the console and with the functions **`Integer.parseInt(…)`** and **`Double.parseDouble(…)`** we convert the particular string value into **`int`** and **`double`**.
 
-![](assets/chapter-2-2-images/02.Vegetable-market-01.png)
+![](assets/chapter-2-2-images/02.Vegetable-market-01.PNG)
 
 We do the necessary calculations: 
 
-![](assets/chapter-2-2-images/02.Vegetable-market-02.png)
+![](assets/chapter-2-2-images/02.Vegetable-market-02.PNG)
 
 The problem does not specify special output format, so we just need to calculate the required value and print it on the console. As in mathematics and so in programming, the division has a priority over addition. However, in this problem first, we have to **calculate the sum** of the two input values, and then we have to **divide by 1.94**. To give priority to the addition, we can use brackets. With **`System.out.println(…)`**, we print the output on the console.  
 
-![](assets/chapter-2-2-images/02.Vegetable-market-03.png)
+![](assets/chapter-2-2-images/02.Vegetable-market-03.PNG)
 
 ### Testing in the Judge system
 
@@ -265,7 +265,7 @@ Print on the console **two numbers**, еach on a new line: **number of tiles** n
 
 Let's make a drawing to clarify the problem requirements. It can look like this:
 
-![](assets/chapter-2-2-images/03.Change-tiles-01.png)
+![](assets/chapter-2-2-images/03.Change-tiles-01.PNG)
 
 ### An idea for a solution
 
@@ -286,16 +286,16 @@ As in the previous problems, we can divide the solution into three subproblems:
 
 The first thing we have to do is go through **the input data** of the problem. It is important to pay attention to the sequence of reading input data. With **`scanner.nextLine()`** we read values from the console and with **`Integer.parseInt(…)`** and **`Double.ParseInt(…)`** we convert the particular string value into **`int`** and **`double`**.
 
-![](assets/chapter-2-2-images/03.Change-tiles-02.png)
+![](assets/chapter-2-2-images/03.Change-tiles-02.PNG)
 
 Once we have initialized the variables and saved the corresponding values in them, we proceed to the **calculations**. As the values of the variables **`n`**, **`a`** and **`b`** that we work with are stored in variables of type **`int`**, we can also declare for the results **variables of the same type**.  
 
 
-![](assets/chapter-2-2-images/03.Change-tiles-03.png)
+![](assets/chapter-2-2-images/03.Change-tiles-03.PNG)
 
 The variables **`w`** and  **`h`** are of type **`double`**, so for the **area of a single tile** we create a variable of the same type. Finally **we calculate the values that we have to print** on the console. **The number** of needed **tiles** we get by **dividing the area that needs to be covered by the area of a single tile**. When dividing two numbers, one of which is **floating-point number** the result is also a **floating-point number**. For the calculations to be correct we store the result in a variable of type **`double`**. The problem does not specify special formatting or rounding of the output, so we just print the values with **`System.out.println(…)`**. 
 
-![](assets/chapter-2-2-images/03.Change-tiles-04.png)
+![](assets/chapter-2-2-images/03.Change-tiles-04.PNG)
 
 ### Testing in the Judge system
 
@@ -364,23 +364,23 @@ After we have built an idea on how to solve the problem and we have chosen the d
 
 **We declare the variables** that we are going to use and again we carefully have to choose **meaningful names** in such a way that it tells us what values the variables contain. We initialize their values: with **`scanner.nextLine()`**, we read the input numbers from the console and convert the string entered by the user to **`int`** or **`double`**. 
 
-![](assets/chapter-2-2-images/04.Money-01.png)
+![](assets/chapter-2-2-images/04.Money-01.PNG)
 
 We do the necessary calculations: 
 
-![](assets/chapter-2-2-images/04.Money-02.png)
+![](assets/chapter-2-2-images/04.Money-02.PNG)
 
-![](assets/chapter-2-2-images/04.Money-03.png)
+![](assets/chapter-2-2-images/04.Money-03.PNG)
 
 Finally, we **calculate the commission fee value** and **subtract it from the sum in EUR**. Let's pay attention on this: **`euro -= commission * euro`**. It is the shortcut to write **`euro = euro - (commission * euro)`**. In this case, we use a **combined assignment operator** **`-=`**, which **subtracts the right value of the operand from the one to the left**. The operator for multiplication **`*`** has **a higher priority** than the combined operator than the expression **`commission * euro`** is performed first. Then its value is subtracted from the value to the left of the operand.
 
 The problem does not specify special formatting or rounding of the result, so we just have to calculate the output and print it on the console. 
 
-![](assets/chapter-2-2-images/04.Money-04.png)
+![](assets/chapter-2-2-images/04.Money-04.PNG)
 
 Let's pay attention to something that applies to all other problems of this type: written like that, the solution of the problem is pretty detailed. As the problem is not too complex, we could write one complex expression, where after we read the input data, we calculate the output. For example, such an expression would look like this:
 
-![](assets/chapter-2-2-images/04.Money-05.png)
+![](assets/chapter-2-2-images/04.Money-05.PNG)
 
 This code would print a correct result, but it is **hard to read**. It won't be easy to find out how it works, and whether if it contains any mistakes, as well as finding such and correcting them. It is better to **instead of one complex expression, to write a few simpler ones** and to store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable. 
 
@@ -439,11 +439,11 @@ Again: after we have an idea on how to solve the problem, and we have considered
 
 **We declare the variables** that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseInt/Double(…)`**. 
 
-![](assets/chapter-2-2-images/05.Daily-earnings-01.png)
+![](assets/chapter-2-2-images/05.Daily-earnings-01.PNG)
 
 We do the necessary calculations:
 
-![](assets/chapter-2-2-images/05.Daily-earnings-02.png)
+![](assets/chapter-2-2-images/05.Daily-earnings-02.PNG)
 
 We could write an expression that calculates the annual income without brackets as well. Multiplication is an operation that has a higher priority over addition and performs first. Despite that, **it is a good practice to use brackets when using more operators** because the code becomes **more easily readable** and chances of making a mistake are smaller. 
 
@@ -451,7 +451,7 @@ Finally, we have to print the result on the console. We notice that **the number
 
 The final result is as follows:
 
-![](assets/chapter-2-2-images/05.Daily-earnings-03.png)
+![](assets/chapter-2-2-images/05.Daily-earnings-03.PNG)
 
 ### Testing in the Judge system
 

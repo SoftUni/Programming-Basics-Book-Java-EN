@@ -65,11 +65,11 @@ It is possible that such a description may look **misleading** and incomplete at
 
 For **reading** data from the **console**, we use **`Scanner`**:
 
-![](assets/chapter-8-2-images/01.Distance-01.png)
+![](assets/chapter-8-2-images/01.Distance-01.PNG)
 
 By the problem condition **input data** is being entered on **four** separate rows, therefore, we should execute the previous code a total of four times. 
 
-![](assets/chapter-8-2-images/01.Distance-02.png)
+![](assets/chapter-8-2-images/01.Distance-02.PNG)
 
 To perform **calculations**, we choose to use a type **`double`**.
 
@@ -77,15 +77,15 @@ You can read more about the different **data types**in Java programming language
 
 This way, we successfully solved the first sub-problem. The next step is to **convert the input data** into appropriate **types** to perform the needed calculations. We choose to use **`Integer`** or **`int`** type because the condition of the problem says that the input data must be within a particular range, for which this data type is sufficient. We will do the **conversion** in the following way:
 
-![](assets/chapter-8-2-images/01.Distance-03.png)
+![](assets/chapter-8-2-images/01.Distance-03.PNG)
 
 Initially, **we save** a variable that we will use multiple times. This approach of centralization gives us **flexibility** and the opportunity to change the overall result of the program with minimal effort. In case, we need to change the value, we need to do it **only in one place in the code**, which saves us time and effort.
 
-![](assets/chapter-8-2-images/01.Distance-04.png)
+![](assets/chapter-8-2-images/01.Distance-04.PNG)
 
 <table>
 <tr>
-<td width=10%><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<td width=10%><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><strong>Avoiding repetitive code</strong> (centralization of program logic) in the problems that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large-scale applications in a real work environment, and practicing it in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
@@ -98,11 +98,11 @@ We calculate the **travel time** (in hours) by dividing the time by 60 (minutes 
 * The next step is to **decrease the speed** by **5%**, as per the problem description.
 * We calculate the **remaining distance** as described in the first two points.
 
-![](assets/chapter-8-2-images/01.Distance-05.png)
+![](assets/chapter-8-2-images/01.Distance-05.PNG)
 
 So far, we solved two of the most important sub-problems, namely the **data input** and **their processing**. What remains is to **calculate the result**. Since it is required to **format it** up to **2** characters after the decimal point, we can do it as follows:
 
-![](assets/chapter-8-2-images/01.Distance-06.png)
+![](assets/chapter-8-2-images/01.Distance-06.PNG)
 
 If you have worked correctly and run the program with the input data from the problem condition, you will see that it works correctly.
 
@@ -158,7 +158,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 <table>
 <tr>
-<td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<td width="10%"><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Pay attention that the condition state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>Math.ceil(…)</strong></code>.
 </td>
 </tr>
@@ -218,19 +218,19 @@ Print on the console 1 number – **the price of flowers**, formatted up to the 
 
 After carefully reading the condition, we understand that we need to do **simple calculations**, but this time we will need **additional** logical **checks**. We need to pay more **attention** to the moment of **making changes** in the final price, so that we can properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. To begin with, we will separate the already **defined** values into **variables**, as we did in the previous problems:
 
-![](assets/chapter-8-2-images/03.Flowers-01.png)
+![](assets/chapter-8-2-images/03.Flowers-01.PNG)
 
 We do the same for the rest of the defined values:
 
-![](assets/chapter-8-2-images/03.Flowers-02.png)
+![](assets/chapter-8-2-images/03.Flowers-02.PNG)
 
 Our next sub-problem is to **read** correctly **the input** data from the console. We will do it in the familiar way, but this time we will **combine two** separate functions – one for **reading** a line from the console and another one for its **conversion** into a numeric data type:
 
-![](assets/chapter-8-2-images/03.Flowers-03.png)
+![](assets/chapter-8-2-images/03.Flowers-03.PNG)
 
 Let's think of the most appropriate way to **structure** our programming logic. It is clear from the condition that the path of the program is divided mainly into two parts: **spring / summer** and **autumn / winter**. We can do the separation by conditional construction, by storing variables in advance for the **prices** of the individual flowers and the **final result**.
 
-![](assets/chapter-8-2-images/03.Flowers-04.png)
+![](assets/chapter-8-2-images/03.Flowers-04.PNG)
 
 What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the final result. 
 
@@ -273,21 +273,21 @@ The results must be **formatted up to the second symbol** after the decimal poin
 
 From the condition, we see that **first** we will read the **number** of students, and then, **their grades**. For that reason, **first** we will read the **number** of students and save it in a variable of **`int`** type. To read and process the grades themselves, we will use a **`for`** loop. The value of the **`int`** variable will be the **end** value of the **`i`** variable from the loop. This way, at **each** iteration of the loop will read **each one of the grades**.  
 
-![](assets/chapter-8-2-images/04.Grades-01.png)
+![](assets/chapter-8-2-images/04.Grades-01.PNG)
 
 Before executing the code of the **`for`** loop, we will create variables where we will store **the number of students** for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99, and grades above 5. We will also need one more variable, where we will store **the sum of all grades**, via which we will calculate the average grade of all students.
 
-![](assets/chapter-8-2-images/04.Grades-02.png)
+![](assets/chapter-8-2-images/04.Grades-02.PNG)
 
 We run the **loop**, and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be **`double`** type, and upon each iteration, we will check **what is its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to increase the **total** amount of the grades, which we also track.
 
-![](assets/chapter-8-2-images/04.Grades-03.png)
+![](assets/chapter-8-2-images/04.Grades-03.PNG)
 
 What **percentage** is occupied by a **group of students** from the total number, we can calculate by **multiplying the number of students** from the respective group by **100**, and then divide by the **total number of students**.
 
 <table>
 <tr>
-<td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<td width="10%"><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Pay close attention to the numeric data type that you work with upon doing these calculations.
 </td>
 </tr>
@@ -388,19 +388,19 @@ Print on a single line **all combinations**, corresponding to the requirements, 
 
 According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com](https://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
 
-![](assets/chapter-8-2-images/06.Letters-01.png)
+![](assets/chapter-8-2-images/06.Letters-01.PNG)
 
 Let's think of how we can achieve the **final result**. The problem condition is to print all characters from the starting to the end (by skipping a particular letter), what should we do? 
 
 The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. One of the advantages of Java is that we have the opportunity to use a different data type for a loop variable:
 
-![](assets/chapter-8-2-images/06.Letters-02.png)
+![](assets/chapter-8-2-images/06.Letters-02.PNG)
 
 The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the end result of our problem? We must find a **way** to print **3 characters**, as required, instead of **1**. The execution of the program is very similar to a gaming machine. We usually win there if we manage to arrange several identical symbols. Let's say that the machine has space for three characters. When we **stop** on a particular **character** on the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a gaming machine works.
 
 We use a **loop** that runs through **all characters** from the starting to the end letter, included. On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e., does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way, we have three nested loops, as we will print the characters in the body of the **latter**.
 
-![](assets/chapter-8-2-images/06.Letters-03.png)
+![](assets/chapter-8-2-images/06.Letters-03.PNG)
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space.
 

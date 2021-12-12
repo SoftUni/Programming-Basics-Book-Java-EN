@@ -21,7 +21,7 @@ Let **the Tribonacci sequence** start with **1**, **2** and **3**. This means th
 
 At the same time, let the **numbers in the spiral** begin with **5**, and the spiral increases by **2** at each step.
 
-<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.png" style="float: right; height: 250px;" />
+<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.PNG" style="float: right; height: 250px;" />
 
 Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37, and so on. We see that **37** is the first number to be found inside the Tribonacci sequence and the spiral one, and that is the desired solution to the problem.
 
@@ -64,7 +64,7 @@ The problem seems quite complicated, so we will break it into simpler sub-proble
 
 The first step in solving the problem is to read and process the input. Input data consists of **5 integers**: **3** for the Tribonacci sequence and **2** for the numerical spiral.
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-02.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-02.PNG)
 
 Once we have the input data, we need to think about how we will generate the numbers in the two sequences.
 
@@ -72,7 +72,7 @@ Once we have the input data, we need to think about how we will generate the num
 
 For the Tribonacci sequence, we will always **summing up the previous three values** and then move the values of those numbers (the three previous ones) to one position in the sequence, i.e., the value of the first one must accept the value of the second one, and so on. When we are ready with the number, we will store its value in **an array**. Since the problem description states that the numbers in the sequences do not exceed 1,000,000, we can stop generating this range at 1,000,000.
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-03.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-03.PNG)
 
 #### Generating numerical spiral
 
@@ -81,11 +81,11 @@ We need to think of **a relation** between numbers in the numerical spiral so we
 Thus, we see that for the first two we have **`the last number + 1 * the step`**, the next two we add with the **`2 * the step`**, and so on. 
 Every time we want to get to the next number of the spiral, we will have to make such calculations.
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-04.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-04.PNG)
 
 What we have to take care of is **for every two numbers, our multiplier** (let's call it "coefficient") **must increase by 1** (**` spiralStepMul++`**), which can be achieved with a simple check (**`spiralCount % 2 == 0`**). The whole code from the generation of the spiral in **an array** is given below.
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-05.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-05.PNG)
 
 #### Finding common number for the sequences
 
@@ -93,11 +93,11 @@ Once we have generated the numbers in both sequences, we can combine them and bu
 
 We will do a **linear** search in the second array. We will leave, the more curious readers, to optimize it using the technique called **binary search** because the second array is generated in sorted form, i.e., it meets the requirement to apply this type of search. The code for finding our solution will look like this:
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-06.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-06.PNG)
 
 The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution** that generates the numbers and works directly with them instead of keeping them in an array. On **every step**, we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of **which sequence is the smaller one, and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"** until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution.
 
-![](assets/chapter-9-1-images/01.Crossing-sequences-07.png)
+![](assets/chapter-9-1-images/01.Crossing-sequences-07.PNG)
 
 ### Testing in the Judge system
 
@@ -151,19 +151,19 @@ Having the start and end year, it is good to understand how we will go through e
 
 For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class, in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console, and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as the first argument the year, as second argument the month, and as the third argument the day of the month:
 
-![](assets/chapter-9-1-images/02.Magic-dates-01.png)
+![](assets/chapter-9-1-images/02.Magic-dates-01.PNG)
 
 Once we have the start date, we want to create a **loop that runs until we exceed the final year** (or until we pass December 31 in the final year if we compare the full dates), increasing each day by one day.
 
 To increase by one day in each rotation, we will use a method of **`LocalDate` – `plusDays(…)`**, which will add one day to the current date. The method will take care instead of us whether to skip the next month, how many days there is a month, and everything around the leap years.
 
-![](assets/chapter-9-1-images/02.Magic-dates-02.png)
+![](assets/chapter-9-1-images/02.Magic-dates-02.PNG)
 
 **Caution**: since the **`LocalDate.plusDays(…)`** method returns the "new" date, it is important to assign the result, not just to call the method!
 
 Finally, our loop may look like this:
 
-![](assets/chapter-9-1-images/02.Magic-dates-03.png)
+![](assets/chapter-9-1-images/02.Magic-dates-03.PNG)
 
 **Note**: we can achieve the same result with a **`for` loop**: the **initialization** of the date goes to the first part of **`for`**, the condition is preserved and the** step** is the increase by 1 day.
 
@@ -171,25 +171,25 @@ Finally, our loop may look like this:
 
 Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**), and **4 for the year** (**`d5`** to **`d8`**). It means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e., not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. Using the operations of division and remainder on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`**, and **`getYear()`** properties, we can retrieve each digit.
 
-![](assets/chapter-9-1-images/02.Magic-dates-04.png)
+![](assets/chapter-9-1-images/02.Magic-dates-04.PNG)
 
 Let us also explain one of the more interesting lines here. Take, for example, the second digit of the year (**`d6`**). We divide the year by 100, and we take a remainder of 10. What do we do? First, we eliminate the last 2 digits of the year by dividing by 100 (Example: **`2018/100 = 20`**). With the remainder of 10, we take the last digit of the resulting number (**`20 % 10 = 0`**) and so we get 0, which is the second digit of 2018.
 
 What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications** as shown in the example, we will apply a grouping. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**, we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`** for grouping when we have multiplication and addition. Applying the same simplification for the other multiplications, we get the following formula:
 
-![](assets/chapter-9-1-images/02.Magic-dates-05.png)
+![](assets/chapter-9-1-images/02.Magic-dates-05.PNG)
 
 #### Printing the output
 
 Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight**, to know if it should be printed, or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data as required in the problem, we will use **`DateTimeFormatter`** class.
 
-![](assets/chapter-9-1-images/02.Magic-dates-06.png)
+![](assets/chapter-9-1-images/02.Magic-dates-06.PNG)
 
 ***Caution***: Since we iterate over the dates from initial to final, they will always be ordered in ascending order as it is in the requirements.
 
 Finally, if we have not found an eligible date, we will have a **`false`** value in the **`found`** variable, and we will be able to print **`No`**.
 
-![](assets/chapter-9-1-images/02.Magic-dates-07.png)
+![](assets/chapter-9-1-images/02.Magic-dates-07.PNG)
 
 ### Testing in the Judge system
 
@@ -262,7 +262,7 @@ The result should be printed on the console as a sequence of strings, **sorted i
 
 Like every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
 
-![](/assets/chapter-9-1-images/03.Five-special-letters-01.png)
+![](/assets/chapter-9-1-images/03.Five-special-letters-01.PNG)
 
 We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters**, and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
 
@@ -270,15 +270,15 @@ We have several main points in the problem – **generating all combinations** w
 
 To generate **all combinations with a length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. To generate **any combinations of length 2**, using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, and we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`**, and **`i5`**.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-02.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-02.PNG)
 
 Now that we have all 5-digit combinations, we must find a way to "turn" the five digits into a word with the letters from '**a**' to '**e**'. One of the ways to do that is to **predefine a simple string that contains the letters** that we have
 
-![](assets/chapter-9-1-images/03.Five-special-letters-03.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-03.PNG)
 
 and **for each digit, we take the letter from the particular position.** This way, the number **00000** will become **"aaaaa"**, and the number **02423** will become **"acecd"**. We can create the 5-letter string in the following way.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-04.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-04.PNG)
 
 **Another way**: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`'a' + i`** return the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**,  **`'c'`** in case **`i = 2`**, etc.
 
@@ -290,11 +290,11 @@ This way we already have generated all 5-letter combinations and can proceed wit
 
 Once we have the finished string, we have to remove all the repeating symbols. We will do this by adding **the letters from left to right in a new string, and each time before adding a letter, we will check if it already exists** – if it does, we will skip it, and if it doesn't, we will add it. To begin with, we will add the first letter to the starting string.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-05.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-05.PNG)
 
 Then we will do the same with the other 4, checking each time with the following condition and the **`.indexOf(…)`** method. We can use a loop by **`fullWord`** (leaving it to the reader for exercise), and it can be done lazily by copy-paste.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-06.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-06.PNG)
 
 The **`.indexOf(…)`** method returns **the index of the particular element if it is found, or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter, and we'll not add it.
 
@@ -302,11 +302,11 @@ The **`.indexOf(…)`** method returns **the index of the particular element if 
  
 Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter, we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example, by using a **`switch`** construction.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-07.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-07.PNG)
 
 Once we have the value of that letter, we should **multiply it by its position**. Because the indexes in the string differ by 1 from the actual positions, i.e., index 0 is position 1, index 1 is position 2, etc., we will add 1 to the indexes.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-08.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-08.PNG)
 
 All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
@@ -318,13 +318,13 @@ Whether a word needs to be printed is determined by its weight. We need a condit
 
 The words are **separated with a space**, and we will accumulate them in an intermediate variable **`result`**, which is defined as an empty string at the beginning.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-09.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-09.PNG)
 
 #### Final touches
 
 The condition is met **unless we do not have a single word in the entered range**. To find out, if we have found a word, we can check whether the string **`result`** has its initial value (i.e., an empty string). If it does, we print **`No`** else print the whole string without the last space (using the **`.trim ()`**) method.
 
-![](assets/chapter-9-1-images/03.Five-special-letters-10.png)
+![](assets/chapter-9-1-images/03.Five-special-letters-10.PNG)
 
 ### Testing in the Judge system
 

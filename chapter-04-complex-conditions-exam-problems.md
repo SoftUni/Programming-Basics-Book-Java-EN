@@ -15,7 +15,7 @@ if (condition1) {
 }
 ```
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
     <td>Remember that <b>it is not a good practice</b> to write <b>deeply nested conditional statements</b> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
@@ -94,32 +94,32 @@ If the student arrives with more than one minute difference compared to the exam
 
 ### Hints and guidelines
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
     <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
 #### Input data processing
 
 According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-01.PNG)
 
 Looking at the expected output, we can create variables that contain the different output data types to avoid using the so-called **"magic strings"** in the code.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-02.PNG)
 
 #### Calculations
 
 After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **starting time** of the exam **in minutes** for easier and more accurate comparison.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-03.PNG)
 
 Let's also calculate the **arrival time** of the student.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-04.PNG)
 
 It remains for us to calculate the difference between the two times, to determine **when** and **what time compared to the exam time** the student has arrived.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-05.PNG)
 
 Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts: 
 
@@ -132,7 +132,7 @@ According to the condition, we will check whether the difference in times is **m
 
 In all other cases, we assume that the student is **late**, which we did **by default**. Therefore, no additional check is needed.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-06.PNG)
 
 Finally, we need to find out and print **what is the time difference between exam start time and student arrival time**. Also, whether this difference shows the time of arrival **before or after the exam start**.
 
@@ -140,19 +140,19 @@ We also check whether the time difference is **more than** one hour, to print ho
 
 We also need to do one more check – whether the time of the student arrival is **before** or **after** the exam start time.
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.PNG)
 
 #### Printing the result
 
 Finally, it remains to print the result on the console. According to the requirements, if the student arrived right in time (**not even a minute difference**), we do not need to print a second result. This is why we do the following **check**:
 
-![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
+![](assets/chapter-4-2-images/01.On-time-for-the-exam-08.PNG)
 
 Printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
 
 Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web aplication**. Then, on how many places in the code we need to do changes? Are you sure you won't miss some places?
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It must be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 ### Testing in the Judge system
@@ -211,9 +211,9 @@ Like the other problems, we can separate the solution of our problem into the fo
 
 While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`BigDecimal`** as a type for the budget and **`string`** for the season. 
 
-![](assets/chapter-4-2-images/02.Trip-01.png)
+![](assets/chapter-4-2-images/02.Trip-01.PNG)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
     <td>Always consider, what is the **type** in the input data, as well as to what data type they need to be converted to, so created program constructs to work correctly!</td>
 </tr></table>
 
@@ -223,7 +223,7 @@ While carefully reading the requirements, we understand that we expect **two** l
 
 Let's create and initialize the variables needed for applying the logic and calculations.
 
-![](assets/chapter-4-2-images/02.Trip-02.png)
+![](assets/chapter-4-2-images/02.Trip-02.PNG)
 
 Similar to the example in the previous problem, we can initialize variables with some of the output results, in order to spare additional initialization.
 
@@ -242,31 +242,31 @@ DecimalFormat formatter = new DecimalFormat("0.00");
 
 Here is a sample code that we can use to implement the described logic above:
 
-![](assets/chapter-4-2-images/02.Trip-03.png)
+![](assets/chapter-4-2-images/02.Trip-03.PNG)
 
 After, we continue with:
 
-![](assets/chapter-4-2-images/02.Trip-04.png)
+![](assets/chapter-4-2-images/02.Trip-04.PNG)
 
 and finish the conditions with:
 
-![](assets/chapter-4-2-images/02.Trip-05.png)
+![](assets/chapter-4-2-images/02.Trip-05.PNG)
 
 We always can initialize the variable with a given value and then make only one check. **This saves us a logic step**.
 
 For example, the following code:
 
-![](assets/chapter-4-2-images/02.Trip-03.png)
+![](assets/chapter-4-2-images/02.Trip-03.PNG)
 
 can be shortened to this:
 
-![](assets/chapter-4-2-images/02.Trip-06.png)
+![](assets/chapter-4-2-images/02.Trip-06.PNG)
 
 #### Printing the result
 
 It remains to print the obtained result on the console:
 
-![](assets/chapter-4-2-images/02.Trip-07.png)
+![](assets/chapter-4-2-images/02.Trip-07.PNG)
 
 ### Testing in the Judge system
 
@@ -319,7 +319,7 @@ The problem is not complicated, but there are many lines of code to write.
 
 After reading the condition, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
-![](assets/chapter-4-2-images/03.Operations-01.png)
+![](assets/chapter-4-2-images/03.Operations-01.PNG)
 
 #### Calculations
 
@@ -331,7 +331,7 @@ Reading the condition carefully, we understand that there are cases where we don
 
 Therefore, we can first check if the second number is **`0`** (zero), whether the operation is **division** or **modular division**, and then initialize the output.
 
-![](assets/chapter-4-2-images/03.Operations-03.png)
+![](assets/chapter-4-2-images/03.Operations-03.PNG)
 
 Let's put the result as a value upon initializing the **`output`** parameter. This way we, can make only **one check** - whether it is necessary to **recalculate** and **replace** this result. 
 
@@ -339,7 +339,7 @@ Based on the approach that we choose, our next check will be either a simple **`
 
 From the condition we can see that for **addition** (**`+`**), **subtraction** (**`-`**) or **multiplication** (**`*`**) the expected output has the same structure: **"{N1} {operator} {N2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure.
 
-![](assets/chapter-4-2-images/03.Operations-04.png)
+![](assets/chapter-4-2-images/03.Operations-04.PNG)
 
 We finish the solution by applying conditions for addition, subtraction and multiplication:
 
@@ -349,17 +349,17 @@ For short and clear check, such as the above example for even and odd numbers, y
 
 **Without using a ternary operator** the code is longer but easy to read:
 
-![](assets/chapter-4-2-images/03.Operations-06.png)
+![](assets/chapter-4-2-images/03.Operations-06.PNG)
 
 **Upon using a ternary operator** the code is much shorter but may require additional efforts to read and understand the logic:
 
-![](assets/chapter-4-2-images/03.Operations-07.png)
+![](assets/chapter-4-2-images/03.Operations-07.PNG)
 
 #### Printing the output
 
 Finally, we need to show the calculated result to the console:
 
-![](assets/chapter-4-2-images/03.Operations-08.png)
+![](assets/chapter-4-2-images/03.Operations-08.PNG)
 
 ### Testing in the Judge system
 
@@ -422,13 +422,13 @@ Let's read the condition carefully and look at what we expect to get as an **inp
 
 To begin with, let's process and save the input data in **appropriate variables**:
 
-![](assets/chapter-4-2-images/04.Match-tickets-01.png)
+![](assets/chapter-4-2-images/04.Match-tickets-01.PNG)
 
 #### Calculations
 
 Let's create and initialize the needed variables for the calculations:
 
-![](assets/chapter-4-2-images/04.Match-tickets-02.png)
+![](assets/chapter-4-2-images/04.Match-tickets-02.PNG)
 
 Let's review the condition again. We need to do **two** different calculations. 
 
@@ -436,19 +436,19 @@ The first calculations are about what part of the budget we will have to set asi
 
 We will use a conditional construction - a series of **`if-else`** blocks.
 
-![](assets/chapter-4-2-images/04.Match-tickets-03.png)
+![](assets/chapter-4-2-images/04.Match-tickets-03.PNG)
 
 The second calculations are about what amount we will need to buy **tickets for the group**. According to the condition, it depends only on the type of tickets, we have to buy. 
 
 Let's use **`switch-case`** conditional construction.
 
-![](assets/chapter-4-2-images/04.Match-tickets-04.png)
+![](assets/chapter-4-2-images/04.Match-tickets-04.PNG)
 
 Once we have calculated the **transport** and **the tickets** costs, what remains is to calculate the final result and see **whether it will succeed** the group of fans to attend the Euro 2016 or **not** with these parameters given. 
 
 For printing the result, in order to skip one **`else` condition**, we will assume that the group can, by default, attend Euro 2016.
 
-![](assets/chapter-4-2-images/04.Match-tickets-05.png)
+![](assets/chapter-4-2-images/04.Match-tickets-05.PNG)
 
 #### Printing the result
 
@@ -514,13 +514,13 @@ According to the condition, we expect to read two lines of input data - on the f
 
 Let's process and store the input data in appropriate variables:
 
-![](assets/chapter-4-2-images/05.Hotel-room-01.png)
+![](assets/chapter-4-2-images/05.Hotel-room-01.PNG)
 
 #### Calculations
 
 Let's create and initialize the variables needed for the calculations:
 
-![](assets/chapter-4-2-images/05.Hotel-room-02.png)
+![](assets/chapter-4-2-images/05.Hotel-room-02.PNG)
 
 Looking again at the condition, we notice that our basic logic depends on what **month** we receive as input data and the number of **nights**.
 
@@ -528,17 +528,17 @@ In general, there are different approaches and ways to make the checks in questi
 
 Let's start with the first group of months: **May** and **October**. For these two months **the price for the stay is the same** for both types of accommodation - **studio** and **apartment**. Therefore, it is necessary to make an internal check against the **number of nights** to recalculate the **corresponding price** (if needed).
 
-![](assets/chapter-4-2-images/05.Hotel-room-03.png)
+![](assets/chapter-4-2-images/05.Hotel-room-03.PNG)
 
 For the following months, the **logic** and the **calculations** are **identical**. 
 
-![](assets/chapter-4-2-images/05.Hotel-room-04.png)
+![](assets/chapter-4-2-images/05.Hotel-room-04.PNG)
 
-![](assets/chapter-4-2-images/05.Hotel-room-05.png)
+![](assets/chapter-4-2-images/05.Hotel-room-05.PNG)
 
 After calculating the relevant prices and the total amount for the stay - let's prepare the formatted result. Before that, we should store it in our output **variables** - **`studioInfo`** and **`apartmentInfo`**.
 
-![](assets/chapter-4-2-images/05.Hotel-room-06.png)
+![](assets/chapter-4-2-images/05.Hotel-room-06.PNG)
 
 To calculate the output parameters, we use the **method** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**. This method **rounds a decimal number** to a **specified number of digits** after the decimal point, and we have control of any rounding type - **`RoundingMode`**. For this purpose, we give the method an integer (**`int`**) with which we indicate till which sign we want to round the number and value of a given enumeration **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). In our case, we will round the decimal number up to **two digits** after the decimal point with rounding type **`HALF_UP`**.
 

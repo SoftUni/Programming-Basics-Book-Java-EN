@@ -21,7 +21,7 @@ Write a program that draws a rectangle of **10 x 10** asterisks in the console.
 #### Hints and guidelines
 To solve the problem, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
-![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
+![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.PNG)
 
 How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the loop body, and after the iteration, a check about the state of the variable is performed. Thus the code in the loop body is executed exactly **ten times** i.e. for each row of the rectangle. In the loop body, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
@@ -42,7 +42,7 @@ Write a program that reads an integer **n** from the console, and as output, dra
 
 To perform the problem, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
-![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
+![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -60,7 +60,7 @@ Nested loops are construction in which **in the body of one loop** statement (ca
 
 Here is an **example** that illustrates the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
 
-![](assets/chapter-6-1-images/00.Nested-loops-01.png)
+![](assets/chapter-6-1-images/00.Nested-loops-01.PNG)
 
 How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
@@ -76,7 +76,7 @@ Write a program that draws on the console a square of **N x N** asterisks:
 
 The problem is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
-![](assets/chapter-6-1-images/03.Square-01.png)
+![](assets/chapter-6-1-images/03.Square-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -95,7 +95,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 The problem is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
-![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
+![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -124,7 +124,7 @@ We can solve the problem as follows:
 
 Here is an example implementation of the described logic above, with nested loops: 
 
-![](assets/chapter-6-1-images/05.Square-frame-01.png)
+![](assets/chapter-6-1-images/05.Square-frame-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -155,7 +155,7 @@ For the upper part of the rhombus (first loop) we can use the following guidelin
 
 We will use the **similar** way to output the **lower** part of the rhombus, but we leave the reader to try to do it himself. 
 
-![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
+![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -178,7 +178,7 @@ Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the co
 
 As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **in front of** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
-![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
+![](assets/chapter-6-1-images/07.Christmas-tree-01.PNG)
 
 #### Test the code in the Judge system
 
@@ -207,11 +207,11 @@ As we see in the examples below, we can apply a similar principle and divide the
 
 When drawing the top and bottom rows, use **`2 * n`** asterisks, **`n`** spaces, and **`2 * n`** asterisks as output.
 
-![](assets/chapter-6-1-images/08.Sunglasses-01.png)
+![](assets/chapter-6-1-images/08.Sunglasses-01.PNG)
 
 When printing the **middle** part, we need to **check** whether the line is **`(n-1) / 2 - 1`**, because as the example shows on **this line**, we need to print **vertical dashes** instead of spaces.
 
-![](assets/chapter-6-1-images/08.Sunglasses-02.png)
+![](assets/chapter-6-1-images/08.Sunglasses-02.PNG)
 
 #### Test the code in the Judge system
 
@@ -236,7 +236,7 @@ According to the condition of the problem, the house has dimensions of **`n` x `
 
 * The house consists of two parts: **roof and base**.
 
-![](assets/chapter-6-1-images/09.House-01.png)
+![](assets/chapter-6-1-images/09.House-01.PNG)
 
 * When **`n`** is an even number, the roof of the house is obtuse.
 * When **`n`** is odd, **the roof** is one row larger than **the base**.
@@ -254,9 +254,9 @@ According to the condition of the problem, the house has dimensions of **`n` x `
  
 We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
-![](assets/chapter-6-1-images/09.House-02.png)
+![](assets/chapter-6-1-images/09.House-02.PNG)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current problems, it is not a problem to convert directly the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
@@ -264,11 +264,11 @@ To draw **the roof**, we write down how many **asterisks** we start within a var
 * If **`n`** is **even**, they are two.
 * If **`n`** is **odd** it is one
 
-![](assets/chapter-6-1-images/09.House-03.png)
+![](assets/chapter-6-1-images/09.House-03.PNG)
 
 We calculate the length of **the roof**, and it equals half of **`n`**. Assign the result to the variable **`roofLength`*.
 
-![](assets/chapter-6-1-images/09.House-04.png)
+![](assets/chapter-6-1-images/09.House-04.PNG)
 
 It is important to note that when **`n`** is an odd number, the length of the roof is one row bigger than **the base** one. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
 
@@ -290,17 +290,17 @@ After we have calculated the length of the roof, we use a loop from 0 to **`roof
 
 * Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. Assign it in variable **`padding`**.
 
-![](assets/chapter-6-1-images/09.House-05.png)
+![](assets/chapter-6-1-images/09.House-05.PNG)
 
 * Print on the console: "**dashes**" (*`padding`** times) + "**asterisks**" (**`stars`** times) + "**dashes**" (**`padding`** times).
 
-![](assets/chapter-6-1-images/09.House-06.png)
+![](assets/chapter-6-1-images/09.House-06.PNG)
 
 * Before the iteration is over, we add 2 to **`stars`** (the number of the **asterisks**).
 
-![](assets/chapter-6-1-images/09.House-07.png)
+![](assets/chapter-6-1-images/09.House-07.PNG)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
 </tr></table>
 
@@ -308,7 +308,7 @@ After we have finished with the roof, it is time for the base. It is easier to p
 * We use loop from **0** to **n** (not inclusive).
 * We print on the console: **`|`** + **`*`** (**`n - 2`** times) + **`|`**.
 
-![](assets/chapter-6-1-images/09.House-08.png)
+![](assets/chapter-6-1-images/09.House-08.PNG)
 
 #### Test the code in the Judge system
 
@@ -359,29 +359,29 @@ We can divide (imaginary) the diamond into **two parts**:
 
 We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
-![](assets/chapter-6-1-images/10.Diamond-01.png)
+![](assets/chapter-6-1-images/10.Diamond-01.PNG)
 
 ##### Printing the upper part of the diamond
 
 We begin drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded downward.
 
-![](assets/chapter-6-1-images/10.Diamond-02.png)
+![](assets/chapter-6-1-images/10.Diamond-02.PNG)
 
 After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded downward).
 
 At each iteration of the loop the following steps are performed:
 * We draw as an output on the console **dashes** on the left side of the diamond (with length equals to **`leftRight`**) and right after them the first **asterisk**.
 
-![](assets/chapter-6-1-images/10.Diamond-03.png)
+![](assets/chapter-6-1-images/10.Diamond-03.PNG)
 
 * We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, i.e. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
 
-![](assets/chapter-6-1-images/10.Diamond-04.png)
+![](assets/chapter-6-1-images/10.Diamond-04.PNG)
 
 * If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equal to **`mid`** and one **asterisk** after them.
 * We draw as an output on the console **dashes** on the right side of the diamond with length equal to **`leftRight`**.
 
-![](assets/chapter-6-1-images/10.Diamond-05.png)
+![](assets/chapter-6-1-images/10.Diamond-05.PNG)
 
 * In the end of the loop we decrease **`leftRight`** by 1 (**the asterisks `*`** are moving away from each other).
 
@@ -393,9 +393,9 @@ Printing the lower part is similar to that of the upper part. The differences ar
 * Increase instead of decrease **`leftRight`** with one, but at the beginning of the loop
 * **The loop will be from 0 to `(n - 1) / 2`**.
 
-![](assets/chapter-6-1-images/10.Diamond-06.png)
+![](assets/chapter-6-1-images/10.Diamond-06.PNG)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
