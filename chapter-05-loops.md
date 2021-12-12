@@ -14,13 +14,13 @@ In the present chapter, we will get familiar with how to **repeat blocks of comm
 
 Often in programming, we have to  **execute a block of code multiple times**. To do that, we use the so-called **loops**. Let us look at an example of a **`for` loop** that passes sequentially through the numbers from 1 to 10 and prints them: 
 
-![](assets/chapter-5-1-images/00.For-loop-01.PNG)
+![](assets/chapter-5-1-images/00.For-loop-01.png)
 
 The loop starts with the **operator `for`** and passes through all values for a particular variable in a given range, for example, the numbers from 1 to 10 (included), and for each value, it performs a series of commands.
 
 When declaring the loop, an **initial value** and an **end value** are specified. **The body of the loop** is enclosed in curly brackets **`{ }`** and represents a block of one or multiple commands. The figure below shows the structure of a **`for` loop**:
 
-![](assets/chapter-5-1-images/00.For-loop-02.PNG)
+![](assets/chapter-5-1-images/00.For-loop-02.png)
 
 In most cases, a **`for` loop** is run from **`1`** to **`n`** times(for example from 1 to 10). The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n, and for each number to perform a particular action. In the example above, the **`i`** variable takes values from 1 to 10, and the current value is printed in the body of the loop. The loop repeats 10 times, and each of these repetitions is called an "**iteration**".
 
@@ -32,11 +32,11 @@ Write a program that **prints the numbers from 1 to 100**. The program does not 
 
 We can solve the problem using a **`for` loop**, which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
 
-![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.PNG)
+![](assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
 **Start** the program with [**Shift+F10**] and **test it**:
 
-![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.PNG)
+![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
 #### Testing in the Judge system
 
@@ -48,7 +48,7 @@ You should get **100 points** (fully accurate solution).
 
 In software development, we regularly need to write loops dozens of times a day. That is why in most integrated development environments (IDE), there are **code snippets** for writing loops. One such example is the **snippet for `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet, and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
 
-![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.PNG)
+![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
 **Try it yourself** in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
 
@@ -60,7 +60,7 @@ Write a program that finds all numbers within the range [**1 … 1000**] that en
 
 We can solve the problem by combining a **`for` loop**, which will go through the numbers from 1 to 1000, and a **condition** to check if they end with 7. There are other solutions too, but let's solve the problem using a **loop + condition**:
 
-![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.PNG)
+![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
 #### Testing in the Judge system
 
@@ -75,7 +75,7 @@ Write a program that prints the letters from the Latin alphabet: **a, b, c, …,
 
 It is good to know that the **`for` loops** don't work only with numbers. We can solve the problem by running a **`for` loop** that passes sequentially through all letters in the Latin alphabet:
 
-![](assets/chapter-5-1-images/03.Latin-letters-01.PNG)
+![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
 #### Testing in the Judge system
 
@@ -110,7 +110,7 @@ We can solve the problem by calculating the sum of numbers the following way:
  
 Below you can find the source code for the solution:
 
-![](assets/chapter-5-1-images/04.Sum-numbers-01.PNG)
+![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
 #### Testing in the Judge system
 
@@ -135,7 +135,7 @@ Write a program that inputs **n integers** (**n** > 0) and finds the **the Max N
 
 We enter the first number **`n`** (the number of integers to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** which iterates **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally, **`max`** will contain the highest number, and we print it on the console.
 
-![](assets/chapter-5-1-images/05.Max-number-01.PNG)
+![](assets/chapter-5-1-images/05.Max-number-01.png)
 
 #### Testing in the Judge system
 
@@ -158,7 +158,7 @@ Write a program that inputs **n integers** (**n** > 0) and finds **the Min Numbe
 
 The problem is identical to the previous one, but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
 
-![](assets/chapter-5-1-images/06.Min-number-01.PNG)
+![](assets/chapter-5-1-images/06.Min-number-01.png)
 
 #### Testing in the Judge system
 
@@ -179,7 +179,7 @@ Write a program that inputs **2 \* n integers** and checks if the **sum of the f
 
 Input the number **n**, after that the first **n** numbers (**left** half) and sum them up. Input the second **n** numbers (**right** half) and find their sum. We calculate the **difference**  between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + difference**.
 
-![](assets/chapter-5-1-images/07.Left-and-right-sum-01.PNG)
+![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
 #### Testing in the Judge system
 
@@ -202,7 +202,7 @@ Write a program that inputs **n integers** and checks if **the sum of numbers on
 
 We input the numbers one by one and calculate the two **sums** (the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
 
-![](assets/chapter-5-1-images/08.Odd-even-sum-01.PNG)
+![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
 **`+=`** is **combined assigment operator** that is used frequently. It adds the value of the right to the left operand and then assignes the result to the left operand. 
 **C += A** is equivalent to **C = C + A**.
@@ -231,7 +231,7 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 
 We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it is a vowel and add its value to the sum. 
 
-![](assets/chapter-5-1-images/09.Vowels-sum-01.PNG)
+![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
 #### Testing in the Judge system
 
@@ -242,11 +242,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 We can repeat a block of code using **`for` loop**:
 
-![](assets/chapter-5-1-images/00.For-loop-01.PNG)
+![](assets/chapter-5-1-images/00.For-loop-01.png)
 
 We can read series of **`n`** numbers from the console:
 
-![](assets/chapter-5-1-images/00.For-loop-03.PNG)
+![](assets/chapter-5-1-images/00.For-loop-03.png)
 
 ## Exercises: Repetitions (Loops)
 
@@ -258,41 +258,41 @@ We start by creating a new project in IntelliJ IDEA to better organize our solut
 
 Start IntelliJ IDEA and select: **[Create New Project]**.
 
-![](assets/chapter-5-1-images/10.New-project-01.PNG)
+![](assets/chapter-5-1-images/10.New-project-01.png)
 
 After that, on the left side  of the window, select Java. If the **PROJECT SDK:** field is empty, choose the path to the Java **JDK** installation directory and click on the button **[Next]**.
 
-![](assets/chapter-5-1-images/10.New-project-02.PNG)
+![](assets/chapter-5-1-images/10.New-project-02.png)
 
 In the next window, we again click on the button **[Next]**.
 
-![](assets/chapter-5-1-images/10.New-project-03.PNG)
+![](assets/chapter-5-1-images/10.New-project-03.png)
 
 We name the project (Project name:) **Loops** and select the directory where the project will be saved (Project location:). After that, we click on the button **[Finish]**.
 
-![](assets/chapter-5-1-images/10.New-project-04.PNG)
+![](assets/chapter-5-1-images/10.New-project-04.png)
  
 In the next window, we click on the **[OK]** button to create **Project location** if the directory doesn't exist.
 
-![](assets/chapter-5-1-images/10.New-project-05.PNG)
+![](assets/chapter-5-1-images/10.New-project-05.png)
 
 We created a new project. If we click on the triangle in front of **Loops** on the left side of the window, the structure of the project itself will open.
 
-![](assets/chapter-5-1-images/10.New-project-06.PNG)
+![](assets/chapter-5-1-images/10.New-project-06.png)
 
 To create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **problems** (with a small first letter).
 
-![](assets/chapter-5-1-images/10.New-project-07.PNG)
+![](assets/chapter-5-1-images/10.New-project-07.png)
 
 To create new class for the first problem, right-click with the mouse on **problems**, select **New** -> **Java Class** and name it **problem_01** (with a capital letter).
 
-![](assets/chapter-5-1-images/10.New-project-08.PNG)
+![](assets/chapter-5-1-images/10.New-project-08.png)
 
-![](assets/chapter-5-1-images/10.New-project-09.PNG)
+![](assets/chapter-5-1-images/10.New-project-09.png)
 
 After these changes, the structure of the project should look like this:
  
-![](assets/chapter-5-1-images/10.New-project-10.PNG)
+![](assets/chapter-5-1-images/10.New-project-10.png)
  
 For each subsequent exercise, we will create a new class in the way described above. 
  
@@ -379,7 +379,7 @@ In the current chapter, we learned about **loops** as a construction in programm
 
 The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will: **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-01.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
 Let us get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
   * Definition of “turtle graphics”: [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
@@ -392,19 +392,19 @@ We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new p
   * Click on the **Dependencies** tab.
   * Click **'+'** → **JARs or directories**.
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-02.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
 In the next window select the path to **jturtle-0.1.1.jar** and click [**ОК**].
  
-![](assets/chapter-5-1-images/13.Turtle-graphics-03.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
 In the next window, mark the box **classes** and click [**ОК**].
  
-![](assets/chapter-5-1-images/13.Turtle-graphics-04.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
 In the next window, click [**ОК**], and we are ready to open **`MyTurtle.java`**.
   
-![](assets/chapter-5-1-images/13.Turtle-graphics-06.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
 #### Main methods in `Turtle`class
 
@@ -437,32 +437,32 @@ These are the main actions in `Turtle` class with which we draw:
 
 To create a method that draws a triangle in **`MyTurtle.java`** we find the empty method **`drawTriangle()`** and write the following code: 
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-07.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-07.png)
 
 This code moves and rotates the turtle, which is initially in the center of the screen (in the middle of the shape) and draws an equilateral triangle. 
 You can edit and play with it.
 
 **We start** the application with [** Shift + F10**]. We test it if it works (press the [**Draw**] button several times):
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-08.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-08.png)
 
 Now we can change and make the code of the **turtle** more complicated by adding the following to our method **`drawTriangle()`**: 
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-09.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-09.png)
 
 Again, **start** the application with [**Shift + F10**]. Test if the new program for the turtle works:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-10.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
 Now our turtle is drawing more complex shapes.
 
 Let us write the code for the other two buttons: the purpose of the button [**Reset**] is to delete the drawn graphic and position the turtle in its starting position. We add the following code to the method **`resetTurtle()`** :
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-11.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
 The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle. We add the following code to the method **`showTurtle()`** : 
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-12.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
 Again, **start** the application with [**Shift + F10**] and test whether both buttons work correctly.
 
@@ -470,7 +470,7 @@ Again, **start** the application with [**Shift + F10**] and test whether both bu
 
 Add [**Hexagon**] button which draws a regular hexagon:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-13.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
 
 **Hint:**
 
@@ -484,30 +484,30 @@ To add a new button for drawing a new shape, we can trace the logic in **`MyTurt
 
 First, we add the new figure in **`enum Shape`**:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-20.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-20.png)
 
 We create a new button and add **`ActionListener`**, which assigns to **`shape`** the new **`enum`** value:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-18.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-18.png)
 
 Then add the new button in **`bList`**:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-19.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-19.png)
 
 Create a new method **`drawHex()`** through which the turtle draws a hexagon. Mandatory at the end of the method **`shape = ""`** because this line will prevent the repeated execution of our method!
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-21.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-21.png)
 
 In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-22.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
 ### problem: * Draw a star with the turtle
 
 Add [**Star**] button, which draws a star with 5 vertices (**star pentagon**), as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-14.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
 **Hint:**
 
@@ -521,7 +521,7 @@ Repeat 5 times the following in a loop:
 
 Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-15.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
 **Hint:**
 
@@ -531,13 +531,13 @@ Draw in a loop by moving ahead and rotating. Gradually increase the length of th
 
 Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-16.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
 ### problem: * Draw a spiral triangles with the turtle
 
 Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 
-![](assets/chapter-5-1-images/13.Turtle-graphics-17.PNG)
+![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
 **Hint:**
 

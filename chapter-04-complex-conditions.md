@@ -44,7 +44,7 @@ We should notice that the **output** of the program **depends on a few things**.
 
 After **reading the input data from the console**, the following **program logic** should be executed:
 
-![](assets/chapter-4-1-images/01.Personal-titles-02.PNG)
+![](assets/chapter-4-1-images/01.Personal-titles-02.png)
 
 #### Testing in the Judge System
 
@@ -75,7 +75,7 @@ Calculate the price by the given **city** (string), **product** (string) and **q
 
 We **convert** all of the letters into **lower register** using the function **`.toLowerCase()`**, to compare products and cities **no matter** what the letters are – small or capital ones.
 
-![](/assets/chapter-4-1-images/02.Small-shop-01.PNG)
+![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
 #### Testing in the Judge System 
 
@@ -112,7 +112,7 @@ boolean result = a && b && c && d;
 
 The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
 
-![](/assets/chapter-4-1-images/00.Logical-and-01.PNG)
+![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
 ### Example: Point in a Rectangle
 
@@ -122,7 +122,7 @@ Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x
 
 |Input |Output |Visualization|
 |-----|------|:------:|
-|2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.PNG)|
+|2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.png)|
 
 #### Solution
 
@@ -133,7 +133,7 @@ A point is internal for a given polygon if the following four conditions are app
 * The point is placed downwards from the upper side of the rectangle.
 * The point is placed upwards from the down side of the rectangle.
 
-![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.PNG)
+![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.png)
 
 #### Testing in the Judge System
 
@@ -180,7 +180,7 @@ Let's check whether a given **product** is **a fruit** or **a vegetable**. The "
 
 We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
-![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.PNG)
+![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
 #### Testing in the Judge System
 
@@ -210,7 +210,7 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 #### Solution
 
-![](assets/chapter-4-1-images/05.Invalid-number-01.PNG)
+![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
 #### Testing in the Judge System
 
@@ -228,7 +228,7 @@ Sometimes the conditions may be **very complex**, so they can require a long boo
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
-![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.PNG)
+![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
 #### Sample Input and Output
 
@@ -242,7 +242,7 @@ The point lies on any of the sides of the rectangle if:
 * **x** coincides with **x1** or **x2** and at the same time **y** is between **y1** and **y2** or
 * **y** coincides with **y1** or **y2** and at the same time **x** is between **x1** and **x2**.
 
-![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.PNG)
+![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
 #### Testing in the Judge System
 
@@ -276,7 +276,7 @@ Write a program that **reads** from the console a **fruit** (banana / apple / �
 
 #### Solution
 
-![](assets/chapter-4-1-images/07.Fruit-shop-01.PNG)
+![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
 #### Testing in the Judge System
 
@@ -303,7 +303,7 @@ Write a **program** that reads the name of a **city** (string) and the volume of
 When reading the input, we could convert the city into small letters (with the function **`.toLowerCase()`**). Initially, we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions.
 To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
-![](assets/chapter-4-1-images/08.Trade-comissions-01.PNG)
+![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
 #### Testing in the Judge System
 
@@ -350,7 +350,7 @@ Let's write a program that prints **the day of the week** depending on the **giv
 
 #### Solution
 
-![](assets/chapter-4-1-images/09.Day-of-week-01.PNG)
+![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the more rear situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
@@ -401,7 +401,7 @@ Write a program that prints the type of the animal depending on its name:
 
 We can solve the problem with **`switch`**-**`case`** conditions with multiple labels in the following way:
 
-![](assets/chapter-4-1-images/10.Animal-type-01.PNG)
+![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
 #### Testing in the Judge System
 
@@ -474,7 +474,7 @@ While reading the input, we could convert the screening type into small letters 
 
 Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
-![](assets/chapter-4-1-images/11.Cinema-01.PNG)
+![](assets/chapter-4-1-images/11.Cinema-01.png)
 
 #### Testing in the Judge System
 
@@ -506,7 +506,7 @@ As usual, we read the input data from the console and, to avoid making mistakes,
 
 A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
-![](assets/chapter-4-1-images/12.Volleyball-01.PNG)
+![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
 #### Testing in the Judge System
 
@@ -516,7 +516,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
-![](assets/chapter-4-1-images/13.Point-in-the-figure-01.PNG)
+![](assets/chapter-4-1-images/13.Point-in-the-figure-01.png)
 
 Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**) or on any of the borders of the figure (**border**).
 
@@ -556,7 +556,7 @@ A possible logic for solving the problem (not the only correct one):
 
 Sample code (parts of the code are blurred to stimulate logical thinking and solving skills):
 
-![](assets/chapter-4-1-images/13.Point-in-the-figure-03.PNG)
+![](assets/chapter-4-1-images/13.Point-in-the-figure-03.png)
 
 #### Testing in the Judge System
 

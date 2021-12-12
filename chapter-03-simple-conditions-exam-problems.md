@@ -59,11 +59,11 @@ Our first step is to create an object of type **`java.util.Scanner`**. We pass i
 
 **The first line is mentioned** to contain **an integer**, so the variable that will be declared is of type **`int`**. For the **second line**, the instruction is that it contains a **word**, respectively the variable is of type **`String`**.
 
-![](assets/chapter-3-2-images/01.Transport-price-01.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-01.png)
 
 Before we begin with the conditional statements it's necessary to **declare** one **variable** that will store the value of the **transport price**.
 
-![](assets/chapter-3-2-images/01.Transport-price-02.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-02.png)
 
 #### Expression evaluation and computing the relevant calculations
 
@@ -71,15 +71,15 @@ Once we have **declared and initialized** the input data and the variable that w
 
 It is evident from the problem that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of the third transport (taxi) does. This is a reason to pick our **first condition** to verify whether it's **day or night** and determine which taxi rate will be **in effect**. To achieve that **we declare another variable** that will store the value of the **taxi fare**.
 
-![](assets/chapter-3-2-images/01.Transport-price-03.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-03.png)
 
 Computing the **taxi rate** is performed with an **`if-else`** statement. That's how we taxi price variable is assigned a **value**.
 
-![](assets/chapter-3-2-images/01.Transport-price-04.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-04.png)
 
 Once that's done, we can now proceed to the computation of the **full transportation price**. Another condition for the price defined in the problem is the **traveling distance** with a chosen vehicle. Naturally to do that we pick an **`if-else`** condition that we used to determine the **price** for the transport depending on the entered kilometers.
 
-![](assets/chapter-3-2-images/01.Transport-price-05.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-05.png)
 
 First, we check if the kilometers are **below 20** since it's specified in the problem that the student could only use a **taxi** for destinations that are **below 20** kilometers away. If the expression in the first conditional statement is evaluated to be **true** then the variable that stores the transportation price (**`price`**) will be **assigned** the corresponding value. This value is equal to the **initial rate**, which we **sum up** with its **rate** **multiplied** by **the distance** that the student has to travel.
 
@@ -91,7 +91,7 @@ In the case of the second check **not returning `true`** as a result, the progra
 
 We **have successfully computed the price of the cheapest transportation** so we're almost at the end of the problem. The only thing left is to print out the result that we have on the console. In our problem, there's no requirement for the resulting output and that's why we choose to keep it simple and just print the **variable** (**`price`**).
 
-![](assets/chapter-3-2-images/01.Transport-price-06.PNG)
+![](assets/chapter-3-2-images/01.Transport-price-06.png)
 
 ### Testing in the Judge system
 
@@ -132,11 +132,11 @@ To solve the problem we'll read from the standard input stream, utilize several 
 
 By definition, our program has to have **four lines** that are going to read and store **the input data**. The first **three** are going to store **whole numbers** and this is a reason we pick the **`int`** type for those **variables**. On the **fourth** line, we are supposed to get a floating-point **number** and that's why the **variable** that we're going to use is of type **`double`**.
 
-![](assets/chapter-3-2-images/02.Pipes-in-pool-01.PNG)
+![](assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
 Our next step is to **declare and initialize** a variable that will store the computed value for **the amount of water that the pool has filled up with while the worker has been away**. The calculation is made by **summing up the flow rate of the two pipes** and **multiplying them** by the input **hours H**.
 
-![](assets/chapter-3-2-images/02.Pipes-in-pool-02.PNG)
+![](assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
 #### Expression evaluation and computing the relevant calculations
 
@@ -146,7 +146,7 @@ We will do this with a simple **`if-else`** conditional statement, in which the 
 
 The ratio needs to be expressed in **percentage** that's why we'll **multiply by 100** the result of all the prior calculations on this line. The values will be interpolated using **formatting strings** and rounded down to **integer** with **`Math.floor (…)`** (it's a requirement of the problem).
 
-![](assets/chapter-3-2-images/02.Pipes-in-pool-03.PNG)
+![](assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
 However, if the check returns **`false`** it means that the amount of water is **greater** than **the volume** of the pool, respectively it has **overflowed**. Again, the output must be **one line** but this time it should contain only **two values** - **away time in hours** of the worker and **the amount of overflowed water**.
 
@@ -194,23 +194,23 @@ To solve the problem we'll read from the standard input stream, utilize several 
 
 The **input data** will be read in a **single line** that will contain a **whole number** in the range [**0 … 365**]. That's why the variable that'll store the value is going to be of type **`int`**.
 
-![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.PNG)
+![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
 Our **first** step is to calculate how many **minutes in total** has Tom and his master played together. The problem states that not only has the sleepy cat played in **days off** but also on **working days**. **The number** that we read from the console is the number of **non-working days**.
 
 Our next step is to use that number to **calculate** how many are the **working days** of Tom's owner. We need this number because without it we can not get the **total number of playtime minutes**. The total number of days in a year is **365**, the number of days off is **X**, which means that the number of working days is **365 - X**. **We will store the difference** in a new variable (**`workingDays`**), which we will use **only** for this **value**.
 
-![](assets/chapter-3-2-images/03.Sleepy-tom-cat-02.PNG)
+![](assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png)
 
 Now that we have **the number of days to play**, we can now **calculate Tom's playing time** in minutes. Its **value is equal to** the **result of the multiplication of the working days by 63** minutes (in the problem it's specified that on working days the playing time is 63 minutes per day) **added to the result of the multiplication of days off and 127** minutes (in the problem it's specified that on days off the playing time is 127 minutes per day).
 
-![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.PNG)
+![](assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
 We need to **print the difference** between **hours** and **minutes**. That's why we'll subtract from the **total** playing time Tom's playtime norm of **30 000** minutes and we'll **store** the result in a **new** variable. After that, we'll use that new variable to **divide without a remainder** to 60 and that's how we'll get the **hours**. To get the number of **minutes** we'll utilize the **modulo operator `%`** and get the remainder of the division by 60.
 
 Note that if Tom's resulting **playtime** is **less** than **30 000** when we **subtract** the norm we'll get a **negative number**. We can **fix** that with the **method `Math.abs(…)`** when subtracting.
 
-![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.PNG)
+![](assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
 #### Conditional expressions verification
 
@@ -220,7 +220,7 @@ The playing time is already calculated which leads us to **the next** step - Tom
 
 Depending on **the result** of the evaluation of the boolean expression our objective is to print the **difference in hours and minutes**. We'll do that using the **formatting specifier** and the previously computed hour and minutes values. The given output examples show that the printed values are formatted as a rounded down whole number. This is a cue that we should be using **`Math.floor(…)`** when we're printing the result.
 
-![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.PNG)
+![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
 ### Testing in the Judge system
 
@@ -266,13 +266,13 @@ To solve the problem we'll read from the standard input stream, utilize several 
 
 First, we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
-![](assets/chapter-3-2-images/04.Harvest-01.PNG)
+![](assets/chapter-3-2-images/04.Harvest-01.png)
 
 To solve the problem we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The problem defines a formula that requires the **weight of the yielded grapes in kg.** . We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
 
 Once we have made these calculations, we are ready to **insert** them into the problem formula. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
 
-![](assets/chapter-3-2-images/04.Harvest-02.PNG)
+![](assets/chapter-3-2-images/04.Harvest-02.png)
 
 #### Expression evaluation and processing the output data
 
@@ -282,11 +282,11 @@ If the expression evaluation returns **`true`**, then on the **first line** we s
 
 The requirement for the second line is to print the interpolated values **rounded up**. We'll use the method **`Math.ceil(…)`**. The values that we have to print are **the wine that's left** and **the amount of wine that is to be given to each worker**. The wine that's left is equal to the **difference** between **the produced liters of wine** and **the desired liters of wine**. As the result of this computation, we'll store in a new variable that we'll declare and initialize in the **body block** of the **`if` statement** before printing the first line. The **amount of wine that is to be given to each worker** we'll get by **dividing** the **difference** by **the number of workers**.
 
-![](assets/chapter-3-2-images/04.Harvest-03.PNG)
+![](assets/chapter-3-2-images/04.Harvest-03.png)
 
 If the expression evaluation returns **`false`**, then we need to **print the difference** between **desired liters of wine** and **the produced liters of wine from this harvest**. It's required that **this value** should be **rounded down**. To comply with the requirement we'll use the method **`Math.floor(…)`** when printing it using the **formatting specifier**.
 
-![](assets/chapter-3-2-images/04.Harvest-04.PNG)
+![](assets/chapter-3-2-images/04.Harvest-04.png)
 
 ### Testing in the Judge system
 
@@ -329,13 +329,13 @@ To solve the problem we'll read from the standard input stream, utilize several 
 
 First, we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
-![](assets/chapter-3-2-images/05.Firm-01.PNG)
+![](assets/chapter-3-2-images/05.Firm-01.png)
 
 #### Auxiliary calculations
 
 The next step is to calculate **the number of working hours**. This we can do by multiplying the working days by 8 (every working day is 8 hours) and the number of the company's employees. On top of that, we should add the overtime too. **The working days** are equal to **90% of the days** that the company has. **The overtime** is equal to the result of the multiplication of the employees and 2 (decided overtime length) and the number of days that the company has. We can see that the problem requires **the working hours** to be **rounded down**. That's something we can easily do by using the method **`Math.floor(…)`**.
 
-![](assets/chapter-3-2-images/05.Firm-02.PNG)
+![](assets/chapter-3-2-images/05.Firm-02.png)
 
 #### Performing verifications
 
@@ -345,7 +345,7 @@ If **the time is enough** we print the difference between **the working hours an
 
 If **the time is not enough** we print the additional hours that are needed to finish the project. And that is the difference between **the estimated hours** and **the working hours**.
 
-![](assets/chapter-3-2-images/05.Firm-03.PNG)
+![](assets/chapter-3-2-images/05.Firm-03.png)
 
 ### Testing in the Judge system
 

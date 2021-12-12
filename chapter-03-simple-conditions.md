@@ -23,7 +23,7 @@ When comparing values, the result is of boolean type with a value **`true`** or 
 
 ### Examples for comparing numbers
 
-![](assets/chapter-3-1-images/00.Comparing-numbers-01.PNG)
+![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
 ### Comparison operators
 
@@ -55,7 +55,7 @@ In Java, we can use the following comparison operators when comparing numbers:
 
 The following example demonstrates how to use comparison operators in expressions:
 
-![](assets/chapter-3-1-images/00.Comparing-numbers-02.PNG)
+![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
 ## Simple If conditions
 
@@ -72,7 +72,7 @@ if (condition) {
 
 **Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
-![](assets/chapter-3-1-images/01.Еxcellent-result-01.PNG)
+![](assets/chapter-3-1-images/01.Еxcellent-result-01.png)
 
 Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**".
 
@@ -100,7 +100,7 @@ if (condition) {
 
 Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
-![](assets/chapter-3-1-images/02.Excellent-or-not-01.PNG)
+![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 #### Test the code in the Judge system
 
@@ -117,19 +117,19 @@ When we have **only one command** in the body of the **`if` statement**, we can 
 
 Here is an example that skipping curly brackets leads to confusion:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-01.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
 Executing the above code will output the following result on the console:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-03.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
 Here is the same example, but using curly brackets: 
 
-![](assets/chapter-3-1-images/00.Brackets-tip-02.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
 Executing the code with curly brackets will output the following result on the console:
 
-![](assets/chapter-3-1-images/00.Brackets-tip-04.PNG)
+![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Both use cases are <strong>correct</strong> and could be used depending on the situation and/or the specific requirements, but you always must be careful and check the expected results.</td>
@@ -143,11 +143,11 @@ Write a program that checks whether an integer is **even** or **odd**.
 
 We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns the **remainder of dividing** two numbers.
 
-![](assets/chapter-3-1-images/03.Even-or-odd-02.PNG)
+![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
 Executing the above code will output the following result:
 
-![](assets/chapter-3-1-images/03.Even-or-odd-01.PNG)
+![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
 #### Test the code in the Judge system
 
@@ -162,11 +162,11 @@ Write a program that reads two integer numbers, from the console, and return the
 
 Our first problem is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what you have learned so far.
 
-![](assets/chapter-3-1-images/04.Greater-number-02.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
 Executing the above code will output the following result for numbers 3 and 5:
 
-![](assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 #### Test the code in the Judge system
 
@@ -179,7 +179,7 @@ Each variable has a scope in which it exists, called **variable scope**. This sc
 
 In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the block (in this case we will receive notification from the **IDE** about variable scope).
 
-![](assets/chapter-3-1-images/00.Variable-scope-01.PNG)
+![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
 ## Sequence of If-Else conditions
 
@@ -256,11 +256,11 @@ An **integer** is read from the console - the number of points. A **bonus score*
 
 We can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
 
-![](assets/chapter-3-1-images/06.Bonus-score-01.PNG)
+![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
 Executing the above code will output the following result:
 
-![](assets/chapter-3-1-images/06.Bonus-score-02.PNG)
+![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
 #### Test the code in the Judge system
 
@@ -290,11 +290,11 @@ First, sum up the three numbers to get the total result in seconds. Since **1 mi
 - If the result is between 120 and 179, print 2 minutes + calculate seconds minus 120.
 - If the seconds are less than 10, print the number with zero in front.
 
-![](assets/chapter-3-1-images/07.Sum-seconds-01.PNG)
+![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
 A different solution that does not use **`if-else`** statement is more appropriate because you can use it for greater time values:
 
-![](assets/chapter-3-1-images/07.Sum-seconds-02.PNG)
+![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
 #### Test the code in the Judge system
 
@@ -337,7 +337,7 @@ Read the input data. We can use the **`toLowerCase()`** function, which will mak
 <td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
 </tr></table>
 
-![](assets/chapter-3-1-images/08.Metric-converter-01.PNG)
+![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
 #### Test the code in the Judge system
 
@@ -351,13 +351,13 @@ There were probably errors in the code you wrote so far. There is an easier way 
 
 **Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**. Of the logic that follows, the defined variables and how they are changed, and so on.
 
-![](assets/chapter-3-1-images/00.Debugging-01.PNG)
+![](assets/chapter-3-1-images/00.Debugging-01.png)
 
 ### Debugging with IntelliJ Idea
 
 By pressing a combination of buttons [**Shift + F9**] you run the current program in **debug mode**. To move to **the next line** in the code, use the [**F7**] button.
 
-![](assets/chapter-3-1-images/00.Debugging-02.PNG)
+![](assets/chapter-3-1-images/00.Debugging-02.png)
 
 By pressing a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints** which suspend program execution at a specific point.
 
@@ -371,16 +371,16 @@ Create a new project with name **Java** in IntelliJ Idea and leave all other opt
 
 Run IntelliJ Idea. Create a new **Java project:** [**File**] → [**New**] → [**Project**].
 
-![](assets/chapter-3-1-images/00.IntelliJ-01.PNG)
+![](assets/chapter-3-1-images/00.IntelliJ-01.png)
 
 Choose **Java** from the left panel and leave anything else at its default state, press [**Next**]. In the next dialog box, we have an option to create a project from a template. Usually, we will do this, but now we can skip it and just press [**Next**]. In the last dialog box, enter the project's name and storage location, and then click [**Finish**].
 
-![](assets/chapter-3-1-images/00.IntelliJ-02.PNG)
-![](assets/chapter-3-1-images/00.IntelliJ-03.PNG)
+![](assets/chapter-3-1-images/00.IntelliJ-02.png)
+![](assets/chapter-3-1-images/00.IntelliJ-03.png)
 
 We now have an empty Java project:
 
-![](assets/chapter-3-1-images/00.IntelliJ-04.PNG)
+![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
 ### Exercise: Check for excellent grade
 
@@ -399,31 +399,31 @@ The first problem of this exercises is to write a **program that reads input dat
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**].
 
- ![](assets/chapter-3-1-images/09.Excellent-result-01.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
 A dialog box with two fields will open. In the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then press [**OK**] button to create our class. We set a name, for example, "Excellent-Result":
 
- ![](assets/chapter-3-1-images/09.Excellent-result-02.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
 We already have a class containing one console application. What's left is to **write the code** that solves the problem.
 
 To do that, go to the body of the method **`main (string [] args)`** and place the cursor between the opening and closing curly brackets of the method. If the main method is not created automatically in **IntelliJ Idea**, there is a keyboard shortcut to do this - **`psvm`**. Inside the main method, we write the following code:
 
- ![](assets/chapter-3-1-images/09.Excellent-result-03.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
 **Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
- ![](assets/chapter-3-1-images/09.Excellent-result-04.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
- ![](assets/chapter-3-1-images/09.Excellent-result-05.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
 #### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#0](https://judge.softuni.org/Contests/Practice/Index/651#0).
 
- ![](assets/chapter-3-1-images/09.Excellent-result-06.PNG) 
+ ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
 
- ![](assets/chapter-3-1-images/09.Excellent-result-07.PNG)
+ ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
 ### Exercise: Excellent grade or not
@@ -445,18 +445,18 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
 We already have a class containing one console application. What's left is to **write the code** that solves the problem. We can help ourselves with the sample code from this picture:
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-01.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 **Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-02.PNG)
- ![](assets/chapter-3-1-images/02.Excellent-or-not-03.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
 #### Test the code in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#1](https://judge.softuni.org/Contests/Practice/Index/651#1).
 
- ![](assets/chapter-3-1-images/02.Excellent-or-not-04.PNG)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
 ### Exercise: Even or odd number
@@ -480,7 +480,7 @@ In the main method, **`public static void main()`** write the code to solve the 
 
 **Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
-![](assets/chapter-3-1-images/03.Even-or-odd-01.PNG)
+![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
 #### Test the code in the Judge system
 
@@ -504,11 +504,11 @@ The next problem is to write a **program that reads input data from the console*
 
 Create a **new class** in the existing project in **IntelliJ Idea** by right-clicking over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the problem it's necessary to use one **`if-else`** statement. You can use the code from the image below. Have in mind that it's blurred on purpose.
 
-![](assets/chapter-3-1-images/04.Greater-number-02.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
 **Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
 
-![](assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 #### Test the code in the Judge system
 

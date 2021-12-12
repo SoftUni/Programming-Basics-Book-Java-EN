@@ -29,7 +29,7 @@ The **step** is that **part** of the **`for`** loop construction that states **h
 
 It most often has a **size `1`** and in that case instead of writing **`i += 1`** or **`i -= 1`**, we can use the **`i++`** or **`i--`** operators. If we want the step to be **different than 1**, we use the operator **`i += (step size)`** to increment and **`i -= (step size)`** to decrement. For a step size of 10, the loop would look like this:
 
-![](assets/chapter-7-1-images/00.Step-explanation-01.PNG)
+![](assets/chapter-7-1-images/00.Step-explanation-01.png)
 
 The following is a series of examples, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
@@ -43,7 +43,7 @@ We can solve the problem through the following sequence of actions (algorithm):
   * We run a **`for` loop** from **1** to **`n`** with a step size of **3**.
   * We print the value of the current step in **the body of the loop**.
   
-![](assets/chapter-7-1-images/01.Numbers-1-to-n-with-step3-01.PNG)
+![](assets/chapter-7-1-images/01.Numbers-1-to-n-with-step3-01.png)
 
 #### Testing in the Judge system
 
@@ -62,7 +62,7 @@ We can solve the problem in the following way:
   * We define the step size as: **-1**.
   * We print the value of the current step in **the body of the loop**.
 
-![](assets/chapter-7-1-images/02.Numbers-from-n-to-1-01.PNG)
+![](assets/chapter-7-1-images/02.Numbers-from-n-to-1-01.png)
 
 #### Testing in the Judge system
 
@@ -75,7 +75,7 @@ In the following example, we will have a look at using the usual step with size 
 
 Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of n). For example, **if n = 10**, the result will be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
-![](assets/chapter-7-1-images/03.Powers-of-two-01.PNG)
+![](assets/chapter-7-1-images/03.Powers-of-two-01.png)
 
 #### Testing in the Judge system
 
@@ -92,7 +92,7 @@ Here is a way to solve the problem:
   * We set a value of **2** for the **step** of the loop.
   * In **the body of the loop**, we print the value of the current step and **increase the current number `num` 4 times** (as per the condition of the problem).
 
-![](assets/chapter-7-1-images/04.Even-powers-of-two-01.PNG)
+![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
 #### Testing in the Judge system
 
@@ -108,7 +108,7 @@ The next type of loops we will get acquainted with are called **'while' loops**.
 
 In programming, the **` while` loop** is used when we want to **repeat** the execution of a certain logic while **a given condition is met**. We define '**condition**' as any **expression** that returns **'true'** or **'false'**. When the **condition** is **false**, the **`while`** loop terminates and the program **continues** with the execution of the code following the loop. The **`while` loop** construction looks like this:
 
-![](assets/chapter-7-1-images/00.While-loop-01.PNG)
+![](assets/chapter-7-1-images/00.While-loop-01.png)
 
 The following is a series of examples, the solution of which will help us better understand the use of the **`while`** loop.
 
@@ -125,7 +125,7 @@ Here is how we can solve the problem:
 
 Here is a sample representation of the described steps:
 
-![](assets/chapter-7-1-images/05.Sequence-2k-plus-1-01.PNG)
+![](assets/chapter-7-1-images/05.Sequence-2k-plus-1-01.png)
  
 #### Testing in the Judge system
 
@@ -145,7 +145,7 @@ We can solve the problem through the following algorithm:
 
 Here is a sample representation of the algorithm, using a **`while` loop**:
 
-![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.PNG)
+![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.png)
 
 #### Testing in the Judge system
 
@@ -201,7 +201,7 @@ We will solve the problem using **the Euclidean algorithm**:
    * We assign the **previous** value of the **`b`** variable to **`a`**.
 * Once the loop is complete and, we have found the GCD, we print it on the screen.
 
-![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.PNG)
+![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.png)
 
 #### Testing in the Judge system
 
@@ -212,7 +212,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#
 
 The next type of loop we will get acquainted with is the **`do-while`**. It resembles the **`while`** loop by structure, but there is a significant difference between the two. It consists in the fact that **`do-while`** will execute its body **at least once**. Why is this happening? At **`do-while`** loop construction, the **condition** is always checked **after** its body, which ensures that the code will be **executed** after the **first loop iteration**, and **the check for the loop termination** will be applied to each subsequent iteration of the **`do-while`**. 
 
-![](assets/chapter-7-1-images/00.Do-while-01.PNG)
+![](assets/chapter-7-1-images/00.Do-while-01.png)
 
 The following is the usual series of sample problems, the solution of which will help us better understand the use of the **`do-while`** loop.
 
@@ -231,7 +231,7 @@ Here is how we can calculate the factorial:
    * We decrease the value of **`n`** by **-1**.
 * We print the final value of the factorial outside the body of the loop.
 
-![](assets/chapter-7-1-images/08.Factorial-01.PNG)
+![](assets/chapter-7-1-images/08.Factorial-01.png)
 
 #### Testing in the Judge system
 
@@ -252,7 +252,7 @@ We can use the following idea to solve the problem:
    * We assign a new value to **`n`**, which is the result of removing the last digit of  **`n`**.
 * We print the final value of the sum outside the body of the loop.
 
-![](assets/chapter-7-1-images/09.Sum-of-digits-01.PNG)
+![](assets/chapter-7-1-images/09.Sum-of-digits-01.png)
 
 <table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
@@ -274,11 +274,11 @@ An infinite loop is the one that **repeats infinitely** the execution of its bod
 
 Here is what an **infinite `while`** loop looks like:
 
-![](assets/chapter-7-1-images/00.Infinite-while-loop-01.PNG)
+![](assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
 
 And here is what an **infinite `for`** loop looks like:
 
-![](assets/chapter-7-1-images/00.Infinite-for-loop-01.PNG)
+![](assets/chapter-7-1-images/00.Infinite-for-loop-01.png)
 
 ### The break operator
 
@@ -327,7 +327,7 @@ Here is the algorithm for prime number verification, described in steps:
 
 Here is a sample implementation of the described algorithm:
 
-![](assets/chapter-7-1-images/10.Prime-numbers-01.PNG)
+![](assets/chapter-7-1-images/10.Prime-numbers-01.png)
 
 #### Testing in the Judge system
 
@@ -350,7 +350,7 @@ Here is an idea how to solve the problem:
 
 Here is a sample implementation of the idea:
 
-![](assets/chapter-7-1-images/11.Enter-even-number-01.PNG)
+![](assets/chapter-7-1-images/11.Enter-even-number-01.png)
 
 Note: although the code above is correct, it will not work if the user enters text instead of numbers, for example, "** Invalid number **". Then the parsing of the input text to a number will break, and the program will display **error message (exception)**. Later in this chapter, we will learn how to deal with this problem and how to catch and handle exceptions using the **`try-catch` construct**.
 
@@ -365,15 +365,15 @@ Having learned what **nested loops** are and how the **`break`** operator perfor
 
 The desired result is:
 
-![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.PNG)
+![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png)
 
 Here is one **wrong solution**, which seems correct at first glance:
 
-![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.PNG)
+![](assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.png)
 
 If we leave our program this way, the result will be the following:
 
-![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.PNG)
+![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png)
 
 Why does this happen? As we can see, the result ** is missing '1 1' **. When the program reaches the point that ** `i 1` ** and **` j 1` **, it enters the ** `if` ** check and performs the **` break` ** operation. Thus, we **exit the inner loop**, but then the execution of the outer loop continues. **'i'** increases, the program enters the inner loop and prints the result.
 
@@ -383,7 +383,7 @@ Why does this happen? As we can see, the result ** is missing '1 1' **. When the
 
 What is **the correct solution**? One way of solving this problem is by declaring a **`bool` variable**, which keeps track of whether the loop should continue. In case of need to exit (from all nested loops), the variable is set to **'true'** and exits the internal cycle with a **'break'**, and at the next check, will exit from the outer loop. Here is a sample implementation of this idea:
 
-![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.PNG)
+![](assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
 Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and exit the inner loop. Upon the next iteration of the outer loop due to the **`if`** check, the program will not reach the inner loop and interrupt its execution. 
 
@@ -408,7 +408,7 @@ When an exception occurs, the exception is said to have been **”thrown” (thr
 
 The **`try-catch`** construction has different types, but for now, we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex `**
 
- ![](assets/chapter-7-1-images/00.Try-catch-01.PNG)
+ ![](assets/chapter-7-1-images/00.Try-catch-01.png)
  
 In the next problem, we will see how to handle a situation where the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
 
@@ -428,7 +428,7 @@ Here is how we can solve the problem:
 
 Here is a sample implementation of the described idea:
 
-![](assets/chapter-7-1-images/12.Valid-even-number-01.PNG)
+![](assets/chapter-7-1-images/12.Valid-even-number-01.png)
 
 #### Testing in the Judge system
 
@@ -480,7 +480,7 @@ An idea to solve the problem:
 
 Sample implementation:
 
-![](assets/chapter-7-1-images/13.Fibonacci-01.PNG)
+![](assets/chapter-7-1-images/13.Fibonacci-01.png)
 
 #### Testing in the Judge system
 
@@ -514,7 +514,7 @@ We can solve the problem with **two nested loops** (by rows and columns) by prin
 
 Here is a sample implementation:
 
-![](assets/chapter-7-1-images/14.Number-pyramid-01.PNG)
+![](assets/chapter-7-1-images/14.Number-pyramid-01.png)
 
 #### Testing in the Judge system
 
@@ -544,7 +544,7 @@ We can solve the problem with **two nested loops** and a little bit of calculati
     * We print the number from the current table cell.
 * We print a **blank line** in the outer loop to proceed to the next one.
 
-![](assets/chapter-7-1-images/15.Number-table-01.PNG)
+![](assets/chapter-7-1-images/15.Number-table-01.png)
 
 #### Testing in the Judge system
 

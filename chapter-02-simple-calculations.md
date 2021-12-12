@@ -19,13 +19,13 @@ The system console or the computer console, usually called just a **console**,  
 
 Generally, the system console represents a text terminal which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. Usually, it looks like a black-colored window, in which we write and perform **console commands** and print the result in the form of a text. In **Windows**, the console looks like this:
 
-![](/assets/chapter-2-1-images/00.Console-example.PNG)
+![](/assets/chapter-2-1-images/00.Console-example.png)
 
 In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows, it is called **Command Prompt**, while in Linux and macOS, it is called **Terminal**. The console runs console applications. They read the text as input from the command line and print the output as a text on the console. In this book, we are going to learn programming mostly through creating **console applications**.
 
 This is how the console looks in **Linux**:
 
-![](/assets/chapter-2-1-images/00.Linux-terminal-example.PNG)
+![](/assets/chapter-2-1-images/00.Linux-terminal-example.png)
 
 ## Reading integers from the console
 
@@ -107,7 +107,7 @@ Try to rewrite the above program to accept as input data not only integers (`int
 
 We know about computers that they are machines that process data. All **data** is stored in the computer memory (Random-access memory(RAM)) in **variables**. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each **variable** in Java has **name**, **type** and **value**. In the example below, you can see how to define a variable, and at the same time to assign value to it:
 
-![](/assets/chapter-2-1-images/03.Declaring-variables-01.PNG)
+![](/assets/chapter-2-1-images/03.Declaring-variables-01.png)
 
 After processing, the data is stored again in variables (somewhere in a reserved area allocated in memory by our program).
 
@@ -147,7 +147,7 @@ System.out.println(centimeters);
 
 Run the program and make sure that when entering a value in inches, we obtain a correct output in centimeters:
 
-![](assets/chapter-2-1-images/04.Console-output-01.PNG)
+![](assets/chapter-2-1-images/04.Console-output-01.png)
 
 #### Testing in the Judge system
 
@@ -178,7 +178,7 @@ System.out.printf("Hello, %s!", name);
 
 In this case the expression **`%s`** is replaced with the **first** passed argument, which is the variable **`name`**:
 
-![](/assets/chapter-2-1-images/04.Console-output-02.PNG)
+![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
 #### Testing in the Judge system
 
@@ -204,7 +204,7 @@ System.out.printf("You are %s %s, a %d-years old person from %s.",
 
 Here is the result, which we will get after the execution of the example:
 
-![](assets/chapter-2-1-images/04.Console-output-03.PNG)
+![](assets/chapter-2-1-images/04.Console-output-03.png)
 
 Pay attention to the order of variables in the System.out.printf() method. Each variable is in the **order we want to print it** and corresponds to the **type in the placeholder**. Essentially, the template (**placeholder**) accepts variables of **every type**.
 
@@ -242,7 +242,7 @@ System.out.println(result);
 
 Here is the result of the execution of the program above (with numbers 10 and 3):
 
-![](assets/chapter-2-1-images/04.Console-output-04.PNG)
+![](assets/chapter-2-1-images/04.Console-output-04.png)
 
 ### Multiplying numbers (operator **`*`**)
 
@@ -388,7 +388,7 @@ System.out.println("Perimeter = " + 2 * Math.PI * r);
 ```
 Let’s test the program with **radius `r = 10`**:
 
-![](/assets/chapter-2-1-images/04.Console-output-05.PNG)
+![](/assets/chapter-2-1-images/04.Console-output-05.png)
 
 #### Testing in the Judge system
 
@@ -424,7 +424,7 @@ We use **`Math.max(a, b)`** to find the bigger value from **`a`** and **`b`** an
 
 When the program is executed with the values from the coordinate system above we obtain the following result:
 
-![](/assets/chapter-2-1-images/04.Console-output-06.PNG)
+![](/assets/chapter-2-1-images/04.Console-output-06.png)
 
 #### Testing in the Judge system
 
@@ -453,21 +453,21 @@ In the current practical exercise we will use a **Project with a couple of probl
 * We start IntelliJ IDEA.
 * We create a new **Project:** [**File**] → [**New**] → [**Project**].
 
-![](assets/chapter-2-1-images/06.New-project-01.PNG)
+![](assets/chapter-2-1-images/06.New-project-01.png)
 
 Select from the dialog window [**Java**], in the field Project SDK we specify which version of Java we will use and finally we click [**Next**] → [**Next**]:
 
-![](assets/chapter-2-1-images/06.New-project-02.PNG)
+![](assets/chapter-2-1-images/06.New-project-02.png)
 
-![](assets/chapter-2-1-images/06.New-project-03.PNG)
+![](assets/chapter-2-1-images/06.New-project-03.png)
 
 Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, and after that we click [**Finish**]:
 
-![](assets/chapter-2-1-images/06.New-project-04.PNG)
+![](assets/chapter-2-1-images/06.New-project-04.png)
 
 Now we have **empty IntelliJ IDEA Project** (without any Java classes in it which have to be in the `src` folder):
 
-![](assets/chapter-2-1-images/06.New-project-05.PNG)
+![](assets/chapter-2-1-images/06.New-project-05.png)
 
 The purpose of this project is to add in it **`.java` class per problem** from the exercises.
 
@@ -479,27 +479,27 @@ The first problem from this topic is the following: write a console program that
 
 We create a **new Java class** in the existing IntelliJ IDEA project. On the **src** folder, right-click with the mouse. Choose [**New**] → [**Java Class**]:
 
-![](assets/chapter-2-1-images/07.Square-area-01.PNG)
+![](assets/chapter-2-1-images/07.Square-area-01.png)
 
 A **dialogue window** will open for choosing а name to the Java class, for example, “SquareArea”:
 
-![](assets/chapter-2-1-images/07.Square-area-02.PNG)
+![](assets/chapter-2-1-images/07.Square-area-02.png)
 
 We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class a `Main` method(as in the picture below). In the body of the `Main` method **`Main(string[] args)`** we write the following code between the opening and closing curly brackets:
 
-![](assets/chapter-2-1-images/07.Square-area-03.PNG)
+![](assets/chapter-2-1-images/07.Square-area-03.png)
 
 As we can see in the code above, we read as input data an integer and assign it to a variable **`a`** (line **`int a = Integer.parseInt(scanner.nextLine())`**), afterwards we calculate the area (line **`int area = a * a`**) and finally prints the value of the variable **`area`** on the console. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
 
-![](assets/chapter-2-1-images/07.Square-area-04.PNG)
+![](assets/chapter-2-1-images/07.Square-area-04.png)
 
 #### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
 
-![](assets/chapter-2-1-images/07.Square-area-05.PNG)
+![](assets/chapter-2-1-images/07.Square-area-05.png)
 
-![](assets/chapter-2-1-images/07.Square-area-06.PNG)
+![](assets/chapter-2-1-images/07.Square-area-06.png)
 
 
 ### Exercise: Inches to centimeters
@@ -510,41 +510,41 @@ Write a program that **reads a number from the console** (not necessarily an int
 
 First, we create a **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-01.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-01.png)
 
 A dialogue window appears in which we write the file’s name. In our case this is "InchesToCentimeters" → [**OK**]:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-02.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-02.png)
 
 Next, we have to write the **program code**:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-03.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-03.png)
 
 **We start the program** with the right click on the window of the current program. We choose [**Run InchesToCentim...main()**] or we press [**Ctrl+Shift+F10**]. This shortcut starts the program in the current Java class (the one in which we wrote last):
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-04.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-04.png)
 
 We obtain the following result:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.png)
 
 Now **let's switch to the previous program/problem** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.png)
 
 If we use [**Shift+F10**] or press one of the two green arrows (located at the top right and bottom left of the IntelliJ IDEA window)
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-07.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-07.png)
 
 the last compiled program will be executed (**InchesToCentimeters**). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
 
 **Switching between projects** is an easy problem, isn't it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.
 
 Let's test with floating-point numbers, for example, with **2.5**:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Depending on the regional settings of the operating system, it is possible to use <b> decimal point </b> (US settings) instead of <b> decimal comma </b> (BG settings).</td>
@@ -552,13 +552,13 @@ Let's test with floating-point numbers, for example, with **2.5**:
 
 If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-10.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-10.png)
 
 It is recommended to **change the settings of your computer**, to use a **decimal point**:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-11.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-11.png)
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.png)
 
 #### Testing in the Judge system
 
@@ -566,7 +566,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 The solution should be accepted as a completely correct one:
 
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.PNG)
+![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
 
 
 ### Exercise: Greeting by name
@@ -577,15 +577,15 @@ Write a program that **reads from the console a person's name** and prints **`He
 
 First, we create a **new Java class** with the name “Greeting” in the project “SimpleCalculations”:
 
-![](assets/chapter-2-1-images/09.Greeting-by-name-01.PNG)
+![](assets/chapter-2-1-images/09.Greeting-by-name-01.png)
 
 **Next, we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
 
-![](assets/chapter-2-1-images/09.Greeting-by-name-02.PNG)
+![](assets/chapter-2-1-images/09.Greeting-by-name-02.png)
 
 **Run** the program with [**Ctrl+Shift+F10**] and test if it works:
 
-![](assets/chapter-2-1-images/09.Greeting-by-name-03.PNG)
+![](assets/chapter-2-1-images/09.Greeting-by-name-03.png)
 
 #### Testing in the Judge system
 
@@ -600,11 +600,11 @@ Write a Java program, that reads from the console a first name, last name, age, 
 
 We add to the existing IntelliJ IDEA Project one more Java class with the name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
 
-![](assets/chapter-2-1-images/10.Concatenate-data-01.PNG)
+![](assets/chapter-2-1-images/10.Concatenate-data-01.png)
 
 You should write **the code** that prints the message described in the requirements.
 
-![](assets/chapter-2-1-images/10.Concatenate-data-02.PNG)
+![](assets/chapter-2-1-images/10.Concatenate-data-02.png)
 
 In the picture above, the code is consciously blurred on purpose, in order for you to think of a way to finish it yourself.
 
@@ -621,13 +621,13 @@ Write a program that reads three numbers from the console **b1**, **b2** and **h
 
 Тhe figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
-![](assets/chapter-2-1-images/11.Trapezoid-area-01.PNG)
+![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
 #### Hints and guidelines
 
 Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with the name "`TrapezoidArea`" and to write **the code that reads the input from the console, then calculates the area of the trapezoid, and prints it** as an output on the console:
 
-![](assets/chapter-2-1-images/11.Trapezoid-area-02.PNG)
+![](assets/chapter-2-1-images/11.Trapezoid-area-02.png)
 
 The code on the picture is consciously blurred for you to give a thought and finish yourself.
 
@@ -664,7 +664,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 **A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
-![](/assets/chapter-2-1-images/12.Rectangle-area-01.PNG)
+![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
 
 #### Sample input and output
 

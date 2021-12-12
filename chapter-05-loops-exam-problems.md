@@ -3,7 +3,7 @@
 In the previous chapter, we learned how to execute a block of commands **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to consolidate our knowledge by solving some more complex problems with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave guidance only.
 Before we get to work it’s best if we recall the construction of the **`for` loop**:
 
-![](assets/chapter-5-2-images/00.For-construction.PNG)
+![](assets/chapter-5-2-images/00.For-construction.png)
 
 **For loops** consist of:
  * Initialization block - executed only once at the beginning before the compiler checks the repeat condition for the first time. In this case, the variable counter (**`int i`**) is declared  and its initial value is set.
@@ -110,19 +110,19 @@ Now we are going to proceed with the implementation of the above-made points.
   
 Before we move on to reading the input data we have to **declare the variables**, in which we are storing them. This means that we have to choose the right data type and appropriate names.
   
-![](assets/chapter-5-2-images/01.Histogram-01.PNG)
+![](assets/chapter-5-2-images/01.Histogram-01.png)
 
 In the variable **`n`** , we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because the condition states, that **`n` is a whole number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **they are not always expected to be whole numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`**, etc, in which we will store the count of numbers in the corresponding group, and for them, we choose the **`int` type** again.
 
 Once we have declared the needed variables, we can proceed with reading the number **`n`** from the console:
 
-![](assets/chapter-5-2-images/01.Histogram-02.PNG)
+![](assets/chapter-5-2-images/01.Histogram-02.png)
 
 #### Processing the input data
   
 In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers).  Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
 
-![](assets/chapter-5-2-images/01.Histogram-03.PNG)
+![](assets/chapter-5-2-images/01.Histogram-03.png)
 
 After we determined how many numbers each group has, we can move on to calculating the percentage, which is the main point of the problem. For this, we’ll use the following formula:
 
@@ -130,11 +130,11 @@ After we determined how many numbers each group has, we can move on to calculati
 
 This formula in the program code looks like the following:
 
-![](assets/chapter-5-2-images/01.Histogram-04.PNG)
+![](assets/chapter-5-2-images/01.Histogram-04.png)
 
 If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), the so-called **integer division** will be performed and only the whole part of the division will be stored in the variable,which is not the desired result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
 
-![](assets/chapter-5-2-images/01.Histogram-05.PNG)
+![](assets/chapter-5-2-images/01.Histogram-05.png)
 
 To make things even clearer, let’s take a look at this example:
 
@@ -154,7 +154,7 @@ After reading the numbers in group **`p1`** we have 2 numbers, and in **`p5`** w
   
 All that remains is to print the results. The condition states, that the percentages must be accurate to **two digits after the decimal point**. We can achieve this by setting the format to “**`%.2f%%`**” in the **`String.format(…)`** method:
 
-![](assets/chapter-5-2-images/01.Histogram-06.PNG)
+![](assets/chapter-5-2-images/01.Histogram-06.png)
 
 ### Testing using the Judge System
 
@@ -216,25 +216,25 @@ Print on the console a single line:
 
 The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** it and **printing the output**.
 
-![](assets/chapter-5-2-images/02.Smart-lilly-01.PNG)
+![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
 We begin again by choosing the appropriate **data types** and names of the variables. Lilly’s years (**`age`**) and the toy's unit price (**`presentPrice`**) are conditionally given to be **whole numbers**. That’s why we’ll use the **`int` type**. For the washing machine price (**`priceOfWashingMachine`**) we know, that it is a **real number and we choose `double`**. In the code above we **declare** and **initialize** (assign a value to) the variables.
 
-![](assets/chapter-5-2-images/02.Smart-lilly-02.PNG)
+![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
 To solve the problem, we will need several auxiliary variables – for the **toy count** (**`numberOfToys`**), for the **money saved** (**`savedMoney`**) and for the **money she received each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly got is 10 USD.
 
-![](assets/chapter-5-2-images/02.Smart-lilly-03.PNG)
+![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
 Using a **`for` loop** we iterate through each of Lilly’s birthdays. When the counter in our loop (which equates to Lilly’s age) is an **even number**, this means that Lilly **receives money** and we add this money to her total savings accordingly. Simultaneously we **subtract 1 USD** - the money her brother takes. Then we **increase** the variable value **`moneyForBirthday`**, i.e. we increase by 10 the sum she will get on her next birthday. The opposite of that, when the counter (Lilly's age) is an **odd number**, we increase the **toy counter**. We do the parity check by **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, when we have a remainder of 1 - it is odd.
 
 We also add the money from the sold toys to Lilly’s savings:
 
-![](assets/chapter-5-2-images/02.Smart-lilly-04.PNG)
+![](assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
 Finally, we need to print the results, following the formatting specified in the condition, i.e. the sum must be **rounded up to 2 digits after the decimal point**:
 
-![](assets/chapter-5-2-images/02.Smart-lilly-05.PNG)
+![](assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
 In this case, we chose to use the **conditional operator (`?:`)** (also called a ternary operator), because it’s shorter to write. The syntax is as follows: **`operand1 ? operand2 : operand3`**. The first operand needs to be **boolean type** (i.e. to return **`true/false`**). If **`operand1`** returns **`true`**, **`operand2`** will be executed, and if it returns **`false`** – **`operand3`** will be executed. In our case, we check if the **saved money** by Lilly is enough for the washing machine. If they are more or equal to the price of the washing machine, the check **`savedMoney >= priceOfWashingMachine`** will return **`true`** and will print out „**Yes! …**“, and if they are less the result will be **`false`** and will print “**No! …**”. Of course, instead of the ternary operand, we can use **`if-else`** checks.
 
@@ -306,11 +306,11 @@ The input is read from the console and **contains exactly 2 lines**:
 
 The method for solving this problem isn’t much different from the last one, we begin by **declaring and initializing** the needed variables:
 
-![](assets/chapter-5-2-images/03.Back-to-the-past-01.PNG)
+![](assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
 The condition states, that Ivan is 18 years old, so when we declare the variable **`years`** we assign its initial value of **18**. The rest of the variables are read from the console. 
 
-![](assets/chapter-5-2-images/03.Back-to-the-past-02.PNG)
+![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
 With the help from the **`for` loop**, we’ll iterate through all the years. **We begin with year 1800** – the year that Ivan goes back to, and we get to **the year he has to live to**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's age)**.
 
@@ -388,11 +388,11 @@ The input is read from **the console** and contains:
 ### Hints and Guidelines
 We start again, by **declaring and initializing** the necessary variables: 
 
-![](assets/chapter-5-2-images/04.Hospital-01.PNG)
+![](assets/chapter-5-2-images/04.Hospital-01.png)
 
 The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some auxiliary variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which by default is 7.
 
-![](assets/chapter-5-2-images/04.Hospital-02.PNG)
+![](assets/chapter-5-2-images/04.Hospital-02.png)
 
 Using a **`for` loop**, we iterate through all days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Incrementing the number of doctors by condition can be done **every third day**, **BUT** if only the number of the untreated patients is **greater** than the treated ones. For this purpose, we check if the day is the third one, using the arithmetical operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 

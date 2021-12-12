@@ -164,17 +164,17 @@ System.out.println();
 ```
 This is called “unfolding a code snippet”. The **`fori` + [Enter]** snippet works in the same way. On the figure below you can see the **`sout`** snippet in action:
 
-![](/assets/chapter-11-images/01.Code-snippet-01.PNG)
+![](/assets/chapter-11-images/01.Code-snippet-01.png)
 
 ### Creating Your Code Snippet
 
 In this section, we are going to show you how to **make your code snippet**. We will see **how to make a code snippet** for `scanner.nextLine();`. To begin we must create a new empty project in IntelliJ IDEA and go to [**File → Settings → Editor → Live Templates**], and choose [**+** → **Live Template**] as shown on the picture:
 
-![](/assets/chapter-11-images/01.Code-snippet-02.PNG)
+![](/assets/chapter-11-images/01.Code-snippet-02.png)
 
 A new window that looks like the one on the image below pops up:
 
-![](/assets/chapter-11-images/01.Code-snippet-03.PNG)
+![](/assets/chapter-11-images/01.Code-snippet-03.png)
 
 The following information should be entered:
 * **[Abbreviation]** - we specify the **code snippet** that we wish to use. In our case this is **`scnl`**.
@@ -188,12 +188,12 @@ String s = scanner.nextLine();
 
 Next we select **[Reformat according to style]** and choose **[Java]** from **[Define]** list. To finish the procedure press **[OK]** as it's shown in the picture below:
 
-![](/assets/chapter-11-images/01.Code-snippet-04.PNG)
+![](/assets/chapter-11-images/01.Code-snippet-04.png)
 
 
 Now when we write **`scnl`** in IntelliJ IDEA, **our new snippet** is going to appear:
 
-![](/assets/chapter-11-images/01.Code-snippet-05.PNG)
+![](/assets/chapter-11-images/01.Code-snippet-05.png)
 
 ## Code Debugging Techniques
 
@@ -220,22 +220,22 @@ public static void main(String[] args) {
 
 We will place a **breakpoint** at the function `System.out.println(…)`. For this, we will need to move our cursor to the line, which prints on the console, and press [**Ctrl + F8**], alternatively we can simply click using the left mouse button on the right side of the line number. A **breakpoint** appears, showing where the program will **stop** running:
 
-![](/assets/chapter-11-images/02.Debugger-01.PNG) 
+![](/assets/chapter-11-images/02.Debugger-01.png) 
 
 ### Starting the Program in Debug Mode
 
 To start **the program in debug mode**, we choose [**Run**] -> [**Debug &lt;class name>**] or press [**SHIFT + F9**]:
 
-![](/assets/chapter-11-images/02.Debugger-02.PNG) 
+![](/assets/chapter-11-images/02.Debugger-02.png) 
 
 After starting the program, we can see that it **stops executing** at line 8, where we placed our breakpoint. The code in the current line **is colored in additional color** and we can **run it step by step**. To go to **the next line**, we use the key [**F8**]. We can see that **the code on the current line hasn't been executed yet**. **It will execute when we go ahead with debugging the next line**. The current value of the variable is depicted in green, in this case, **`i = 0`** can be seen in the following picture.
 
-![](/assets/chapter-11-images/02.Debugger-03.PNG) 
+![](/assets/chapter-11-images/02.Debugger-03.png) 
 
 
 From the [**Variables**] window we can observe **the changes in the local variables**.
 
-![](/assets/chapter-11-images/02.Debugger-04.PNG)  
+![](/assets/chapter-11-images/02.Debugger-04.png)  
 
 ## Tricks for Java Developers
 

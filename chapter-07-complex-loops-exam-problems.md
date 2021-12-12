@@ -53,7 +53,7 @@ We can split the solution into three parts:
 
 To **read** the **input** we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-01.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
 Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** - **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
 
@@ -61,25 +61,25 @@ Let's declare and initialize the **variables**, which will **store the character
 
 We have to create **five** nested **`for`** loops, one for each variable. To ensure that the last digit **d3** is **greater** than the first two, we will use the built-in function **`Math.max(…)`**. 
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-02.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-02.png)
 
 **Did you Know That…?** 
 
 * We can **define a `for`** loop with a variable of type **`char`**:
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-03.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-03.png)
 
 * We can **read** a variable of type **`char`** from the console by using the following structure:
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-04.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-04.png)
 
 * We can convert an **uppercase** character **to lowercase** by using the built-in function in Java:
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-05.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-05.png)
 
 * When reading characters from the console, we can directly convert uppercase letters to lowercase letters **by combining the two lines above**:
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-06.PNG)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-06.png)
 
 ### Test your code in the Judge System
 
@@ -120,12 +120,12 @@ Print on the console **all magic numbers**, separated by **space**.
 -	Nest **six `for` loops** into each other, one for each digit of the required 6-digit numbers.
 -	In the last loop, use an **`if`** construction to check if the **product** of the six digits is **equal** to the **magic** number.
 
-![](assets/chapter-7-2-images/02.Magic-numbers-01.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-01.png)
 
 In the previous chapter, we reviewed other loop constructions. Let's check a sample solution of the same problem, where we use a **`while`** cycle.
 First, we have to store the **entered magic number** in a suitable variable. After that, we initialize 6 variables - one for each of the six digits of the numbers we have to output as a **result**.
 
-![](assets/chapter-7-2-images/02.Magic-numbers-02.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-02.png)
 
 After that, we start constructing the **`while`** loops.
 - We initialize the **first digit**: **`d1 = 0`**.
@@ -134,11 +134,11 @@ After that, we start constructing the **`while`** loops.
 - At the **end** of each loop, we **increase** the digit by one: **`d++`**.
 - In the **innermost** loop we do the **check** and, if necessary, print on the console.
 
-![](assets/chapter-7-2-images/02.Magic-numbers-03.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-03.png)
 
 Let's remove the **`if`** check from the innermost loop. Now, let's initialize each variable outside the loops and delete the lines **`dx = 0`**. After we start the program, we get only 10 results. Why? And what if we use a **`do-while`** loop? In our case this loop doesn't seem suitable, does it? Think about why. Of course, you can also solve the problem by using an **endless loop**.
 
-![](assets/chapter-7-2-images/02.Magic-numbers-04.PNG)
+![](assets/chapter-7-2-images/02.Magic-numbers-04.png)
 
 As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. To practice each type of loop, try to solve each of the following problems by using every type of loop we've learned so far.
 
@@ -188,7 +188,7 @@ The problem can be divided into **four** logical parts:
 
 We're also familiar with the **second** part - the initialization of a **`for`** loop. There's a little **catch** here - the problem requires us to print the numbers in **reversed order**. This means that the **initial** value of the variable **`i`** will be the **greater number**, and from the examples, we can see that this is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggest that the step will **decrease i by 1**.
 
-![](assets/chapter-7-2-images/04.Stop-number-01.PNG)
+![](assets/chapter-7-2-images/04.Stop-number-01.png)
 
 After we have initialized the **`for`** loop, it is time for the **third** part of the problem - to **check** the condition if the given **number is divisible by both 2 and 3 without remainder**. We will do this by using one simple **`if`** condition, that we will let the reader construct.
 

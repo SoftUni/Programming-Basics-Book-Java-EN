@@ -71,7 +71,7 @@ This **programming book** accompanies the free programming lessons for beginners
 
 **The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real-time**: you submit the solution, and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution, you get all the points for this problem. For a partially correct solution, you get part of the points for the problem. For a completely wrong solution, you get 0 points.
 
-This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.PNG)
+This how the **SoftUni Judge** looks like:![](/assets/chapter-1-images/02.Expression-03.png)
 
 **All problems from the current book are available for testing in SoftUni judge**, and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the problem requirements.
 

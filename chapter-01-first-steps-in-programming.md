@@ -97,19 +97,19 @@ To create programs using the Java programming language, we need to install the *
 ## Installing JDK
 JDK is distributed freely and can be downloaded from this link: https://oracle.com/technetwork/java/javase/downloads.  Choose the latest version of **Java SE** (Java Standard Edition).
 
-![](assets/chapter-1-images/00.Jdk-1.PNG)
+![](assets/chapter-1-images/00.Jdk-1.png)
 
 We need to accept the license agreement and choose the installation file which corresponds to our operating system. Windows 64-bit, for instance.
 
-![](assets/chapter-1-images/00.Jdk-2.PNG)
+![](assets/chapter-1-images/00.Jdk-2.png)
 
 Then we can download the installation file and run it. The installer which opens should look like this on a **Windows** environment:
 
-![](assets/chapter-1-images/00.Jdk-3.PNG)
+![](assets/chapter-1-images/00.Jdk-3.png)
 
 Press the **[Next]** button a few times until the Java development Kit starts installing:
 
-![](assets/chapter-1-images/00.Jdk-4.PNG)
+![](assets/chapter-1-images/00.Jdk-4.png)
 
 When it's finished, close the installer with the **[Close]** button.
 Installation on a Linux environment may be completely different, but most often, you need to install a standard package from the central repository `sudo apt install default-jdk`.
@@ -123,37 +123,37 @@ Let us start installing the **integrated environment** **IntelliJ IDEA Community
 **The community version** of IntelliJ IDEA is **free distributed** by JetBrains and can be downloaded from this link: [https://jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
 The following paragraphs contain a detailed description of the **steps needed to install IntelliJ IDEA** (version Community 2021). After we download and run the installation file, appear the following screen:
 
-![](assets/chapter-1-images/00.Intellij-idea-1.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-1.png)
 
 We click the **[Next]** button, and we will see the following window displayed:
 
-![](assets/chapter-1-images/00.Intellij-idea-2.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-2.png)
 
 We click the **[Next]** button one more time, and IntelliJ IDEA's installation panel gets loaded on the screen.
 
-![](assets/chapter-1-images/00.Intellij-idea-3.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-3.png)
 
 Depending on our operating system, we choose the 32 or the 64-bit launcher.  Then we tick the **[.java]**, **[.groovy]** and **[.kt]** boxes and click **[Next]**.
 
 We save the folder's name in the start menu and click **[Install]**. The following screen should appear once IntelliJ IDEA has started installing:
 
-![](assets/chapter-1-images/00.Intellij-idea-4.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-4.png)
 
 When the process is finished, tick the **[Run IntelliJ IDEA]** box and hit **[Finish]**, which will wrap up the installation and run the development environment.
 
-![](assets/chapter-1-images/00.Intellij-idea-5.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-5.png)
 
 We choose **[Create New Project]** from IntelliJ IDEA's welcome screen:
 
-![](assets/chapter-1-images/00.Intellij-idea-6.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-6.png)
 
 A window that shows we haven't chosen a software development kit (SDK) gets displayed:
 
-![](assets/chapter-1-images/00.Intellij-idea-7.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-7.png)
 
 We click **[New]** and find the route to the **Java Development Kit** (JDK) we already installed, being careful not to choose **JRE**.
 
-![](assets/chapter-1-images/00.Intellij-idea-8.PNG)
+![](assets/chapter-1-images/00.Intellij-idea-8.png)
 
 Then we select the JDK installation folder and click **[OK]**. That is it. We are ready to start working with **IntelliJ IDEA**.
 
@@ -172,16 +172,16 @@ The IntelliJ IDEA project uses **logic to group the numerous files** that make u
 ### Example: creating a 'Hello Java' console program
 Let us get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we will create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
 
-![](assets/chapter-1-images/01.Hello-java-01.PNG)
+![](assets/chapter-1-images/01.Hello-java-01.png)
 
-![](assets/chapter-1-images/01.Hello-java-02.PNG)
+![](assets/chapter-1-images/01.Hello-java-02.png)
 
 IntelliJ IDEA will create a blank Java program for us and we will need to write the code for it.
 
 #### Writing program code
 Java programs' source code is written between the curly brackets of the **`main(String[] args)`** section. It is the main method (action) executed when starting a Java program. Press [Enter] after the opening bracket, and we can start writing. In regards to text formatting, program code is written with an indentation which helps when reviewing and debugging it. 
 
-![](assets/chapter-1-images/01.Hello-java-03.PNG)
+![](assets/chapter-1-images/01.Hello-java-03.png)
 
 We can write the following command:
 ```java
@@ -190,7 +190,7 @@ System.out.println("Hello Java");
 
 And here's what our program in IntelliJ IDEA should look like:
 
-![](assets/chapter-1-images/01.Hello-java-04.PNG)
+![](assets/chapter-1-images/01.Hello-java-04.png)
 
 The **`System.out.printIn("Hello Java")`** command in the Java language allows us to print the text message **`"Hello Java"`** on the console ('out.printIn(…)'). The message needs to be enclosed in quotes that signify text. At the end of every Java command we place a semicolon **`;`** that indicates the end of a command (meaning it doesn't continue on the next row).
 
@@ -202,7 +202,7 @@ This command is quite typical for programming: signify we need a certain **objec
 #### Starting the program
 We start the program by pressing **[Ctrl + Shift + F10]**. If there are no errors, the program will execute. The result will be displayed on the console (the window at the very bottom of IntelliJ IDEA).
 
-![](assets/chapter-1-images/01.Hello-java-05.PNG)
+![](assets/chapter-1-images/01.Hello-java-05.png)
 
 The result of the program is the following message:
 ```java
@@ -216,11 +216,11 @@ The program that we just wrote can be tested here:
 [https://judge.softuni.org/Contests/Practice/Index/646#0](https://judge.softuni.org/Contests/Practice/Index/646#0).
 We need to paste the program's entire source code in the black field and make sure we've selected **Java code** from the dropdown menu.
 
-![](/assets/chapter-1-images/01.Hello-java-06.PNG)
+![](/assets/chapter-1-images/01.Hello-java-06.png)
 
 Then we can send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds, which is displayed in the table of submitted solutions. If necessary, we can hit the **[Refresh]** button at the upper right-hand corner of the table of submitted solutions:
 
-![](/assets/chapter-1-images/01.Hello-java-07.PNG)
+![](/assets/chapter-1-images/01.Hello-java-07.png)
 
 The Judge System will display one of the following possible results in the table:
 * **Number of points** (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
@@ -307,16 +307,16 @@ Note: **you are not allowed to previously calculate the value** (for example, wi
 ### Hints and guidelines
 Create a **new Java file** and name it **`Expression`**. Then we find the method **`static void main(String[] args)`** and start writing in its body (the space **between the opening and closing curly braces**). We need to **write the code**, which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`System.out.printIn(…)`** command by writing it within its brackets:
 
-![](assets/chapter-1-images/02.Expression-01.PNG)
+![](assets/chapter-1-images/02.Expression-01.png)
 
 Start the program with **[Ctrl + Shift + F10]** and check whether the result matches the one from the picture:
 
-![](assets/chapter-1-images/02.Expression-02.PNG)
+![](assets/chapter-1-images/02.Expression-02.png)
 
 ### Testing in the Judge system
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#1](https://judge.softuni.org/Contests/Practice/Index/646#1).
 
-![](assets/chapter-1-images/02.Expression-03.PNG)
+![](assets/chapter-1-images/02.Expression-03.png)
 
 ### Exercise: Numbers from 1 to 20
 Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
@@ -324,11 +324,11 @@ Write a Java console program that **prints the numbers from 1 to 20** on separat
 ### Hints and guidelines
 Create a new Java class and name it **`Nums1to20`** (right click on the **`src`** folder -> [New] -> [Java Class])
 
-![](/assets/chapter-1-images/03.Numbers-1-to-20-01.PNG)
+![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
 Inside the **`static void main(String[] args`** method, write 20 **`print()`** commands, each on a separate line, to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
-![](assetschapter-1-images03.Numbers-1-to-20-02.PNG)
+![](assetschapter-1-images03.Numbers-1-to-20-02.png)
 
 Let's now **start the program** and check whether the result is what we're expecting:
 ```
@@ -447,7 +447,7 @@ Now we are about to build one simple **web application** and one simple **graphi
 
 Write a **graphical (GUI) application**, which **calculates the sum of two numbers**:
 
-![](assets/chapter-1-images/07.Numbers-sum-01.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-01.png)
 
 By entering two numbers in the first two fields and pressing the button [Calculate], their sum is being calculated, and the result is shown in the third text field.
 
@@ -457,41 +457,41 @@ For our application, we will use the technology **JavaFX**. It allows us to crea
 
 To create graphical applications with JavaFX, we will use the program that we can download from httpsgluonhq.comproductsscene-builder#download.
 
-![](assets/chapter-1-images/07.Numbers-sum-02.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-02.png)
 
 We install **SceneBuilder** for the design of the JavaFX user interface.
 
-![](assets/chapter-1-images/07.Numbers-sum-03.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-03.png)
 
 In IntelliJ IDEA, create a new Java project of type **JavaFX Application**
 
-![](assets/chapter-1-images/07.Numbers-sum-04.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-04.png)
 
 When creating a **JavaFX application**, a project with a few files will be generated.
 
-![](assets/chapter-1-images/07.Numbers-sum-05.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-05.png)
 
 The file, inside which is the view of our application, can be found on the path **[src/sample/sample.fxml]**. Let us go there and open it
 
-![](assets/chapter-1-images/07.Numbers-sum-06.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-06.png)
 
 The file looks like this. We will not work with it directly later, but we will use the mentioned above **SceneBuilder**, which will generate code instead of us. We click the right mouse button on the file and choose **[Open in SceneBuilder]**.
 
-![](assets/chapter-1-images/07.Numbers-sum-07.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-07.png)
 
 By choosing the option for the first time, IntelliJ IDEA will ask us to enter the path towards **SceneBuilder.exe**:
 
-![](assets/chapter-1-images/07.Numbers-sum-08.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-08.png)
 
 With the usual Windows installation of **SceneBuilder**, it is found in [**C:\Users\[username]\AppData\Local\SceneBuilder**]. 
 
 After we have pointed the right path, **SceneBuilder** opens, and we see the following screen:
 
-![](assets/chapter-1-images/07.Numbers-sum-09.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-09.png)
 
 We have the types of controls we can add on the left-hand side of the screen, so let us find the **[AnchorPane]** window and add it by dragging it to the environment where our design is located.
 
-![](assets/chapter-1-images/07.Numbers-sum-10.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-10.png)
 
 It is our window where we can now start adding controls located in the same place we added [AnchorPane] from (in the [Containers] menu). For our interface we will need:
   - 3 text fields: **`TextField`**
@@ -500,130 +500,130 @@ It is our window where we can now start adding controls located in the same plac
 
 After we have added them, our application should look like this:
 
-![](assets/chapter-1-images/07.Numbers-sum-11.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-11.png)
 
 We will rename the controls by choosing more appropriate names, reflecting our application's functionality (**`"+"`** and **`"="`**). It is achieved by clicking the control we wish to change and go to its [Properties] on the right.
 
 First, we will change the **`Text`** property of the tickets. Their name is **`Label`** by default:
 
-![](assets/chapter-1-images/07.Numbers-sum-12.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-12.png)
 
 We will choose more meaningful names which will reflect our program's logic better. Change the first text **`Label`** with **`+`**:
 
-![](assets/chapter-1-images/07.Numbers-sum-13.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-13.png)
 
 Then do the same with the second ticket and the button - change the former's text to **`=`** and the latter's to **`Calculate`** 
 
-![](assets/chapter-1-images/07.Numbers-sum-14.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-14.png)
 
 We will save our design changes using **[Ctrl+S]**:
 
-![](assets/chapter-1-images/07.Numbers-sum-15.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-15.png)
 
 Now go back to IntelliJ IDEA and start the application using **[Shift+F10]**:
 
-![](assets/chapter-1-images/07.Numbers-sum-16.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-16.png)
 
 The application's size is most likely not what you expected it to be. It is due to a piece of our code explicitly stating what that size needs to be. Let us resolve the issue:
 Go to the **`Main`** class and find the piece of code
 
-![](assets/chapter-1-images/07.Numbers-sum-17.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-17.png)
 
 Delete the code responsible for window size, so our program can use the sizing we chose in SceneBuilder.
 
-![](assets/chapter-1-images/07.Numbers-sum-18.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-18.png)
 
 Now the code looks like this:
 
-![](assets/chapter-1-images/07.Numbers-sum-19.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-19.png)
 
 We start the program once more using **[Shift+F10]** and check whether the sizing is correct.
 
-![](assets/chapter-1-images/07.Numbers-sum-20.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-20.png)
 
 The final step in our design is to go back to our code and change the application's **title**, located on this line:
 
-![](assets/chapter-1-images/07.Numbers-sum-21.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-21.png)
 
 Change the name from **"Hello World"** to **"Sumator"**:
 
-![](assets/chapter-1-images/07.Numbers-sum-22.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-22.png)
 
 And start the application:
 
-![](assets/chapter-1-images/07.Numbers-sum-23.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-23.png)
 
 The graphical part's design looks ready. It is now time for something a lot more interesting – **the program logic**. Time to write the code which sums the numbers from the first two fields and displays the result in the third field. To do that, we need to go back to **SceneBuilder** and give the text fields names so we can access them in the code:
 
-![](assets/chapter-1-images/07.Numbers-sum-24.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-24.png)
 
 Click the first text field and go to the **[Code]** section on the right, where we will enter the name **`num1`** in the **`fxid`** field:
 
-![](assets/chapter-1-images/07.Numbers-sum-25.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-25.png)
 
 Then rename the second field to **`num2`**:
 
-![](assets/chapter-1-images/07.Numbers-sum-26.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-26.png)
 
 And the third field to **`result`**:
 
-![](assets/chapter-1-images/07.Numbers-sum-27.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-27.png)
 
 Now we will tell the button what function to perform once it is clicked. Go to the **`On Action`** field and enter the name of the function **`calculate`**, which we will create in a moment:
 
-![](assets/chapter-1-images/07.Numbers-sum-28.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-28.png)
 
 Save the changes in SceneBuilder using **[Ctrl+S]** and go back to the **`sample.fxml`** file
 
-![](assets/chapter-1-images/07.Numbers-sum-29.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-29.png)
 
 We can see that our fields have names, and our button has a function to perform once it is clicked.
 So far, so good, but these fields and the button's function don't yet exist in our code. To generate them, we will go to each one of them and press **[Alt+Enter]** -> **[Create field]** (the field's name]
 
-![](assets/chapter-1-images/07.Numbers-sum-30.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-30.png)
 
 Once we create one of the fields, we will get redirected to the **`Controller.java`** file, where the field will be generated in the code in the following manner:
 
-![](assets/chapter-1-images/07.Numbers-sum-32.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-32.png)
 
 Write the following Java code between the curly braces of the **`calculate`** function:
 
-![](assets/chapter-1-images/07.Numbers-sum-33.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-33.png)
 
 This code takes the first number from the field **`num1`** and stores it in the variable **`num1`**, then does the same with the **`num2`** field and stores it in the variable **`num2`**. The numbers are then summed, storing their value in the variable **`result`**, and finally, the latter's text value is visualized in the **`result`** field.
 
-![](assets/chapter-1-images/07.Numbers-sum-34.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-34.png)
 
 **Start** the program again with **[Shift+F10]** and **check if it is working**. Check whether we can calculate the sum of different values correctly. First, we enter two whole numbers – **4** and **5**, for example:
 
-![](assets/chapter-1-images/07.Numbers-sum-35.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-35.png)
 
 Then we try summing negative and positive floating-point numbers – for example, **-12.5** and **1.3**:
 
-![](assets/chapter-1-images/07.Numbers-sum-36.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-36.png)
 
 How about entering invalid input such as **aaa** and bbb**:
 
-![](assets/chapter-1-images/07.Numbers-sum-37.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-37.png)
 
 We have a problem when the user enters **invalid input data**:
 
-![](assets/chapter-1-images/07.Numbers-sum-38.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-38.png)
 
 It is due to the transformation of our text field into a number. If the value in the field isn't a number, the program crashes, and **returns an error** (exception). We can fix the code by doing the following:
 
-![](assets/chapter-1-images/07.Numbers-sum-39.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-39.png)
 
 With this code, we intercept errors when working with numbers (**catch exceptions**), and in case of an error, we display the value **"error"** in our result field. Start the program again with **[Shift+F10]** and check if it's working. This time, if an incorrect number is entered, the result is **"error"** and the program doesn't crash:
 
-![](assets/chapter-1-images/07.Numbers-sum-40.PNG)
+![](assets/chapter-1-images/07.Numbers-sum-40.png)
 
 Does all this seem complicated? If it does, that's completely normal. We are at the beginning of our programming journey. The example above requires much more knowledge and skills, which we will develop using this book and later on. Just allow yourself to have some fun with desktop programming. If something doesn't work, feel free to ask for help in the SoftUni discussion forum: https://forum.softuni.org, or bravely move forward to the next example or the next chapter in the book. A time will come when this will be easy for you, but you have to put in some effort and be persistent. Learning programming is a slow process involving lots and lots of practice.
 
 ### Web application: 'Numbers summator'
 Now, we will create something even more complex but more interesting: a Web application that **calculates the sum of two numbers**. By **entering two numbers** in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated**, and the result is displayed in the third text field. The application is expected to look like as is shown below:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-01.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-01.png)
 
 Unlike the console applications that read and write data as text on the console, **Web applications** have a **Web-based user interface**. Web applications are loaded from some **Internet address** (URL) through a standard **web browser**. Users write input data on a page, visualized by the web browser, the data is processed on a web server, and the results are shown again on a page in the web browser.
 
@@ -632,77 +632,77 @@ For our web application, we will use **Spring MVC**. It enables us to create a w
 Take the project (the application's skeleton) from this link:
 [https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-02.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-02.png)
 
 Find the folder where we have downloaded the skeleton:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-03.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-03.png)
 
 Choose **[Import project from external model]** and then **[Maven]**:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-04.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-04.png)
 
 It is the screen that comes up next:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-05.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-05.png)
 
 Proceed by clicking **[Next]**:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-06.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-06.png)
 
 And again continue with **[Next]**:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-07.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-07.png)
 
 One more time – **[Next]**:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-08.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-08.png)
 
 Once the project is loaded, in IntelliJ, it should look something like this:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-09.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-09.png)
 
 Let us start the project and make sure it runs without errors. To do that, we will go to the **[src/main/javacom.softuni]** folder and open the **SumatorApplication** file:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-10.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-10.png)
 
 To run the program, we can either use the **[Ctrl+Shift+F10]** key combination, or select **[Run 'SumatorApplication.main()']** from the context menu:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-11.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-11.png)
 
 Once the web application is loaded, we should see the following message at the bottom of the console which has appeared:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-12.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-12.png)
 
 We can run the application and check whether it's working by opening our web browser and typing **localhost:8080** in the address bar:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-13.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-13.png)
 
 All seems fine but when we enter the two numbers and hit **[Calculate]**, nothing happens. Let us write the logic needed to summing both numbers to work as expected. Open the **`HomeController`** file in the same folder, and we should be able to see the following:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-14.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-14.png)
 
 The part we are interested in is the **`sum`** function:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-15.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-15.png)
 
 Currently, this function accepts two pieces of text **`num1`** and **`num2`**, passes them to the server and returns the file **`index`** to the user. As you have probably realized, there is no code to calculate the numbers from the two text fields and enter the result in the third field. Let us write the logic to make it happen.
 
 Go between the curly braces and write the following code:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-16.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-16.png)
 
 Here is what the **`HomeController`** file should look like after the change:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-17.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-17.png)
 
 Before we go back to the application, we need to apply our changes. We'll do that by going to the console window and clicking the **[Rerun application]** button.
 
-![](assets/chapter-1-images/08.Numbers-sum-web-18.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-18.png)
 
 The application is completed. If we enter the two numbers in the text fields and click the **[Calculate]** button, we should see the result come up in the third text field:
 
-![](assets/chapter-1-images/08.Numbers-sum-web-19.PNG)
+![](assets/chapter-1-images/08.Numbers-sum-web-19.png)
 
 Does all this seem scary? **There's no need to be afraid!** We have a lot to learn to reach the knowledge and skills required to write web-based applications, with ease like in the example above, and much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. 
 
