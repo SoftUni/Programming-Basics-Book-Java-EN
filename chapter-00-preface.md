@@ -2,7 +2,7 @@
 
 The book **Programming Basics with Java** introduces the readers to writing **programming code** at a beginners level (basic coding skills), working with **the development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for a furthermore in-depth study of programming and prepares the reader for the entrance exam at SoftUni.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>This book only gives you <b>the first steps to programming</b>. It covers basic skills that you must develop for years, to reach a high enough level and start working as a programmer.</td></tr></table>
 
 The book is used as unofficial **textbook for school-level programming courses**: in the high schools, studying professions like **Programmer**, **Application Programmer** and **System Programmer**, as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools**.
@@ -47,7 +47,7 @@ We advise the reader, as a minimum, **to try out all the examples from the book*
 **You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
 
 </tr></table>
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
 </tr></table>
 
@@ -257,7 +257,7 @@ The book is published and distributed **on paper** by SoftUni, and you can buy a
 
 You can find the **source code** of the book in GitHub: https://github.com/SoftUni/Programming-Basics-Book-Java-EN.
 
-International Standard Book Number (ISBN): **978-619-00-0636-7**.
+International Standard Book Number (ISBN): **978-619-00-1402-7**.
 
 ## Reporting Bugs
 
