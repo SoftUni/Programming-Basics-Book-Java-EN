@@ -259,7 +259,7 @@ You can find the **source code** of the book in GitHub: https://github.com/SoftU
 
 International Standard Book Number (ISBN): **978-619-00-0636-7**.
 
-## Reporting bgs
+## Reporting Bugs
 
 If you find **mistakes**, inaccuracies or bugs in the book, you can report them in the official bug tracker of the project:
 
