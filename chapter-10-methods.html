@@ -168,7 +168,7 @@
                 <a href="chapter-02-simple-calculations-exam-problems.html">
             
                     
-                    2.2. Simple Calculations – Exam Tasks
+                    2.2. Simple Calculations – Exam problems
             
                 </a>
             
@@ -194,7 +194,7 @@
                 <a href="chapter-03-simple-conditions-exam-problems.html">
             
                     
-                    3.2. Simple Conditions – Exam Tasks
+                    3.2. Simple Conditions – Exam problems
             
                 </a>
             
@@ -220,7 +220,7 @@
                 <a href="chapter-04-complex-conditions-exam-problems.html">
             
                     
-                    4.2. More Complex Conditions – Exam Tasks
+                    4.2. More Complex Conditions – Exam problems
             
                 </a>
             
@@ -246,7 +246,7 @@
                 <a href="chapter-05-loops-exam-problems.html">
             
                     
-                    5.2. Loops - Exam Tasks
+                    5.2. Loops - Exam problems
             
                 </a>
             
@@ -272,7 +272,7 @@
                 <a href="chapter-06-nested-loops-exam-problems.html">
             
                     
-                    6.2. Nested Loops – Exam Tasks
+                    6.2. Nested Loops – Exam problems
             
                 </a>
             
@@ -298,7 +298,7 @@
                 <a href="chapter-07-complex-loops-exam-problems.html">
             
                     
-                    7.2. More Complex Loops – Exam Tasks
+                    7.2. More Complex Loops – Exam problems
             
                 </a>
             
@@ -337,7 +337,7 @@
                 <a href="chapter-09-problems-for-champions.html">
             
                     
-                    9.1. Tasks for Champions – Part I
+                    9.1. problems for Champions – Part I
             
                 </a>
             
@@ -350,7 +350,7 @@
                 <a href="chapter-09-problems-for-champions-part-2.html">
             
                     
-                    9.2. Tasks for Champions – Part II
+                    9.2. problems for Champions – Part II
             
                 </a>
             
@@ -445,19 +445,19 @@
                                 <h1 id="chapter-10-methods"><a name="chapter-10-methods" class="plugin-anchor" href="#chapter-10-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 10. Methods</h1>
 <p>In this chapter, we will introduce you to <strong>methods</strong>. We will learn what they are, what is their <strong>base concepts</strong> when working with them. We will learn why it is a <strong>good practice</strong> to use them, how to <strong>declare</strong> and <strong>call</strong> them. We will also introduce you to the <strong>parameters</strong> and <strong>return value of a method</strong> and how to use that return value. At the end of this chapter, we will look at the <strong>established practices</strong> when using methods.</p>
 <h2 id="what-is-method"><a name="what-is-method" class="plugin-anchor" href="#what-is-method"><i class="fa fa-link" aria-hidden="true"></i></a>What is &quot;method&quot;?</h2>
-<p>So far, we have found out that while <strong>writing</strong> a code for a program that solve a task, <strong>separating</strong> the task into different <strong>parts</strong> favors us a lot. Every part is responsible for a <strong>corresponding action</strong> and by doing so, it is <strong>easier</strong> to solve the task, and the <strong>readability</strong> and the debugging of the code are better.</p>
-<p>A block of code designed to perform a particular task, which we have logically separated is called a <strong>method</strong>. <strong>Methods &#x2013; pieces of code, that are named</strong> by us in a certain way and could be called as many times as we need.</p>
+<p>So far, we have found out that while <strong>writing</strong> a code for a program that solve a problem, <strong>separating</strong> the problem into different <strong>parts</strong> favors us a lot. Every part is responsible for a <strong>corresponding action</strong> and by doing so, it is <strong>easier</strong> to solve the problem, and the <strong>readability</strong> and the debugging of the code are better.</p>
+<p>A block of code designed to perform a particular problem, which we have logically separated is called a <strong>method</strong>. <strong>Methods &#x2013; pieces of code, that are named</strong> by us in a certain way and could be called as many times as we need.</p>
 <p>A <strong>method</strong> can be <strong>called</strong> as many times as we think we need to solve a problem. That <strong>saves</strong> us from repeating the same code several times, <strong>reduces</strong> the possibility of making a mistake while editing the repeated code.</p>
 <h3 id="simple-methods"><a name="simple-methods" class="plugin-anchor" href="#simple-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Simple methods</h3>
 <p>Simple methods are responsible for running a specific <strong>action</strong> that will <strong>help</strong> us to solve a problem. Those actions can be printing a string on the console, performing some checks, performing a loop, etc.</p>
 <p>Let&apos;s look at the following <strong>example of a simple method</strong>:</p>
 <p><img src="assets/chapter-10-images/01.Simple-method-01.png" alt=""></p>
-<p>This <strong>method</strong> has the task to print a header containing a series of the symbol <strong><code>-</code></strong>. Because of this, the name of the method is <strong><code>printHeader</code></strong>. The parentheses <strong><code>(</code></strong> and <strong><code>)</code></strong> always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the <strong>name of a method must describe the action</strong> he performs.</p>
+<p>This <strong>method</strong> has the problem to print a header containing a series of the symbol <strong><code>-</code></strong>. Because of this, the name of the method is <strong><code>printHeader</code></strong>. The parentheses <strong><code>(</code></strong> and <strong><code>)</code></strong> always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the <strong>name of a method must describe the action</strong> he performs.</p>
 <p>The <strong>body</strong> of the method consists of <strong>programming code</strong>, which is located between the curly brackets <strong><code>{</code></strong> and <strong><code>}</code></strong>. Between them, we place code, that will solve our problem, described by the name of the method.</p>
 <h3 id="why-should-we-use-methods"><a name="why-should-we-use-methods" class="plugin-anchor" href="#why-should-we-use-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Why should we use methods?</h3>
-<p>Up to this moment, we have found out that, methods help us with <strong>separating big tasks into smaller parts</strong>, which leads to a <strong>simple solution</strong> of the corresponding problem. It makes our program, not just well structured, <strong>easy readable</strong> but also more understandable.</p>
+<p>Up to this moment, we have found out that, methods help us with <strong>separating big problems into smaller parts</strong>, which leads to a <strong>simple solution</strong> of the corresponding problem. It makes our program, not just well structured, <strong>easy readable</strong> but also more understandable.</p>
 <p>Using methods, we <strong>escape repeating</strong> of programming code. <strong>Repeating</strong> code is a bad practice, as it makes it very difficult to maintain the program and leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change at every occurrence it. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. It is why it&apos;s a <strong>good practice</strong> to define a fragment that will be used <strong>more than once</strong> as a <strong>separate method</strong>.</p>
-<p>Methods offer us an <strong>opportunity</strong> to use <strong>code several times</strong>. With solving more and more tasks, we will conclude that using already defined methods saves us much time and effort.</p>
+<p>Methods offer us an <strong>opportunity</strong> to use <strong>code several times</strong>. With solving more and more problems, we will conclude that using already defined methods saves us much time and effort.</p>
 <h3 id="declaring-methods"><a name="declaring-methods" class="plugin-anchor" href="#declaring-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring methods</h3>
 <p>In Java language, you can <strong>declare</strong> methods inside a class, i.e., between the opening <strong><code>{</code></strong> and closing <strong><code>}</code></strong> brackets of the classbut not in the declaration of another method. The declaration is the registration of the method in the program, and thus the method will be recognized in the rest of it. The best-known example is the <strong><code>main(&#x2026;)</code></strong> method, which we use in every program we write.</p>
 <p><img src="assets/chapter-10-images/02.Declaring-methods-01.png" alt=""></p>
@@ -638,12 +638,12 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#3</a>.</p>
 <h2 id="returning-result-from-a-method"><a name="returning-result-from-a-method" class="plugin-anchor" href="#returning-result-from-a-method"><i class="fa fa-link" aria-hidden="true"></i></a>Returning result from a method</h2>
-<p>So far, we have looked at methods that do a specific task, for example, printing a text, number, or figure on the console. There is another type of method that can <strong>return</strong> a <strong>result</strong> from their task. We will look at this type of method in the following lines.</p>
+<p>So far, we have looked at methods that do a specific problem, for example, printing a text, number, or figure on the console. There is another type of method that can <strong>return</strong> a <strong>result</strong> from their problem. We will look at this type of method in the following lines.</p>
 <h3 id="types-of-returned-values"><a name="types-of-returned-values" class="plugin-anchor" href="#types-of-returned-values"><i class="fa fa-link" aria-hidden="true"></i></a>Types of returned values</h3>
 <p>So far, we saw some examples, in which when declaring methods, we used the keyword <strong><code>void</code></strong>, which shows that the method <strong>does not</strong> return a result, but just executes a certain action.</p>
 <p><img src="assets/chapter-10-images/09.Return-types-01.png" alt=""></p>
 <p>If we <strong>replace</strong> <strong><code>void</code></strong> with <strong>a type</strong> of some variable, this will tell the program that the method should return a value of the said type. This returned value could be of any type &#x2013; <strong><code>int</code></strong>, <strong><code>String</code></strong>, <strong><code>double</code></strong>, etc. </p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px">
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px">
 </td><td>For a method to return <strong>a result</strong> we need to write the type of returned value we expect when declaring the method, in place of the <code>void</code>.</td></tr>
 </table>
 
@@ -660,7 +660,7 @@
 <h4 id="code-after-a-return-is-unreachable"><a name="code-after-a-return-is-unreachable" class="plugin-anchor" href="#code-after-a-return-is-unreachable"><i class="fa fa-link" aria-hidden="true"></i></a>Code after a return is unreachable</h4>
 <p>When the <strong>return</strong> operator is located inside a conditional statement such as <strong><code>if</code></strong>, after the statement in the same block, we must <strong>not</strong> have rows with code because IntelliJ IDEA will display a warning telling us that it had found an <strong>unreachable</strong> statement.</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-03.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px">
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px">
 </td><td>In programming, we can&apos;t have 2 times the operator <code>return</code> one after another because the first return won&apos;t allow us to use the second. Sometimes programmers joke
 with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s go home</i></b>&#x201D;, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
@@ -768,7 +768,7 @@ with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s g
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
-<p>To complete our task, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.</p>
+<p>To complete our problem, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.</p>
 <p><img src="assets/chapter-10-images/15.Greater-of-two-values-01.png" alt=""></p>
 <p>Following the logic of the previous method, we create another one with the same name, but this one will compare characters.</p>
 <p><img src="assets/chapter-10-images/15.Greater-of-two-values-02.png" alt=""></p>
@@ -781,9 +781,9 @@ with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s g
 <h2 id="naming-methods-best-practices-when-working-with-methods"><a name="naming-methods-best-practices-when-working-with-methods" class="plugin-anchor" href="#naming-methods-best-practices-when-working-with-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Naming methods. Best practices when working with methods</h2>
 <p>In this chapter, we will introduce you to some of the <strong>best practices</strong> when working with methods. They will be related to naming, organizing our code and its structure. </p>
 <h3 id="naming-methods"><a name="naming-methods" class="plugin-anchor" href="#naming-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Naming methods</h3>
-<p>When we name a method, it&apos;s recommended to use <strong>logical name</strong>. This is good because every method must <strong>correspond</strong> to a specific part of our problem. We must take into consideration the <strong>task</strong> which the method will do. This is why it&apos;s a good practice <strong>for the name to describes the purpose of the method</strong>.</p>
+<p>When we name a method, it&apos;s recommended to use <strong>logical name</strong>. This is good because every method must <strong>correspond</strong> to a specific part of our problem. We must take into consideration the <strong>problem</strong> which the method will do. This is why it&apos;s a good practice <strong>for the name to describes the purpose of the method</strong>.</p>
 <p>It is required for the name of the method to start with a <strong>small letter</strong> and to be a verb or a combination of a verb and a noun. Formatting the names must be done following <strong>Lower Camel Case</strong> convention - <strong>every word except the first to start with an upper letter</strong>. Round brackets  <strong><code>(</code></strong> and <strong><code>)</code></strong> are always after the name of the method.</p>
-<p>Every method must do an independent task, and the name must describe its role.</p>
+<p>Every method must do an independent problem, and the name must describe its role.</p>
 <p>Here are some examples of <strong>correctly</strong> named methods:</p>
 <ul>
 <li><strong><code>findStudent</code></strong></li>
@@ -798,7 +798,7 @@ with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s g
 <li><strong><code>SampleMethod</code></strong></li>
 <li><strong><code>DirtyHack</code></strong></li>
 </ul>
-<p>If we can&apos;t come up with a good name, it&apos;s probably because our method does more than one job or it doesn&apos;t have a clear task. We must think of a way to divide the method into several separate methods.</p>
+<p>If we can&apos;t come up with a good name, it&apos;s probably because our method does more than one job or it doesn&apos;t have a clear problem. We must think of a way to divide the method into several separate methods.</p>
 <h3 id="naming-parameters-of-methods"><a name="naming-parameters-of-methods" class="plugin-anchor" href="#naming-parameters-of-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Naming parameters of methods</h3>
 <p>When naming <strong>the parameters</strong> of a method you can apply almost the same rules as with the methods themselves. The difference here is that it is good for the names of the parameters to use a noun or a couple of an adjective and a noun, and when naming the parameters, we use the <strong><code>lowerCamelCase</code></strong> convention, i.e., <strong>each word except for the first one starts with uppercase</strong>. We should note that it is a good practice that the name of the parameter <strong>shows</strong> what <strong>unit</strong> is used when working with it.</p>
 <p>Here are some examples of <strong>correctly</strong> named parameters of methods:</p>
@@ -820,7 +820,7 @@ with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s g
 <li><strong><code>last_name</code></strong></li>
 </ul>
 <h3 id="good-practices-when-working-with-methods"><a name="good-practices-when-working-with-methods" class="plugin-anchor" href="#good-practices-when-working-with-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Good practices when working with methods</h3>
-<p>We must keep in mind that a method must do <strong>only one</strong> specific <strong>task</strong>. If this can&apos;t be achieved, then we must come up with a way to <strong>divide</strong> the functionality into different parts.
+<p>We must keep in mind that a method must do <strong>only one</strong> specific <strong>problem</strong>. If this can&apos;t be achieved, then we must come up with a way to <strong>divide</strong> the functionality into different parts.
 As we have already said, the name must be clear and descriptive. Another <strong>good practice</strong> is to <strong>avoid</strong> methods that are longer than our screen. If this happens, it&apos;s recommended to <strong>split</strong> the method into smaller ones, as shown in the example below.</p>
 <p><img src="assets/chapter-10-images/04.Print-receipt-02.png" alt=""></p>
 <h3 id="structure-and-formatting-of-the-code"><a name="structure-and-formatting-of-the-code" class="plugin-anchor" href="#structure-and-formatting-of-the-code"><i class="fa fa-link" aria-hidden="true"></i></a>Structure and formatting of the code</h3>
@@ -844,7 +844,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </ul>
 <h2 id="exercises"><a name="exercises" class="plugin-anchor" href="#exercises"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises</h2>
 <p>To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. </p>
-<h3 id="task-hello-name"><a name="task-hello-name" class="plugin-anchor" href="#task-hello-name"><i class="fa fa-link" aria-hidden="true"></i></a>Task: &quot;Hello, Name!&quot;</h3>
+<h3 id="problem-hello-name"><a name="problem-hello-name" class="plugin-anchor" href="#problem-hello-name"><i class="fa fa-link" aria-hidden="true"></i></a>problem: &quot;Hello, Name!&quot;</h3>
 <p>Write a method that takes a name as a parameter and prints on the console &quot;<em>Hello, \<name\>!</name\></em>&quot;.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -865,7 +865,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p>Define a method <strong><code>printName(String name)</code></strong> and implement it, after which read a name from the console in the main program and invoke the method by giving him the name.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#7</a>.</p>
-<h3 id="task-min-method"><a name="task-min-method" class="plugin-anchor" href="#task-min-method"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Min method</h3>
+<h3 id="problem-min-method"><a name="problem-min-method" class="plugin-anchor" href="#problem-min-method"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Min method</h3>
 <p>Create a method <strong><code>getMin(int a, int b)</code></strong>, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method <strong><code>getMin(&#x2026;)</code></strong>, which you have already created.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -892,7 +892,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#8</a>.</p>
-<h3 id="task-string-repeater"><a name="task-string-repeater" class="plugin-anchor" href="#task-string-repeater"><i class="fa fa-link" aria-hidden="true"></i></a>Task: String repeater</h3>
+<h3 id="problem-string-repeater"><a name="problem-string-repeater" class="plugin-anchor" href="#problem-string-repeater"><i class="fa fa-link" aria-hidden="true"></i></a>problem: String repeater</h3>
 <p>Create a method <strong><code>repeatString(str, count)</code></strong>, which takes parameters of type <strong><code>String</code></strong> and an integer <strong><code>n</code></strong> and returns the string, repeated <strong><code>n</code></strong> times. After this, print the result on the console.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -919,7 +919,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p>Keep in mind that <strong>in Java concatenating strings in loops leads to a bad performance</strong> and is not recommended. Learn more at: <a href="https://stackoverflow.com/questions/1235179" target="_blank">https://stackoverflow.com/questions/1235179</a>.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#9</a>.</p>
-<h3 id="task-n-th-digit"><a name="task-n-th-digit" class="plugin-anchor" href="#task-n-th-digit"><i class="fa fa-link" aria-hidden="true"></i></a>Task: N-th digit</h3>
+<h3 id="problem-n-th-digit"><a name="problem-n-th-digit" class="plugin-anchor" href="#problem-n-th-digit"><i class="fa fa-link" aria-hidden="true"></i></a>problem: N-th digit</h3>
 <p>Create a method <strong><code>findNthDigit(number, index)</code></strong>, which takes a number and index N as parameters and prints the N-th digit of the number (counting <strong>from right to left</strong> and starting from 1). After that, print the result on the console.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -948,7 +948,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p>To do the algorithm, use a <strong><code>while</code></strong> loop, until the given number equals 0. At each iteration of the <strong><code>while</code></strong> loop, check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (<strong><code>number % 10</code></strong>). If not, remove the last digit in the number (<strong><code>number = number / 10</code></strong>). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. </p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#10</a>.</p>
-<h3 id="task-integer-to-base"><a name="task-integer-to-base" class="plugin-anchor" href="#task-integer-to-base"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Integer to base</h3>
+<h3 id="problem-integer-to-base"><a name="problem-integer-to-base" class="plugin-anchor" href="#problem-integer-to-base"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Integer to base</h3>
 <p>Write a method <strong><code>integerToBase(number, toBase)</code></strong>, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -974,7 +974,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
-<p>To solve the task, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.</p>
+<p>To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.</p>
 <ul>
 <li>We calculate <strong>the remainder</strong> of the number, divided by the base.</li>
 <li><strong>We insert the remainder</strong> at the beginning of the string.</li>
@@ -992,7 +992,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </code></pre>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#11</a>.</p>
-<h3 id="task-notifications"><a name="task-notifications" class="plugin-anchor" href="#task-notifications"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Notifications</h3>
+<h3 id="problem-notifications"><a name="problem-notifications" class="plugin-anchor" href="#problem-notifications"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Notifications</h3>
 <p>Write a program, which takes an integer <strong><code>n</code></strong> and <strong><code>n</code> input messages</strong> and prints <strong><code>n</code> output messages</strong>, based on the input. For each message read a few lines. Each message starts with <strong><code>messageType</code></strong>: &#x201C;<strong><code>success</code></strong>&#x201D;, &#x201C;<strong><code>warning</code></strong>&#x201D; or &#x201C;<strong><code>error</code></strong>&#x201D;:</p>
 <ul>
 <li>When <strong><code>messageType</code></strong> is &#x201C;<strong><code>success</code></strong>&#x201D; read <strong><code>operation</code></strong> + <strong><code>message</code></strong> (each from a new line).</li>
@@ -1000,7 +1000,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <li>When <strong><code>messageType</code></strong> is &#x201C;<strong><code>error</code></strong>&#x201D; read <strong><code>operation</code></strong> + <strong><code>message</code></strong> + <strong><code>errorCode</code></strong> (each from a new line).</li>
 </ul>
 <p>Print on the console <strong>each read message</strong>, formatted depending on its <strong><code>messageType</code></strong>. After the headline of the message print as much <strong><code>=</code></strong>, <strong>as the length</strong> of the said <strong>headline</strong> and print <strong>an empty line</strong> after each message (to understand in detail look at the examples). </p>
-<p>The task should be solved by defining four methods: <strong><code>showSuccessMessage()</code></strong>, <strong><code>showWarningMessage()</code></strong>, <strong><code>showErrorMessage()</code></strong> and <strong><code>readAndProcessMessage()</code></strong>, so that only the last method is called in the <strong><code>main()</code></strong> method:</p>
+<p>The problem should be solved by defining four methods: <strong><code>showSuccessMessage()</code></strong>, <strong><code>showWarningMessage()</code></strong>, <strong><code>showErrorMessage()</code></strong> and <strong><code>readAndProcessMessage()</code></strong>, so that only the last method is called in the <strong><code>main()</code></strong> method:</p>
 <p><img src="assets/chapter-10-images/18.Notifications-01.png" alt=""></p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h4>
 <table>
@@ -1023,7 +1023,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p>If you are reading from the console a few separate methods, you should keep in mind that you should <strong>create <code>Scanner</code> object only once</strong> (for example in the main method) and pass it to the other methods as a parameter.  Creating more than one <strong><code>Scanner</code></strong> which reads from the console might not work as expected.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#12</a>.</p>
-<h3 id="task-numbers-to-words"><a name="task-numbers-to-words" class="plugin-anchor" href="#task-numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Numbers to words</h3>
+<h3 id="problem-numbers-to-words"><a name="problem-numbers-to-words" class="plugin-anchor" href="#problem-numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Numbers to words</h3>
 <p>Write a method <strong><code>letterize(number)</code></strong>, which reads an integer and prints it in words in English according to the conditions below:</p>
 <ul>
 <li>Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.</li>
@@ -1076,7 +1076,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p>The third special case is when the number formed by the last two digits of the input number is <strong>greater than 10 and less than 20</strong> (e.g. 111, 814, 919, etc.). In this case, we print &quot;one-hundred and eleven&quot;, &quot;eight-hundred and fourteen&quot;, &quot;nine-hundred and nineteen&quot; etc.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#13</a>.</p>
-<h3 id="task-string-encryption"><a name="task-string-encryption" class="plugin-anchor" href="#task-string-encryption"><i class="fa fa-link" aria-hidden="true"></i></a>Task: String encryption</h3>
+<h3 id="problem-string-encryption"><a name="problem-string-encryption" class="plugin-anchor" href="#problem-string-encryption"><i class="fa fa-link" aria-hidden="true"></i></a>problem: String encryption</h3>
 <p>Write a method <strong><code>encrypt(char letter)</code></strong>, which encrypts a given letter in the following way:</p>
 <ul>
 <li>It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. </li>
@@ -1138,7 +1138,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
 <p>Our variable from type <strong><code>String</code></strong>, which will store the value of the result, will have an initial value of <strong><code>String str = &quot;&quot;</code></strong> (Empty String). The loop should iterate <strong><code>n</code></strong> times, and in every iteration, we will add to our variable the encrypted symbol.</p>
-<p>To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the &quot;Integer to Base&quot; task.</p>
+<p>To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the &quot;Integer to Base&quot; problem.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#14</a>.</p>
 
@@ -1168,7 +1168,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 
             
                 
-                <a href="chapter-09-problems-for-champions-part-2.html" class="navigation navigation-prev " aria-label="Previous page: 9.2. Tasks for Champions – Part II">
+                <a href="chapter-09-problems-for-champions-part-2.html" class="navigation navigation-prev " aria-label="Previous page: 9.2. problems for Champions – Part II">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1184,7 +1184,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Tasks for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-10-methods.md","mtime":"2021-11-21T18:44:18.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:45:10.151Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-10-methods.md","mtime":"2021-12-14T12:50:07.965Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:50:50.086Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
