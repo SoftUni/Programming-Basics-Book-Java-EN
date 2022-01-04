@@ -10,7 +10,7 @@ In this chapter, we are going to get familiar with the following concepts and pr
 ## Video
 
 <div class="video-player">
-  Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=7u4X5X-a9Qg">https://www.youtube.com/watch?v=7u4X5X-a9Qg</a>.
+  Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=tuLo1BPRCqM">https://www.youtube.com/watch?v=tuLo1BPRCqM</a>.
 </div>
 
 ## The system console

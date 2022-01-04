@@ -5,7 +5,7 @@ This chapter will discuss **conditional statements in the Java language**. Depen
 ## Video
 
 <div class="video-player">
-  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=cXKIVmjEgHw">https://www.youtube.com/watch?v=cXKIVmjEgHw</a>.
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=7H3K4g8BQ3w">https://www.youtube.com/watch?v=7H3K4g8BQ3w</a>.
 </div>
 
 ## Comparing numbers

@@ -2,16 +2,6 @@
 
 In **the current chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
-
-## Video
-
-<div class="video-player">
-  Watch a video about what you shall learn in this chapter: <a target="_blank"
-  href="https://www.youtube.com/watch?v=ljaZHRCyZW8">
-  https://www.youtube.com/watch?v=ljaZHRCyZW8</a>.
-</div>
-
-
 ## Practical exam on “Programming Basic”
 
 The **"Programming Basics"** course ends with a **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** one of the **topics** studied in the course. The themes of the problems are as follows:

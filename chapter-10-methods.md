@@ -2,6 +2,12 @@
 
 In this chapter, we will introduce you to **methods**. We will learn what they are, what is their **base concepts** when working with them. We will learn why it is a **good practice** to use them, how to **declare** and **call** them. We will also introduce you to the **parameters** and **return value of a method** and how to use that return value. At the end of this chapter, we will look at the **established practices** when using methods.
 
+## Video
+
+<div class="video-player">
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=dYqouc4KMiU">https://www.youtube.com/watch?v=dYqouc4KMiU</a>.
+</div>
+
 ## What is "method"?
 
 So far, we have found out that while **writing** a code for a program that solve a problem, **separating** the problem into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the problem, and the **readability** and the debugging of the code are better.

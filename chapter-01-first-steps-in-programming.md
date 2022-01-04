@@ -5,8 +5,8 @@ In this chapter, we are going to figure out **what programming is** at its core.
 ## Video
 <div class="video-player">
   Watch a video lesson on this chapter here: <a target="_blank"
-  href="https://www.youtube.com/watch?v=sU_JUiersZg">
-  https://www.youtube.com/watch?v=sU_JUiersZg</a>.
+  href="https://www.youtube.com/watch?v=sXM31yfsj04">
+  https://www.youtube.com/watch?v=sXM31yfsj04</a>.
 </div>
 
 ## What does it mean to program

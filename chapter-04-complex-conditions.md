@@ -2,6 +2,12 @@
 
 In the **current** chapter, we are going to examine the **nested conditional statements** in the **Java** language, by which our program can contain **conditions** that contain other **nested conditional statements**. We call them **"nested"** because **we put an **`if`** condition** into **another **`if`** condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
+## Video
+
+<div class="video-player">
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=L4KtlGD5cbk">https://www.youtube.com/watch?v=L4KtlGD5cbk</a>.
+</div>
+
 ## Nested Conditions
 
 Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**, these are **`if`** or **`if-else`** statements that are placed inside other **`if`** or **`else`** statements.
