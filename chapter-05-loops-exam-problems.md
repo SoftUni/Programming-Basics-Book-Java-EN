@@ -180,7 +180,7 @@ Print on the console a single line:
   * If Lilly’s money is enough:
     * “**Yes! {N}**” – where **N** is the remaining money after the purchase.
   * If the money is not enough:
-    * “**No! {М}**” – where **M** is the insufficient amount.
+    * “**No! {M}**” – where **M** is the insufficient amount.
   * The numbers **N** and **M** must be **formatted up to the second digit after the decimal point**.
 
 ### Sample Input and Output
@@ -261,7 +261,7 @@ The input is read from the console and **contains exactly 2 lines**:
   * If the **money is enough**:
     * „**Yes! He will live a carefree life and will have {N} dollars left.**“ – where **N** is the money, which he will remain with.
   *	If the **money is NOT enough**:
-    * „**He will need {М} dollars to survive.**“ – where **M** is the amount that is **NOT enough**.
+    * „**He will need {M} dollars to survive.**“ – where **M** is the amount that is **NOT enough**.
 
 ### Sample Input and Output
 
@@ -314,7 +314,7 @@ The condition states, that Ivan is 18 years old, so when we declare the variable
 
 With the help from the **`for` loop**, we’ll iterate through all the years. **We begin with year 1800** – the year that Ivan goes back to, and we get to **the year he has to live to**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's age)**.
 
-Finally, it remains to print the results. By performing a **check if the inheritance** (**`heritage`**) was enough to live without working or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {М} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
+Finally, it remains to print the results. By performing a **check if the inheritance** (**`heritage`**) was enough to live without working or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {M} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
 
 **Hint**: Consider using the **`Math.abs(…)`** function when printing the output if the inheritance isn’t enough.
 

@@ -174,7 +174,7 @@ while b ≠ 0
   var oldB = b;
   b = a % b;
   a = oldB;
-print а;
+print a;
 ```
 
 ### Example: Greatest Common Divisor (GCD)
@@ -460,7 +460,7 @@ Write a program in which we enter an **integer** number **n** and calculate the 
 An idea to solve the problem:
 
 * We create a **`n` variable**, to which we assign the **integer** value obtained from the console input.
-* We create **`f0`** и **`f1`** variables to which we assign value **1** since this is how the sequence begins.
+* We create **`f0`** and **`f1`** variables to which we assign value **1** since this is how the sequence begins.
 * We create a **`for`** loop with a condition **current value `i < n - 1`**.
 * In the **body of the loop:**
    * We create a **temporary** variable **`fNext`** to which we assign the next number of the Fibonacci sequence.

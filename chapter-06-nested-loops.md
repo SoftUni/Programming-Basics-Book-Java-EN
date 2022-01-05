@@ -293,7 +293,7 @@ After we have calculated the length of the roof, we use a loop from 0 to **`roof
 ![](assets/chapter-6-1-images/09.House-07.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
-<td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
+<td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html</a></td>
 </tr></table>
 
 After we have finished with the roof, it is time for the base. It is easier to print:

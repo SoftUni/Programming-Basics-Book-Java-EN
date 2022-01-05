@@ -56,8 +56,8 @@ int result = 3 * 5; // the result is 15
 ### Operator /
 
 ```java
-int result = 7 / 3; // the result is е 2 (integer division)
-double result2 = 5 / 2.0; // the result is е 2.5 (fractional division)
+int result = 7 / 3; // the result is 2 (integer division)
+double result2 = 5 / 2.0; // the result is 2.5 (fractional division)
 ```
 
 ## Concatenation
@@ -134,7 +134,7 @@ Let’s move to the calculations. The special part here is that after dividing t
 <td><b>Search Google!</b> Whenever we have an idea of how to solve a particular problem, but we do not know how to write it in Java, the easiest way to solve it is by looking for information on the net. If we are dealing with a problem that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. Аs the method works with **`double`** data type, we create variables of the same type for the number of rows and columns.
+In this case, we can try with the following search: *java get whole number part of double*. We find out that one possible way is to use the method **`Math.floor(…)`**. As the method works with **`double`** data type, we create variables of the same type for the number of rows and columns.
 
 ![](assets/chapter-2-2-images/01.Training-lab-04.png)
 
@@ -239,12 +239,12 @@ As input data, we will read **5 numbers** from the console, each on a separate l
 * **N – the length** of a **side** of the ground within the range of [**1 … 100**].
 * **W – the width** of a **tile** in the range of [**0.1 … 10.00**].
 * **L – the length** of a **tile** in the range of [**0.1 … 10.00**].
-* **М – the width** of the **bench** in the range of [**0 … 10**].
-* **О – the length** of the **bench** in the range of [**0 … 10**].
+* **M – the width** of the **bench** in the range of [**0 … 10**].
+* **O – the length** of the **bench** in the range of [**0 … 10**].
 
 ### Output data
 
-Print on the console **two numbers**, еach on a new line: **number of tiles** needed for the repair and **the time for placing them**. 
+Print on the console **two numbers**, each on a new line: **number of tiles** needed for the repair and **the time for placing them**. 
 
 ## Sample input and output
 
@@ -389,7 +389,7 @@ This code would print a correct result, but it is **hard to read**. It won't be 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#3](https://judge.softuni.org/Contests/Practice/Index/650#3).
 
 
-## Таск: Daily earnings
+## Problem: Daily earnings
 
 Ivan is a programmer in an **American company** and he works from home **N days per month** and earns **M USD per day**. At the end of the year, Ivan **gets a bonus** which is **equals 2.5 monthly salaries**. From what he earned during the year, **the withholding tax is 25%**. Write a program that **calculates the amount of Ivan's net average earning** in BGN per day because he spends it in Bulgaria. We accept that one year has exactly **365 days**. **The exchange rate of USD** to BGN will be **read from the console**.
 
@@ -413,7 +413,7 @@ On the console **print average earning in BGN per day**. The result should be **
 **Explanation**:
 * **Monthly salary** = 21 \* 75 = 1575 USD.
 * **Annual income** = 1575 \* 12 + 1575 \* 2.5 = 22837.5 USD.
-* **Taxes** = 25% от 22837.5 = 5709.375 USD.
+* **Taxes** = 25% from 22837.5 = 5709.375 USD.
 * **Net annual income** = 17128.125 dollars = 27233.71875 BGN.
 * **Average earning per day** = 27233.71875 / 365 = 74.61 BGN.
 

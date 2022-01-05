@@ -31,7 +31,7 @@ This is how the console looks in **Linux**:
 
 In **Java** we have several options to read an input from **the console**. The one way is via the built-in class **` Scanner`**, which we will use now, and the other is via **` BufferedReader`**. The second one is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
 
-То read an **integer** (not floating-point number) from the console we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line at the top:
+To read an **integer** (not floating-point number) from the console we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line at the top:
 
 ```java
 import java.util.Scanner;
@@ -48,7 +48,7 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Example: Calculating the area of the square with side **а**
+### Example: Calculating the area of the square with side **a**
  
 As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
@@ -227,7 +227,7 @@ int b = 7;
 int sum = a + b; // the result is 12
 ```
 
-### Subtracting numbers (оператор **`-`**)
+### Subtracting numbers (operator **`-`**)
 
 Subtracting numbers is done by the operator **`-`**:
 
@@ -282,7 +282,7 @@ int a = 25;
 System.out.println(a / 4);  // Integer result: 6
 System.out.println(a / 0);  // Error: integer division by 0
 ```
-Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails and works correctly with the special values **+&#8734;** и **-&#8734;**:
+Let's look at a few examples for **floating numbers division**. When we divide floating-point numbers, the result is always **a float number** and the division never fails and works correctly with the special values **+&#8734;** and **-&#8734;**:
 
 ```Java
 int a = 15;
@@ -401,7 +401,7 @@ A rectangle is given with the **coordinates of two of its opposite angles**. Wri
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.PNG" width="250" height="200" />
 
-In this tasк, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
+In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -481,7 +481,7 @@ We create a **new Java class** in the existing IntelliJ IDEA project. On the **s
 
 ![](assets/chapter-2-1-images/07.Square-area-01.png)
 
-A **dialogue window** will open for choosing а name to the Java class, for example, “SquareArea”:
+A **dialogue window** will open for choosing a name to the Java class, for example, “SquareArea”:
 
 ![](assets/chapter-2-1-images/07.Square-area-02.png)
 
@@ -619,7 +619,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for the area of trapezoid is **(b1 + b2) * h / 2**.
 
-Тhe figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
+The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
@@ -662,7 +662,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 ### Exercise: Rectangle area
 
-**A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 и y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
+**A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
 

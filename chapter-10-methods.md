@@ -179,7 +179,7 @@ Before creating a method to print a row with a given beginning and an end, we mu
 
 ![](assets/chapter-10-images/07.Print-triangle-01.png)
 
-From the drawing exercises, we remember that it is а good practice **to divide the figure into several parts**. To make it easier, we will divide the triangle into three parts – upper, middle, and bottom.
+From the drawing exercises, we remember that it is a good practice **to divide the figure into several parts**. To make it easier, we will divide the triangle into three parts – upper, middle, and bottom.
 
 The next step is to print **the upper half** of the triangle using a loop:
 

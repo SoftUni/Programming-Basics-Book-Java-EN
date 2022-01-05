@@ -50,7 +50,7 @@ In software development, we regularly need to write loops dozens of times a day.
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
-**Try it yourself** in order to master using the code snippet for **`for` loop** в IntelliJ IDEA.
+**Try it yourself** in order to master using the code snippet for **`for` loop** in IntelliJ IDEA.
 
 ### Example: Numbers ending in 7
 
@@ -250,7 +250,7 @@ We can read series of **`n`** numbers from the console:
 
 ## Exercises: Repetitions (Loops)
 
-After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve а some problems for exercise.
+After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve some problems for exercise.
 
 ### Creating new project in IntelliJ IDEA
 
@@ -394,15 +394,15 @@ We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new p
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-In the next window select the path to **jturtle-0.1.1.jar** and click [**ОК**].
+In the next window select the path to **jturtle-0.1.1.jar** and click [**OK**].
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-In the next window, mark the box **classes** and click [**ОК**].
+In the next window, mark the box **classes** and click [**OK**].
  
 ![](assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-In the next window, click [**ОК**], and we are ready to open **`MyTurtle.java`**.
+In the next window, click [**OK**], and we are ready to open **`MyTurtle.java`**.
   
 ![](assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 

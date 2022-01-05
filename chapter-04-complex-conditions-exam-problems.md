@@ -123,7 +123,7 @@ It remains for us to calculate the difference between the two times, to determin
 
 Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts: 
 
-- First, let's show when the student arrived – is he **early**, **late** or **on time**. Тo do that, we will use an **`if-else`** statement.
+- First, let's show when the student arrived – is he **early**, **late** or **on time**. To do that, we will use an **`if-else`** statement.
 - After that, we will show the **time difference** if the student arrives in a **different time** from the starting **time of the exam**.
 
 To spare one additional check (**`else`**), we can, by default, assume that the student was late. 
@@ -275,7 +275,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#
 
 ## problem: Operations between numbers
 
-Write a program that reads as input data **two integers (N1 и N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
+Write a program that reads as input data **two integers (N1 and N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
 
 ### Input data
 
@@ -398,7 +398,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 - If **the budget is enough**:
   - "**Yes! You have {N} leva left.**" – where **N is the remaining amount** of the group.
 - If **the budget is not enough**:
-  - "**Not enough money! You need {М} leva.**" – where **М is the amount that is insufficient**.
+  - "**Not enough money! You need {M} leva.**" – where **M is the amount that is insufficient**.
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
