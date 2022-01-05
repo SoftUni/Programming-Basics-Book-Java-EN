@@ -315,7 +315,7 @@ To calculate the commission according to the city and volume of sales, we need a
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#7](https://judge.softuni.org/Contests/Practice/Index/653#7).
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, to make the code more easily readable.</td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td><b>It is a good practice</b> to use <b>blocks</b> that are <b>enclosed</b> with curly braces <b><code>{ }</code></b> after <b><code>if</code></b> and <b><code>else</code></b>. Also, it is recommended during writing to <b>move aside</b> the code <b>after <code>if</code> and <code>else</code></b> with a single tabulation <b>inward</b>, to make the code more easily readable.</td>
 </tr></table>
 
 ## Switch-Case Conditional Statement
@@ -358,7 +358,7 @@ Let's write a program that prints **the day of the week** depending on the **giv
 
 ![](assets/chapter-4-1-images/09.Day-of-week-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the more rear situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
@@ -554,7 +554,7 @@ A possible logic for solving the problem (not the only correct one):
 
 * We might split the figure into **two rectangles** with a common side:
 
-<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-02.PNG" /></p>
+<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-02.png" /></p>
 
 * A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
 * A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their common side.

@@ -248,7 +248,7 @@ We read an integer **`n`** from the console and assign the value of an integer t
 
 ![](assets/chapter-6-1-images/09.House-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current problems, it is not a problem to convert directly the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
@@ -292,7 +292,7 @@ After we have calculated the length of the roof, we use a loop from 0 to **`roof
 
 ![](assets/chapter-6-1-images/09.House-07.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html</a></td>
 </tr></table>
 
@@ -387,7 +387,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 
 ![](assets/chapter-6-1-images/10.Diamond-06.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 

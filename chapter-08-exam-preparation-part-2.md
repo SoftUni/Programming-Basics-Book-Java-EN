@@ -77,7 +77,7 @@ Initially, **we save** a variable that we will use multiple times. This approach
 
 <table>
 <tr>
-<td width=10%><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td width=10%><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><strong>Avoiding repetitive code</strong> (centralization of program logic) in the problems that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large-scale applications in a real work environment, and practicing it in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
@@ -150,7 +150,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 <table>
 <tr>
-<td width="10%"><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Pay attention that the condition state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>Math.ceil(…)</strong></code>.
 </td>
 </tr>
@@ -279,7 +279,7 @@ What **percentage** is occupied by a **group of students** from the total number
 
 <table>
 <tr>
-<td width="10%"><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td width="10%"><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Pay close attention to the numeric data type that you work with upon doing these calculations.
 </td>
 </tr>

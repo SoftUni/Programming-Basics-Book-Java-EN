@@ -244,7 +244,7 @@ We can use the following idea to solve the problem:
 
 ![](assets/chapter-7-1-images/09.Sum-of-digits-01.png)
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
 <code><strong>n / 10</strong></code>: <b>deletes</b> the last digit of <strong><code>n</code></strong>.</td>
 </tr></table>
@@ -274,7 +274,7 @@ And here is what an **infinite `for`** loop looks like:
 
 We already know that the infinite loop executes a specific code to infinity, but what if we want to forcibly exit the loop under a given condition at some point? In this situation, the **`break`** operator comes in handy.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>The <b><code>break</code></b> operator stops the loop execution at the moment it is called and continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed and, accordingly the rest of the code in the body of the loop will not be executed. </td>
 </tr></table>
 
@@ -299,7 +299,7 @@ Here are a few examples of composite numbers:
 * If it is divisible by any of the numbers, it is **composite**.
 * If it is not divisible by any of the numbers, then it is **prime**.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>We can optimize the algorithm by checking the divisors to <code><strong>√n</strong></code> instead to <code><strong>n-1</strong></code>. Think about the reason why.</td>
 </tr></table>
 
@@ -367,7 +367,7 @@ If we leave our program this way, the result will be the following:
 
 Why does this happen? As we can see, the result ** is missing '1 1' **. When the program reaches the point that ** `i 1` ** and **` j 1` **, it enters the ** `if` ** check and performs the **` break` ** operation. Thus, we **exit the inner loop**, but then the execution of the outer loop continues. **'i'** increases, the program enters the inner loop and prints the result.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>When we use the <b><code>break</code></b> operator in a <b>nested loop</b>, it interrupts the execution of the inner loop <b>only</b>.</td>
 </tr></table>
 

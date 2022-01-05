@@ -239,7 +239,7 @@ So far, we saw some examples, in which when declaring methods, we used the keywo
 
 If we **replace** **`void`** with **a type** of some variable, this will tell the program that the method should return a value of the said type. This returned value could be of any type – **`int`**, **`String`**, **`double`**, etc. 
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" />
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
 </td><td>For a method to return <strong>a result</strong> we need to write the type of returned value we expect when declaring the method, in place of the <code>void</code>.</td></tr>
 </table>
 
@@ -269,7 +269,7 @@ When the **return** operator is located inside a conditional statement such as *
 
 ![](assets/chapter-10-images/10.Return-operator-03.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" />
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
 </td><td>In programming, we can't have 2 times the operator <code><b>return</b></code> one after another because the first return won't allow us to use the second. Sometimes programmers joke
 with the phrase <b><i>write</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>

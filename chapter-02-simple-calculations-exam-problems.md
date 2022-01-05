@@ -130,7 +130,7 @@ The first thing we have to do is read the input from the console. With **`scanne
 
 Let’s move to the calculations. The special part here is that after dividing the numbers, we have to store only the integer part of the result in a variable. 
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Search Google!</b> Whenever we have an idea of how to solve a particular problem, but we do not know how to write it in Java, the easiest way to solve it is by looking for information on the net. If we are dealing with a problem that we assume that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 

@@ -32,7 +32,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
         <b>A triangle in the plane</b> is defined by the coordinates of its three vertices. First, the vertex <b>(x1, y1)</b> is set. Then the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b>, which <b>lie on a common horizontal line</b> (i.e. they have the same Y coordinates). Write a program that calculates <b>the area of the triangle</b> by the coordinates of its three vertices.
       </td>
       <td>
-         <img src="assets/chapter-8-1-images/01.Triangle-area-01.PNG"/>
+         <img src="assets/chapter-8-1-images/01.Triangle-area-01.png"/>
       </td>
    </tr>
 </table>

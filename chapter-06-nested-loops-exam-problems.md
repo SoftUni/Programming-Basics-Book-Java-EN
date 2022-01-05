@@ -57,7 +57,7 @@ Once we have declared and initialized the input data, we need to divide **the fo
 
 We can see from the examples that **the roof** is made of **two towers** and **a middle part**. Each tower has a beginning **`/`**, a middle part **`^`** and an end **`\`**.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><strong><code>\</code></strong> is a special symbol in Java. Using it in the <strong><code>System.out.println(…)</code></strong> method, the console will not print it. That's why using <strong><code>\\</code></strong> we instruct the console that we want to print exactly this symbol, without being interpreted as a special one (<b>it is shielded</b>- this is called “<b>character escaping</b>”).</td>
 </tr></table>
 

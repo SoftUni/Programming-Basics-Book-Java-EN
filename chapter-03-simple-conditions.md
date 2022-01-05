@@ -111,7 +111,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly brackets**. When we want to execute a **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
 </tr></table>
 
@@ -131,7 +131,7 @@ Executing the code with curly brackets will output the following result on the c
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Both use cases are <strong>correct</strong> and could be used depending on the situation and/or the specific requirements, but you always must be careful and check the expected results.</td>
 </tr></table>
 
@@ -333,7 +333,7 @@ The program will receive three input lines:
 
 Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the problem, we can easily convert values if we **use meters as our base unit**. Afterwards calculate the result from the conversion of the input number in meters, performing a set of checks to define the input unit. Then calculate directly the output unit.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
 </tr></table>
 

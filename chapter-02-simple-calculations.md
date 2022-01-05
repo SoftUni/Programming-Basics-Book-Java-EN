@@ -399,7 +399,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 A rectangle is given with the **coordinates of two of its opposite angles**. Write a program that calculates its **area and perimeter**:
 
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.PNG" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
 
 In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
 
@@ -546,7 +546,7 @@ Let's test with floating-point numbers, for example, with **2.5**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Depending on the regional settings of the operating system, it is possible to use <b> decimal point </b> (US settings) instead of <b> decimal comma </b> (BG settings).</td>
 </tr></table>
 

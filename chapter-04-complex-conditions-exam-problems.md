@@ -15,7 +15,7 @@ if (condition1) {
 }
 ```
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>Remember that <b>it is not a good practice</b> to write <b>deeply nested conditional statements</b> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
@@ -94,7 +94,7 @@ If the student arrives with more than one minute difference compared to the exam
 
 ### Hints and guidelines
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
 #### Input data processing
@@ -152,7 +152,7 @@ Printing the result **on the console** can be done at a much earlier stage – d
 
 Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web aplication**. Then, on how many places in the code we need to do changes? Are you sure you won't miss some places?
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It must be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 ### Testing in the Judge system
@@ -213,7 +213,7 @@ While carefully reading the requirements, we understand that we expect **two** l
 
 ![](assets/chapter-4-2-images/02.Trip-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>Always consider, what is the **type** in the input data, as well as to what data type they need to be converted to, so created program constructs to work correctly!</td>
 </tr></table>
 

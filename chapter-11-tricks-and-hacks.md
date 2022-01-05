@@ -110,7 +110,7 @@ In programming variables keep data, and for the code to be more understandable, 
 * You should be careful about uppercase and lowercase letters because Java distinguishes them. For example, **`age`** and **`Age`** are different variables.
 * The names of the variables cannot coincide with keywords in the Java language, for example **`int`** is an invalid name for a variable.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Although using the symbol <code><b>_</b></code> in the names of variables is allowed, in Java it is not recommended and is considered a bad style of naming.</td>
 </tr></table>
 
