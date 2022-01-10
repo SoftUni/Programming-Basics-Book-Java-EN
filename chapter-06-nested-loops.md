@@ -2,6 +2,14 @@
 
 This chapter will discuss **nested loops in Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`single` loops** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
+## Video
+
+<div class="video-player">
+  Watch the video lesson on this chapter here: <a target="_blank"
+  href="https://youtu.be/FU90zeFZZFs">
+  https://youtu.be/FU90zeFZZFs</a>.
+</div>
+
 ### Example: A rectangle with a size of 10 x 10 asterisks
 
 Write a program that draws a rectangle of **10 x 10** asterisks in the console.
