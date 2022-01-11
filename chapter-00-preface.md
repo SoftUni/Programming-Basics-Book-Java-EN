@@ -7,7 +7,7 @@ The book **Programming Basics with Java** introduces the readers to writing **pr
 
 The book is used as unofficial **textbook for school-level programming courses**: in the high schools, studying professions like **Programmer**, **Application Programmer** and **System Programmer**, as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools**.
 
-## Who is this book intended for?
+## Who is This Book Intended for?
 
 This book is suitable for **absolute beginners in programming** who want to try what programming is and learn the basic constructions for writing program code used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
 
@@ -17,13 +17,13 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 **A new group starts each month.** The Programming Basics course at SoftUni is organized regularly using a few different programming languages as basis. So, check it out! This course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org).
 
-## Why did we choose Java?
+## Why Did We Choose Java?
 
 For this book, we choose the **Java** because it is a **modern programming language** for high-level programming, open-source, easy to learn, and **suitable for beginners**. Using Java is **widespread**, with a well-developed ecosystem, numerous libraries and technology frameworks, and accordingly, it gives many **perspectives** for development. Java combines paradigms of procedural, object-oriented, and functional programming in a modern way with easy syntax although it is more descriptive than Python and JavaScript. In this book, we will use **Java** language and **IntelliJ IDEA** development environment, which are available for free.
 
 As we will explain later, **the programming language that we start with, does not make a significant difference**, but we still need to use some programming language, and in this book we choose Java specifically. The book can also be found mirrored in other programming languages such as C#  and JavaScript (see [https://java-book.softuni.org](https://java-book.softuni.org)).
 
-## The book in other programming languages: Java, JavaScript, Python, C++
+## The Book in Other Programming Languages: Java, JavaScript, Python, C++
 
 This book on programming for beginners is available in several programming languages (or is in the process of being adapted for them):
 
@@ -36,7 +36,7 @@ This book on programming for beginners is available in several programming langu
 
 If you prefer a different language, select it from the list above.
 
-## Programming is learned by a lot of writing, not reading!
+## Programming is Learned by a Lot of Writing, Not Reading!
 
 If someone thinks it will read a book and learn to program without writing code and solving problems, this is a delusion. Programming needs **a lot of practice**, with code writing every day and solving hundreds, even thousands of problems, seriously and persistently for years.
 
@@ -55,11 +55,11 @@ We advise the reader, as a minimum, **to try out all the examples from the book*
 
 [The Software University (SoftUni)](https://softuni.org) is **the largest training center for software engineers in South-Eastern Europe**. Tens of thousands of students pass through the university every year. SoftUni was founded in 2014 as a continuation of the hard work of [**Dr. Svetlin Nakov**](https://nakov.com) in training **skillful software engineering professionals** by a practical, contemporary and high-quality education that combines fundamental knowledge with modern software technologies and a lot of practice.
 
-### SoftUni: High-quality practical tech education
+### SoftUni: High-quality Practical Tech Education
 
 The Software University provides **quality education**, **profession**, **job** and **diploma** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful and strong **connection between education and industry** by collaborating with hundreds of software companies, provides job and internships of its students, creates quality professionals for the software industry, and directly responds to the needs of employers via the training process.
 
-### Free programming courses at SoftUni
+### Free Programming Courses at SoftUni
 
 SoftUni organizes **free programming courses for beginners**: online and on-site in few locations. The purpose is to give a chance to **everyone interested** in programming and technologies to **try programming**, checks if they are interested and if they would get seriously involved in software development. You can sign up for the free course in **programming basics** using the SoftUni application page: [https://softuni.org](https://softuni.org).
 
@@ -67,7 +67,7 @@ The free programming basics courses at SoftUni aim to introduce you to **basic p
 
 This **programming book** accompanies the free programming lessons for beginners at SoftUni and serves as an additional teaching aid to help the learning process.
 
-### The automated Judge system
+### The Automated Judge System
 
 **The SoftUni Judge system** ([https://judge.softuni.org](https://judge.softuni.org)) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real-time**: you submit the solution, and within seconds you get an answer whether it is correct. Each **successfully** taken test gives you the points it gains. For a completely correct solution, you get all the points for this problem. For a partially correct solution, you get part of the points for the problem. For a completely wrong solution, you get 0 points.
 
@@ -87,7 +87,7 @@ The SoftUni judge system is **available any time** via its website: [https://jud
 
 We are convinced that after a few submitted problems, **you will like to receive instant feedback** for your solutions, and the Judge system will become your favorite assistant in learning programming.
 
-## How to become a software developer?
+## How to Become a Software Developer?
 
 Dear readers, probably many of you have the ambition to become programmers and develop software for a living or work in the IT area. That's why we have prepared for you a **short guide on "How to become a programmer"**, so we can help you take the first steps towards this desired profession.
 
@@ -112,7 +112,7 @@ The book (and the courses based on it) gives only the beginning of one long and 
 
 We pay special attention to the fact that **programming language doesn't have significant relevance** for one's coding skill. You can either code or not. If you can code in C#, then you'll easily switch to Java, or C++, or any other language. That's why **coding skills** are heavily studied in the foundational software engineering courses at SoftUni. These are the skills that each programming book for beginners starts with, including this one.
 
-### Skill #2 – Algorithmic thinking (30%)
+### Skill #2 – Algorithmic Thinking (30%)
 
 The algorithmic (logical, engineering, mathematical, abstract) thinking forms around 30% of the minimum skills of a programmer needed to start the profession. **Algorithmic thinking** is the ability to break a particular problem into a logical sequence of steps (algorithm) to find a solution for every separate step and then combine the steps into a working solution. That is the most important skill of any programmer.
 
@@ -127,7 +127,7 @@ The current book develops the **beginner level of algorithmic thinking**, but it
 
 As you can guess **the programming language doesn't matter** for the development of algorithmic thinking. To think logically is a universal skill, and it's not related only to programming. Because of the well-developed logical thinking, it's believed that programmers are smart people.
 
-### Skill #3 – Computer science and software engineering concepts (25%)
+### Skill #3 – Computer Science and Software Engineering Concepts (25%)
 
 **Fundamental knowledge and skills** for programming, software development, software engineering, and computer science comprise around 25% of the developer's minimum skills to start a job. Here are the more important of these skills and knowledge:
 * **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and non-discrete mathematical functions, state automata and state machines, combinatorics and statistics concepts, algorithm complexity, mathematical modeling, and others
@@ -153,7 +153,7 @@ Fundamental knowledge and skills for programming, software development, software
 
 To start working as a programmer, only **basic knowledge in the areas listed above** is enough, and improvement happens at the workplace according to the technology and development tools used in the company and the team.
 
-### Skill #4 – Programming languages and software technologies (25%)
+### Skill #4 – Programming Languages and Software Technologies (25%)
 
 **Programming languages and software development technologies** form around 25% of a programmer's skills. They have the largest learning content, but they change very fast over time. If we look at the **job offers** in the software industry, they usually mention words like the ones below, but in the job offers, they secretly mention **the three main skills**: coding, algorithmic thinking, and knowing the fundamentals of computer science and software engineering.
 
@@ -173,7 +173,7 @@ Here are some commonly used software development stacks which software companies
 
 If the words above look scary and incomprehensible, then you are at the very beginning of your career, and you need **many years of learning** until you reach the profession of a software engineer. Do not worry, every programmer goes through one or several technology stacks and needs to study **a set of interconnected technologies**, but the bottom line is **the ability to write programming logic (coding)**, and the skill of **algorithmic thinking** (to solve programming problems). It's impossible without them!
 
-### The programming language doesn't matter!
+### The Programming Language Doesn't Matter!
 
 As it already became clear, **the difference between programming languages** and more specifically between the skills of programmers in different languages and technologies forms around **10-20% of the skills**.
 * All programmers have around **80-90% of the same skills** that does not depend on the programming language! These are the skills to program and to design and develop software, that are very similar in different programming languages and development technologies.
@@ -198,7 +198,7 @@ If you are a **teacher in programming**, informatics or ICT or wish **to become 
 You can find all these **free teaching materials** on the SoftUni Foundation's website, along with the educational content for a whole sequence of programming and software tech courses. Download them for free here: https://softuni.foundation/projects/applied-software-developer-profession/.
 )
 -->
-## The story of this book
+## The Story of This Book
 
 The main driver and project manager for the creation of this **free open-source programming book** are **[Dr. Svetlin Nakov](https://nakov.com)**. He is the main ideologist and author of the learning content of the training **course "Programming Basics" in SoftUni**, which was used as the basis of the book. 
 
@@ -210,7 +210,7 @@ This book is almost a mirror translation to Java from its original version in C#
 
 The project is part of the hard work of the **[Software University Foundation](https://softuni.foundation)** to create and distribute open learning content to teach software engineers and IT professionals.
 
-### Authors team
+### Authors Team
 
 This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order):
 
@@ -222,7 +222,7 @@ The book is based on its initial C# variant ([Introduction to Programming with C
 
 Book cover design: Marina Shiderova.
 
-## Official book web site
+## Official Book Web Site
 
 The book **Programming Basics with C#** is available for free at the following web address:
 
@@ -230,7 +230,7 @@ The book **Programming Basics with C#** is available for free at the following w
 
 This is the **official book site** and any new version will be uploaded there. The book is mirrored in the other programming languages mentioned on the website.
 
-## Discussion forum for your questions
+## Discussion Forum for Your Questions
 
 Ask your **questions about basic programming book** at the **SoftUni's Facebook page** or in the official **SoftUni discussion forum**:
 
@@ -243,13 +243,13 @@ Due to a large number of students, you can find in the forum practically any **s
 
 If you have a specific question, for example, if you spend many hours on a certain piece of code and it doesn't work correctly, you can always **ask in the forum**. You will be surprised how friendly are SoftUni's forum participants.
 
-## Official facebook page of the book
+## Official Facebook Page of The Book
 
 The book has an **official Facebook page** where you can track the news about the book series "Programming Basics", new releases, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
-## License and distribution
+## License and Distribution
 
 The book is distributed **freely** in electronic format under an open license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
@@ -267,6 +267,6 @@ If you find **mistakes**, inaccuracies or bugs in the book, you can report them 
 
 We do not promise to fix everything you send us, but we do want to **continually improve the quality** of the book, so that reported undoubted errors and all reasonable suggestions will be considered.
 
-## Enjoy reading!
+## Enjoy Reading
 
 Don't forget **to write code** in large quantities, to **test the examples** that you'll find at the end of each chapter and more importantly **to solve the problems from the exercises**. You won't learn to program from just reading the book, so solve as many problems as you can find!
