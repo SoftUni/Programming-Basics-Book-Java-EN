@@ -418,7 +418,7 @@ We will read the input data and do the calculations described in the condition t
 
 #### Input data processing
 
-Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result,**, and what are the **main steps** when dividing the **logic**.
+Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result**, and what are the **main steps** when dividing the **logic**.
 
 To begin with, let's process and save the input data in **appropriate variables**:
 

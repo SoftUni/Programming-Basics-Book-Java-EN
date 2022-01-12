@@ -190,7 +190,7 @@ First, we will give a few ideas and particular hints for solving the problem, fo
 
 #### An idea for a solution
 
-Let's first go through the problem requirements. In this case, we have to calculate the **total income** from the harvest. It is equal to the **sum of the profit from the fruits and vegetables**, which we can calculate by multiplying **the price per kilogram by the quantity**. Our input data is in leva, and the output should be in EUR. According to the condition 1 Euro equals 1.94lv,so to obtain the requested **output value, we have to divide the sum by 1.94**.
+Let's first go through the problem requirements. In this case, we have to calculate the **total income** from the harvest. It is equal to the **sum of the profit from the fruits and vegetables**, which we can calculate by multiplying **the price per kilogram by the quantity**. Our input data is in leva, and the output should be in EUR. According to the condition 1 Euro equals 1.94lv, so to obtain the requested **output value, we have to divide the sum by 1.94**.
 
 #### Choosing data types
 

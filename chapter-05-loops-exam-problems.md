@@ -132,7 +132,7 @@ This formula in the program code looks like the following:
 
 ![](assets/chapter-5-2-images/01.Histogram-04.png)
 
-If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), the so-called **integer division** will be performed and only the whole part of the division will be stored in the variable,which is not the desired result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
+If we divide by **100** (**`int`** number type) instead of **100.0** (**`double`** number type), the so-called **integer division** will be performed and only the whole part of the division will be stored in the variable, which is not the desired result. For example: **5 / 2 = 2**, but **5 / 2.0 = 2.5**. Taking this in mind, the formula for the first number should look like this: 
 
 ![](assets/chapter-5-2-images/01.Histogram-05.png)
 
@@ -163,7 +163,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#
 
 ## problem: Smart Lilly
 
-Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the amount of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** ,in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
+Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the amount of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** , in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
 ### Input Data
 
