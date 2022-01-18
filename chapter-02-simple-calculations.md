@@ -7,8 +7,12 @@ In this chapter, we are going to get familiar with the following concepts and pr
 - How to **print** (a number) on the console?
 - How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation?
 
-## Video
+## Videos
 
+<div class="video-player">
+  Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=JcT7eh_X_sM">https://www.youtube.com/watch?v=JcT7eh_X_sM</a>.
+</div>
+<br>
 <div class="video-player">
   Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=tuLo1BPRCqM">https://www.youtube.com/watch?v=tuLo1BPRCqM</a>.
 </div>

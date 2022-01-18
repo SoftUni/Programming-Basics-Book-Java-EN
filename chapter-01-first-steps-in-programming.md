@@ -2,11 +2,18 @@
 
 In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few problems we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
 
-## Video
+## Videos
+
 <div class="video-player">
-  Watch a video lesson on this chapter here: <a target="_blank"
+  Watch a video lesson about Getting Started with Java: <a target="_blank"
   href="https://www.youtube.com/watch?v=sXM31yfsj04">
   https://www.youtube.com/watch?v=sXM31yfsj04</a>.
+</div>
+<br>
+<div class="video-player">
+  Watch a video lesson about IntelliJ IDEA: <a target="_blank"
+  href="https://www.youtube.com/watch?v=3Hny8Mz2agQ">
+  https://www.youtube.com/watch?v=3Hny8Mz2agQ</a>.
 </div>
 
 ## What does it mean to program

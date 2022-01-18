@@ -9,6 +9,14 @@ Having learned what **`for` loops** are and what they serve for, it is now time 
 
 In the current, chapter we will also get acquainted with the **`break`** statement and **how** to **terminate** a loop using it. We will also learn how to keep track of **errors** during the execution of our program, using a **`try-catch`** block. 
 
+## Video
+
+<div class="video-player">
+  Watch a video lesson about While Loops: <a target="_blank"
+  href="https://youtu.be/dG2Mcibyw3E">
+  https://youtu.be/dG2Mcibyw3E</a>.
+</div>
+
 ## Loops with a step
 
 In chapter **"Repetitions (Loops)"**, we learned how the **`for`** loop works, and we already know when and for what purpose to use it. In this topic, we will pay **attention** to a specific and very important **part of its construction**, namely the **step**. 
