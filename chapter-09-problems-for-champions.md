@@ -280,11 +280,11 @@ and **for each digit, we take the letter from the particular position.** This wa
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-04.png)
 
-**Another way**: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`'a' + i`** return the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**,  **`'c'`** in case **`i = 2`**, etc.
+**Another way**: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`'a' + i`** return the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**, **`'c'`** in case **`i = 2`**, etc.
 
 This way we already have generated all 5-letter combinations and can proceed with the following part of the problem.
 
-**Attention:** as we have chosen a  **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
+**Attention:** as we have chosen a **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 
 #### Removing repetitive letters
 

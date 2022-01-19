@@ -263,7 +263,7 @@ We have a method in the example below, which compares two numbers and returns a 
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
-####  Code after a return is unreachable
+#### Code after a return is unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because IntelliJ IDEA will display a warning telling us that it had found an **unreachable** statement.
 
@@ -414,7 +414,7 @@ In this chapter, we will introduce you to some of the **best practices** when wo
 
 When we name a method, it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **problem** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
 
-It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets  **`( `** and **`)`** are always after the name of the method.
+It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets **`( `** and **`)`** are always after the name of the method.
 
 Every method must do an independent problem, and the name must describe its role.
 
@@ -471,7 +471,7 @@ Some examples of **incorrectly** formatted Java code:
 
 ![](assets/chapter-10-images/16.Good-practice-02.png)
 
-When the headline row of the method is **too long**, it's recommended to divide it into several rows, moving each row after the first one with two  tabs to the right (for better readability):
+When the headline row of the method is **too long**, it's recommended to divide it into several rows, moving each row after the first one with two tabs to the right (for better readability):
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
@@ -637,7 +637,7 @@ Define and implement the four shown methods.
 
 In **`ReadAndProcessMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that call the method for printing the given type of message.
 
-If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter.  Creating more than one **`Scanner`** which reads from the console might not work as expected.
+If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter. Creating more than one **`Scanner`** which reads from the console might not work as expected.
 
 #### Testing in the Judge system
 
@@ -665,11 +665,11 @@ Write a method **`letterize(number)`**, which reads an integer and prints it in 
 
 #### Hints and guidelines
 
-We can first print **the hundreds** as a text - (the number / 100) % 10, after that **the tens** –  (the number / 10) % 10 and at the end **the ones** – (the number % 10).
+We can first print **the hundreds** as a text - (the number / 100) % 10, after that **the tens** – (the number / 10) % 10 and at the end **the ones** – (the number % 10).
 
 The first special case is when the number is exactly **rounded to 100** (e.g. 101, 305, 609, etc.). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
 
-The second special case is when the number formed by the last two digits of the input number is **less than 10**  (e.g. 101, 305, 609, etc.). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
+The second special case is when the number formed by the last two digits of the input number is **less than 10** (e.g. 101, 305, 609, etc.). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine" etc.
 
 The third special case is when the number formed by the last two digits of the input number is **greater than 10 and less than 20** (e.g. 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 

@@ -14,7 +14,7 @@ Lina has a real shopping passion. When she has some money, she immediately goes 
 The **first line** of the input will pass the **amount** that Lina has **before** she starts shopping. Then, upon reading the "**`mall.Enter`**" command, Lina enters the mall and starts shopping we receive the "**`mall.Exit`**" command. When Lina starts shopping, **on each line** of the input, we will receive strings that are **actions performed by Lina**. Each **symbol** in the string is a **purchase or another action**. String commands contain only symbols of the **ASCII table**. The ASCII code of each sign is **related to what Lina must pay** for each of the goods. You need to interpret the symbols in the following way:
 
 - If the symbol is a **capital letter**, Lina gets a **50% discount**, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
-- If the symbol is a **lowercase letter**, Lina gets a **70% discount**, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from  the ASCII table.
+- If the symbol is a **lowercase letter**, Lina gets a **70% discount**, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
 - If the symbol is **"`%`"**, Lina makes a **purchase** that decreases her money in half.
 - If the symbol is **"`*`"**, Lina **withdraws money from her debit card** and adds 10 lv. to her available funds.
 - If the symbol is **different from all above**, Lina just purchases without discount, and in this case, you should subtract the value of the symbol from the ASCII table from her available funds.
@@ -83,7 +83,7 @@ It is where we need to take into consideration the fact that from the **second i
 
 ![](assets/chapter-9-2-images/01.Passion-days-02.png)
 
-Here is the place to point out that calling  **`scanner.nextLine()`** after the end of the loop is used for **moving to the first command** for processing.
+Here is the place to point out that calling **`scanner.nextLine()`** after the end of the loop is used for **moving to the first command** for processing.
 
 #### Algorithm for solving the problem
 
@@ -99,7 +99,7 @@ The next part of the algorithm, is to **process the symbols from the commands**,
 
 > * If the symbol is a **capital letter**, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
 > * If the symbol is a **lowercase letter**, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
-> * If the symbol is **"%"**,  Lina purchases that decrease her money in half.
+> * If the symbol is **"%"**, Lina purchases that decrease her money in half.
 > * If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 lv. to her available funds.
 > * If the symbol is **different from all above**, Lina just purchases without discount, and in this case, you should subtract the value of the symbol from the ASCII table from her available funds.
 
@@ -202,7 +202,7 @@ For the problems of our problem, we will need two variables:
 
 About the code above we must clarify one detail. The default value of the operator is **`+`** so that the first detected number is added to our result.
 
-After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our problem, we know that **every expression is ending with `=`**. It means we have to read and process symbols until we match with  **`=`**.  After that, we will type a **`while` loop** as shown below.
+After we have declared our starting variables we must think of **what our structure** will look like of our program. From the condition of our problem, we know that **every expression is ending with `=`**. It means we have to read and process symbols until we match with **`=`**. After that, we will type a **`while` loop** as shown below.
 
 ![](assets/chapter-9-2-images/02.X-expression-05.png)
 
@@ -215,7 +215,7 @@ The next step is the processing of our **`symbol`** variable. We have 3 possible
 
 Let's examine the actions that we need to undertake in the relevant cases that we defined:
 * If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expressionOperator` variable**.
-* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e., if  **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
+* If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e., if **`expressionOperator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the **`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**)
 
 ![](assets/chapter-9-2-images/02.X-expression-07.png)
 
@@ -240,7 +240,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#
 
 ## problem: Bulls and Cows
 
-We all know the game called "Bulls and Cows"  ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
+We all know the game called "Bulls and Cows" ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
 * If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
 * If a digit in the suggested number matches a digit in the secret number but is located at a **different position**, we have a ***cow***.
 

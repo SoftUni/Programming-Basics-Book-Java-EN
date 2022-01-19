@@ -6,8 +6,8 @@ Before we get to work it’s best if we recall the construction of the **`for` l
 ![](assets/chapter-5-2-images/00.For-construction.png)
 
 **For loops** consist of:
- * Initialization block - executed only once at the beginning before the compiler checks the repeat condition for the first time. In this case, the variable counter (**`int i`**) is declared  and its initial value is set.
- * Condition for repeatability (**`i <= 10`**),  ran once before each iteration.
+ * Initialization block - executed only once at the beginning before the compiler checks the repeat condition for the first time. In this case, the variable counter (**`int i`**) is declared and its initial value is set.
+ * Condition for repeatability (**`i <= 10`**), ran once before each iteration.
  * Counter update (**`i++`**) – this code is executed after each iteration.
  * Loop body - contains an arbitrary block of source code.
 
@@ -120,7 +120,7 @@ Once we have declared the needed variables, we can proceed with reading the numb
 
 #### Processing the input data
   
-In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers).  Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
+In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers). Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 

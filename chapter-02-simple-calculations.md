@@ -19,7 +19,7 @@ In this chapter, we are going to get familiar with the following concepts and pr
 
 ## The system console
 
-The system console or the computer console, usually called just a **console**,  represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
+The system console or the computer console, usually called just a **console**, represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
 
 Generally, the system console represents a text terminal which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. Usually, it looks like a black-colored window, in which we write and perform **console commands** and print the result in the form of a text. In **Windows**, the console looks like this:
 

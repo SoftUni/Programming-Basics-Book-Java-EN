@@ -1,6 +1,6 @@
 # Chapter 1. First steps in programming
 
-In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few problems we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made  when writing code and how to avoid them.
+In this chapter, we are going to figure out **what programming is** at its core. We will get familiar with the idea of **programming languages**, and we will look at the **integrated development environments** (IDE) and how to work with them, particularly with **IntelliJ IDEA**. We will write and execute our **first program** with the programming language **Java**, and afterward, we will exercise with a few problems we will create a console program, a graphic application and a web application. We are going to learn how to check for correctness the solutions from this book in the **Judge system of SoftUni**, and at the end, we will get familiar with the typical errors, which are made when writing code and how to avoid them.
 
 ## Videos
 
@@ -102,7 +102,7 @@ Let's go through the necessary **steps to create and execute a computer program*
 To create programs using the Java programming language, we need to install the **Java Development Kit**. It includes a **virtual machine**, a **Java compiler** and numerous **helper tools**. JDK should not be confused for a runtime environment – **Java Runtime Environment** (JRE). Installing JRE will allow us to open and work with Java programs but won't give us the ability to develop our own.
 
 ## Installing JDK
-JDK is distributed freely and can be downloaded from this link: https://oracle.com/technetwork/java/javase/downloads.  Choose the latest version of **Java SE** (Java Standard Edition).
+JDK is distributed freely and can be downloaded from this link: https://oracle.com/technetwork/java/javase/downloads. Choose the latest version of **Java SE** (Java Standard Edition).
 
 ![](assets/chapter-1-images/00.Jdk-1.png)
 
@@ -403,7 +403,7 @@ public class RectangleArea {
 ```
 To read input data from the console, we import and use the `java.util.Scanner` class, which we will look at in detail a little later. For now, just accept that the reading number is achieved as in the example above.
 
-What is left is to finish the program to calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming, we multiply using the **`*`** operator.
+What is left is to finish the program to calculate the rectangle's area and print it. Pass the product of **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming, we multiply using the **`*`** operator.
 
 ### Test your solution
 Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input, and the program prints 14 – their product, as output):

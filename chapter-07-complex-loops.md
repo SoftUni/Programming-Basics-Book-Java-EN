@@ -23,7 +23,7 @@ In chapter **"Repetitions (Loops)"**, we learned how the **`for`** loop works, a
 
 ### What is a step?
 
-The **step** is that **part** of the **`for`** loop construction that states **how** much to **increase** or **decrease** the value of its **leading** variable.  It is declared last in the  **`for`** loop block.
+The **step** is that **part** of the **`for`** loop construction that states **how** much to **increase** or **decrease** the value of its **leading** variable. It is declared last in the **`for`** loop block.
 
 It most often has a **size `1`** and in that case instead of writing **`i += 1`** or **`i -= 1`**, we can use the **`i++`** or **`i--`** operators. If we want the step to be **different than 1**, we use the operator **`i += (step size)`** to increment and **`i -= (step size)`** to decrement. For a step size of 10, the loop would look like this:
 
@@ -247,7 +247,7 @@ We can use the following idea to solve the problem:
 * For a loop condition, we will use **`n > 0`**, since we will remove the last digit of ** `n` ** after each calculation of the result in the body of the loop.
 * In the body of the loop:
    * We assign a new value to **`sum`**, equals to the sum of the current value of **`sum`** and the last digit of **`n`**.
-   * We assign a new value to **`n`**, which is the result of removing the last digit of  **`n`**.
+   * We assign a new value to **`n`**, which is the result of removing the last digit of **`n`**.
 * We print the final value of the sum outside the body of the loop.
 
 ![](assets/chapter-7-1-images/09.Sum-of-digits-01.png)
@@ -318,7 +318,7 @@ Check if a number **n** is prime. To do so, we will check if **n** is divisible 
 Here is the algorithm for prime number verification, described in steps:
 
 * We create the variable **`n`**, to which we assign the **integer** value obtained from the console input.
-* We create a boolean variable - **`isPrime`** with an initial value **`true`** **if the number is equal or greater than two** (since by definition, numbers such as 0, 1, -1, and -2 are non-prime).  We assume that a number is prime until proven otherwise.
+* We create a boolean variable - **`isPrime`** with an initial value **`true`** **if the number is equal or greater than two** (since by definition, numbers such as 0, 1, -1, and -2 are non-prime). We assume that a number is prime until proven otherwise.
 * We create a **`for`** loop, and we assign 2 as an initial value of the loop variable and **its current value `<= √n`** as a condition. The step of the loop is 1.
 * In **the body of the loop**, we check if **`n`** divided by **the current value** has a remainder. If there is no remainder, we change the value of **`isPrime`** to **`false`** and forcibly terminate the loop with a **`break`** operator.
 * Depending on the **`isPrime`** value, we print whether the number is prime (**`true`**) or composite (**`false`**).

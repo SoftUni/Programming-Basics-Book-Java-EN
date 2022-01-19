@@ -94,7 +94,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#
 
 ## problem: Butterfly
 
-Write a program that reads an **integer n** from the console and draws a **butterfly** with **2 * n - 1 columns**  width and  **2 * (n - 2) + 1 rows** height as in the examples below. Its **left and right sides** are **n – 1** wide.
+Write a program that reads an **integer n** from the console and draws a **butterfly** with **2 * n - 1 columns** width and **2 * (n - 2) + 1 rows** height as in the examples below. Its **left and right sides** are **n – 1** wide.
 
 ### Input Data
 
@@ -120,7 +120,7 @@ From the problem statement we see that the **input data** will be read from only
 
 ![](assets/chapter-6-2-images/02.Butterfly-01.png)
 
-We can divide the figure into 3 parts - **upper wing**  ,  **body** and **lower wing** . In order to draw the upper wing, we need to divide it into parts - a beginning **`*`**, a middle part **`\ /`** and an end **`*`**. After looking at the examples we can say that the beginning has size **`n - 2`**.
+We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing** . In order to draw the upper wing, we need to divide it into parts - a beginning **`*`**, a middle part **`\ /`** and an end **`*`**. After looking at the examples we can say that the beginning has size **`n - 2`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-02.png)
 
@@ -132,7 +132,7 @@ From the examples we can notice that on an **even** row we have a beginning **`-
 
 ![](assets/chapter-6-2-images/02.Butterfly-04.png)
 
-To create the **body of the butterfly** , we can use again the  **`halfRowSize`** **variable**  and print exactly **one** line on the console. The body structure has a beginning **`(white space)`**, a middle **`@`** and an end **`(white space)`**.
+To create the **body of the butterfly** , we can use again the **`halfRowSize`** **variable** and print exactly **one** line on the console. The body structure has a beginning **`(white space)`**, a middle **`@`** and an end **`(white space)`**.
 
 ![](assets/chapter-6-2-images/02.Butterfly-05.png)
 
@@ -189,7 +189,7 @@ In order to draw the lines where the sign is getting **"wider"**, we have to cre
 
 ![](assets/chapter-6-2-images/03.Stop-05.png)
 		
-At each subsequent iteration the **beginning** and the **end**  decreasing with 1, and the **middle part** increases by 2.
+At each subsequent iteration the **beginning** and the **end** decreasing with 1, and the **middle part** increases by 2.
 
 ![](assets/chapter-6-2-images/03.Stop-06.png)
 		
@@ -238,7 +238,7 @@ From the problem condition, we see that **the input data** will be read from onl
 
 ![](assets/chapter-6-2-images/04.Arrow-01.png)
 		
-We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts – the initial row and the arrow body. From the examples we see that the number of the **outer dots** in the initial row and in the arrow body are **`(n - 1) / 2`**. We can store this value in a  **`outerDots`** **variable**.
+We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts – the initial row and the arrow body. From the examples we see that the number of the **outer dots** in the initial row and in the arrow body are **`(n - 1) / 2`**. We can store this value in an **`outerDots`** **variable**.
 
 ![](assets/chapter-6-2-images/04.Arrow-02.png)
 		
