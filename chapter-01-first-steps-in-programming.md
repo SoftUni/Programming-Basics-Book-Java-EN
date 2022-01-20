@@ -335,7 +335,7 @@ Create a new Java class and name it **`Nums1to20`** (right click on the **`src`*
 
 Inside the **`static void main(String[] args`** method, write 20 **`print()`** commands, each on a separate line, to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
-![](assetschapter-1-images03.Numbers-1-to-20-02.png)
+![](/assets/chapter-1-images/03.Numbers-1-to-20-02.png)
 
 Let's now **start the program** and check whether the result is what we're expecting:
 ```
