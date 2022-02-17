@@ -216,7 +216,7 @@ This book is developed by a broad author's team of **volunteers** who dedicated 
 
 > **Asya Dikova-Kirova, Daniel Tsvetkov, Dimitar Dalev, Ivaylo Ivanov, Kristiyan Pamidov, Milena Georgieva, Nikolay Bankin, Petar Ivanov, Rositsa Nenova, Svetlin Nakov, Teodor Kurtev, Tsvetan Georgiev, Vaydin Kachanov, Ventsislav Petrov, Zhulieta Atanasova**
 
-The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)), which is developed by a large team of authors that has a significant contribution to the current book. Below is a list of the additional book contributors (editors, translators, others):
+The book is based on its initial C# variant ([Programming Basics with C#](https://csharp-book.softuni.org)), which is developed by a large team of authors that has a significant contribution to the current book. Below is a list of the additional book contributors (editors, translators, others):
 
 > Aleksander Krastev, Aleksander Lazarov, Aleksander Peev, Alen Paunov, Angel Dimitriev, Daniel Tsvetkov, Denis Milanov, Desislava Dahterova, Dimitar Tatarski, Dimitar Vlahov, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kiril Kolarov, Kristiyan Pamidov, Luboslav Lubenov, Mariya Nikolova, Monika Petkova, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Rozalina Zaharieva, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vanya Voykova, Vasko Viktorov, Venelin Bekyarov, Ventsislav Petrov, Yanitsa Vuleva, Yoana Maksimova, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
