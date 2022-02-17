@@ -337,7 +337,7 @@
                 <a href="chapter-09-problems-for-champions.html">
             
                     
-                    9.1. problems for Champions – Part I
+                    9.1. Problems for Champions – Part I
             
                 </a>
             
@@ -350,7 +350,7 @@
                 <a href="chapter-09-problems-for-champions-part-2.html">
             
                     
-                    9.2. problems for Champions – Part II
+                    9.2. Problems for Champions – Part II
             
                 </a>
             
@@ -787,7 +787,7 @@ with the phrase <b><i>write</i> <code>return; return;</code> <i>and let&apos;s g
 <p>In this chapter, we will introduce you to some of the <strong>best practices</strong> when working with methods. They will be related to naming, organizing our code and its structure. </p>
 <h3 id="naming-methods"><a name="naming-methods" class="plugin-anchor" href="#naming-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Naming methods</h3>
 <p>When we name a method, it&apos;s recommended to use <strong>logical name</strong>. This is good because every method must <strong>correspond</strong> to a specific part of our problem. We must take into consideration the <strong>problem</strong> which the method will do. This is why it&apos;s a good practice <strong>for the name to describes the purpose of the method</strong>.</p>
-<p>It is required for the name of the method to start with a <strong>small letter</strong> and to be a verb or a combination of a verb and a noun. Formatting the names must be done following <strong>Lower Camel Case</strong> convention - <strong>every word except the first to start with an upper letter</strong>. Round brackets  <strong><code>(</code></strong> and <strong><code>)</code></strong> are always after the name of the method.</p>
+<p>It is required for the name of the method to start with a <strong>small letter</strong> and to be a verb or a combination of a verb and a noun. Formatting the names must be done following <strong>Lower Camel Case</strong> convention - <strong>every word except the first to start with an upper letter</strong>. Round brackets <strong><code>(</code></strong> and <strong><code>)</code></strong> are always after the name of the method.</p>
 <p>Every method must do an independent problem, and the name must describe its role.</p>
 <p>Here are some examples of <strong>correctly</strong> named methods:</p>
 <ul>
@@ -834,7 +834,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <p><img src="assets/chapter-10-images/16.Good-practice-01.png" alt=""></p>
 <p>Some examples of <strong>incorrectly</strong> formatted Java code:</p>
 <p><img src="assets/chapter-10-images/16.Good-practice-02.png" alt=""></p>
-<p>When the headline row of the method is <strong>too long</strong>, it&apos;s recommended to divide it into several rows, moving each row after the first one with two  tabs to the right (for better readability):</p>
+<p>When the headline row of the method is <strong>too long</strong>, it&apos;s recommended to divide it into several rows, moving each row after the first one with two tabs to the right (for better readability):</p>
 <p><img src="assets/chapter-10-images/05.Method-parameters-03.png" alt=""></p>
 <p>Another good practice is to <strong>leave an empty row</strong> between methods, after loops, and conditional statements. You should <strong>avoid</strong> writing <strong>long rows and complicated expressions</strong>. Over time you will find out that improves the readability and saves time.</p>
 <p>We recommend you to always <strong>use curly brackets for the body of conditional statements and loops</strong>. The brackets don&apos;t just improve the readability but also reduce the possibility of making a mistake.</p>
@@ -1025,7 +1025,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
 <p>Define and implement the four shown methods.</p>
 <p>In <strong><code>ReadAndProcessMessage()</code></strong> read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that call the method for printing the given type of message.</p>
-<p>If you are reading from the console a few separate methods, you should keep in mind that you should <strong>create <code>Scanner</code> object only once</strong> (for example in the main method) and pass it to the other methods as a parameter.  Creating more than one <strong><code>Scanner</code></strong> which reads from the console might not work as expected.</p>
+<p>If you are reading from the console a few separate methods, you should keep in mind that you should <strong>create <code>Scanner</code> object only once</strong> (for example in the main method) and pass it to the other methods as a parameter. Creating more than one <strong><code>Scanner</code></strong> which reads from the console might not work as expected.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#12</a>.</p>
 <h3 id="problem-numbers-to-words"><a name="problem-numbers-to-words" class="plugin-anchor" href="#problem-numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Numbers to words</h3>
@@ -1075,9 +1075,9 @@ As we have already said, the name must be clear and descriptive. Another <strong
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
-<p>We can first print <strong>the hundreds</strong> as a text - (the number / 100) % 10, after that <strong>the tens</strong> &#x2013;  (the number / 10) % 10 and at the end <strong>the ones</strong> &#x2013; (the number % 10).</p>
+<p>We can first print <strong>the hundreds</strong> as a text - (the number / 100) % 10, after that <strong>the tens</strong> &#x2013; (the number / 10) % 10 and at the end <strong>the ones</strong> &#x2013; (the number % 10).</p>
 <p>The first special case is when the number is exactly <strong>rounded to 100</strong> (e.g. 101, 305, 609, etc.). In this case we print &quot;one-hundred&quot;, &quot;two-hundred&quot;, &quot;three-hundred&quot; etc.</p>
-<p>The second special case is when the number formed by the last two digits of the input number is <strong>less than 10</strong>  (e.g. 101, 305, 609, etc.). In this case, we print &quot;one-hundred and one&quot;, &quot;three-hundred and five&quot;, &quot;six-hundred and nine&quot; etc.</p>
+<p>The second special case is when the number formed by the last two digits of the input number is <strong>less than 10</strong> (e.g. 101, 305, 609, etc.). In this case, we print &quot;one-hundred and one&quot;, &quot;three-hundred and five&quot;, &quot;six-hundred and nine&quot; etc.</p>
 <p>The third special case is when the number formed by the last two digits of the input number is <strong>greater than 10 and less than 20</strong> (e.g. 111, 814, 919, etc.). In this case, we print &quot;one-hundred and eleven&quot;, &quot;eight-hundred and fourteen&quot;, &quot;nine-hundred and nineteen&quot; etc.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/665#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/665#13</a>.</p>
@@ -1173,7 +1173,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
 
             
                 
-                <a href="chapter-09-problems-for-champions-part-2.html" class="navigation navigation-prev " aria-label="Previous page: 9.2. problems for Champions – Part II">
+                <a href="chapter-09-problems-for-champions-part-2.html" class="navigation navigation-prev " aria-label="Previous page: 9.2. Problems for Champions – Part II">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1189,7 +1189,7 @@ As we have already said, the name must be clear and descriptive. Another <strong
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-10-methods.md","mtime":"2022-01-18T14:17:12.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-18T14:17:56.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-10-methods.md","mtime":"2022-02-17T13:11:54.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T13:12:42.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

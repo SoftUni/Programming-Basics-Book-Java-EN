@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>9.2. problems for Champions – Part II · Programming Basics with Java</title>
+        <title>9.2. Problems for Champions – Part II · Programming Basics with Java</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -337,7 +337,7 @@
                 <a href="chapter-09-problems-for-champions.html">
             
                     
-                    9.1. problems for Champions – Part I
+                    9.1. Problems for Champions – Part I
             
                 </a>
             
@@ -350,7 +350,7 @@
                 <a href="chapter-09-problems-for-champions-part-2.html">
             
                     
-                    9.2. problems for Champions – Part II
+                    9.2. Problems for Champions – Part II
             
                 </a>
             
@@ -427,7 +427,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >9.2. problems for Champions – Part II</a>
+        <a href="." >9.2. Problems for Champions – Part II</a>
     </h1>
 </div>
 
@@ -451,7 +451,7 @@
 <p>The <strong>first line</strong> of the input will pass the <strong>amount</strong> that Lina has <strong>before</strong> she starts shopping. Then, upon reading the &quot;<strong><code>mall.Enter</code></strong>&quot; command, Lina enters the mall and starts shopping we receive the &quot;<strong><code>mall.Exit</code></strong>&quot; command. When Lina starts shopping, <strong>on each line</strong> of the input, we will receive strings that are <strong>actions performed by Lina</strong>. Each <strong>symbol</strong> in the string is a <strong>purchase or another action</strong>. String commands contain only symbols of the <strong>ASCII table</strong>. The ASCII code of each sign is <strong>related to what Lina must pay</strong> for each of the goods. You need to interpret the symbols in the following way:</p>
 <ul>
 <li>If the symbol is a <strong>capital letter</strong>, Lina gets a <strong>50% discount</strong>, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.</li>
-<li>If the symbol is a <strong>lowercase letter</strong>, Lina gets a <strong>70% discount</strong>, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from  the ASCII table.</li>
+<li>If the symbol is a <strong>lowercase letter</strong>, Lina gets a <strong>70% discount</strong>, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.</li>
 <li>If the symbol is <strong>&quot;<code>%</code>&quot;</strong>, Lina makes a <strong>purchase</strong> that decreases her money in half.</li>
 <li>If the symbol is <strong>&quot;<code>*</code>&quot;</strong>, Lina <strong>withdraws money from her debit card</strong> and adds 10 lv. to her available funds.</li>
 <li>If the symbol is <strong>different from all above</strong>, Lina just purchases without discount, and in this case, you should subtract the value of the symbol from the ASCII table from her available funds.</li>
@@ -534,7 +534,7 @@ When shopping is over, you must print on the console a particular output dependi
 </blockquote>
 <p>It is where we need to take into consideration the fact that from the <strong>second input line on, we need to start reading commands</strong>, but <strong>only after we read</strong> the command <strong>&quot;mall.Enter&quot;</strong>, we must begin processing them. How can we do this? Using a <strong><code>while</code></strong> or a <strong><code>do-while</code></strong> loop is a good option. Here is an exemplary solution of how <strong>to skip</strong> all commands before processing the command &quot;<strong><code>mall.Enter</code></strong>&quot;:</p>
 <p><img src="assets/chapter-9-2-images/01.Passion-days-02.png" alt=""></p>
-<p>Here is the place to point out that calling  <strong><code>scanner.nextLine()</code></strong> after the end of the loop is used for <strong>moving to the first command</strong> for processing.</p>
+<p>Here is the place to point out that calling <strong><code>scanner.nextLine()</code></strong> after the end of the loop is used for <strong>moving to the first command</strong> for processing.</p>
 <h4 id="algorithm-for-solving-the-problem"><a name="algorithm-for-solving-the-problem" class="plugin-anchor" href="#algorithm-for-solving-the-problem"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithm for solving the problem</h4>
 <p>The algorithm for solving the problem is a direct one &#x2013; we continue <strong>reading commands</strong> from the console <strong>until the command &quot;mall.Exit&quot; is passed</strong>. In the meantime, we <strong>process</strong> each symbol (<strong><code>char</code></strong>) of each one of the commands according to the rules specified in the problem requirements, and in parallel, we <strong>modify the amount</strong> that Lina has and <strong>store the number of purchases</strong>.</p>
 <p>Let&apos;s examine the first two sub-problems for our algorithm. The first sub-problem concerns the way we read the commands until we reach the <strong>&quot;mall.Exit&quot;</strong> command. The solution that we previously saw uses a <strong><code>while-loop</code></strong>. The second sub-problem is to <strong>access each symbol</strong> of the command passed. Keeping in mind that the input data with the commands is a <strong><code>String</code></strong> type, the easiest way to access each symbol inside the strings is via a <strong><code>foreach</code> loop</strong>. </p>
@@ -545,7 +545,7 @@ When shopping is over, you must print on the console a particular output dependi
 <ul>
 <li>If the symbol is a <strong>capital letter</strong>, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.</li>
 <li>If the symbol is a <strong>lowercase letter</strong>, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.</li>
-<li>If the symbol is <strong>&quot;%&quot;</strong>,  Lina purchases that decrease her money in half.</li>
+<li>If the symbol is <strong>&quot;%&quot;</strong>, Lina purchases that decrease her money in half.</li>
 <li>If the symbol is <strong>&quot;*&quot;</strong>, Lina withdraws money from her debit card and adds 10 lv. to her available funds.</li>
 <li>If the symbol is <strong>different from all above</strong>, Lina just purchases without discount, and in this case, you should subtract the value of the symbol from the ASCII table from her available funds.</li>
 </ul>
@@ -633,7 +633,7 @@ When shopping is over, you must print on the console a particular output dependi
 </ul>
 <p><img src="assets/chapter-9-2-images/02.X-expression-04.png" alt=""></p>
 <p>About the code above we must clarify one detail. The default value of the operator is <strong><code>+</code></strong> so that the first detected number is added to our result.</p>
-<p>After we have declared our starting variables we must think of <strong>what our structure</strong> will look like of our program. From the condition of our problem, we know that <strong>every expression is ending with <code>=</code></strong>. It means we have to read and process symbols until we match with  <strong><code>=</code></strong>.  After that, we will type a <strong><code>while</code> loop</strong> as shown below.</p>
+<p>After we have declared our starting variables we must think of <strong>what our structure</strong> will look like of our program. From the condition of our problem, we know that <strong>every expression is ending with <code>=</code></strong>. It means we have to read and process symbols until we match with <strong><code>=</code></strong>. After that, we will type a <strong><code>while</code> loop</strong> as shown below.</p>
 <p><img src="assets/chapter-9-2-images/02.X-expression-05.png" alt=""></p>
 <p>The next step is the processing of our <strong><code>symbol</code></strong> variable. We have 3 possible cases for it:</p>
 <ul>
@@ -645,7 +645,7 @@ When shopping is over, you must print on the console a particular output dependi
 <p>Let&apos;s examine the actions that we need to undertake in the relevant cases that we defined:</p>
 <ul>
 <li>If our symbol is an <strong>operator</strong>, then the only thing we need to do is to <strong>set a new value for the <code>expressionOperator</code> variable</strong>.</li>
-<li>If our symbol is a <strong>digit</strong>, then we need to <strong>change the current result of the expression depending on the current operator</strong>, i.e., if  <strong><code>expressionOperator</code></strong> is a <strong><code>-</code></strong>, then we must <strong>decrease the result by the numerical representation of the current symbol</strong>. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the <strong><code>[ASCII code of our symbol] &#x2013; [the ASCII code of the symbol</code>0<code>] = [the digit that represents the symbol]</code></strong>)</li>
+<li>If our symbol is a <strong>digit</strong>, then we need to <strong>change the current result of the expression depending on the current operator</strong>, i.e., if <strong><code>expressionOperator</code></strong> is a <strong><code>-</code></strong>, then we must <strong>decrease the result by the numerical representation of the current symbol</strong>. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (the <strong><code>[ASCII code of our symbol] &#x2013; [the ASCII code of the symbol</code>0<code>] = [the digit that represents the symbol]</code></strong>)</li>
 </ul>
 <p><img src="assets/chapter-9-2-images/02.X-expression-07.png" alt=""></p>
 <ul>
@@ -660,7 +660,7 @@ When shopping is over, you must print on the console a particular output dependi
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/664#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/664#1</a>.</p>
 <h2 id="problem-bulls-and-cows"><a name="problem-bulls-and-cows" class="plugin-anchor" href="#problem-bulls-and-cows"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Bulls and Cows</h2>
-<p>We all know the game called &quot;Bulls and Cows&quot;  (<a href="https://en.wikipedia.org/wiki/Bulls_and_cows" target="_blank">https://en.wikipedia.org/wiki/Bulls_and_cows</a>). Upon having a particular 4-digit <strong>secret number</strong> and a 4-digit <strong>suggested number</strong>, the following rules are applied:</p>
+<p>We all know the game called &quot;Bulls and Cows&quot; (<a href="https://en.wikipedia.org/wiki/Bulls_and_cows" target="_blank">https://en.wikipedia.org/wiki/Bulls_and_cows</a>). Upon having a particular 4-digit <strong>secret number</strong> and a 4-digit <strong>suggested number</strong>, the following rules are applied:</p>
 <ul>
 <li>If a digit in the suggested number matches a digit in the secret number and is located at the <strong>same position</strong>, we have a <strong><em>bull</em></strong>.</li>
 <li>If a digit in the suggested number matches a digit in the secret number but is located at a <strong>different position</strong>, we have a <strong><em>cow</em></strong>.</li>
@@ -840,7 +840,7 @@ If there are <strong>no suggested numbers</strong> that match the criteria provi
 
             
                 
-                <a href="chapter-09-problems-for-champions.html" class="navigation navigation-prev " aria-label="Previous page: 9.1. problems for Champions – Part I">
+                <a href="chapter-09-problems-for-champions.html" class="navigation navigation-prev " aria-label="Previous page: 9.1. Problems for Champions – Part I">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -856,7 +856,7 @@ If there are <strong>no suggested numbers</strong> that match the criteria provi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.2. problems for Champions – Part II","level":"1.19","depth":1,"next":{"title":"10. Methods","level":"1.20","depth":1,"path":"chapter-10-methods.md","ref":"chapter-10-methods.md","articles":[]},"previous":{"title":"9.1. problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-09-problems-for-champions-part-2.md","mtime":"2022-01-18T14:17:12.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-18T14:17:56.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"next":{"title":"10. Methods","level":"1.20","depth":1,"path":"chapter-10-methods.md","ref":"chapter-10-methods.md","articles":[]},"previous":{"title":"9.1. Problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-09-problems-for-champions-part-2.md","mtime":"2022-02-17T13:11:54.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T13:12:42.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

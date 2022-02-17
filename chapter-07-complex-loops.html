@@ -337,7 +337,7 @@
                 <a href="chapter-09-problems-for-champions.html">
             
                     
-                    9.1. problems for Champions – Part I
+                    9.1. Problems for Champions – Part I
             
                 </a>
             
@@ -350,7 +350,7 @@
                 <a href="chapter-09-problems-for-champions-part-2.html">
             
                     
-                    9.2. problems for Champions – Part II
+                    9.2. Problems for Champions – Part II
             
                 </a>
             
@@ -460,7 +460,7 @@
 <h2 id="loops-with-a-step"><a name="loops-with-a-step" class="plugin-anchor" href="#loops-with-a-step"><i class="fa fa-link" aria-hidden="true"></i></a>Loops with a step</h2>
 <p>In chapter <strong>&quot;Repetitions (Loops)&quot;</strong>, we learned how the <strong><code>for</code></strong> loop works, and we already know when and for what purpose to use it. In this topic, we will pay <strong>attention</strong> to a specific and very important <strong>part of its construction</strong>, namely the <strong>step</strong>. </p>
 <h3 id="what-is-a-step"><a name="what-is-a-step" class="plugin-anchor" href="#what-is-a-step"><i class="fa fa-link" aria-hidden="true"></i></a>What is a step?</h3>
-<p>The <strong>step</strong> is that <strong>part</strong> of the <strong><code>for</code></strong> loop construction that states <strong>how</strong> much to <strong>increase</strong> or <strong>decrease</strong> the value of its <strong>leading</strong> variable.  It is declared last in the  <strong><code>for</code></strong> loop block.</p>
+<p>The <strong>step</strong> is that <strong>part</strong> of the <strong><code>for</code></strong> loop construction that states <strong>how</strong> much to <strong>increase</strong> or <strong>decrease</strong> the value of its <strong>leading</strong> variable. It is declared last in the <strong><code>for</code></strong> loop block.</p>
 <p>It most often has a <strong>size <code>1</code></strong> and in that case instead of writing <strong><code>i += 1</code></strong> or <strong><code>i -= 1</code></strong>, we can use the <strong><code>i++</code></strong> or <strong><code>i--</code></strong> operators. If we want the step to be <strong>different than 1</strong>, we use the operator <strong><code>i += (step size)</code></strong> to increment and <strong><code>i -= (step size)</code></strong> to decrement. For a step size of 10, the loop would look like this:</p>
 <p><img src="assets/chapter-7-1-images/00.Step-explanation-01.png" alt=""></p>
 <p>The following is a series of examples, the solution of which will help us better understand the use of the <strong>step</strong> in the <strong><code>for</code></strong> loop.</p>
@@ -641,7 +641,7 @@ print a;
 <li>For a loop condition, we will use <strong><code>n &gt; 0</code></strong>, since we will remove the last digit of <strong> <code>n</code> </strong> after each calculation of the result in the body of the loop.</li>
 <li>In the body of the loop:<ul>
 <li>We assign a new value to <strong><code>sum</code></strong>, equals to the sum of the current value of <strong><code>sum</code></strong> and the last digit of <strong><code>n</code></strong>.</li>
-<li>We assign a new value to <strong><code>n</code></strong>, which is the result of removing the last digit of  <strong><code>n</code></strong>.</li>
+<li>We assign a new value to <strong><code>n</code></strong>, which is the result of removing the last digit of <strong><code>n</code></strong>.</li>
 </ul>
 </li>
 <li>We print the final value of the sum outside the body of the loop.</li>
@@ -694,7 +694,7 @@ print a;
 <p>Here is the algorithm for prime number verification, described in steps:</p>
 <ul>
 <li>We create the variable <strong><code>n</code></strong>, to which we assign the <strong>integer</strong> value obtained from the console input.</li>
-<li>We create a boolean variable - <strong><code>isPrime</code></strong> with an initial value <strong><code>true</code></strong> <strong>if the number is equal or greater than two</strong> (since by definition, numbers such as 0, 1, -1, and -2 are non-prime).  We assume that a number is prime until proven otherwise.</li>
+<li>We create a boolean variable - <strong><code>isPrime</code></strong> with an initial value <strong><code>true</code></strong> <strong>if the number is equal or greater than two</strong> (since by definition, numbers such as 0, 1, -1, and -2 are non-prime). We assume that a number is prime until proven otherwise.</li>
 <li>We create a <strong><code>for</code></strong> loop, and we assign 2 as an initial value of the loop variable and <strong>its current value <code>&lt;= &#x221A;n</code></strong> as a condition. The step of the loop is 1.</li>
 <li>In <strong>the body of the loop</strong>, we check if <strong><code>n</code></strong> divided by <strong>the current value</strong> has a remainder. If there is no remainder, we change the value of <strong><code>isPrime</code></strong> to <strong><code>false</code></strong> and forcibly terminate the loop with a <strong><code>break</code></strong> operator.</li>
 <li>Depending on the <strong><code>isPrime</code></strong> value, we print whether the number is prime (<strong><code>true</code></strong>) or composite (<strong><code>false</code></strong>).</li>
@@ -993,7 +993,7 @@ System.out.println(<span class="hljs-string">&quot;Even number entered: {0}&quot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-01-18T14:17:12.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-18T14:17:56.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-02-17T13:11:54.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T13:12:42.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
