@@ -44,7 +44,7 @@ Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/pac
 
 If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it** [https://repl.it/languages/java](https://repl.it/languages/java).
 
-### Low- and high-level languages, runtime environments
+### Low- and High-Level Languages, Runtime Environments
 A program is, in essence, a **set of instructions** that ask the computer to carry out specific problems. They are entered by the programmer and **executed unconditionally by the machine**.
 
 There are different types of **programming languages**. **Lowest-level** languages are used to write the **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages are utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines), and other system components and programs. Even higher-level languages like **JavaScript**, **C#**, and **Python** are used to create application software, like programs for reading mail or chatting.
@@ -71,7 +71,7 @@ The compilation process of the code, before its execution, is used only in compi
 ### Computer Programs – Examples
 Let us start with a simple example Java program, which consists of a single command.
 
-#### Example – a command which prints a given text
+#### Example – a Command Which Prints a Given Text
 Our first program will consist of a **single Java command** which prints the word *"Hello"*
 ```java
 System.out.println("Hello");
@@ -79,13 +79,13 @@ System.out.println("Hello");
 
 In a moment, we will get to know **how to execute this command**, but for now, we will just stick to what commands in programming consist of. Let us have a look at a few more examples.
 
-#### Example: A program which checks whether a word contains another word
+#### Example: A Program Which Checks Whether a Word Contains Another Word
 We can check whether the word "alright" consist of the word "right" using the **contains** method:
 ```java
 System.out.println("alright".contains("right"));
 ```
 
-#### Example: A Program Which Converts Bulgarian BGNs into Euro
+#### Example: A Program Which Converts Bulgarian BGNs (leva) into Euro
 Let us have a look at another simple program which reads a number of levs (Bulgaria's currency) (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
 ```java
 Scanner console = new Scanner(System.in);
