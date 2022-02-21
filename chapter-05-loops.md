@@ -238,7 +238,7 @@ We read the input text **`s`**, after that we null the sum and run a loop from *
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#8](https://judge.softuni.org/Contests/Practice/Index/655#8).
 
 
-## What have we learned from this chapter?
+## What Have We Learned from This Chapter?
 
 We can repeat a block of code using **`for` loop**:
 

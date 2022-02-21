@@ -297,7 +297,7 @@ public class Example {
 
 ```
 
-## What Did We Learn in This Chapter?
+## What Have We Learned from This Chapter?
 First of all, we learned **what programming is** – **issuing commands written in a computer language** which the machine can understand and carry out. We also found out **what a computer program is** – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Java programming language** and learned **how to create simple console programs using IntelliJ IDEA**. We followed Java's program code structure, one example of which is that issuing of commands mainly happens in the **`static void main(String[] args)`** section, within the curly brackets. We looked at printing with the function **`System.out.printIn(…)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let us now tackle the **exercises**. You remember that learning how to program involves a lot of code writing and problem-solving, right? Let us do just that and put what we have learned into practice.

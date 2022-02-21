@@ -435,7 +435,7 @@ When the program is executed with the values from the coordinate system above we
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
 
-## What we have learned in this chapter?
+## What Have We Learned from This Chapter?
 
 To summarize what have we learned in this chapter of the book:
 - **Reading a text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).

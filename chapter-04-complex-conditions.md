@@ -413,7 +413,7 @@ We can solve the problem with **`switch`**-**`case`** conditions with multiple l
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#9](https://judge.softuni.org/Contests/Practice/Index/653#9).
 
-## What have we learned in this chapter?
+## What Have We Learned from This Chapter?
 
 In this chapter, we learned how we can use **more complex conditions**, logical operators inside the condition and **nested `if`-constructions**.
 

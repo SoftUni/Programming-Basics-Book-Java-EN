@@ -404,7 +404,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#9](https://judge.softuni.org/Contests/Practice/Index/657#9).
 
 
-## What we learned in this chapter?
+## What Have We Learned from This Chapter?
 
 We learned to draw figures with nested **`for`** loops:
 

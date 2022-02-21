@@ -479,7 +479,7 @@ Another good practice is to **leave an empty row** between methods, after loops,
 
 We recommend you to always **use curly brackets for the body of conditional statements and loops**. The brackets don't just improve the readability but also reduce the possibility of making a mistake.
 
-## What have we learned from this chapter?
+## What Have We Learned from This Chapter?
 
 In this chapter, we have learned base concepts about working with methods:
 * We learned that **the goal** of a method is to **split** programs with many rows of code into smaller and shorter parts.

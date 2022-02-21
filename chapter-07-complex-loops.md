@@ -549,7 +549,7 @@ We can solve the problem with **two nested loops** and a little bit of calculati
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#15](https://judge.softuni.org/Contests/Practice/Index/659#15).
 
 
-## What did we learn in this chapter?
+## What Have We Learned from This Chapter?
 
 We can use the **`for`** loops with a **step**:
 

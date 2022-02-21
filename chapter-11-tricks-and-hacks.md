@@ -362,6 +362,6 @@ It's important to know that the three elements of the **`for` loop** are **optio
 To make it easier we can use a code snippet for a **`for` loop**:
  * **`fori` + [Enter]**
 
-## What Have We Learned in This Chapter?
+## What Have We Learned from This Chapter?
 
 In **this** chapter, we have learned how to **correctly** **format** and name the elements of our **code**, some **shortcuts** in IntelliJ IDEA, some **code snippets**, and we analyzed how to **debug the code**.
