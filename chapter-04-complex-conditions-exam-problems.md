@@ -1,9 +1,9 @@
-# Chapter 4.2. More complex conditions – Exam problems
+# Chapter 4.2. More Complex Conditions – Exam Problems
 
 In the previous chapter, we got familiar with the **nested conditional** constructions in the Java language. Through them, the logic in a program can be represented by **`if` conditional statements** that are nested in each other. We also looked at the conditional **`switch-case`** construction, which allows you to choose from a list of options. We should practice and consolidate what we have learned so far by looking at a few more complex exam problems. Before moving on to the problems, we will recall the conditional constructions:
 
 
-## Nested conditions
+## Nested Conditions
 
 ```java
 if (condition1) {
@@ -20,7 +20,7 @@ if (condition1) {
 </tr></table>
 
 
-## Switch-case conditions
+## Switch-Case Conditions
 
 When the program operation depends on the value of a variable, instead of doing consecutive checks with multiple **`if-else`** blocks, we can use the **`switch-case`** conditional statement.
 
@@ -48,7 +48,7 @@ The structure consists of:
 Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam problems.
 
 
-### Problem: On Time for the exam
+### Problem: On Time for The Exam
 
 A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrives **at the time when the exam starts or up to half an hour earlier**. If the student arrives **more than 30 minutes earlier**, the student **has come too early**. If he arrives **after the time when the exam starts**, he is **late**. 
 
@@ -97,7 +97,7 @@ If the student arrives with more than one minute difference compared to the exam
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
-#### Input Data Processing
+#### Input Data
 
 According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
@@ -142,7 +142,7 @@ We also need to do one more check – whether the time of the student arrival is
 
 ![](assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Printing the result
+#### Printing The Result
 
 Finally, it remains to print the result on the console. According to the requirements, if the student arrived right in time (**not even a minute difference**), we do not need to print a second result. This is why we do the following **check**:
 
@@ -207,7 +207,7 @@ On the console must be printed **two lines**.
 
 Like the other problems, we can separate the solution of our problem into the following parts: reading the input data, doing calculations, printing the result.
 
-#### Input Data Processing
+#### Input Data
 
 While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`BigDecimal`** as a type for the budget and **`string`** for the season. 
 
@@ -262,7 +262,7 @@ can be shortened to this:
 
 ![](assets/chapter-4-2-images/02.Trip-06.png)
 
-#### Printing the result
+#### Printing The Result
 
 It remains to print the obtained result on the console:
 
@@ -273,7 +273,7 @@ It remains to print the obtained result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#1](https://judge.softuni.org/Contests/Practice/Index/654#1).
 
 
-### Problem: Operations between numbers
+### Problem: Operations
 
 Write a program that reads as input data **two integers (N1 and N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
 
@@ -315,7 +315,7 @@ Print **one line** on the console:
 
 The problem is not complicated, but there are many lines of code to write.
 
-#### Input Data Processing
+#### Input Data
 
 After reading the condition, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
@@ -355,7 +355,7 @@ For short and clear check, such as the above example for even and odd numbers, y
 
 ![](assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Printing the output
+#### Printing The Result
 
 Finally, we need to show the calculated result to the console:
 
@@ -366,7 +366,7 @@ Finally, we need to show the calculated result to the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#2](https://judge.softuni.org/Contests/Practice/Index/654#2).
 
 
-### Problem: Game tickets
+### Problem: Match Tickets
 
 **A group of football fans** decided to buy **tickets for Euro 2016**. The ticket price is determined according to **two** categories:
 
@@ -416,7 +416,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 We will read the input data and do the calculations described in the condition to check if the money will be sufficient.
 
-#### Input Data Processing
+#### Input Data
 
 Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result**, and what are the **main steps** when dividing the **logic**.
 
@@ -450,7 +450,7 @@ For printing the result, in order to skip one **`else` condition**, we will assu
 
 ![](assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Printing the result
+#### Printing The Result
 
 Finally, we need to print the calculated result on the console.
 
@@ -459,7 +459,7 @@ Finally, we need to print the calculated result on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#3](https://judge.softuni.org/Contests/Practice/Index/654#3).
 
 
-### Problem: Hotel room
+### Problem: Hotel Room
 
 A hotel offers **two types of rooms**: **studio and apartment**.
 
@@ -508,7 +508,7 @@ The input data is read from the **console** and contains **exactly two lines**:
 
 First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally print the result.
 
-#### Input Data Processing
+#### Input Data
 
 According to the condition, we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 
@@ -542,7 +542,7 @@ After calculating the relevant prices and the total amount for the stay - let's 
 
 To calculate the output parameters, we use the **method** **`java.math.BigDecimal.setScale(int newScale, RoundingMode roundingMode)`**. This method **rounds a decimal number** to a **specified number of digits** after the decimal point, and we have control of any rounding type - **`RoundingMode`**. For this purpose, we give the method an integer (**`int`**) with which we indicate till which sign we want to round the number and value of a given enumeration **`RoundingMode`** (**`UP`**, **`DOWN`**, **`CEILING`**, **`FLOOR`**, **`HALF_UP`**, **`HALF_DOWN`**, **`HALF_EVEN`**). In our case, we will round the decimal number up to **two digits** after the decimal point with rounding type **`HALF_UP`**.
 
-#### Printing the result
+#### Printing The Result
 
 Finally, what remains is to print the calculated results on the console.
 
