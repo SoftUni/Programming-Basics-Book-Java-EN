@@ -179,7 +179,7 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 ![](assets/chapter-9-1-images/02.Magic-dates-05.png)
 
-#### Printing the output
+#### Printing The Result
 
 Once we have the weight calculation of a given date, we need **to check and see if it matches the magical weight**, to know if it should be printed, or not. Checking can be done using a standard **`if`** block, taking care to print the date in the correct format. To format data as required in the problem, we will use **`DateTimeFormatter`** class.
 

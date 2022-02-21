@@ -348,7 +348,7 @@ We will apply the following condition for the cows – first, we will check whet
 
 Then, we check: whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
-#### Printing the output
+#### Printing The Result
 
 After completing all conditions, we need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console.
 
