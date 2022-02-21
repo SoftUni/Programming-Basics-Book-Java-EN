@@ -48,13 +48,13 @@ The structure consists of:
 Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam problems.
 
 
-## problem: On Time for the exam
+### Problem: On Time for the exam
 
 A student must go **to the exam at a certain time** (for example at 9:30am). He arrives at the exam hall at a given **hour of arrival** (for example 9:40). It is considered that the student has arrived **on time**, if he arrives **at the time when the exam starts or up to half an hour earlier**. If the student arrives **more than 30 minutes earlier**, the student **has come too early**. If he arrives **after the time when the exam starts**, he is **late**. 
 
 Write a program that has as input data for the exam starting time and the student arrival time, and prints if the student has arrive **on time**, or if he has **arrive early** or if he is **late**, as well as **how many hours or minutes** the student was early or late.
 
-### Input data
+### Input Data
 
 From the console, we read as input data **four integers** (one per line):
 
@@ -63,7 +63,7 @@ From the console, we read as input data **four integers** (one per line):
 - The third line contains **hour of arrival** – an integer from 0 to 23.
 - The fourth line contains **minutes of arrival** – an integer from 0 to 59.
 
-### Output data
+### Output Data
 
 Print on the first line:
 
@@ -78,7 +78,7 @@ If the student arrives with more than one minute difference compared to the exam
 - "**mm minutes after the start**" for arriving less than an hour late.
 - "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print the minutes using two digits, for example, "1:03".
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Input | Output |
 |---|---|---|---|
@@ -92,12 +92,12 @@ If the student arrives with more than one minute difference compared to the exam
 |11<br>30<br>10<br>55|Early<br>35 minutes before the start|
 |11<br>30<br>12<br>29|Late<br>59 minutes after the start|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
-#### Input data processing
+#### Input Data processing
 
 According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
@@ -155,12 +155,12 @@ Let's look at the idea that our code is not 10 lines, but 100 or 1000! One day, 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It must be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/654#0](https://judge.softuni.org/Contests/Practice/Index/654#0).
 
 
-## problem: Trip
+### Problem: Trip
 
 Most people plan their vacations. A young programmer has a **fixed budget** and spare time in a particular **season**.
 
@@ -177,14 +177,14 @@ The budget determines the destination and the season what amount of the budget w
 - If **more than 1000 BGN**. – somewhere in **Europe**.
   - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
 
-### Input data
+### Input Data
 
 The input data will be read from the console and will consist of **two lines**:
 
 - On **the first** line we receive the **budget** - **a floating-point number** int the range of [**10.00 … 5000.00**].
 - On **the second** line – **one** of the two possible seasons: "**summer**" or "**winter**".
 
-### Output data
+### Output Data
 
 On the console must be printed **two lines**.
 
@@ -203,11 +203,11 @@ On the console must be printed **two lines**.
 |678.53<br>winter|Somewhere in Balkans<br>Hotel - 542.82|
 |1500<br>summer|Somewhere in Europe<br>Hotel - 1350.00|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 Like the other problems, we can separate the solution of our problem into the following parts: reading the input data, doing calculations, printing the result.
 
-#### Input data processing
+#### Input Data processing
 
 While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`BigDecimal`** as a type for the budget and **`string`** for the season. 
 
@@ -268,16 +268,16 @@ It remains to print the obtained result on the console:
 
 ![](assets/chapter-4-2-images/02.Trip-07.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#1](https://judge.softuni.org/Contests/Practice/Index/654#1).
 
 
-## problem: Operations between numbers
+### Problem: Operations between numbers
 
 Write a program that reads as input data **two integers (N1 and N2)** and **an operator** that performs a particular **mathematical operation** with them.  Possible operations are: **addition** (**`+`**), **subtraction** (**`-`**), **multiplication** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon adding, subtracting, and multiplying, print on the console the result and display whether it is **even** or **odd**. In simple division – **only the result**, and in the modular division – **the remainder**. You need to take into account that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, print **a special message**.
 
-### Input data
+### Input Data
 
 The input data will be read from the console and will consist of **three lines**:
 
@@ -285,7 +285,7 @@ The input data will be read from the console and will consist of **three lines**
 - On the **second** line **N2** – **integer** within the range [**0 … 40 000**].
 - On the **third** line **Operator** – **one character** among: "**+**", "**-**", "**\***", "**/**", "**%**".
 
-### Output data
+### Output Data
 
 Print **one line** on the console:
 
@@ -298,7 +298,7 @@ Print **one line** on the console:
 - In case of **dividing by 0 (zero)**:
   - **"Cannot divide {N1} by zero"**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Input | Output |
 |---|---|---|---|
@@ -311,11 +311,11 @@ Print **one line** on the console:
 |10<br>1<br>-|10 - 1 = 9 - odd|
 |7<br>3<br>\*|7 * 3 = 21 - odd|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 The problem is not complicated, but there are many lines of code to write.
 
-#### Input data processing
+#### Input Data processing
 
 After reading the condition, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
@@ -361,12 +361,12 @@ Finally, we need to show the calculated result to the console:
 
 ![](assets/chapter-4-2-images/03.Operations-08.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#2](https://judge.softuni.org/Contests/Practice/Index/654#2).
 
 
-## problem: Game tickets
+### Problem: Game tickets
 
 **A group of football fans** decided to buy **tickets for Euro 2016**. The ticket price is determined according to **two** categories:
 
@@ -383,7 +383,7 @@ The fans **have a certain budget**, and **the number of people** in the group de
 
 Write a program that **calculates, whether with the rest money from the budget** they can **buy tickets for the selected category**, as well as **how much money** they will have **left or will need**.
 
-### Input data
+### Input Data
 
 The input is read from the **console** and contains **exactly 3 lines**:
 
@@ -391,7 +391,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 - On the **second** line is the **category** – "**VIP**" or "**Normal**".
 - On the **third** line is the **number of people in the group** – an integer in the range of [**1 … 200**].
 
-### Output data
+### Output Data
 
 **Print one line** on the console:
 
@@ -402,7 +402,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Explanations |
 |---|---|---|
@@ -412,11 +412,11 @@ The input is read from the **console** and contains **exactly 3 lines**:
 |---|---|---|
 |30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 people: 40%** of the budget are spent on **transport**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: The ticket **price is** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Money needed** 24499.51 - 18000 = **6499.51**|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 We will read the input data and do the calculations described in the condition to check if the money will be sufficient.
 
-#### Input data processing
+#### Input Data processing
 
 Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result**, and what are the **main steps** when dividing the **logic**.
 
@@ -454,12 +454,12 @@ For printing the result, in order to skip one **`else` condition**, we will assu
 
 Finally, we need to print the calculated result on the console.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#3](https://judge.softuni.org/Contests/Practice/Index/654#3).
 
 
-## problem: Hotel room
+### Problem: Hotel room
 
 A hotel offers **two types of rooms**: **studio and apartment**.
 
@@ -477,14 +477,14 @@ The following **discounts** are offered:
 - For **studio**, in case of more than **14** nights in **June and September**: **20%** discount.
 - For **apartment**, in case of more than **14** nights, **no matter the month: 10%** discount.
 
-### Input data
+### Input Data
 
 The input data is read from the **console** and contains **exactly two lines**:
 
 - On the **first** line is the **month** – May, June, July, August, September, or October.
 - On the **second** line is the **number of nights** – integer in the range of [**0 … 200**].
 
-### Output data
+### Output Data
 
 **Print two lines** on the console:
 
@@ -493,7 +493,7 @@ The input data is read from the **console** and contains **exactly two lines**:
 
 **The price for the entire stay** must be formatted up to **two digits after the decimal point**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output |Comments |
 |---|---|---|
@@ -504,11 +504,11 @@ The input data is read from the **console** and contains **exactly two lines**:
 |June<br>14|Apartment: 961.80 BGN<br>Studio: 1052.80 BGN|
 |August<br>20|Apartment: 1386.00 BGN<br>Studio: 1520.00 BGN|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally print the result.
 
-#### Input data processing
+#### Input Data processing
 
 According to the condition, we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 
@@ -546,6 +546,6 @@ To calculate the output parameters, we use the **method** **`java.math.BigDecima
 
 Finally, what remains is to print the calculated results on the console.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/654#4](https://judge.softuni.org/Contests/Practice/Index/654#4).

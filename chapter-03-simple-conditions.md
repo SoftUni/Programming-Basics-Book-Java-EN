@@ -245,7 +245,7 @@ An **integer** is read from the console - the number of points. A **bonus score*
  - If the integer is **even** -> +1 bonus score
  - If the integer is odd, with **last digit equals 5** -> +2 bonus score 
  
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -271,7 +271,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the time of each athlete from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **formatted with a zero at the front if they're less than 10** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -321,7 +321,7 @@ The program will receive three input lines:
 - Second line: input unit.
 - Third line: output unit (for the result).
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -386,7 +386,7 @@ We now have an empty Java project:
 
 The first problem of this exercises is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above. 
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -430,7 +430,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem of this exercise is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -463,7 +463,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data enter **an integer** and output **even** or **odd**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -491,7 +491,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data enter **two integers** each on a separate line and output the greater one.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 |-----|------|
@@ -519,7 +519,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer in the range [0 … 9]** and output **the integer in English**. If the integer is over the given range, print "**number too big**".
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -541,7 +541,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as the phrase "**s3cr3t!P@ssw0rd**". Output "**Welcome**" if the result is true and "**Wrong password!**" otherwise.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -562,7 +562,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200** or **above 200**. Output the corresponding message as shown in the table below.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -579,7 +579,7 @@ Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/651
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. Output "**yes**" or "**no**".
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -609,7 +609,7 @@ The next problem is to write a **program that reads input data from the console*
 * At greater speed, print "**extremely fast**".
 
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -636,7 +636,7 @@ On the first line of input data, read the type of figure (`square`, `rectangle`,
 
 Format the output to **3 digits after the decimal point**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -654,7 +654,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what is going to be the time in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. Ourput the hours either using one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -676,7 +676,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **3 integers**. Output if they are equal (**yes**/**no**).
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |
@@ -693,7 +693,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. Output the text in English.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | ---- |

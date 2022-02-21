@@ -43,7 +43,7 @@ We can solve the problem through the following sequence of actions (algorithm):
   
 ![](assets/chapter-7-1-images/01.Numbers-1-to-n-with-step3-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#0](https://judge.softuni.org/Contests/Practice/Index/659#0).
 
@@ -62,7 +62,7 @@ We can solve the problem in the following way:
 
 ![](assets/chapter-7-1-images/02.Numbers-from-n-to-1-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#1](https://judge.softuni.org/Contests/Practice/Index/659#1).
 
@@ -75,7 +75,7 @@ Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of
 
 ![](assets/chapter-7-1-images/03.Powers-of-two-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#2](https://judge.softuni.org/Contests/Practice/Index/659#2).
 
@@ -92,7 +92,7 @@ Here is a way to solve the problem:
 
 ![](assets/chapter-7-1-images/04.Even-powers-of-two-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#3](https://judge.softuni.org/Contests/Practice/Index/659#3).
 
@@ -125,7 +125,7 @@ Here is a sample representation of the described steps:
 
 ![](assets/chapter-7-1-images/05.Sequence-2k-plus-1-01.png)
  
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#4](https://judge.softuni.org/Contests/Practice/Index/659#4).
 
@@ -145,7 +145,7 @@ Here is a sample representation of the algorithm, using a **`while` loop**:
 
 ![](assets/chapter-7-1-images/06.Number-in-range-1-to-100-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#5](https://judge.softuni.org/Contests/Practice/Index/659#5).
 
@@ -201,7 +201,7 @@ We will solve the problem using **the Euclidean algorithm**:
 
 ![](assets/chapter-7-1-images/07.Greatest-common-divisor-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#6](https://judge.softuni.org/Contests/Practice/Index/659#6).
 
@@ -231,7 +231,7 @@ Here is how we can calculate the factorial:
 
 ![](assets/chapter-7-1-images/08.Factorial-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#7](https://judge.softuni.org/Contests/Practice/Index/659#7).
 
@@ -257,7 +257,7 @@ We can use the following idea to solve the problem:
 <code><strong>n / 10</strong></code>: <b>deletes</b> the last digit of <strong><code>n</code></strong>.</td>
 </tr></table>
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#8](https://judge.softuni.org/Contests/Practice/Index/659#8).
 
@@ -327,7 +327,7 @@ Here is a sample implementation of the described algorithm:
 
 ![](assets/chapter-7-1-images/10.Prime-numbers-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#9](https://judge.softuni.org/Contests/Practice/Index/659#9).
 
@@ -352,7 +352,7 @@ Here is a sample implementation of the idea:
 
 Note: although the code above is correct, it will not work if the user enters text instead of numbers, for example, "** Invalid number **". Then the parsing of the input text to a number will break, and the program will display **error message (exception)**. Later in this chapter, we will learn how to deal with this problem and how to catch and handle exceptions using the **`try-catch` construct**.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#10](https://judge.softuni.org/Contests/Practice/Index/659#10).
 
@@ -385,7 +385,7 @@ What is **the correct solution**? One way of solving this problem is by declarin
 
 Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and exit the inner loop. Upon the next iteration of the outer loop due to the **`if`** check, the program will not reach the inner loop and interrupt its execution. 
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#11](https://judge.softuni.org/Contests/Practice/Index/659#11).
 
@@ -428,18 +428,18 @@ Here is a sample implementation of the described idea:
 
 ![](assets/chapter-7-1-images/12.Valid-even-number-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#12](https://judge.softuni.org/Contests/Practice/Index/659#12).
 
 Now the solution should always work whether we enter integers, invalid numbers (for example, too many digits), or texts that do not contain numbers.
 
 
-## problems with loops
+### Problems with loops
 
 In this chapter, we have introduced several new types of loops that we can use to make repetitions with more complex program logic. Let's solve several problems using the new knowledge.
 
-### problem: Fibonacci numbers
+### Problem: Fibonacci numbers
 
 In mathematics, Fibonacci numbers form a series that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**
 
@@ -451,7 +451,7 @@ F1 = 1
 Fn = Fn-1 + Fn-2
 ```
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input (n)|Output|Comment|
 |----|-----|---------|
@@ -463,7 +463,7 @@ Fn = Fn-1 + Fn-2
 
 Write a program in which we enter an **integer** number **n** and calculate the **n-number of Fibonacci**.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 An idea to solve the problem:
 
@@ -480,22 +480,22 @@ Sample implementation:
 
 ![](assets/chapter-7-1-images/13.Fibonacci-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#13](https://judge.softuni.org/Contests/Practice/Index/659#13).
 
 
-### problem: Numbers pyramid
+### Problem: Numbers pyramid
 
 Print **the numbers 1… n in a pyramid** as in the examples below. On the first line, we print one number on the second line, we print two numbers, on the third line, we print three numbers, etc., until the numbers run out. On the last line, we print as many numbers as we have left until we get to **n**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input |Output                 |Input |Output          |Input      |Output                         |
 |-----|----------------------|-----|---------------|----------|------------------------------|
 |7    |1<br>2 3<br>4 5 6<br>7|5    |1<br>2 3<br>4 5|10        |1<br>2 3<br>4 5 6<br>7 8 9 10 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem with **two nested loops** (by rows and columns) by printing in them and leaving when reaching the last number. Here is the idea, described in more detail:
 
@@ -514,22 +514,22 @@ Here is a sample implementation:
 
 ![](assets/chapter-7-1-images/14.Number-pyramid-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#14](https://judge.softuni.org/Contests/Practice/Index/659#14).
 
 
-### problem: Numbers table
+### Problem: Numbers table
 
 Print the numbers 1 … n in a table as per the examples below.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input |Output|Input|Output|
 |--------|-----|-------|-----|
 |3|1 2 3<br>2 3 2<br>3 2 1|4|1 2 3 4<br>2 3 4 3<br>3 4 3 2<br>4 3 2 1|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem with **two nested loops** and a little bit of calculations inside:
 
@@ -544,7 +544,7 @@ We can solve the problem with **two nested loops** and a little bit of calculati
 
 ![](assets/chapter-7-1-images/15.Number-table-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#15](https://judge.softuni.org/Contests/Practice/Index/659#15).
 

@@ -28,7 +28,7 @@ In most cases, a **`for` loop** is run from **`1`** to **`n`** times(for example
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line. 
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem using a **`for` loop**, which will assign values from 1 to 100 to the variable **`i`** and print the numbers in the body of the loop:
 
@@ -38,7 +38,7 @@ We can solve the problem using a **`for` loop**, which will assign values from 1
 
 ![](assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#0](https://judge.softuni.org/Contests/Practice/Index/655#0).
 
@@ -56,13 +56,13 @@ In software development, we regularly need to write loops dozens of times a day.
 
 Write a program that finds all numbers within the range [**1 … 1000**] that ends with 7. 
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem by combining a **`for` loop**, which will go through the numbers from 1 to 1000, and a **condition** to check if they end with 7. There are other solutions too, but let's solve the problem using a **loop + condition**:
 
 ![](assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#1](https://judge.softuni.org/Contests/Practice/Index/655#1).
 
@@ -71,13 +71,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 It is good to know that the **`for` loops** don't work only with numbers. We can solve the problem by running a **`for` loop** that passes sequentially through all letters in the Latin alphabet:
 
 ![](assets/chapter-5-1-images/03.Latin-letters-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#2](https://judge.softuni.org/Contests/Practice/Index/655#2).
 
@@ -90,7 +90,7 @@ Write a program that **reads `n` integers from the console and calculates the su
 * The following **`n`** lines consist of one integer.
 * Calculate the sum and print the result.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | --- |
@@ -100,7 +100,7 @@ Write a program that **reads `n` integers from the console and calculates the su
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem by calculating the sum of numbers the following way:
  - We read the input number **`n`**.
@@ -112,7 +112,7 @@ Below you can find the source code for the solution:
 
 ![](assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#3](https://judge.softuni.org/Contests/Practice/Index/655#3).
 
@@ -121,7 +121,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 Write a program that inputs **n integers** (**n** > 0) and finds the **the Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | --- |
@@ -131,13 +131,13 @@ Write a program that inputs **n integers** (**n** > 0) and finds the **the Max N
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We enter the first number **`n`** (the number of integers to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** which iterates **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally, **`max`** will contain the highest number, and we print it on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#4](https://judge.softuni.org/Contests/Practice/Index/655#4).
 
@@ -146,7 +146,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 Write a program that inputs **n integers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples: 
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | 
 | --- | --- |
@@ -154,13 +154,13 @@ Write a program that inputs **n integers** (**n** > 0) and finds **the Min Numbe
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The problem is identical to the previous one, but this time we will start with another neutral starting value **10000000000000** (or **`Integer.MAX_VALUE`**).
 
 ![](assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#5](https://judge.softuni.org/Contests/Practice/Index/655#5).
 
@@ -169,19 +169,19 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 Write a program that inputs **2 \* n integers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | Input | Output |
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Input the number **n**, after that the first **n** numbers (**left** half) and sum them up. Input the second **n** numbers (**right** half) and find their sum. We calculate the **difference**  between the sums by absolute value: **`Math.abs(leftSum - rightSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + difference**.
 
 ![](assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#6](https://judge.softuni.org/Contests/Practice/Index/655#6).
 
@@ -190,7 +190,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 Write a program that inputs **n integers** and checks if **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 | --- | --- |
@@ -198,7 +198,7 @@ Write a program that inputs **n integers** and checks if **the sum of numbers on
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We input the numbers one by one and calculate the two **sums** (the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** if the difference equals 0 or **"No" + difference** in every other case).
 
@@ -207,7 +207,7 @@ We input the numbers one by one and calculate the two **sums** (the numbers on *
 **`+=`** is **combined assigment operator** that is used frequently. It adds the value of the right to the left operand and then assignes the result to the left operand. 
 **C += A** is equivalent to **C = C + A**.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#7](https://judge.softuni.org/Contests/Practice/Index/655#7).
 
@@ -220,20 +220,20 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 2 | 3 | 4 | 5 |
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | Input | Output | 
 | --- | --- | --- | --- |
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it is a vowel and add its value to the sum. 
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#8](https://judge.softuni.org/Contests/Practice/Index/655#8).
 
@@ -296,11 +296,11 @@ After these changes, the structure of the project should look like this:
  
 For each subsequent exercise, we will create a new class in the way described above. 
  
-### problem: An element equal to the sum of the others
+### Problem: An element equal to the sum of the others
 
 Write a program that inputs **n integers** and checks if there is a number among them that is equal to the sum of all others. If there is such an element, print **"Yes" + its value**. Otherwise, print **"No" + the difference between the largest element and the sum of the rest**, as an absolute value. 
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | Comments |
 | --- | --- | :---: |
@@ -310,20 +310,20 @@ Write a program that inputs **n integers** and checks if there is a number among
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We must calculate the **sum** of all elements, find the **largest** of them and check the condition.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#9](https://judge.softuni.org/Contests/Practice/Index/655#9).
 
 
-### problem: Even \/ Odd position 
+### Problem: Even \/ Odd position 
 
 Write a program that reads **n numbers** and calculates **the sum**, the **min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | Input | Output |
 | --- | --- | --- | --- |
@@ -332,18 +332,18 @@ Write a program that reads **n numbers** and calculates **the sum**, the **min**
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The problem combines several previous problems: finding the **min**, **max**, and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions to the previous problems again.
 
 In the current problem, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the result is equal to the neutral value, we will print **“No”**.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#10](https://judge.softuni.org/Contests/Practice/Index/655#10).
 
 
-### problem: Equal pairs 
+### Problem: Equal pairs 
 
 There are **2 \* n numbers**. The first and the second form a **pair**, the third and the fourth number also, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal values**.
 
@@ -351,7 +351,7 @@ If the value is the same, print **"Yes, value=…" + the value** otherwise, prin
 
 The input consists of number **n**, followed by **2\*n integers**, one per line.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output | Comments |
 | --- | --- | :---: | 
@@ -362,11 +362,11 @@ The input consists of number **n**, followed by **2\*n integers**, one per line.
 | 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | values = {-1, -1}<br>equal values | 
 | 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | values = {1, -1}<br>differences = {2}<br>max difference = 2 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We read the input numbers **in pairs**. For each pair, we calculate the **sum**. While reading the input pairs, for each pair, except the first one, we have to calculate **the difference with the previous one**. To do that, we need to store the sum of the previous pair in a separate variable. Finally, we find the **largest difference** between two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#11](https://judge.softuni.org/Contests/Practice/Index/655#11).
 
@@ -375,7 +375,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
-### problem: Turtle graphics GUI application
+### Problem: Turtle graphics GUI application
 
 The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will: **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
@@ -466,7 +466,7 @@ The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle
 
 Again, **start** the application with [**Shift + F10**] and test whether both buttons work correctly.
 
-### problem: * Draw a hexagon with the turtle
+### Problem: * Draw a hexagon with the turtle
 
 Add [**Hexagon**] button which draws a regular hexagon:
 
@@ -503,7 +503,7 @@ In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 ![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
-### problem: * Draw a star with the turtle
+### Problem: * Draw a star with the turtle
 
 Add [**Star**] button, which draws a star with 5 vertices (**star pentagon**), as shown in the figure below:
 
@@ -517,7 +517,7 @@ Repeat 5 times the following in a loop:
 * Forward step of 200.
 * 144 degrees rotation.
 
-### problem: * Draw a spiral with the turtle
+### Problem: * Draw a spiral with the turtle
 
 Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in the figure below:
 
@@ -527,13 +527,13 @@ Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in th
 
 Draw in a loop by moving ahead and rotating. Gradually increase the length of the forward movement with each step and turn it 60 degrees.
 
-### problem: * Draw a sun with the turtle
+### Problem: * Draw a sun with the turtle
 
 Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-### problem: * Draw a spiral triangles with the turtle
+### Problem: * Draw a spiral triangles with the turtle
 
 Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 

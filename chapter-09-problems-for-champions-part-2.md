@@ -7,7 +7,7 @@ In this chapter we, will review three additional problems that belong to the cat
 Before moving on to particular problems, we must clarify that we can solve them more efficiently with **additional knowledge in programming with Java** (methods, arrays, collections, recursion, etc.). Each solution that we will provide now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge up to the present moment.
 
 
-## problem: Passion shopping days
+### Problem: Passion shopping days
 
 Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our problem is to analyze her strange behavior, **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
 
@@ -23,13 +23,13 @@ If any of the purchase's values is **greater than** her current available funds,
 
 The shopping ends when the "**`mall.Exit`**" command is given. When this happens, you need to **print the number of purchases made and the money** that Lina has left.
 
-### Input data
+### Input Data
 
 We will read input data from the console. The **first line** of the input will indicate the **amount that Lina has before starting to purchase**. On each of the following lines, there will be a particular command. After we receive the "**`mall. Enter`**" command, then on each of the following lines, we will receive commands (strings) that contain **information about the purchases/actions** that Lina wants to perform. We will receive strings until the "**`mall.Exit`**" command is given.
 
 We will receive only one "**`mall.Enter`**" command and only one "**`mall.Exit`**" command.
 
-### Output data
+### Output Data
 
 The output data must be **printed on the console**.
 When shopping is over, you must print on the console a particular output depending on what purchases have been made.
@@ -46,7 +46,7 @@ When shopping is over, you must print on the console a particular output dependi
 - Allowed execution time: **0.1 seconds**.
 - Allowed memory: **16 MB**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Comment |
 |------|-------|----------|
@@ -56,7 +56,7 @@ When shopping is over, you must print on the console a particular output dependi
 |------|-------|------|-------|
 | 110<br>mall.Enter<br>%<br>mall.Exit|1 purchases. Money left: 55.00 lv.| 100<br>mall.Enter<br>Ab<br>\*\*<br>mall.Exit|2 purchases. Money left: 58.10 lv.|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 We will separate the solution of the problem into three main parts:
 - Processing of the **input**.
@@ -128,12 +128,12 @@ The printing operations are trivial. The only thing we need to keep in mind is t
 
 How can we do that? We will leave the answer to this question to the reader.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#0](https://judge.softuni.org/Contests/Practice/Index/664#0).
 
 
-## problem: Numerical expression
+### Problem: Numerical expression
 
 Bonny is an extremely powerful witch. Because her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
@@ -155,13 +155,13 @@ is solved in the following way:
 
 Bonny is pretty but not as wise, so she will need our help to master the power of Expressions.
 
-### Input data
+### Input Data
 
 The input data consists of a single text line passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means the **end of the mathematical expression**.
 
 The input data is always valid and always in the described format. There is no need to validate it.
 
-### Output data
+### Output Data
 
 The output data must be printed on the console. The output consists of one line: the **result** of the calculated mathematical expression rounded up to the **second digit after the decimal point**.
 
@@ -174,13 +174,13 @@ The output data must be printed on the console. The output consists of one line:
 - Allowed execution time: **0.1 seconds**.
 - Allowed memory: **16 MB**.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---------------------|----|-----------------------------------|--------|
 | 4+6/5+(4\*9–8)/7\*2=|8.57|3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)= | 110.63|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 As usual, we will first read and process the input, then we will solve the problem, and finally, we will print the result, formatted as required.
 
@@ -233,12 +233,12 @@ After completing the calculation of the result of our sub-expression, we **modif
 
 The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two digits after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#1](https://judge.softuni.org/Contests/Practice/Index/664#1).
 
 
-## problem: Bulls and Cows
+### Problem: Bulls and Cows
 
 We all know the game called "Bulls and Cows" ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
 * If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
@@ -256,7 +256,7 @@ Upon having a particular secret number and number of bulls and cows, our problem
 
 If there are **no suggested numbers** that match the criteria provided from the console, we must print "**No**".
 
-### Input data
+### Input Data
 
 Our input data consists of 3 arguments: 
  * The first contains **the secret number**.
@@ -265,7 +265,7 @@ Our input data consists of 3 arguments:
 
 The input data will always be valid. There is no need to verify them.
 
-### Output data
+### Output Data
 
 The output data must be printed on the console.
 The output must consist of **a single line** holding **all suggested numbers**, space-separated.
@@ -278,7 +278,7 @@ If there are **no suggested numbers** that match the criteria provided from the 
 - Allowed execution time: **0.15 seconds**.
 - Allowed memory: **16 MB**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input        | Output     |
 |--------------|------------|
@@ -292,7 +292,7 @@ If there are **no suggested numbers** that match the criteria provided from the 
 |--------------|------------|
 | 1234<br>3<br>1 | No       |
 
-### Hints and guidelines
+### Hints and Guidelines
 
 We will solve the problem in a few steps:
 - We will read the **input data**.
@@ -354,6 +354,6 @@ After completing all conditions, we need to **check whether the bulls and cows i
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-11.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#2](https://judge.softuni.org/Contests/Practice/Index/664#2).

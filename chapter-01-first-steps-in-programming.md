@@ -320,7 +320,7 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-### Testing in The Judge system
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#1](https://judge.softuni.org/Contests/Practice/Index/646#1).
 
 ![](assets/chapter-1-images/02.Expression-03.png)
@@ -386,7 +386,7 @@ Write a Java program that receives two numbers, **a** and **b**, then calculates
 | 7 | 8 | 56 |
 | 12 | 5 | 60 | 
  
-### Hints and guidelines
+### Hints and Guidelines
 Create a **new Java console application**. We will use the following code to read our numbers:
 ```java
 import java.util.Scanner;
@@ -424,7 +424,7 @@ Write a **Java console program** which **reads** a whole positive number N from 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
 
-### Hints and guidelines
+### Hints and Guidelines
 Create a new **Java console program**. To read the number N (2 ≤ N ≤100), we use the following code:
 ```java
 Scanner console = new Scanner(System.in);

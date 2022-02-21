@@ -17,7 +17,7 @@ Before we get to work it’s best if we recall the construction of the **`for` l
 Let’s solve some loop problems from exams in SoftUni.
 
 
-## problem: Histogram
+### Problem: Histogram
 	
 An **n number of whole numbers** are given in the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent **p2** are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5** on the console.
 
@@ -161,7 +161,7 @@ All that remains is to print the results. The condition states, that the percent
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#0](https://judge.softuni.org/Contests/Practice/Index/656#0).
 
 
-## problem: Smart Lilly
+### Problem: Smart Lilly
 
 Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the amount of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** , in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
@@ -240,12 +240,12 @@ In this case, we chose to use the **conditional operator (`?:`)** (also called a
 
 More about the ternary operator: [https://www.programiz.com/java-programming/ternary-operator](https://www.programiz.com/java-programming/ternary-operator)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#1](https://judge.softuni.org/Contests/Practice/Index/656#1).
 
 
-## problem: Back to the past
+### Problem: Back to the past
 
 Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
@@ -318,12 +318,12 @@ Finally, it remains to print the results. By performing a **check if the inherit
 
 **Hint**: Consider using the **`Math.abs(…)`** function when printing the output if the inheritance isn’t enough.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#2](https://judge.softuni.org/Contests/Practice/Index/656#2).
 
 
-## problem: Hospital
+### Problem: Hospital
 
 For a given period of time, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily patient's admission begins.
 
@@ -411,12 +411,12 @@ If the patient count is **less**, we increase only the variable **`treatedPatien
 
 Finally, we only need to print the number of treated and untreated patients.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#3](https://judge.softuni.org/Contests/Practice/Index/656#3).
 
 
-## problem: Division without remainder
+### Problem: Division without remainder
 
 There are **n whole numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
@@ -499,12 +499,12 @@ To read and assign every number in its corresponding group, we should iterate th
 
 Finally, we have to print out the obtained results, by following the specified formatting.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#4](https://judge.softuni.org/Contests/Practice/Index/656#4).
 
 
-## problem: Logistics
+### Problem: Logistics
 
 It’s your responsibility for the logistics of various types of cargo. **Depending on the weight** of each load, a **different vehicle type** is needed, and **the costs will vary per ton**:
 
@@ -594,6 +594,6 @@ We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to it
 
 Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more auxiliary variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by van, lorry and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **It remains to calculate** the percentages of the tonnage, transported by each transport type, and printing out the results, adhering to the formatting specified in the description.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#5](https://judge.softuni.org/Contests/Practice/Index/656#5).

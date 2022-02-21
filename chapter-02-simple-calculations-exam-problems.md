@@ -76,21 +76,21 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 
 Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the problems. We will solve several **problems from a SoftUni entrance exam**.
 
-## problem: Training lab
+### Problem: Training lab
 
 **A training lab** has a rectangular size **l** and **w** meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a podium with a **chair** for the teacher. A single **working place** occupies **70 x 120 cm** (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** has a width of at least **100 cm**. It is known that because of the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and because of the **teacher's chair** (which has a size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the classroom as input data and calculates the **number of working places in it** as it is described (look at the figure below).
 
-### Input data
+### Input Data
 
 As input data, we will read **2 numbers** from the console, each on a separate line: **l** (length in meters) and **w** (width in meters).
 
 Constraints: **3 ≤ w ≤ l ≤ 100**.
 
-### Output data
+### Output Data
 
 Print on the console one integer number: **the number of working places** in the classroom.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input   | Output | Diagram |
 |---------|-------|--------|
@@ -103,9 +103,9 @@ In the first example, the training lab length is 1500 cm. There could be located
 
 In the second example, the training lab length is 840 cm. There could be located **7 rows** (7 \* 120 cm = 840, without residue). The training lab width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located **6 desks per row** (6 \* 70 cm = 420 cm, without residue). **Number of working places = 7 * 6 - 3** = 42 - 3 = **39** (We have 7 rows with 6 working places per row = 42 minus 3 working places for podium and entrance door).
 
-### Hints and guidelines
+### Hints and Guidelines
 
-Try to solve the problem on your own first. If you fail, use the hints and guidelines below.
+Try to solve the problem on your own first. If you fail, use the Hints and Guidelines below.
 
 #### An idea for a solution
 
@@ -148,16 +148,16 @@ With **`System.out.println(…)`** we print the result on the console.
 
 ![](assets/chapter-2-2-images/01.Training-lab-06.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#0](https://judge.softuni.org/Contests/Practice/Index/650#0).
 
 
-## problem: Vegetable market
+### Problem: Vegetable market
 
 A gardener sells the harvest from his garden on the vegetable market. He sells **vegetables for N BGN per kilogram** and **fruits for M BGN per kilogram**. Write a program to calculate the earnings from the harvest in EUR (assuming that one EUR is equal to BGN 1.94).
 
-### Input data
+### Input Data
 
 As input data, we will read **4 numbers** from the console, each on a separate line:
 * First line – the price of the vegetables, per kilogram – a floating-point number.
@@ -167,11 +167,11 @@ As input data, we will read **4 numbers** from the console, each on a separate l
 
 **Constraints**: all numbers will be in the range of **0.00** to **1000.00**.
 
-### Output data
+### Output Data
 
 Print on the console **one floating-point number: the earnings of all fruits and vegetables in EUR**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input   | Output  | Input    | Output      |
 |-----------|----------|-----------|----------------|
@@ -184,7 +184,7 @@ Print on the console **one floating-point number: the earnings of all fruits and
 * Total: **195.94 BGN = 101 EUR**. 
 
 
-### Hints and guidelines
+### Hints and Guidelines
 
 First, we will give a few ideas and particular hints for solving the problem, followed by the essential part of the code.
 
@@ -219,12 +219,12 @@ The problem does not specify special output format, so we just need to calculate
 
 ![](assets/chapter-2-2-images/02.Vegetable-market-03.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#1](https://judge.softuni.org/Contests/Practice/Index/650#1).
 
 
-## problem: Change of tiles
+### Problem: Change of tiles
 
 It is needed to be placed tiles on the ground in front of the apartment building. The place is **square with a side of N meters**. The tiles are **W meters wide** and **L meters long**. There is a bench in the area with **a width of M meters** and **a length of O meters**. There is no need to put tiles under it. To place each tile requires **0.2 minutes**.
 
@@ -232,7 +232,7 @@ Write a program that reads from the console the dimensions of the ground, the ti
 
 **Example**: A **ground** with size 20 m. has area of 400 sq.m. **A bench** that is 1 m. wide and 2 m. long has area of 2 sq.m. One **tile** is 5 m. wide and 4 m. long and has area of = 20 sq.m. **The area** that needs to be covered is **400 - 2 = 398 sq.m.** The tiles that are needed are **398 / 20 = 19.90**. The needed **time** is **19.90 * 0.2 = 3.98 minutes.**
 
-### Input data
+### Input Data
 
 As input data, we will read **5 numbers** from the console, each on a separate line:
 
@@ -242,11 +242,11 @@ As input data, we will read **5 numbers** from the console, each on a separate l
 * **M – the width** of the **bench** in the range of [**0 … 10**].
 * **O – the length** of the **bench** in the range of [**0 … 10**].
 
-### Output data
+### Output Data
 
 Print on the console **two numbers**, each on a new line: **number of tiles** needed for the repair and **the time for placing them**. 
 
-## Sample input and output
+## Sample Input and Output
 
 | Input        | Output    | Input    | Output            |
 |---------------|------------|-----------|--------------------|
@@ -261,7 +261,7 @@ Print on the console **two numbers**, each on a new line: **number of tiles** ne
 * **Required tiles** = 398 / 20 = 19.9.
 * **Time required** = 19.9 \* 0.2 = 3.98.
 
-### Hints and guidelines
+### Hints and Guidelines
 
 Let's make a drawing to clarify the problem requirements. It can look like this:
 
@@ -297,12 +297,12 @@ The variables **`w`** and  **`h`** are of type **`double`**, so for the **area o
 
 ![](assets/chapter-2-2-images/03.Change-tiles-04.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#2](https://judge.softuni.org/Contests/Practice/Index/650#2).
 
 
-## problem: Money
+### Problem: Money
 
 Some time ago **Pesho bought bitcoins**. He plans to go on a trip aroung Europe **and he will need euros**. Besides bitcoins, he has and **Chinese yuan(CNY)**. Pesho wants **to exchange his money in euros** for the trip. Write a program that **calculates how much euros** he can buy depending on the following exchange rates:
 
@@ -313,18 +313,18 @@ Some time ago **Pesho bought bitcoins**. He plans to go on a trip aroung Europe 
 
 The exchange office has a **commission within 0 to 5 percent from the final amount in EUR**.
 
-### Input data
+### Input Data
 
 As input data, we will read **3 numbers** from the console, each on a separate line:
 * On the first line – **number of Bitcoins**. Integer in the range of [**0 … 20**].
 * On the second line – **number of Chinese yuan**. Floating-point number in the range of [**0.00 … 50 000.00**].
 * On the third line – **commission fee**. Floating-point number in the range of [**0.00 … 5.00**].
 
-### Output data
+### Output Data
 
 Print **the result of the exchange of currencies** on the console. Rounding the result is not necessary.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input        | Output    |Input        | Output            | Input         | Output            |
 |---------------|------------|------------|------------------|--------------|------------------|
@@ -338,7 +338,7 @@ Print **the result of the exchange of currencies** on the console. Rounding the 
 * **Commission fee:** 5% of 599.651282051282 = **29.9825641025641** 
 * **Result**: 599.651282051282 - 29.9825641025641 = **569.668717948718 EUR**
 
-### Hints and guidelines
+### Hints and Guidelines
 
 Let's think again about how we can solve the problem before we start writing code.
 
@@ -384,7 +384,7 @@ Let's pay attention to something that applies to all other problems of this type
 
 This code would print a correct result, but it is **hard to read**. It won't be easy to find out how it works, and whether if it contains any mistakes, as well as finding such and correcting them. It is better to **instead of one complex expression, to write a few simpler ones** and to store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable. 
 
-## Testing in the Judge system
+## Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#3](https://judge.softuni.org/Contests/Practice/Index/650#3).
 
@@ -393,18 +393,18 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#
 
 Ivan is a programmer in an **American company** and he works from home **N days per month** and earns **M USD per day**. At the end of the year, Ivan **gets a bonus** which is **equals 2.5 monthly salaries**. From what he earned during the year, **the withholding tax is 25%**. Write a program that **calculates the amount of Ivan's net average earning** in BGN per day because he spends it in Bulgaria. We accept that one year has exactly **365 days**. **The exchange rate of USD** to BGN will be **read from the console**.
 
-### Input data
+### Input Data
 
 As input data, we will read **3 numbers** from the console, each on a separate line:
 * On the first line – **working days of the month**. Integer in the range of [**5 … 30**].
 * On the second line – **money earned per day**. Floating-point number in the range of [**10.00 … 2000.00**].
 * On the third line – **exchange rate USD to BGN** /1 USD = X BGN/. Floating-point number in the range of [**0.99 … 1.99**].
 
-### Output data
+### Output Data
 
 On the console **print average earning in BGN per day**. The result should be **rounded up to the second digit after the decimal point**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input        | Output          |Input        | Output            | Input         | Output    |
 |---------------|------------------|-------------|------------------|-------------|------------------|
@@ -417,7 +417,7 @@ On the console **print average earning in BGN per day**. The result should be **
 * **Net annual income** = 17128.125 dollars = 27233.71875 BGN.
 * **Average earning per day** = 27233.71875 / 365 = 74.61 BGN.
 
-### Hints and guidelines
+### Hints and Guidelines
 
 Firstly, we have to analyze the problem and think of a way to solve it. Then we will choose data types, and finally, we will write the code.
 
@@ -453,6 +453,6 @@ The final result is as follows:
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-03.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#4](https://judge.softuni.org/Contests/Practice/Index/650#4).

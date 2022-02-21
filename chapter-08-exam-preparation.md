@@ -24,7 +24,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 
 **The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### problem: Triangle Area in the plane
+### Problem: Triangle Area in the plane
 
 <table>
    <tr>
@@ -75,12 +75,12 @@ The only thing left is to print the area on the console.
 
 ![](assets/chapter-8-1-images/01.Triangle-area-06.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#0](https://judge.softuni.org/Contests/Practice/Index/661#0).
 
 
-### problem: Moving Bricks
+### Problem: Moving Bricks
 
 Construction workers have to transfer a total of **x bricks**. **Workers** are **w** in numbers and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
@@ -129,7 +129,7 @@ Finally, we print the result on the console.
 
 ![](assets/chapter-8-1-images/02.Bricks-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#1](https://judge.softuni.org/Contests/Practice/Index/661#1).
 
@@ -138,7 +138,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 **The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
-### problem: Point on a Segment
+### Problem: Point on a Segment
 
 **A horizontal segment** is placed on a horizontal line, set with the **x** coordinates of both ends: **first** and **second**. **A point** is located **on** the same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside the segment** and calculates **the distance to the nearest end** of the segment.
 
@@ -195,12 +195,12 @@ Finally, we print **the distance** previously found.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-09.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#2](https://judge.softuni.org/Contests/Practice/Index/661#2).
 
 
-### problem: Point in a Figure
+### Problem: Point in a Figure
 
 Write a program that checks whether a point (with coordinates **x** and **y**) is **inside** or **outside** the following figure:
  
@@ -243,7 +243,7 @@ We will initialize two variables that will mark whether **the point** is in one 
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#3](https://judge.softuni.org/Contests/Practice/Index/661#3).
 
@@ -252,7 +252,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 **The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### problem: Date After 5 days
+### Problem: Date After 5 days
 
 There are two numbers given - **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **5 days a particular date**. For example, 5 days after **28.03** is the date **2.04**. e assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they contain a single digit (e.g. 01, 08).
 
@@ -302,12 +302,12 @@ The only thing that remains is to print the result on the console. It is importa
 
 ![](assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#4](https://judge.softuni.org/Contests/Practice/Index/661#4).
 
 
-### problem: Sums of 3 Numbers
+### Problem: Sums of 3 Numbers
 
 There are **3 integers** given.  Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
@@ -354,7 +354,7 @@ Similarly, we will supplement the other two cases. The full code of the program 
 ![](assets/chapter-8-1-images/06.Sums-3-numbers-04.png)
 
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#5](https://judge.softuni.org/Contests/Practice/Index/661#5).
 
@@ -363,7 +363,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 **The fourth** problem of the "Programming Basics" Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
 
-### problem: Sums with Step of 3
+### Problem: Sums with Step of 3
 
 We are given **n** integers: **a1, a2, …, an**. Calculate the sums:
 -	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
@@ -402,12 +402,12 @@ Finally, we will print the result on the console in the required **format**.
 
 ![](assets/chapter-8-1-images/07.Sums-Step-3-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#6](https://judge.softuni.org/Contests/Practice/Index/661#6).
 
 
-### problem: Sequence of Increasing Elements
+### Problem: Sequence of Increasing Elements
 
 A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
@@ -447,7 +447,7 @@ Finally, we print the length of **the longest** sequence found.
 
 ![](assets/chapter-8-1-images/08.Increasing-numbers-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#7](https://judge.softuni.org/Contests/Practice/Index/661#7).
 
@@ -456,7 +456,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. Logical deductions, simple calculations, and checks might be required. The problem checks the students' abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
 
-### problem: Perfect Diamond
+### Problem: Perfect Diamond
 
 Write a program that reads an integer **n** from the console and draws **a perfect diamond** with size **n** as in the examples below.
 
@@ -510,12 +510,12 @@ Here is the complete code for drawing **the top of the diamond**:
 
 What remains is **to assemble the whole program** by first reading the input, printing the top part of the diamond, and then the bottom part of the diamond.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#8](https://judge.softuni.org/Contests/Practice/Index/661#8).
 
 
-### problem: Rectangle with Stars in the Center
+### Problem: Rectangle with Stars in the Center
 
 Write a program that reads from the console an integer **n** and draws a **rectangle** with size **n with two asterisks in its center** as in the examples below.
 
@@ -561,7 +561,7 @@ Now, **in the body** of the loop let's add the **asterisks**. We'll check if we'
 
 ![](assets/chapter-8-1-images/10.Rectangle-with-stars-05.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#9](https://judge.softuni.org/Contests/Practice/Index/661#9).
 
@@ -571,7 +571,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 **The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think algorithmically** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples of exam problems.
 
 
-### problem: Increasing 4 Numbers
+### Problem: Increasing 4 Numbers
 
 For given pair of numbers **a** and **b** generate all four number **n1, n2, n3, n4,** for which **a ≤ n1 < n2 < n3 < n4 ≤ b**.
 
@@ -615,12 +615,12 @@ Finally, we will check if **the counter** is equal to **0** and we will print "*
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#10](https://judge.softuni.org/Contests/Practice/Index/661#10).
 
 
-### problem: Generating Rectangles
+### Problem: Generating Rectangles
 
 By a given number **n** and **a minimum area m**, generate all possible rectangles with integer coordinates in the range [**-n…n**] with an area of at least **m**. The generated rectangles must be printed in the following format:
 
@@ -671,6 +671,6 @@ Finally, we print "**No**" if there are no such rectangles.
 
 ![](assets/chapter-8-1-images/12.Generating-rectangles-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#11](https://judge.softuni.org/Contests/Practice/Index/661#11).

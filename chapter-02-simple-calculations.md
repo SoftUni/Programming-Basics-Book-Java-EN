@@ -98,7 +98,7 @@ The following line **`System.out.print("Square area = ");`** prints the given te
 
 At the last line **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
 
@@ -153,7 +153,7 @@ Run the program and make sure that when entering a value in inches, we obtain a 
 
 ![](assets/chapter-2-1-images/04.Console-output-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
 
@@ -184,7 +184,7 @@ In this case the expression **`%s`** is replaced with the **first** passed argum
 
 ![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#2](https://judge.softuni.org/Contests/Practice/Index/649#2).
 
@@ -212,7 +212,7 @@ Here is the result, which we will get after the execution of the example:
 
 Pay attention to the order of variables in the System.out.printf() method. Each variable is in the **order we want to print it** and corresponds to the **type in the placeholder**. Essentially, the template (**placeholder**) accepts variables of **every type**.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
@@ -367,7 +367,7 @@ If we start the program and enter values for sides: 3, 4, and 5, we will obtain 
 Trapezoid area = 17.5
 ```
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
@@ -394,7 +394,7 @@ Let’s test the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-05.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
@@ -430,7 +430,7 @@ When the program is executed with the values from the coordinate system above we
 
 ![](/assets/chapter-2-1-images/04.Console-output-06.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
@@ -479,7 +479,7 @@ The purpose of this project is to add in it **`.java` class per problem** from t
 
 The first problem from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We create a **new Java class** in the existing IntelliJ IDEA project. On the **src** folder, right-click with the mouse. Choose [**New**] → [**Java Class**]:
 
@@ -497,7 +497,7 @@ As we can see in the code above, we read as input data an integer and assign it 
 
 ![](assets/chapter-2-1-images/07.Square-area-04.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
 
@@ -510,7 +510,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **multiply the inches by 2.54** (because one inch = 2.54 centimeters).
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 First, we create a **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
 
@@ -564,7 +564,7 @@ It is recommended to **change the settings of your computer**, to use a **decima
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
 
@@ -577,7 +577,7 @@ The solution should be accepted as a completely correct one:
 
 Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 First, we create a **new Java class** with the name “Greeting” in the project “SimpleCalculations”:
 
@@ -591,7 +591,7 @@ First, we create a **new Java class** with the name “Greeting” in the projec
 
 ![](assets/chapter-2-1-images/09.Greeting-by-name-03.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649#2](hhttps://judge.softuni.org/Contests/Practice/Index/649#2).
 
@@ -600,7 +600,7 @@ Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649
 
 Write a Java program, that reads from the console a first name, last name, age, and city, and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We add to the existing IntelliJ IDEA Project one more Java class with the name "`ConcatenateData`".	**We write the code**, which reads the input from the console:
 
@@ -614,7 +614,7 @@ In the picture above, the code is consciously blurred on purpose, in order for y
 
 Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sample input data.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
@@ -627,7 +627,7 @@ The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an a
 
 ![](assets/chapter-2-1-images/11.Trapezoid-area-01.png)
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Again, we have to add to the existing IntelliJ IDEA Project another **Java class** with the name "`TrapezoidArea`" and to write **the code that reads the input from the console, then calculates the area of the trapezoid, and prints it** as an output on the console:
 
@@ -637,7 +637,7 @@ The code on the picture is consciously blurred for you to give a thought and fin
 
 **Test** your solution locally using [**Ctrl+Shift+F10**] and by entering sample input data.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
@@ -646,20 +646,20 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that reads from the console **a number r** r then calculates and prints **the area and perimeter of the circle**/**round** with **radius r**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input  |           Output                                          |    
 |-----|--------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 For the calculations, you can use the following formulas:
 -	**`Area = Math.PI * r * r`**.
 -	**`Perimeter = 2 * Math.PI * r`**.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
@@ -670,7 +670,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 ![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
 
-#### Sample input and output
+#### Sample Input and Output
 
 |               Input                        |       Output         |
 |-----------------------------------------|-------------------|
@@ -678,7 +678,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 |30<br>40<br>70<br>-10                   |2000<br>180         |
 |600.25<br>500.75<br>100.50<br>-200.5    |350449.6875<br>2402 |
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
@@ -687,7 +687,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area, 2)`**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |       Input           |         Output         |
 |--------------------|---------------------|
@@ -696,7 +696,7 @@ Write a program that reads from the console **a side and height of a triangle** 
 | 7.75 <br>8.45        | Triangle area = 32.74 |
 | 1.23456 <br>4.56789  | Triangle area = 2.82  |
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#7](https://judge.softuni.org/Contests/Practice/Index/649#7).
 
@@ -705,7 +705,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
 
-#### Sample input and output
+#### Sample Input and Output
 
 | Input | Output |
 |----|-----|
@@ -714,7 +714,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 | -5.5 |  22.1 |
 | 32.3 | 90.14 |
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#8](https://judge.softuni.org/Contests/Practice/Index/649#8).
 
@@ -723,7 +723,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |  Input  | Output |
 |------|-----|
@@ -732,7 +732,7 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 | 0.7854 |   45  | 
 | 0.5236 |   30  |
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#9](https://judge.softuni.org/Contests/Practice/Index/649#9).
 
@@ -741,7 +741,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |  Input  |    Output  |
 |------|---------|
@@ -749,7 +749,7 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 |   100  | 179.55 BGN|
 |  12.5  | 22.44 BGN |
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#10](https://judge.softuni.org/Contests/Practice/Index/649#10).
 
@@ -764,7 +764,7 @@ Write a program for **conversion of money from one currency into another**. It h
 
 **The input** consists of three lines - the first is **a sum for conversion**, the second is the **input currency**, and the third is **output currency**. **The output** is one number – the converted value according to the above exchange rates, rounded **2 digits** after the decimal point. 
 
-#### Sample input and output
+#### Sample Input and Output
 
 |        Input        |   Input  |
 |------------------|--------|
@@ -773,7 +773,7 @@ Write a program for **conversion of money from one currency into another**. It h
 | 12.35<br>EUR<br>GBP| 9.53 GBP |  
 |150.35<br>USD<br>EUR|138.02 EUR|
  
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#11](https://judge.softuni.org/Contests/Practice/Index/649#11).
 
@@ -782,7 +782,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Write a program that reads from the console a **birth date** in format **`dd-MM-yyyy`** then calculates the date on which **1000 days** are turned since this birth date, and prints the output in the same format.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |   Input   |	 Output  |
 |--------|--------|
@@ -792,10 +792,10 @@ Write a program that reads from the console a **birth date** in format **`dd-MM-
 |01-01-2012|27-09-2014|
 |14-06-1980|11-03-1983|
 
-#### Hints and guidelines 
+#### Hints and Guidelines 
   * Look for information about the types **`Date`**, **`Calendar`** and **`SimpleDateFormat`** in Java and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
   * **Don't print** anything additional on the console except for the wanted date!
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#12](https://judge.softuni.org/Contests/Practice/Index/649#12).

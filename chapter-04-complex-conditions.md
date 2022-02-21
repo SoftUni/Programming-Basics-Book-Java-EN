@@ -52,7 +52,7 @@ After **reading the input data from the console**, the following **program logic
 
 ![](assets/chapter-4-1-images/01.Personal-titles-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#0](https://judge.softuni.org/Contests/Practice/Index/653#0).
 
@@ -83,7 +83,7 @@ We **convert** all of the letters into **lower register** using the function **`
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
-#### Testing in the Judge System 
+#### Testing in The Judge System 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#1](https://judge.softuni.org/Contests/Practice/Index/653#1).
 
@@ -141,7 +141,7 @@ A point is internal for a given polygon if the following four conditions are app
 
 ![](/assets/chapter-4-1-images/03.Point-in-rectangle-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#2](https://judge.softuni.org/Contests/Practice/Index/653#2).
 
@@ -188,7 +188,7 @@ We have to use a few conditional statements with logical "**OR**" (**`||`**):
 
 ![](assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#3](https://judge.softuni.org/Contests/Practice/Index/653#3).
 
@@ -218,7 +218,7 @@ A given **number is valid** if it is in the range [**100 â€¦ 200**] or it is **0
 
 ![](assets/chapter-4-1-images/05.Invalid-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#4](https://judge.softuni.org/Contests/Practice/Index/653#4).
 
@@ -250,7 +250,7 @@ The point lies on any of the sides of the rectangle if:
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#5](https://judge.softuni.org/Contests/Practice/Index/653#5).
 
@@ -284,7 +284,7 @@ Write a program that **reads** from the console a **fruit** (banana / apple / â€
 
 ![](assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#6](https://judge.softuni.org/Contests/Practice/Index/653#6).
 
@@ -311,7 +311,7 @@ To calculate the commission according to the city and volume of sales, we need a
 
 ![](assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#7](https://judge.softuni.org/Contests/Practice/Index/653#7).
 
@@ -362,7 +362,7 @@ Let's write a program that prints **the day of the week** depending on the **giv
 <td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the more rear situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#8](https://judge.softuni.org/Contests/Practice/Index/653#8).
 
@@ -409,7 +409,7 @@ We can solve the problem with **`switch`**-**`case`** conditions with multiple l
 
 ![](assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#9](https://judge.softuni.org/Contests/Practice/Index/653#9).
 
@@ -458,7 +458,7 @@ switch (selector) {
 
 Let's practice using more complex conditions. We will solve a few practical exercises.
 
-### problem: Cinema
+### Problem: Cinema
 
 In a cinema hall, the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
 
@@ -482,11 +482,11 @@ Sample code (parts of the code are blurred with the purpose to stimulate your th
 
 ![](assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#10](https://judge.softuni.org/Contests/Practice/Index/653#10).
 
-### problem: Volleyball
+### Problem: Volleyball
 
 Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
 Write a program that calculates **how many times Vladimir has played volleyball** throughout the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
@@ -514,11 +514,11 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 ![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
 
-### problem: * Point in the Figure
+### Problem: * Point in the Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
@@ -564,6 +564,6 @@ Sample code (parts of the code are blurred to stimulate logical thinking and sol
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#12](https://judge.softuni.org/Contests/Practice/Index/653#12).

@@ -7,7 +7,7 @@ In this chapter, we will offer the reader **more complex problems**. They aim to
 We will solve several programming problems that cover the material studied in the book but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to become a **champion of the basics of programming**, we recommend this training to solve such complex problems to make it easy for you to take exams.
 
 
-## problem: Crossing sequences
+### Problem: Crossing sequences
 
 We have two sequences:
    - **a sequence of Tribonacci** (by analogy with the Fibonacci sequence), where each number is **the sum of the previous three** (with given three numbers)
@@ -25,7 +25,7 @@ At the same time, let the **numbers in the spiral** begin with **5**, and the sp
 
 Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37, and so on. We see that **37** is the first number to be found inside the Tribonacci sequence and the spiral one, and that is the desired solution to the problem.
 
-### Input data
+### Input Data
 
 Input data should be read from the console.
    * On the first three lines of the input we will read **three integers**, representing **the first three numbers** in the Tribonacci sequence, positive non-zero numbers, sorted in ascending order.
@@ -33,7 +33,7 @@ Input data should be read from the console.
 
 Input data will always be valid and will always be in the format described. There is no need to check.
 
-### Output data
+### Output Data
 
 The result should be printed on the console.
 
@@ -45,7 +45,7 @@ On the single line of the output, we must print **the smallest number that occur
 * Allowed program time: 0.3 seconds.
 * Allowed memory: 16 MB.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output  | Input | Output | Input | Output |
 |-------|---------|-------|--------|-------|--------|
@@ -56,7 +56,7 @@ On the single line of the output, we must print **the smallest number that occur
 | ------ | ------- | ------ | ----|
 |1<br>1<br>1<br>1<br>1|1|1<br>4<br>7<br>23<br>3|23|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 The problem seems quite complicated, so we will break it into simpler sub-problems.
 
@@ -99,18 +99,18 @@ The previous solution to the problem uses arrays to store the values. Arrays are
 
 ![](assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#0](https://judge.softuni.org/Contests/Practice/Index/663#0).
 
 
-## problem: Magic dates
+### Problem: Magic dates
 
 **Date** is given in a "**dd-mm-yyyy**" format, e.g. 17-04-2018. We calculate **the weight of that date** by taking all of its digits, multiplying each digit with the others after it, and finally summing up all the results obtained. In our case, we have 8 digits: **17032007**, so the weight is **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
 
 Our problem is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to the given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
 
-### Input data
+### Input Data
 
 Input data should be read from the console. It consists of 3 lines:
 
@@ -120,7 +120,7 @@ Input data should be read from the console. It consists of 3 lines:
 
 Input data will always be valid and will always be in the format described. There is no need to check.
 
-### Output data
+### Output Data
 
 The result should be printed on the console as consecutive dates in **"dd-mm-yyyy" format**, sorted by date in ascending order. Each string must be in a separate line. If there are no existing magic dates, print "**No**".
 
@@ -131,7 +131,7 @@ The result should be printed on the console as consecutive dates in **"dd-mm-yyy
    * Allowed program time: 0.25 seconds.
    * Allowed memory: 16 MB.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output      | Input | Output  |
 |------|------------|------|------------|
@@ -141,7 +141,7 @@ The result should be printed on the console as consecutive dates in **"dd-mm-yyy
 |------|------------|------|------------|
 |2012<br>2014<br>80|09-01-2013<br>17-01-2013<br>23-03-2013<br>11-07-2013<br>01-09-2013<br>10-09-2013<br>09-10-2013<br>17-10-2013<br>07-11-2013<br>24-11-2013<br>14-12-2013<br>23-11-2014<br>13-12-2014<br>31-12-2014|2011<br>2012<br>14<br>|01-01-2011<br>10-01-2011<br>01-10-2011<br>10-10-2011|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 We start with the input data. In this case, we have **3 integers** that should be read from the console, as this is the only entry and processing of input for the problem.
 
@@ -191,12 +191,12 @@ Finally, if we have not found an eligible date, we will have a **`false`** value
 
 ![](assets/chapter-9-1-images/02.Magic-dates-07.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#1](https://judge.softuni.org/Contests/Practice/Index/663#1).
 
 
-## problem: Five special letters
+### Problem: Five special letters
 
 Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`** so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
@@ -222,7 +222,7 @@ First, **we remove the repeating letters** and get **`bcd`**. Then we apply the 
 
 **Another example**: `weight("cadae") = weight("cade") = 1 * 47 + 2 * 5 + 3 * 7 + 4 * (-32) = -50`.
 
-### Input data
+### Input Data
 
 The input data is read from the console. It consists of two numbers:
 * The number for our **start**.
@@ -230,7 +230,7 @@ The input data is read from the console. It consists of two numbers:
 
 Input data will always be valid and will always be in the format described. There is no need to check.
 
-### Output data
+### Output Data
 
 The result should be printed on the console as a sequence of strings, **sorted in alphabetical order**. Each string must be separated from the next one by a single space. If the weight of any of the 5 letter strings does not exist within the specified range, print "**No**".
 
@@ -240,7 +240,7 @@ The result should be printed on the console as a sequence of strings, **sorted i
 * Allowed program time: 0.25 seconds.
 * Allowed memory: 16 MB.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input  | Output     | Comment                                    |
 | ------ | -----------| -------------------------------------------|
@@ -258,7 +258,7 @@ The result should be printed on the console as a sequence of strings, **sorted i
 | ------| -------|
 |300<br>400| No|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 Like every problem, we start the solution by **reading and processing the input data**. In this case, we have **two integers** that can be processed with a combination of the **`Integer.parseInt(…)`** and **`Scanner.nextLine()`** methods.
 
@@ -326,6 +326,6 @@ The condition is met **unless we do not have a single word in the entered range*
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-10.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#2](https://judge.softuni.org/Contests/Practice/Index/663#2).

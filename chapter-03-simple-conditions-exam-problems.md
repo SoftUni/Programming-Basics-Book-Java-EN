@@ -20,7 +20,7 @@ if (boolean expression) {
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the **`if-else`** statement.
 
-## problem: Transportation price
+### Problem: Transportation price
 
 A student must travel **n kilometers**. He has a choice between **three modes of transport**:
 * **Taxi**. Starting fee: **0.70** BGN. Daily rate: **0.79** BGN/km. Nightly rate: **0.90** BGN/km.
@@ -29,13 +29,13 @@ A student must travel **n kilometers**. He has a choice between **three modes of
 
 Write a program that enters the number of **kilometers n** and the **period of the day** (day or night) and computes ** the price of the cheapest transport **.
 
-### Input data
+### Input Data
 
 **Two lines** are read from the console:
 * The first line contains the number **n** - number of kilometers - integer in the interval [**1… 5000**].
 * The second line contains the word "**day**" or "**night**" - if trip is during the day or at night.
 
-### Output data
+### Output Data
 
 Print on the console **the lowest price** for the specified number of kilometers.
 
@@ -49,11 +49,11 @@ Print on the console **the lowest price** for the specified number of kilometers
 |----------|----------|----------|----------|
 |25<br>day   |2.25        |180<br>night|10.8        |
 
-### Hints and guidelines
+### Hints and Guidelines
 
 We will read the input data and depending on the distance we will choose the cheapest transport. For this purpose, we will use several conditional statements.
 
-#### Input data processing
+#### Input Data processing
 
 Our first step is to create an object of type **`java.util.Scanner`**. We pass in its constructor the "input stream" (**`System.in`**) that we are going to read from. In the definition of the problem, we have **information about the input and output**. The first **two lines** of the solution will contain the declaration and initialization of the two **variables** that will store **the values of the input data**.
 
@@ -93,15 +93,15 @@ We **have successfully computed the price of the cheapest transportation** so we
 
 ![](assets/chapter-3-2-images/01.Transport-price-06.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#0](https://judge.softuni.org/Contests/Practice/Index/652#0).
 
-## problem: pipes in a pool
+### Problem: pipes in a pool
 
 A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified hourly flow rate** (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for **N hours**. Your problem is to write a program that prints out the state of the pool, **at the moment the worker comes back**.
 
-### Input data
+### Input Data
 
 **Four lines** are read from the console:
 * The first line contains the number **V - pool volume in liters** - integer in the range [**1… 10000**].
@@ -109,7 +109,7 @@ A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified 
 * The third line contains the number **P2 - hourly flow rate of the second tube** - integer in the range [**1 … 5000**].
 * The fourth line contains the number **H - number of hours that the employee is absent** - a floating-point number in the interval [**1.0 … 24.00**].
 
-### Output data
+### Output Data
 
 Print on the console **one of two possible states**:
 * How full is the pool and each pipe's percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).
@@ -124,11 +124,11 @@ Print on the console **one of two possible states**:
 | ---- | ----- | ---- | ---- |
 |1000<br>100<br>120<br>3 |The pool is 66% full. Pipe 1: 45%. Pipe2: 54%. |100<br>100<br>100<br>2.5|For 2.5 hours the pool overflows with 400 liters.|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input data processing
+#### Input Data processing
 
 By definition, our program has to have **four lines** that are going to read and store **the input data**. The first **three** are going to store **whole numbers** and this is a reason we pick the **`int`** type for those **variables**. On the **fourth** line, we are supposed to get a floating-point **number** and that's why the **variable** that we're going to use is of type **`double`**.
 
@@ -150,11 +150,11 @@ The ratio needs to be expressed in **percentage** that's why we'll **multiply by
 
 However, if the check returns **`false`** it means that the amount of water is **greater** than **the volume** of the pool, respectively it has **overflowed**. Again, the output must be **one line** but this time it should contain only **two values** - **away time in hours** of the worker and **the amount of overflowed water**.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#1](https://judge.softuni.org/Contests/Practice/Index/652#1).
 
-## problem: the sleepy cat Tom
+### Problem: the sleepy cat Tom
 
 **The cat Tom** enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom's **norm for playtime** is **30 000 minutes per year***. Tom's playtime **is dependant on his owner's non-working days**:
 * When Tom's owner is at **work**, Tom's playtime is **63 minutes a day**.
@@ -164,11 +164,11 @@ Your problem is to write a program that takes as input Tom's owner **number of d
 
 **Example**: 20 days off → 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ * 63 + 20 \ * 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.
 
-### Input data
+### Input Data
 
 The input data is read from the console and consists of an integer - **Tom's owner number of days off**, number in the range [**0 … 365**].
 
-### Output data
+### Output Data
 
 **Two lines** are to be printed on the console.
 * If Tom's **playing time** is above the norm for the current year:
@@ -186,11 +186,11 @@ The input data is read from the console and consists of an integer - **Tom's own
 |----|-----|----|-----|
 |20|Tom sleeps well<br>95 hours and 25 minutes less for play|113|Tom will run away<br>3 hours and 47 minutes for play|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input data processing and relevant calculations
+#### Input Data processing and relevant calculations
 
 The **input data** will be read in a **single line** that will contain a **whole number** in the range [**0 … 365**]. That's why the variable that'll store the value is going to be of type **`int`**.
 
@@ -216,23 +216,23 @@ Note that if Tom's resulting **playtime** is **less** than **30 000** when we **
 
 The playing time is already calculated which leads us to **the next** step - Tom's **playtime** and Tom's **norm** **comparison**. We'll use an **`if-else`** conditional statement. It'll verify in its **`if` clause** whether **the playtime is larger than 30 000 (norm)**.
 
-#### Output data processing
+#### Output Data processing
 
 Depending on **the result** of the evaluation of the boolean expression our objective is to print the **difference in hours and minutes**. We'll do that using the **formatting specifier** and the previously computed hour and minutes values. The given output examples show that the printed values are formatted as a rounded down whole number. This is a cue that we should be using **`Math.floor(…)`** when we're printing the result.
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#2](https://judge.softuni.org/Contests/Practice/Index/652#2).
 
-## problem: harvest
+### Problem: harvest
 
 There's a vineyard that has an **area of X sq. M.** . **40% of the harvest** is allocated for wine production. The yield from **1sq.m. vineyard** is **Y kilograms of grapes**. To produce **1 liter of wine** is used **2.5kg grapes**. The desired amount of wine **for sale is Z liters**.
 
 Your problem is to write a program that **calculates the possible amount of produced wine** and validates if it's **enough**. **If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.**
 
-### Input data
+### Input Data
 
 **Four lines** are read from the console:
 * The first line contains the area of the vineyard **X sq.m** - integer in the interval [**10 … 5000**].
@@ -240,7 +240,7 @@ Your problem is to write a program that **calculates the possible amount of prod
 * The third line contains the desired amount of wine **Z liters** - an integer in the range [**1 … 600**].
 * The fourth line contains the **number of workers** - integer in the interval [**1 … 20**].
 
-### Output data
+### Output Data
 
 The following is expected to be printed on the console:
 * If the **produced** wine is **less than the required**:
@@ -258,11 +258,11 @@ The following is expected to be printed on the console:
 |----|-----|----|-----|
 |650<br>2<br>175<br>3|Good harvest this year! Total wine: 208 liters.<br>33 liters left → 11 liters per person.|1020<br>1.5<br>425<br>4|It will be a tough winter! More 180 liters wine needed.|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input data processing and related calculations
+#### Input Data processing and related calculations
 
 First, we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
@@ -288,11 +288,11 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 
 ![](assets/chapter-3-2-images/04.Harvest-04.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#3](https://judge.softuni.org/Contests/Practice/Index/652#3).
 
-## problem: company
+### Problem: company
 
 A company is requested to develop a project that is estimated for a given number of hours. The company has **a certain number of days** to do that. **In 10% of those days**, its employees are being onboarded and **are not ready to work** on the project. A normal **working day at this company lasts for 8 hours**. The project is important for the company and every **employee is obliged to work** on this project **overtime for 2 hours** per day.
 
@@ -300,14 +300,14 @@ A company is requested to develop a project that is estimated for a given number
 
 Your problem is to write a program that **calculates if the company is going to finish the project on time** and **how many hours more are needed for the completion of the project** or if the execution was successful **how many dedicated working hours are left at hand**.
 
-### Input data
+### Input Data
 
 **Three lines** are read from the console:
 * The first line contains the necessary **number of working hours** - an integer in the interval [**10 … 200 000**].
 * The second line contains the **days that the company has to finish the project** - an integer in the interval [**0 … 20 000**].
 * The third line contains **the number of all employees** - an integer in the range [**1 … 600**].
 
-### Output data
+### Output Data
 
 **One line** is expected to be **printed** on the console:
 * If **the time is enough**:
@@ -321,11 +321,11 @@ Your problem is to write a program that **calculates if the company is going to 
 |----|-----|----|-----|
 |90<br>7<br>3<br>|Yes!99 hours left.|99<br>3<br>1|Not enough time!72 hours needed.|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input data processing
+#### Input Data processing
 
 First, we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 
@@ -347,6 +347,6 @@ If **the time is not enough** we print the additional hours that are needed to f
 
 ![](assets/chapter-3-2-images/05.Firm-03.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#4](https://judge.softuni.org/Contests/Practice/Index/652#4).

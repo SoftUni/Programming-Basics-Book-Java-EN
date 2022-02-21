@@ -22,7 +22,7 @@ We also declared our own method **`repeatStr(…)`** which helps us to print **a
 Let's solve several nested loops related exam problems to practice what we have learned so far and to develop our further algorithmic thinking.
 
 
-## problem: Drawing a Fort
+### Problem: Drawing a Fort
 
 Write a program that reads from the console **an integer n** and draws **a fortress** with width **2 * n columns** and height **n rows** like the examples below. The left and right columns on the inside are **n / 2** wide.
 
@@ -87,12 +87,12 @@ The **fort’s base** structure is same as the **roof** one. It is made of **two
 
 ![](assets/chapter-6-2-images/01.Draw-fort-07.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#0](https://judge.softuni.org/Contests/Practice/Index/658#0).
 
 
-## problem: Butterfly
+### Problem: Butterfly
 
 Write a program that reads an **integer n** from the console and draws a **butterfly** with **2 * n - 1 columns** width and **2 * (n - 2) + 1 rows** height as in the examples below. Its **left and right sides** are **n – 1** wide.
 
@@ -140,12 +140,12 @@ It remains to print the lower wing on the console, which is identical to the upp
 
 ![](assets/chapter-6-2-images/02.Butterfly-06.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#1](https://judge.softuni.org/Contests/Practice/Index/658#1).
 
 
-## problem: "Stop" Sign
+### Problem: "Stop" Sign
 
 Write a program that reads an **integer n** from the console and draws a **STOP warning sign** with size as in the example below.
 
@@ -205,12 +205,12 @@ For our program to work properly, we need to **reduce** the number of **`i`** by
 
 ![](assets/chapter-6-2-images/03.Stop-09.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#2](https://judge.softuni.org/Contests/Practice/Index/658#2).
 
 
-## problem: Arrow
+### Problem: Arrow
 
 Write a program that reads an **odd integer n** from the console and draws a **vertical arrow** pointing down, with dimensions as in the examples below.
 
@@ -270,12 +270,12 @@ To draw the **the arrow’s lower part**, we need to assign new values to the **
    
 ![](assets/chapter-6-2-images/04.Arrow-09.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#3](https://judge.softuni.org/Contests/Practice/Index/658#3).
 
 
-## problem: Axe
+### Problem: Axe
 
 Write a program that takes as an input an **integer n** and draws an axe with size as shown below. 
 The axe is **`5 * N`** columns wide.
@@ -324,7 +324,7 @@ For the **last row** of the figure we can use the three declared and initialized
 
 ![](assets/chapter-6-2-images/05.Axe-06.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/658#4](https://judge.softuni.org/Contests/Practice/Index/658#4).
 

@@ -14,7 +14,7 @@ We have already **learned** how to execute a particular **command block more tha
 Let's consolidate our knowledge by solving several more complex loop problems from entrance exams.
 
 
-## problem: Stupid Passwords Generator
+### Problem: Stupid Passwords Generator
 
 Write a program that enters two integers **n** and **l** and generates, in alphabetical order, all possible **"stupid” passwords"** that consist of the following **5 characters**:
 -	Character 1: a digit from **1** to **n**.
@@ -86,7 +86,7 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#0](https://judge.softuni.org/Contests/Practice/Index/660#0).
 
 
-## problem: Magic Combination
+### Problem: Magic Combination
 
 Write a program that reads a **magic** integer number and generates all possible **6-digit numbers**, for which **the product of their digits is equal to the magic number**.
 
@@ -147,7 +147,7 @@ As we can see, we can solve the same problem by using different types of loops. 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#1](https://judge.softuni.org/Contests/Practice/Index/660#1).
 
 
-## problem: Stop Number
+### Problem: Stop Number
 
 Write a program that prints on the console all numbers from **N** to **M** that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise, print all numbers up to N** that meet the condition.
 
@@ -201,7 +201,7 @@ Accordingly, if the **condition** that checks whether the number is equal to the
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#2](https://judge.softuni.org/Contests/Practice/Index/660#2).
 
 
-## problem: Special Numbers
+### Problem: Special Numbers
 
 Write a program that **reads an integer N** and generates all possible **"special" numbers** from **1111** to **9999**. To be considered **"special"**, a number must satisfy the **following condition**:
 - **N must be divisible by each of its digits without remainder.**
@@ -239,7 +239,7 @@ Solve the problem on your own using what you have learned from the previous two 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#3](https://judge.softuni.org/Contests/Practice/Index/660#3).
 
 
-## problem: Digits
+### Problem: Digits
 
 Write a program that reads from the console 1 integer within the range [**100 … 999**], and then prints it a predefined number of times — modifying it before each print, as follows:
 - If the number is divisible by **5** without remainder, **subtract** from it **its first digit**.

@@ -85,13 +85,13 @@ Write a method that prints a blank receipt. The method should call another three
 |Middle part|Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
 |Bottom part|------------------------------<br>(c) SoftUni|
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
 |(no input)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The first step is to create a **`void`** method to **print the upper part** of the receipt (header). Let's give it a meaningful name, which describes what the method does, e.g., **`PrintReceiptHeader`**. In its body, write the code from the example below:
 
@@ -107,7 +107,7 @@ Finally, we'll **call** the **`PrintReceipt`** method from the body of the **`Ma
 
 ![](assets/chapter-10-images/04.Print-receipt-03.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/665#0](https://judge.softuni.org/Contests/Practice/Index/665#0).
 
@@ -138,7 +138,7 @@ Let's look at the example for declaring a method, which has several parameters o
 
 Create a method that prints the sign of an integer **n**.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
@@ -146,7 +146,7 @@ Create a method that prints the sign of an integer **n**.
 |-5|The number -5 is negative.|
 |0|The number 0 is zero.|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The first step is **creating** a method and giving it a descriptive name, e.g., **`PrintSign`**. This method will have only one parameter of **`int`** type. 
 
@@ -158,7 +158,7 @@ The next step is to read the input number and to call the new method from the bo
 
 ![](assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#1](https://judge.softuni.org/Contests/Practice/Index/665#1).
 
@@ -167,13 +167,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#
 
 Create a method that prints a triangle as shown in the examples.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |3|1<br>1 2<br>1 2 3<br>1 2<br>1|4|1<br>1 2<br>1 2 3<br>1 2 3 4 <br>1 2 3<br>1 2<br>1|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Before creating a method to print a row with a given beginning and an end, we must read the input number from the console. After that, we choose a meaningful name, which describes its purpose, e.g., **`printLine`**, and implements it.
 
@@ -193,7 +193,7 @@ Finally, we will print the **bottom part** from the triangle, but this time with
 
 ![](assets/chapter-10-images/07.Print-triangle-04.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#2](https://judge.softuni.org/Contests/Practice/Index/665#2).
 
@@ -202,13 +202,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#
 
 Print on the console a filled square with side **n**, as in the examples below.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |4|<code>--------</code><br><code>-\\/\\/\\/-</code><br><code>-\\/\\/\\/-</code><br><code>--------</code>|5|<code>----------</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>----------</code>|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The first step is to read the input from the console. After that, we need to create a method, which will print the first and the last rows because they are the same. Let's remember that we must give it **a descriptive name** and give it as **a parameter** the length of the side. We will use the constructor's **`new String`**. 
 
@@ -222,7 +222,7 @@ Finally, call the methods in the **`main()`** method of the program to draw the 
 
 ![](assets/chapter-10-images/08.Draw-filled-square-03.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#3](https://judge.softuni.org/Contests/Practice/Index/665#3).
 
@@ -301,13 +301,13 @@ int age = Integer.parseInt(scanner.nextLine());
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
 |3<br>4|6|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 The first step is to read the input. After that, **create** a method, but this time be careful when **declaring** to give it the correct **type** of data we want the method to return, which is **`double`**
 
@@ -317,7 +317,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 
 ![](assets/chapter-10-images/11.Calculate-triangle-area-02.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#4](https://judge.softuni.org/Contests/Practice/Index/665#4).
 
@@ -326,13 +326,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#
 
 Write a method that calculates and returns the result the power of a number. 
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |2<br>8|256|3<br>4|81|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Our first step is to read the input data from the console. The next step is to create a method that will take two parameters (the number and the power) and return, as a result, a number of a **`double`** type.
 
@@ -340,7 +340,7 @@ Our first step is to read the input data from the console. The next step is to c
 
 After we have done the calculations, we have to only print the result in the **`main()`** method of the program.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#5](https://judge.softuni.org/Contests/Practice/Index/665#5).
 
@@ -377,13 +377,13 @@ Let's look at the following **example**: we have two methods with different retu
 
 The input is two values of the same type. The values can be of **`int`**, **`char`**, or **`String`** type. Create a method **`getMax()`** that returns, as a result, the greater of the two values.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |int<br>2<br>16|16|char<br>a<br>z|z|string<br>Ivan<br>Todor|Todor|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 To complete our problem, we need to create three methods with the same name and different signatures. First, we create a method, which will compare integers.
 
@@ -401,7 +401,7 @@ The last step is to read the input data, use the appropriate variables, and invo
 
 ![](assets/chapter-10-images/15.Greater-of-two-values-04.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#6](https://judge.softuni.org/Contests/Practice/Index/665#6).
 
@@ -493,36 +493,36 @@ In this chapter, we have learned base concepts about working with methods:
 
 To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
 
-### problem: "Hello, Name!"
+### Problem: "Hello, Name!"
 
 Write a method that takes a name as a parameter and prints on the console "*Hello, \<name\>!*".
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
 |Peter|Hello, Peter!|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Define a method **`printName(String name)`** and implement it, after which read a name from the console in the main program and invoke the method by giving him the name.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#7](https://judge.softuni.org/Contests/Practice/Index/665#7).
 
 
-### problem: Min method
+### Problem: Min method
 
 Create a method **`getMin(int a, int b)`**, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method **`getMin(…)`**, which you have already created.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Define a method **`getMin(int a, int b)`** and implement it. After that, call it from the main method, as shown in the example below. To find the minimum of 3 numbers, first, find the minimum of the first two and then the result from their result and the third one.
 
@@ -530,22 +530,22 @@ Define a method **`getMin(int a, int b)`** and implement it. After that, call it
 int min = getMin(getMin(num1, num2), num3);
 ```
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#8](https://judge.softuni.org/Contests/Practice/Index/665#8).
 
 
-### problem: String repeater
+### Problem: String repeater
 
 Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this, print the result on the console.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
 |str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Write method and add the input string to the result in the for loop:
 
@@ -553,41 +553,41 @@ Write method and add the input string to the result in the for loop:
 
 Keep in mind that **in Java concatenating strings in loops leads to a bad performance** and is not recommended. Learn more at: https://stackoverflow.com/questions/1235179.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#9](https://judge.softuni.org/Contests/Practice/Index/665#9).
 
 
-### problem: N-th digit
+### Problem: N-th digit
 
 Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that, print the result on the console.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |83746<br>2|4|93847837<br>6|8|2435<br>4|2|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 To do the algorithm, use a **`while`** loop, until the given number equals 0. At each iteration of the **`while`** loop, check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#10](https://judge.softuni.org/Contests/Practice/Index/665#10).
 
 
-### problem: Integer to base
+### Problem: Integer to base
 
 Write a method **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|Input|Output|
 |---|----|---|---|---|---|
 |3<br>2|11|4<br>4|10|9<br>7|12|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
 * We calculate **the remainder** of the number, divided by the base.
@@ -607,12 +607,12 @@ static String integerToBase(int number, int toBase) {
 }
 ```
 
-#### Testing in the Judge system 
+#### Testing in The Judge System 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#11](https://judge.softuni.org/Contests/Practice/Index/665#11).
 
 
-### problem: Notifications
+### Problem: Notifications
 
 Write a program, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
 - When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
@@ -625,13 +625,13 @@ The problem should be solved by defining four methods: **`showSuccessMessage()`*
 
 ![](assets/chapter-10-images/18.Notifications-01.png)
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
 |4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code>|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Define and implement the four shown methods.
 
@@ -639,12 +639,12 @@ In **`ReadAndProcessMessage()`** read the type of message from the console and a
 
 If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter. Creating more than one **`Scanner`** which reads from the console might not work as expected.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#12](https://judge.softuni.org/Contests/Practice/Index/665#12).
 
 
-### problem: Numbers to words
+### Problem: Numbers to words
 
 Write a method **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
 * Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
@@ -653,7 +653,7 @@ Write a method **`letterize(number)`**, which reads an integer and prints it in 
 * If the number is **negative**, you must print "**minus**" before it.
 * If the number is not built up of three digits, you shouldn't print it.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -663,7 +663,7 @@ Write a method **`letterize(number)`**, which reads an integer and prints it in 
 |---|---|---|---|
 |4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can first print **the hundreds** as a text - (the number / 100) % 10, after that **the tens** – (the number / 10) % 10 and at the end **the ones** – (the number % 10).
 
@@ -673,12 +673,12 @@ The second special case is when the number formed by the last two digits of the 
 
 The third special case is when the number formed by the last two digits of the input number is **greater than 10 and less than 20** (e.g. 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen" etc.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#13](https://judge.softuni.org/Contests/Practice/Index/665#13).
 
 
-### problem: String encryption
+### Problem: String encryption
 
 Write a method **`encrypt(char letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
@@ -704,7 +704,7 @@ Encrypt the symbols and add them to the encrypted string. In the end, as a resul
 Example:
 * S, o, f, t, U, n, i &rarr; V83Kp11nh12ez16sZ85Mn10mn15h
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|
 |---|---|
@@ -714,12 +714,12 @@ Example:
 |---|---|
 |7<br>B<br>i<br>r<br>a<br>H<br>a<br>x| H66<n15hv14qh97XJ72Ah97xx10w |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 Our variable from type **`String`**, which will store the value of the result, will have an initial value of **`String str = ""`** (Empty String). The loop should iterate **`n`** times, and in every iteration, we will add to our variable the encrypted symbol.
 
 To find the first and the last digit from the ASCII code, we will use the algorithm that we have used when solving the "Integer to Base" problem.
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#14](https://judge.softuni.org/Contests/Practice/Index/665#14).

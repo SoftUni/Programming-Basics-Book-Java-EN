@@ -14,11 +14,11 @@ Traditionally, the entrance exam in SoftUni consists of **6 practical programmin
 
 Let's look at a **real exam topic**, the problems it contains, and their solutions.
 
-## problem: Distance
+### Problem: Distance
 
 Write a program that calculates **what is the distance passed by a car (in kilometers)**, for whick we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(e.g., 70 minutes = 1.1666 hours\).
 
-### Input data
+### Input Data
 
 The input is read from the console and consists of **4 lines**:
 * The **initial speed** in km/h – an integer within the range [**1 … 300**].
@@ -26,11 +26,11 @@ The input is read from the console and consists of **4 lines**:
 * The **second time** in minutes – an integer within the range [**1 … 1000**].
 * The **third time** in minutes – an integer within the range [**1 … 1000**].
 
-### Output data
+### Output Data
 
 Print a number on the console: **kilometers passed**, formatted up to the **second character after decimal point**.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Comments |
 |-----|-----|-----|
@@ -40,7 +40,7 @@ Print a number on the console: **kilometers passed**, formatted up to the **seco
 |-----|-----|-----|
 |140<br>112<br>75<br>190|917.12|**Distance with initial speed**: 140 km/h \* 1.86 hours (112 min) = **261.33 km**<br>**After speed increase**: 140 + 10% = 154.00 km/h \* 1.25 hours (75 min) = **192.5 km**<br>**After speed decrease**: 154.00 - 5% = 146.29 km/h \* 3.16 hours (190 min) = **463.28 km**<br>**Total number of km passed**: **917.1166 km**|
 
-## Hints and guidelines
+## Hints and Guidelines
 
 It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy problem. Let's **separate** the problem into a few **sub-problems** and try to **solve** each problem one by one, which will lead us to the final result:
 
@@ -98,15 +98,15 @@ So far, we solved two of the most important sub-problems, namely the **data inpu
 
 If you have worked correctly and run the program with the input data from the problem condition, you will see that it works correctly.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#0](https://judge.softuni.org/Contests/Practice/Index/662#0).
 
-## problem: Changing tiles
+### Problem: Changing tiles
 
 Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height to it. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
 
-### Input data
+### Input Data
 
 The following 7 lines are read from the console:
 * **The savings**
@@ -119,7 +119,7 @@ The following 7 lines are read from the console:
 
 **All** numbers are real numbers in the range [**0.00 … 5000.00**].
 
-### Output data
+### Output Data
 
 The following must be printed on the console as a **single line**:
 
@@ -130,7 +130,7 @@ The following must be printed on the console as a **single line**:
 
 The result must be **formatted up to the second character** after the decimal point.
 
-### Sample input and output
+### Sample Input and Output
 
 | Input | Output | Comments |
 |-----|-----|-----|
@@ -140,7 +140,7 @@ The result must be **formatted up to the second character** after the decimal po
 |-----|-----|-----|
 |1000<br>5.55<br>8.95<br>0.90<br>0.85<br>13.99<br>321|You'll need 1209.65 lv more.|**Floor area** &rarr; 5.55 \* 8.95 = **49.67249**<br>**Tile area** &rarr; 0.9 \* 0.85 / 2 = **0.3825**<br>**Needed tiles** &rarr; 49.67249 / 0.3825 = 129.86… = **130 + 5 spare tiles** = **135**<br>**Total amount** &rarr; 135 \* 13.99 + 321 (workman) = **2209.65**<br>**2209.65 > 1000** &rarr; **1209.65 lv are insufficient**|
 
-## Hints and guidelines
+## Hints and Guidelines
 
 The problem requires our program to accept more input data and perform more calculations, even though that the solution is **identical**. Reading the input data is done in the **familiar way**. Note that the **Input** part of the condition states that all input data are **real numbers**, and for that reason we would use the **`decimal`** type.
 
@@ -158,11 +158,11 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 We can find the result by **calculating the total amount** needed to cover the entire floor, by **adding the tile price with the price for the workman**, which we have from the input data. We can guess that **the total costs** for tiles can be calculated by **multiplying the number of tiles by the price per tile**. Whether the amount that we have will be sufficient, we understand by comparing the savings (from the input data) and the total costs.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#1](https://judge.softuni.org/Contests/Practice/Index/662#1).
 
-## problem: Flowers shop
+### Problem: Flowers shop
 
 A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
 
@@ -179,7 +179,7 @@ On holidays, prices of all flowers are **increased by 15%.** The following **dis
 
 The price for arranging a bouquet is always **2 lv**. Write a program that calculates the **price of a bouquet**.
 
-### Input data
+### Input Data
 
 The input is read from the **console** and contains **exactly 5 lines**:
 * The first line contains **the number of purchased chrysanthemums** – an integer within the range [**0 … 200**].
@@ -192,7 +192,7 @@ The input is read from the **console** and contains **exactly 5 lines**:
 
 Print on the console 1 number – **the price of flowers**, formatted up to the second character after the decimal point.
 
-#### Sample input and output
+#### Sample Input and Output
 
 |Input|Output|Comments|
 |---|---|---|
@@ -206,7 +206,7 @@ Print on the console 1 number – **the price of flowers**, formatted up to the 
 |---|---|
 |10<br>10<br>10<br>Autumn<br>N|101.20|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 After carefully reading the condition, we understand that we need to do **simple calculations**, but this time we will need **additional** logical **checks**. We need to pay more **attention** to the moment of **making changes** in the final price, so that we can properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. To begin with, we will separate the already **defined** values into **variables**, as we did in the previous problems:
 
@@ -226,15 +226,15 @@ Let's think of the most appropriate way to **structure** our programming logic. 
 
 What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the final result. 
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#2](https://judge.softuni.org/Contests/Practice/Index/662#2).
 
-## problem: Grades
+### Problem: Grades
 
 Write a program that **calculates statistics for grades** in an exam. At the beginning, the program reads the **number of students** who attended the exam and for **each student – their grade**. At the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, and the **average grade** of the exam.
 
-### Input data
+### Input Data
 
 Read from the console a **sequence of numbers, each on a separate line**:
 * On the first line – **the number of students who attended the exam** – an integer within the range [**1 … 1000**].
@@ -251,7 +251,7 @@ Print on the console **5 lines** that hold the following information:
 
 The results must be **formatted up to the second symbol** after the decimal point.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Comments|
 |---|---|---|
@@ -261,7 +261,7 @@ The results must be **formatted up to the second symbol** after the decimal poin
 |---|---|
 |6<br>2<br>3<br>4<br>5<br>6<br>2.2|Top students: 33.33%<br>Between 4.00 and 4.99: 16.67%<br>Between 3.00 and 3.99: 16.67%<br>Fail: 33.33%<br>Average: 3.70|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 From the condition, we see that **first** we will read the **number** of students, and then, **their grades**. For that reason, **first** we will read the **number** of students and save it in a variable of **`int`** type. To read and process the grades themselves, we will use a **`for`** loop. The value of the **`int`** variable will be the **end** value of the **`i`** variable from the loop. This way, at **each** iteration of the loop will read **each one of the grades**.  
 
@@ -287,23 +287,23 @@ What **percentage** is occupied by a **group of students** from the total number
 
 The **final result** is formed in the well know fashion – **up to the second character** after the decimal point.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#3](https://judge.softuni.org/Contests/Practice/Index/662#3).
 
-## problem: Christmas hat
+### Problem: Christmas hat
 
 Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with width of **4 \* `n` + 1 columns** and height of **2 \* `n` + 5 rows**, as in the examples below.
 
-### Input data
+### Input Data
 
 The input is read from the console – an **integer `n`** within the range [**3 … 100**].
 
-### Output data
+### Output Data
 
 Print on the console a **Christmas hat**, exactly like in the examples.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|
 |:-----:|:-----:|
@@ -313,7 +313,7 @@ Print on the console a **Christmas hat**, exactly like in the examples.
 |:-----:|:-----:|
 |7|<code>............./&#124;\\.............</code><br><code>.............\\&#124;/.............</code><br><code>.............\*\*\*.............</code><br><code>............\*-\*-\*............</code><br><code>...........\*--\*--\*...........</code><br><code>..........\*---\*---\*..........</code><br><code>.........\*----\*----\*.........</code><br><code>........\*-----\*-----\*........</code><br><code>.......\*------\*------\*.......</code><br><code>......\*-------\*-------\*......</code><br><code>.....\*--------\*--------\*.....</code><br><code>....\*---------\*---------\*....</code><br><code>...\*----------\*----------\*...</code><br><code>..\*-----------\*-----------\*..</code><br><code>.\*------------\*------------\*.</code><br><code>\*-------------\*-------------\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 In problems requiring **drawing** on the console, most often the user inputs **an integer** that is related to the **total size of the figure** that we need to draw. As the problem requirements mention how the total length and width of the figure are calculated, we can use them as **starting points**. In the examples it is clear that regardless of the input data, we always have **first two rows** that are almost identical.
 
@@ -342,27 +342,27 @@ The sequence of drawing in the body of the loop is the following:
 
 In case we have worked correctly, we will obtain figures identical to those in the examples.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#4](https://judge.softuni.org/Contests/Practice/Index/662#4).
 
 
-## problem: Letters combination
+### Problem: Letters combination
 
 Write a program that prints on the console **all combinations of 3 letters** within a specified range by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
 
-### Input data
+### Input Data
 
 The input is read from the **console** and contains **exactly 3 lines**:
  * A small letter from the English alphabet for a beginning of the range – between **'a'** and **'z'**.
  * A small letter from the English alphabet for the end of the range – between the **first letter** and **'z'**.
  * A small letter from the English alphabet – from **'a'** to **'z'** – as the combinations containing this letter are **skipped**.
 
-### Output data
+### Output Data
 
 Print on a single line **all combinations**, corresponding to the requirements, followed by **their number**, separated by a space.
 
-### Sample input and output
+### Sample Input and Output
 
 |Input|Output|Comments|
 |---|---|---|
@@ -376,7 +376,7 @@ Print on a single line **all combinations**, corresponding to the requirements, 
 |---|---|
 |a<br>c<br>z|aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc 27|
 
-### Hints and guidelines
+### Hints and Guidelines
 
 According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com](https://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
 
@@ -396,6 +396,6 @@ We use a **loop** that runs through **all characters** from the starting to the 
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#5](https://judge.softuni.org/Contests/Practice/Index/662#5).
