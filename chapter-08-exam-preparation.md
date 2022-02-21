@@ -24,7 +24,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 
 **The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Problem: Triangle Area in the plane
+### Problem: Triangle Area
 
 <table>
    <tr>
@@ -80,7 +80,7 @@ The only thing left is to print the area on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#0](https://judge.softuni.org/Contests/Practice/Index/661#0).
 
 
-### Problem: Moving Bricks
+### Problem: Bricks
 
 Construction workers have to transfer a total of **x bricks**. **Workers** are **w** in numbers and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
@@ -134,7 +134,7 @@ Finally, we print the result on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#1](https://judge.softuni.org/Contests/Practice/Index/661#1).
 
 
-## Simple Conditions – problems
+## Simple Conditions – Problems
 
 **The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
@@ -248,7 +248,7 @@ We will initialize two variables that will mark whether **the point** is in one 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#3](https://judge.softuni.org/Contests/Practice/Index/661#3).
 
 
-## Complex Conditions – problems
+## Complex Conditions – Problems
 
 **The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
@@ -359,7 +359,7 @@ Similarly, we will supplement the other two cases. The full code of the program 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#5](https://judge.softuni.org/Contests/Practice/Index/661#5).
 
 
-## Simple Loops – problems
+## Simple Loops – Problems
 
 **The fourth** problem of the "Programming Basics" Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
 
@@ -452,7 +452,7 @@ Finally, we print the length of **the longest** sequence found.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#7](https://judge.softuni.org/Contests/Practice/Index/661#7).
 
 
-## Drawing Figures in the console – problems
+## Drawing Figures on The Console – Problems
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. Logical deductions, simple calculations, and checks might be required. The problem checks the students' abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
 
@@ -566,7 +566,7 @@ Now, **in the body** of the loop let's add the **asterisks**. We'll check if we'
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#9](https://judge.softuni.org/Contests/Practice/Index/661#9).
 
 
-## Nested Loops with more complex logic – problems
+## Nested Loops with More Complex Logic – Problems
 
 **The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think algorithmically** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples of exam problems.
 

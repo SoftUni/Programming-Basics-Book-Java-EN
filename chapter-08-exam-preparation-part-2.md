@@ -1,4 +1,4 @@
-# Chapter 8.2. Preparation for a practical exam – part II
+# Chapter 8.2. Preparation for a Practical Exam – Part II
 
 In this chapter, we will look at a **practical exam on basics of programming** held at SoftUni on December 18, 2016. The problems give a good idea of what we can expect at the entrance exam in programming at SoftUni. The exam covers the learning material studied from this book and the "Programming Basics" course at SoftUni.
 
@@ -102,7 +102,7 @@ If you have worked correctly and run the program with the input data from the pr
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#0](https://judge.softuni.org/Contests/Practice/Index/662#0).
 
-### Problem: Changing tiles
+### Problem: Changing Tiles
 
 Haralambi has some savings that he wants to use to **change the tiles on the bathroom floor**. The floor is rectangular, and the tiles are triangular. Write a program that **calculates if his savings will be sufficient**. Read from the console the width and length of the floor**, as well as one of the sides of the triangle with its height to it. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **read from the console** – **the price per tile** and **the amount paid for the work** of a workman.
 
@@ -162,7 +162,7 @@ We can find the result by **calculating the total amount** needed to cover the e
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#1](https://judge.softuni.org/Contests/Practice/Index/662#1).
 
-### Problem: Flowers shop
+### Problem: Flowers
 
 A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
 
@@ -291,7 +291,7 @@ The **final result** is formed in the well know fashion – **up to the second c
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#3](https://judge.softuni.org/Contests/Practice/Index/662#3).
 
-### Problem: Christmas hat
+### Problem: Christmas Hat
 
 Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with width of **4 \* `n` + 1 columns** and height of **2 \* `n` + 5 rows**, as in the examples below.
 
@@ -347,7 +347,7 @@ In case we have worked correctly, we will obtain figures identical to those in t
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#4](https://judge.softuni.org/Contests/Practice/Index/662#4).
 
 
-### Problem: Letters combination
+### Problem: Letters Combinations
 
 Write a program that prints on the console **all combinations of 3 letters** within a specified range by skipping the combinations **containing a certain letter**. Finally, print the number of printed combinations.
 
