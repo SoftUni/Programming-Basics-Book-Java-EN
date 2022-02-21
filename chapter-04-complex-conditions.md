@@ -101,7 +101,7 @@ The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fu
 |-----|-----|-----|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>false<br>false<br>false|
 
-### How does the && Operator work?
+### How Does The && Operator Work?
 
 The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
 
@@ -120,7 +120,7 @@ The program will run in the **following** way: **It starts** the check form **`a
 
 ![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
-### Problem: Point in a Rectangle
+### Problem: Point in Rectangle
 
 Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
 
@@ -155,7 +155,7 @@ In school, the teacher said: "Ivan or Peter should clean the board". For complet
 |:-----:|:-----:|:-----:|
 |true<br>true<br>false<br>false|true<br>false<br>true<br>false|true<br>true<br>true<br>false|
 
-### How does the || operator work?
+### How Does The || Operator Work?
 
 We have already learned what the logical **"OR" represents**. But how is it being achieved? Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. To obtain **`true`** from the expression, **just one** argument must have a **`true`** value. Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -230,7 +230,7 @@ Like the rest of the operators in programming, the operators **`&&`** and **`||`
 
 Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
 
-### Problem: Point on a Rectangle Border
+### Problem: Point on Rectangle Border
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
@@ -288,7 +288,7 @@ Write a program that **reads** from the console a **fruit** (banana / apple / �
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#6](https://judge.softuni.org/Contests/Practice/Index/653#6).
 
-### Problem: Trade Fees
+### Problem: Trade Comissions
 
 A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the **volume of sales s**:
 
@@ -344,7 +344,7 @@ switch (selector) {
 }
 ```
 
-### Problem: Day of the Week
+### Problem: Day of The Week
 
 Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 
@@ -436,7 +436,7 @@ if ((x == left || x == right) && y <= top && y >= bottom)
     System.out.println (…); 
 ```
 
-#### Switch-case Conditions
+#### Switch-Case Conditions
 
 ```java
 switch (selector) {
@@ -518,7 +518,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
 
-### Problem: * Point in the Figure
+### Problem: * Point in The Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
