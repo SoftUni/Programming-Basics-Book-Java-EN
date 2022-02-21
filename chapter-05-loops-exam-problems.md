@@ -118,7 +118,7 @@ Once we have declared the needed variables, we can proceed with reading the numb
 
 ![](assets/chapter-5-2-images/01.Histogram-02.png)
 
-#### Processing the input data
+#### Processing The Input Data
   
 In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers). Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
 

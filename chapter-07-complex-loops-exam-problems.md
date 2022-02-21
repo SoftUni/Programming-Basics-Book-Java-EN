@@ -57,7 +57,7 @@ To **read** the **input** we will declare two integer variables **`int`**: **`n`
 
 Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** - **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
 
-#### Processing the Input Data and Printing Output
+#### Processing The Input Data and Printing Output
 
 We have to create **five** nested **`for`** loops, one for each variable. To ensure that the last digit **d3** is **greater** than the first two, we will use the built-in function **`Math.max(…)`**. 
 
