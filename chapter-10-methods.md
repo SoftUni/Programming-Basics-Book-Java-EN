@@ -8,7 +8,7 @@ In this chapter, we will introduce you to **methods**. We will learn what they a
   Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=dYqouc4KMiU">https://www.youtube.com/watch?v=dYqouc4KMiU</a>.
 </div>
 
-## What is "method"?
+## What is a "Method"?
 
 So far, we have found out that while **writing** a code for a program that solve a problem, **separating** the problem into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
@@ -16,7 +16,7 @@ A block of code designed to perform a particular problem, which we have logicall
 
 A **method** can be **called** as many times as we think we need to solve a problem. That **saves** us from repeating the same code several times, **reduces** the possibility of making a mistake while editing the repeated code.
 
-### Simple methods
+### Simple Methods
 
 Simple methods are responsible for running a specific **action** that will **help** us to solve a problem. Those actions can be printing a string on the console, performing some checks, performing a loop, etc.
 
@@ -28,7 +28,7 @@ This **method** has the problem to print a header containing a series of the sym
 
 The **body** of the method consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the method.
 
-### Why should we use methods?
+### Why Should We Use Methods?
 
 Up to this moment, we have found out that, methods help us with **separating big problems into smaller parts**, which leads to a **simple solution** of the corresponding problem. It makes our program, not just well structured, **easy readable** but also more understandable.
 
@@ -36,7 +36,7 @@ Using methods, we **escape repeating** of programming code. **Repeating** code i
 
 Methods offer us an **opportunity** to use **code several times**. With solving more and more problems, we will conclude that using already defined methods saves us much time and effort.
 
-### Declaring methods
+### Declaring Methods
 
 In Java language, you can **declare** methods inside a class, i.e., between the opening **`{`** and closing **`}`** brackets of the classbut not in the declaration of another method. The declaration is the registration of the method in the program, and thus the method will be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program we write.
 
@@ -57,7 +57,7 @@ After we have declared a method, its **implementation (body)** follows. In the b
 
 When declaring a variable in the body of a method, it is called a **local** variable. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
-### Calling a method
+### Calling a Method
 
 **Calling** a method means **starting to execute the code**, which is in **the body of the method**. It happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as one of the given parameters when declaring the method. Here is an example:
 
@@ -75,7 +75,7 @@ A method can be called from **its own body**. It is called **recursion** and you
 
 It is important to know that if a method is declared in a class, it can be called before the line, on which it has been declared.
 
-### Problem: Blank receipt
+### Problem: Blank Receipt
 
 Write a method that prints a blank receipt. The method should call another three methods: one to print the upper part, one for the middle part of the receipt, and one for the bottom part.
 
@@ -112,11 +112,11 @@ Finally, we'll **call** the **`PrintReceipt`** method from the body of the **`Ma
 The program with a total of five methods that call one another is ready and we can **run and debug it**. After that, we will send it for test in the Judge system: [https://judge.softuni.org/Contests/Practice/Index/665#0](https://judge.softuni.org/Contests/Practice/Index/665#0).
 
 
-## Methods with parameters
+## Methods with Parameters
 
 Often to solve a problem, the method by which we achieve this needs **additional information**, which depends on its purpose. This information represents the **parameters of the method** , and its behavior depends on them. 
 
-### Using parameters in methods
+### Using Parameters in Methods
 
 As we noted above, **the parameters can be zero, one or more**. When declaring them, you should divide them with a comma. They can be of any type (**`int`**, **`string`**, etc.), and below is an example of how they are used by the method.
 
@@ -163,7 +163,7 @@ The next step is to read the input number and to call the new method from the bo
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#1](https://judge.softuni.org/Contests/Practice/Index/665#1).
 
 
-### Problem: Printing a triangle
+### Problem: Printing a Triangle
 
 Create a method that prints a triangle as shown in the examples.
 
@@ -198,7 +198,7 @@ Finally, we will print the **bottom part** from the triangle, but this time with
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#2](https://judge.softuni.org/Contests/Practice/Index/665#2).
 
 
-### Problem: Draw a filled square
+### Problem: Draw a Filled Square
 
 Print on the console a filled square with side **n**, as in the examples below.
 
@@ -227,11 +227,11 @@ Finally, call the methods in the **`main()`** method of the program to draw the 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#3](https://judge.softuni.org/Contests/Practice/Index/665#3).
 
 
-## Returning result from a method
+## Returning Result From a Method
 
 So far, we have looked at methods that do a specific problem, for example, printing a text, number, or figure on the console. There is another type of method that can **return** a **result** from their problem. We will look at this type of method in the following lines.
 
-### Types of returned values
+### Types of Returned Values
 
 So far, we saw some examples, in which when declaring methods, we used the keyword **`void`**, which shows that the method **does not** return a result, but just executes a certain action.
 
@@ -247,7 +247,7 @@ If we **replace** **`void`** with **a type** of some variable, this will tell th
 
 We should note that **the result** returned by the method can be of **a type, compatible with the type of the returned value** of the method. For example, if the declared type of the returned value is **`double`**, we can return a value of **`int`** type.
 
-### The "return" operator
+### The "return" Operator
 
 To obtain a result from the method, we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** to the method's caller, a **value** that is defined by the expression after the **`return`** operator.
 
@@ -263,7 +263,7 @@ We have a method in the example below, which compares two numbers and returns a 
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
-#### Code after a return is unreachable
+#### Code After a "return" is Unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because IntelliJ IDEA will display a warning telling us that it had found an **unreachable** statement.
 
@@ -274,7 +274,7 @@ When the **return** operator is located inside a conditional statement such as *
 with the phrase <b><i>write</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Using the return value of a method
+### Using The "return" Value of a Method
 
 After a method is executed and has returned a value, we can use the value in several ways.
 
@@ -297,7 +297,7 @@ Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
 ```
 
-### Problem: Calculating triangle area
+### Problem: Calculating Triangle Area
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
@@ -322,7 +322,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#4](https://judge.softuni.org/Contests/Practice/Index/665#4).
 
 
-### Problem: Power of a number
+### Problem: Power of a Number
 
 Write a method that calculates and returns the result the power of a number. 
 
@@ -345,11 +345,11 @@ After we have done the calculations, we have to only print the result in the **`
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#5](https://judge.softuni.org/Contests/Practice/Index/665#5).
 
 
-## Method overloading
+## Method Overloading
 
 In many programming languages, the same methods can be declared in **different variants** with the **same name and different parameters**. It is known as “**method overloading**”. Now let's see how to write these overloaded methods.
 
-### Method signature
+### Method Signature
 
 In programming methods are **identified** through the elements of their declaration: **name** of the method + a list of its **parameters**. These two elements define its specification, the so-called “**method signature**”.
 
@@ -359,7 +359,7 @@ In this example, the method's signature is its name (**`print`**), together with
 
 If our program holds several **methods with the same name**, but with **different lists of parameters (signatures)**, we can say that we use **method overloading**.
 
-### Overloading methods
+### Overloading Methods
 
 As we mentioned, if you use **the same name for several methods with different signatures**, this means that you are **overloading a method**. The code below shows how three different methods can use the same name but have different signatures and execute different actions.
 
@@ -373,7 +373,7 @@ Let's look at the following **example**: we have two methods with different retu
 
 ![](assets/chapter-10-images/14.Method-overloading-02.png)
 
-### Problem: Greater of two values
+### Problem: Greater of Two Values
 
 The input is two values of the same type. The values can be of **`int`**, **`char`**, or **`String`** type. Create a method **`getMax()`** that returns, as a result, the greater of the two values.
 
@@ -406,7 +406,7 @@ The last step is to read the input data, use the appropriate variables, and invo
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#6](https://judge.softuni.org/Contests/Practice/Index/665#6).
 
 
-## Naming methods. Best practices when working with methods
+## Naming Methods. Best Practices When Working with Methods
 
 In this chapter, we will introduce you to some of the **best practices** when working with methods. They will be related to naming, organizing our code and its structure. 
 
@@ -432,7 +432,7 @@ Some examples of **badly** named methods:
 
 If we can't come up with a good name, it's probably because our method does more than one job or it doesn't have a clear problem. We must think of a way to divide the method into several separate methods.
 
-### Naming parameters of methods
+### Naming Parameters of Methods
 
 When naming **the parameters** of a method you can apply almost the same rules as with the methods themselves. The difference here is that it is good for the names of the parameters to use a noun or a couple of an adjective and a noun, and when naming the parameters, we use the **`lowerCamelCase`** convention, i.e., **each word except for the first one starts with uppercase**. We should note that it is a good practice that the name of the parameter **shows** what **unit** is used when working with it.
 
@@ -452,14 +452,14 @@ Some examples of **incorrectly** named parameters:
 * **`LastName`**
 * **`last_name`**
 
-### Good practices when working with methods
+### Good Practices When Working with Methods
 
 We must keep in mind that a method must do **only one** specific **problem**. If this can't be achieved, then we must come up with a way to **divide** the functionality into different parts.
 As we have already said, the name must be clear and descriptive. Another **good practice** is to **avoid** methods that are longer than our screen. If this happens, it's recommended to **split** the method into smaller ones, as shown in the example below.
 
 ![](assets/chapter-10-images/04.Print-receipt-02.png)
 
-### Structure and formatting of the code
+### Structure and Formatting of The Code
 
 When writing methods, we must keep in mind to follow a correct **indentation** (offset blocks of code).
 
@@ -489,7 +489,7 @@ In this chapter, we have learned base concepts about working with methods:
 * We learned about **good practices** for working with methods, how to name them and their parameters, how to format our code, and others.
 
 
-## Exercises
+## Problems
 
 To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
 
@@ -535,7 +535,7 @@ int min = getMin(getMin(num1, num2), num3);
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#8](https://judge.softuni.org/Contests/Practice/Index/665#8).
 
 
-### Problem: String repeater
+### Problem: String Repeater
 
 Create a method **`repeatString(str, count)`**, which takes parameters of type **`String`** and an integer **`n`** and returns the string, repeated **`n`** times. After this, print the result on the console.
 
@@ -558,7 +558,7 @@ Keep in mind that **in Java concatenating strings in loops leads to a bad perfor
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#9](https://judge.softuni.org/Contests/Practice/Index/665#9).
 
 
-### Problem: N-th digit
+### Problem: N-th Digit
 
 Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that, print the result on the console.
 
@@ -577,7 +577,7 @@ To do the algorithm, use a **`while`** loop, until the given number equals 0. At
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#10](https://judge.softuni.org/Contests/Practice/Index/665#10).
 
 
-### Problem: Integer to base
+### Problem: Integer to Base
 
 Write a method **`integerToBase(number, toBase)`**, which takes as parameters an integer and a base of a numeral system and returns the integer converted to the given numeral system. After this, the result should be printed on the console. The input number will always be in the decimal numeral system, and the base parameter will be between 2 and 10.
 
@@ -644,7 +644,7 @@ If you are reading from the console a few separate methods, you should keep in m
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#12](https://judge.softuni.org/Contests/Practice/Index/665#12).
 
 
-### Problem: Numbers to words
+### Problem: * Numbers to Words
 
 Write a method **`letterize(number)`**, which reads an integer and prints it in words in English according to the conditions below:
 * Print in words the hundreds, the tens, and the ones (and the eventual minus) according to the rules of the English language.
@@ -678,7 +678,7 @@ The third special case is when the number formed by the last two digits of the i
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#13](https://judge.softuni.org/Contests/Practice/Index/665#13).
 
 
-### Problem: String encryption
+### Problem: * String Encryption
 
 Write a method **`encrypt(char letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result. 
