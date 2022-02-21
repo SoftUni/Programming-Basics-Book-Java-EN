@@ -1,4 +1,4 @@
-# Chapter 5.2. Loops – Exam problems
+# Chapter 5.2. Loops – Exam Problems
 
 In the previous chapter, we learned how to execute a block of commands **more than once**. That’s why we introduced **`for` loops** and we looked at some of its main use cases. This chapter aims to consolidate our knowledge by solving some more complex problems with loops, given at exams. We will show detailed solutions for some of the examples, and for the others, we will leave guidance only.
 Before we get to work it’s best if we recall the construction of the **`for` loop**:
@@ -156,7 +156,7 @@ All that remains is to print the results. The condition states, that the percent
 
 ![](assets/chapter-5-2-images/01.Histogram-06.png)
 
-### Testing using the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#0](https://judge.softuni.org/Contests/Practice/Index/656#0).
 
@@ -245,7 +245,7 @@ More about the ternary operator: [https://www.programiz.com/java-programming/ter
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#1](https://judge.softuni.org/Contests/Practice/Index/656#1).
 
 
-### Problem: Back to the past
+### Problem: Back to The Past
 
 Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
@@ -416,7 +416,7 @@ Finally, we only need to print the number of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#3](https://judge.softuni.org/Contests/Practice/Index/656#3).
 
 
-### Problem: Division without remainder
+### Problem: Division Without Remainder
 
 There are **n whole numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:

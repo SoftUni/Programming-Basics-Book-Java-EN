@@ -52,7 +52,7 @@ In software development, we regularly need to write loops dozens of times a day.
 
 **Try it yourself** in order to master using the code snippet for **`for` loop** in IntelliJ IDEA.
 
-### Problem: Numbers ending in 7
+### Problem: Numbers Ending in 7
 
 Write a program that finds all numbers within the range [**1 … 1000**] that ends with 7. 
 
@@ -67,7 +67,7 @@ We can solve the problem by combining a **`for` loop**, which will go through th
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#1](https://judge.softuni.org/Contests/Practice/Index/655#1).
 
 
-### Problem: Latin letters 
+### Problem: Latin Letters
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
@@ -82,7 +82,7 @@ It is good to know that the **`for` loops** don't work only with numbers. We can
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#2](https://judge.softuni.org/Contests/Practice/Index/655#2).
 
 
-### Problem: Sum numbers 
+### Problem: Sum Numbers 
 
 Write a program that **reads `n` integers from the console and calculates the sum**.
 
@@ -117,7 +117,7 @@ Below you can find the source code for the solution:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#3](https://judge.softuni.org/Contests/Practice/Index/655#3).
 
 
-### Problem: Max number
+### Problem: Max Number
 
 Write a program that inputs **n integers** (**n** > 0) and finds the **the Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
@@ -142,7 +142,7 @@ We enter the first number **`n`** (the number of integers to be entered). We ass
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#4](https://judge.softuni.org/Contests/Practice/Index/655#4).
 
 
-### Problem: Min number
+### Problem: Min Number
 
 Write a program that inputs **n integers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples: 
 
@@ -165,7 +165,7 @@ The problem is identical to the previous one, but this time we will start with a
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#5](https://judge.softuni.org/Contests/Practice/Index/655#5).
 
 
-### Problem: Left and right sum
+### Problem: Left and Right Sum
 
 Write a program that inputs **2 \* n integers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
@@ -186,7 +186,7 @@ Input the number **n**, after that the first **n** numbers (**left** half) and s
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#6](https://judge.softuni.org/Contests/Practice/Index/655#6).
 
 
-### Problem: Even \/ odd sum 
+### Problem: Odd Even Sum 
 
 Write a program that inputs **n integers** and checks if **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
@@ -212,7 +212,7 @@ We input the numbers one by one and calculate the two **sums** (the numbers on *
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#7](https://judge.softuni.org/Contests/Practice/Index/655#7).
 
 
-### Exapmle: Vowels sum 
+### Exapmle: Vowels Sum 
 
 Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
@@ -319,7 +319,7 @@ We must calculate the **sum** of all elements, find the **largest** of them and 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#9](https://judge.softuni.org/Contests/Practice/Index/655#9).
 
 
-### Problem: Even \/ Odd position 
+### Problem: Odd \/ Even position 
 
 Write a program that reads **n numbers** and calculates **the sum**, the **min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
 
@@ -343,7 +343,7 @@ In the current problem, it is better to work with **fractions** (not integers). 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#10](https://judge.softuni.org/Contests/Practice/Index/655#10).
 
 
-### Problem: Equal pairs 
+### Problem: Equal Pairs 
 
 There are **2 \* n numbers**. The first and the second form a **pair**, the third and the fourth number also, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal values**.
 
@@ -375,7 +375,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
-### Problem: Turtle graphics GUI application
+### Problem: Turtle Graphics GUI Application
 
 The purpose of the following exercise is to play with a **drawing library**, also known as **“turtle graphics”**. We will build a graphical application (GUI App) in which we will: **draw different figures**, moving our **“turtle”** across the screen via operations like "move 100 positions forward", "turn 30 degrees to the right", "move 50 more positions forward". The application will look approximately like this:
 
@@ -466,7 +466,7 @@ The purpose of the button [**Hide / Show Turtle**] is to show or hide the turtle
 
 Again, **start** the application with [**Shift + F10**] and test whether both buttons work correctly.
 
-### Problem: * Draw a hexagon with the turtle
+### Problem: * Draw a Hexagon with The Turtle
 
 Add [**Hexagon**] button which draws a regular hexagon:
 
@@ -478,7 +478,7 @@ Repeat 6 times the following in a loop:
 * 60 degrees rotation.
 * Forward step of 100.
 
-### Adding a new button for drawing a shape
+### Adding a New Button for Drawing a Shape
 
 To add a new button for drawing a new shape, we can trace the logic in **`MyTurtle.java`** for the button [**Draw**] and create a new button for drawing a **Hexagon**.
 
@@ -503,7 +503,7 @@ In **`Thread t`** add **`case "Hexagon`"** to call the method **`drawHex()`**:
 ![](assets/chapter-5-1-images/13.Turtle-graphics-22.png)
 
 
-### Problem: * Draw a star with the turtle
+### Problem: * Draw a Star with The Turtle
 
 Add [**Star**] button, which draws a star with 5 vertices (**star pentagon**), as shown in the figure below:
 
@@ -517,7 +517,7 @@ Repeat 5 times the following in a loop:
 * Forward step of 200.
 * 144 degrees rotation.
 
-### Problem: * Draw a spiral with the turtle
+### Problem: * Draw a Spiral With The Turtle
 
 Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in the figure below:
 
@@ -527,13 +527,13 @@ Add a [**Spiral**] button, which draws a spiral with 20 vertices, as shown in th
 
 Draw in a loop by moving ahead and rotating. Gradually increase the length of the forward movement with each step and turn it 60 degrees.
 
-### Problem: * Draw a sun with the turtle
+### Problem: * Draw a Sun with The Turtle
 
 Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
-### Problem: * Draw a spiral triangles with the turtle
+### Problem: * Draw a Spiral Triangles with The Turtle
 
 Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 
