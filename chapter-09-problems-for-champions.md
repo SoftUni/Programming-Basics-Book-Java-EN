@@ -1,13 +1,13 @@
-# Chapter 9.1. problems for champions – part I
+# Chapter 9.1. Problems for Champions – Part I
 
 In this chapter, we will offer the reader **more complex problems**. They aim to develop **algorithmic skills** and acquire **programming techniques** to solve problems with higher complexity.
 
-## More complex problems on the studied material
+## More Complex Problems on The Studied Material
 
 We will solve several programming problems that cover the material studied in the book but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to become a **champion of the basics of programming**, we recommend this training to solve such complex problems to make it easy for you to take exams.
 
 
-### Problem: Crossing sequences
+### Problem: Crossing Sequences
 
 We have two sequences:
    - **a sequence of Tribonacci** (by analogy with the Fibonacci sequence), where each number is **the sum of the previous three** (with given three numbers)
@@ -60,7 +60,7 @@ On the single line of the output, we must print **the smallest number that occur
 
 The problem seems quite complicated, so we will break it into simpler sub-problems.
 
-#### Processing the input
+#### Processing The Input Data
 
 The first step in solving the problem is to read and process the input. Input data consists of **5 integers**: **3** for the Tribonacci sequence and **2** for the numerical spiral.
 
@@ -68,13 +68,13 @@ The first step in solving the problem is to read and process the input. Input da
 
 Once we have the input data, we need to think about how we will generate the numbers in the two sequences.
 
-#### Generating Tribonacci sequence
+#### Generating Tribonacci Sequence
 
 For the Tribonacci sequence, we will always **summing up the previous three values** and then move the values of those numbers (the three previous ones) to one position in the sequence, i.e., the value of the first one must accept the value of the second one, and so on. When we are ready with the number, we will store its value in **an array**. Since the problem description states that the numbers in the sequences do not exceed 1,000,000, we can stop generating this range at 1,000,000.
 
 ![](assets/chapter-9-1-images/01.Crossing-sequences-03.png)
 
-#### Generating numerical spiral
+#### Generating Numerical Spiral
 
 We need to think of **a relation** between numbers in the numerical spiral so we can easily generate every next number without having to look at matrices and loop through them. If we carefully look at the picture from the description, we will notice that **every 2 "turns" in the spiral, the numbers we skip are increased by 1**, i.e. from *5 to 7* and from *7 to 9*, not a single number is skipped, but we directly **add with the step** of the sequence. From *9 to 13* and from *13 to 17* we skip a number, i.e. we add the step twice. From *17 to 23* and from *23 to 29* we skip two numbers, i.e. we add the step three times and so on.
 
@@ -87,7 +87,7 @@ What we have to take care of is **for every two numbers, our multiplier** (let's
 
 ![](assets/chapter-9-1-images/01.Crossing-sequences-05.png)
 
-#### Finding common number for the sequences
+#### Finding Common Number for The Sequences
 
 Once we have generated the numbers in both sequences, we can combine them and build the final solution. How will it look? For **each of the numbers** in the first sequence (starting from the smaller one), we will check if it exists in the other one. The first number that meets this criterion will be **the answer** to the problem.
 
@@ -104,7 +104,7 @@ The previous solution to the problem uses arrays to store the values. Arrays are
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#0](https://judge.softuni.org/Contests/Practice/Index/663#0).
 
 
-### Problem: Magic dates
+### Problem: Magic Dates
 
 **Date** is given in a "**dd-mm-yyyy**" format, e.g. 17-04-2018. We calculate **the weight of that date** by taking all of its digits, multiplying each digit with the others after it, and finally summing up all the results obtained. In our case, we have 8 digits: **17032007**, so the weight is **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
 
@@ -147,7 +147,7 @@ We start with the input data. In this case, we have **3 integers** that should b
 
 Having the start and end year, it is good to understand how we will go through each date, without being confused by how many days there are in the month and whether it is a leap year, and so on.
 
-#### Loop through dates
+#### Loop Through Dates
 
 For looping through the dates, we will take advantage of the functionality that gives us the **`LocalDate`** class, in **Java**. We will define a **start date variable** that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console, and the month and the day must be January and 1st respectively. In Java, the "constructor" of **`LocalDate`** accepts as the first argument the year, as second argument the month, and as the third argument the day of the month:
 
@@ -167,7 +167,7 @@ Finally, our loop may look like this:
 
 **Note**: we can achieve the same result with a **`for` loop**: the **initialization** of the date goes to the first part of **`for`**, the condition is preserved and the** step** is the increase by 1 day.
 
-#### Calculating date weight
+#### Calculating Date Weight
 
 Each date consists of exactly **8 characters (digits)** – **2 for the day** (**`d1`**, **`d2`**), **2 for the month** (**`d3`**, **`d4`**), and **4 for the year** (**`d5`** to **`d8`**). It means that we will always have the same calculation every time, and we can benefit from this **to define the formula statically** (i.e., not to use loops, referring to different numbers from the date, but write the whole formula). To be able to write it, we will need **all digits from the date** in individual variables to make all the necessary multiplications. Using the operations of division and remainder on the individual components of the date, using the **`getDayOfMonth()`**, **`getMonthValue()`**, and **`getYear()`** properties, we can retrieve each digit.
 
@@ -196,7 +196,7 @@ Finally, if we have not found an eligible date, we will have a **`false`** value
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/663#1](https://judge.softuni.org/Contests/Practice/Index/663#1).
 
 
-### Problem: Five special letters
+### Problem: Five Special Letters
 
 Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`** so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
@@ -266,7 +266,7 @@ Like every problem, we start the solution by **reading and processing the input 
 
 We have several main points in the problem – **generating all combinations** with a length of 5 including the 5 letters, **removing repeating letters**, and **calculating weight** for a simplified word. The answer will consist of every word whose weight is within the given range **`[firstNumber, secondNumber]`**.
 
-#### Generating all combinations
+#### Generating All Combinations
 
 To generate **all combinations with a length of 1** using 5 symbols, we would use a **loop from 0 to 4**, as we want each number of the loop to match one character. To generate **any combinations of length 2**, using 5 characters (i.e. "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, and we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have 5 nested loops with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`**, and **`i5`**.
 
@@ -286,7 +286,7 @@ This way we already have generated all 5-letter combinations and can proceed wit
 
 **Attention:** as we have chosen a **`pattern`** that takes into consideration the alphabetical arrangement of the letters, and cycles are run appropriately, the algorithm will generate the works in alphabetical order and there is no need for additional sorting before printing the output.
 
-#### Removing repetitive letters
+#### Removing Repetitive Letters
 
 Once we have the finished string, we have to remove all the repeating symbols. We will do this by adding **the letters from left to right in a new string, and each time before adding a letter, we will check if it already exists** – if it does, we will skip it, and if it doesn't, we will add it. To begin with, we will add the first letter to the starting string.
 
@@ -298,7 +298,7 @@ Then we will do the same with the other 4, checking each time with the following
 
 The **`.indexOf(…)`** method returns **the index of the particular element if it is found, or `-1` if the item is not found**. Therefore, every time we get **`-1`**, it means that we still do not have this letter in the new string with unique letters and we can add it, and if we get a value other than **`-1`**, this will mean we already have the letter, and we'll not add it.
 
-#### Calculating weight
+#### Calculating Weight
  
 Calculating the weight is simply **going through the unique word** (**`word`**) obtained in the last step, and for each letter, we need to take its weight and multiply it by the position. For each letter, we need to calculate what value we will multiply its position by, for example, by using a **`switch`** construction.
 
@@ -310,7 +310,7 @@ Once we have the value of that letter, we should **multiply it by its position**
 
 All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
-#### Preparing the output
+#### Preparing The Output
 
 Whether a word needs to be printed is determined by its weight. We need a condition to determine if **the current weight is in the range** [**start … end**] passed to the input at the start of the program. If this is the case, we print the **full** word (**`fullWord`**).
 
@@ -320,7 +320,7 @@ The words are **separated with a space**, and we will accumulate them in an inte
 
 ![](assets/chapter-9-1-images/03.Five-special-letters-09.png)
 
-#### Final touches
+#### Final Touches
 
 The condition is met **unless we do not have a single word in the entered range**. To find out, if we have found a word, we can check whether the string **`result`** has its initial value (i.e., an empty string). If it does, we print **`No`** else print the whole string without the last space (using the **`.trim ()`**) method.
 

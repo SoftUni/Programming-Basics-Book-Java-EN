@@ -1,4 +1,4 @@
-# Chapter 9.2. problem for champions – part II
+# Chapter 9.2. Problem for Champions – Part II
 
 In this chapter we, will review three additional problems that belong to the category "**for champions**", i.e., they are more complex than the rest of the problems in this book.
 
@@ -7,7 +7,7 @@ In this chapter we, will review three additional problems that belong to the cat
 Before moving on to particular problems, we must clarify that we can solve them more efficiently with **additional knowledge in programming with Java** (methods, arrays, collections, recursion, etc.). Each solution that we will provide now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge up to the present moment.
 
 
-### Problem: Passion shopping days
+### Problem: Passion Days
 
 Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our problem is to analyze her strange behavior, **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over. All prices and money are in BGN (Bulgarian levs, **lv**).
 
@@ -65,7 +65,7 @@ We will separate the solution of the problem into three main parts:
 
 Let's examine each of the parts in detail.
 
-#### Processing the input data
+#### Processing The Input Data
 
 The input of our problem consists of a few components:
 - On the **first line, we have all the money** that Lina has for shopping.
@@ -85,7 +85,7 @@ It is where we need to take into consideration the fact that from the **second i
 
 Here is the place to point out that calling **`scanner.nextLine()`** after the end of the loop is used for **moving to the first command** for processing.
 
-#### Algorithm for solving the problem
+#### Algorithm for Solving The Problem
 
 The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the problem requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
@@ -117,7 +117,7 @@ An example for the first part of the requirements looks like this:
 
 We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.
 
-#### Formatting the output
+#### Formatting The Output
 
 At the end of our problem we must **print** a particular **output**, depending on the following condition:
 
@@ -133,7 +133,7 @@ How can we do that? We will leave the answer to this question to the reader.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#0](https://judge.softuni.org/Contests/Practice/Index/664#0).
 
 
-### Problem: Numerical expression
+### Problem: Numerical Expression
 
 Bonny is an extremely powerful witch. Because her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
@@ -184,7 +184,7 @@ The output data must be printed on the console. The output consists of one line:
 
 As usual, we will first read and process the input, then we will solve the problem, and finally, we will print the result, formatted as required.
 
-#### Reading the input data
+#### Reading the Input Data
 
 The input data will consist of only one text line read from the console. Here we have **two ways** to process the input. The first way is by **reading the entire line using the `bufferReader.readLine()`** ( where **`bufferReader`** is a variable from type **`BufferedReader`**) and accessing each symbol (**`char`**) of the line via a **`foreach` loop**. The second one is by **reading the input symbol by symbol using the `bufferReader.read()` command** and processing each symbol.
 
@@ -192,7 +192,7 @@ We will use the second option to solve the problem.
 
 ![](assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Algorithm for solving the problem
+#### Algorithm for Solving The Problem
 
 For the problems of our problem, we will need two variables:
 * One variable that will hold the **current result**.
@@ -229,7 +229,7 @@ After completing the calculation of the result of our sub-expression, we **modif
 
 ![](assets/chapter-9-2-images/02.X-expression-09.png)
 
-#### Formatting the output
+#### Formatting The Output
 
 The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two digits after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
@@ -299,7 +299,7 @@ We will solve the problem in a few steps:
 - We will generate all possible **four-digit combinations** (candidates for verification).
 - For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Reading the input data
+#### Reading The Input Data
 
 We have 3 lines as input data:
  * **Secret number**.
@@ -310,7 +310,7 @@ Reading the input data is trivial:
 
 ![](assets/chapter-9-2-images/03.Bulls-and-cows-03.png)
 
-#### Algorithm for solving the problem
+#### Algorithm for Solving The Problem
 
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution has been found:
 
