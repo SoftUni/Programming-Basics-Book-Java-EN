@@ -16,10 +16,10 @@ In this chapter, we are going to figure out **what programming is** at its core.
   https://www.youtube.com/watch?v=3Hny8Mz2agQ</a>.
 </div>
 
-## What does it mean to program
+## What Does It Mean to Program
 To program means to give instructions to the computer, for example, *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there is a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
-## Computer programs
+## Computer Programs
 **Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Java**. In this book we will cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
@@ -27,7 +27,7 @@ Computer programs usually execute some sort of algorithm. **Algorithms** are ser
 
 To make creating programs, writing program code (commands), executing it, and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **IntelliJ**.
 
-### Programming languages, compilers, interpreters, and environments for development
+### Programming Languages, Compilers, Interpreters, and Environments for Development
 **Programming languages** are artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process, and execute. With the help of programming languages, we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
 **The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been compiled, the program can be directly executed by the microprocessor in cooperation with the operating system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift, and Go work with compilers.
@@ -61,14 +61,14 @@ The Java compiler, the virtual machine, and many libraries stand inside the core
 - **Java Enterprise Edition** (Java EE) – based on the Standard Edition, it is mostly used with server applications on the internet, but besides that, it includes many other software technologies.
 - **Java Micro Edition** (Java ME) – a standalone light version for working on devices with limited computing power like mobile phones, smartphones, PDA devices, and others.
 
-### Computer programs - compilation and execution
+### Computer Programs - Compilation and Execution
 As we have already mentioned, the program is a **sequence of commands**, in other words, it describes a sequence of calculations, evaluations, iterations, and all kinds of similar operations, which aim to accomplish some result.
 
 The program is written in text format, and the text of the program itself is called a **source code**. It is compiled to an executable file (for example, `Program.cs` is compiled to `Program.exe`), or it is executed directly from the .NET environment.
 
 The compilation process of the code, before its execution, is used only in compiled languages like C#, Java, and C++. Scripts and interpreted languages, like JavaScript, Python, and PHP, the source code gets executed step by step by an interpreter.
 
-### Computer programs – examples
+### Computer Programs – Examples
 Let us start with a simple example Java program, which consists of a single command.
 
 #### Example – a command which prints a given text
@@ -85,8 +85,8 @@ We can check whether the word "alright" consist of the word "right" using the **
 System.out.println("alright".contains("right"));
 ```
 
-#### Example: A program which converts Bulgarian levs into euro
-Let us have a look at another simple program which reads a number of levs (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
+#### Example: A Program Which Converts Bulgarian BGNs into Euro
+Let us have a look at another simple program which reads a number of levs (Bulgaria's currency) (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
 ```java
 Scanner console = new Scanner(System.in);
 double leva = Double.parseDouble(console.nextLine());
@@ -95,10 +95,10 @@ System.out.println(euro);
 ```
 We looked at **three examples of computer programs**: two with a single command, and one consisting of a sequence of three commands. Let us now move on to the more exciting bit: writing, compiling and executing our programs in **Java**.
 
-## How do we write a console program?
+## How Do We Write a Console Program?
 Let's go through the necessary **steps to create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Java programs from this book and the exercises that go along with it.
 
-## Java development kit (JDK)
+## Java Development Kit (JDK)
 To create programs using the Java programming language, we need to install the **Java Development Kit**. It includes a **virtual machine**, a **Java compiler** and numerous **helper tools**. JDK should not be confused for a runtime environment – **Java Runtime Environment** (JRE). Installing JRE will allow us to open and work with Java programs but won't give us the ability to develop our own.
 
 ## Installing JDK
@@ -121,7 +121,7 @@ Press the **[Next]** button a few times until the Java development Kit starts in
 When it's finished, close the installer with the **[Close]** button.
 Installation on a Linux environment may be completely different, but most often, you need to install a standard package from the central repository `sudo apt install default-jdk`.
 
-## Development environment (IDE)
+## Development Environment (IDE)
 As was already noted, we need a development environment (IDE – Integrated Development Environment) to program. The IDE is a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
 -	Suitable for Java programming are the IntelliJ IDEA, Eclipse, and NetBeans environments.
 
@@ -164,19 +164,19 @@ We click **[New]** and find the route to the **Java Development Kit** (JDK) we a
 
 Then we select the JDK installation folder and click **[OK]**. That is it. We are ready to start working with **IntelliJ IDEA**.
 
-### Older versions of IntelliJ IDEA
+### Older Versions of IntelliJ IDEA
 Using older versions of IntelliJ IDEA is possible but **not advisable**. Older versions might not contain some of the newest development options, and some of the examples from this book may not be compile.
 
-### Online development environments
+### Online Development Environments
 There are also **online development environments** which allow you to write code directly in your browser. They are not the most convenient, but if you have no other options, you can use them at the start of your education and install IntelliJ IDEA later. You can find useful links here:
 - For Java, we can use the following online Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
 - For C# we can use **.NET Fiddle**: [https://dotnetfiddle.net](https://dotnetfiddle.net).
 - For JavaScript, we can write JS code directly in our browser by pressing **[F12]**.
 
-### Project solutions and Projects in IntelliJ IDEA
+### Project Solutions and Projects in IntelliJ IDEA
 The IntelliJ IDEA project uses **logic to group the numerous files** that make up a specific application or component. A single **IntelliJ IDEA project** consists of several **Java source files**, configuration files, and other resources. Each Java source file can have several **definitions and types** (classes or other definitions). **Classes** contain methods (actions), which consist of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for a good organization of our work files.
 
-### Example: creating a 'Hello Java' console program
+### Example: Creating a 'Hello Java' Console Program
 Let us get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we will create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
 
 ![](assets/chapter-1-images/01.Hello-java-01.png)
@@ -185,7 +185,7 @@ Let us get back to our console program. Now that we have IntelliJ IDEA installed
 
 IntelliJ IDEA will create a blank Java program for us and we will need to write the code for it.
 
-#### Writing program code
+#### Writing Program Code
 Java programs' source code is written between the curly brackets of the **`main(String[] args)`** section. It is the main method (action) executed when starting a Java program. Press [Enter] after the opening bracket, and we can start writing. In regards to text formatting, program code is written with an indentation which helps when reviewing and debugging it. 
 
 ![](assets/chapter-1-images/01.Hello-java-03.png)
@@ -203,10 +203,10 @@ The **`System.out.printIn("Hello Java")`** command in the Java language allows u
 
 This command is quite typical for programming: signify we need a certain **object** (a **`PrintStream`** object named **`out`** located in the object **`System`**, in this case) to be found, and a certain **`action`** (printing something, passed within brackets, in this case) to be performed on it. In more technical terms, we call the method **`printIn(…)`** from the class **`PrintStream`**, part of the **`System`** class, and pass as a parameter to it the text **`Hello Java`**.
 
-#### Classes and files in Java
+#### Classes and Files in Java
 **Java** is an **object-oriented language** hence why every Java program consists of at least one **class**. If the Java class is public, its name needs to match the name of the file + **`.java`**. In the above example, the **`Main`** class, defined with **`public class Main {…}`**, is located in a file named **`Main.java`** in the project's **`src`** folder. Were it called **`HelloJava`**, its source code would need to be located in a file named **`HelloJava.java`**. Otherwise, we'd get a compile-time error. 
 
-#### Starting the program
+#### Starting The Program
 We start the program by pressing **[Ctrl + Shift + F10]**. If there are no errors, the program will execute. The result will be displayed on the console (the window at the very bottom of IntelliJ IDEA).
 
 ![](assets/chapter-1-images/01.Hello-java-05.png)
@@ -217,7 +217,7 @@ Hello Java
 ```
 The additional **`Process finished with exit code 0`** message is written last in the console and signifies that the program has ended with no errors.
 
-#### Testing the program in the Judge system
+#### Testing in The Judge System
 Testing the solutions to the problems in this book is completely automated via the Judge System's website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged in real-time by the system. Each solution goes through a series of of hidden tests, and every test that passes grants the user certain points.
 The program that we just wrote can be tested here:
 [https://judge.softuni.org/Contests/Practice/Index/646#0](https://judge.softuni.org/Contests/Practice/Index/646#0).
@@ -235,10 +235,10 @@ The Judge System will display one of the following possible results in the table
     - If our solution is **incorrect**, some tests are marked in red, and we receive less than 100 or 0 points.
 * If there are syntactic errors in our program, we receive a **compile time error message**.
 
-### How do I register at SoftUni Judge?
+### How Do I Register at SoftUni Judge?
 Just use your id (Username + Password) for the [softuni.bg](softuni.bg) website. If you haven't yet registered, go right ahead – it's just a standard website registration and takes no more than a minute.
 
-## Typical mistakes in Java programs
+## Typical Mistakes in Java Programs
 One mistake that often sees with beginners is that they write their **code outside the body of the `main(String[] args)` method**. It causes an error because the integrated environment or the compiler cannot read the commands issued in the program correctly. Here is an example of an incorrect program:
 ```java
 static void main(String[] args)
@@ -297,21 +297,21 @@ public class Example {
 
 ```
 
-## What did we learn in this chapter?
+## What Did We Learn in This Chapter?
 First of all, we learned **what programming is** – **issuing commands written in a computer language** which the machine can understand and carry out. We also found out **what a computer program is** – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Java programming language** and learned **how to create simple console programs using IntelliJ IDEA**. We followed Java's program code structure, one example of which is that issuing of commands mainly happens in the **`static void main(String[] args)`** section, within the curly brackets. We looked at printing with the function **`System.out.printIn(…)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let us now tackle the **exercises**. You remember that learning how to program involves a lot of code writing and problem-solving, right? Let us do just that and put what we have learned into practice.
 
-## First steps in programming – Exercises
+## First Steps in Programming – Exercises
 Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
 
-### Exercise: console-based program 'Expression'
+### Exercise: Console-Based Program 'Expression'
 Write a console-based Java program that **calculates** and **prints** the value of the following numerical expression:
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
 
 Note: **you are not allowed to previously calculate the value** (for example, with Windows Calculator).
 
-### Hints and guidelines
+### Hints and Guidelines
 Create a **new Java file** and name it **`Expression`**. Then we find the method **`static void main(String[] args)`** and start writing in its body (the space **between the opening and closing curly braces**). We need to **write the code**, which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`System.out.printIn(…)`** command by writing it within its brackets:
 
 ![](assets/chapter-1-images/02.Expression-01.png)
@@ -320,7 +320,7 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 
 ![](assets/chapter-1-images/02.Expression-02.png)
 
-### Testing in the Judge system
+### Testing in The Judge system
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#1](https://judge.softuni.org/Contests/Practice/Index/646#1).
 
 ![](assets/chapter-1-images/02.Expression-03.png)
@@ -328,7 +328,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#
 ### Exercise: Numbers from 1 to 20
 Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
-### Hints and guidelines
+### Hints and Guidelines
 Create a new Java class and name it **`Nums1to20`** (right click on the **`src`** folder -> [New] -> [Java Class])
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
@@ -345,11 +345,11 @@ Let's now **start the program** and check whether the result is what we're expec
 20
 ```
 
-### Testing in the Judge system
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#2](https://judge.softuni.org/Contests/Practice/Index/646#2).
 Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
 
-### Exercise: Triangle of 55 stars
+### Exercise: Triangle of 55 Stars
 Write a Java console program that **prints a triangle of 55 stars** on 10 lines:
 ```
 *
@@ -364,14 +364,14 @@ Write a Java console program that **prints a triangle of 55 stars** on 10 lines:
 **********
 ```
 
-### Hints and guidelines
+### Hints and Guidelines
 Create a **new Java console application** and name it **TriangleOf55Stars**. Inside we need to write code that prints the triangle of stars, using commands like the ones below:
 ```java
 System.out.println();
 System.out.println();
 …
 ```
-### Testing in the Judge system
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#3](https://judge.softuni.org/Contests/Practice/Index/646#3).
 
 Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar but more complex approach (a loop within another loop). It is completely fine if you can't figure it out, you will remember this problem when we learn about loops in a few chapters.
@@ -379,7 +379,7 @@ Try and **improve your solution** to avoid repeating the same command so many ti
 ### Exercise: Rectangle Area
 Write a Java program that receives two numbers, **a** and **b**, then calculates and prints the area of a rectangle with sides **a** and **b**.
 
-### Sample input and output
+### Sample Input and Output
 | a | b | area | 
 | --- | --- | --- | 
 | 2 | 7 | 14 |  
@@ -405,7 +405,7 @@ To read input data from the console, we import and use the `java.util.Scanner` c
 
 What is left is to finish the program to calculate the rectangle's area and print it. Pass the product of **`a`** and **`b`** to the already familiar **`System.out.printIn()`** command. In programming, we multiply using the **`*`** operator.
 
-### Test your solution
+### Test Your Solution
 Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input, and the program prints 14 – their product, as output):
 ```
 2
@@ -413,13 +413,13 @@ Test your solution with a few examples. You should receive a result identical to
 14
 ```
 
-### Testing in the Judge system
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1046#4](https://judge.softuni.org/Contests/Practice/Index/1046#4).
 
 ### \* Exercise: Square of Stars
 Write a **Java console program** which **reads** a whole positive number N from the console and **prints a square of N stars on the console**, like in the examples below.
 
-### Sample input and output
+### Sample Input and Output
 | Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
@@ -437,7 +437,7 @@ Don't forget to import the `java.util.Scanner` class and put your code in the `m
 
 **Caution**: this problem is more complex than the rest and is presented to you at this point purposefully. It is marked with a star to provoke you to **look for information on the Internet**. It is one of the most important skills you have to develop while you're learning to program. It is what you'll be doing every day if you work as a developer, so don't be scared to try it out. 
 
-### Testing in the Judge system
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#5](https://judge.softuni.org/Contests/Practice/Index/646#5).
 
 ## Console, graphical and web applications
@@ -447,10 +447,10 @@ While the console application uses the **text console**, web applications use **
 
 **Graphical (GUI) applications** have a **visual user interface**, directly into your computer or mobile device, without a web browser. Graphical applications (or otherwise said, desktop applications) **contain one or more graphical windows**, which consist of specific **controllers** (text fields, buttons, pictures, tables, and others), **serving for dialog with the user** more intuitively. Similar to them are the mobile applications in your telephone or your tablet, we use forms, text fields, buttons, and other controls, and we control them by programming code. It is why we are learning how to write code now **the code is everywhere in software development**.
 
-## Exercises graphical and web applications
+## Exercises Graphical and Web Applications
 Now we are about to build one simple **web application** and one simple **graphical application**, in order to take a look at what we will be able to create when we progress with programming and software development. We are not going to look through the details about the used techniques and constructions fundamentally, rather we are just going to take a look at the arrangement and functionality of our creation. After we progress with our knowledge, we will be able to do bigger and more complex software applications and systems. We hope that the examples given below will **enlighten your interest**, rather than make you give up.
 
-### problem graphical application "Summator for numbers"
+### Problem Graphical Application "Summator for Numbers"
 
 Write a **graphical (GUI) application**, which **calculates the sum of two numbers**:
 
@@ -627,7 +627,7 @@ With this code, we intercept errors when working with numbers (**catch exception
 
 Does all this seem complicated? If it does, that's completely normal. We are at the beginning of our programming journey. The example above requires much more knowledge and skills, which we will develop using this book and later on. Just allow yourself to have some fun with desktop programming. If something doesn't work, feel free to ask for help in the SoftUni discussion forum: https://forum.softuni.org, or bravely move forward to the next example or the next chapter in the book. A time will come when this will be easy for you, but you have to put in some effort and be persistent. Learning programming is a slow process involving lots and lots of practice.
 
-### Web application: 'Numbers summator'
+### Web Application: 'Numbers Summator'
 Now, we will create something even more complex but more interesting: a Web application that **calculates the sum of two numbers**. By **entering two numbers** in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated**, and the result is displayed in the third text field. The application is expected to look like as is shown below:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-01.png)
