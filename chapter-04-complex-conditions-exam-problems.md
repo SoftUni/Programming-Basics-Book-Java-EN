@@ -97,7 +97,7 @@ If the student arrives with more than one minute difference compared to the exam
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
     <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
 
-#### Input Data processing
+#### Input Data Processing
 
 According to the assignment, we expect **four** lines in a row with different **integers**. Looking at the provided parameters, we can use the type **`int`**, as it is suitable for the expected values. We simultaneously **read** an input and **parse** the string value to the selected data type for **integer**.
 
@@ -207,7 +207,7 @@ On the console must be printed **two lines**.
 
 Like the other problems, we can separate the solution of our problem into the following parts: reading the input data, doing calculations, printing the result.
 
-#### Input Data processing
+#### Input Data Processing
 
 While carefully reading the requirements, we understand that we expect **two** lines of input data. The first parameter is a **real number**, for which we need to pick an appropriate variable type. For a higher level of calculation accuracy, we can pick **`BigDecimal`** as a type for the budget and **`string`** for the season. 
 
@@ -315,7 +315,7 @@ Print **one line** on the console:
 
 The problem is not complicated, but there are many lines of code to write.
 
-#### Input Data processing
+#### Input Data Processing
 
 After reading the condition, we understand that we expect **three** lines of input data. On the first **two** lines we expect two **integers** (within the specified range), and on the third line - **an arithmetical symbol**. 
 
@@ -416,7 +416,7 @@ The input is read from the **console** and contains **exactly 3 lines**:
 
 We will read the input data and do the calculations described in the condition to check if the money will be sufficient.
 
-#### Input Data processing
+#### Input Data Processing
 
 Let's read the condition carefully and look at what we expect to get as an **input data**, what we expect to **return, as a result**, and what are the **main steps** when dividing the **logic**.
 
@@ -508,7 +508,7 @@ The input data is read from the **console** and contains **exactly two lines**:
 
 First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally print the result.
 
-#### Input Data processing
+#### Input Data Processing
 
 According to the condition, we expect to read two lines of input data - on the first line **he month in which the stay is planned**, on the second - **the number of nights**.
 

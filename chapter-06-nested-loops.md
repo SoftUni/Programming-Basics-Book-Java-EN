@@ -25,7 +25,7 @@ To solve the problem, we will use a method. In Chapter 10, we will look in detai
 
 How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the loop body, and after the iteration, a check about the state of the variable is performed. Thus the code in the loop body is executed exactly **ten times** i.e. for each row of the rectangle. In the loop body, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#0](https://judge.softuni.org/Contests/Practice/Index/657#0).
 
@@ -44,7 +44,7 @@ To perform the problem, we will use the **`Scanner`** class, which allows us to 
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#1](https://judge.softuni.org/Contests/Practice/Index/657#1).
 
@@ -78,7 +78,7 @@ The problem is similar to the previous one. Here, it is necessary to consider ho
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#2](https://judge.softuni.org/Contests/Practice/Index/657#2).
 
@@ -97,7 +97,7 @@ The problem is **similar** to those for drawing **rectangle** and **square**. We
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#3](https://judge.softuni.org/Contests/Practice/Index/657#3).
 
@@ -126,7 +126,7 @@ Here is an example implementation of the described logic above, with nested loop
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#4](https://judge.softuni.org/Contests/Practice/Index/657#4).
 
@@ -157,7 +157,7 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#5](https://judge.softuni.org/Contests/Practice/Index/657#5).
 
@@ -180,7 +180,7 @@ As we saw in the previous examples, we can apply a similar principle and **divid
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#6](https://judge.softuni.org/Contests/Practice/Index/657#6).
 
@@ -213,7 +213,7 @@ When printing the **middle** part, we need to **check** whether the line is **`(
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#7](https://judge.softuni.org/Contests/Practice/Index/657#7).
 
@@ -310,7 +310,7 @@ After we have finished with the roof, it is time for the base. It is easier to p
 
 ![](assets/chapter-6-1-images/09.House-08.png)
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#8](https://judge.softuni.org/Contests/Practice/Index/657#8).
 
@@ -399,7 +399,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 <td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
-#### Test the code in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#9](https://judge.softuni.org/Contests/Practice/Index/657#9).
 

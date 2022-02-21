@@ -107,13 +107,13 @@ In the second example, the training lab length is 840 cm. There could be located
 
 Try to solve the problem on your own first. If you fail, use the Hints and Guidelines below.
 
-#### An idea for a solution
+#### An Idea for a Solution
 
 In any programming problem, the **important part is to build an idea for its solution** before starting to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab where the number depends on the length and height of the room. We notice that the provided input data will be in **meters**, but we have the sizes for working places, and the hallway is in **centimeters**. To do the calculations, we must use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. We use the first option for the presented solution.  
 
 Next, we have to calculate **how many columns and how many rows** with desks will fit in the training lab. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a working place). We will find the rows by dividing the **length by 120 cm**. In both operations, as a result, we can receive a number with integer and fractional parts. **In a variable, we should store only the integer part**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (lost the working places because of the entrance door and podium), and we will receive the required value.
 
-#### Choosing data types
+#### Choosing Data Types
 
 From the example input data, it looks like we can get a number with integer and fractional parts. For that reason, it is not appropriate to choose **` int`** data type. Therefore we will use **`double`**. Selecting the correct data type for the variables depends on the method we choose to solve the problem. Any programming problem as and this one also has **more than one way to be solved**. We will describe two methods. 
 
@@ -153,7 +153,7 @@ With **`System.out.println(…)`** we print the result on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#0](https://judge.softuni.org/Contests/Practice/Index/650#0).
 
 
-### Problem: Vegetable market
+### Problem: Vegetable Market
 
 A gardener sells the harvest from his garden on the vegetable market. He sells **vegetables for N BGN per kilogram** and **fruits for M BGN per kilogram**. Write a program to calculate the earnings from the harvest in EUR (assuming that one EUR is equal to BGN 1.94).
 
@@ -188,11 +188,11 @@ Print on the console **one floating-point number: the earnings of all fruits and
 
 First, we will give a few ideas and particular hints for solving the problem, followed by the essential part of the code.
 
-#### An idea for a solution
+#### An Idea for a Solution
 
 Let's first go through the problem requirements. In this case, we have to calculate the **total income** from the harvest. It is equal to the **sum of the profit from the fruits and vegetables**, which we can calculate by multiplying **the price per kilogram by the quantity**. Our input data is in leva, and the output should be in EUR. According to the condition 1 Euro equals 1.94lv, so to obtain the requested **output value, we have to divide the sum by 1.94**.
 
-#### Choosing data types
+#### Choosing Data Types
 
 After we have a clear idea of how to solve the problem, we can proceed to choose appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, so the variables we declare to store their values will be of **`int`**. The prices of the fruits and vegetables are said to be **floating-point numbers**, so the variables will be of type **`double`**.
 
@@ -224,7 +224,7 @@ The problem does not specify special output format, so we just need to calculate
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#1](https://judge.softuni.org/Contests/Practice/Index/650#1).
 
 
-### Problem: Change of tiles
+### Problem: Change of Tiles
 
 It is needed to be placed tiles on the ground in front of the apartment building. The place is **square with a side of N meters**. The tiles are **W meters wide** and **L meters long**. There is a bench in the area with **a width of M meters** and **a length of O meters**. There is no need to put tiles under it. To place each tile requires **0.2 minutes**.
 
@@ -267,13 +267,13 @@ Let's make a drawing to clarify the problem requirements. It can look like this:
 
 ![](assets/chapter-2-2-images/03.Change-tiles-01.png)
 
-### An idea for a solution
+### An Idea for a Solution
 
 We need to calculate **the number of tiles** to cover the ground and the **time** for placing them. To **calculate the number of tiles**, we have to calculate the **area that needs to be covered** and to **divide it by the area per tile**. The ground is square, and we find the total area using the formula **`N * N`**. After that, we calculate **the area of the bench** by multiplying its two sides **`M * O`**. After that, to obtain the area that needs to be cover, we subtract the area of the bench from the area of the ground.
 
 We calculate the area of a single tile by **multiplying** its two sides with one another - **`W * L`**. As we already saied, now we have to **divide** the area to cove by the area of a single tile. In this way, we find the number of necessary tiles, which we multiply by **0.2** (the time needed for changing single tile). Now, we have the required output.
 
-### Choosing data types
+### Choosing Data Types
 
 Input data for the length of the side of the ground, the width, and the length of the bench are **integer numbers**, so to keep their values, we will declare **variables of type `int`**. For the width and the length of the tiles we will read floating-point numbers, so we will use variables of type **`double`**. The output will be a floating-point number, so used variables will be of **`double`** type. 
 
@@ -350,7 +350,7 @@ As we have information for the exchange rate of Bitcoins to BGN, we can directly
 
 Only the final step left: to **calculate the commission fee** and subtracting the new sum from the total one. The comission is a **floating-point number**, represent a **percent from the total sum**. Let's divide it from the beginning by 100 to calculate its **percentage value**. We will multiply the percentage value by the sum in EUR, and the result divides with the same sum and print the final sum on the console. 
 
-#### Choosing data types
+#### Choosing Data Types
 
 **Bitcoins** are given as **an integer**, and for their value, we can declare **a variable of type `int`**. As a number **Chinese yuan and commission fee** we will obtain **a floating-point number**, so we will use **`double`**. As **`double`** is the data type with bigger size and the **output** should also be a **floating-point numbe**, we will use it for the other variables we create. 
 
@@ -389,7 +389,7 @@ This code would print a correct result, but it is **hard to read**. It won't be 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#3](https://judge.softuni.org/Contests/Practice/Index/650#3).
 
 
-## Problem: Daily earnings
+## Problem: Daily Earnings
 
 Ivan is a programmer in an **American company** and he works from home **N days per month** and earns **M USD per day**. At the end of the year, Ivan **gets a bonus** which is **equals 2.5 monthly salaries**. From what he earned during the year, **the withholding tax is 25%**. Write a program that **calculates the amount of Ivan's net average earning** in BGN per day because he spends it in Bulgaria. We accept that one year has exactly **365 days**. **The exchange rate of USD** to BGN will be **read from the console**.
 
@@ -421,11 +421,11 @@ On the console **print average earning in BGN per day**. The result should be **
 
 Firstly, we have to analyze the problem and think of a way to solve it. Then we will choose data types, and finally, we will write the code.
 
-#### An idea for a solution
+#### An Idea for a Solution
 
 Let's first calculate **how much the monthly salary** of Ivan is. We will do this by **multiplying the working days per month by the money he earns per day**. **We multiply the result** by 12 to calculate his yearly salary, and then multiply yearly salary **by 2.5** to calculate the bonus. Adding the two values obtained, we will calculate his total **annual income**. **We have to subtract 25% from it for taxes**. We can do this by multiplying the total income by **0.25** and subtracting the result from it. Then we **exchange the USD to BGN** and **divide the result by the days of a year**, which we assume are 365. 
 
-#### Choosing data types
+#### Choosing Data Types
  
 **The working days per month** are given as an **integer**, so we can declare a variable of **type `int`**. For the **earned money** and for the **exchange rate of USD to BGN**, we will obtain **a floating-point number**, so for them, we use **`double`** as type. As **`double`** is the type with **the bigger size** and the output should also be **a floating-point number**, we use **`double`** for the other variables we create.
 
