@@ -17,7 +17,7 @@ We also declared our own method **`repeatStr(…)`** which helps us to print **a
 ![](assets/chapter-6-2-images/00.RepeatStr-custom-method-01.png)
 
 
-## Exam problems
+## Exam Problems
 
 Let's solve several nested loops related exam problems to practice what we have learned so far and to develop our further algorithmic thinking.
 

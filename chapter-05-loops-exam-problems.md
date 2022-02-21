@@ -12,7 +12,7 @@ Before we get to work it’s best if we recall the construction of the **`for` l
  * Loop body - contains an arbitrary block of source code.
 
  
-## Exam problems
+## Exam Problems
 
 Let’s solve some loop problems from exams in SoftUni.
 

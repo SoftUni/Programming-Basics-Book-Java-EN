@@ -16,7 +16,7 @@ if (boolean expression) {
   * body - contains any block with source code
   * **`else` clause** and its source code block (**optional**)
  
-## Exam problems
+## Exam Problems
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the **`if-else`** statement.
 

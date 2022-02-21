@@ -1,12 +1,12 @@
-# Chapter 2.2. Simple calculations - Exam problems
+# Chapter 2.2. Simple calculations - Exam Problems
 
 In the previous chapter, we got familiar with the system console and how to work with it – how to **read numbers** from the console and **print an output** on the console. We went through the bacis arithmetical operations and briefly mentioned data types. In this chapter, we will practice and consolidate what we have learned so far. We will solve a few **more complicated problems** given as exams problems.
 
-## Reading numbers from the console
+## Reading Numbers from The Console
 
 Before moving on to the examples, we will recall the most important of the material we have studied in the previous chapter. We will start with reading numbers from the console.
 
-### Reading an integer
+### Reading an Integer
 
 We need to create a variable to store the number (for example **`num`**) and to use the standard command to read data from the console in combination with the function **`Integer.parseInt(…)`** which converts text into an integer:
 
@@ -14,7 +14,7 @@ We need to create a variable to store the number (for example **`num`**) and to 
 int num = Integer.parseInt(scanner.nextLine());
 ```
 
-### Reading a floating-point number
+### Reading a Floating-Point Number
 
 We read a floating-point number the same way we read an integer, but this time we use the function **`double.parseDouble(…)`**:
 
@@ -22,7 +22,7 @@ We read a floating-point number the same way we read an integer, but this time w
 double num = Double.parseDouble(scanner.nextLine());
 ```
 
-## Printing text using format specifiers
+## Printing Text Using Format Specifiers
 
 The **format specifier** is an expression that will be replaced with a particular value while printing the output. The method **`System.out.printf(…)`** supports printing a string using format specifiers with the following format **`System.out.printf("format-string"[, arg1, arg2, … ])`**. As the first parameter of the method, we put the formatted string. As the second parameter of the method, we put so many arguments as the number of specifiers in the formatted string.
 
@@ -31,7 +31,7 @@ System.out.printf("You are %s %s, a %d-years old person from %s.",
   firstName, lastName, age, town);
 ```
 
-## Arithmetic operators
+## Arithmetic Operators
 
 Let us recall basic arithmetic operators for simple calculations.
 
@@ -72,11 +72,11 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 // Ivan Ivanov is 19 years old
 ```
 
-## Exam problems
+## Exam Problems
 
 Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the problems. We will solve several **problems from a SoftUni entrance exam**.
 
-### Problem: Training lab
+### Problem: Training Lab
 
 **A training lab** has a rectangular size **l** and **w** meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a podium with a **chair** for the teacher. A single **working place** occupies **70 x 120 cm** (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). **The hallway** has a width of at least **100 cm**. It is known that because of the **entrance door** (which has an opening of 160cm) **exactly one working space is lost** and because of the **teacher's chair** (which has a size of 160 x 120 cm) are lost exactly **2 working places**. Write a program that reads the size of the classroom as input data and calculates the **number of working places in it** as it is described (look at the figure below).
 
@@ -97,7 +97,7 @@ Print on the console one integer number: **the number of working places** in the
 |15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
 |8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
 
-#### Explanations to the examples
+#### Explanations to The Examples
 
 In the first example, the training lab length is 1500 cm. There could be located **12 rows** (12 \* 120 cm = 1440 + 60 cm residue). The training lab width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm residue). **Number of working places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 working places for podium and entrance door).
 

@@ -43,7 +43,7 @@ The structure consists of:
 * Multiple **`case`** labels followed by code to be executed, ending with **`break`**.
 
 
-## Exam problems
+## Exam Problems
 
 Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let's solve a few exam problems.
 
