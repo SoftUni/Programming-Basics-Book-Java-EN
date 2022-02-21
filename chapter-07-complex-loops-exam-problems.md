@@ -1,4 +1,4 @@
-# Chapter 7.2. Complex Loops – Exam problems
+# Chapter 7.2. Complex Loops – Exam Problems
 
 We have already **learned** how to execute a particular **command block more than once** by using a **`for`** loop. In the previous chapter we **reviewed** several other **loop constructions**, which could help us solve more complex problems:
 - **loops with a step**
@@ -14,7 +14,7 @@ We have already **learned** how to execute a particular **command block more tha
 Let's consolidate our knowledge by solving several more complex loop problems from entrance exams.
 
 
-### Problem: Stupid Passwords Generator
+### Problem: Stupid Password Generator
 
 Write a program that enters two integers **n** and **l** and generates, in alphabetical order, all possible **"stupid” passwords"** that consist of the following **5 characters**:
 -	Character 1: a digit from **1** to **n**.
@@ -23,11 +23,11 @@ Write a program that enters two integers **n** and **l** and generates, in alpha
 -	Character 4: a small letter from the first **l** letters of the Latin alphabet.
 -	Character 5: a digit from **1** to **n, greater than the first 2 digits**.
 
-### Input
+### Input Data
 
 The input is read from the console and consists of **two integers: n** and **l** within the range [**1 … 9**], each on a single line.
 
-### Output
+### Output Data
 
 Print on the console **all "stupid" passwords in alphabetical order**, separated by **space**.
 
@@ -57,7 +57,7 @@ To **read** the **input** we will declare two integer variables **`int`**: **`n`
 
 Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** - **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
 
-#### Process the Input and Print the Output
+#### Processing the Input Data and Printing Output
 
 We have to create **five** nested **`for`** loops, one for each variable. To ensure that the last digit **d3** is **greater** than the first two, we will use the built-in function **`Math.max(…)`**. 
 
@@ -81,7 +81,7 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-06.png)
 
-### Test your code in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#0](https://judge.softuni.org/Contests/Practice/Index/660#0).
 
@@ -98,11 +98,11 @@ Example: "Magic number" &rarr; 2
 -	121111 &rarr; 1 \* 2 \* 1 \* 1 \* 1 \* 1 = 2
 -	211111 &rarr; 2 \* 1 \* 1 \* 1 \* 1 \* 1 = 2
 
-### Input
+### Input Data
 
 The input is read from the console and consists of **one integer** within the range [**1 … 600 000**].
 
-### Output
+### Output Data
 
 Print on the console **all magic numbers**, separated by **space**.
 
@@ -151,14 +151,14 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#
 
 Write a program that prints on the console all numbers from **N** to **M** that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise, print all numbers up to N** that meet the condition.
 
-### Input
+### Input Data
 
 Read from the console 3 numbers, each on a single line:
 * **N** - integer number: **0 &le; N &lt; M**.
 * **M** - integer number: **N &lt; M &le; 10000**.
 * **S** - integer number: **N &le; S &le; M**.
 
-### Output
+### Output Data
 
 Print on the console, on a single line, all numbers that meet the condition, separated by space.
 
@@ -212,11 +212,11 @@ Write a program that **reads an integer N** and generates all possible **"specia
 - 16 / 1 = 16 **without remainder**
 - 16 / 8 = 2 **without remainder**
 
-### Input
+### Input Data
 
 The input is read from the console and consists of **one integer** within the range **[1 … 600 000]**.
 
-### Output
+### Output Data
 
 Print on the console **all special numbers**, separated by **space**.
 
@@ -250,11 +250,11 @@ Print on the console **N lines**, each containing **M numbers** that are the res
 - N = sum of the first and second digits of the number.
 - M = sum of the first and third digits of the number.
 
-### Input
+### Input Data
 
 The input is read from the **console** and is an integer within the range [**100 … 999**].
 
-### Output
+### Output Data
 
 Print on the console **all integers** that are the result of the calculations above in the respective number of rows and columns as in the examples.
 

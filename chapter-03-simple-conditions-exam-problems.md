@@ -190,7 +190,7 @@ The input data is read from the console and consists of an integer - **Tom's own
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input Data and Relevant Calculations
+#### Input Data
 
 The **input data** will be read in a **single line** that will contain a **whole number** in the range [**0 … 365**]. That's why the variable that'll store the value is going to be of type **`int`**.
 
@@ -262,7 +262,7 @@ The following is expected to be printed on the console:
 
 To solve the problem we'll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.
 
-#### Input Data and Related Calculations
+#### Input Data
 
 First, we need to **check** what **input data** is expected and choose an adequate type for each of the **variables** that will store this data.
 

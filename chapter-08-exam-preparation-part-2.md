@@ -240,7 +240,7 @@ Read from the console a **sequence of numbers, each on a separate line**:
 * On the first line – **the number of students who attended the exam** – an integer within the range [**1 … 1000**].
 * For **each individual student** on a separate line – **the grade on the exam** – a real number within the range [**2.00 … 6.00**].
 
-## Output data
+### Output Data
 
 Print on the console **5 lines** that hold the following information:
 * "Top students: {percentage of students with grade of 5.00 or more}%".
