@@ -31,7 +31,7 @@ It most often has a **size `1`** and in that case instead of writing **`i += 1`*
 
 The following is a series of examples, the solution of which will help us better understand the use of the **step** in the **`for`** loop.
 
-### Example: Numbers from 1 to N with step 3
+### Problem: Numbers from 1 to N with step 3
 
 Write a program that prints the numbers **from 1 to n** with a **step 3**. For example, **if n = 100**, the result will be **1, 4, 7, 10, …, 94, 97, 100**. 
 
@@ -48,7 +48,7 @@ We can solve the problem through the following sequence of actions (algorithm):
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#0](https://judge.softuni.org/Contests/Practice/Index/659#0).
 
 
-### Example: Numbers from N to 1 in reverse order
+### Problem: Numbers from N to 1 in reverse order
 
 Write a program that prints the numbers **from n to 1 in reverse order** (step -1). For example, **if n = 100**, the result will be **100, 99, 98, …, 3, 2, 1**.
 
@@ -67,7 +67,7 @@ We can solve the problem in the following way:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#1](https://judge.softuni.org/Contests/Practice/Index/659#1).
 
 
-### Example: Numbers from 1 to 2^n with a for loop
+### Problem: Numbers from 1 to 2^n with a for loop
 
 In the following example, we will have a look at using the usual step with size 1 but with a slightly different logic in the body of the loop.
 
@@ -80,7 +80,7 @@ Write a program that prints the numbers ** from 1 to 2^n ** (two to the power of
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#2](https://judge.softuni.org/Contests/Practice/Index/659#2).
 
 
-### Example: Even powers of 2
+### Problem: Even powers of 2
 
 Print the **even** powers of **2** to **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, the result will be **1, 4, 16, 64, 256, 1024**.
 
@@ -111,7 +111,7 @@ In programming, the **` while` loop** is used when we want to **repeat** the exe
 The following is a series of examples, the solution of which will help us better understand the use of the **`while`** loop.
 
 
-### Example: Sequence of 2k+1 numbers
+### Problem: Sequence of 2k+1 numbers
 
 Write a program that prints all **numbers ≤ n** from the sequence: **1, 3, 7, 15, 31**, …, having in mind that each next number = **previous number \* 2 + 1**.
 
@@ -130,7 +130,7 @@ Here is a sample representation of the described steps:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#4](https://judge.softuni.org/Contests/Practice/Index/659#4).
 
 
-### Example: Numbers in range [1 … 100]
+### Problem: Numbers in range [1 … 100]
 
 Enter an integer in the range [**1 … 100**]. If it is invalid, input an integer again. In this case, we will consider any number that **is not** in the specified range as invalid.
 
@@ -185,7 +185,7 @@ while b ≠ 0
 print a;
 ```
 
-### Example: Greatest Common Divisor (GCD)
+### Problem: Greatest Common Divisor (GCD)
 
 Enter **integers** **a** and **b** and find **GCD(a, b)**.
 
@@ -215,7 +215,7 @@ The next type of loop we will get acquainted with is the **`do-while`**. It rese
 The following is the usual series of sample problems, the solution of which will help us better understand the use of the **`do-while`** loop.
 
 
-### Example: Calculating factorial
+### Problem: Calculating factorial
 
 Calculate **n! = 1 \* 2 \* 3 \* … \* n**, where **n** is a natural number. For example, if **n = 5**, the result will be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
@@ -236,7 +236,7 @@ Here is how we can calculate the factorial:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#7](https://judge.softuni.org/Contests/Practice/Index/659#7).
 
 
-### Example: Sum of a number's digits
+### Problem: Sum of a number's digits
 
 Sum the digits of a **positive** integer **n**. For example, if **n = 5634**, the result will be: 5 + 6 + 3 + 4 = **18**.
 
@@ -286,7 +286,7 @@ We already know that the infinite loop executes a specific code to infinity, but
 <td>The <b><code>break</code></b> operator stops the loop execution at the moment it is called and continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed and, accordingly the rest of the code in the body of the loop will not be executed. </td>
 </tr></table>
 
-### Example: Prime numbers
+### Problem: Prime numbers
 
 The next problem we are going to solve requires to conduct a **prime number check**. Before proceeding with it, let’s remember what prime numbers are.
 
@@ -311,7 +311,7 @@ Here are a few examples of composite numbers:
 <td>We can optimize the algorithm by checking the divisors to <code><strong>√n</strong></code> instead to <code><strong>n-1</strong></code>. Think about the reason why.</td>
 </tr></table>
 
-### Example: Prime number verification. The break operator
+### Problem: Prime number verification. The break operator
 
 Check if a number **n** is prime. To do so, we will check if **n** is divisible by the numbers between 2 and √n. 
 
@@ -332,7 +332,7 @@ Here is a sample implementation of the described algorithm:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#9](https://judge.softuni.org/Contests/Practice/Index/659#9).
 
 
-### Example: Break operator in an infinite loop
+### Problem: Break operator in an infinite loop
 
 Write a program that checks if a number **n** is even – if it is, prints it on the screen. An even number is each number that is divisible by 2 without a remainder. In the case of an invalid number, it should be re-input, and a message stating that the number is not even should be displayed. 
 
@@ -410,7 +410,7 @@ The **`try-catch`** construction has different types, but for now, we will get a
  
 In the next problem, we will see how to handle a situation where the user enters an input other than a number (for example, **`string`** instead of **`int`**) using ** `try-catch` **.
 
-### Example: Handling invalid numbers with try-catch
+### Problem: Handling invalid numbers with try-catch
 
 Write a program that checks if a number **n** is even – if it is, print in on the screen. Upon entering an **invalid number**, a message appears stating that the input data is not a valid number, and another input data must be made.
 

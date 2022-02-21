@@ -75,7 +75,7 @@ A method can be called from **its own body**. It is called **recursion** and you
 
 It is important to know that if a method is declared in a class, it can be called before the line, on which it has been declared.
 
-### Example: Blank receipt
+### Problem: Blank receipt
 
 Write a method that prints a blank receipt. The method should call another three methods: one to print the upper part, one for the middle part of the receipt, and one for the bottom part.
 
@@ -134,7 +134,7 @@ Let's look at the example for declaring a method, which has several parameters o
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-### Example: Sign of an integer
+### Problem: Sign of an integer
 
 Create a method that prints the sign of an integer **n**.
 
@@ -163,7 +163,7 @@ The next step is to read the input number and to call the new method from the bo
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#1](https://judge.softuni.org/Contests/Practice/Index/665#1).
 
 
-### Example: Printing a triangle
+### Problem: Printing a triangle
 
 Create a method that prints a triangle as shown in the examples.
 
@@ -198,7 +198,7 @@ Finally, we will print the **bottom part** from the triangle, but this time with
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#2](https://judge.softuni.org/Contests/Practice/Index/665#2).
 
 
-### Example: Draw a filled square
+### Problem: Draw a filled square
 
 Print on the console a filled square with side **n**, as in the examples below.
 
@@ -297,7 +297,7 @@ Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
 ```
 
-### Example: Calculating triangle area
+### Problem: Calculating triangle area
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
@@ -322,7 +322,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#4](https://judge.softuni.org/Contests/Practice/Index/665#4).
 
 
-### Example: Power of a number
+### Problem: Power of a number
 
 Write a method that calculates and returns the result the power of a number. 
 
@@ -373,7 +373,7 @@ Let's look at the following **example**: we have two methods with different retu
 
 ![](assets/chapter-10-images/14.Method-overloading-02.png)
 
-### Example: Greater of two values
+### Problem: Greater of two values
 
 The input is two values of the same type. The values can be of **`int`**, **`char`**, or **`String`** type. Create a method **`getMax()`** that returns, as a result, the greater of the two values.
 

@@ -21,7 +21,7 @@ In programming, we can compare values using the following **operators**:
 
 When comparing values, the result is of boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
 
-### Examples for Comparing Numbers
+### Problems for Comparing Numbers
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
@@ -68,7 +68,7 @@ if (condition) {
 }
 ```
 
-### Example: Excellent Grade
+### Problem: Excellent Grade
 
 **Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -96,7 +96,7 @@ if (condition) {
 }
 ```
 
-### Example: Excellent Grade or Not
+### Problem: Excellent Grade or Not
 
 Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
@@ -135,7 +135,7 @@ Executing the code with curly brackets will output the following result on the c
 <td>Both use cases are <strong>correct</strong> and could be used depending on the situation and/or the specific requirements, but you always must be careful and check the expected results.</td>
 </tr></table>
 
-### Example: Even or Odd Number
+### Problem: Even or Odd Number
 
 Write a program that checks whether an integer is **even** or **odd**.
 
@@ -154,7 +154,7 @@ Executing the above code will output the following result:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#2](https://judge.softuni.org/Contests/Practice/Index/651#2).
 
 
-### Example: The Greater Number
+### Problem: The Greater Number
 
 Write a program that reads two integer numbers, from the console, and return the greater one. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
@@ -197,7 +197,7 @@ if (condition) {
 }
 ```
 
-### Example: Digits 0..9 to Text
+### Problem: Digits 0..9 to Text
 
 Print a given digit, in rage from 1 to 9, in English (the digit is read from the console). 
 

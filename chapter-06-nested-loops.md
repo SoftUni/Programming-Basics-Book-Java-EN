@@ -10,7 +10,7 @@ This chapter will discuss **nested loops in Java language**. We will use **`for`
   https://youtu.be/FU90zeFZZFs</a>.
 </div>
 
-### Example: A rectangle with a size of 10 x 10 asterisks
+### Problem: A rectangle with a size of 10 x 10 asterisks
 
 Write a program that draws a rectangle of **10 x 10** asterisks in the console.
 
@@ -30,7 +30,7 @@ How does the example work? The control variable of the **loop (`i = 0`)** is ini
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#0](https://judge.softuni.org/Contests/Practice/Index/657#0).
 
 
-### Example: A rectangle with a size of N x N asterisks
+### Problem: A rectangle with a size of N x N asterisks
 
 Write a program that reads an integer **n** from the console, and as output, draws a **rectangle with a size of n x n asterisks**.
 
@@ -64,7 +64,7 @@ Here is an **example** that illustrates the nested loops. The goal is to print a
 
 How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
-### Example: A square with a size of 10 x 10 asterisks
+### Problem: A square with a size of 10 x 10 asterisks
 
 Write a program that draws on the console a square of **N x N** asterisks: 
 
@@ -83,7 +83,7 @@ The problem is similar to the previous one. Here, it is necessary to consider ho
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#2](https://judge.softuni.org/Contests/Practice/Index/657#2).
 
 
-### Example: A triangle of dollar signs
+### Problem: A triangle of dollar signs
 
 Write a program that reads an integer number **n** from the console and returns as output **a triangle of dollar signs**.
 
@@ -102,7 +102,7 @@ The problem is **similar** to those for drawing **rectangle** and **square**. We
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#3](https://judge.softuni.org/Contests/Practice/Index/657#3).
 
 
-### Example: Square frame 
+### Problem: Square frame 
 
 Write a program that reads an integer number **n** from the console and returns as output **a square frame** with a size of **n \* n**.
 
@@ -131,7 +131,7 @@ Here is an example implementation of the described logic above, with nested loop
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#4](https://judge.softuni.org/Contests/Practice/Index/657#4).
 
 
-### Example: A diamond of asterisks 
+### Problem: A diamond of asterisks 
 
 Write a program that reads an integer number **n** from the console and returns as output **a diamond of asterisks** with a size of **n**.
 
@@ -162,7 +162,7 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#5](https://judge.softuni.org/Contests/Practice/Index/657#5).
 
 
-### Example: Christmas tree
+### Problem: Christmas tree
 
 Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the console and returns as output **Christmas tree** with a height of **n+1**.
 
@@ -189,7 +189,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#
 
 Let's look at a few exercises about how we can draw figures on the console with more complex logic. To solve these problems, we need to think more about the program logic before we begin writing.
 
-### Example: Sunglasses 
+### Problem: Sunglasses 
 
 Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the console and returns as output **sunglasses** with a size of **5\*n x n**, just like the examples below.
 
@@ -218,7 +218,7 @@ When printing the **middle** part, we need to **check** whether the line is **`(
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#7](https://judge.softuni.org/Contests/Practice/Index/657#7).
 
 
-### Example: House
+### Problem: House
 Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
@@ -315,7 +315,7 @@ After we have finished with the roof, it is time for the base. It is easier to p
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#8](https://judge.softuni.org/Contests/Practice/Index/657#8).
 
 
-### Example: Diamond 
+### Problem: Diamond 
 
 Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from the console and returns as output **a diamond** with a size of **n**, just like the examples below.
 

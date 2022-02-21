@@ -24,7 +24,7 @@ When declaring the loop, an **initial value** and an **end value** are specified
 
 In most cases, a **`for` loop** is run from **`1`** to **`n`** times(for example from 1 to 10). The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n, and for each number to perform a particular action. In the example above, the **`i`** variable takes values from 1 to 10, and the current value is printed in the body of the loop. The loop repeats 10 times, and each of these repetitions is called an "**iteration**".
 
-### Example: Numbers from 1 to 100
+### Problem: Numbers from 1 to 100
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line. 
 
@@ -52,7 +52,7 @@ In software development, we regularly need to write loops dozens of times a day.
 
 **Try it yourself** in order to master using the code snippet for **`for` loop** in IntelliJ IDEA.
 
-### Example: Numbers ending in 7
+### Problem: Numbers ending in 7
 
 Write a program that finds all numbers within the range [**1 … 1000**] that ends with 7. 
 
@@ -67,7 +67,7 @@ We can solve the problem by combining a **`for` loop**, which will go through th
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#1](https://judge.softuni.org/Contests/Practice/Index/655#1).
 
 
-### Example: Latin letters 
+### Problem: Latin letters 
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
@@ -82,7 +82,7 @@ It is good to know that the **`for` loops** don't work only with numbers. We can
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#2](https://judge.softuni.org/Contests/Practice/Index/655#2).
 
 
-### Example: Sum numbers 
+### Problem: Sum numbers 
 
 Write a program that **reads `n` integers from the console and calculates the sum**.
 
@@ -117,7 +117,7 @@ Below you can find the source code for the solution:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#3](https://judge.softuni.org/Contests/Practice/Index/655#3).
 
 
-### Example: Max number
+### Problem: Max number
 
 Write a program that inputs **n integers** (**n** > 0) and finds the **the Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
@@ -142,7 +142,7 @@ We enter the first number **`n`** (the number of integers to be entered). We ass
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#4](https://judge.softuni.org/Contests/Practice/Index/655#4).
 
 
-### Example: Min number
+### Problem: Min number
 
 Write a program that inputs **n integers** (**n** > 0) and finds **the Min Number** among them.  The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples: 
 
@@ -165,7 +165,7 @@ The problem is identical to the previous one, but this time we will start with a
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#5](https://judge.softuni.org/Contests/Practice/Index/655#5).
 
 
-### Example: Left and right sum
+### Problem: Left and right sum
 
 Write a program that inputs **2 \* n integers** and checks if the **sum of the first n numbers** (left sum) is equal to the **sum of the second n numbers** (right sum). If the sums are equal, print **"Yes" + sum**, if not, print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 
@@ -186,7 +186,7 @@ Input the number **n**, after that the first **n** numbers (**left** half) and s
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#6](https://judge.softuni.org/Contests/Practice/Index/655#6).
 
 
-### Example: Even \/ odd sum 
+### Problem: Even \/ odd sum 
 
 Write a program that inputs **n integers** and checks if **the sum of numbers on even positions** is equal to **the sum of numbers on odd positions**. If the sums are equal, print **"Yes" + sum**, otherwise print **"No" + difference**. Calculate the difference as a positive number (absolute value). The format of the output must be identical to the examples below.
 

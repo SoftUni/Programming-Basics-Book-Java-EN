@@ -52,7 +52,7 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Example: Calculating the area of the square with side **a**
+### Problem: Calculating the area of the square with side **a**
  
 As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
@@ -135,7 +135,7 @@ Scanner scanner = new Scanner(System.in);
 Double num = scanner.nextDouble();
 ```
 
-### Example: Converting inches into centimeters
+### Problem: Converting inches into centimeters
 
 Write a program that reads a floating-point number (representing inches) as an input from the console, converts it to centimeters, and print the result as output:
 
@@ -169,7 +169,7 @@ String str = scanner.nextLine();
 ```
 Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because by default, the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If we do not parse to a number, each number will be just **text** for the program, and **we can not do** arithmetic operations with them.
 
-### Example: Greeting by name
+### Problem: Greeting by name
 
 Write a program that reads the user's name as input from the console and greets him with the text **Hello, *name***, where ***name*** is the name read as input data.
 
@@ -345,7 +345,7 @@ int expr = (3 + 5) * (4 – 2);
 ```
 The standard rule for the precedence of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**, but we already know all of that from math.
 
-### Example: Calculating trapezoid area
+### Problem: Calculating trapezoid area
 
 Write a program that reads as input from the console the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
 
@@ -372,7 +372,7 @@ Trapezoid area = 17.5
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
-### Example: Circle area and perimeter 
+### Problem: Circle area and perimeter 
 
 Write a program that reads as input from the console a **radius r** of a circle, and **calculates its area and perimeter**.
 
@@ -399,7 +399,7 @@ Let’s test the program with **radius `r = 10`**:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
-### Example: 2D rectangle area
+### Problem: 2D rectangle area
 
 A rectangle is given with the **coordinates of two of its opposite angles**. Write a program that calculates its **area and perimeter**:
 

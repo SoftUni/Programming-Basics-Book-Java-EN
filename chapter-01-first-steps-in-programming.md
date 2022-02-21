@@ -71,7 +71,7 @@ The compilation process of the code, before its execution, is used only in compi
 ### Computer Programs – Examples
 Let us start with a simple example Java program, which consists of a single command.
 
-#### Example – a Command Which Prints a Given Text
+#### Problem – a Command Which Prints a Given Text
 Our first program will consist of a **single Java command** which prints the word *"Hello"*
 ```java
 System.out.println("Hello");
@@ -79,13 +79,13 @@ System.out.println("Hello");
 
 In a moment, we will get to know **how to execute this command**, but for now, we will just stick to what commands in programming consist of. Let us have a look at a few more examples.
 
-#### Example: A Program Which Checks Whether a Word Contains Another Word
+#### Problem: A Program Which Checks Whether a Word Contains Another Word
 We can check whether the word "alright" consist of the word "right" using the **contains** method:
 ```java
 System.out.println("alright".contains("right"));
 ```
 
-#### Example: A Program Which Converts Bulgarian BGNs (leva) into Euro
+#### Problem: A Program Which Converts Bulgarian BGNs (leva) into Euro
 Let us have a look at another simple program which reads a number of levs (Bulgaria's currency) (whole number) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of three consecutive commands.
 ```java
 Scanner console = new Scanner(System.in);
@@ -176,7 +176,7 @@ There are also **online development environments** which allow you to write code
 ### Project Solutions and Projects in IntelliJ IDEA
 The IntelliJ IDEA project uses **logic to group the numerous files** that make up a specific application or component. A single **IntelliJ IDEA project** consists of several **Java source files**, configuration files, and other resources. Each Java source file can have several **definitions and types** (classes or other definitions). **Classes** contain methods (actions), which consist of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for a good organization of our work files.
 
-### Example: Creating a 'Hello Java' Console Program
+### Problem: Creating a 'Hello Java' Console Program
 Let us get back to our console program. Now that we have IntelliJ IDEA installed, we can run it. Then we will create a new project: **[Create New Project]**. Choose **[Java]** -> **[Command Line App]** from the dialog window and give our project an appropriate name – `HelloJava`, for instance.
 
 ![](assets/chapter-1-images/01.Hello-java-01.png)
