@@ -15,7 +15,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 
 ## The Online Evaluation System (Judge)
 
-**All exams and exercises** from this book are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.In the **Judge** system, you can log in with your **softuni.bg account**.
+**All exams and exercises** from this book are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** \(zero point\) tests to help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.
 
 **How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile it as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 

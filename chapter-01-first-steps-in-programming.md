@@ -236,7 +236,7 @@ The Judge System will display one of the following possible results in the table
 * If there are syntactic errors in our program, we receive a **compile time error message**.
 
 ### How Do I Register at SoftUni Judge?
-Just use your id (Username + Password) for the [softuni.bg](softuni.bg) website. If you haven't yet registered, go right ahead – it's just a standard website registration and takes no more than a minute.
+It's just a standard website registration and takes no more than a minute.
 
 ## Typical Mistakes in Java Programs
 One mistake that often sees with beginners is that they write their **code outside the body of the `main(String[] args)` method**. It causes an error because the integrated environment or the compiler cannot read the commands issued in the program correctly. Here is an example of an incorrect program:
@@ -347,7 +347,7 @@ Let's now **start the program** and check whether the result is what we're expec
 
 ### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#2](https://judge.softuni.org/Contests/Practice/Index/646#2).
-Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.bg/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
+Now try and think of a cleverer way we can write this program, to avoid repeating the same command so many times. Look up information for "**[for loop Java](https://www.google.com/search?q=for+loop+Java&oq=for+loop+Java)**" on the Internet.
 
 ### Exercise: Triangle of 55 Stars
 Write a Java console program that **prints a triangle of 55 stars** on 10 lines:

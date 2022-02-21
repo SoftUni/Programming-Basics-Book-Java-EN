@@ -543,4 +543,4 @@ Add [**Triangle**] button, which draws three triangles with 22 vertices each, as
 
 Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times for the three triangles.
 
-If you have a problem with the exercises above, ask for help in the official **SoftUni forum**: https://softuni.bg/forum.
+If you have a problem with the exercises above, ask for help in the official **SoftUni Reddit Forum**: https://www.reddit.com/r/softuni/.
