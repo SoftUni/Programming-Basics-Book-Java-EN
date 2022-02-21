@@ -241,7 +241,7 @@ From the [**Variables**] window we can observe **the changes in the local variab
 
 In this section, we will recall some **tricks and techniques** in programming with Java, already seen in this book, which can be very useful if you attend an exam for beginner programming.
 
-### Formatted output with printf()
+### Formatted Output with printf()
 
 For printing long and complex sequences of elements, we can use the **`printf(…)`** method. This method is an abbreviation of "Print Formatted". The main idea of **`printf(…)`** is to take a **special string** formatted with special **formatting symbols** and a comma-separated list of values that have to substitute the **formatting specifiers**.
 
@@ -275,7 +275,7 @@ System.out.printf("%s %d %s \n", str, number, str);
 // This will print on the console "some text 5 some text"
 ```
 
-### Rounding of floating-point numbers
+### Rounding of Floating-Point Numbers
 
 Real numbers are represented in Java with the types **`float`** and **`double`**.
 
@@ -310,7 +310,7 @@ System.out.println(Math.ceil(numberToCeiling));
 // This will print on the console 6.0
 ```
 
-### Formatting with 2 Digits After the Decimal Point
+### Formatting with 2 Digits After Tthe Decimal Point
 
 When we print numbers, we often need to round them to 2 digits after the decimal point, e.g.
 
