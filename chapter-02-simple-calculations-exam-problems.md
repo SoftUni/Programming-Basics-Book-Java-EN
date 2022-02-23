@@ -16,7 +16,7 @@ int num = Integer.parseInt(scanner.nextLine());
 
 ### Reading a Floating-Point Number
 
-We read a floating-point number the same way we read an integer, but this time we use the function **`double.parseDouble(…)`**:
+We read a floating-point number the same way we read an integer, but this time we use the function **`Double.parseDouble(…)`**:
 
 ```java
 double num = Double.parseDouble(scanner.nextLine());

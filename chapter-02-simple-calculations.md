@@ -685,7 +685,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 ### Exercise: Triangle area
 
-Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area, 2)`**.
+Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area*100.00)/100.00)`**.
 
 #### Sample Input and Output
 
