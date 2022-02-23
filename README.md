@@ -34,7 +34,7 @@ Watch Part #1 of the free video Java Basics course, coming with the book: https:
 
 Watch Part #2 of the free video Java Basics course, coming with the book: https://youtu.be/CI8XUpIEoy4.
 
-## Download the Book
+## Download The Book
 
 Download the book "**Programming Basics with Java**" in **PDF** format:
 * <a href="#">TODO</a>
