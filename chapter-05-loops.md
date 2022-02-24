@@ -442,7 +442,7 @@ To create a method that draws a triangle in **`MyTurtle.java`** we find the empt
 This code moves and rotates the turtle, which is initially in the center of the screen (in the middle of the shape) and draws an equilateral triangle. 
 You can edit and play with it.
 
-**We start** the application with [** Shift + F10**]. We test it if it works (press the [**Draw**] button several times):
+**We start** the application with [**Shift + F10**]. We test it if it works (press the [**Draw**] button several times):
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-08.png)
 
