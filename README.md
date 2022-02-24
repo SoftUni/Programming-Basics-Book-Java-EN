@@ -1,6 +1,6 @@
 # Free Book "Programming Basics with Java"
 
-The free book **Programming Basics with Java** introduces readers to writing entry-level programming code (working with data, checks, loops, and methods) with the Java language.
+The free book **Programming Basics with Java** introduces readers to writing entry-level programming code (working with data, conditional statements, loops, and methods) with the Java language.
 
 <a href="#"><img src="/assets/Java-Programming-Basics-Book-Cover.png" alt="Programming Basics with Java Book - Cover" class="readme-book-cover-image"/></a>
 
