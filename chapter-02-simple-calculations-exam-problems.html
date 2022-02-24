@@ -311,7 +311,7 @@
                 <a href="chapter-08-exam-preparation.html">
             
                     
-                    8.1. Practical Exam Preparation – part I
+                    8.1. Practical Exam Preparation – Part I
             
                 </a>
             
@@ -324,7 +324,7 @@
                 <a href="chapter-08-exam-preparation-part-2.html">
             
                     
-                    8.2. Practical Exam Preparation – part II
+                    8.2. Practical Exam Preparation – Part II
             
                 </a>
             
@@ -442,24 +442,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-22-simple-calculations---exam-problems"><a name="chapter-22-simple-calculations---exam-problems" class="plugin-anchor" href="#chapter-22-simple-calculations---exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 2.2. Simple calculations - Exam problems</h1>
+                                <h1 id="chapter-22-simple-calculations---exam-problems"><a name="chapter-22-simple-calculations---exam-problems" class="plugin-anchor" href="#chapter-22-simple-calculations---exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 2.2. Simple calculations - Exam Problems</h1>
 <p>In the previous chapter, we got familiar with the system console and how to work with it &#x2013; how to <strong>read numbers</strong> from the console and <strong>print an output</strong> on the console. We went through the bacis arithmetical operations and briefly mentioned data types. In this chapter, we will practice and consolidate what we have learned so far. We will solve a few <strong>more complicated problems</strong> given as exams problems.</p>
-<h2 id="reading-numbers-from-the-console"><a name="reading-numbers-from-the-console" class="plugin-anchor" href="#reading-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading numbers from the console</h2>
+<h2 id="reading-numbers-from-the-console"><a name="reading-numbers-from-the-console" class="plugin-anchor" href="#reading-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Numbers from The Console</h2>
 <p>Before moving on to the examples, we will recall the most important of the material we have studied in the previous chapter. We will start with reading numbers from the console.</p>
-<h3 id="reading-an-integer"><a name="reading-an-integer" class="plugin-anchor" href="#reading-an-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Reading an integer</h3>
+<h3 id="reading-an-integer"><a name="reading-an-integer" class="plugin-anchor" href="#reading-an-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Reading an Integer</h3>
 <p>We need to create a variable to store the number (for example <strong><code>num</code></strong>) and to use the standard command to read data from the console in combination with the function <strong><code>Integer.parseInt(&#x2026;)</code></strong> which converts text into an integer:</p>
 <pre><code class="lang-java"><span class="hljs-keyword">int</span> num = Integer.parseInt(scanner.nextLine());
 </code></pre>
-<h3 id="reading-a-floating-point-number"><a name="reading-a-floating-point-number" class="plugin-anchor" href="#reading-a-floating-point-number"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a floating-point number</h3>
-<p>We read a floating-point number the same way we read an integer, but this time we use the function <strong><code>double.parseDouble(&#x2026;)</code></strong>:</p>
+<h3 id="reading-a-floating-point-number"><a name="reading-a-floating-point-number" class="plugin-anchor" href="#reading-a-floating-point-number"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Floating-Point Number</h3>
+<p>We read a floating-point number the same way we read an integer, but this time we use the function <strong><code>Double.parseDouble(&#x2026;)</code></strong>:</p>
 <pre><code class="lang-java"><span class="hljs-keyword">double</span> num = Double.parseDouble(scanner.nextLine());
 </code></pre>
-<h2 id="printing-text-using-format-specifiers"><a name="printing-text-using-format-specifiers" class="plugin-anchor" href="#printing-text-using-format-specifiers"><i class="fa fa-link" aria-hidden="true"></i></a>Printing text using format specifiers</h2>
+<h2 id="printing-text-using-format-specifiers"><a name="printing-text-using-format-specifiers" class="plugin-anchor" href="#printing-text-using-format-specifiers"><i class="fa fa-link" aria-hidden="true"></i></a>Printing Text Using Format Specifiers</h2>
 <p>The <strong>format specifier</strong> is an expression that will be replaced with a particular value while printing the output. The method <strong><code>System.out.printf(&#x2026;)</code></strong> supports printing a string using format specifiers with the following format <strong><code>System.out.printf(&quot;format-string&quot;[, arg1, arg2, &#x2026; ])</code></strong>. As the first parameter of the method, we put the formatted string. As the second parameter of the method, we put so many arguments as the number of specifiers in the formatted string.</p>
 <pre><code class="lang-java">System.out.printf(<span class="hljs-string">&quot;You are %s %s, a %d-years old person from %s.&quot;</span>,
   firstName, lastName, age, town);
 </code></pre>
-<h2 id="arithmetic-operators"><a name="arithmetic-operators" class="plugin-anchor" href="#arithmetic-operators"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic operators</h2>
+<h2 id="arithmetic-operators"><a name="arithmetic-operators" class="plugin-anchor" href="#arithmetic-operators"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic Operators</h2>
 <p>Let us recall basic arithmetic operators for simple calculations.</p>
 <h3 id="operator-"><a name="operator-" class="plugin-anchor" href="#operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Operator +</h3>
 <pre><code class="lang-java"><span class="hljs-keyword">int</span> result = <span class="hljs-number">3</span> + <span class="hljs-number">5</span>; <span class="hljs-comment">// the result is 8</span>
@@ -482,16 +482,16 @@ String lastName = <span class="hljs-string">&quot;Ivanov&quot;</span>;
 String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <span class="hljs-string">&quot; is &quot;</span> + age + <span class="hljs-string">&quot; years old&quot;</span>;
 <span class="hljs-comment">// Ivan Ivanov is 19 years old</span>
 </code></pre>
-<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam problems</h2>
+<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>Now, after we have recalled how to make simple calculations, read and print numbers on the console, let&apos;s move to the problems. We will solve several <strong>problems from a SoftUni entrance exam</strong>.</p>
-<h2 id="problem-training-lab"><a name="problem-training-lab" class="plugin-anchor" href="#problem-training-lab"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Training lab</h2>
-<p><strong>A training lab</strong> has a rectangular size <strong>l</strong> and <strong>w</strong> meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are <strong>rows with desks</strong>. In the back of the hall, there is a big <strong>entrance door</strong>. In the front, there is a podium with a <strong>chair</strong> for the teacher. A single <strong>working place</strong> occupies <strong>70 x 120 cm</strong> (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). <strong>The hallway</strong> has a width of at least <strong>100 cm</strong>. It is known that because of the <strong>entrance door</strong> (which has an opening of 160cm) <strong>exactly one working space is lost</strong> and because of the <strong>teacher&apos;s chair</strong> (which has a size of 160 x 120 cm) are lost exactly <strong>2 working places</strong>. Write a program that reads the size of the classroom as input data and calculates the <strong>number of working places in it</strong> as it is described (look at the figure below).</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="problem-training-lab"><a name="problem-training-lab" class="plugin-anchor" href="#problem-training-lab"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Training Lab</h3>
+<p><strong>A training lab</strong> has a rectangular size <strong>l</strong> and <strong>w</strong> meters without columns on the inside. The classroom is divided into two parts - left and right with a hallway located approximately in the middle of the room. In both parts, there are <strong>rows with desks</strong>. In the back of the hall, there is a big <strong>entrance door</strong>. In the front, there is a podium with a <strong>chair</strong> for the teacher. A single <strong>working place</strong> occupies <strong>70 x 120 cm</strong> (a desk with size 70 x 40 cm + space for a chair with size 70 x 80 cm). <strong>The hallway</strong> has a width of at least <strong>100 cm</strong>. It is known that because of the <strong>entrance door</strong> (which has an opening of 160cm) <strong>exactly one working space is lost</strong> and because of the <strong>podium</strong> (which has a size of 160 x 120 cm) are lost exactly <strong>2 working places</strong>. Write a program that reads the size of the classroom as input data and calculates the <strong>number of working places in it</strong> as it is described (look at the figure below).</p>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>As input data, we will read <strong>2 numbers</strong> from the console, each on a separate line: <strong>l</strong> (length in meters) and <strong>w</strong> (width in meters).</p>
 <p>Constraints: <strong>3 &#x2264; w &#x2264; l &#x2264; 100</strong>.</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console one integer number: <strong>the number of working places</strong> in the classroom.</p>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -513,15 +513,15 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 </tr>
 </tbody>
 </table>
-<h4 id="explanations-to-the-examples"><a name="explanations-to-the-examples" class="plugin-anchor" href="#explanations-to-the-examples"><i class="fa fa-link" aria-hidden="true"></i></a>Explanations to the examples</h4>
+<h4 id="explanations-to-the-examples"><a name="explanations-to-the-examples" class="plugin-anchor" href="#explanations-to-the-examples"><i class="fa fa-link" aria-hidden="true"></i></a>Explanations to The Examples</h4>
 <p>In the first example, the training lab length is 1500 cm. There could be located <strong>12 rows</strong> (12 * 120 cm = 1440 + 60 cm residue). The training lab width is 890 cm. From them 100 cm are for the hallway in the middle. In the rest 790 cm could be located <strong>11 desks per row</strong> (11 * 70 cm = 770 cm + 20 cm residue). <strong>Number of working places = 12 * 11 - 3</strong> = 132 - 3 = <strong>129</strong> (we have 12 rows with 11 working places = 132 minus 3 working places for podium and entrance door).</p>
 <p>In the second example, the training lab length is 840 cm. There could be located <strong>7 rows</strong> (7 * 120 cm = 840, without residue). The training lab width is 520 cm. From them 100 cm are for the hallway in the middle. In the rest 420 cm could be located <strong>6 desks per row</strong> (6 * 70 cm = 420 cm, without residue). <strong>Number of working places = 7 * 6 - 3</strong> = 42 - 3 = <strong>39</strong> (We have 7 rows with 6 working places per row = 42 minus 3 working places for podium and entrance door).</p>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
-<p>Try to solve the problem on your own first. If you fail, use the hints and guidelines below.</p>
-<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An idea for a solution</h4>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Try to solve the problem on your own first. If you fail, use the Hints and Guidelines below.</p>
+<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An Idea for a Solution</h4>
 <p>In any programming problem, the <strong>important part is to build an idea for its solution</strong> before starting to write code. Let&apos;s carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab where the number depends on the length and height of the room. We notice that the provided input data will be in <strong>meters</strong>, but we have the sizes for working places, and the hallway is in <strong>centimeters</strong>. To do the calculations, we must use the same measuring units no matter whether we choose to convert length and height into centimeters or the other data in meters. We use the first option for the presented solution.  </p>
 <p>Next, we have to calculate <strong>how many columns and how many rows</strong> with desks will fit in the training lab. We can calculate the columns by <strong>subtracting the width by the necessary space for the hallway (100 cm)</strong> and <strong>divide the difference by 70 cm</strong> (the length of a working place). We will find the rows by dividing the <strong>length by 120 cm</strong>. In both operations, as a result, we can receive a number with integer and fractional parts. <strong>In a variable, we should store only the integer part</strong>. In the end, we multiply the number of rows by the number of columns and divide it by 3 (lost the working places because of the entrance door and podium), and we will receive the required value.</p>
-<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing data types</h4>
+<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
 <p>From the example input data, it looks like we can get a number with integer and fractional parts. For that reason, it is not appropriate to choose <strong><code>int</code></strong> data type. Therefore we will use <strong><code>double</code></strong>. Selecting the correct data type for the variables depends on the method we choose to solve the problem. Any programming problem as and this one also has <strong>more than one way to be solved</strong>. We will describe two methods. </p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>It is time to go to the solution. We can divide it into three smaller problems: </p>
@@ -544,11 +544,11 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <p><img src="assets/chapter-2-2-images/01.Training-lab-05.png" alt=""></p>
 <p>With <strong><code>System.out.println(&#x2026;)</code></strong> we print the result on the console.</p>
 <p><img src="assets/chapter-2-2-images/01.Training-lab-06.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/650#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/650#0</a>.</p>
-<h2 id="problem-vegetable-market"><a name="problem-vegetable-market" class="plugin-anchor" href="#problem-vegetable-market"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Vegetable market</h2>
+<h3 id="problem-vegetable-market"><a name="problem-vegetable-market" class="plugin-anchor" href="#problem-vegetable-market"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Vegetable Market</h3>
 <p>A gardener sells the harvest from his garden on the vegetable market. He sells <strong>vegetables for N BGN per kilogram</strong> and <strong>fruits for M BGN per kilogram</strong>. Write a program to calculate the earnings from the harvest in EUR (assuming that one EUR is equal to BGN 1.94).</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>As input data, we will read <strong>4 numbers</strong> from the console, each on a separate line:</p>
 <ul>
 <li>First line &#x2013; the price of the vegetables, per kilogram &#x2013; a floating-point number.</li>
@@ -557,9 +557,9 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li>Fourth line &#x2013; total kilograms of fruits &#x2013; an integer.</li>
 </ul>
 <p><strong>Constraints</strong>: all numbers will be in the range of <strong>0.00</strong> to <strong>1000.00</strong>.</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>one floating-point number: the earnings of all fruits and vegetables in EUR</strong>.</p>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -584,11 +584,11 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li>The fruits cost: 19.4 BGN * 10 kg.  = <strong>194 BGN</strong></li>
 <li>Total: <strong>195.94 BGN = 101 EUR</strong>. </li>
 </ul>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>First, we will give a few ideas and particular hints for solving the problem, followed by the essential part of the code.</p>
-<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An idea for a solution</h4>
+<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An Idea for a Solution</h4>
 <p>Let&apos;s first go through the problem requirements. In this case, we have to calculate the <strong>total income</strong> from the harvest. It is equal to the <strong>sum of the profit from the fruits and vegetables</strong>, which we can calculate by multiplying <strong>the price per kilogram by the quantity</strong>. Our input data is in leva, and the output should be in EUR. According to the condition 1 Euro equals 1.94lv, so to obtain the requested <strong>output value, we have to divide the sum by 1.94</strong>.</p>
-<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing data types</h4>
+<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
 <p>After we have a clear idea of how to solve the problem, we can proceed to choose appropriate data types. Let&apos;s go through the <strong>input</strong>: we have <strong>two integers</strong> for total kilograms of vegetables and fruits, so the variables we declare to store their values will be of <strong><code>int</code></strong>. The prices of the fruits and vegetables are said to be <strong>floating-point numbers</strong>, so the variables will be of type <strong><code>double</code></strong>.</p>
 <p>We can also declare two variables to store the income from the fruits and vegetables separately. As we are multiplying a variable of type <strong><code>int</code></strong> (total kilograms) with another of <strong><code>double</code></strong> type (price), and the result should also be of type <strong><code>double</code></strong>. Let&apos;s clarify that generally <strong>operators work with arguments of the same type</strong>. Therefore, to multiply values of different data types, we have to convert them into the same type.When there are different types in one expression, conversion is done to the highest type, in this case, in this case <strong><code>double</code></strong>. Because this conversion does not suggest data loss <strong>the conversion is implicit</strong> and is automatically done by the compiler.  </p>
 <p>The <strong>output</strong> should also be a <strong>floating-point number</strong>. This means that the result will be stored in a variable of type <strong><code>double</code></strong>.</p>
@@ -605,13 +605,13 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <p><img src="assets/chapter-2-2-images/02.Vegetable-market-02.png" alt=""></p>
 <p>The problem does not specify special output format, so we just need to calculate the required value and print it on the console. As in mathematics and so in programming, the division has a priority over addition. However, in this problem first, we have to <strong>calculate the sum</strong> of the two input values, and then we have to <strong>divide by 1.94</strong>. To give priority to the addition, we can use brackets. With <strong><code>System.out.println(&#x2026;)</code></strong>, we print the output on the console.  </p>
 <p><img src="assets/chapter-2-2-images/02.Vegetable-market-03.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/650#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/650#1</a>.</p>
-<h2 id="problem-change-of-tiles"><a name="problem-change-of-tiles" class="plugin-anchor" href="#problem-change-of-tiles"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Change of tiles</h2>
-<p>It is needed to be placed tiles on the ground in front of the apartment building. The place is <strong>square with a side of N meters</strong>. The tiles are <strong>W meters wide</strong> and <strong>L meters long</strong>. There is a bench in the area with <strong>a width of M meters</strong> and <strong>a length of O meters</strong>. There is no need to put tiles under it. To place each tile requires <strong>0.2 minutes</strong>.</p>
+<h3 id="problem-change-tiles"><a name="problem-change-tiles" class="plugin-anchor" href="#problem-change-tiles"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Change Tiles</h3>
+<p>On the ground in front of an apartment building <strong>tiles need to be placed</strong>. The place is <strong>square with a side of N meters</strong>. The tiles are <strong>W meters wide</strong> and <strong>L meters long</strong>. There is a bench in the area with <strong>a width of M meters</strong> and <strong>a length of O meters</strong>. There is no need to put tiles under it. To place each tile requires <strong>0.2 minutes</strong>.</p>
 <p>Write a program that reads from the console the dimensions of the ground, the tiles, and the bench. Then calculates <strong>how many tiles are needed</strong> to cover the place and calculates <strong>the time to place all the tiles</strong>. </p>
 <p><strong>Example</strong>: A <strong>ground</strong> with size 20 m. has area of 400 sq.m. <strong>A bench</strong> that is 1 m. wide and 2 m. long has area of 2 sq.m. One <strong>tile</strong> is 5 m. wide and 4 m. long and has area of = 20 sq.m. <strong>The area</strong> that needs to be covered is <strong>400 - 2 = 398 sq.m.</strong> The tiles that are needed are <strong>398 / 20 = 19.90</strong>. The needed <strong>time</strong> is <strong>19.90 * 0.2 = 3.98 minutes.</strong></p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>As input data, we will read <strong>5 numbers</strong> from the console, each on a separate line:</p>
 <ul>
 <li><strong>N &#x2013; the length</strong> of a <strong>side</strong> of the ground within the range of [<strong>1 &#x2026; 100</strong>].</li>
@@ -620,9 +620,9 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li><strong>M &#x2013; the width</strong> of the <strong>bench</strong> in the range of [<strong>0 &#x2026; 10</strong>].</li>
 <li><strong>O &#x2013; the length</strong> of the <strong>bench</strong> in the range of [<strong>0 &#x2026; 10</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>two numbers</strong>, each on a new line: <strong>number of tiles</strong> needed for the repair and <strong>the time for placing them</strong>. </p>
-<h2 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h2>
+<h2 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h2>
 <table>
 <thead>
 <tr>
@@ -650,13 +650,13 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li><strong>Required tiles</strong> = 398 / 20 = 19.9.</li>
 <li><strong>Time required</strong> = 19.9 * 0.2 = 3.98.</li>
 </ul>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Let&apos;s make a drawing to clarify the problem requirements. It can look like this:</p>
 <p><img src="assets/chapter-2-2-images/03.Change-tiles-01.png" alt=""></p>
-<h3 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An idea for a solution</h3>
+<h3 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An Idea for a Solution</h3>
 <p>We need to calculate <strong>the number of tiles</strong> to cover the ground and the <strong>time</strong> for placing them. To <strong>calculate the number of tiles</strong>, we have to calculate the <strong>area that needs to be covered</strong> and to <strong>divide it by the area per tile</strong>. The ground is square, and we find the total area using the formula <strong><code>N * N</code></strong>. After that, we calculate <strong>the area of the bench</strong> by multiplying its two sides <strong><code>M * O</code></strong>. After that, to obtain the area that needs to be cover, we subtract the area of the bench from the area of the ground.</p>
 <p>We calculate the area of a single tile by <strong>multiplying</strong> its two sides with one another - <strong><code>W * L</code></strong>. As we already saied, now we have to <strong>divide</strong> the area to cove by the area of a single tile. In this way, we find the number of necessary tiles, which we multiply by <strong>0.2</strong> (the time needed for changing single tile). Now, we have the required output.</p>
-<h3 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing data types</h3>
+<h3 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h3>
 <p>Input data for the length of the side of the ground, the width, and the length of the bench are <strong>integer numbers</strong>, so to keep their values, we will declare <strong>variables of type <code>int</code></strong>. For the width and the length of the tiles we will read floating-point numbers, so we will use variables of type <strong><code>double</code></strong>. The output will be a floating-point number, so used variables will be of <strong><code>double</code></strong> type. </p>
 <h3 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h3>
 <p>As in the previous problems, we can divide the solution into three subproblems:</p>
@@ -671,9 +671,9 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <p><img src="assets/chapter-2-2-images/03.Change-tiles-03.png" alt=""></p>
 <p>The variables <strong><code>w</code></strong> and  <strong><code>h</code></strong> are of type <strong><code>double</code></strong>, so for the <strong>area of a single tile</strong> we create a variable of the same type. Finally <strong>we calculate the values that we have to print</strong> on the console. <strong>The number</strong> of needed <strong>tiles</strong> we get by <strong>dividing the area that needs to be covered by the area of a single tile</strong>. When dividing two numbers, one of which is <strong>floating-point number</strong> the result is also a <strong>floating-point number</strong>. For the calculations to be correct we store the result in a variable of type <strong><code>double</code></strong>. The problem does not specify special formatting or rounding of the output, so we just print the values with <strong><code>System.out.println(&#x2026;)</code></strong>. </p>
 <p><img src="assets/chapter-2-2-images/03.Change-tiles-04.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/650#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/650#2</a>.</p>
-<h2 id="problem-money"><a name="problem-money" class="plugin-anchor" href="#problem-money"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Money</h2>
+<h3 id="problem-money"><a name="problem-money" class="plugin-anchor" href="#problem-money"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Money</h3>
 <p>Some time ago <strong>Pesho bought bitcoins</strong>. He plans to go on a trip aroung Europe <strong>and he will need euros</strong>. Besides bitcoins, he has and <strong>Chinese yuan(CNY)</strong>. Pesho wants <strong>to exchange his money in euros</strong> for the trip. Write a program that <strong>calculates how much euros</strong> he can buy depending on the following exchange rates:</p>
 <ul>
 <li><strong>1 Bitcoin = 1168 BGN</strong></li>
@@ -682,16 +682,16 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li><strong>1 EUR = 1.95 BGN</strong></li>
 </ul>
 <p>The exchange office has a <strong>commission within 0 to 5 percent from the final amount in EUR</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>As input data, we will read <strong>3 numbers</strong> from the console, each on a separate line:</p>
 <ul>
 <li>On the first line &#x2013; <strong>number of Bitcoins</strong>. Integer in the range of [<strong>0 &#x2026; 20</strong>].</li>
 <li>On the second line &#x2013; <strong>number of Chinese yuan</strong>. Floating-point number in the range of [<strong>0.00 &#x2026; 50 000.00</strong>].</li>
 <li>On the third line &#x2013; <strong>commission fee</strong>. Floating-point number in the range of [<strong>0.00 &#x2026; 5.00</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print <strong>the result of the exchange of currencies</strong> on the console. Rounding the result is not necessary.</p>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -723,13 +723,13 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li><strong>Commission fee:</strong> 5% of 599.651282051282 = <strong>29.9825641025641</strong> </li>
 <li><strong>Result</strong>: 599.651282051282 - 29.9825641025641 = <strong>569.668717948718 EUR</strong></li>
 </ul>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Let&apos;s think again about how we can solve the problem before we start writing code.</p>
 <h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An idea for a solution</h4>
 <p>We see that the <strong>number of bitcoins</strong> and <strong>the number of Chinese yuans</strong> will be given in the input. <strong>The output</strong> should be in <strong>euro</strong>. The exchange rates that we have to work with are in the problem condition. We notice that we can only exchange the sum in BGN to EUR, so we have <strong>first to calculate the whole sum that Peter has in BGN</strong> and <strong>then to calculate the output</strong>. </p>
 <p>As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, in order to get the value of <strong>Chinese yuans in BGN</strong>, first, we have to <strong>exchange them in USD</strong> and then <strong>USD to BGN</strong>. Finally, we will <strong>sum the two values</strong> and calculate how much EUR that is. </p>
 <p>Only the final step left: to <strong>calculate the commission fee</strong> and subtracting the new sum from the total one. The comission is a <strong>floating-point number</strong>, represent a <strong>percent from the total sum</strong>. Let&apos;s divide it from the beginning by 100 to calculate its <strong>percentage value</strong>. We will multiply the percentage value by the sum in EUR, and the result divides with the same sum and print the final sum on the console. </p>
-<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing data types</h4>
+<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
 <p><strong>Bitcoins</strong> are given as <strong>an integer</strong>, and for their value, we can declare <strong>a variable of type <code>int</code></strong>. As a number <strong>Chinese yuan and commission fee</strong> we will obtain <strong>a floating-point number</strong>, so we will use <strong><code>double</code></strong>. As <strong><code>double</code></strong> is the data type with bigger size and the <strong>output</strong> should also be a <strong>floating-point numbe</strong>, we will use it for the other variables we create. </p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>After we have built an idea on how to solve the problem and we have chosen the data types, it is time to get to <strong>write the code</strong>. As in the previous problems, we can divide the solution into three smaller problems: </p>
@@ -749,20 +749,20 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <p>Let&apos;s pay attention to something that applies to all other problems of this type: written like that, the solution of the problem is pretty detailed. As the problem is not too complex, we could write one complex expression, where after we read the input data, we calculate the output. For example, such an expression would look like this:</p>
 <p><img src="assets/chapter-2-2-images/04.Money-05.png" alt=""></p>
 <p>This code would print a correct result, but it is <strong>hard to read</strong>. It won&apos;t be easy to find out how it works, and whether if it contains any mistakes, as well as finding such and correcting them. It is better to <strong>instead of one complex expression, to write a few simpler ones</strong> and to store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable. </p>
-<h2 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h2>
+<h2 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h2>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/650#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/650#3</a>.</p>
-<h2 id="problem-daily-earnings"><a name="problem-daily-earnings" class="plugin-anchor" href="#problem-daily-earnings"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Daily earnings</h2>
+<h2 id="problem-daily-earnings"><a name="problem-daily-earnings" class="plugin-anchor" href="#problem-daily-earnings"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Daily Earnings</h2>
 <p>Ivan is a programmer in an <strong>American company</strong> and he works from home <strong>N days per month</strong> and earns <strong>M USD per day</strong>. At the end of the year, Ivan <strong>gets a bonus</strong> which is <strong>equals 2.5 monthly salaries</strong>. From what he earned during the year, <strong>the withholding tax is 25%</strong>. Write a program that <strong>calculates the amount of Ivan&apos;s net average earning</strong> in BGN per day because he spends it in Bulgaria. We accept that one year has exactly <strong>365 days</strong>. <strong>The exchange rate of USD</strong> to BGN will be <strong>read from the console</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>As input data, we will read <strong>3 numbers</strong> from the console, each on a separate line:</p>
 <ul>
 <li>On the first line &#x2013; <strong>working days of the month</strong>. Integer in the range of [<strong>5 &#x2026; 30</strong>].</li>
 <li>On the second line &#x2013; <strong>money earned per day</strong>. Floating-point number in the range of [<strong>10.00 &#x2026; 2000.00</strong>].</li>
 <li>On the third line &#x2013; <strong>exchange rate USD to BGN</strong> /1 USD = X BGN/. Floating-point number in the range of [<strong>0.99 &#x2026; 1.99</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>On the console <strong>print average earning in BGN per day</strong>. The result should be <strong>rounded up to the second digit after the decimal point</strong>.</p>
-<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
 <tr>
@@ -793,11 +793,11 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <li><strong>Net annual income</strong> = 17128.125 dollars = 27233.71875 BGN.</li>
 <li><strong>Average earning per day</strong> = 27233.71875 / 365 = 74.61 BGN.</li>
 </ul>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Firstly, we have to analyze the problem and think of a way to solve it. Then we will choose data types, and finally, we will write the code.</p>
-<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An idea for a solution</h4>
+<h4 id="an-idea-for-a-solution"><a name="an-idea-for-a-solution" class="plugin-anchor" href="#an-idea-for-a-solution"><i class="fa fa-link" aria-hidden="true"></i></a>An Idea for a Solution</h4>
 <p>Let&apos;s first calculate <strong>how much the monthly salary</strong> of Ivan is. We will do this by <strong>multiplying the working days per month by the money he earns per day</strong>. <strong>We multiply the result</strong> by 12 to calculate his yearly salary, and then multiply yearly salary <strong>by 2.5</strong> to calculate the bonus. Adding the two values obtained, we will calculate his total <strong>annual income</strong>. <strong>We have to subtract 25% from it for taxes</strong>. We can do this by multiplying the total income by <strong>0.25</strong> and subtracting the result from it. Then we <strong>exchange the USD to BGN</strong> and <strong>divide the result by the days of a year</strong>, which we assume are 365. </p>
-<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing data types</h4>
+<h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
 <p><strong>The working days per month</strong> are given as an <strong>integer</strong>, so we can declare a variable of <strong>type <code>int</code></strong>. For the <strong>earned money</strong> and for the <strong>exchange rate of USD to BGN</strong>, we will obtain <strong>a floating-point number</strong>, so for them, we use <strong><code>double</code></strong> as type. As <strong><code>double</code></strong> is the type with <strong>the bigger size</strong> and the output should also be <strong>a floating-point number</strong>, we use <strong><code>double</code></strong> for the other variables we create.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>Again: after we have an idea on how to solve the problem, and we have considered the data types that we will use, we can start <strong>writing the code</strong>. As in the previous problems we can divide the solution into three smaller problems: </p>
@@ -814,7 +814,7 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
 <p>Finally, we have to print the result on the console. We notice that <strong>the number has to be round up to the second digit after the decimal point</strong>. For this purpose, we can use <strong>formatted specifiers</strong>, an item that will be replaced by a particular value when printing. In Java, for <strong>formatting specifier</strong> is used <code>%</code> followed by a specific letter (specifier). We can format an integer or a floating-point number by using <strong>F</strong>/<strong>f</strong>, or <strong>D</strong>/<strong>d</strong>. In the case of a floating-point number, before the letter, we put a dot and a whole positive number specifying the number of digits after the decimal point.</p>
 <p>The final result is as follows:</p>
 <p><img src="assets/chapter-2-2-images/05.Daily-earnings-03.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/650#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/650#4</a>.</p>
 
                                 
@@ -859,7 +859,7 @@ String str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastNa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.2. Simple Calculations – Exam problems","level":"1.5","depth":1,"next":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"previous":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-02-simple-calculations-exam-problems.md","mtime":"2022-02-17T14:11:05.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:49.048Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.2. Simple Calculations – Exam problems","level":"1.5","depth":1,"next":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"previous":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-02-simple-calculations-exam-problems.md","mtime":"2022-02-24T11:16:07.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:17:00.077Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

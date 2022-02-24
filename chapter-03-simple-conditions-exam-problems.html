@@ -311,7 +311,7 @@
                 <a href="chapter-08-exam-preparation.html">
             
                     
-                    8.1. Practical Exam Preparation – part I
+                    8.1. Practical Exam Preparation – Part I
             
                 </a>
             
@@ -324,7 +324,7 @@
                 <a href="chapter-08-exam-preparation-part-2.html">
             
                     
-                    8.2. Practical Exam Preparation – part II
+                    8.2. Practical Exam Preparation – Part II
             
                 </a>
             
@@ -442,7 +442,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-32-simple-conditions-&#x2013;-exam-problems"><a name="chapter-32-simple-conditions-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-32-simple-conditions-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 3.2. Simple Conditions &#x2013; Exam problems</h1>
+                                <h1 id="chapter-32-simple-conditions-&#x2013;-exam-problems"><a name="chapter-32-simple-conditions-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-32-simple-conditions-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 3.2. Simple Conditions &#x2013; Exam Problems</h1>
 <p>In the previous chapter, we looked at conditional constructions in the Java language, used to perform various actions depending on a condition. We also mentioned the scope of a variable, as well as how to follow line by line the execution of our program (the so-called <strong>debugging</strong>). In this chapter, we will practice working with conditional statements, and we&apos;ll be looking at some problems given in actual exams. Let&apos;s first retrieve some of the newly acquired knowledge on how the conditional statement is constructed:</p>
 <pre><code class="lang-java"><span class="hljs-keyword">if</span> (<span class="hljs-keyword">boolean</span> expression) {
     <span class="hljs-comment">// body of the conditional block;</span>
@@ -457,9 +457,9 @@
 <li>body - contains any block with source code</li>
 <li><strong><code>else</code> clause</strong> and its source code block (<strong>optional</strong>)</li>
 </ul>
-<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam problems</h2>
+<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>After recalling how to write conditional statements, let&apos;s solve a few problems to get practical experience with the <strong><code>if-else</code></strong> statement.</p>
-<h2 id="problem-transportation-price"><a name="problem-transportation-price" class="plugin-anchor" href="#problem-transportation-price"><i class="fa fa-link" aria-hidden="true"></i></a>problem: Transportation price</h2>
+<h3 id="problem-transportation-price"><a name="problem-transportation-price" class="plugin-anchor" href="#problem-transportation-price"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Transportation Price</h3>
 <p>A student must travel <strong>n kilometers</strong>. He has a choice between <strong>three modes of transport</strong>:</p>
 <ul>
 <li><strong>Taxi</strong>. Starting fee: <strong>0.70</strong> BGN. Daily rate: <strong>0.79</strong> BGN/km. Nightly rate: <strong>0.90</strong> BGN/km.</li>
@@ -467,13 +467,13 @@
 <li><strong>Train</strong>. Daily/Nightly rate: <strong>0.06</strong> BGN/km. Can be used for distances at least <strong>100</strong> km</li>
 </ul>
 <p>Write a program that enters the number of <strong>kilometers n</strong> and the <strong>period of the day</strong> (day or night) and computes <strong> the price of the cheapest transport </strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Two lines</strong> are read from the console:</p>
 <ul>
 <li>The first line contains the number <strong>n</strong> - number of kilometers - integer in the interval [<strong>1&#x2026; 5000</strong>].</li>
 <li>The second line contains the word &quot;<strong>day</strong>&quot; or &quot;<strong>night</strong>&quot; - if trip is during the day or at night.</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>the lowest price</strong> for the specified number of kilometers.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -512,15 +512,15 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>We will read the input data and depending on the distance we will choose the cheapest transport. For this purpose, we will use several conditional statements.</p>
-<h4 id="input-data-processing"><a name="input-data-processing" class="plugin-anchor" href="#input-data-processing"><i class="fa fa-link" aria-hidden="true"></i></a>Input data processing</h4>
+<h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>Our first step is to create an object of type <strong><code>java.util.Scanner</code></strong>. We pass in its constructor the &quot;input stream&quot; (<strong><code>System.in</code></strong>) that we are going to read from. In the definition of the problem, we have <strong>information about the input and output</strong>. The first <strong>two lines</strong> of the solution will contain the declaration and initialization of the two <strong>variables</strong> that will store <strong>the values of the input data</strong>.</p>
 <p><strong>The first line is mentioned</strong> to contain <strong>an integer</strong>, so the variable that will be declared is of type <strong><code>int</code></strong>. For the <strong>second line</strong>, the instruction is that it contains a <strong>word</strong>, respectively the variable is of type <strong><code>String</code></strong>.</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-01.png" alt=""></p>
 <p>Before we begin with the conditional statements it&apos;s necessary to <strong>declare</strong> one <strong>variable</strong> that will store the value of the <strong>transport price</strong>.</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-02.png" alt=""></p>
-<h4 id="expression-evaluation-and-computing-the-relevant-calculations"><a name="expression-evaluation-and-computing-the-relevant-calculations" class="plugin-anchor" href="#expression-evaluation-and-computing-the-relevant-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Expression evaluation and computing the relevant calculations</h4>
+<h4 id="expression-evaluation-and-computing-the-relevant-calculations"><a name="expression-evaluation-and-computing-the-relevant-calculations" class="plugin-anchor" href="#expression-evaluation-and-computing-the-relevant-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Expression Evaluation and Computing The Relevant Calculations</h4>
 <p>Once we have <strong>declared and initialized</strong> the input data and the variable that will store the value of the price, we should assess which <strong>conditions</strong> of the problem will be the first to <strong>be checked</strong>.</p>
 <p>It is evident from the problem that the rates of two of the vehicles <strong>do not depend</strong> on whether it is <strong>day</strong> or <strong>night</strong>, but the rate of the third transport (taxi) does. This is a reason to pick our <strong>first condition</strong> to verify whether it&apos;s <strong>day or night</strong> and determine which taxi rate will be <strong>in effect</strong>. To achieve that <strong>we declare another variable</strong> that will store the value of the <strong>taxi fare</strong>.</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-03.png" alt=""></p>
@@ -531,14 +531,14 @@
 <p>First, we check if the kilometers are <strong>below 20</strong> since it&apos;s specified in the problem that the student could only use a <strong>taxi</strong> for destinations that are <strong>below 20</strong> kilometers away. If the expression in the first conditional statement is evaluated to be <strong>true</strong> then the variable that stores the transportation price (<strong><code>price</code></strong>) will be <strong>assigned</strong> the corresponding value. This value is equal to the <strong>initial rate</strong>, which we <strong>sum up</strong> with its <strong>rate</strong> <strong>multiplied</strong> by <strong>the distance</strong> that the student has to travel.</p>
 <p>If the expression in the first conditional statement is evaluated to <strong>false</strong> then the next step of the program is to check if the distance is <strong>below 100</strong>. The reason we&apos;re doing that is because it&apos;s possible to use a <strong>bus</strong> as a vehicle in this distance range. <strong>The price</strong> per kilometer for the bus <strong>is lower</strong> than the taxi price. Therefore, the result of the expression evaluation is <strong>true</strong>, then here&apos;s the place to assign the <strong>value</strong> of the transportation price variable (<strong><code>price</code></strong>) which equals the result of the <strong>multiplication</strong> of the <strong>distance</strong> and the <strong>bus rate</strong>.</p>
 <p>In the case of the second check <strong>not returning <code>true</code></strong> as a result, the program ends up in the <strong><code>else</code></strong> block and assigns a <strong>value</strong> equal to the <strong>result</strong> of the <strong>multiplication</strong> of the <strong>distance</strong> and the <strong>rate of the train</strong>. We do that because the train is the <strong>cheapest</strong> vehicle for the given distance.</p>
-<h4 id="printing-the-output-data"><a name="printing-the-output-data" class="plugin-anchor" href="#printing-the-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Printing the output data</h4>
+<h4 id="printing-the-result"><a name="printing-the-result" class="plugin-anchor" href="#printing-the-result"><i class="fa fa-link" aria-hidden="true"></i></a>Printing The Result</h4>
 <p>We <strong>have successfully computed the price of the cheapest transportation</strong> so we&apos;re almost at the end of the problem. The only thing left is to print out the result that we have on the console. In our problem, there&apos;s no requirement for the resulting output and that&apos;s why we choose to keep it simple and just print the <strong>variable</strong> (<strong><code>price</code></strong>).</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-06.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#0</a>.</p>
-<h2 id="problem-pipes-in-a-pool"><a name="problem-pipes-in-a-pool" class="plugin-anchor" href="#problem-pipes-in-a-pool"><i class="fa fa-link" aria-hidden="true"></i></a>problem: pipes in a pool</h2>
+<h3 id="problem-pipes-in-a-pool"><a name="problem-pipes-in-a-pool" class="plugin-anchor" href="#problem-pipes-in-a-pool"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Pipes in a Pool</h3>
 <p>A Pool with <strong>volume V</strong> has <strong>two filling pipes</strong>. <strong>Each pipe has a specified hourly flow rate</strong> (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for <strong>N hours</strong>. Your problem is to write a program that prints out the state of the pool, <strong>at the moment the worker comes back</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Four lines</strong> are read from the console:</p>
 <ul>
 <li>The first line contains the number <strong>V - pool volume in liters</strong> - integer in the range [<strong>1&#x2026; 10000</strong>].</li>
@@ -546,7 +546,7 @@
 <li>The third line contains the number <strong>P2 - hourly flow rate of the second tube</strong> - integer in the range [<strong>1 &#x2026; 5000</strong>].</li>
 <li>The fourth line contains the number <strong>H - number of hours that the employee is absent</strong> - a floating-point number in the interval [<strong>1.0 &#x2026; 24.00</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>one of two possible states</strong>:</p>
 <ul>
 <li>How full is the pool and each pipe&apos;s percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).<ul>
@@ -578,22 +578,22 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem we&apos;ll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.</p>
-<h4 id="input-data-processing"><a name="input-data-processing" class="plugin-anchor" href="#input-data-processing"><i class="fa fa-link" aria-hidden="true"></i></a>Input data processing</h4>
+<h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>By definition, our program has to have <strong>four lines</strong> that are going to read and store <strong>the input data</strong>. The first <strong>three</strong> are going to store <strong>whole numbers</strong> and this is a reason we pick the <strong><code>int</code></strong> type for those <strong>variables</strong>. On the <strong>fourth</strong> line, we are supposed to get a floating-point <strong>number</strong> and that&apos;s why the <strong>variable</strong> that we&apos;re going to use is of type <strong><code>double</code></strong>.</p>
 <p><img src="assets/chapter-3-2-images/02.Pipes-in-pool-01.png" alt=""></p>
 <p>Our next step is to <strong>declare and initialize</strong> a variable that will store the computed value for <strong>the amount of water that the pool has filled up with while the worker has been away</strong>. The calculation is made by <strong>summing up the flow rate of the two pipes</strong> and <strong>multiplying them</strong> by the input <strong>hours H</strong>.</p>
 <p><img src="assets/chapter-3-2-images/02.Pipes-in-pool-02.png" alt=""></p>
-<h4 id="expression-evaluation-and-computing-the-relevant-calculations"><a name="expression-evaluation-and-computing-the-relevant-calculations" class="plugin-anchor" href="#expression-evaluation-and-computing-the-relevant-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Expression evaluation and computing the relevant calculations</h4>
+<h4 id="expression-evaluation-and-computing-the-relevant-calculations"><a name="expression-evaluation-and-computing-the-relevant-calculations" class="plugin-anchor" href="#expression-evaluation-and-computing-the-relevant-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Expression Evaluation and Computing The Relevant Calculations</h4>
 <p>Once we have <strong>the amount</strong> of water that has passed through the <strong>pipes</strong>, the next step is to <strong>compare</strong> it with the volume of the pool.</p>
 <p>We will do this with a simple <strong><code>if-else</code></strong> conditional statement, in which the condition will be whether <strong>the amount of water is less than the volume of the pool</strong>. If the check returns <strong><code>true</code></strong>, then we need to print a <strong>line</strong> that contains <strong>the ratio</strong> between <strong>the amount of water that has passed through the pipes</strong> and the volume of pool<strong>, as well as </strong>the ratio of the amount of water<strong> from each pipe to the </strong>pool volume**.</p>
 <p>The ratio needs to be expressed in <strong>percentage</strong> that&apos;s why we&apos;ll <strong>multiply by 100</strong> the result of all the prior calculations on this line. The values will be interpolated using <strong>formatting strings</strong> and rounded down to <strong>integer</strong> with <strong><code>Math.floor (&#x2026;)</code></strong> (it&apos;s a requirement of the problem).</p>
 <p><img src="assets/chapter-3-2-images/02.Pipes-in-pool-03.png" alt=""></p>
 <p>However, if the check returns <strong><code>false</code></strong> it means that the amount of water is <strong>greater</strong> than <strong>the volume</strong> of the pool, respectively it has <strong>overflowed</strong>. Again, the output must be <strong>one line</strong> but this time it should contain only <strong>two values</strong> - <strong>away time in hours</strong> of the worker and <strong>the amount of overflowed water</strong>.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#1</a>.</p>
-<h2 id="problem-the-sleepy-cat-tom"><a name="problem-the-sleepy-cat-tom" class="plugin-anchor" href="#problem-the-sleepy-cat-tom"><i class="fa fa-link" aria-hidden="true"></i></a>problem: the sleepy cat Tom</h2>
+<h3 id="problem-the-sleepy-cat-tom"><a name="problem-the-sleepy-cat-tom" class="plugin-anchor" href="#problem-the-sleepy-cat-tom"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: The Sleepy Cat Tom</h3>
 <p><strong>The cat Tom</strong> enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom&apos;s <strong>norm for playtime</strong> is <strong>30 000 minutes per year*</strong>. Tom&apos;s playtime <strong>is dependant on his owner&apos;s non-working days</strong>:</p>
 <ul>
 <li>When Tom&apos;s owner is at <strong>work</strong>, Tom&apos;s playtime is <strong>63 minutes a day</strong>.</li>
@@ -601,9 +601,9 @@
 </ul>
 <p>Your problem is to write a program that takes as input Tom&apos;s owner <strong>number of days off</strong> and prints out whether <strong>Tom has a satisfactory sleeping routine</strong> and how much is <strong>the difference from Tom&apos;s norm for playtime</strong> for the current year, assuming that <strong>the year has 365 days</strong>.</p>
 <p><strong>Example</strong>: 20 days off &#x2192; 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ <em> 63 + 20 \ </em> 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input data is read from the console and consists of an integer - <strong>Tom&apos;s owner number of days off</strong>, number in the range [<strong>0 &#x2026; 365</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p><strong>Two lines</strong> are to be printed on the console.</p>
 <ul>
 <li>If Tom&apos;s <strong>playing time</strong> is above the norm for the current year:<ul>
@@ -638,9 +638,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem we&apos;ll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.</p>
-<h4 id="input-data-processing-and-relevant-calculations"><a name="input-data-processing-and-relevant-calculations" class="plugin-anchor" href="#input-data-processing-and-relevant-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Input data processing and relevant calculations</h4>
+<h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>The <strong>input data</strong> will be read in a <strong>single line</strong> that will contain a <strong>whole number</strong> in the range [<strong>0 &#x2026; 365</strong>]. That&apos;s why the variable that&apos;ll store the value is going to be of type <strong><code>int</code></strong>.</p>
 <p><img src="assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png" alt=""></p>
 <p>Our <strong>first</strong> step is to calculate how many <strong>minutes in total</strong> has Tom and his master played together. The problem states that not only has the sleepy cat played in <strong>days off</strong> but also on <strong>working days</strong>. <strong>The number</strong> that we read from the console is the number of <strong>non-working days</strong>.</p>
@@ -651,17 +651,17 @@
 <p>We need to <strong>print the difference</strong> between <strong>hours</strong> and <strong>minutes</strong>. That&apos;s why we&apos;ll subtract from the <strong>total</strong> playing time Tom&apos;s playtime norm of <strong>30 000</strong> minutes and we&apos;ll <strong>store</strong> the result in a <strong>new</strong> variable. After that, we&apos;ll use that new variable to <strong>divide without a remainder</strong> to 60 and that&apos;s how we&apos;ll get the <strong>hours</strong>. To get the number of <strong>minutes</strong> we&apos;ll utilize the <strong>modulo operator <code>%</code></strong> and get the remainder of the division by 60.</p>
 <p>Note that if Tom&apos;s resulting <strong>playtime</strong> is <strong>less</strong> than <strong>30 000</strong> when we <strong>subtract</strong> the norm we&apos;ll get a <strong>negative number</strong>. We can <strong>fix</strong> that with the <strong>method <code>Math.abs(&#x2026;)</code></strong> when subtracting.</p>
 <p><img src="assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png" alt=""></p>
-<h4 id="conditional-expressions-verification"><a name="conditional-expressions-verification" class="plugin-anchor" href="#conditional-expressions-verification"><i class="fa fa-link" aria-hidden="true"></i></a>Conditional expressions verification</h4>
+<h4 id="conditional-expressions-verification"><a name="conditional-expressions-verification" class="plugin-anchor" href="#conditional-expressions-verification"><i class="fa fa-link" aria-hidden="true"></i></a>Conditional Expressions Verification</h4>
 <p>The playing time is already calculated which leads us to <strong>the next</strong> step - Tom&apos;s <strong>playtime</strong> and Tom&apos;s <strong>norm</strong> <strong>comparison</strong>. We&apos;ll use an <strong><code>if-else</code></strong> conditional statement. It&apos;ll verify in its <strong><code>if</code> clause</strong> whether <strong>the playtime is larger than 30 000 (norm)</strong>.</p>
-<h4 id="output-data-processing"><a name="output-data-processing" class="plugin-anchor" href="#output-data-processing"><i class="fa fa-link" aria-hidden="true"></i></a>Output data processing</h4>
+<h4 id="output-data-processing"><a name="output-data-processing" class="plugin-anchor" href="#output-data-processing"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data Processing</h4>
 <p>Depending on <strong>the result</strong> of the evaluation of the boolean expression our objective is to print the <strong>difference in hours and minutes</strong>. We&apos;ll do that using the <strong>formatting specifier</strong> and the previously computed hour and minutes values. The given output examples show that the printed values are formatted as a rounded down whole number. This is a cue that we should be using <strong><code>Math.floor(&#x2026;)</code></strong> when we&apos;re printing the result.</p>
 <p><img src="assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#2</a>.</p>
-<h2 id="problem-harvest"><a name="problem-harvest" class="plugin-anchor" href="#problem-harvest"><i class="fa fa-link" aria-hidden="true"></i></a>problem: harvest</h2>
+<h3 id="problem-harvest"><a name="problem-harvest" class="plugin-anchor" href="#problem-harvest"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Harvest</h3>
 <p>There&apos;s a vineyard that has an <strong>area of X sq. M.</strong> . <strong>40% of the harvest</strong> is allocated for wine production. The yield from <strong>1sq.m. vineyard</strong> is <strong>Y kilograms of grapes</strong>. To produce <strong>1 liter of wine</strong> is used <strong>2.5kg grapes</strong>. The desired amount of wine <strong>for sale is Z liters</strong>.</p>
 <p>Your problem is to write a program that <strong>calculates the possible amount of produced wine</strong> and validates if it&apos;s <strong>enough</strong>. <strong>If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.</strong></p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Four lines</strong> are read from the console:</p>
 <ul>
 <li>The first line contains the area of the vineyard <strong>X sq.m</strong> - integer in the interval [<strong>10 &#x2026; 5000</strong>].</li>
@@ -669,7 +669,7 @@
 <li>The third line contains the desired amount of wine <strong>Z liters</strong> - an integer in the range [<strong>1 &#x2026; 600</strong>].</li>
 <li>The fourth line contains the <strong>number of workers</strong> - integer in the interval [<strong>1 &#x2026; 20</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>The following is expected to be printed on the console:</p>
 <ul>
 <li>If the <strong>produced</strong> wine is <strong>less than the required</strong>:<ul>
@@ -710,35 +710,35 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem we&apos;ll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.</p>
-<h4 id="input-data-processing-and-related-calculations"><a name="input-data-processing-and-related-calculations" class="plugin-anchor" href="#input-data-processing-and-related-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Input data processing and related calculations</h4>
+<h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>First, we need to <strong>check</strong> what <strong>input data</strong> is expected and choose an adequate type for each of the <strong>variables</strong> that will store this data.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-01.png" alt=""></p>
 <p>To solve the problem we need to <strong>compute</strong> the <strong>amount of wine in liters</strong> that the harvest will produce using the <strong>input data</strong>. The problem defines a formula that requires the <strong>weight of the yielded grapes in kg.</strong> . We can easily calculate this by <strong>declaring</strong> a <strong>variable</strong> that will store a <strong>value</strong> equal to <strong>40%</strong> of the result of the <strong>multiplication</strong> of the area of the vineyard and the amount of yielded grapes per square meter.</p>
 <p>Once we have made these calculations, we are ready to <strong>insert</strong> them into the problem formula. We <strong>declare</strong> another <strong>variable</strong> that will store the <strong>amount of wine in liters</strong> and will be equal to the <strong>weight of the yielded grapes in kg. divided by 2.5</strong>.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-02.png" alt=""></p>
-<h4 id="expression-evaluation-and-processing-the-output-data"><a name="expression-evaluation-and-processing-the-output-data" class="plugin-anchor" href="#expression-evaluation-and-processing-the-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Expression evaluation and processing the output data</h4>
+<h4 id="expression-evaluation-and-processing-the-output-data"><a name="expression-evaluation-and-processing-the-output-data" class="plugin-anchor" href="#expression-evaluation-and-processing-the-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Expression Evaluation and Processing The Output Data</h4>
 <p>Our <strong>next step</strong> is to <strong>check</strong> if the <strong>produced wine</strong> is <strong>enough</strong>. We&apos;ll use a simple <strong><code>if-else</code> conditional statement</strong> with a clause that <strong>verifies</strong> if the <strong>amount of wine in liters</strong> produced from the harvest is <strong>more than</strong> or <strong>equal</strong> to the <strong>desired liters</strong>.</p>
 <p>If the expression evaluation returns <strong><code>true</code></strong>, then on the <strong>first line</strong> we should print <strong>the amount of wine produced by these harvesters</strong>. It&apos;s required that <strong>this value</strong> should be <strong>rounded down</strong>. To comply with the requirement we&apos;ll use the method <strong><code>Math.floor(&#x2026;)</code></strong> when printing it using the <strong>formatting specifier</strong>.</p>
 <p>The requirement for the second line is to print the interpolated values <strong>rounded up</strong>. We&apos;ll use the method <strong><code>Math.ceil(&#x2026;)</code></strong>. The values that we have to print are <strong>the wine that&apos;s left</strong> and <strong>the amount of wine that is to be given to each worker</strong>. The wine that&apos;s left is equal to the <strong>difference</strong> between <strong>the produced liters of wine</strong> and <strong>the desired liters of wine</strong>. As the result of this computation, we&apos;ll store in a new variable that we&apos;ll declare and initialize in the <strong>body block</strong> of the <strong><code>if</code> statement</strong> before printing the first line. The <strong>amount of wine that is to be given to each worker</strong> we&apos;ll get by <strong>dividing</strong> the <strong>difference</strong> by <strong>the number of workers</strong>.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-03.png" alt=""></p>
 <p>If the expression evaluation returns <strong><code>false</code></strong>, then we need to <strong>print the difference</strong> between <strong>desired liters of wine</strong> and <strong>the produced liters of wine from this harvest</strong>. It&apos;s required that <strong>this value</strong> should be <strong>rounded down</strong>. To comply with the requirement we&apos;ll use the method <strong><code>Math.floor(&#x2026;)</code></strong> when printing it using the <strong>formatting specifier</strong>.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-04.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#3</a>.</p>
-<h2 id="problem-company"><a name="problem-company" class="plugin-anchor" href="#problem-company"><i class="fa fa-link" aria-hidden="true"></i></a>problem: company</h2>
+<h3 id="problem-company"><a name="problem-company" class="plugin-anchor" href="#problem-company"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Company</h3>
 <p>A company is requested to develop a project that is estimated for a given number of hours. The company has <strong>a certain number of days</strong> to do that. <strong>In 10% of those days</strong>, its employees are being onboarded and <strong>are not ready to work</strong> on the project. A normal <strong>working day at this company lasts for 8 hours</strong>. The project is important for the company and every <strong>employee is obliged to work</strong> on this project <strong>overtime for 2 hours</strong> per day.</p>
 <p><strong>The hours</strong> should be <strong>rounded down</strong> (e.g. <strong>6.98 hours</strong> are rounded to <strong>6 hours</strong>).</p>
 <p>Your problem is to write a program that <strong>calculates if the company is going to finish the project on time</strong> and <strong>how many hours more are needed for the completion of the project</strong> or if the execution was successful <strong>how many dedicated working hours are left at hand</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Three lines</strong> are read from the console:</p>
 <ul>
 <li>The first line contains the necessary <strong>number of working hours</strong> - an integer in the interval [<strong>10 &#x2026; 200 000</strong>].</li>
 <li>The second line contains the <strong>days that the company has to finish the project</strong> - an integer in the interval [<strong>0 &#x2026; 20 000</strong>].</li>
 <li>The third line contains <strong>the number of all employees</strong> - an integer in the range [<strong>1 &#x2026; 600</strong>].</li>
 </ul>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p><strong>One line</strong> is expected to be <strong>printed</strong> on the console:</p>
 <ul>
 <li>If <strong>the time is enough</strong>:<ul>
@@ -769,20 +769,20 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem we&apos;ll read from the standard input stream, utilize several conditional statements and computations, and print our result to the console.</p>
-<h4 id="input-data-processing"><a name="input-data-processing" class="plugin-anchor" href="#input-data-processing"><i class="fa fa-link" aria-hidden="true"></i></a>Input data processing</h4>
+<h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>First, we need to <strong>check</strong> what <strong>input data</strong> is expected and choose an adequate type for each of the <strong>variables</strong> that will store this data.</p>
 <p><img src="assets/chapter-3-2-images/05.Firm-01.png" alt=""></p>
-<h4 id="auxiliary-calculations"><a name="auxiliary-calculations" class="plugin-anchor" href="#auxiliary-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Auxiliary calculations</h4>
+<h4 id="auxiliary-calculations"><a name="auxiliary-calculations" class="plugin-anchor" href="#auxiliary-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Auxiliary Calculations</h4>
 <p>The next step is to calculate <strong>the number of working hours</strong>. This we can do by multiplying the working days by 8 (every working day is 8 hours) and the number of the company&apos;s employees. On top of that, we should add the overtime too. <strong>The working days</strong> are equal to <strong>90% of the days</strong> that the company has. <strong>The overtime</strong> is equal to the result of the multiplication of the employees and 2 (decided overtime length) and the number of days that the company has. We can see that the problem requires <strong>the working hours</strong> to be <strong>rounded down</strong>. That&apos;s something we can easily do by using the method <strong><code>Math.floor(&#x2026;)</code></strong>.</p>
 <p><img src="assets/chapter-3-2-images/05.Firm-02.png" alt=""></p>
-<h4 id="performing-verifications"><a name="performing-verifications" class="plugin-anchor" href="#performing-verifications"><i class="fa fa-link" aria-hidden="true"></i></a>Performing verifications</h4>
+<h4 id="performing-verifications"><a name="performing-verifications" class="plugin-anchor" href="#performing-verifications"><i class="fa fa-link" aria-hidden="true"></i></a>Performing Verifications</h4>
 <p>Once we&apos;ve made the calculations we need to compute the value of <strong>the working hours</strong> we should check whether these hours <strong>are enough</strong>.</p>
 <p>If <strong>the time is enough</strong> we print the difference between <strong>the working hours and the estimated hours</strong> for the project.</p>
 <p>If <strong>the time is not enough</strong> we print the additional hours that are needed to finish the project. And that is the difference between <strong>the estimated hours</strong> and <strong>the working hours</strong>.</p>
 <p><img src="assets/chapter-3-2-images/05.Firm-03.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#4</a>.</p>
 
                                 
@@ -827,7 +827,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-02-17T14:11:05.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:11:49.048Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-02-24T11:16:07.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:17:00.077Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
