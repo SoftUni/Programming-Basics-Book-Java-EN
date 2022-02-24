@@ -224,9 +224,9 @@ The problem does not specify special output format, so we just need to calculate
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/650#1](https://judge.softuni.org/Contests/Practice/Index/650#1).
 
 
-### Problem: Change of Tiles
+### Problem: Change Tiles
 
-It is needed to be placed tiles on the ground in front of the apartment building. The place is **square with a side of N meters**. The tiles are **W meters wide** and **L meters long**. There is a bench in the area with **a width of M meters** and **a length of O meters**. There is no need to put tiles under it. To place each tile requires **0.2 minutes**.
+On the ground in front of an apartment building **tiles need to be placed**. The place is **square with a side of N meters**. The tiles are **W meters wide** and **L meters long**. There is a bench in the area with **a width of M meters** and **a length of O meters**. There is no need to put tiles under it. To place each tile requires **0.2 minutes**.
 
 Write a program that reads from the console the dimensions of the ground, the tiles, and the bench. Then calculates **how many tiles are needed** to cover the place and calculates **the time to place all the tiles**. 
 
