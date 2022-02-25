@@ -1,6 +1,6 @@
 # Chapter 5.1. Repetitions (Loops)
 
-In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical problems that require repeating series of actions, using loops.
+In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical problems that require repeating a series of actions, using loops.
 
 ## Video
 
@@ -44,13 +44,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 You should get **100 points** (fully accurate solution).
 
-## Code Snippet for **`for`** loop in IntelliJ IDEA
+## Code Snippet for The **`for`** Loop in IntelliJ IDEA
 
-In software development, we regularly need to write loops dozens of times a day. That is why in most integrated development environments (IDE), there are **code snippets** for writing loops. One such example is the **snippet for `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet, and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
+In software development, we regularly need to write loops dozens of times a day. That is why in most integrated development environments (IDE), there are **code snippets** for writing loops. One such example is the **snippet for the `for` loop in IntelliJ IDEA**. Write down **`fori`** in the Java code editor in IntelliJ IDEA and **press** [**Enter**]. IntelliJ IDEA will run the snippet, and you will see the entire **`for` loop** written down. All you have to do now is to add the values. 
 
 ![](assets/chapter-5-1-images/00.For-loop-code-snippet-01.png)
 
-**Try it yourself** in order to master using the code snippet for **`for` loop** in IntelliJ IDEA.
+**Try it yourself** to master using the code snippet for the **`for` loop** in IntelliJ IDEA.
 
 ### Problem: Numbers Ending in 7
 
@@ -119,7 +119,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 ### Problem: Max Number
 
-Write a program that inputs **n integers** (**n** > 0) and finds the **the Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
+Write a program that inputs **n integers** (**n** > 0) and finds the **Max Number** (the largest number) among them. The first line of the input specifies the number of integers **n**. The following **`n`** lines consist of one integer. Examples:
 
 #### Sample Input and Output
 
@@ -204,7 +204,7 @@ We input the numbers one by one and calculate the two **sums** (the numbers on *
 
 ![](assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-**`+=`** is **combined assigment operator** that is used frequently. It adds the value of the right to the left operand and then assignes the result to the left operand. 
+**`+=`** is a **combined assignment operator** that is used frequently. It adds the value of the right to the left operand and then assigns the result to the left operand. 
 **C += A** is equivalent to **C = C + A**.
 
 #### Testing in The Judge System
@@ -212,7 +212,7 @@ We input the numbers one by one and calculate the two **sums** (the numbers on *
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#7](https://judge.softuni.org/Contests/Practice/Index/655#7).
 
 
-### Exapmle: Vowels Sum 
+### Problem: Vowels Sum 
 
 Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
@@ -229,7 +229,7 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 
 #### Hints and Guidelines
 
-We read the input text **`s`**, after that we null the sum and run a loop from **0** to **`s.length() - 1`** (text lenght -1). We check every letter **`s.charAt(i)`** if it is a vowel and add its value to the sum. 
+We read the input text **`s`**, after that, we null the sum and run a loop from **0** to **`s.length() - 1`** (text length -1). We check every letter **`s.charAt(i)`** if it is a vowel and add its value to the sum. 
 
 ![](assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
@@ -244,15 +244,15 @@ We can repeat a block of code using **`for` loop**:
 
 ![](assets/chapter-5-1-images/00.For-loop-01.png)
 
-We can read series of **`n`** numbers from the console:
+We can read a series of **`n`** numbers from the console:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Problems Repetitions (Loops)
+## Problems: Loops
 
 After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve some problems for exercise.
 
-### Creating new project in IntelliJ IDEA
+### Creating a new project in IntelliJ IDEA
 
 We start by creating a new project in IntelliJ IDEA to better organize our solutions for the exercise. For each problem, we will create a separate class.
 
@@ -272,7 +272,7 @@ We name the project (Project name:) **Loops** and select the directory where the
 
 ![](assets/chapter-5-1-images/10.New-project-04.png)
  
-In the next window, we click on the **[OK]** button to create **Project location** if the directory doesn't exist.
+In the next window, we click on the **[OK]** button to create a **Project location** if the directory doesn't exist.
 
 ![](assets/chapter-5-1-images/10.New-project-05.png)
 
@@ -280,11 +280,11 @@ We created a new project. If we click on the triangle in front of **Loops** on t
 
 ![](assets/chapter-5-1-images/10.New-project-06.png)
 
-To create **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **problems** (with a small first letter).
+To create a **Package** in our project, which contains all the classes with the solutions from the exercise, right-click with the mouse on **src**, then select **New** -> **Package** and name it **problems** (with a small first letter).
 
 ![](assets/chapter-5-1-images/10.New-project-07.png)
 
-To create new class for the first problem, right-click with the mouse on **problems**, select **New** -> **Java Class** and name it **problem_01** (with a capital letter).
+To create a new class for the first problem, right-click with the mouse on **problems**, select **New** -> **Java Class**, and name it **problem_01** (with a capital letter).
 
 ![](assets/chapter-5-1-images/10.New-project-08.png)
 
@@ -296,7 +296,7 @@ After these changes, the structure of the project should look like this:
  
 For each subsequent exercise, we will create a new class in the way described above. 
  
-### Problem: An element equal to the sum of the others
+### Problem: Half Sum Element
 
 Write a program that inputs **n integers** and checks if there is a number among them that is equal to the sum of all others. If there is such an element, print **"Yes" + its value**. Otherwise, print **"No" + the difference between the largest element and the sum of the rest**, as an absolute value. 
 
@@ -321,7 +321,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#
 
 ### Problem: Odd \/ Even position 
 
-Write a program that reads **n numbers** and calculates **the sum**, the **min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, the **min**, and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max element, print **"No"**. 
 
 #### Sample Input and Output
 
@@ -336,7 +336,7 @@ Write a program that reads **n numbers** and calculates **the sum**, the **min**
 
 The problem combines several previous problems: finding the **min**, **max**, and the **sum**, as well as processing elements on **even and odd positions**. Check your solutions to the previous problems again.
 
-In the current problem, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use **neutral starting value** in finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the result is equal to the neutral value, we will print **“No”**.
+In the current problem, it is better to work with **fractions** (not integers). The sum, the min, and the max value will also be fractions. We have to use a **neutral starting value** in finding the min / max value, for example **10000.0** and **-10000.0**. If the result is equal to the neutral value, we will print **“No”**.
 
 #### Testing in The Judge System
 
@@ -364,16 +364,16 @@ The input consists of number **n**, followed by **2\*n integers**, one per line.
 
 #### Hints and Guidelines
 
-We read the input numbers **in pairs**. For each pair, we calculate the **sum**. While reading the input pairs, for each pair, except the first one, we have to calculate **the difference with the previous one**. To do that, we need to store the sum of the previous pair in a separate variable. Finally, we find the **largest difference** between two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
+We read the input numbers **in pairs**. For each pair, we calculate the **sum**. While reading the input pairs, for each pair, except the first one, we have to calculate **the difference with the previous one**. To do that, we need to store the sum of the previous pair in a separate variable. Finally, we find the **largest difference** between the two pairs. If it is **0**, print **“Yes”** + the value, otherwise - **“No”** + the difference.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#11](https://judge.softuni.org/Contests/Practice/Index/655#11).
 
 
-## Problem: Graphical and web applications
+## Problem: Graphical and Web Applications
 
-In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
+In the current chapter, we learned about **loops** as construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 
 ### Problem: Turtle Graphics GUI Application
 
@@ -386,7 +386,7 @@ Let us get familiar with **the concept of drawing "Turtle Graphics"**. Take a lo
   * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
   * Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-We will start by creating a new **Java project** in **IntelliJ IDEA**. Add new package **`app`** (earlier in this chapter we described how to do it). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-EN/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-EN/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore, we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is done as follows:
+We will start by creating a new **Java project** in **IntelliJ IDEA**. Add a new package **`app`** (earlier in this chapter we described how to do it). Download **`MyTurtle.java`** and **`jturtle-0.1.1.jar`** from [https://github.com/SoftUni/Programming-Basics-Book-Java-EN/tree/master/assets/chapter-5-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-EN/tree/master/assets/chapter-5-1-assets). **`MyTurtle.java`** is a pre-written class, which will help us get acquainted faster with the library **`jturtle-0.1.1.jar`**, which runs **the turtle**. Using file explore, we copy **`MyTurtle.java`** into the directory **`app`** of the project. Then we need to add the external library **`jturtle-0.1.1.jar`** in our project. This is done as follows:
   * Select **Project Structure** from the **File** menu (CTRL + SHIFT + ALT + S).
   * Click on **Select Modules** in the left pane.
   * Click on the **Dependencies** tab.
@@ -406,7 +406,7 @@ In the next window, click [**OK**], and we are ready to open **`MyTurtle.java`**
   
 ![](assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
-#### Main methods in `Turtle`class
+#### Main Methods in `Turtle` Class
 
 These are the main actions in `Turtle` class with which we draw:
 
