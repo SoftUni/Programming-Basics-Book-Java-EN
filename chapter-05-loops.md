@@ -371,7 +371,7 @@ We read the input numbers **in pairs**. For each pair, we calculate the **sum**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#11](https://judge.softuni.org/Contests/Practice/Index/655#11).
 
 
-## Problem Graphical and web applications
+## Problem: Graphical and web applications
 
 In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 

@@ -234,7 +234,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 To consolidate our knowledge of the conditional statements **`if`** and **`if-else`**, let's solve several practical problems.
 
 
-### Problem Bonus Score
+### Problem: Bonus Score
 
 An **integer** is read from the console - the number of points. A **bonus score** adds to it according to the rules described below. Write a program that calculates the **bonus score** for this integer and **the total number of points** with the bonuses.
 
@@ -267,7 +267,7 @@ Executing the above code will output the following result:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#5](https://judge.softuni.org/Contests/Practice/Index/651#5).
 
 
-### Problem Summing Up Seconds
+### Problem: Summing Up Seconds
 
 Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the time of each athlete from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **formatted with a zero at the front if they're less than 10** (2 -> "02", 7 -> "07", 35 -> "35").
 
@@ -301,7 +301,7 @@ A different solution that does not use **`if-else`** statement is more appropria
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#6](https://judge.softuni.org/Contests/Practice/Index/651#6).
 
 
-### Problem Unit Converter
+### Problem: Unit Converter
 
 Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the conversion table below to convert a value from one unit to another:
 
@@ -382,7 +382,7 @@ We now have an empty Java project:
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Problem Excellent Result
+### Problem: Excellent Result
 
 The first problem of this exercises is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above. 
 
@@ -426,7 +426,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
  ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
-### Problem Excellent or Not
+### Problem: Excellent or Not
 
 The next problem of this exercise is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
@@ -459,7 +459,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Problem Even or Odd
+### Problem: Even or Odd
 
 The next problem is to write a **program that reads input data from the console**. As input data enter **an integer** and output **even** or **odd**.
 
@@ -487,7 +487,7 @@ In the main method, **`public static void main()`** write the code to solve the 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#2](https://judge.softuni.org/Contests/Practice/Index/651#2).
 
 
-### Problem Greater Number
+### Problem: Greater Number
 
 The next problem is to write a **program that reads input data from the console**. As input data enter **two integers** each on a separate line and output the greater one.
 
@@ -515,7 +515,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#3](https://judge.softuni.org/Contests/Practice/Index/651#3).
 
 
-### Problem Number 0...9 to Text
+### Problem: Number 0...9 to Text
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer in the range [0 … 9]** and output **the integer in English**. If the integer is over the given range, print "**number too big**".
 
@@ -537,7 +537,7 @@ To solve the problem, we can use sequential **`if-else`** statements to cover **
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#4](https://judge.softuni.org/Contests/Practice/Index/651#4).
 
 
-### Problem Password Guess
+### Problem: Password Guess
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as the phrase "**s3cr3t!P@ssw0rd**". Output "**Welcome**" if the result is true and "**Wrong password!**" otherwise.
 
@@ -558,7 +558,7 @@ To solve the problem it is necessary to use one **`if-else`** statement.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#8](https://judge.softuni.org/Contests/Practice/Index/651#8).
 
 
-### Problem Number 100...200
+### Problem: Number 100...200
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200** or **above 200**. Output the corresponding message as shown in the table below.
 
@@ -575,7 +575,7 @@ The next problem is to write a **program that reads input data from the console*
 Test your solution here:: [https://judge.softuni.org/Contests/Practice/Index/651#9](https://judge.softuni.org/Contests/Practice/Index/651#9).
 
 
-### Problem Equal Words
+### Problem: Equal Words
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. Output "**yes**" or "**no**".
 
@@ -598,7 +598,7 @@ Before comparing words, transform them to lowercase so that the size of the lett
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#10](https://judge.softuni.org/Contests/Practice/Index/651#10).
 
 
-### Problem Speed Info
+### Problem: Speed Info
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **speed**(a decimal number). Output information about the speed.
 
@@ -624,7 +624,7 @@ The next problem is to write a **program that reads input data from the console*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#11](https://judge.softuni.org/Contests/Practice/Index/651#11).
 
 
-### Problem Area of Figures
+### Problem: Area of Figures
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its area**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
 
@@ -650,7 +650,7 @@ Format the output to **3 digits after the decimal point**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#12](https://judge.softuni.org/Contests/Practice/Index/651#12).
 
 
-### Problem Time + 15 Minutes 
+### Problem: Time + 15 Minutes 
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what is going to be the time in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. Ourput the hours either using one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
@@ -672,7 +672,7 @@ To solve the problem, add 15 minutes and perform a few checks. If the minutes ex
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#13](https://judge.softuni.org/Contests/Practice/Index/651#13).
 
-### Problem Equals three numbers
+### Problem: Equals three numbers
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **3 integers**. Output if they are equal (**yes**/**no**).
 
@@ -689,7 +689,7 @@ The next problem is to write a **program that reads input data from the console*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#14](https://judge.softuni.org/Contests/Practice/Index/651#14).
 
 
-### Problem Number 0...100 to Text
+### Problem: Number 0...100 to Text
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. Output the text in English.
 

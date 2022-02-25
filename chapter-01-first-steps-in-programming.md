@@ -351,7 +351,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#
 
 ![](assets/chapter-1-images/02.Expression-03.png)
 
-### Problem Nums 1...20
+### Problem: Nums 1...20
 
 Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
