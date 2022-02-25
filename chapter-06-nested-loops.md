@@ -1,6 +1,6 @@
 # Chapter 6.1 Nested Loops
 
-This chapter will discuss **nested loops in Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`single` loops** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
+This chapter will discuss **nested loops in the Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`single` loops** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
 ## Video
 
@@ -10,7 +10,7 @@ This chapter will discuss **nested loops in Java language**. We will use **`for`
   https://youtu.be/FU90zeFZZFs</a>.
 </div>
 
-### Problem: A rectangle with a size of 10 x 10 asterisks
+### Problem: Rectangle of 10 x 10 Stars
 
 Write a program that draws a rectangle of **10 x 10** asterisks in the console.
 
@@ -30,7 +30,7 @@ How does the example work? The control variable of the **loop (`i = 0`)** is ini
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#0](https://judge.softuni.org/Contests/Practice/Index/657#0).
 
 
-### Problem: A rectangle with a size of N x N asterisks
+### Problem: Rectangle of N x N Stars
 
 Write a program that reads an integer **n** from the console, and as output, draws a **rectangle with a size of n x n asterisks**.
 
@@ -52,11 +52,10 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#
 ## Nested Loops
 
 Nested loops are construction in which **in the body of one loop** statement (called outer), **another loop statement is performed** (called inner). For each iteration of the outer loop statement, the inner one is executed **completely**. This happens as follows:
-<!--....is performed **the whole**. This happens as follows: -->
- - When the execution of nested loops begin, **the outer loop starts** first which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+ - When the execution of nested loops begins, **the outer loop starts** first which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - Then **the inner loop is executed**, which includes the same steps: the control variable is initialized, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - When the condition for **the end of the inner loop** is met, the program returns one step up, and the started execution of the outer loop continues. This results that the variable of the outer loop is changing (incremented), then checks whether the end condition of the outer loop is satisfied. If not, **a new execution of the nested (inner) loop starts**.
- - This is repeated until the outer loop variable reaches the **end of loop** condition.
+ - This is repeated until the outer loop variable reaches the **end of the loop** condition.
 
 Here is an **example** that illustrates the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
 
@@ -64,7 +63,7 @@ Here is an **example** that illustrates the nested loops. The goal is to print a
 
 How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
-### Problem: A square with a size of 10 x 10 asterisks
+### Problem: Square of Stars
 
 Write a program that draws on the console a square of **N x N** asterisks: 
 
@@ -74,7 +73,7 @@ Write a program that draws on the console a square of **N x N** asterisks:
 
 #### Hints and Guidelines
 
-The problem is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
+The problem is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning of the end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
@@ -83,7 +82,7 @@ The problem is similar to the previous one. Here, it is necessary to consider ho
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#2](https://judge.softuni.org/Contests/Practice/Index/657#2).
 
 
-### Problem: A triangle of dollar signs
+### Problem: Triangle of Dollars
 
 Write a program that reads an integer number **n** from the console and returns as output **a triangle of dollar signs**.
 
@@ -93,7 +92,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 #### Hints and Guidelines
 
-The problem is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
+The problem is **similar** to those of drawing **rectangles** and **squares**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** which **line** we are at the time of printing, i.e. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
@@ -102,7 +101,7 @@ The problem is **similar** to those for drawing **rectangle** and **square**. We
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#3](https://judge.softuni.org/Contests/Practice/Index/657#3).
 
 
-### Problem: Square frame 
+### Problem: Square Frame
 
 Write a program that reads an integer number **n** from the console and returns as output **a square frame** with a size of **n \* n**.
 
@@ -118,7 +117,7 @@ Write a program that reads an integer number **n** from the console and returns 
 
 We can solve the problem as follows:
 * We read an integer **`n`** from the console.
-* We print **the upper part** of the frame: first the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**.
+* We print **the upper part** of the frame: first the sign **`+`**, then **n-2** times the sign **`-`**, and finally the sign **`+`**.
 * We print **the middle part** of the frame: we print **n-2** lines as first print the sign **`|`**, then **n-2** times the sign **`-`** and finally again the sign **`|`**. We can achieve this with nested loops.
 * We print **the lower part** of the frame: first print the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**. 
 
@@ -131,7 +130,7 @@ Here is an example implementation of the described logic above, with nested loop
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#4](https://judge.softuni.org/Contests/Practice/Index/657#4).
 
 
-### Problem: A diamond of asterisks 
+### Problem: Rhombus of Stars 
 
 Write a program that reads an integer number **n** from the console and returns as output **a diamond of asterisks** with a size of **n**.
 
@@ -153,7 +152,7 @@ For the upper part of the rhombus (first loop) we can use the following guidelin
 * We print **`*`**.
 * We print **`row-1`** times **`*`**. 
 
-We will use the **similar** way to output the **lower** part of the rhombus, but we leave the reader to try to do it himself. 
+We will use the **same** way to output the **lower** part of the rhombus, but we leave the reader to try to do it himself. 
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
@@ -162,7 +161,7 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#5](https://judge.softuni.org/Contests/Practice/Index/657#5).
 
 
-### Problem: Christmas tree
+### Problem: Christmas Tree
 
 Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the console and returns as output **Christmas tree** with a height of **n+1**.
 
@@ -176,7 +175,7 @@ Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the co
 
 #### Hints and Guidelines
 
-As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **in front of** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
+As we saw in the previous problems, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **in front of** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
@@ -185,7 +184,7 @@ As we saw in the previous examples, we can apply a similar principle and **divid
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#6](https://judge.softuni.org/Contests/Practice/Index/657#6).
 
 
-## Drawing more complex figures
+## Drawing More Complex Figures
 
 Let's look at a few exercises about how we can draw figures on the console with more complex logic. To solve these problems, we need to think more about the program logic before we begin writing.
 
@@ -219,6 +218,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/657#
 
 
 ### Problem: House
+
 Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
@@ -241,15 +241,17 @@ According to the condition of the problem, the house has dimensions of **`n` x `
 * When **`n`** is an even number, the roof of the house is obtuse.
 * When **`n`** is odd, **the roof** is one row larger than **the base**.
 
-##### The roof
-* It consists of **asrerisks** (`*`) and **dashes** (`-`). 
+##### The Roof
+
+* It consists of **asterisks** (`*`) and **dashes** (`-`). 
 * At the top part of the roof, we have one or two stars depending on whether **`n`** is even or odd (also related to the dashes). 
 * In the lowest part, we have many stars and a few or no dashes.  
 * At each row of the roof (looking from top to bottom), the stars are increased by two, and the dashes are decreased by two.
 
-##### The base
+##### The Base
+
 * The height is **`n`** rows.
-* It consists of **asrerisks** (`*`) and **pipes** (`|`).   
+* It consists of **asterisks** (`*`) and **pipes** (`|`).   
 * Each row consists of two **pipes** (one at the beginning and one at the end of the row) and a sequence of **`n - 2`** **asterisks** between the pipes.
  
 We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
@@ -296,16 +298,16 @@ After we have calculated the length of the roof, we use a loop from 0 to **`roof
 
 ![](assets/chapter-6-1-images/09.House-06.png)
 
-* Before the iteration is over, we add 2 to **`stars`** (the number of the **asterisks**).
+* Before the iteration is over, we add 2 to the **`stars`** (the number of the **asterisks**).
 
 ![](assets/chapter-6-1-images/09.House-07.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html</a></td>
+<td>It is not a good practice to concatenate many character strings as is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html</a></td>
 </tr></table>
 
 After we have finished with the roof, it is time for the base. It is easier to print:
-* We use loop from **0** to **n** (not inclusive).
+* We use a loop from **0** to **n** (not inclusive).
 * We print on the console: **`|`** + **`*`** (**`n - 2`** times) + **`|`**.
 
 ![](assets/chapter-6-1-images/09.House-08.png)
@@ -338,30 +340,33 @@ According to the requirements of the problem, have **`n`** rows and **`n`** colu
 * All lines contain exactly **`n`** characters, and all lines, except the upper and the bottom ones, have **two asterisks** (**`*`**).
 
 We can divide (imaginary) the diamond into **two parts**: 
-* **Upper** part. It starts from the top to the middle of the diamond (includes **and** the middle row).
+* **Upper** part. It starts from the top to the middle of the diamond (includes **also** the middle row).
 * **Lower** part. It starts from the row after the middle up to the bottom tip (inclusive) of the diamond.
 
-##### Upper part
+##### Upper Part
+
 * If **n** is **odd**, begins with **1 asterisk** (**`*`**).
 * If **n** is **even**, begins with **2 asterisks** (**`**`**).
 * With each row down, the asterisks move away from each other.
-* The space infront, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
+* The space in front, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
 
-##### Lower part
+##### Lower Part
+
 * With each row down, the asterisks come together. It means that the space (**dashes**) between them decreases, and the space (**dashes**) on the left and right increases.
 * At its bottom, it has 1 or 2 **asterisks**, depending on whether **n** is odd or even.
 
-##### Upper and lower part
+##### Upper and Lower Part
+
 * On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except the middle row.
 * Each row has a space between the two **asterisks**, except the first and last row (sometimes **the asterisk is one**).
 
-##### Reading the Input Data
+##### Reading The Input Data
 
 We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/10.Diamond-01.png)
 
-##### Printing the upper part of the diamond
+##### Printing The Upper Part of The Diamond
 
 We begin drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded downward.
 
@@ -370,24 +375,24 @@ We begin drawing the upper part of the diamond. The first thing we need to do is
 After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded downward).
 
 At each iteration of the loop the following steps are performed:
-* We draw as an output on the console **dashes** on the left side of the diamond (with length equals to **`leftRight`**) and right after them the first **asterisk**.
+* We draw as an output on the console **dashes** on the left side of the diamond (with length equal to **`leftRight`**) and right after them the first **asterisk**.
 
 ![](assets/chapter-6-1-images/10.Diamond-03.png)
 
-* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, i.e. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
+* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, i.e. the diamond's outline). The result of the subtraction is assigned to a variable **`mid`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-04.png)
 
-* If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equal to **`mid`** and one **asterisk** after them.
-* We draw as an output on the console **dashes** on the right side of the diamond with length equal to **`leftRight`**.
+* If the **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equal to **`mid`** and one **asterisk** after them.
+* We draw as an output on the console **dashes** on the right side of the diamond with a length equal to **`leftRight`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-05.png)
 
-* In the end of the loop we decrease **`leftRight`** by 1 (**the asterisks `*`** are moving away from each other).
+* At the end of the loop, we decrease **`leftRight`** by 1 (**the asterisks `*`** are moving away from each other).
 
 We are ready with the upper part.
 
-##### Printing the lower part of the diamond
+##### Printing The Lower Part of The Diamond
 
 Printing the lower part is similar to that of the upper part. The differences are: 
 * Increase instead of decrease **`leftRight`** with one, but at the beginning of the loop
@@ -396,7 +401,7 @@ Printing the lower part is similar to that of the upper part. The differences ar
 ![](assets/chapter-6-1-images/10.Diamond-06.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
+<td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods on the Internet or look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
 #### Testing in The Judge System
