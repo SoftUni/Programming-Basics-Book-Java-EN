@@ -20,7 +20,7 @@ if (boolean expression) {
 
 After recalling how to write conditional statements, let's solve a few problems to get practical experience with the **`if-else`** statement.
 
-### Problem: Transportation Price
+### Problem: Transport Price
 
 A student must travel **n kilometers**. He has a choice between **three modes of transport**:
 * **Taxi**. Starting fee: **0.70** BGN. Daily rate: **0.79** BGN/km. Nightly rate: **0.90** BGN/km.
@@ -33,7 +33,7 @@ Write a program that enters the number of **kilometers n** and the **period of t
 
 **Two lines** are read from the console:
 * The first line contains the number **n** - number of kilometers - integer in the interval [**1… 5000**].
-* The second line contains the word "**day**" or "**night**" - if trip is during the day or at night.
+* The second line contains the word "**day**" or "**night**" - if the trip is during the day or at night.
 
 ### Output Data
 
@@ -83,7 +83,7 @@ Once that's done, we can now proceed to the computation of the **full transporta
 
 First, we check if the kilometers are **below 20** since it's specified in the problem that the student could only use a **taxi** for destinations that are **below 20** kilometers away. If the expression in the first conditional statement is evaluated to be **true** then the variable that stores the transportation price (**`price`**) will be **assigned** the corresponding value. This value is equal to the **initial rate**, which we **sum up** with its **rate** **multiplied** by **the distance** that the student has to travel.
 
-If the expression in the first conditional statement is evaluated to **false** then the next step of the program is to check if the distance is **below 100**. The reason we're doing that is because it's possible to use a **bus** as a vehicle in this distance range. **The price** per kilometer for the bus **is lower** than the taxi price. Therefore, the result of the expression evaluation is **true**, then here's the place to assign the **value** of the transportation price variable (**`price`**) which equals the result of the **multiplication** of the **distance** and the **bus rate**.
+If the expression in the first conditional statement is evaluated to **false** then the next step of the program is to check if the distance is **below 100**. The reason we're doing that is to be possible to use a **bus** as a vehicle in this distance range. **The price** per kilometer for the bus **is lower** than the taxi price. Therefore, the result of the expression evaluation is **true**, then here's the place to assign the **value** of the transportation price variable (**`price`**) which equals the result of the **multiplication** of the **distance** and the **bus rate**.
 
 In the case of the second check **not returning `true`** as a result, the program ends up in the **`else`** block and assigns a **value** equal to the **result** of the **multiplication** of the **distance** and the **rate of the train**. We do that because the train is the **cheapest** vehicle for the given distance.
 
@@ -97,7 +97,7 @@ We **have successfully computed the price of the cheapest transportation** so we
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#0](https://judge.softuni.org/Contests/Practice/Index/652#0).
 
-### Problem: Pipes in a Pool
+### Problem: Pipes In Pool
 
 A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified hourly flow rate** (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for **N hours**. Your problem is to write a program that prints out the state of the pool, **at the moment the worker comes back**.
 
@@ -112,7 +112,7 @@ A Pool with **volume V** has **two filling pipes**. **Each pipe has a specified 
 ### Output Data
 
 Print on the console **one of two possible states**:
-* How full is the pool and each pipe's percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).
+* How full are the pool and each pipe's percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).
    * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
 * If the pool has overflowed - how many liters over the pool's volume has the pool overflowed for the given time, floating-point number.
    * "For **[x]** hours the pool overflows with **[y]** liters."
@@ -154,13 +154,13 @@ However, if the check returns **`false`** it means that the amount of water is *
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#1](https://judge.softuni.org/Contests/Practice/Index/652#1).
 
-### Problem: The Sleepy Cat Tom
+### Problem: Sleepy Cat Tom
 
-**The cat Tom** enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom's **norm for playtime** is **30 000 minutes per year***. Tom's playtime **is dependant on his owner's non-working days**:
+**The cat Tom** enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom's **norm for playtime** is **30 000 minutes per year***. Tom's playtime **is dependent on his owner's non-working days**:
 * When Tom's owner is at **work**, Tom's playtime is **63 minutes a day**.
 * When Tom's owner has a **day off**, Tom's playtime is **127 minutes a day**.
 
-Your problem is to write a program that takes as input Tom's owner **number of days off** and prints out whether **Tom has a satisfactory sleeping routine** and how much is **the difference from Tom's norm for playtime** for the current year, assuming that **the year has 365 days**.
+Your problem is to write a program that takes as input Tom's owner's **number of days off** and prints out whether **Tom has a satisfactory sleeping routine** and how much is **the difference from Tom's norm for playtime** for the current year, assuming that **the year has 365 days**.
 
 **Example**: 20 days off → 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ * 63 + 20 \ * 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.
 
@@ -196,7 +196,7 @@ The **input data** will be read in a **single line** that will contain a **whole
 
 ![](assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
-Our **first** step is to calculate how many **minutes in total** has Tom and his master played together. The problem states that not only has the sleepy cat played in **days off** but also on **working days**. **The number** that we read from the console is the number of **non-working days**.
+Our **first** step is to calculate how many **minutes in total** has Tom and his master played together. The problem states that not only has the sleepy cat played on **days off** but also on **working days**. **The number** that we read from the console is the number of **non-working days**.
 
 Our next step is to use that number to **calculate** how many are the **working days** of Tom's owner. We need this number because without it we can not get the **total number of playtime minutes**. The total number of days in a year is **365**, the number of days off is **X**, which means that the number of working days is **365 - X**. **We will store the difference** in a new variable (**`workingDays`**), which we will use **only** for this **value**.
 
@@ -256,7 +256,7 @@ The following is expected to be printed on the console:
 
 |Input|Output|Input|Output|
 |----|-----|----|-----|
-|650<br>2<br>175<br>3|Good harvest this year! Total wine: 208 liters.<br>33 liters left → 11 liters per person.|1020<br>1.5<br>425<br>4|It will be a tough winter! More 180 liters wine needed.|
+|650<br>2<br>175<br>3|Good harvest this year! Total wine: 208 liters.<br>33 liters left → 11 liters per person.|1020<br>1.5<br>425<br>4|It will be a tough winter! More 180 liters of wine are needed.|
 
 ### Hints and Guidelines
 
@@ -270,7 +270,7 @@ First, we need to **check** what **input data** is expected and choose an adequa
 
 To solve the problem we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The problem defines a formula that requires the **weight of the yielded grapes in kg.** . We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
 
-Once we have made these calculations, we are ready to **insert** them into the problem formula. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
+Once we have made these calculations, we are ready to **insert** them into the problem formulation. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
 
 ![](assets/chapter-3-2-images/04.Harvest-02.png)
 
@@ -292,7 +292,7 @@ If the expression evaluation returns **`false`**, then we need to **print the di
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#3](https://judge.softuni.org/Contests/Practice/Index/652#3).
 
-### Problem: Company
+### Problem: Firm
 
 A company is requested to develop a project that is estimated for a given number of hours. The company has **a certain number of days** to do that. **In 10% of those days**, its employees are being onboarded and **are not ready to work** on the project. A normal **working day at this company lasts for 8 hours**. The project is important for the company and every **employee is obliged to work** on this project **overtime for 2 hours** per day.
 
