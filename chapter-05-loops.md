@@ -248,7 +248,7 @@ We can read series of **`n`** numbers from the console:
 
 ![](assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Exercises: Repetitions (Loops)
+## Problems Repetitions (Loops)
 
 After we had acquainted with the loops, it is time to **solidify what we have learned by practicing it**, by writing a lot of code. Let us solve some problems for exercise.
 
@@ -371,7 +371,7 @@ We read the input numbers **in pairs**. For each pair, we calculate the **sum**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/655#11](https://judge.softuni.org/Contests/Practice/Index/655#11).
 
 
-## Exercise: Graphical and web applications
+## Problem Graphical and web applications
 
 In the current chapter, we learned about **loops** as a construction in programming that allows us to repeat a given action or a group of actions many times. Now let us play with them. To do that, we will draw some figures that will consist of many repeating graphical elements. This time, we will not do it in the console but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not at all complicated. Try it!
 

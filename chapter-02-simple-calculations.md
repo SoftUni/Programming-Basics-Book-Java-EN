@@ -444,7 +444,7 @@ To summarize what have we learned in this chapter of the book:
 - **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
 - **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
 
-## Exercises: Simple calculations
+## Problems Simple calculations
 
 To consolidate our knowledge of simple calculations, let's solve several exercises.
 
@@ -475,7 +475,7 @@ Now we have **empty IntelliJ IDEA Project** (without any Java classes in it whic
 
 The purpose of this project is to add in it **`.java` class per problem** from the exercises.
 
-### Exercise: Calculating the area of the square 
+### Problem Calculating the area of the square 
 
 The first problem from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
 
@@ -506,7 +506,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 ![](assets/chapter-2-1-images/07.Square-area-06.png)
 
 
-### Exercise: Inches to centimeters
+### Problem Inches to centimeters
 
 Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **multiply the inches by 2.54** (because one inch = 2.54 centimeters).
 
@@ -573,7 +573,7 @@ The solution should be accepted as a completely correct one:
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
 
 
-### Exercise: Greeting by name
+### Problem Greeting by name
 
 Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
@@ -596,7 +596,7 @@ First, we create a **new Java class** with the name “Greeting” in the projec
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649#2](hhttps://judge.softuni.org/Contests/Practice/Index/649#2).
 
 
-### Exercise: Concatenating text and numbers
+### Problem Concatenating text and numbers
 
 Write a Java program, that reads from the console a first name, last name, age, and city, and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
@@ -619,7 +619,7 @@ Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sampl
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
 
-### Exercise: Trapezoid area
+### Problem Trapezoid area
 
 Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for the area of trapezoid is **(b1 + b2) * h / 2**.
 
@@ -642,7 +642,7 @@ The code on the picture is consciously blurred for you to give a thought and fin
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
-### Exercise: Circle area and perimeter
+### Problem Circle area and perimeter
 
 Write a program that reads from the console **a number r** r then calculates and prints **the area and perimeter of the circle**/**round** with **radius r**.
 
@@ -664,7 +664,7 @@ For the calculations, you can use the following formulas:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
-### Exercise: Rectangle area
+### Problem Rectangle area
 
 **A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
@@ -683,7 +683,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
 
-### Exercise: Triangle area
+### Problem Triangle area
 
 Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area*100.00)/100.00)`**.
 
@@ -701,7 +701,7 @@ Write a program that reads from the console **a side and height of a triangle** 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#7](https://judge.softuni.org/Contests/Practice/Index/649#7).
 
 
-### Exercise: Converter – from °C (Celsius) to °F (Fahrenheit)
+### Problem Converter – from °C (Celsius) to °F (Fahrenheit)
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
 
@@ -719,7 +719,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#8](https://judge.softuni.org/Contests/Practice/Index/649#8).
 
 
-### Exercise: Converter – from  radians to degrees
+### Problem Converter – from  radians to degrees
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
@@ -737,7 +737,7 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#9](https://judge.softuni.org/Contests/Practice/Index/649#9).
 
 
-### Exercise: Converter – USD to BGN
+### Problem Converter – USD to BGN
 
 Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
 
@@ -754,7 +754,7 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#10](https://judge.softuni.org/Contests/Practice/Index/649#10).
 
 
-### Exercise:	\* Currency converter
+### Problem	\* Currency converter
 
 Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
@@ -778,7 +778,7 @@ Write a program for **conversion of money from one currency into another**. It h
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#11](https://judge.softuni.org/Contests/Practice/Index/649#11).
 
 
-### Exercise: ** Date calculations – 1000 days on the Earth
+### Problem ** Date calculations – 1000 days on the Earth
 
 Write a program that reads from the console a **birth date** in format **`dd-MM-yyyy`** then calculates the date on which **1000 days** are turned since this birth date, and prints the output in the same format.
 

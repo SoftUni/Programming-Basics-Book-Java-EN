@@ -454,7 +454,7 @@ switch (selector) {
 }
 ```
 
-## Exercises: More Complex Conditions 
+## Problems More Complex Conditions 
 
 Let's practice using more complex conditions. We will solve a few practical exercises.
 
