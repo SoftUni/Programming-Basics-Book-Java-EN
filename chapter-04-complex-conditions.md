@@ -65,7 +65,7 @@ A Bulgarian entrepreneur opens **small shops** in **a few cities** with differen
 |:-------:|:-------:|:-------:|:-------:|
 |coffee<br>water<br>beer<br>sweets<br>peanuts|0.50<br>0.80<br>1.20<br>1.45<br>1.60<br>|0.40<br>0.70<br>1.15<br>1.30<br>1.50<br>|0.45<br>0.70<br>1.10<br>1.35<br>1.55|
 
-Calculate the price by the given **city** (string), **product** (string) and **quantity** (double).
+Calculate the price by the given **city** (string), **product** (string), and **quantity** (double).
 
 #### Sample Input and Output
 
@@ -93,7 +93,7 @@ Let's take a look at how we can create more complex logical conditions. We can u
 
 ### Logical "AND"
 
-As we saw, in some problems we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
+As we saw, in some problems we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** are valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 
 The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
@@ -103,7 +103,7 @@ The logical "**AND**" (operator **`&&`**) means a few conditions have to be **fu
 
 ### How Does The && Operator Work?
 
-The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
+The **`&&`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`true`** or **`false`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered**, and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`true`**, **only** when it accepts as **arguments statements** with the value **`true`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`false`**. 
 
 **Example**:
 
@@ -116,7 +116,7 @@ boolean result = a && b && c && d;
 // false (as d is not being checked)
 ```
 
-The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
+The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it, and accepts that it has a **`true`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`true`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`false`** value. After the program accepts that argument **`c`** has a **`false`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`false`**.
 
 ![](/assets/chapter-4-1-images/00.Logical-and-01.png)
 
@@ -149,7 +149,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 The logical **"OR"** (operator **`||`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`&&`**, the logical **"OR"** accepts a few arguments of **bool** (conditional) type and returns **`true`** or **`false`**. We can easily guess that we **obtain** a value **`true`** whenever at least **one** of the arguments has a **`true`** value. This is shown at the truth table below:
 
-In school, the teacher said: "Ivan or Peter should clean the board". For completing this condition (the board to be clean), it's possible only Ivan to clean it, only Peter to clean it or both of them to do it. 
+In school, the teacher said: "Ivan or Peter should clean the board". For completing this condition (the board to be clean), it's possible only Ivan to clean it, only Peter to clean it, or both of them to do it. 
 
 |a|b|a &#124;&#124; b|
 |:-----:|:-----:|:-----:|
@@ -170,11 +170,11 @@ boolean result = a || b || c || d;
 // true (as c and d are not being checked)
 ```
 
-The program **checks `a`**, accepts that it has a value **`false`** and continues. Reaching **`b`**, it understands that it has a **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
+The program **checks `a`**, accepts that it has a value **`false`**, and continues. Reaching **`b`**, it understands that it has a **`true`** value and the whole **expression** is calculated as **`true`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
 
 ### Problem: Fruit or Vegetable
 
-Let's check whether a given **product** is **a fruit** or **a vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper** and **carrot**. Everything else is "**unknown**".
+Let's check whether a given **product** is **a fruit** or **a vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper**, and **carrot**. Everything else is "**unknown**".
 
 #### Sample Input and Output
 
@@ -226,13 +226,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 Like the rest of the operators in programming, the operators **`&&`** and **`||`** have a priority, as in the case **`&&`** is with higher priority than **`||`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice. 
 
-## More Complex Conditions - Examples
+## More Complex Conditions - Problems
 
 Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
 
 ### Problem: Point on Rectangle Border
 
-Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
+Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x**, and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
 ![](assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
@@ -415,7 +415,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 ## What Have We Learned from This Chapter?
 
-In this chapter, we learned how we can use **more complex conditions**, logical operators inside the condition and **nested `if`-constructions**.
+In this chapter, we learned how we can use **more complex conditions**, logical operators inside the condition, and **nested `if`-constructions**.
 
 ### Nested Conditions
 
@@ -466,7 +466,7 @@ In a cinema hall, the chairs are ordered in a **rectangle** shape in **r** rows 
 * **Normal** – a standard screening, with a price of **7.50** BGN.
 * **Discount** – a screening for children and students at a reduced price – **5.00** BGN.
 
-Write a program that enters a **type of screening** (string), a number for **rows** and a number for **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
+Write a program that enters a **type of screening** (string), a number for **rows**, and a number for **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
 
 #### Sample Input and Output
 
@@ -488,7 +488,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 ### Problem: Volleyball
 
-Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
+Vladimir is a student, lives in Sofia, and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
 Write a program that calculates **how many times Vladimir has played volleyball** throughout the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
 
 The input data is read from the console:
@@ -508,7 +508,7 @@ The input data is read from the console:
 
 #### Hints and Guidelines
 
-As usual, we read the input data from the console and, to avoid making mistakes, we convert the text into small letters with the function **`.toLowerCase()`**. Consequently, we calculate **the weekends spent in Sofia**, **the time for playing in Sofia** and **the common playtime**. At last, we check whether the year is a **leap**, we make additional calculations when necessary and we print the result on the console **rounded down** to the nearest **integer** (look for a **Java** class with such functionality).
+As usual, we read the input data from the console and, to avoid making mistakes, we convert the text into small letters with the function **`.toLowerCase()`**. Consequently, we calculate **the weekends spent in Sofia**, **the time for playing in Sofia**, and **the common playtime**. At last, we check whether the year is a **leap**, we make additional calculations when necessary and we print the result on the console **rounded down** to the nearest **integer** (look for a **Java** class with such functionality).
 
 A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
@@ -518,13 +518,13 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#11](https://judge.softuni.org/Contests/Practice/Index/653#11).
 
-### Problem: * Point in The Figure
+### Problem: Point in The Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-01.png)
 
-Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**) or on any of the borders of the figure (**border**).
+Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**), or on any of the borders of the figure (**border**).
 
 #### Sample Input and Output
 
