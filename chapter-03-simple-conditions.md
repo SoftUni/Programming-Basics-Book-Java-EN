@@ -43,7 +43,7 @@ In Java, we can use the following comparison operators when comparing numbers:
 <td>Greater than</td><td align="center"> &gt; </td>
 </tr>
 <tr>
-<td>Gerater than or equals</td><td align="center"> &gt;= </td>
+<td>Greater than or equals</td><td align="center"> &gt;= </td>
 </tr>
 <tr>
 <td>Less than</td><td align="center"> &lt; </td>
@@ -68,7 +68,7 @@ if (condition) {
 }
 ```
 
-### Problem: Excellent Grade
+### Problem: Excellent Result
 
 **Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -84,7 +84,7 @@ Test your solution here:
 
 ## If-Else Conditions
 
-Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the boolean expression (defined at the beginning **if(condition)**) returns **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – the code described in the curly brackets right after the **`if`** clause will be executed, otherwise if the condition returns **negative** (**`false`**) result – the code described in the curly brackets after the **`else`** clause will be executed. The format of the construction is:
+Simple **`if`** conditions could be extended with an **`else`** conditional statement, which specifies a block of code to be executed if the boolean expression (defined at the beginning **if(condition)**) returns **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns a **positive** (**`true`**) result – the code described in the curly brackets right after the **`if`** clause will be executed, otherwise if the condition returns a **negative** (**`false`**) result – the code described in the curly brackets after the **`else`** clause will be executed. The format of the construction is:
 
 ```java
 if (condition) {
@@ -96,7 +96,7 @@ if (condition) {
 }
 ```
 
-### Problem: Excellent Grade or Not
+### Problem: Excellent or Not
 
 Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
@@ -112,7 +112,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly brackets**. When we want to execute a **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
+<td>It is a good practice to <strong>always put curly brackets</strong> because it makes our code more readable and cleaner.</td>
 </tr></table>
 
 Here is an example that skipping curly brackets leads to confusion:
@@ -135,7 +135,7 @@ Executing the code with curly brackets will output the following result on the c
 <td>Both use cases are <strong>correct</strong> and could be used depending on the situation and/or the specific requirements, but you always must be careful and check the expected results.</td>
 </tr></table>
 
-### Problem: Even or Odd Number
+### Problem: Even or Odd
 
 Write a program that checks whether an integer is **even** or **odd**.
 
@@ -154,9 +154,9 @@ Executing the above code will output the following result:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#2](https://judge.softuni.org/Contests/Practice/Index/651#2).
 
 
-### Problem: The Greater Number
+### Problem: Greater Number
 
-Write a program that reads two integer numbers, from the console, and return the greater one. Print the output in the following format: “Greater number: x”, where the x is the returned number.
+Write a program that reads two integer numbers, from the console, and returns the greater one. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
 ### Hints and Guidelines
 
@@ -175,9 +175,9 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 ## Variable Scope
 
-Each variable has a scope in which it exists, called **variable scope**. This scope determines where the variable lives, in other words the scope where you can use it. In Java, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of an `if` statement will not be available outside of it**, unless we have defined it above in the code.
+Each variable has a scope in which it exists, called **variable scope**. This scope determines where the variable lives, in other words, the scope where you can use it. In Java, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of an `if` statement will not be available outside of it** unless we have defined it above in the code.
 
-In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the block (in this case we will receive notification from the **IDE** about variable scope).
+In the example below we will get an **error** because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the block (in this case we will receive notification from the **IDE** about variable scope).
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
@@ -197,9 +197,9 @@ if (condition) {
 }
 ```
 
-### Problem: Digits 0..9 to Text
+### Problem: Number 0...9 to Text
 
-Print a given digit, in rage from 1 to 9, in English (the digit is read from the console). 
+Print a given digit, in the range from 1 to 9, in English (the digit is read from the console). 
 
 ### Hints and Guidelines
 
@@ -229,7 +229,7 @@ The program logic from the above example **sequentially compares** the input dig
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#4](https://judge.softuni.org/Contests/Practice/Index/651#4).
 
 
-## Problems Sequence of If-Else conditions
+## Problems Sequence of If-Else Conditions
 
 To consolidate our knowledge of the conditional statements **`if`** and **`if-else`**, let's solve several practical problems.
 
@@ -243,7 +243,7 @@ An **integer** is read from the console - the number of points. A **bonus score*
 - If the integer is **greater than 1000**, the bonus score is **10%** from the integer.
 - Additional bonus score (added separately from previous)
  - If the integer is **even** -> +1 bonus score
- - If the integer is odd, with **last digit equals 5** -> +2 bonus score 
+ - If the integer is odd, with the **last digit equals 5** -> +2 bonus score 
  
 #### Sample Input and Output
 
@@ -267,7 +267,7 @@ Executing the above code will output the following result:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#5](https://judge.softuni.org/Contests/Practice/Index/651#5).
 
 
-### Problem: Summing Up Seconds
+### Problem: Sum Seconds
 
 Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the time of each athlete from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **formatted with a zero at the front if they're less than 10** (2 -> "02", 7 -> "07", 35 -> "35").
 
@@ -292,7 +292,7 @@ First, sum up the three numbers to get the total result in seconds. Since **1 mi
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-A different solution that does not use **`if-else`** statement is more appropriate because you can use it for greater time values:
+A different solution that does not use the **`if-else`** statement is more appropriate because you can use it for greater time values:
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
@@ -301,7 +301,7 @@ A different solution that does not use **`if-else`** statement is more appropria
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#6](https://judge.softuni.org/Contests/Practice/Index/651#6).
 
 
-### Problem: Unit Converter
+### Problem: Metric Converter
 
 Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the conversion table below to convert a value from one unit to another:
 
@@ -331,7 +331,7 @@ The program will receive three input lines:
 
 #### Hints and Guidelines
 
-Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the problem, we can easily convert values if we **use meters as our base unit**. Afterwards calculate the result from the conversion of the input number in meters, performing a set of checks to define the input unit. Then calculate directly the output unit.
+Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the problem, we can easily convert values if we **use meters as our base unit**. Afterward calculate the result from the conversion of the input number in meters, performing a set of checks to define the input unit. Then calculate directly the output unit.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
@@ -347,6 +347,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 ## Debugging
 
 There were probably errors in the code you wrote so far. There is an easier way to find errors, use a tool. In the following section, we will look at one.
+
 ### What is "Debugging"?
 
 **Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**. Of the logic that follows, the defined variables and how they are changed, and so on.
@@ -359,7 +360,7 @@ By pressing a combination of buttons [**Shift + F9**] you run the current progra
 
 ![](assets/chapter-3-1-images/00.Debugging-02.png)
 
-By pressing a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints** which suspend program execution at a specific point.
+By pressing a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints** that suspend program execution at a specific point.
 
 ## Problems Simple Conditions
 
@@ -367,7 +368,7 @@ To get a better understanding of what we have learned, let's solve a few practic
 
 ### Empty project in IntelliJ Idea
 
-Create a new project with name **Java** in IntelliJ Idea and leave all other options at their default state. In order to better organize the solutions of the problems from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
+Create a new project with the name **Java** in IntelliJ Idea and leave all other options at their default state. To better organize the solutions to the problems from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
 
 Run IntelliJ Idea. Create a new **Java project:** [**File**] → [**New**] → [**Project**].
 
@@ -384,7 +385,7 @@ We now have an empty Java project:
 
 ### Problem: Excellent Result
 
-The first problem of this exercises is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above. 
+The first problem of this exercise is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and output "**Excellent!**" if the score is **5.50** or above. 
 
 #### Sample Input and Output
 
@@ -411,7 +412,7 @@ To do that, go to the body of the method **`main (string [] args)`** and place t
 
  ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
-**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **testing it** with different input values:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
@@ -447,7 +448,7 @@ We already have a class containing one console application. What's left is to **
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **testing it** with different input values:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
@@ -478,7 +479,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
   
 In the main method, **`public static void main()`** write the code to solve the problem. To check if a number is even, we can use operator **`%`**, which returns **the remainder of integer division by 2** in the following way: **`boolean isEven = (number %2 == 0);`**.
 
-**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **testing it** with different input values:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
@@ -506,7 +507,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-**Run** the program by clicking on the green arrow in front of the class name and **test it** with different input values:
+**Run** the program by clicking on the green arrow in front of the class name and **testing it** with different input values:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
@@ -560,7 +561,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 ### Problem: Number 100...200
 
-The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200** or **above 200**. Output the corresponding message as shown in the table below.
+The next problem is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200**, or **above 200**. Output the corresponding message as shown in the table below.
 
 #### Sample Input and Output
 
@@ -626,7 +627,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 ### Problem: Area of Figures
 
-The next problem is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its area**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
+The next problem is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculate its area**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
 
 On the first line of input data, read the type of figure (`square`, `rectangle`, `circle`, `triangle`).
 * If the figure is a **square**, on the next line read one number - the length of its side.
@@ -652,7 +653,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#
 
 ### Problem: Time + 15 Minutes 
 
-The next problem is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what is going to be the time in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. Ourput the hours either using one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
+The next problem is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculate **what is going to be the time in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. Output the hours either using one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
 #### Sample Input and Output
 
@@ -672,7 +673,7 @@ To solve the problem, add 15 minutes and perform a few checks. If the minutes ex
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#13](https://judge.softuni.org/Contests/Practice/Index/651#13).
 
-### Problem: Equals three numbers
+### Problem: 3 Equal Numbers
 
 The next problem is to write a **program that reads input data from the console**. As input data, enter **3 integers**. Output if they are equal (**yes**/**no**).
 
