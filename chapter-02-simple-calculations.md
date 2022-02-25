@@ -1,7 +1,7 @@
 # Chapter 2.1. Simple Calculations
 
 In this chapter, we are going to get familiar with the following concepts and programming techniques:
--	What is **system console**?
+-	What is a **system console**?
 - How to **read numbers** from the system console?
 - How to work with **data types and variables**, which are necessary to process numbers and the operations between them?
 - How to **print** (a number) on the console?
@@ -17,7 +17,7 @@ In this chapter, we are going to get familiar with the following concepts and pr
   Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=tuLo1BPRCqM">https://www.youtube.com/watch?v=tuLo1BPRCqM</a>.
 </div>
 
-## The system console
+## The System Console
 
 The system console or the computer console, usually called just a **console**, represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.
 
@@ -25,17 +25,17 @@ Generally, the system console represents a text terminal which means that it acc
 
 ![](/assets/chapter-2-1-images/00.Console-example.png)
 
-In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows, it is called **Command Prompt**, while in Linux and macOS, it is called **Terminal**. The console runs console applications. They read the text as input from the command line and print the output as a text on the console. In this book, we are going to learn programming mostly through creating **console applications**.
+In most operating systems, generally, **the console** is available as a standalone application on which we write different console commands. In Windows, it is called **Command Prompt**, while in Linux and macOS, it is called **Terminal**. The console runs console applications. They read the text as input from the command line and print the output as text on the console. In this book, we are going to learn programming mostly through creating **console applications**.
 
 This is how the console looks in **Linux**:
 
 ![](/assets/chapter-2-1-images/00.Linux-terminal-example.png)
 
-## Reading integers from the console
+## Reading Integers from The Console
 
-In **Java** we have several options to read an input from **the console**. The one way is via the built-in class **` Scanner`**, which we will use now, and the other is via **` BufferedReader`**. The second one is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
+In **Java**, we have several options to read input from **the console**. The one way is via the built-in class **` Scanner`**, which we will use now, and the other is via **` BufferedReader`**. The second one is a bit faster, but we will start using it after we get familiar with the streams in **Java**.
 
-To read an **integer** (not floating-point number) from the console we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line at the top:
+To read an **integer** (not a floating-point number) from the console we have to import the built-in class **`Scanner`** on the first line of our program even before the base class declaration. We put this line at the top:
 
 ```java
 import java.util.Scanner;
@@ -50,11 +50,11 @@ int num = scanner.nextInt();
 
 In the example above, in the variable **`num`** of integer type **`int`**, we will have a value read as input from **the console**.
 
-Java is **highly typed language** this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
+Java is a **highly typed language** this means that the variables have type determined at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Problem: Calculating the area of the square with side **a**
+### Problem: 1000 Days After Birth
  
-As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiply it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
+As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiplies it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
 
 ```Java
 // Put this code in the file: SquareArea.java
@@ -84,7 +84,7 @@ Test the program with an invalid integer (as an input), for example, "**hello**"
 
 It is normal because **Java** is a highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a new input (a number in the example above).
 
-#### How Does the Example Work?
+#### How Does The Example Work?
 
 The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
 
@@ -102,22 +102,22 @@ At the last line **`System.out.println(area);`** prints the calculated value of 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
 
-#### Reading floating-point numbers from the console
+#### Reading Floating-Point Numbers From The Console
 
 Try to rewrite the above program to accept as input data not only integers (`int`) but floating-point numbers (`double`). You can use `scanner.nextDouble()`. Later in this chapter, we will learn more about floating-point numbers.
 
 
-## Calculations in programming
+## Calculations in Programming
 
-We know about computers that they are machines that process data. All **data** is stored in the computer memory (Random-access memory(RAM)) in **variables**. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each **variable** in Java has **name**, **type** and **value**. In the example below, you can see how to define a variable, and at the same time to assign value to it:
+We know about computers that they are machines that process data. All **data** is stored in the computer memory (Random-access memory(RAM)) in **variables**. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each **variable** in Java has a **name**, **type**, and **value**. In the example below, you can see how to define a variable, and at the same time assign value to it:
 
 ![](/assets/chapter-2-1-images/03.Declaring-variables-01.png)
 
 After processing, the data is stored again in variables (somewhere in a reserved area allocated in memory by our program).
 
-## Data types and variables
+## Data Types and Variables
 
-In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **letter**, **text** (string), **date**, **colour**, **image**, **list** and others.
+In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be a **number**, **letter**, **text** (string), **date**, **color**, **image**, **list**, and others.
 Here are some examples of data types:
 - type **int number**: 1, 2, 3, 4, 5, …
 - type **double number**: 0.5, 3.14, -1.5, …
@@ -125,9 +125,9 @@ Here are some examples of data types:
 - type **text** (string): "Hello", "Hi", "Beer", …
 - type **day of the week**: Monday, Tuesday, …
 
-## Reading floating-point numbers from the console
+## Reading Floating-Point Numbers from The Console
 
-To read **floating-point number** from the console, again it is neccessary to **declare variable**, to point out **the type of the number**, and to use the standard command to read information from the system console:
+To read a **floating-point number** from the console, again it is necessary to **declare a variable**, to point out **the type of the number**, and to use the standard command to read information from the system console:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -135,7 +135,7 @@ Scanner scanner = new Scanner(System.in);
 Double num = scanner.nextDouble();
 ```
 
-### Problem: Converting inches into centimeters
+### Problem: Inches to Centimeters
 
 Write a program that reads a floating-point number (representing inches) as an input from the console, converts it to centimeters, and print the result as output:
 
@@ -158,18 +158,18 @@ Run the program and make sure that when entering a value in inches, we obtain a 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
 
 
-## Reading and printing text
+## Reading and Printing Text
 
-To read a text (string) from the console, again **we declare new variable** and use the standard **command for reading a text from the console**:
+To read a text (string) from the console, again **we declare a new variable** and use the standard **command for reading a text from the console**:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
 
 String str = scanner.nextLine();
 ```
-Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because by default, the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If we do not parse to a number, each number will be just **text** for the program, and **we can not do** arithmetic operations with them.
+Let's pay attention to the fact that **reading text does not require converting to another type**. It is this way because, by default, the method **`scanner.nextLine(…)`** returns as **result text**. Additionally, we can parse the text to an integer by **`Integer.parseInt(…)`** or floating-point number by **`Double.parseDouble(…)`**. If we do not parse to a number, each number will be just **text** for the program, and **we can not do** arithmetic operations with them.
 
-### Problem: Greeting by name
+### Problem: Greeting by Name
 
 Write a program that reads the user's name as input from the console and greets him with the text **Hello, *name***, where ***name*** is the name read as input data.
 
@@ -180,7 +180,7 @@ String name = scanner.nextLine();
 System.out.printf("Hello, %s!", name);
 ```
 
-In this case the expression **`%s`** is replaced with the **first** passed argument, which is the variable **`name`**:
+In this case, the expression **`%s`** is replaced with the **first** passed argument, which is the variable **`name`**:
 
 ![](/assets/chapter-2-1-images/04.Console-output-02.png)
 
@@ -189,9 +189,9 @@ In this case the expression **`%s`** is replaced with the **first** passed argum
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#2](https://judge.softuni.org/Contests/Practice/Index/649#2).
 
 
-## Concatenating text and numbers
+## Problem Concatenate Data
 
-When printing a text, numbers and other data on the console **we can join them** by using templates **`%s`**, **`%d`**, **`%f`**, etc. In programming, these templates are called **placeholders**. Depending on the type of the variable, via different symbols we declare different types of arguments. The main ones are `%s` for text (string), `%d` for integers, `%f` for floating-point numbers.
+When printing text, numbers, and other data on the console **we can join them** by using templates **`%s`**, **`%d`**, **`%f`**, etc. In programming, these templates are called **placeholders**. Depending on the type of the variable, via different symbols, we declare different types of arguments. The main ones are `%s` for text (string), `%d` for integers, `%f` for floating-point numbers.
 
 Here is **example** for printing formatted text with (**placeholders**):
 
@@ -217,7 +217,7 @@ Pay attention to the order of variables in the System.out.printf() method. Each 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
 
-## Arithmetic operations
+## Arithmetic Operations
 
 Let’s look at the basic arithmetic operations in programming.
 
@@ -231,7 +231,7 @@ int b = 7;
 int sum = a + b; // the result is 12
 ```
 
-### Subtracting numbers (operator **`-`**)
+### Subtracting Numbers (Operator **`-`**)
 
 Subtracting numbers is done by the operator **`-`**:
 
@@ -248,7 +248,7 @@ Here is the result of the execution of the program above (with numbers 10 and 3)
 
 ![](assets/chapter-2-1-images/04.Console-output-04.png)
 
-### Multiplying numbers (operator **`*`**)
+### Multiplying Numbers (operator **`*`**)
 
 For multiplication of numbers we use the operator **`*`**:
 
@@ -258,14 +258,14 @@ int b = 7;
 int product = a * b; // 35
 ```
 
-### Dividing numbers (operator **`/`**)
+### Dividing Numbers (Operator **`/`**)
 
 We divide numbers using the operator **`/`**. It works differently with integers and floating-point numbers.
 
 *	When we divide two integers, **an integer division** is applied, and the obtained output is without its fractional part. Example: 11 / 3 = 3.
-*	When we divide two numbers, and at least one of them is a floating-point number **a fractional division** is applied, and the obtained result is a floatting-point number, just like in math. Example 11 / 4.0 = 2.75. When division is not with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.
+*	When we divide two numbers, and at least one of them is a floating-point number **a fractional division** is applied, and the obtained result is a floating-point number, just like in math. Example 11 / 4.0 = 2.75. When division is not with exact precision, the result is being rounded, for example, 11.0 / 3 = 3.66666666666667.
 * The integer **division by 0** causes an **exception** during runtime (`Java.lang.ArithmeticException`).
-* Floating-point number **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
+* The floating-point number **divided by 0** does not cause an exception and the result is **+/- infinity** or the special value **`NaN`**. Example 5 / 0.0 = &#8734;.
 
 Here are a few examples with the division operator:
 
@@ -297,7 +297,7 @@ System.out.println(0.0 / 0.0);   // Result: NaN (Not a Number), i.e. the result
                                  // of the operation is not a valid numeric value
 ```
 
-When printing the values **&#8734;** and **-&#8734;** the console output may be `?`, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters and special characters. The example above would most probably give the following result:
+When printing the values **&#8734;** and **-&#8734;** the console output may be `?`, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters, and special characters. The example above would most probably give the following result:
 ```
 7.5
 ?
@@ -307,7 +307,7 @@ NaN
 
 ## Concatenating text and numbers
 
-The operator **`+`** besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
+The operator **`+`** besides for summing up numbers is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
 
 ```Java
 String firstName = "Maria";
@@ -326,7 +326,7 @@ String sum = "The sum is: " + a + b;
 System.out.println(sum);  // The sum is: 1.52.5
 ```
 
-Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers we have to use **brackets** in order to change the order of execution of the operations:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? The concatenation works from left to right and the result above is correct. If we want to sum the numbers we have to use **brackets** to change the order of execution of the operations:
 
 ```Java
 double a = 1.5;
@@ -336,7 +336,7 @@ System.out.println(sum);  // The sum is: 4
 ```
 
 
-## Numerical expressions
+## Numerical Expressions
 
 In programming, we can calculate **numerical expressions**, for example:
 
@@ -345,7 +345,7 @@ int expr = (3 + 5) * (4 – 2);
 ```
 The standard rule for the precedence of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**, but we already know all of that from math.
 
-### Problem: Calculating trapezoid area
+### Problem: Trapeziod Area
 
 Write a program that reads as input from the console the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
 
@@ -372,7 +372,7 @@ Trapezoid area = 17.5
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
-### Problem: Circle area and perimeter 
+### Problem: Circle Area and Perimeter 
 
 Write a program that reads as input from the console a **radius r** of a circle, and **calculates its area and perimeter**.
 
@@ -399,13 +399,13 @@ Let’s test the program with **radius `r = 10`**:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
-### Problem: 2D rectangle area
+### Problem: 2D Rectangle Area
 
 A rectangle is given with the **coordinates of two of its opposite angles**. Write a program that calculates its **area and perimeter**:
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
 
-In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
+In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from the bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
 
 ```Java
 Scanner scanner = new Scanner(System.in);
@@ -444,15 +444,15 @@ To summarize what have we learned in this chapter of the book:
 - **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
 - **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
 
-## Problems Simple calculations
+## Problems Simple Calculations
 
-To consolidate our knowledge of simple calculations, let's solve several exercises.
+To consolidate our knowledge of simple calculations, let's solve several problems.
 
 ### Blank IntelliJ IDEA solution (Project)
 
 We start by creating an empty solution **(Project)** in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine **a group of problems**. This opportunity is **very convenient** when we want to **work on a few projects** and switch quickly between them or we want to **consolidate logically a few interconnected projects**.
 
-In the current practical exercise we will use a **Project with a couple of problems (Java classes)** to organize the solutions of the problems from the exercises – every problem in a separate Java class and all of them in a common project.
+In the current practical problem, we will use a **Project with a couple of problems (Java classes)** to organize the solutions of the problems from the problems – every problem in a separate Java class and all of them in a common project.
 
 * We start IntelliJ IDEA.
 * We create a new **Project:** [**File**] → [**New**] → [**Project**].
@@ -465,19 +465,19 @@ Select from the dialog window [**Java**], in the field Project SDK we specify wh
 
 ![](assets/chapter-2-1-images/06.New-project-03.png)
 
-Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, and after that we click [**Finish**]:
+Give an appropriate name for the project, for example "SimpleCalculations" and also where to be stored our project, and after that, we click [**Finish**]:
 
 ![](assets/chapter-2-1-images/06.New-project-04.png)
 
-Now we have **empty IntelliJ IDEA Project** (without any Java classes in it which have to be in the `src` folder):
+Now we have an **empty IntelliJ IDEA Project** (without any Java classes in it which have to be in the `src` folder):
 
 ![](assets/chapter-2-1-images/06.New-project-05.png)
 
-The purpose of this project is to add in it **`.java` class per problem** from the exercises.
+The purpose of this project is to add in it **`.java` class per problem** from the problems.
 
-### Problem Calculating the area of the square 
+### Problem: Calculating The Area of The square 
 
-The first problem from this topic is the following: write a console program that read as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
+The first problem from this topic is the following: write a console program that reads as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
 
 #### Hints and Guidelines
 
@@ -489,11 +489,11 @@ A **dialogue window** will open for choosing a name to the Java class, for examp
 
 ![](assets/chapter-2-1-images/07.Square-area-02.png)
 
-We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class a `Main` method(as in the picture below). In the body of the `Main` method **`Main(string[] args)`** we write the following code between the opening and closing curly brackets:
+We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class the `Main` method(as in the picture below). In the body of the `Main` method **`Main(string[] args)`** we write the following code between the opening and closing curly brackets:
 
 ![](assets/chapter-2-1-images/07.Square-area-03.png)
 
-As we can see in the code above, we read as input data an integer and assign it to a variable **`a`** (line **`int a = Integer.parseInt(scanner.nextLine())`**), afterwards we calculate the area (line **`int area = a * a`**) and finally prints the value of the variable **`area`** on the console. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
+As we can see in the code above, we read as input data an integer and assign it to a variable **`a`** (line **`int a = Integer.parseInt(scanner.nextLine())`**), afterward we calculate the area (line **`int area = a * a`**) and finally prints the value of the variable **`area`** on the console. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
 
 ![](assets/chapter-2-1-images/07.Square-area-04.png)
 
@@ -506,7 +506,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 ![](assets/chapter-2-1-images/07.Square-area-06.png)
 
 
-### Problem Inches to centimeters
+### Problem: Inches to Centimeters
 
 Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **multiply the inches by 2.54** (because one inch = 2.54 centimeters).
 
@@ -544,14 +544,14 @@ the last compiled program will be executed (**InchesToCentimeters**). We can see
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
 
-**Switching between projects** is an easy problem, isn't it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.
+**Switching between projects** is an easy problem, isn't it? Choose the file with the source code of the program, double click on it, and when it starts, the program from the current file runs.
 
 Let's test with floating-point numbers, for example, with **2.5**:
 
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Depending on the regional settings of the operating system, it is possible to use <b> decimal point </b> (US settings) instead of <b> decimal comma </b> (BG settings).</td>
+<td>Depending on the regional settings of the operating system, it is possible to use <b> a decimal point </b> (US settings) instead of a <b> decimal comma </b> (BG settings).</td>
 </tr></table>
 
 If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
@@ -573,7 +573,7 @@ The solution should be accepted as a completely correct one:
 ![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
 
 
-### Problem Greeting by name
+### Problem: Greeting by name
 
 Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
@@ -596,7 +596,7 @@ First, we create a **new Java class** with the name “Greeting” in the projec
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649#2](hhttps://judge.softuni.org/Contests/Practice/Index/649#2).
 
 
-### Problem Concatenating text and numbers
+### Problem: Concatenating Text and Numbers
 
 Write a Java program, that reads from the console a first name, last name, age, and city, and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>.`**.
 
@@ -610,7 +610,7 @@ You should write **the code** that prints the message described in the requireme
 
 ![](assets/chapter-2-1-images/10.Concatenate-data-02.png)
 
-In the picture above, the code is consciously blurred on purpose, in order for you to think of a way to finish it yourself.
+In the picture above, the code is consciously blurred on purpose, for you to think of a way to finish it yourself.
 
 Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sample input data.
 
@@ -619,9 +619,9 @@ Next, test the solution locally using [**Ctrl+Shift+F10**] and by entering sampl
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#3](https://judge.softuni.org/Contests/Practice/Index/649#3).
 
 
-### Problem Trapezoid area
+### Problem: Trapezoid Area
 
-Write a program that reads three numbers from the console **b1**, **b2** and **h** and calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for the area of trapezoid is **(b1 + b2) * h / 2**.
+Write a program that reads three numbers from the console **b1**, **b2**, and **h** and then calculates **the area of a trapezoid** with bases **b1** and **b2** and height **h**. The formula for the area of trapezoid is **(b1 + b2) * h / 2**.
 
 The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
@@ -642,7 +642,7 @@ The code on the picture is consciously blurred for you to give a thought and fin
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
 
 
-### Problem Circle area and perimeter
+### Problem: Circle Area and Perimeter
 
 Write a program that reads from the console **a number r** r then calculates and prints **the area and perimeter of the circle**/**round** with **radius r**.
 
@@ -664,7 +664,7 @@ For the calculations, you can use the following formulas:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
 
 
-### Problem Rectangle area
+### Problem: Rectangle Area
 
 **A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
@@ -683,7 +683,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
 
 
-### Problem Triangle area
+### Problem: Triangle Area
 
 Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use **the formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `Math.round(area*100.00)/100.00)`**.
 
@@ -701,9 +701,9 @@ Write a program that reads from the console **a side and height of a triangle** 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#7](https://judge.softuni.org/Contests/Practice/Index/649#7).
 
 
-### Problem Converter – from °C (Celsius) to °F (Fahrenheit)
+### Problem: Celsius to Fahrenheit
 
-Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
+Write a program that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google"), to do the calculations. Round the result to **2 digits after the decimal point**. Here are a few sample data:
 
 #### Sample Input and Output
 
@@ -719,7 +719,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#8](https://judge.softuni.org/Contests/Practice/Index/649#8).
 
 
-### Problem Converter – from  radians to degrees
+### Problem: Converter – From  Radians to Degrees
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
@@ -737,9 +737,9 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#9](https://judge.softuni.org/Contests/Practice/Index/649#9).
 
 
-### Problem Converter – USD to BGN
+### Problem: USD to BGN
 
-Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
+Write a program for the **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result **2 digits** after the decimal point. Use a fixed rate between a dollar and levs: **1 USD = 1.79549 BGN**.
 
 #### Sample Input and Output
 
@@ -754,15 +754,15 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#10](https://judge.softuni.org/Contests/Practice/Index/649#10).
 
 
-### Problem	\* Currency converter
+### Problem	\* Currency Converter
 
-Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
+Write a program for the **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
 |  Exchange rate  |   USD   |   EUR   |   GBP   |
 |:------:|:-------:|:-------:|:-------:|
 | 1 BGN  | 1.79549 | 1.95583 | 2.53405 |
 
-**The input** consists of three lines - the first is **a sum for conversion**, the second is the **input currency**, and the third is **output currency**. **The output** is one number – the converted value according to the above exchange rates, rounded **2 digits** after the decimal point. 
+**The input** consists of three lines - the first is **a sum for conversion**, the second is the **input currency**, and the third is the **output currency**. **The output** is one number – the converted value according to the above exchange rates, rounded **2 digits** after the decimal point. 
 
 #### Sample Input and Output
 
@@ -778,7 +778,7 @@ Write a program for **conversion of money from one currency into another**. It h
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#11](https://judge.softuni.org/Contests/Practice/Index/649#11).
 
 
-### Problem ** Date calculations – 1000 days on the Earth
+### Problem: Currency Converter
 
 Write a program that reads from the console a **birth date** in format **`dd-MM-yyyy`** then calculates the date on which **1000 days** are turned since this birth date, and prints the output in the same format.
 
@@ -793,7 +793,7 @@ Write a program that reads from the console a **birth date** in format **`dd-MM-
 |14-06-1980|11-03-1983|
 
 #### Hints and Guidelines 
-  * Look for information about the types **`Date`**, **`Calendar`** and **`SimpleDateFormat`** in Java and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
+  * Look for information about the types **`Date`**, **`Calendar`**, and **`SimpleDateFormat`** in Java, and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
   * **Don't print** anything additional on the console except for the wanted date!
 
 #### Testing in The Judge System
