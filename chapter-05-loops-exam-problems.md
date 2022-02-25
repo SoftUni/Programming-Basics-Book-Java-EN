@@ -19,7 +19,7 @@ Let’s solve some loop problems from exams in SoftUni.
 
 ### Problem: Histogram
 	
-An **n number of whole numbers** are given in the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent **p2** are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5** on the console.
+An **n number of integer numbers** are given in the range [**1 … 1000**]. Some percent of them **p1** are below 200, percent **p2** are from 200 to 399, percent **p3** are from 400 to 599, percent **p4** are from 600 to 799 and the rest are **p5** percent above 800 (inclusive). Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4**, and **p5** on the console.
 
 **Example**: we have n = **20** and the numbers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
@@ -33,7 +33,7 @@ An **n number of whole numbers** are given in the range [**1 … 1000**]. Some p
 
 ### Input Data
 
-In first line of the input, there must be a whole number **n** (1 ≤ **n** ≤ 1000), that represents how many lines of numbers we should enter. In each of the following **n lines** , we have **one whole number** in the range [**1 … 1000**] – those are the numbers we use to calculate the histogram.
+In the first line of the input, there must be an integer number **n** (1 ≤ **n** ≤ 1000), which represents how many lines of numbers we should enter. In each of the following **n lines**, we have **one integer number** in the range [**1 … 1000**] – those are the numbers we use to calculate the histogram.
 
 ### Output Data
 
@@ -102,17 +102,17 @@ The program that solves this problem can be imaginatively split into three parts
   * **Processing the input data** – in this case, this means allocating the numbers into groups and calculating the percentage split by a group.
   * **Printing the final result** – printing the histogram to the console in the specified format.
   
-Before we continue, we will take a small deviation from the current topic, namely, we will briefly mention, that in coding every variable is of some kind **data type**. We will use numeric data types **`int`** for **whole numbers** and **`double`** for **real numbers** in this problem.
+Before we continue, we will take a small deviation from the current topic, namely, we will briefly mention, that in coding every variable is of some kind of **data type**. We will use numeric data types **`int`** for **integer numbers** and **`double`** for **real numbers** in this problem.
 
 Now we are going to proceed with the implementation of the above-made points.
 
-#### Reading the input data
+#### Reading The Input Data
   
 Before we move on to reading the input data we have to **declare the variables**, in which we are storing them. This means that we have to choose the right data type and appropriate names.
   
 ![](assets/chapter-5-2-images/01.Histogram-01.png)
 
-In the variable **`n`** , we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because the condition states, that **`n` is a whole number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **they are not always expected to be whole numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`**, etc, in which we will store the count of numbers in the corresponding group, and for them, we choose the **`int` type** again.
+In the variable **`n`**, we will store the count of numbers, that we are going to read from the console. We choose **`int` type**, because the condition states, that **`n` is an integer number** in the range from 1 to 1000. For the variables in which we will store the percentages, we chose the **`double` type**, because **they are not always expected to be integer numbers**. Additionally, we declare the variables **`cntP1`**, **`cntP2`**, etc, in which we will store the count of numbers in the corresponding group, and for them, we choose the **`int` type** again.
 
 Once we have declared the needed variables, we can proceed with reading the number **`n`** from the console:
 
@@ -120,15 +120,15 @@ Once we have declared the needed variables, we can proceed with reading the numb
 
 #### Processing The Input Data
   
-In order to read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers). Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`** etc.) by one.  
+To read and distribute each number to its corresponding group, we will use a **`for` loop** from **0** to **`n`** (count of numbers). Each iteration of the loop will read and distribute **only one** number (**`currentNumber`**) to its corresponding group. For the compiler to determine if a number belongs to a group, **we perform a check-in its range**. If so- we add to the count of its corresponding group (**`cntP1`**, **`cntP2`**, etc.) by one.  
 
 ![](assets/chapter-5-2-images/01.Histogram-03.png)
 
 After we determined how many numbers each group has, we can move on to calculating the percentage, which is the main point of the problem. For this, we’ll use the following formula:
 
-<p align="center"><strong>(group percentage) = (count of numbers in group) * 100 / (count of all numbers)</strong></p>
+<p align="center"><strong>(group percentage) = (count of numbers in the group) * 100 / (count of all numbers)</strong></p>
 
-This formula in the program code looks like the following:
+This formula is the program code looks like the following:
 
 ![](assets/chapter-5-2-images/01.Histogram-04.png)
 
@@ -163,15 +163,15 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#
 
 ### Problem: Smart Lilly
 
-Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the amount of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30 etc.). Over the years Lilly secretly saved her money. **Her brother** , in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD** and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
+Lilly is **N years old**. For every **birthday** she receives a present. For each **odd** birthday (1, 3, 5, …, n), she receives **toys**, and for every **even** birthday (2, 4, 6, …, n), she receives **money**. For **her second birthday**, she received **10.00 USD.**, and **the number of money increases by 10.00 USD for each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Over the years Lilly secretly saved her money. **Her brother**, in the years when Lilly **received money**, **takes 1.00 USD** of it. Lilly **has sold the toys**, received over the years, **each for P USD**, and added the money to her savings. With the money, she wanted to **buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and if the amount is enough **to buy a washing machine**.
 
 ### Input Data
 
 The console reads **3 numbers**, each on a separate line:
 
-   - Lilly’s **age** – **whole number** in the range of [**1 … 77**].
-   - **Price of the washing machine** – number in the range of [**1.00 … 10 000.00**].
-   - **Unit price per toy** – **whole number** in the range of [**0 … 40**].
+   - Lilly’s **age** – an **integer number** in the range of [**1 … 77**].
+   - **Price of the washing machine** – a **double number** in the range of [**1.00 … 10 000.00**].
+   - **Unit price per toy** – an **integer number** in the range of [**0 … 40**].
 
 ### Output Data
 
@@ -206,7 +206,7 @@ Print on the console a single line:
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>She has saved 550 USD.</strong>. <strong>She sold</strong> <strong>11 toys</strong> <strong>3 USD</strong> each = <strong>33 USD</strong>. Her brother <strong>has taken for 10 years 1 USD each year</strong> = <strong>10USD</strong>. <strong>The remainder</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
+<td valign="top"><p><strong>She has saved 550 USD.</strong> <strong>She sold</strong> <strong>11 toys</strong> <strong>3 USD</strong> each = <strong>33 USD</strong>. Her brother <strong>has taken for 10 years 1 USD each year</strong> = <strong>10USD</strong>. <strong>The remainder</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
 <strong>573 &lt; 1570.98</strong> – <strong>she did not manage to</strong> buy a washing machine. <strong>The insufficiency amount is</strong> 1570.98–573 = <strong>997.98 USD.</strong></p></td>
 </tr>
 </tbody>
@@ -214,7 +214,7 @@ Print on the console a single line:
 
 ### Hints and Guidelines
 
-The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** it and **printing the output**.
+The solution to this problem, like the previous one can be split into three parts – **reading** the input data, **processing** it, and **printing the output**.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -222,11 +222,11 @@ We begin again by choosing the appropriate **data types** and names of the varia
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-02.png)
 
-To solve the problem, we will need several auxiliary variables – for the **toy count** (**`numberOfToys`**), for the **money saved** (**`savedMoney`**) and for the **money she received each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10, because the description states the first sum Lilly got is 10 USD.
+To solve the problem, we will need several auxiliary variables – for the **toy count** (**`numberOfToys`**), for the **money saved** (**`savedMoney`**), and for the **money she received each birthday** (**`moneyForBirthday`**). The initial value of **`moneyForBirthday`** is 10 because the description states the first sum Lilly got is 10 USD.
 
 ![](assets/chapter-5-2-images/02.Smart-lilly-03.png)
 
-Using a **`for` loop** we iterate through each of Lilly’s birthdays. When the counter in our loop (which equates to Lilly’s age) is an **even number**, this means that Lilly **receives money** and we add this money to her total savings accordingly. Simultaneously we **subtract 1 USD** - the money her brother takes. Then we **increase** the variable value **`moneyForBirthday`**, i.e. we increase by 10 the sum she will get on her next birthday. The opposite of that, when the counter (Lilly's age) is an **odd number**, we increase the **toy counter**. We do the parity check by **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, when we have a remainder of 1 - it is odd.
+Using a **`for` loop** we iterate through each of Lilly’s birthdays. When the counter in our loop (which equates to Lilly’s age) is an **even number**, this means that Lilly **receives money** and we add this money to her total savings accordingly. Simultaneously we **subtract 1 USD** - the money her brother takes. Then we **increase** the variable value **`moneyForBirthday`**, i.e. we increase by 10 the sum she will get on her next birthday. The opposite of that, when the counter (Lilly's age) is an **odd number**, we increase the **toy counter**. We do the parity check by **division with a remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, when we have a remainder of 1 - it is odd.
 
 We also add the money from the sold toys to Lilly’s savings:
 
@@ -247,7 +247,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#
 
 ### Problem: Back to The Past
 
-Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802 etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
+Ivan is **18 years old** and receives an inheritance, that consists of **X sum of money** and a **time machine**. He decides **to go back to the year 1800**, but he doesn’t know if **the money** is **enough** to live without working. Write a **program that calculates** if Ivan is going to have **enough money**, so he won’t need to work **until a particular year (inclusive)**. Assuming that **for every even** (1800, 1802, etc.) year he will **spend 12 000 dollars**. For **every odd** (1801,1803 etc.) year he will spend **12 000 + 50 * [the age he reached in the given year]**.
 
 ### Input Data
 
@@ -312,7 +312,7 @@ The condition states, that Ivan is 18 years old, so when we declare the variable
 
 ![](assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-With the help from the **`for` loop**, we’ll iterate through all the years. **We begin with year 1800** – the year that Ivan goes back to, and we get to **the year he has to live to**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's age)**.
+With the help from the **`for` loop**, we’ll iterate through all the years. **We begin with the year 1800** – the year that Ivan goes back to, and we get to **the year he has to live to**. In the loop, we check if the current year is **even** or **odd**. We achieve this by **division with a remainder** (**`%`**) by 2. If the year is **even**, we subtract from the inheritance (**`heritage`**) **12000**, and if it's **odd**, we subtract from the inheritance (**`heritage`**) **12000 + 50 * (Ivan's age)**.
 
 Finally, it remains to print the results. By performing a **check if the inheritance** (**`heritage`**) was enough to live without working or not. If the (**`heritage`**) is a **positive number**, we print: „**`Yes! He will live a carefree life and will have {N} dollars left.`**“, and if it's a **negative number**: „**`He will need {M} dollars to survive.`**“. Do not forget to format the sum up to the second symbol after the decimal point.
 
@@ -325,15 +325,15 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#
 
 ### Problem: Hospital
 
-For a given period of time, every day patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily patient's admission begins.
+For a given period, everyday patients arrive at the hospital for an examination. The hospital **initially has 7 doctors**. Each doctor can treat **only one patient per day**, but sometimes there is a shortage of doctors, so **the untreated patients are sent to other hospitals**. **Every third day** the hospital makes calculations and **if the number of untreated patients is greater than the treated patients, they hire one more doctor**. The hire happens before the daily patient's admission begins.
 
 Write a program, that calculates **for a given period the number of treated and untreated patients**.
 
 ### Input Data
 
 The input is read from **the console** and contains:
-  * On the first line – **the period**, for which you need to make the calculations. **Whole number** in the range of [**1 … 1000**].
-  * On the next lines (equal to the number of days) – **patient count**, who arrive for treatment at the **current day**. Whole number in the range of [**0 … 10 000**].
+  * On the first line – **the period**, for which you need to make the calculations. **Integer number** in the range of [**1 … 1000**].
+  * On the next lines (equal to the number of days) – **patient count**, who arrive for treatment at the **current day**. Integer number in the range of [**0 … 10 000**].
 
 ### Output Data
 
@@ -390,16 +390,16 @@ We start again, by **declaring and initializing** the necessary variables:
 
 ![](assets/chapter-5-2-images/04.Hospital-01.png)
 
-The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some auxiliary variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**) and the number of doctors (**`countOfDoctors`**), which by default is 7.
+The period which we have to make the calculations is read from the console and we store it in the variable **`period`**. We are going to need also some auxiliary variables: number of treated patients (**`treatedPatients`**), number of untreated patients (**`untreatedPatients`**), and the number of doctors (**`countOfDoctors`**), which by default is 7.
 
 ![](assets/chapter-5-2-images/04.Hospital-02.png)
 
-Using a **`for` loop**, we iterate through all days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Incrementing the number of doctors by condition can be done **every third day**, **BUT** if only the number of the untreated patients is **greater** than the treated ones. For this purpose, we check if the day is the third one, using the arithmetical operator for division with remainder (**`%`**): **`day % 3 == 0`**.
+Using a **`for` loop**, we iterate through all days in the given period (**`period`**). For each day, we read from the console the number of patients (**`currentPatients`**). Incrementing the number of doctors by the condition can be done **every third day**, **BUT** if only the number of the untreated patients is **greater** than the treated ones. For this purpose, we check if the day is the third one, using the arithmetical operator for division with the remainder (**`%`**): **`day % 3 == 0`**.
 
 For example:
  * If it’s the **third one**, the remainder from the division by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
  * If it’s the **second one**, the remainder from the division by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
- * If it’s the **forth one**, the remainder from the division will be **1** (**`4 % 3 = 1`**) and again the check will return **`false`**.
+ * If it’s the **fourth one**, the remainder from the division will be **1** (**`4 % 3 = 1`**) and again the check will return **`false`**.
 
 If the check **`day % 3 == 0`** returns **`true`**, the program will check if the untreated patient’s count is greater than the treated ones: **`untreatedPatients > treatedPatients`**. If again the result is **`true`**, then we’ll increase the number of doctors (**`countOfDoctors`**).
 
@@ -416,9 +416,9 @@ Finally, we only need to print the number of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/656#3](https://judge.softuni.org/Contests/Practice/Index/656#3).
 
 
-### Problem: Division Without Remainder
+### Problem: Division
 
-There are **n whole numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3 and prints them out.
+There are **n integer numbers** given in the range of [**1 … 1000**]. From them, some **percentage p1 is divisible without remainder by 2**, **percentage p2** is **divisible by 3 without remainder**, **percentage p3** is **divisible by 4 without remainder**. Write a program that calculates the percentages of p1, p2 and p3, and prints them out.
 **Example:** We have **n = 10** numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
 <table>
 <thead>
@@ -453,7 +453,7 @@ There are **n whole numbers** given in the range of [**1 … 1000**]. From them,
 
 ### Input Data
 
-On the first line of input is the whole number **n** (1 ≤ **n** ≤ 1000) – count of numbers. On the next **n lines** we have **one whole number** in the range of [**1 … 1000**] – the numbers that have to be checked for division.
+On the first line of input is the integer number **n** (1 ≤ **n** ≤ 1000) – count of numbers. On the next **n lines**, we have **one integer number** in the range of [**1 … 1000**] – the numbers that have to be checked for division.
 
 ### Output Data
 
@@ -490,12 +490,12 @@ Print on the console **3 lines**, each one containing a percentage between 0% an
 
 ### Hints and Guidelines
 
-For the current problem and the next one you’ll need to write the code by yourself, following the given guidelines.
+For the current problem and the next one, you’ll need to write the code by yourself, following the given guidelines.
 
 The program that solves the current problem is analogous to the **Histogram** problem, which we reviewed earlier. Therefore, we can start with declaring the needed variables:
-Exemplary names for the variables can be: **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – auxiliary variables, containing the count of numbers in the corresponding group.
+Exemplary names for the variables can be **`n`** – count of the numbers (that we have to read from the console) and **`divisibleBy2`**, **`divisibleBy3`**, **`divisibleBy4`** – auxiliary variables, containing the count of numbers in the corresponding group.
 
-To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Each iteration of the loop must read and allocate **only one number**. The difference here is that **a number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3 and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match it stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
+To read and assign every number in its corresponding group, we should iterate the **`for` loop** from **`0`** to **`n`** (count of numbers). Each iteration of the loop must read and allocate **only one number**. The difference here is that **a number can end up in multiple groups simultaneously**, that’s why we should create **three separate `if` statements for each number** – respectively whether it is divisible by 2, 3, and 4 (the **`if-else`** statement, in this case, won’t be useful because after finding a match it stops further checking of conditions) and increase the value of the variable that keeps the count of numbers for the corresponding group.
 
 Finally, we have to print out the obtained results, by following the specified formatting.
 
@@ -517,16 +517,16 @@ It’s your problem to calculate, **the average price per ton of transported car
 ### Input Data
 
 From the console, we must read a **sequence of numbers**, each on a separate line:
- * **First line**: **cargo count** for transport – **whole number** in the range of [**1 … 1000**].
- * On each of the next lines, we input **the weight of the current cargo** – **whole number** in the range of [**1 … 1000**].
+ * **First line**: **cargo count** for transport – an **integer number** in the range of [**1 … 1000**].
+ * On each of the next lines, we input **the weight of the current cargo** – an **integer number** in the range of [**1 … 1000**].
 
 ### Output Data
 
 Print out on the console **4 lines**, as follows:
- * **Line #1** – **average price per ton of cargo** (rounded up to the second symbol after the decimal point).
- * **Line #2** – **percentage** of cargo, transported by **van** (between 0.00% and 100.00%, rounded up to the second symbol after the decimal point).
- * **Line #3** – **percentage** of cargo, transported by **lorry** (between 0.00% and 100.00%).
- * **Line #4** – **percentage** of cargo, transported by **train** (between 0.00% and 100.00%).
+ * **Line #1** – an **average price per ton of cargo** (rounded up to the second symbol after the decimal point).
+ * **Line #2** – a **percentage** of cargo, transported by **van** (between 0.00% and 100.00%, rounded up to the second symbol after the decimal point).
+ * **Line #3** – a **percentage** of cargo, transported by **lorry** (between 0.00% and 100.00%).
+ * **Line #4** – a **percentage** of cargo, transported by **train** (between 0.00% and 100.00%).
  
 ### Sample Input and Output
 
@@ -577,11 +577,11 @@ Percentage cargo <b>by train</b>: 16/25*100 = <b>64.00%</b><br>
 
 ### Hints and Guidelines
 
-First **we have to read the weight of each cargo** and will **sum up** how many tons are transported by **van**, **lorry** and **train** and we are going to calculate **the total tons** of transported cargo. We will calculate **the prices for each type of transport** determined by the total transported tonnage and **the total price**. In the end, we’ll calculate and print **the total average price per ton** and **how much cargo is being transported by each transport type**.
+First, **we have to read the weight of each cargo** and will **sum up** how many tons are transported by **van**, **lorry**, and **train** and we are going to calculate **the total tons** of transported cargo. We will calculate **the prices for each type of transport** determined by the total transported tonnage and **the total price**. In the end, we’ll calculate and print **the total average price per ton** and **how much cargo is being transported by each transport type**.
 
-We declare the needed variables, for example: **`countOfLoads`** – the number of loads to be transported (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`vanTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by van, lorry and train.
+We declare the needed variables, for example: **`countOfLoads`** – the number of loads to be transported (we read them from the console), **`sumOfTons`** – the sum of the total weight of all cargo, **`vanTons`**, **`truckTons`**, **`trainTons`** – variables that keep the sum of the weight, transported by van, lorry, and train.
 
-We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) the weight of the current load (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (van, lorry or train). For this problem, we’re going to need **`if-else`** statements:
+We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to iterate through all the shipments. For each shipment, **we read its weight** (in tons) from the console and we save it to a variable, for example, **`tons`**. We add up to the tonnage sum of all cargos (**`sumOfTons`**) the weight of the current load (**`tons`**). After we’ve read the weight of the current cargo, **we have to determine which transportation type we are going to use for it** (van, lorry, or train). For this problem, we’re going to need **`if-else`** statements:
 
  * If the value of the variable **`tons`** is **less than 3**, increase the value of **`vanTons`** by the value of **`tons`**: 
  
@@ -590,9 +590,9 @@ We are going to need a **`for` loop** from **`0`** to **`countOfLoads-1`** to it
    ```
    
  * Otherwise, if the value of **`tons`** is **up to 11**, we increase **`truckTons`** by **`tons`**.
- * If **`tons`** is **more than 11**, we increase **`trainTons`** by **`tons`**.
+ * If **`tons`** are **more than 11**, we increase **`trainTons`** by **`tons`**.
 
-Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more auxiliary variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by van, lorry and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **It remains to calculate** the percentages of the tonnage, transported by each transport type, and printing out the results, adhering to the formatting specified in the description.
+Before we print out the output, we have to **calculate the tonnage percentage of each transportation type** and **the average price per ton**. For the average price, we are going to need one more auxiliary variable **`totalPrice`**, in which **we are going to add up the total price of all transported cargo** (by van, lorry, and train). For us to get the average price, we have to divide **`totalPrice`** by **`sumOfTons`**. **It remains to calculate** the percentages of the tonnage, transported by each transport type, and print out the results, adhering to the formatting specified in the description.
 
 ### Testing in The Judge System
 
