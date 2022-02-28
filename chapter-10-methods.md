@@ -114,7 +114,7 @@ The program with a total of five methods that call one another is ready and we c
 
 ## Methods with Parameters
 
-Often to solve a problem, the method by which we achieve this needs **additional information**, which depends on its purpose. This information represents the **parameters of the method** , and its behavior depends on them. 
+Often to solve a problem, the method by which we achieve this needs **additional information**, which depends on its purpose. This information represents the **parameters of the method**, and its behavior depends on them. 
 
 ### Using Parameters in Methods
 

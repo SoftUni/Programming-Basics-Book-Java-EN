@@ -228,7 +228,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/652#
 
 ### Problem: Harvest
 
-There's a vineyard that has an **area of X sq. M.** . **40% of the harvest** is allocated for wine production. The yield from **1sq.m. vineyard** is **Y kilograms of grapes**. To produce **1 liter of wine** is used **2.5kg grapes**. The desired amount of wine **for sale is Z liters**.
+There's a vineyard that has an **area of X sq. M.**. **40% of the harvest** is allocated for wine production. The yield from **1sq.m. vineyard** is **Y kilograms of grapes**. To produce **1 liter of wine** is used **2.5kg grapes**. The desired amount of wine **for sale is Z liters**.
 
 Your problem is to write a program that **calculates the possible amount of produced wine** and validates if it's **enough**. **If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.**
 
@@ -268,7 +268,7 @@ First, we need to **check** what **input data** is expected and choose an adequa
 
 ![](assets/chapter-3-2-images/04.Harvest-01.png)
 
-To solve the problem we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The problem defines a formula that requires the **weight of the yielded grapes in kg.** . We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
+To solve the problem we need to **compute** the **amount of wine in liters** that the harvest will produce using the **input data**. The problem defines a formula that requires the **weight of the yielded grapes in kg.**. We can easily calculate this by **declaring** a **variable** that will store a **value** equal to **40%** of the result of the **multiplication** of the area of the vineyard and the amount of yielded grapes per square meter.
 
 Once we have made these calculations, we are ready to **insert** them into the problem formulation. We **declare** another **variable** that will store the **amount of wine in liters** and will be equal to the **weight of the yielded grapes in kg. divided by 2.5**.
 
