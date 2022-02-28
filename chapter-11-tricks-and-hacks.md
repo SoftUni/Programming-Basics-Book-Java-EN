@@ -1,6 +1,6 @@
 # Chapter 11. Tricks and Hacks
 
-In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with C# easier in the IntelliJ IDEA. In particular, we will see:
+In the current chapter, we are going to see some tricks, hacks, and techniques, which will make our work with C# easier in the IntelliJ IDEA. In particular, we will see:
 
 * How to properly **format our code**
 * Conventions for **naming elements in the code**
@@ -14,7 +14,7 @@ The right formatting of our code will make it easier to read and understand in c
 
 There are some defined rules for correct formatting of the code, which are collected in one place and are called **conventions**. The conventions are a group of rules, generally accepted by the programmers using a given language, which are massively used. These conventions help to build norms in given languages – what is the best way to write and what are good practices. It is accepted that if a programmer follows them then his code is easy to read and understand.
 
-The Java language is developed by **Sun Microsystems** (a tech company, later acquired by **Oracle**). Sun is the ones that lay the foundations of the current well-established conventions in Java. You should know that even if you don't follow the conventions given by **Microsoft**, your code will work (as long as it is properly written), but it will not be easy to understand. This, of course, is not fatal at a base level, but the faster you get used to writing quality code the better.
+The Java language is developed by **Sun Microsystems** (a tech company, later acquired by **Oracle**). Sun is the one that lays the foundations of the current well-established conventions in Java. You should know that even if you don't follow the conventions given by **Microsoft**, your code will work (as long as it is properly written), but it will not be easy to understand. This, of course, is not fatal at a base level, but the faster you get used to writing quality code the better.
 
 ## The Official Java Code Conventions
 
@@ -66,7 +66,7 @@ System.out.println(i);
 
 ## Code Formatting Shortcuts in IntelliJ IDEA
 
-For your comfort, there are **keyboard shortcuts in IntelliJ IDEA**, which we will explain later in this chapter, but for now, we are interested in two specific combinations. One of the combinations is for formatting **the code in the whole document**, and the other one – for formatting **a part of the code**. If we want to format **the whole code** we need to press [**CTRL + ALT + L**]. In case we need to format only **a part of the code**, we need to **mark this part with the mouse** and press [**Ctrl + Shift + Alt + L**].
+For your comfort, there are **keyboard shortcuts in IntelliJ IDEA**, which we will explain later in this chapter, but for now, we are interested in two specific combinations. One of the combinations is for formatting **the code in the whole document**, and the other one – is for formatting **a part of the code**. If we want to format **the whole code** we need to press [**CTRL + ALT + L**]. In case we need to format only **a part of the code**, we need to **mark this part with the mouse** and press [**Ctrl + Shift + Alt + L**].
 
 [//]: # (TODO: Uncomment the following text after adding the image below: The screenshot below illustrates how to **format Java code in IntelliJ IDEA**, using the menu commands or keyboard schortcuts:)
 
@@ -92,13 +92,13 @@ for (int i = 0; i < 5; i++) {
 This key combination in IntelliJ IDEA can help us if we work with a badly formatted code.
 ## Naming Code Elements
 
-In this section, we will focus on **the accepted conventions for naming projects, files and variables**, defined by Microsoft.
+In this section, we will focus on **the accepted conventions for naming projects, files, and variables**, defined by Microsoft.
 
 ### Naming Projects and Files
 
-It is recommended to use a descriptive name **for naming projects and files**, which suggests **the role** of the respective file / project and at the same time the **`PascalCase` convention** is also recommended. This is a **convention for naming** elements, in which each word, including the first one, starts with **an uppercase character**, for example **`ExpressionCalculator`**.
+It is recommended to use a descriptive name **for naming projects and files**, which suggests **the role** of the respective file / project, and at the same time, the **`PascalCase` convention** is also recommended. This is a **convention for naming** elements, in which each word, including the first one, starts with **an uppercase character**, for example **`ExpressionCalculator`**.
 
-Example: This course starts with a **First steps in coding** lecture, therefore an exemplary name for the solution for this lecture can be **`FirstStepsInCoding`**. The same convention applies to the files in a project. If we take for example the first problem in the **First steps in coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`HelloWorld`**.
+Example: This course starts with the **First Steps in Coding** lecture, therefore an exemplary name for the solution for this lecture can be **`FirstStepsInCoding`**. The same convention applies to the files in a project. If we take for example the first problem in the **First steps in Coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`HelloWorld`**.
 
 ### Naming Variables
 
@@ -157,7 +157,7 @@ More about the **shortcuts in IntelliJ IDEA*** can be found here: [https://www.j
 
 ## Code Snippets in IntelliJ IDEA
 
-In IntelliJ IDEA there are the so-called **code snippets**, which write a block of code by using a code template. For example, by writing the short code **`sout` + [Enter]** the following code is generated in the body of our program, in the place of the short code:
+In IntelliJ IDEA there are the so-called **code snippets**, which write a block of code by using a code template. For example, by writing the shortcode **`sout` + [Enter]** the following code is generated in the body of our program, in the place of the shortcode:
 
 ```java
 System.out.println();
@@ -168,7 +168,7 @@ This is called “unfolding a code snippet”. The **`fori` + [Enter]** snippet 
 
 ### Creating Your Code Snippet
 
-In this section, we are going to show you how to **make your code snippet**. We will see **how to make a code snippet** for `scanner.nextLine();`. To begin we must create a new empty project in IntelliJ IDEA and go to [**File → Settings → Editor → Live Templates**], and choose [**+** → **Live Template**] as shown on the picture:
+In this section, we are going to show you how to **make your code snippet**. We will see **how to make a code snippet** for the `scanner.nextLine();` command. To begin we must create a new empty project in IntelliJ IDEA and go to [**File → Settings → Editor → Live Templates**], and choose [**+** → **Live Template**] as shown on the picture:
 
 ![](/assets/chapter-11-images/01.Code-snippet-02.png)
 
@@ -222,7 +222,7 @@ We will place a **breakpoint** at the function `System.out.println(…)`. For th
 
 ![](/assets/chapter-11-images/02.Debugger-01.png) 
 
-### Starting the Program in Debug Mode
+### Starting The Program in Debug Mode
 
 To start **the program in debug mode**, we choose [**Run**] -> [**Debug &lt;class name>**] or press [**SHIFT + F9**]:
 
@@ -266,7 +266,7 @@ System.out.printf("%s %d %s \n", str1, number, str2);
 // This will print on the console "some text 5 some more text"
 ```
 
-Notice that in this example we can pass **non-exclusively string variables**. The first argument is a **formatting string**. Following it comes a **sequence of arguments** that are replacing any instance of a formatting specifier (meaning `%` followed by a single character, e.g. `%s` or `%d`). The first **`%s`** means that the first argument that is passed after the formatting string, is going to take its place, in our case that's **`str1`**. After that, there's **`%d`** which means that it's going to be substituted by the first integer number that is among the arguments. The last special symbol is **`%s`** which means that it'll be replaced by the next string that can be found in the arguments. Finally, there's **`\n`** and that is a special symbol that denotes a new line. A single variable can be used multiple times.
+Notice that in this example we can pass **non-exclusively string variables**. The first argument is a **formatting string**. Following it comes to a **sequence of arguments** that are replacing any instance of a formatting specifier (meaning `%` followed by a single character, e.g. `%s` or `%d`). The first **`%s`** means that the first argument that is passed after the formatting string, is going to take its place, in our case that's **`str1`**. After that, there's **`%d`** which means that it's going to be substituted by the first integer number that is among the arguments. The last special symbol is **`%s`** which means that it'll be replaced by the next string that can be found in the arguments. Finally, there's **`\n`** and that is a special symbol that denotes a new line. A single variable can be used multiple times.
 
 ```java
 String str = "some text";
@@ -310,7 +310,7 @@ System.out.println(Math.ceil(numberToCeiling));
 // This will print on the console 6.0
 ```
 
-### Formatting with 2 Digits After Tthe Decimal Point
+### Formatting with 2 Digits After The Decimal Point
 
 When we print numbers, we often need to round them to 2 digits after the decimal point, e.g.
 
