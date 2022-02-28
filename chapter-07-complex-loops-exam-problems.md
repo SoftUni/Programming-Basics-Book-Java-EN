@@ -49,7 +49,7 @@ We can split the solution into three parts:
 * **Process the input** – use nested loops to iterate through every possible character for each of the five password characters.
 * **Print the result** – print each "stupid" password that meets the requirements.
 
-#### Read the Input
+#### Read The Input
 
 To **read** the **input** we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
@@ -63,7 +63,7 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-02.png)
 
-**Did you Know That…?** 
+**Do Y ou Know That…?** 
 
 * We can **define a `for`** loop with a variable of type **`char`**:
 
@@ -142,7 +142,7 @@ Let's remove the **`if`** check from the innermost loop. Now, let's initialize e
 
 As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. To practice each type of loop, try to solve each of the following problems by using every type of loop we've learned so far.
 
-### Test in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#1](https://judge.softuni.org/Contests/Practice/Index/660#1).
 
@@ -196,7 +196,7 @@ The other **tricky** part in this problem is that, apart from the check above, w
  
 Accordingly, if the **condition** that checks whether the number is equal to the "stop" number returns **`false`**, our program should **continue printing**. This covers the **fourth and last** part of our program.
 
-### Test in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#2](https://judge.softuni.org/Contests/Practice/Index/660#2).
 
@@ -234,7 +234,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 Solve the problem on your own using what you have learned from the previous two problems. Keep in mind the difference between operators for **integer division ( __`/`__ )** and **division with remainder ( __`%`__ )** in Java.
 
-### Test in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#3](https://judge.softuni.org/Contests/Practice/Index/660#3).
 
@@ -272,6 +272,6 @@ Print on the console **all integers** that are the result of the calculations ab
 
 Solve the problem **on your own**, using what you have learned from the previous ones. Remember that you have to define a **separate** variable for each digit of the input number.
 
-### Test in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/660#4](https://judge.softuni.org/Contests/Practice/Index/660#4).
