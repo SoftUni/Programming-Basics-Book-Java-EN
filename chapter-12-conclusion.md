@@ -4,15 +4,15 @@ If you have **read the entire** book and you've solved all the problems from the
 
 ## Developer Skills
 
-Remember the **[four main groups of skills](chapter-00-preface.md#become-a-developer)** that each programmer must have in order to work in the industry:
+Remember the **[four main groups of skills](chapter-00-preface.md#become-a-developer)** that each programmer must have to work in the industry:
 - Skill #1 – **writing the program code** (20% of programmer's skills) – covered to a large degree by this book, but you must learn additional basic data structures, classes, objects, functions, strings, and other elements of code writing.
 - Skill #2 – **algorithmic thinking** (30% of programmer's skills) – covered partially by this book and developed mostly by solving a large amount of diverse algorithmic problems.
 - Skill #3 – **a fundamental understanding of the profession** (25% of programmer's skills) – acquired for a few years in combination with learning and practice (reading books, watching video lessons, attending courses, and mostly by writing diverse projects in various technological areas).
-- Skill #4 – **programming languages and software technologies** (25% of programmer's skills) – acquired in a long period, by a lot of practice, consistent reading and writing projects. Such knowledge and skills quickly get outdated and need to be updated frequently. Good programmers are involved in studying new technologies every day.
+- Skill #4 – **programming languages and software technologies** (25% of programmer's skills) – acquired in a long period, by a lot of practice, consistent reading, and writing projects. Such knowledge and skills quickly get outdated and need to be updated frequently. Good programmers are involved in studying new technologies every day.
 
 ## This Book is Only The First Step!
 
-**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with Java on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Java language and the Java ecosystem (Java EE, Spring, Android, etc.), front-end technologies (HTML, CSS, JavaScript) and many other concepts, technologies and instruments for software development.
+**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with Java on a **basic level**. You are about to start **in-depth** studying of programming and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Java language and the Java ecosystem (Java EE, Spring, Android, etc.), front-end technologies (HTML, CSS, JavaScript), many other concepts, technologies, and instruments for software development.
 
 If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
@@ -22,8 +22,8 @@ As we've already explained, the first and basic skill of a programmer is **to le
 
 This book **gives you a solid foundation**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
 - to study for a **software engineer at SoftUni** and make programming your profession;
-- to continue developing as a programmer **in your own way**, for example, through self-training or via online lessons;
-- to **stay at coder level**, without going more seriously into programming.
+- to continue developing as a programmer **in your way**, for example, through self-training or via online lessons;
+- to **stay at the coder level**, without going more seriously into programming.
 
 ### Study Software Engineering in SoftUni
 
@@ -37,13 +37,13 @@ The training in SoftUni has a duration of **1-2 years** (depending on the profes
 
 #### It Takes at Least a Year of Intense Code Writing to Become a Programmer
 
-Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying** to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course, for example if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing**!
+Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying** to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course, for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing**!
 
 #### The Entrance Exam in SoftUni
 
-In order **to enroll at SoftUni**, you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of problems that you need to learn to solve.
+To **enroll at SoftUni**, you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of problems that you need to learn to solve.
 
-If the problems from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.org/apply) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease** without helping yourselves with the guidelines and the sample solutions.
+If the problems from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.org/apply) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease** without helping yourself with the guidelines and the sample solutions.
 
 #### The SoftUni Curriculum for Software Engineers
 
@@ -57,24 +57,24 @@ The forms of training at SoftUni are **on-site** (the better choice) and **onlin
 
 #### SoftUni for People Who Work and Study
 
-We recommend to everyone who gets **excellent score at the SoftUni entrance exam**, and are passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living from it.
+We recommend to everyone who gets an **excellent score at the SoftUni entrance exam** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living from it.
 
 - For people who **work**, this means quitting their job (and getting a loan or decreasing their expenses to live with a lower income for 1-2 years until they start working in the new profession).
 - For people who **study** at a traditional university, this means to move significantly their focus towards programming and the practical courses in SoftUni, by decreasing the time spent in the traditional university.
 - For **unemployed** people, this is an excellent chance to assign their entire time, power, and energy to acquire a new, perspective, well paid and highly sought profession that will give them good life quality and long-term prosperity.
-- For **students** in secondary schools and high-schools this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, that will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
+- For **students** in secondary schools and high schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, which will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
 
 We recommend to all who **cannot get an excellent score at the SoftUni entrance exam** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future. 
 
-**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession of a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously, and work this for years every day with joy and pleasure.
+**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
-### Study Software Engineering in Your Own Way
+### Study Software Engineering in Your Way
 
 Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video training** that goes into more details in programming with Java or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing about the profession of a programmer is **to do practical projects**!
 
-**You cannot become a programmer without a lot of code writing and intense practicing**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources**, such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two** to acquire the foundation level needed for starting a job.
+**You cannot become a programmer without a lot of code writing and intense practice**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources**, such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two** to acquire the foundation level needed for starting a job.
 
-After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your own practical project**, on which you need to spend a few months, even a year, in order to learn based on the trial-and-error principle.
+After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that there are many ways to become a programmer, but they all have something in common: <b>intense code writing and years of practice</b>!</td>
@@ -102,6 +102,6 @@ Here are some recommended **resources** that will be useful for your development
 
 ## Good Luck to All!
 
-On behalf of the entire authors' team, we **wish you endless success in the profession and in your life**! We will be really happy, if with our help you are **passionate about programming** and we have inspired you to boldly take up the profession of "software engineer", which will: bring you a good job, working with pleasure, quality life, and prosperity, as well as great perspectives for development and possibilities for making impressive projects with inspiration and passion.
+On behalf of the entire authors' team, we **wish you endless success in the profession and your life**! We will be really happy, if with our help you are **passionate about programming** and we have inspired you to boldly take up the profession of "software engineer", which will: bring you a good job, working with pleasure, quality life, and prosperity, as well as great perspectives for development and possibilities for making impressive projects with inspiration and passion.
 
 <p align="right"><i>Sofia, December 5, 2017</i></p>
