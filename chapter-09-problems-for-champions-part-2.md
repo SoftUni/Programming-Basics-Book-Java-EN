@@ -1,8 +1,8 @@
-# Chapter 9.2. Problem for Champions – Part II
+# Chapter 9.2. Problems for Champions – Part II
 
-In this chapter we, will review three additional problems that belong to the category "**for champions**", i.e., they are more complex than the rest of the problems in this book.
+In this chapter, we will review three additional problems that belong to the category "**for champions**", i.e., they are more complex than the rest of the problems in this book.
 
-## More complex problems on the studied material
+## More Complex Problems on The Studied Material
 
 Before moving on to particular problems, we must clarify that we can solve them more efficiently with **additional knowledge in programming with Java** (methods, arrays, collections, recursion, etc.). Each solution that we will provide now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge up to the present moment.
 
@@ -69,7 +69,7 @@ Let's examine each of the parts in detail.
 
 The input of our problem consists of a few components:
 - On the **first line, we have all the money** that Lina has for shopping.
-- On **each of the following lines**, we will have kind of **command**.
+- On **each of the following lines**, we will have a **command**.
 
 The first part of the reading is trivial. We should keep in mind that we will be using the **`BigDecimal`** type because we are working with money, and we need precise accuracy:
 
@@ -91,7 +91,7 @@ The algorithm for solving the problem is a direct one – we continue **reading 
 
 Let's examine the first two sub-problems for our algorithm. The first sub-problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second sub-problem is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`String`** type, the easiest way to access each symbol inside the strings is via a **`foreach` loop**. 
 
-Here is how the code will look like when are using those two types of loops:
+Here is what the code will look like when are using those two types of loops:
 
 ![](assets/chapter-9-2-images/01.Passion-days-03.png)
 
@@ -133,7 +133,7 @@ How can we do that? We will leave the answer to this question to the reader.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/664#0](https://judge.softuni.org/Contests/Practice/Index/664#0).
 
 
-### Problem: Numerical Expression
+### Problem: X Expression
 
 Bonny is an extremely powerful witch. Because her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
