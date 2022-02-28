@@ -133,7 +133,7 @@ Write a program that inputs **n integers** (**n** > 0) and finds the **Max Numbe
 
 #### Hints and Guidelines
 
-We enter the first number **`n`** (the number of integers to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-10000000000000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** which iterates **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally, **`max`** will contain the highest number, and we print it on the console.
+We enter the first number **`n`** (the number of integers to be entered). We assign the current maximum **`max`** an initial neutral value, for example **-100000** (or **`Integer.MIN_VALUE`**). Using a **`for` loop** which iterates **n-1 times**, we read one integer **`num`** on each iteration. If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of **`num`** to the variable **`max`**. Finally, **`max`** will contain the highest number, and we print it on the console.
 
 ![](assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -535,7 +535,7 @@ Add [**Sun**] button, which draws a sun with 36 vertices, as shown in the figure
 
 ### Problem: * Draw a Spiral Triangles with The Turtle
 
-Add [**Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
+Add [**Spiral Triangle**] button, which draws three triangles with 22 vertices each, as shown in the figure below:
 
 ![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 

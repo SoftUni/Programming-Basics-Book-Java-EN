@@ -122,7 +122,7 @@ Print on the console **one of two possible states**:
 
 |Input|Output|Input|Output|
 | ---- | ----- | ---- | ---- |
-|1000<br>100<br>120<br>3 |The pool is 66% full. Pipe 1: 45%. Pipe2: 54%. |100<br>100<br>100<br>2.5|For 2.5 hours the pool overflows with 400 liters.|
+|1000<br>100<br>120<br>3 |The pool is 66% full. Pipe 1: 45%. Pipe 2: 54%. |100<br>100<br>100<br>2.5|For 2.5 hours the pool overflows with 400 liters.|
 
 ### Hints and Guidelines
 
@@ -184,7 +184,7 @@ The input data is read from the console and consists of an integer - **Tom's own
 
 |Input|Output|Input|Output|
 |----|-----|----|-----|
-|20|Tom sleeps well<br>95 hours and 25 minutes less for play|113|Tom will run away<br>3 hours and 47 minutes for play|
+|20|Tom sleeps well<br>95 hours and 25 minutes less for play|113|Tom will run away<br>3 hours and 47 minutes more for play|
 
 ### Hints and Guidelines
 

@@ -437,7 +437,7 @@ After we have an idea of how to solve the problem, and we have considered the da
 * **Perform** calculations.
 * **Print** the output on the console.
 
-**We declare the variables** that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseInt/Double(…)`**. 
+**We declare the variables** that we are going to use by trying to choose **meaningful names**. With **`scanner.nextLine()`** we read the input numbers from the console and we **convert** the input string to **`int`** or **`double`** with **`Integer/Double.parseDouble/Double(…)`**. 
 
 ![](assets/chapter-2-2-images/05.Daily-earnings-01.png)
 
