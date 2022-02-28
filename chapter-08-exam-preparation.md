@@ -121,7 +121,7 @@ We calculate how many **bricks** the workers transport in a single course.
 
 ![](assets/chapter-8-1-images/02.Bricks-02.png)
 
-By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** required to carry them. We have to consider that when dividing whole numbers, the remainder is ignored and always rounded down. To avoid this, we will convert the right side of the equation to **`double`** and use the **`Math.Ceiling(…)`** function to round the result always up. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but a decimal fraction. The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
+By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** required to carry them. We have to consider that when dividing whole numbers, the remainder is ignored and always rounded down. To avoid this, we will convert the right side of the equation to **`double`** and use the **`Math.ceiling(…)`** function to round the result always up. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but a decimal fraction. The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
 
 ![](assets/chapter-8-1-images/02.Bricks-03.png)
 
@@ -177,13 +177,13 @@ We read the input from the console.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-04.png)
 
-Since we do not know which **point** is on the left and which is on the right, we will create two variables to mark this. Since the **left point** is always the one with the smaller **x coordinate**, we will use **`Math.Min(…)`** to find it.  Accordingly, **the right one** is always the one with a larger **x coordinate** and we will use **`Math.Max(…)`**. We will also find the distance from **point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.Abs(…)`** to get a positive result.
+Since we do not know which **point** is on the left and which is on the right, we will create two variables to mark this. Since the **left point** is always the one with the smaller **x coordinate**, we will use **`Math.min(…)`** to find it.  Accordingly, **the right one** is always the one with a larger **x coordinate** and we will use **`Math.max(…)`**. We will also find the distance from **point x** to **the two points**. Because we do not know their position relative to each other, we will use **`Math.abs(…)`** to get a positive result.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-05.png)
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-06.png)
 
-The shorter of the two **distances** we can find using **`Math.Min(…)`**.
+The shorter of the two **distances** we can find using **`Math.min(…)`**.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-07.png)
 
