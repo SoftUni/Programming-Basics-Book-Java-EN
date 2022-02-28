@@ -1,6 +1,6 @@
 # Chapter 8.2. Preparation for a Practical Exam – Part II
 
-In this chapter, we will look at a **practical exam on basics of programming** held at SoftUni on December 18, 2016. The problems give a good idea of what we can expect at the entrance exam in programming at SoftUni. The exam covers the learning material studied from this book and the "Programming Basics" course at SoftUni.
+In this chapter, we will look at a **practical exam Programming Basics** held at SoftUni on December 18, 2016. The problems give a good idea of what we can expect at the entrance exam in programming at SoftUni. The exam covers the learning material studied from this book and the "Programming Basics" course at SoftUni.
 
 ## Exam Problems
 
@@ -16,7 +16,7 @@ Let's look at a **real exam topic**, the problems it contains, and their solutio
 
 ### Problem: Distance
 
-Write a program that calculates **what is the distance passed by a car (in kilometers)**, for whick we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(e.g., 70 minutes = 1.1666 hours\).
+Write a program that calculates **what is the distance passed by a car (in kilometers)**, for which we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(e.g., 70 minutes = 1.1666 hours\).
 
 ### Input Data
 
@@ -28,7 +28,7 @@ The input is read from the console and consists of **4 lines**:
 
 ### Output Data
 
-Print a number on the console: **kilometers passed**, formatted up to the **second character after decimal point**.
+Print a number on the console: **kilometers passed**, formatted up to the **second character after the decimal point**.
 
 ### Sample Input and Output
 
@@ -42,11 +42,11 @@ Print a number on the console: **kilometers passed**, formatted up to the **seco
 
 ## Hints and Guidelines
 
-It is possible that such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy problem. Let's **separate** the problem into a few **sub-problems** and try to **solve** each problem one by one, which will lead us to the final result:
+Such a description may look **misleading** and incomplete at first glance, which **adds** to the **complexity** of a relatively easy problem. Let's **separate** the problem into a few **sub-problems** and try to **solve** each problem one by one, which will lead us to the final result:
 
-* Our **initial** sub-problem will be to **read the input data** entered by the user, and **store them in appropriate variables**.
+* Our **initial** sub-problem will be to **read the input data** entered by the user and **store them in appropriate variables**.
 * **Execution** of the main programming **logic**, which in our case is a batch of simple calculations of the data that we already have.
-* **Calculation** and format the **result**.
+* **Caculate** and format the **result**.
 
 **The main** part of the programming logic **is** to **calculate** what will be the **distance passed after all changes** in speed. As during **execution** of the program, part of the **data** that we have **is modified**, we could **separate** the program **code** into a few **logically** separated **parts**:
 
@@ -59,13 +59,13 @@ For **reading** data from the **console**, we use **`Scanner`**:
 
 ![](assets/chapter-8-2-images/01.Distance-01.png)
 
-By the problem condition **input data** is being entered on **four** separate rows, therefore, we should execute the previous code a total of four times. 
+By the problem condition, **input data** is being entered on **four** separate rows, therefore, we should execute the previous code a total of four times. 
 
 ![](assets/chapter-8-2-images/01.Distance-02.png)
 
 To perform **calculations**, we choose to use a type **`double`**.
 
-You can read more about the different **data types**in Java programming language here: [https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
+You can read more about the different **data types** in Java programming language here: [https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
 
 This way, we successfully solved the first sub-problem. The next step is to **convert the input data** into appropriate **types** to perform the needed calculations. We choose to use **`Integer`** or **`int`** type because the condition of the problem says that the input data must be within a particular range, for which this data type is sufficient. We will do the **conversion** in the following way:
 
@@ -142,9 +142,9 @@ The result must be **formatted up to the second character** after the decimal po
 
 ## Hints and Guidelines
 
-The problem requires our program to accept more input data and perform more calculations, even though that the solution is **identical**. Reading the input data is done in the **familiar way**. Note that the **Input** part of the condition states that all input data are **real numbers**, and for that reason we would use the **`decimal`** type.
+The problem requires our program to accept more input data and perform more calculations, even though the solution is **identical**. Reading the input data is done **familiarly**. Note that the **Input** part of the condition states that all input data are **real numbers**, and for that reason, we would use the **`decimal`** type.
 
-Now that we already have everything to execute the programming logic, we can move to the next part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The condition is that tiles have **triangular** shape, which can confuse, but practically, the problem needs just **basic calculations**. We can calculate the **common part of the floor** by the formula for finding rectangle area, and the **area of a single tile** using the relevant formula for triangle area.
+Now that we already have everything to execute the programming logic, we can move to the next part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The condition is that tiles have a **triangular** shape, which can confuse, but practically, the problem needs just **basic calculations**. We can calculate the **common part of the floor** by the formula for finding rectangle area, and the **area of a single tile** using the relevant formula for triangle area.
 
 To calculate the **number of tiles** that are needed, **we divide the floor area by the area of a single tile** (we should not forget to add the 5 additional tiles, that were mentioned in the condition).
 
@@ -164,13 +164,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#
 
 ### Problem: Flowers
 
-A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season.
+A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses**, and **tulips**. The prices depend on the season.
 
 |Season|Chrysanthemums|Roses|Tulips|
 |:---:|:---:|:---:|:---:|
 |spring / summer<br>autumn / winter|2.00 lv/pc<br>3.75 lv/pc|4.10 lv/pc<br>4.50 lv/pc|2.50 lv/pc<br>4.15 lv/pc|
 
-On holidays, prices of all flowers are **increased by 15%.** The following **discounts** are offered:
+On holidays, the prices of all flowers are **increased by 15%.** The following **discounts** are offered:
 * For purchasing more than 7 tulips in spring – **5% of the price** of the whole bouquet.
 * For purchasing 10 or more roses in winter – **10% of the price** of the whole bouquet.
 * For purchasing more than 20 flowers in total in any season – **20% of the price** of the whole bouquet.
@@ -208,7 +208,7 @@ Print on the console 1 number – **the price of flowers**, formatted up to the 
 
 ### Hints and Guidelines
 
-After carefully reading the condition, we understand that we need to do **simple calculations**, but this time we will need **additional** logical **checks**. We need to pay more **attention** to the moment of **making changes** in the final price, so that we can properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. To begin with, we will separate the already **defined** values into **variables**, as we did in the previous problems:
+After carefully reading the condition, we understand that we need to do **simple calculations**, but this time we will need **additional** logical **checks**. We need to pay more **attention** to the moment of **making changes** in the final price so that we can properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. To begin with, we will separate the already **defined** values into **variables**, as we did in the previous problems:
 
 ![](assets/chapter-8-2-images/03.Flowers-01.png)
 
@@ -216,7 +216,7 @@ We do the same for the rest of the defined values:
 
 ![](assets/chapter-8-2-images/03.Flowers-02.png)
 
-Our next sub-problem is to **read** correctly **the input** data from the console. We will do it in the familiar way, but this time we will **combine two** separate functions – one for **reading** a line from the console and another one for its **conversion** into a numeric data type:
+Our next sub-problem is to **read** correctly **the input** data from the console. We will do it **familiarly**, but this time we will **combine two** separate functions – one for **reading** a line from the console and another one for its **conversion** into a numeric data type:
 
 ![](assets/chapter-8-2-images/03.Flowers-03.png)
 
@@ -232,13 +232,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#
 
 ### Problem: Grades
 
-Write a program that **calculates statistics for grades** in an exam. At the beginning, the program reads the **number of students** who attended the exam and for **each student – their grade**. At the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, and the **average grade** of the exam.
+Write a program that **calculates statistics for grades** in an exam. In the beginning, the program reads the **number of students** who attended the exam and for **each student – their grade**. In the end, the program must **print the percentage of students** that have grades between 2.00 and 2.99, between 3.00 and 3.99, between 4.00 and 4.99, 5.00 or more, and the **average grade** of the exam.
 
 ### Input Data
 
 Read from the console a **sequence of numbers, each on a separate line**:
 * On the first line – **the number of students who attended the exam** – an integer within the range [**1 … 1000**].
-* For **each individual student** on a separate line – **the grade on the exam** – a real number within the range [**2.00 … 6.00**].
+* For **each student** on a separate line – **the grade on the exam** – a real number within the range [**2.00 … 6.00**].
 
 ### Output Data
 
@@ -263,7 +263,7 @@ The results must be **formatted up to the second symbol** after the decimal poin
 
 ### Hints and Guidelines
 
-From the condition, we see that **first** we will read the **number** of students, and then, **their grades**. For that reason, **first** we will read the **number** of students and save it in a variable of **`int`** type. To read and process the grades themselves, we will use a **`for`** loop. The value of the **`int`** variable will be the **end** value of the **`i`** variable from the loop. This way, at **each** iteration of the loop will read **each one of the grades**.  
+From the condition, we see that we will read the **number** of students, and then, **their grades**. For that reason **first**, we will read the **number** of students and save it in a variable of **`int`** type. To read and process the grades themselves, we will use a **`for`** loop. The value of the **`int`** variable will be the **end** value of the **`i`** variable from the loop. This way, at **each** iteration of the loop, will read **each one of the grades**.  
 
 ![](assets/chapter-8-2-images/04.Grades-01.png)
 
@@ -275,7 +275,7 @@ We run the **loop**, and inside it, we **declare one more** variable, in which w
 
 ![](assets/chapter-8-2-images/04.Grades-03.png)
 
-What **percentage** is occupied by a **group of students** from the total number, we can calculate by **multiplying the number of students** from the respective group by **100**, and then divide by the **total number of students**.
+What **percentage** is occupied by a **group of students** from the total number, we can calculate by **multiplying the number of students** from the respective group by **100**, and then dividing by the **total number of students**.
 
 <table>
 <tr>
@@ -293,7 +293,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/662#
 
 ### Problem: Christmas Hat
 
-Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with width of **4 \* `n` + 1 columns** and height of **2 \* `n` + 5 rows**, as in the examples below.
+Write a program that reads from the console an **integer `n`** and draws a **Christmas hat** with a width of **4 \* `n` + 1 columns** and a height of **2 \* `n` + 5 rows**, as in the examples below.
 
 ### Input Data
 
@@ -315,7 +315,7 @@ Print on the console a **Christmas hat**, exactly like in the examples.
 
 ### Hints and Guidelines
 
-In problems requiring **drawing** on the console, most often the user inputs **an integer** that is related to the **total size of the figure** that we need to draw. As the problem requirements mention how the total length and width of the figure are calculated, we can use them as **starting points**. In the examples it is clear that regardless of the input data, we always have **first two rows** that are almost identical.
+In problems requiring **drawing** on the console, most often the user inputs **an integer** that is related to the **total size of the figure** that we need to draw. As the problem requirements mention how the total length and width of the figure are calculated, we can use them as **starting points**. In the examples, it is clear that regardless of the input data, we always have the **first two rows** that are almost identical.
 
 <code>......./\|\\.......</code><br><code>.......\\\|/.......</code>
 
@@ -323,9 +323,9 @@ We also notice that the **last three rows** are always present, as **two** of th
 
 <code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code><br><code>\*.\*.\*.\*.\*.\*.\*.\*.\*</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</code>
 
-By these observations we can come up with the **formula** for the **height of the variable part** of the Christmas hat. We use the formula specified in the problem to calculate the total height, by subtracting the size of the unchangeable part. We get **`(2 * n + 5) – 5`** or **`2 * n`**.
+By these observations, we can come up with the **formula** for the **height of the variable part** of the Christmas hat. We use the formula specified in the problem to calculate the total height, by subtracting the size of the unchangeable part. We get **`(2 * n + 5) – 5`** or **`2 * n`**.
 
-To **draw** the **dynamic** or the variable part of the figure, we will use a **loop**. The size of the loop will be from **0** to the **width** that we have by requirements, namely **`4 * n + 1`**. Since we will use this formula in **a few places** in the code, it is a good practice to declare it in a **separate variable**. efore running the loop, we should **declare variables** for the **number** of individual symbols that participate in the dynamic part: **dots** and **dashes**. By analyzing examples, we can also prepare formulas for the **starting values** of these variables. Initially, the **dashes** are **0**, but it is clear that we can calculate the number of **dots** by subtracting **3** from the **total width** (the number of symbols that are building the top of the Christmas hat) and then **dividing by 2**, as the number of dots on both sides of the hat is the same.
+To **draw** the **dynamic** or the variable part of the figure, we will use a **loop**. The size of the loop will be from **0** to the **width** that we have by requirements, namely **`4 * n + 1`**. Since we will use this formula in **a few places** in the code, it is a good practice to declare it in a **separate variable**. Before running the loop, we should **declare variables** for the **number** of individual symbols that participate in the dynamic part: **dots** and **dashes**. By analyzing examples, we can also prepare formulas for the **starting values** of these variables. Initially, the **dashes** are **0**, but we can calculate the number of **dots** by subtracting **3** from the **total width** (the number of symbols that are building the top of the Christmas hat) and then **dividing by 2**, as the number of dots on both sides of the hat is the same.
 
 <code>.......\*\*\*.......</code><br><code>......\*-\*-\*......</code><br><code>.....\*--\*--\*.....</code><br><code>....\*---\*---\*....</code><br><code>...\*----\*----\*...</code><br><code>..\*-----\*-----\*..</code><br><code>.\*------\*------\*.</code><br><code>\*-------\*-------\*</code>
 
@@ -378,17 +378,17 @@ Print on a single line **all combinations**, corresponding to the requirements, 
 
 ### Hints and Guidelines
 
-According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com](https://www.asciitable.com)). We could use an already **defined function** in Java to read single symbol from the console and save it in a variable with type **`char`**: 
+According to the condition, we have as input data **3 lines**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com](https://www.asciitable.com)). We could use an already **defined function** in Java to read a single symbol from the console and save it in a variable with type **`char`**: 
 
 ![](assets/chapter-8-2-images/06.Letters-01.png)
 
 Let's think of how we can achieve the **final result**. The problem condition is to print all characters from the starting to the end (by skipping a particular letter), what should we do? 
 
-The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. One of the advantages of Java is that we have the opportunity to use a different data type for a loop variable:
+The easiest and most efficient way is to use a **loop**, by iterating through **all characters** and printing those that are **different** from the **letter** that we need to skip. One of the advantages of Java is that we have the opportunity to use a different data type for a loop variable:
 
 ![](assets/chapter-8-2-images/06.Letters-02.png)
 
-The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the end result of our problem? We must find a **way** to print **3 characters**, as required, instead of **1**. The execution of the program is very similar to a gaming machine. We usually win there if we manage to arrange several identical symbols. Let's say that the machine has space for three characters. When we **stop** on a particular **character** on the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a gaming machine works.
+The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the final result of our problem? We must find a **way** to print **3 characters**, as required, instead of **1**. The execution of the program is very similar to a gaming machine. We usually win there if we manage to arrange several identical symbols. Let's say that the machine has space for three characters. When we **stop** on a particular **character** in the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a gaming machine works.
 
 We use a **loop** that runs through **all characters** from the starting to the end letter, included. On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e., does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way, we have three nested loops, as we will print the characters in the body of the **latter**.
 
