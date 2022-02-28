@@ -8,9 +8,9 @@ In this chapter, we will introduce you to **methods**. We will learn what they a
   Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=dYqouc4KMiU">https://www.youtube.com/watch?v=dYqouc4KMiU</a>.
 </div>
 
-## What is a "Method"?
+## What is a Method?
 
-So far, we have found out that while **writing** a code for a program that solve a problem, **separating** the problem into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the problem, and the **readability** and the debugging of the code are better.
+So far, we have found out that while **writing** a code for a program that solves a problem, **separating** the problem into different **parts** favors us a lot. Every part is responsible for a **corresponding action** and by doing so, it is **easier** to solve the problem, and the **readability** and the debugging of the code are better.
 
 A block of code designed to perform a particular problem, which we have logically separated is called a **method**. **Methods – pieces of code, that are named** by us in a certain way and could be called as many times as we need.
 
@@ -24,7 +24,7 @@ Let's look at the following **example of a simple method**:
 
 ![](assets/chapter-10-images/01.Simple-method-01.png)
 
-This **method** has the problem to print a header containing a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The parentheses **`( `** and **`)`** always follows the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the **name of a method must describe the action** he performs.
+This **method** has the problem to print a header containing a series of the symbol **`-`**. Because of this, the name of the method is **`printHeader`**. The parentheses **`( `** and **`)`** always follow the name, no matter how we have named the method. Later we will take a look at how we should name methods. For now, we will only say that the **name of a method must describe the action** he performs.
 
 The **body** of the method consists of **programming code**, which is located between the curly brackets **`{`** and **`}`**. Between them, we place code, that will solve our problem, described by the name of the method.
 
@@ -32,13 +32,13 @@ The **body** of the method consists of **programming code**, which is located be
 
 Up to this moment, we have found out that, methods help us with **separating big problems into smaller parts**, which leads to a **simple solution** of the corresponding problem. It makes our program, not just well structured, **easy readable** but also more understandable.
 
-Using methods, we **escape repeating** of programming code. **Repeating** code is a bad practice, as it makes it very difficult to maintain the program and leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change at every occurrence it. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. It is why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
+Using methods, we **escape the repeating** of programming code. **Repeating** code is a bad practice, as it makes it very difficult to maintain the program and leads to errors. If one part of code exists in our program more than once and we have to fix it, we will have to change it at every occurrence. The probability of us forgetting one of the repeated places is high, which will lead to incorrect behavior of our program. It is why it's a **good practice** to define a fragment that will be used **more than once** as a **separate method**.
 
-Methods offer us an **opportunity** to use **code several times**. With solving more and more problems, we will conclude that using already defined methods saves us much time and effort.
+Methods offer us an **opportunity** to use **code several times**. By solving more and more problems, we will conclude that using already defined methods saves us much time and effort.
 
 ### Declaring Methods
 
-In Java language, you can **declare** methods inside a class, i.e., between the opening **`{`** and closing **`}`** brackets of the classbut not in the declaration of another method. The declaration is the registration of the method in the program, and thus the method will be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program we write.
+In Java language, you can **declare** methods inside a class, i.e., between the opening **`{`** and closing **`}`** brackets of the class but not in the declaration of another method. The declaration is the registration of the method in the program, and thus the method will be recognized in the rest of it. The best-known example is the **`main(…)`** method, which we use in every program we write.
 
 ![](assets/chapter-10-images/02.Declaring-methods-01.png)
 
@@ -51,15 +51,15 @@ With the next example, we will look at the mandatory elements in the declaration
 * **Parameters list** is declared between the parentheses **`(`** and **`)`** that we write after its name. Here we list all the **parameters** that the method will use. There can be **only one** parameter, **multiple** ones, or it could be an **empty** list. If there are no parameters, we will write only the parentheses **`()`**. In this example, we declare one parameter with a name **` side`** and with a type **` double`**.
 * **`static`** declaration in the method description. For the moment, we can accept that we write **`static`** always when we declare a method. Later, when we get familiar with object-oriented programming (OOP), we will learn about the difference between **static methods** (shared for the whole class) and **methods of an object**, which work on the data of a particular instance of the class (object).
 
-When declaring methods, you must follow the **sequence** of its base elements – first is the **keyword `static`** then the **type of the returned value**, then **method name**, and finally **list of parameters**, surrounded by parentheses **`()`**. 
+When declaring methods, you must follow the **sequence** of its base elements – first is the **keyword `static`**, then the **type of the returned value**, then **method name**, and finally a **list of parameters**, surrounded by parentheses **`()`**. 
 
 After we have declared a method, its **implementation (body)** follows. In the body of the method, we write down **the algorithm**, by which it solves a problem, i.e., the body contains the code (program block), which applies the method's **logic**. In the example above we calculate the area of a square, which is **`side * side`**. 
 
 When declaring a variable in the body of a method, it is called a **local** variable. The area where this variable exists and can be used starts from the line where we have declared it and reaches the closing curly bracket `}` of the body of the method. This area is called **variable scope**.
 
-### Calling a Method
+### Invoking a Method
 
-**Calling** a method means **starting to execute the code**, which is in **the body of the method**. It happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as one of the given parameters when declaring the method. Here is an example:
+**Invoking** a method means **starting to execute the code**, which is in **the body of the method**. It happens by writing its **name**, followed by parentheses **`()`** and the semicolon sign **`;`** to end the line. If the method needs input data, it is given in the parentheses **`()`**, and the succession of the parameters should be the same as one of the given parameters when declaring the method. Here is an example:
 
 ![](assets/chapter-10-images/03.Invoking-methods-01.png)
 
@@ -118,7 +118,7 @@ Often to solve a problem, the method by which we achieve this needs **additional
 
 ### Using Parameters in Methods
 
-As we noted above, **the parameters can be zero, one or more**. When declaring them, you should divide them with a comma. They can be of any type (**`int`**, **`string`**, etc.), and below is an example of how they are used by the method.
+As we noted above, **the parameters can be zero, one, or more**. When declaring them, you should divide them with a comma. They can be of any type (**`int`**, **`string`**, etc.), and below is an example of how they are used by the method.
 
 We **declare** the method and its **list** of **parameters**, then we write the code that the method executes.
 
@@ -128,13 +128,13 @@ After that **call** the method and **give it particular values**:
 
 ![](assets/chapter-10-images/05.Method-parameters-02.png)
 
-When **declaring parameters**, we can use **various** types of variables, and we should be careful that every parameter has a **type** and **name**. It is important to note that when calling the method, we must pass to its **values** for the parameters in **the order**, in which they are **declared**. If the parameters are first **`int`** and after that **`string`**, when calling the method, we can't give it first a **`string`** and then **`int`**. 
+When **declaring parameters**, we can use **various** types of variables, and we should be careful that every parameter has a **type** and **name**. It is important to note that when invoking the method, we must pass to its **values** for the parameters in **the order**, in which they are **declared**. If the parameters are first **`int`** and after that **`string`**, when invoking the method, we can't give it first a **`string`** and then **`int`**. 
 
 Let's look at the example for declaring a method, which has several parameters of different types.
 
 ![](assets/chapter-10-images/05.Method-parameters-03.png)
 
-### Problem: Sign of an integer
+### Problem: Sign of Integer Number
 
 Create a method that prints the sign of an integer **n**.
 
@@ -163,7 +163,7 @@ The next step is to read the input number and to call the new method from the bo
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#1](https://judge.softuni.org/Contests/Practice/Index/665#1).
 
 
-### Problem: Printing a Triangle
+### Problem: Printing Triangle
 
 Create a method that prints a triangle as shown in the examples.
 
@@ -247,7 +247,7 @@ If we **replace** **`void`** with **a type** of some variable, this will tell th
 
 We should note that **the result** returned by the method can be of **a type, compatible with the type of the returned value** of the method. For example, if the declared type of the returned value is **`double`**, we can return a value of **`int`** type.
 
-### The "return" Operator
+### The return Operator
 
 To obtain a result from the method, we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** to the method's caller, a **value** that is defined by the expression after the **`return`** operator.
 
@@ -297,7 +297,7 @@ Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
 ```
 
-### Problem: Calculating Triangle Area
+### Problem: Calculate Triangle Area
 
 Create a method that calculates the area of a triangle using the given base and height and returns it as a result.
 
@@ -322,7 +322,7 @@ The next step is to **call the new** method from the **`main()`** method and to 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#4](https://judge.softuni.org/Contests/Practice/Index/665#4).
 
 
-### Problem: Power of a Number
+### Problem: Math Power
 
 Write a method that calculates and returns the result the power of a number. 
 
@@ -351,7 +351,7 @@ In many programming languages, the same methods can be declared in **different v
 
 ### Method Signature
 
-In programming methods are **identified** through the elements of their declaration: **name** of the method + a list of its **parameters**. These two elements define its specification, the so-called “**method signature**”.
+In programming, methods are **identified** through the elements of their declaration: **name** of the method + a list of its **parameters**. These two elements define its specification, the so-called “**method signature**”.
 
 ![](assets/chapter-10-images/13.Method-signature-01.png)
 
@@ -365,7 +365,7 @@ As we mentioned, if you use **the same name for several methods with different s
 
 ![](assets/chapter-10-images/14.Method-overloading-01.png)
 
-### Signature and return value type
+### Signature and The return Value Type
 
 It is important to say that **the returned type as a result** of the method **is not a part of its signature**. If the returned type was a part of the signature, then the compiler doesn't know which method exactly to call (there is ambiguity).
 
@@ -412,7 +412,7 @@ In this chapter, we will introduce you to some of the **best practices** when wo
 
 ### Naming methods
 
-When we name a method, it's recommended to use **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **problem** which the method will do. This is why it's a good practice **for the name to describes the purpose of the method**.
+When we name a method, it's recommended to use a **logical name**. This is good because every method must **correspond** to a specific part of our problem. We must take into consideration the **problem** which the method will do. This is why it's a good practice **for the name to describe the purpose of the method**.
 
 It is required for the name of the method to start with a **small letter** and to be a verb or a combination of a verb and a noun. Formatting the names must be done following **Lower Camel Case** convention - **every word except the first to start with an upper letter**. Round brackets **`( `** and **`)`** are always after the name of the method.
 
@@ -493,7 +493,7 @@ In this chapter, we have learned base concepts about working with methods:
 
 To improve what we have learned, we will solve a few exercises. In them, it is required to write a method with specific functionality and then call it with values read from the console, as shown in the example. 
 
-### Problem: "Hello, Name!"
+### Problem: Hello, Name!
 
 Write a method that takes a name as a parameter and prints on the console "*Hello, \<name\>!*".
 
@@ -512,7 +512,7 @@ Define a method **`printName(String name)`** and implement it, after which read 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#7](https://judge.softuni.org/Contests/Practice/Index/665#7).
 
 
-### Problem: Min method
+### Problem: Min Method
 
 Create a method **`getMin(int a, int b)`**, which returns the smaller of two numbers. Write a program, which takes as input three numbers and prints the smallest of them. Use the method **`getMin(…)`**, which you have already created.
 
@@ -551,14 +551,14 @@ Write method and add the input string to the result in the for loop:
 
 ![](assets/chapter-10-images/17.Repeated-string-01.png)
 
-Keep in mind that **in Java concatenating strings in loops leads to a bad performance** and is not recommended. Learn more at: https://stackoverflow.com/questions/1235179.
+Keep in mind that **in Java concatenating strings in loops leads to bad performance** and is not recommended. Learn more at: https://stackoverflow.com/questions/1235179.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#9](https://judge.softuni.org/Contests/Practice/Index/665#9).
 
 
-### Problem: N-th Digit
+### Problem: Nth Digit
 
 Create a method **`findNthDigit(number, index)`**, which takes a number and index N as parameters and prints the N-th digit of the number (counting **from right to left** and starting from 1). After that, print the result on the console.
 
@@ -570,7 +570,7 @@ Create a method **`findNthDigit(number, index)`**, which takes a number and inde
 
 #### Hints and Guidelines
 
-To do the algorithm, use a **`while`** loop, until the given number equals 0. At each iteration of the **`while`** loop, check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
+To do the algorithm, use a **`while`** loop until the given number equals 0. At each iteration of the **`while`** loop, check if the current index of the digit is equal to the index you are looking for. If it is, return as a result of the digit at this index (**`number % 10`**). If not, remove the last digit in the number (**`number = number / 10`**). You should count which digit you are checking by index (from right to left and starting from 1). When you find the number, return the index. 
 
 #### Testing in The Judge System
 
@@ -592,7 +592,7 @@ Write a method **`integerToBase(number, toBase)`**, which takes as parameters an
 To solve the problem, we will declare a string, in which we will keep the result. After this, we need to do the following calculations to convert the number.
 * We calculate **the remainder** of the number, divided by the base.
 * **We insert the remainder** at the beginning of the string.
-* **We divide** the number to the base.
+* **We divide** the number by the base.
 * **We repeat** the algorithm until the input integer equals 0.
 
 Write the missing logic in the method below:
@@ -615,11 +615,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/665#
 ### Problem: Notifications
 
 Write a program, which takes an integer **`n`** and **`n` input messages** and prints **`n` output messages**, based on the input. For each message read a few lines. Each message starts with **`messageType`**: “**`success`**”, “**`warning`**” or “**`error`**”:
-- When **`messageType`** is “**`success`**” read **`operation`** + **`message`** (each from a new line).
-- When **`messageType`** is “**`warning`**” read only **`message`** (from a new line).
-- When **`messageType`** is “**`error`**” read **`operation`** + **`message`** + **`errorCode`** (each from a new line).
+- When **`messageType`** is a “**`success`**”, read **`operation`** + **`message`** (each from a new line).
+- When **`messageType`** is a “**`warning`**” read-only **`message`** (from a new line).
+- When **`messageType`** is an “**`error`**” read **`operation`** + **`message`** + **`errorCode`** (each from a new line).
 
-Print on the console **each read message**, formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
+Print on the console **each read message** formatted depending on its **`messageType`**. After the headline of the message print as much **`=`**, **as the length** of the said **headline** and print **an empty line** after each message (to understand in detail look at the examples). 
 
 The problem should be solved by defining four methods: **`showSuccessMessage()`**, **`showWarningMessage()`**, **`showErrorMessage()`** and **`readAndProcessMessage()`**, so that only the last method is called in the **`main()`** method:
 
@@ -637,7 +637,7 @@ Define and implement the four shown methods.
 
 In **`ReadAndProcessMessage()`** read the type of message from the console and according to the read, type read the rest of the data (one, two, or three more lines). After that call the method for printing the given type of message.
 
-If you are reading from the console a few separate methods, you should keep in mind that you should **create `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter. Creating more than one **`Scanner`** which reads from the console might not work as expected.
+If you are reading from the console a few separate methods, you should keep in mind that you should **create a `Scanner` object only once** (for example in the main method) and pass it to the other methods as a parameter. Creating more than one **`Scanner`** which reads from the console might not work as expected.
 
 #### Testing in The Judge System
 
