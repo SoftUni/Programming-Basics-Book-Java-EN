@@ -2,7 +2,7 @@
 
 In **the current chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
-## Practical exam on “Programming Basic”
+## Practical Exam on “Programming Basic”
 
 The **"Programming Basics"** course ends with a **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** one of the **topics** studied in the course. The themes of the problems are as follows:
 
@@ -20,9 +20,9 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 **How** does the testing in **Judge** work? **You upload** the source code and from the menu below you choose to compile it as a **Java** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
 
-## Simple Calculations – problems
+## Simple Calculations – Problems
 
-**The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
+**The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few problems:
 
 ### Problem: Triangle Area
 
@@ -136,7 +136,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Simple Conditions – Problems
 
-**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
+**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few problems:
 
 ### Problem: Point on a Segment
 
@@ -183,7 +183,7 @@ Since we do not know which **point** is on the left and which is on the right, w
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-06.png)
 
-The shorter of the two **distances** we can found using **`Math.Min(…)`**.
+The shorter of the two **distances** we can find using **`Math.Min(…)`**.
 
 ![](assets/chapter-8-1-images/03.Point-on-segment-07.png)
 
@@ -239,7 +239,7 @@ We read the input data from the console:
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-04.png)
 
-We will initialize two variables that will mark whether **the point** is in one of the rectangles. When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It is enough **only one** of them to be **`true`** so that the point is in the figure.
+We will initialize two variables that will mark whether **the point** is in one of the rectangles. When printing the message, we will check whether any of the variables has accepted a value of **`true`**. It is enough for **only one** of them to be **`true`** so that the point is in the figure.
 
 ![](assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
@@ -250,7 +250,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Complex Conditions – Problems
 
-**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
+**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few problems:
 
 ### Problem: Date After 5 days
 
@@ -259,7 +259,7 @@ There are two numbers given - **d** (day) and **m** (month) that form **a date**
 #### Input Data
 
 The input is read from the console and consists of two lines:
--	On the first line, we read an integer **d** in the range [**1 … 31**] – day. The number of the day does not exceed the number of days in that month (e.g. 28 for February).
+-	On the first line, we read an integer **d** in the range [**1 … 31**] – day. The number of days does not exceed the number of days in that month (e.g. 28 for February).
 -	On the second line, we read an integer **m** in the range [**1 … 12**] – month. Month 1 is January, month 2 is February,  …, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04).
 
 #### Output Data
@@ -307,7 +307,7 @@ The only thing that remains is to print the result on the console. It is importa
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#4](https://judge.softuni.org/Contests/Practice/Index/661#4).
 
 
-### Problem: Sums of 3 Numbers
+### Problem: Sums 3 Numbers
 
 There are **3 integers** given.  Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
@@ -363,7 +363,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 **The fourth** problem of the "Programming Basics" Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
 
-### Problem: Sums with Step of 3
+### Problem: Sums Step 3
 
 We are given **n** integers: **a1, a2, …, an**. Calculate the sums:
 -	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
@@ -407,7 +407,7 @@ Finally, we will print the result on the console in the required **format**.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#6](https://judge.softuni.org/Contests/Practice/Index/661#6).
 
 
-### Problem: Sequence of Increasing Elements
+### Problem: Increasing Elements
 
 A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
@@ -515,7 +515,7 @@ What remains is **to assemble the whole program** by first reading the input, pr
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#8](https://judge.softuni.org/Contests/Practice/Index/661#8).
 
 
-### Problem: Rectangle with Stars in the Center
+### Problem: Rectangle with Stars
 
 Write a program that reads from the console an integer **n** and draws a **rectangle** with size **n with two asterisks in its center** as in the examples below.
 
@@ -599,7 +599,7 @@ We will read the input data from the console. We also create the additional vari
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
-It will be easier to solve the problem if we logically divide it **into parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think about how to do this with **series of two numbers**. The answer is easy – we will use **nested loops**. 
+It will be easier to solve the problem if we logically divide it **into parts**. If we are required to draw all the rows from a number between **`a`** and **`b`**, we will do it using **one loop** that takes all the numbers from **`a`** to **`b`**. Let's think about how to do this with a **series of two numbers**. The answer is easy – we will use **nested loops**. 
 
 ![](assets/chapter-8-1-images/11.Increasing-4-numbers-02.png)
 
@@ -620,7 +620,7 @@ Finally, we will check if **the counter** is equal to **0** and we will print "*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#10](https://judge.softuni.org/Contests/Practice/Index/661#10).
 
 
-### Problem: Generating Rectangles
+### Problem: Generate Rectangles
 
 By a given number **n** and **a minimum area m**, generate all possible rectangles with integer coordinates in the range [**-n…n**] with an area of at least **m**. The generated rectangles must be printed in the following format:
 
