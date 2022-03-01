@@ -474,20 +474,20 @@
 </code></pre>
 <p>The structure consists of:</p>
 <ul>
-<li>Selector - an expression that is calculated to some specific value. The type of the selector can be <strong>an integer</strong>, <strong><code>string</code></strong> or <strong><code>enum</code></strong>.</li>
-<li>Multiple <strong><code>case</code></strong> labels followed by code to be executed, ending with <strong><code>break</code></strong>.</li>
+<li>Selector - an expression that is calculated to some specific value. The type of the selector can be <strong>an integer</strong>, <strong><code>string</code></strong>, or <strong><code>enum</code></strong>.</li>
+<li>Multiple <strong><code>case</code></strong> labels followed by code to be executed, ending with a <strong><code>break</code></strong>.</li>
 </ul>
 <h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>Now that we have recalled how conditional statements are used and nested into each other to implement more complex conditions and program logic, let&apos;s solve a few exam problems.</p>
 <h3 id="problem-on-time-for-the-exam"><a name="problem-on-time-for-the-exam" class="plugin-anchor" href="#problem-on-time-for-the-exam"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: On Time for The Exam</h3>
-<p>A student must go <strong>to the exam at a certain time</strong> (for example at 9:30am). He arrives at the exam hall at a given <strong>hour of arrival</strong> (for example 9:40). It is considered that the student has arrived <strong>on time</strong>, if he arrives <strong>at the time when the exam starts or up to half an hour earlier</strong>. If the student arrives <strong>more than 30 minutes earlier</strong>, the student <strong>has come too early</strong>. If he arrives <strong>after the time when the exam starts</strong>, he is <strong>late</strong>. </p>
-<p>Write a program that has as input data for the exam starting time and the student arrival time, and prints if the student has arrive <strong>on time</strong>, or if he has <strong>arrive early</strong> or if he is <strong>late</strong>, as well as <strong>how many hours or minutes</strong> the student was early or late.</p>
+<p>A student must go <strong>to the exam at a certain time</strong> (for example at 9:30 am). He arrives at the exam hall at a given <strong>hour of arrival</strong> (for example 9:40). It is considered that the student has arrived <strong>on time</strong> if he arrives <strong>at the time when the exam starts or up to half an hour earlier</strong>. If the student arrives <strong>more than 30 minutes earlier</strong>, the student <strong>has come too early</strong>. If he arrives <strong>after the time when the exam starts</strong>, he is <strong>late</strong>. </p>
+<p>Write a program that has as input data for the exam starting time and the student arrival time, and prints if the student has arrived <strong>on time</strong>, or if he has <strong>arrived early</strong> or if he is <strong>late</strong>, as well as <strong>how many hours or minutes</strong> the student was early or late.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>From the console, we read as input data <strong>four integers</strong> (one per line):</p>
 <ul>
 <li>The first line contains <strong>exam starting time(hours)</strong> &#x2013; an integer from 0 to 23.</li>
 <li>The second line contains <strong>exam starting time(minutes)</strong> &#x2013; an integer from 0 to 59.</li>
-<li>The third line contains <strong>hour of arrival</strong> &#x2013; an integer from 0 to 23.</li>
+<li>The third line contains the <strong>hour of arrival</strong> &#x2013; an integer from 0 to 23.</li>
 <li>The fourth line contains <strong>minutes of arrival</strong> &#x2013; an integer from 0 to 59.</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
@@ -559,15 +559,15 @@
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-    <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them, before you start writing code.</td></tr></table>
+    <td>It is recommended <b>that you read the condition of a problem several times</b> taking notes and sketching examples while thinking about them before you start writing code.</td></tr></table>
 
 <h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
-<p>According to the assignment, we expect <strong>four</strong> lines in a row with different <strong>integers</strong>. Looking at the provided parameters, we can use the type <strong><code>int</code></strong>, as it is suitable for the expected values. We simultaneously <strong>read</strong> an input and <strong>parse</strong> the string value to the selected data type for <strong>integer</strong>.</p>
+<p>According to the assignment, we expect <strong>four</strong> lines in a row with different <strong>integers</strong>. Looking at the provided parameters, we can use the type <strong><code>int</code></strong>, as it is suitable for the expected values. We simultaneously <strong>read</strong> input and <strong>parse</strong> the string value to the selected data type for <strong>integer</strong>.</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-01.png" alt=""></p>
 <p>Looking at the expected output, we can create variables that contain the different output data types to avoid using the so-called <strong>&quot;magic strings&quot;</strong> in the code.</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-02.png" alt=""></p>
 <h4 id="calculations"><a name="calculations" class="plugin-anchor" href="#calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations</h4>
-<p>After reading the input data, we can now start writing the logic for calculating the result. Let&apos;s first calculate the <strong>starting time</strong> of the exam <strong>in minutes</strong> for easier and more accurate comparison.</p>
+<p>After reading the input data, we can now start writing the logic for calculating the result. Let&apos;s first calculate the <strong>starting time</strong> of the exam <strong>in minutes</strong> for an easier and more accurate comparison.</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-03.png" alt=""></p>
 <p>Let&apos;s also calculate the <strong>arrival time</strong> of the student.</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-04.png" alt=""></p>
@@ -576,7 +576,7 @@
 <p>Our next step is to do the required <strong>checks and calculations</strong>, and finally, we will print the output. Let&apos;s separate the code into <strong>two</strong> parts: </p>
 <ul>
 <li>First, let&apos;s show when the student arrived &#x2013; is he <strong>early</strong>, <strong>late</strong> or <strong>on time</strong>. To do that, we will use an <strong><code>if-else</code></strong> statement.</li>
-<li>After that, we will show the <strong>time difference</strong> if the student arrives in a <strong>different time</strong> from the starting <strong>time of the exam</strong>.</li>
+<li>After that, we will show the <strong>time difference</strong> if the student arrives at a <strong>different time</strong> from the starting <strong>time of the exam</strong>.</li>
 </ul>
 <p>To spare one additional check (<strong><code>else</code></strong>), we can, by default, assume that the student was late. </p>
 <p>According to the condition, we will check whether the difference in times is <strong>more than 30 minutes</strong>. If this is true, we assume that the student is <strong>early</strong>. If we do not match the first condition, we need to check if the <strong>difference is less than or equal to zero (</strong><code>&lt;= 0</code><strong>)</strong>, by which we are checking the condition whether the student arrived within the range of <strong>0 to 30 minutes</strong> before the exam. </p>
@@ -590,7 +590,7 @@
 <p>Finally, it remains to print the result on the console. According to the requirements, if the student arrived right in time (<strong>not even a minute difference</strong>), we do not need to print a second result. This is why we do the following <strong>check</strong>:</p>
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-08.png" alt=""></p>
 <p>Printing the result <strong>on the console</strong> can be done at a much earlier stage &#x2013; during the calculations. This, however, is not a very good practice. <strong>Why?</strong></p>
-<p>Let&apos;s look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a <strong>file</strong> or displayed as a <strong>web aplication</strong>. Then, on how many places in the code we need to do changes? Are you sure you won&apos;t miss some places?</p>
+<p>Let&apos;s look at the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a <strong>file</strong> or displayed as a <strong>web application</strong>. Then,how many places in the code do we need to do changes? Are you sure you won&apos;t miss some places?</p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Always consider the code that contains <b> logical calculations</b> as a <b>separate part</b> different from the part that processes the input and output data. It must be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
@@ -619,7 +619,7 @@
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input data will be read from the console and will consist of <strong>two lines</strong>:</p>
 <ul>
-<li>On <strong>the first</strong> line we receive the <strong>budget</strong> - <strong>a floating-point number</strong> int the range of [<strong>10.00 &#x2026; 5000.00</strong>].</li>
+<li>On <strong>the first</strong> line, we receive the <strong>budget</strong> - <strong>a floating-point number</strong> int the range of [<strong>10.00 &#x2026; 5000.00</strong>].</li>
 <li>On <strong>the second</strong> line &#x2013; <strong>one</strong> of the two possible seasons: &quot;<strong>summer</strong>&quot; or &quot;<strong>winter</strong>&quot;.</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
@@ -676,7 +676,7 @@
 <h4 id="calculations"><a name="calculations" class="plugin-anchor" href="#calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations</h4>
 <p>Let&apos;s create and initialize the variables needed for applying the logic and calculations.</p>
 <p><img src="assets/chapter-4-2-images/02.Trip-02.png" alt=""></p>
-<p>Similar to the example in the previous problem, we can initialize variables with some of the output results, in order to spare additional initialization.</p>
+<p>Similar to the example in the previous problem, we can initialize variables with some of the output results, to spare additional initialization.</p>
 <p>When examining once again the requirements, we notice that the decision of where the vacation will take place depends on the <strong>amount of the budget</strong> we receive as input data, i.e., in our logic, we have two cases: </p>
 <ul>
 <li>If the budget is <strong>less than or equals</strong> a particular value.</li>
@@ -788,7 +788,7 @@
 <p>Let&apos;s create and initialize the variables needed for the logic and calculations. In one variable, we will store <strong>the result from the calculations</strong>, and in the other one, we will use it for the <strong>final output</strong> of the program.</p>
 <p><img src="assets/chapter-4-2-images/03.Operations-02.png" alt=""></p>
 <p>Reading the condition carefully, we understand that there are cases where we don&apos;t need to do <strong>any</strong> calculations but simply print the result.</p>
-<p>Therefore, we can first check if the second number is <strong><code>0</code></strong> (zero), whether the operation is <strong>division</strong> or <strong>modular division</strong>, and then initialize the output.</p>
+<p>Therefore, we can first check if the second number is <strong><code>0</code></strong> (zero), whether the operation is a <strong>division</strong> or a <strong>modular division</strong>, and then initialize the output.</p>
 <p><img src="assets/chapter-4-2-images/03.Operations-03.png" alt=""></p>
 <p>Let&apos;s put the result as a value upon initializing the <strong><code>output</code></strong> parameter. This way we, can make only <strong>one check</strong> - whether it is necessary to <strong>recalculate</strong> and <strong>replace</strong> this result. </p>
 <p>Based on the approach that we choose, our next check will be either a simple <strong><code>else</code></strong> or a single <strong><code>if</code></strong>. In the body of this check, using additional checks, according to the submitted operator, we can divide the logic according to the <strong>structure</strong> of the expected <strong>output</strong>.</p>
@@ -796,7 +796,7 @@
 <p><img src="assets/chapter-4-2-images/03.Operations-04.png" alt=""></p>
 <p>We finish the solution by applying conditions for addition, subtraction and multiplication:</p>
 <p><img src="assets/chapter-4-2-images/03.Operations-05.png" alt=""></p>
-<p>For short and clear check, such as the above example for even and odd numbers, you can use a <strong>ternary operator</strong>. Let&apos;s look at the possible check <strong>with</strong> and <strong>without</strong> ternary operator.</p>
+<p>For short and clear checks, such as the above example for even and odd numbers, you can use a <strong>ternary operator</strong>. Let&apos;s look at the possible check <strong>with</strong> and <strong>without</strong> the ternary operator.</p>
 <p><strong>Without using a ternary operator</strong> the code is longer but easy to read:</p>
 <p><img src="assets/chapter-4-2-images/03.Operations-06.png" alt=""></p>
 <p><strong>Upon using a ternary operator</strong> the code is much shorter but may require additional efforts to read and understand the logic:</p>
@@ -877,7 +877,7 @@
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>We will read the input data and do the calculations described in the condition to check if the money will be sufficient.</p>
 <h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
-<p>Let&apos;s read the condition carefully and look at what we expect to get as an <strong>input data</strong>, what we expect to <strong>return, as a result</strong>, and what are the <strong>main steps</strong> when dividing the <strong>logic</strong>.</p>
+<p>Let&apos;s read the condition carefully and look at what we expect to get as <strong>input data</strong>, what we expect to <strong>return, as a result</strong>, and what are the <strong>main steps</strong> when dividing the <strong>logic</strong>.</p>
 <p>To begin with, let&apos;s process and save the input data in <strong>appropriate variables</strong>:</p>
 <p><img src="assets/chapter-4-2-images/04.Match-tickets-01.png" alt=""></p>
 <h4 id="calculations"><a name="calculations" class="plugin-anchor" href="#calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations</h4>
@@ -885,13 +885,13 @@
 <p><img src="assets/chapter-4-2-images/04.Match-tickets-02.png" alt=""></p>
 <p>Let&apos;s review the condition again. We need to do <strong>two</strong> different calculations. </p>
 <p>The first calculations are about what part of the budget we will have to set aside for <strong>transport</strong>. For the logic of these calculations, we will notice that only <strong>the number of people in the group</strong> matters. Therefore, we will make a logical breakdown by the number of fans.</p>
-<p>We will use a conditional construction - a series of <strong><code>if-else</code></strong> blocks.</p>
+<p>We will use conditional construction - a series of <strong><code>if-else</code></strong> blocks.</p>
 <p><img src="assets/chapter-4-2-images/04.Match-tickets-03.png" alt=""></p>
 <p>The second calculations are about what amount we will need to buy <strong>tickets for the group</strong>. According to the condition, it depends only on the type of tickets, we have to buy. </p>
 <p>Let&apos;s use <strong><code>switch-case</code></strong> conditional construction.</p>
 <p><img src="assets/chapter-4-2-images/04.Match-tickets-04.png" alt=""></p>
 <p>Once we have calculated the <strong>transport</strong> and <strong>the tickets</strong> costs, what remains is to calculate the final result and see <strong>whether it will succeed</strong> the group of fans to attend the Euro 2016 or <strong>not</strong> with these parameters given. </p>
-<p>For printing the result, in order to skip one <strong><code>else</code> condition</strong>, we will assume that the group can, by default, attend Euro 2016.</p>
+<p>For printing the result, to skip one <strong><code>else</code> condition</strong>, we will assume that the group can, by default, attend Euro 2016.</p>
 <p><img src="assets/chapter-4-2-images/04.Match-tickets-05.png" alt=""></p>
 <h4 id="printing-the-result"><a name="printing-the-result" class="plugin-anchor" href="#printing-the-result"><i class="fa fa-link" aria-hidden="true"></i></a>Printing The Result</h4>
 <p>Finally, we need to print the calculated result on the console.</p>
@@ -977,9 +977,9 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<p>First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally print the result.</p>
+<p>First, we will read the input data and then perform the calculations according to the provided price list and the discount rules. Finally, print the result.</p>
 <h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
-<p>According to the condition, we expect to read two lines of input data - on the first line <strong>he month in which the stay is planned</strong>, on the second - <strong>the number of nights</strong>.</p>
+<p>According to the condition, we expect to read two lines of input data - on the first line <strong>the month in which the stay is planned</strong>, on the second - <strong>the number of nights</strong>.</p>
 <p>Let&apos;s process and store the input data in appropriate variables:</p>
 <p><img src="assets/chapter-4-2-images/05.Hotel-room-01.png" alt=""></p>
 <h4 id="calculations"><a name="calculations" class="plugin-anchor" href="#calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations</h4>
@@ -987,7 +987,7 @@
 <p><img src="assets/chapter-4-2-images/05.Hotel-room-02.png" alt=""></p>
 <p>Looking again at the condition, we notice that our basic logic depends on what <strong>month</strong> we receive as input data and the number of <strong>nights</strong>.</p>
 <p>In general, there are different approaches and ways to make the checks in question, but let&apos;s focus on the <strong><code>switch-case</code></strong> construction, and in the different <strong><code>case</code> blocks</strong>, we will use conditional statements such as <strong><code>if</code></strong> and <strong><code>if-else</code></strong>.</p>
-<p>Let&apos;s start with the first group of months: <strong>May</strong> and <strong>October</strong>. For these two months <strong>the price for the stay is the same</strong> for both types of accommodation - <strong>studio</strong> and <strong>apartment</strong>. Therefore, it is necessary to make an internal check against the <strong>number of nights</strong> to recalculate the <strong>corresponding price</strong> (if needed).</p>
+<p>Let&apos;s start with the first group of months: <strong>May</strong> and <strong>October</strong>. For these two months, <strong>the price for the stay is the same</strong> for both types of accommodation - <strong>studio</strong> and <strong>apartment</strong>. Therefore, it is necessary to make an internal check against the <strong>number of nights</strong> to recalculate the <strong>corresponding price</strong> (if needed).</p>
 <p><img src="assets/chapter-4-2-images/05.Hotel-room-03.png" alt=""></p>
 <p>For the following months, the <strong>logic</strong> and the <strong>calculations</strong> are <strong>identical</strong>. </p>
 <p><img src="assets/chapter-4-2-images/05.Hotel-room-04.png" alt=""></p>
@@ -1042,7 +1042,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2022-02-24T11:36:46.843Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:37:39.590Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2022-03-01T15:30:14.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-01T15:31:07.306Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

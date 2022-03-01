@@ -445,7 +445,7 @@
                                 <h1 id="chapter-21-simple-calculations"><a name="chapter-21-simple-calculations" class="plugin-anchor" href="#chapter-21-simple-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 2.1. Simple Calculations</h1>
 <p>In this chapter, we are going to get familiar with the following concepts and programming techniques:</p>
 <ul>
-<li>What is <strong>system console</strong>?</li>
+<li>What is a <strong>system console</strong>?</li>
 <li>How to <strong>read numbers</strong> from the system console?</li>
 <li>How to work with <strong>data types and variables</strong>, which are necessary to process numbers and the operations between them?</li>
 <li>How to <strong>print</strong> (a number) on the console?</li>
@@ -460,16 +460,16 @@
   Watch a video lesson on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=tuLo1BPRCqM">https://www.youtube.com/watch?v=tuLo1BPRCqM</a>.
 </div>
 
-<h2 id="the-system-console"><a name="the-system-console" class="plugin-anchor" href="#the-system-console"><i class="fa fa-link" aria-hidden="true"></i></a>The system console</h2>
+<h2 id="the-system-console"><a name="the-system-console" class="plugin-anchor" href="#the-system-console"><i class="fa fa-link" aria-hidden="true"></i></a>The System Console</h2>
 <p>The system console or the computer console, usually called just a <strong>console</strong>, represents the tool by which we give the computer commands in a text format and get the results from their execution again as a text.</p>
 <p>Generally, the system console represents a text terminal which means that it accepts and visualizes just <strong>text</strong> without any graphical elements like buttons, menus, etc. Usually, it looks like a black-colored window, in which we write and perform <strong>console commands</strong> and print the result in the form of a text. In <strong>Windows</strong>, the console looks like this:</p>
 <p><img src="assets/chapter-2-1-images/00.Console-example.png" alt=""></p>
-<p>In most operating systems, generally, <strong>the console</strong> is available as a standalone application on which we write different console commands. In Windows, it is called <strong>Command Prompt</strong>, while in Linux and macOS, it is called <strong>Terminal</strong>. The console runs console applications. They read the text as input from the command line and print the output as a text on the console. In this book, we are going to learn programming mostly through creating <strong>console applications</strong>.</p>
+<p>In most operating systems, generally, <strong>the console</strong> is available as a standalone application on which we write different console commands. In Windows, it is called <strong>Command Prompt</strong>, while in Linux and macOS, it is called <strong>Terminal</strong>. The console runs console applications. They read the text as input from the command line and print the output as text on the console. In this book, we are going to learn programming mostly through creating <strong>console applications</strong>.</p>
 <p>This is how the console looks in <strong>Linux</strong>:</p>
 <p><img src="assets/chapter-2-1-images/00.Linux-terminal-example.png" alt=""></p>
-<h2 id="reading-integers-from-the-console"><a name="reading-integers-from-the-console" class="plugin-anchor" href="#reading-integers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading integers from the console</h2>
-<p>In <strong>Java</strong> we have several options to read an input from <strong>the console</strong>. The one way is via the built-in class <strong><code>Scanner</code></strong>, which we will use now, and the other is via <strong><code>BufferedReader</code></strong>. The second one is a bit faster, but we will start using it after we get familiar with the streams in <strong>Java</strong>.</p>
-<p>To read an <strong>integer</strong> (not floating-point number) from the console we have to import the built-in class <strong><code>Scanner</code></strong> on the first line of our program even before the base class declaration. We put this line at the top:</p>
+<h2 id="reading-integers-from-the-console"><a name="reading-integers-from-the-console" class="plugin-anchor" href="#reading-integers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Integers from The Console</h2>
+<p>In <strong>Java</strong>, we have several options to read input from <strong>the console</strong>. The one way is via the built-in class <strong><code>Scanner</code></strong>, which we will use now, and the other is via <strong><code>BufferedReader</code></strong>. The second one is a bit faster, but we will start using it after we get familiar with the streams in <strong>Java</strong>.</p>
+<p>To read an <strong>integer</strong> (not a floating-point number) from the console we have to import the built-in class <strong><code>Scanner</code></strong> on the first line of our program even before the base class declaration. We put this line at the top:</p>
 <pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
 </code></pre>
 <p>Then in the <code>main(&#x2026;)</code> method of the program, we have to create a new <code>Scanner</code> instance used to attach the system input. After that (via the created <code>scanner</code> reader) we can read integers, floating-point numbers, text, etc. For example, with <code>.nextInt()</code> we read the next integer given as input:</p>
@@ -477,9 +477,9 @@
 <span class="hljs-keyword">int</span> num = scanner.nextInt();
 </code></pre>
 <p>In the example above, in the variable <strong><code>num</code></strong> of integer type <strong><code>int</code></strong>, we will have a value read as input from <strong>the console</strong>.</p>
-<p>Java is <strong>highly typed language</strong> this means that the variables have type determine at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above <code>scanner</code> is from type <code>java.util.Scanner</code> (scanning text reader) and the variable <code>num</code> is from type <code>int</code> (integer number).</p>
-<h3 id="problem-calculating-the-area-of-the-square-with-side-a"><a name="problem-calculating-the-area-of-the-square-with-side-a" class="plugin-anchor" href="#problem-calculating-the-area-of-the-square-with-side-a"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating the area of the square with side <strong>a</strong></h3>
-<p>As an example, let us look at a program. The problem is to calculate the area of a square by a given side&apos;s length read as input from the console. The sample source code of the program is below. The code <strong>reads an integer</strong> as input from the console, <strong>multiply it</strong> by itself (squares it), and as output <strong>prints the result</strong> from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:</p>
+<p>Java is a <strong>highly typed language</strong> this means that the variables have type determined at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above <code>scanner</code> is from type <code>java.util.Scanner</code> (scanning text reader) and the variable <code>num</code> is from type <code>int</code> (integer number).</p>
+<h3 id="problem-1000-days-after-birth"><a name="problem-1000-days-after-birth" class="plugin-anchor" href="#problem-1000-days-after-birth"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 1000 Days After Birth</h3>
+<p>As an example, let us look at a program. The problem is to calculate the area of a square by a given side&apos;s length read as input from the console. The sample source code of the program is below. The code <strong>reads an integer</strong> as input from the console, <strong>multiplies it</strong> by itself (squares it), and as output <strong>prints the result</strong> from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:</p>
 <pre><code class="lang-Java"><span class="hljs-comment">// Put this code in the file: SquareArea.java</span>
 
 <span class="hljs-keyword">import</span> java.util.Scanner;
@@ -502,7 +502,7 @@
 <p>Test the program with an invalid integer (as an input), for example, &quot;<strong>hello</strong>&quot;. You will get an error message during runtime (exception). </p>
 <p><img src="assets/chapter-2-1-images/02.Exception-hello-01.jpg" alt=""></p>
 <p>It is normal because <strong>Java</strong> is a highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a new input (a number in the example above).</p>
-<h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does the Example Work?</h4>
+<h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does The Example Work?</h4>
 <p>The first line <strong><code>Scanner scanner = new Scanner(System.in);</code></strong> creates a new instance from the <strong><code>Scanner</code></strong> class with standard system input.</p>
 <p>The following line <strong><code>System.out.print(&quot;a = &quot;);</code></strong> prints an informative message which invites the user to enter the side <strong>a</strong> of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use <strong><code>System.out.print(&#x2026;);</code></strong> and not <strong><code>System.out.println(&#x2026;);</code></strong> and this way the cursor stays on the same line.</p>
 <p>The following line <strong><code>int a = scanner.nextInt();</code></strong> reads an integer from the console. The result is kept in a variable with a name <strong><code>a</code></strong>.</p>
@@ -511,14 +511,14 @@
 <p>At the last line <strong><code>System.out.println(area);</code></strong> prints the calculated value of the variable <strong><code>area</code></strong>.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#0</a>.</p>
-<h4 id="reading-floating-point-numbers-from-the-console"><a name="reading-floating-point-numbers-from-the-console" class="plugin-anchor" href="#reading-floating-point-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading floating-point numbers from the console</h4>
+<h4 id="reading-floating-point-numbers-from-the-console"><a name="reading-floating-point-numbers-from-the-console" class="plugin-anchor" href="#reading-floating-point-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Floating-Point Numbers From The Console</h4>
 <p>Try to rewrite the above program to accept as input data not only integers (<code>int</code>) but floating-point numbers (<code>double</code>). You can use <code>scanner.nextDouble()</code>. Later in this chapter, we will learn more about floating-point numbers.</p>
-<h2 id="calculations-in-programming"><a name="calculations-in-programming" class="plugin-anchor" href="#calculations-in-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations in programming</h2>
-<p>We know about computers that they are machines that process data. All <strong>data</strong> is stored in the computer memory (Random-access memory(RAM)) in <strong>variables</strong>. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each <strong>variable</strong> in Java has <strong>name</strong>, <strong>type</strong> and <strong>value</strong>. In the example below, you can see how to define a variable, and at the same time to assign value to it:</p>
+<h2 id="calculations-in-programming"><a name="calculations-in-programming" class="plugin-anchor" href="#calculations-in-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations in Programming</h2>
+<p>We know about computers that they are machines that process data. All <strong>data</strong> is stored in the computer memory (Random-access memory(RAM)) in <strong>variables</strong>. A variable is the name of a reserved area allocated in memory that stores data from certain types, for example, numbers or text. Each <strong>variable</strong> in Java has a <strong>name</strong>, <strong>type</strong>, and <strong>value</strong>. In the example below, you can see how to define a variable, and at the same time assign value to it:</p>
 <p><img src="assets/chapter-2-1-images/03.Declaring-variables-01.png" alt=""></p>
 <p>After processing, the data is stored again in variables (somewhere in a reserved area allocated in memory by our program).</p>
-<h2 id="data-types-and-variables"><a name="data-types-and-variables" class="plugin-anchor" href="#data-types-and-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Data types and variables</h2>
-<p>In programming, each variable stores a certain <strong>value</strong> of a particular <strong>type</strong>. For example, data types can be: <strong>number</strong>, <strong>letter</strong>, <strong>text</strong> (string), <strong>date</strong>, <strong>colour</strong>, <strong>image</strong>, <strong>list</strong> and others.
+<h2 id="data-types-and-variables"><a name="data-types-and-variables" class="plugin-anchor" href="#data-types-and-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Data Types and Variables</h2>
+<p>In programming, each variable stores a certain <strong>value</strong> of a particular <strong>type</strong>. For example, data types can be a <strong>number</strong>, <strong>letter</strong>, <strong>text</strong> (string), <strong>date</strong>, <strong>color</strong>, <strong>image</strong>, <strong>list</strong>, and others.
 Here are some examples of data types:</p>
 <ul>
 <li>type <strong>int number</strong>: 1, 2, 3, 4, 5, &#x2026;</li>
@@ -527,13 +527,13 @@ Here are some examples of data types:</p>
 <li>type <strong>text</strong> (string): &quot;Hello&quot;, &quot;Hi&quot;, &quot;Beer&quot;, &#x2026;</li>
 <li>type <strong>day of the week</strong>: Monday, Tuesday, &#x2026;</li>
 </ul>
-<h2 id="reading-floating-point-numbers-from-the-console"><a name="reading-floating-point-numbers-from-the-console" class="plugin-anchor" href="#reading-floating-point-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading floating-point numbers from the console</h2>
-<p>To read <strong>floating-point number</strong> from the console, again it is neccessary to <strong>declare variable</strong>, to point out <strong>the type of the number</strong>, and to use the standard command to read information from the system console:</p>
+<h2 id="reading-floating-point-numbers-from-the-console"><a name="reading-floating-point-numbers-from-the-console" class="plugin-anchor" href="#reading-floating-point-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Floating-Point Numbers from The Console</h2>
+<p>To read a <strong>floating-point number</strong> from the console, again it is necessary to <strong>declare a variable</strong>, to point out <strong>the type of the number</strong>, and to use the standard command to read information from the system console:</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
 Double num = scanner.nextDouble();
 </code></pre>
-<h3 id="problem-converting-inches-into-centimeters"><a name="problem-converting-inches-into-centimeters" class="plugin-anchor" href="#problem-converting-inches-into-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converting inches into centimeters</h3>
+<h3 id="problem-inches-to-centimeters"><a name="problem-inches-to-centimeters" class="plugin-anchor" href="#problem-inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Inches to Centimeters</h3>
 <p>Write a program that reads a floating-point number (representing inches) as an input from the console, converts it to centimeters, and print the result as output:</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
@@ -547,26 +547,26 @@ System.out.println(centimeters);
 <p><img src="assets/chapter-2-1-images/04.Console-output-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#1</a>.</p>
-<h2 id="reading-and-printing-text"><a name="reading-and-printing-text" class="plugin-anchor" href="#reading-and-printing-text"><i class="fa fa-link" aria-hidden="true"></i></a>Reading and printing text</h2>
-<p>To read a text (string) from the console, again <strong>we declare new variable</strong> and use the standard <strong>command for reading a text from the console</strong>:</p>
+<h2 id="reading-and-printing-text"><a name="reading-and-printing-text" class="plugin-anchor" href="#reading-and-printing-text"><i class="fa fa-link" aria-hidden="true"></i></a>Reading and Printing Text</h2>
+<p>To read a text (string) from the console, again <strong>we declare a new variable</strong> and use the standard <strong>command for reading a text from the console</strong>:</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
 String str = scanner.nextLine();
 </code></pre>
-<p>Let&apos;s pay attention to the fact that <strong>reading text does not require converting to another type</strong>. It is this way because by default, the method <strong><code>scanner.nextLine(&#x2026;)</code></strong> returns as <strong>result text</strong>. Additionally, we can parse the text to an integer by <strong><code>Integer.parseInt(&#x2026;)</code></strong> or floating-point number by <strong><code>Double.parseDouble(&#x2026;)</code></strong>. If we do not parse to a number, each number will be just <strong>text</strong> for the program, and <strong>we can not do</strong> arithmetic operations with them.</p>
-<h3 id="problem-greeting-by-name"><a name="problem-greeting-by-name" class="plugin-anchor" href="#problem-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greeting by name</h3>
+<p>Let&apos;s pay attention to the fact that <strong>reading text does not require converting to another type</strong>. It is this way because, by default, the method <strong><code>scanner.nextLine(&#x2026;)</code></strong> returns as <strong>result text</strong>. Additionally, we can parse the text to an integer by <strong><code>Integer.parseInt(&#x2026;)</code></strong> or floating-point number by <strong><code>Double.parseDouble(&#x2026;)</code></strong>. If we do not parse to a number, each number will be just <strong>text</strong> for the program, and <strong>we can not do</strong> arithmetic operations with them.</p>
+<h3 id="problem-greeting-by-name"><a name="problem-greeting-by-name" class="plugin-anchor" href="#problem-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greeting by Name</h3>
 <p>Write a program that reads the user&apos;s name as input from the console and greets him with the text <strong>Hello, <em>name</em></strong>, where <strong><em>name</em></strong> is the name read as input data.</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
 String name = scanner.nextLine();
 System.out.printf(<span class="hljs-string">&quot;Hello, %s!&quot;</span>, name);
 </code></pre>
-<p>In this case the expression <strong><code>%s</code></strong> is replaced with the <strong>first</strong> passed argument, which is the variable <strong><code>name</code></strong>:</p>
+<p>In this case, the expression <strong><code>%s</code></strong> is replaced with the <strong>first</strong> passed argument, which is the variable <strong><code>name</code></strong>:</p>
 <p><img src="assets/chapter-2-1-images/04.Console-output-02.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#2</a>.</p>
-<h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating text and numbers</h2>
-<p>When printing a text, numbers and other data on the console <strong>we can join them</strong> by using templates <strong><code>%s</code></strong>, <strong><code>%d</code></strong>, <strong><code>%f</code></strong>, etc. In programming, these templates are called <strong>placeholders</strong>. Depending on the type of the variable, via different symbols we declare different types of arguments. The main ones are <code>%s</code> for text (string), <code>%d</code> for integers, <code>%f</code> for floating-point numbers.</p>
+<h2 id="problem-concatenate-data"><a name="problem-concatenate-data" class="plugin-anchor" href="#problem-concatenate-data"><i class="fa fa-link" aria-hidden="true"></i></a>Problem Concatenate Data</h2>
+<p>When printing text, numbers, and other data on the console <strong>we can join them</strong> by using templates <strong><code>%s</code></strong>, <strong><code>%d</code></strong>, <strong><code>%f</code></strong>, etc. In programming, these templates are called <strong>placeholders</strong>. Depending on the type of the variable, via different symbols, we declare different types of arguments. The main ones are <code>%s</code> for text (string), <code>%d</code> for integers, <code>%f</code> for floating-point numbers.</p>
 <p>Here is <strong>example</strong> for printing formatted text with (<strong>placeholders</strong>):</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
@@ -582,7 +582,7 @@ System.out.printf(<span class="hljs-string">&quot;You are %s %s, a %d-years old 
 <p>Pay attention to the order of variables in the System.out.printf() method. Each variable is in the <strong>order we want to print it</strong> and corresponds to the <strong>type in the placeholder</strong>. Essentially, the template (<strong>placeholder</strong>) accepts variables of <strong>every type</strong>.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#3</a>.</p>
-<h2 id="arithmetic-operations"><a name="arithmetic-operations" class="plugin-anchor" href="#arithmetic-operations"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic operations</h2>
+<h2 id="arithmetic-operations"><a name="arithmetic-operations" class="plugin-anchor" href="#arithmetic-operations"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic Operations</h2>
 <p>Let&#x2019;s look at the basic arithmetic operations in programming.</p>
 <h3 id="summing-up-numbers-operator-"><a name="summing-up-numbers-operator-" class="plugin-anchor" href="#summing-up-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Summing up numbers (operator <strong><code>+</code></strong>)</h3>
 <p>We can sum up numbers using the operator <strong><code>+</code></strong>:</p>
@@ -590,7 +590,7 @@ System.out.printf(<span class="hljs-string">&quot;You are %s %s, a %d-years old 
 <span class="hljs-keyword">int</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">int</span> sum = a + b; <span class="hljs-comment">// the result is 12</span>
 </code></pre>
-<h3 id="subtracting-numbers-operator--"><a name="subtracting-numbers-operator--" class="plugin-anchor" href="#subtracting-numbers-operator--"><i class="fa fa-link" aria-hidden="true"></i></a>Subtracting numbers (operator <strong><code>-</code></strong>)</h3>
+<h3 id="subtracting-numbers-operator--"><a name="subtracting-numbers-operator--" class="plugin-anchor" href="#subtracting-numbers-operator--"><i class="fa fa-link" aria-hidden="true"></i></a>Subtracting Numbers (Operator <strong><code>-</code></strong>)</h3>
 <p>Subtracting numbers is done by the operator <strong><code>-</code></strong>:</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
@@ -601,19 +601,19 @@ System.out.println(result);
 </code></pre>
 <p>Here is the result of the execution of the program above (with numbers 10 and 3):</p>
 <p><img src="assets/chapter-2-1-images/04.Console-output-04.png" alt=""></p>
-<h3 id="multiplying-numbers-operator-"><a name="multiplying-numbers-operator-" class="plugin-anchor" href="#multiplying-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Multiplying numbers (operator <strong><code>*</code></strong>)</h3>
+<h3 id="multiplying-numbers-operator-"><a name="multiplying-numbers-operator-" class="plugin-anchor" href="#multiplying-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Multiplying Numbers (operator <strong><code>*</code></strong>)</h3>
 <p>For multiplication of numbers we use the operator <strong><code>*</code></strong>:</p>
 <pre><code class="lang-Java"><span class="hljs-keyword">int</span> a = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">int</span> b = <span class="hljs-number">7</span>;
 <span class="hljs-keyword">int</span> product = a * b; <span class="hljs-comment">// 35</span>
 </code></pre>
-<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing numbers (operator <strong><code>/</code></strong>)</h3>
+<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers (Operator <strong><code>/</code></strong>)</h3>
 <p>We divide numbers using the operator <strong><code>/</code></strong>. It works differently with integers and floating-point numbers.</p>
 <ul>
 <li>When we divide two integers, <strong>an integer division</strong> is applied, and the obtained output is without its fractional part. Example: 11 / 3 = 3.</li>
-<li>When we divide two numbers, and at least one of them is a floating-point number <strong>a fractional division</strong> is applied, and the obtained result is a floatting-point number, just like in math. Example 11 / 4.0 = 2.75. When division is not with exact precision, the result is being rounded, for example 11.0 / 3 = 3.66666666666667.</li>
+<li>When we divide two numbers, and at least one of them is a floating-point number <strong>a fractional division</strong> is applied, and the obtained result is a floating-point number, just like in math. Example 11 / 4.0 = 2.75. When division is not with exact precision, the result is being rounded, for example, 11.0 / 3 = 3.66666666666667.</li>
 <li>The integer <strong>division by 0</strong> causes an <strong>exception</strong> during runtime (<code>Java.lang.ArithmeticException</code>).</li>
-<li>Floating-point number <strong>divided by 0</strong> do not cause an exception and the result is <strong>+/- infinity</strong> or the special value <strong><code>NaN</code></strong>. Example 5 / 0.0 = &#x221E;.</li>
+<li>The floating-point number <strong>divided by 0</strong> does not cause an exception and the result is <strong>+/- infinity</strong> or the special value <strong><code>NaN</code></strong>. Example 5 / 0.0 = &#x221E;.</li>
 </ul>
 <p>Here are a few examples with the division operator:</p>
 <pre><code class="lang-Java"><span class="hljs-keyword">int</span> a = <span class="hljs-number">25</span>;
@@ -637,13 +637,13 @@ System.out.println(-a / <span class="hljs-number">0.0</span>);    <span class="h
 System.out.println(<span class="hljs-number">0.0</span> / <span class="hljs-number">0.0</span>);   <span class="hljs-comment">// Result: NaN (Not a Number), i.e. the result </span>
                                  <span class="hljs-comment">// of the operation is not a valid numeric value</span>
 </code></pre>
-<p>When printing the values <strong>&#x221E;</strong> and <strong>-&#x221E;</strong> the console output may be <code>?</code>, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters and special characters. The example above would most probably give the following result:</p>
+<p>When printing the values <strong>&#x221E;</strong> and <strong>-&#x221E;</strong> the console output may be <code>?</code>, because the console in Windows does not work correctly with Unicode and breaks most of the non-standard symbols, letters, and special characters. The example above would most probably give the following result:</p>
 <pre><code>7.5
 ?
 -?
 NaN
 </code></pre><h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating text and numbers</h2>
-<p>The operator <strong><code>+</code></strong> besides for summing up numbers, is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called &quot;concatenation&quot;. Here is how we can concatenate a text with a number with the operator <strong><code>+</code></strong>:</p>
+<p>The operator <strong><code>+</code></strong> besides for summing up numbers is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called &quot;concatenation&quot;. Here is how we can concatenate a text with a number with the operator <strong><code>+</code></strong>:</p>
 <pre><code class="lang-Java">String firstName = <span class="hljs-string">&quot;Maria&quot;</span>;
 String lastName = <span class="hljs-string">&quot;Ivanova&quot;</span>;
 <span class="hljs-keyword">int</span> age = <span class="hljs-number">19</span>;
@@ -656,18 +656,18 @@ System.out.println(str);  <span class="hljs-comment">// Maria Ivanova @ 19</span
 String sum = <span class="hljs-string">&quot;The sum is: &quot;</span> + a + b;
 System.out.println(sum);  <span class="hljs-comment">// The sum is: 1.52.5</span>
 </code></pre>
-<p>Did you notice something strange? Maybe you expected the numbers <strong><code>a</code></strong> and <strong><code>b</code></strong> to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers we have to use <strong>brackets</strong> in order to change the order of execution of the operations:</p>
+<p>Did you notice something strange? Maybe you expected the numbers <strong><code>a</code></strong> and <strong><code>b</code></strong> to be summed? The concatenation works from left to right and the result above is correct. If we want to sum the numbers we have to use <strong>brackets</strong> to change the order of execution of the operations:</p>
 <pre><code class="lang-Java"><span class="hljs-keyword">double</span> a = <span class="hljs-number">1.5</span>;
 <span class="hljs-keyword">double</span> b = <span class="hljs-number">2.5</span>;
 String sum = <span class="hljs-string">&quot;The sum is: &quot;</span> + (a + b);
 System.out.println(sum);  <span class="hljs-comment">// The sum is: 4</span>
 </code></pre>
-<h2 id="numerical-expressions"><a name="numerical-expressions" class="plugin-anchor" href="#numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>Numerical expressions</h2>
+<h2 id="numerical-expressions"><a name="numerical-expressions" class="plugin-anchor" href="#numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>Numerical Expressions</h2>
 <p>In programming, we can calculate <strong>numerical expressions</strong>, for example:</p>
 <pre><code class="lang-Java"><span class="hljs-keyword">int</span> expr = (<span class="hljs-number">3</span> + <span class="hljs-number">5</span>) * (<span class="hljs-number">4</span> &#x2013; <span class="hljs-number">2</span>);
 </code></pre>
 <p>The standard rule for the precedence of arithmetic operations is applied: <strong>multiplying and dividing are always done before adding and subtracting</strong>. In the case of an <strong>expression in brackets, it is calculated first</strong>, but we already know all of that from math.</p>
-<h3 id="problem-calculating-trapezoid-area"><a name="problem-calculating-trapezoid-area" class="plugin-anchor" href="#problem-calculating-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating trapezoid area</h3>
+<h3 id="problem-trapeziod-area"><a name="problem-trapeziod-area" class="plugin-anchor" href="#problem-trapeziod-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Trapeziod Area</h3>
 <p>Write a program that reads as input from the console the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
@@ -684,7 +684,7 @@ System.out.println(<span class="hljs-string">&quot;Trapezoid area = &quot;</span
 Trapezoid area = 17.5
 </code></pre><h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#4</a>.</p>
-<h3 id="problem-circle-area-and-perimeter"><a name="problem-circle-area-and-perimeter" class="plugin-anchor" href="#problem-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle area and perimeter</h3>
+<h3 id="problem-circle-area-and-perimeter"><a name="problem-circle-area-and-perimeter" class="plugin-anchor" href="#problem-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle Area and Perimeter</h3>
 <p>Write a program that reads as input from the console a <strong>radius r</strong> of a circle, and <strong>calculates its area and perimeter</strong>.</p>
 <p>Formulas:</p>
 <ul>
@@ -704,10 +704,10 @@ System.out.println(<span class="hljs-string">&quot;Perimeter = &quot;</span> + <
 <p><img src="assets/chapter-2-1-images/04.Console-output-05.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#5</a>.</p>
-<h3 id="problem-2d-rectangle-area"><a name="problem-2d-rectangle-area" class="plugin-anchor" href="#problem-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 2D rectangle area</h3>
+<h3 id="problem-2d-rectangle-area"><a name="problem-2d-rectangle-area" class="plugin-anchor" href="#problem-2d-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 2D Rectangle Area</h3>
 <p>A rectangle is given with the <strong>coordinates of two of its opposite angles</strong>. Write a program that calculates its <strong>area and perimeter</strong>:</p>
 <p><img alt="rectangleArea" src="assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200"></p>
-<p>In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller <code>x</code> from the bigger <code>x</code>. Identically, if we subtract the smaller <code>y</code> from bigger <code>y</code>, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:</p>
+<p>In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller <code>x</code> from the bigger <code>x</code>. Identically, if we subtract the smaller <code>y</code> from the bigger <code>y</code>, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:</p>
 <pre><code class="lang-Java">Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
 
 <span class="hljs-keyword">double</span> x1 = Double.parseDouble(scanner.nextLine());
@@ -737,11 +737,11 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <li><strong>Calculations with numbers</strong> and using the relevant <strong>arithmetic operators</strong> [<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code>]: <strong><code>int sum = 5 + 3;</code></strong>.</li>
 <li><strong>Printing a text by placeholders</strong> on the console: <strong><code>System.out.printf(&quot;%d + %d = %d&quot;, 3, 5, 3 + 5);</code></strong>.</li>
 </ul>
-<h2 id="exercises-simple-calculations"><a name="exercises-simple-calculations" class="plugin-anchor" href="#exercises-simple-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises: Simple calculations</h2>
-<p>To consolidate our knowledge of simple calculations, let&apos;s solve several exercises.</p>
+<h2 id="problems-simple-calculations"><a name="problems-simple-calculations" class="plugin-anchor" href="#problems-simple-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Problems Simple Calculations</h2>
+<p>To consolidate our knowledge of simple calculations, let&apos;s solve several problems.</p>
 <h3 id="blank-intellij-idea-solution-project"><a name="blank-intellij-idea-solution-project" class="plugin-anchor" href="#blank-intellij-idea-solution-project"><i class="fa fa-link" aria-hidden="true"></i></a>Blank IntelliJ IDEA solution (Project)</h3>
 <p>We start by creating an empty solution <strong>(Project)</strong> in IntelliJ IDEA. The solutions (project) in IntelliJ IDEA combine <strong>a group of problems</strong>. This opportunity is <strong>very convenient</strong> when we want to <strong>work on a few projects</strong> and switch quickly between them or we want to <strong>consolidate logically a few interconnected projects</strong>.</p>
-<p>In the current practical exercise we will use a <strong>Project with a couple of problems (Java classes)</strong> to organize the solutions of the problems from the exercises &#x2013; every problem in a separate Java class and all of them in a common project.</p>
+<p>In the current practical problem, we will use a <strong>Project with a couple of problems (Java classes)</strong> to organize the solutions of the problems from the problems &#x2013; every problem in a separate Java class and all of them in a common project.</p>
 <ul>
 <li>We start IntelliJ IDEA.</li>
 <li>We create a new <strong>Project:</strong> [<strong>File</strong>] &#x2192; [<strong>New</strong>] &#x2192; [<strong>Project</strong>].</li>
@@ -750,27 +750,27 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <p>Select from the dialog window [<strong>Java</strong>], in the field Project SDK we specify which version of Java we will use and finally we click [<strong>Next</strong>] &#x2192; [<strong>Next</strong>]:</p>
 <p><img src="assets/chapter-2-1-images/06.New-project-02.png" alt=""></p>
 <p><img src="assets/chapter-2-1-images/06.New-project-03.png" alt=""></p>
-<p>Give an appropriate name for the project, for example &quot;SimpleCalculations&quot; and also where to be stored our project, and after that we click [<strong>Finish</strong>]:</p>
+<p>Give an appropriate name for the project, for example &quot;SimpleCalculations&quot; and also where to be stored our project, and after that, we click [<strong>Finish</strong>]:</p>
 <p><img src="assets/chapter-2-1-images/06.New-project-04.png" alt=""></p>
-<p>Now we have <strong>empty IntelliJ IDEA Project</strong> (without any Java classes in it which have to be in the <code>src</code> folder):</p>
+<p>Now we have an <strong>empty IntelliJ IDEA Project</strong> (without any Java classes in it which have to be in the <code>src</code> folder):</p>
 <p><img src="assets/chapter-2-1-images/06.New-project-05.png" alt=""></p>
-<p>The purpose of this project is to add in it <strong><code>.java</code> class per problem</strong> from the exercises.</p>
-<h3 id="exercise-calculating-the-area-of-the-square"><a name="exercise-calculating-the-area-of-the-square" class="plugin-anchor" href="#exercise-calculating-the-area-of-the-square"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Calculating the area of the square</h3>
-<p>The first problem from this topic is the following: write a console program that read as <strong>input data an integer <code>a</code> and calculates the area</strong> of a square with side <strong><code>a</code></strong>. The problem is trivial and easy: read as <strong>input data a number</strong> from the console, then <strong>multiply it by itself</strong> and <strong>print the obtained result</strong> as an output on the console.</p>
+<p>The purpose of this project is to add in it <strong><code>.java</code> class per problem</strong> from the problems.</p>
+<h3 id="problem-calculating-the-area-of-the-square"><a name="problem-calculating-the-area-of-the-square" class="plugin-anchor" href="#problem-calculating-the-area-of-the-square"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating The Area of The square</h3>
+<p>The first problem from this topic is the following: write a console program that reads as <strong>input data an integer <code>a</code> and calculates the area</strong> of a square with side <strong><code>a</code></strong>. The problem is trivial and easy: read as <strong>input data a number</strong> from the console, then <strong>multiply it by itself</strong> and <strong>print the obtained result</strong> as an output on the console.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We create a <strong>new Java class</strong> in the existing IntelliJ IDEA project. On the <strong>src</strong> folder, right-click with the mouse. Choose [<strong>New</strong>] &#x2192; [<strong>Java Class</strong>]:</p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-01.png" alt=""></p>
 <p>A <strong>dialogue window</strong> will open for choosing a name to the Java class, for example, &#x201C;SquareArea&#x201D;:</p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-02.png" alt=""></p>
-<p>We already have a Project with Java class in it. What remains is to write the <strong>code for solving this problem</strong>. For this purpose, we write in our Java class a <code>Main</code> method(as in the picture below). In the body of the <code>Main</code> method <strong><code>Main(string[] args)</code></strong> we write the following code between the opening and closing curly brackets:</p>
+<p>We already have a Project with Java class in it. What remains is to write the <strong>code for solving this problem</strong>. For this purpose, we write in our Java class the <code>Main</code> method(as in the picture below). In the body of the <code>Main</code> method <strong><code>Main(string[] args)</code></strong> we write the following code between the opening and closing curly brackets:</p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-03.png" alt=""></p>
-<p>As we can see in the code above, we read as input data an integer and assign it to a variable <strong><code>a</code></strong> (line <strong><code>int a = Integer.parseInt(scanner.nextLine())</code></strong>), afterwards we calculate the area (line <strong><code>int area = a * a</code></strong>) and finally prints the value of the variable <strong><code>area</code></strong> on the console. <strong>We start</strong> the program with [<strong>Ctrl+Shft+F10</strong>] and we <strong>test</strong> it with different input values:</p>
+<p>As we can see in the code above, we read as input data an integer and assign it to a variable <strong><code>a</code></strong> (line <strong><code>int a = Integer.parseInt(scanner.nextLine())</code></strong>), afterward we calculate the area (line <strong><code>int area = a * a</code></strong>) and finally prints the value of the variable <strong><code>area</code></strong> on the console. <strong>We start</strong> the program with [<strong>Ctrl+Shft+F10</strong>] and we <strong>test</strong> it with different input values:</p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-04.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#0</a>. You have to get 100 points (completely correct solution):</p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-05.png" alt=""></p>
 <p><img src="assets/chapter-2-1-images/07.Square-area-06.png" alt=""></p>
-<h3 id="exercise-inches-to-centimeters"><a name="exercise-inches-to-centimeters" class="plugin-anchor" href="#exercise-inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Inches to centimeters</h3>
+<h3 id="problem-inches-to-centimeters"><a name="problem-inches-to-centimeters" class="plugin-anchor" href="#problem-inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Inches to Centimeters</h3>
 <p>Write a program that <strong>reads a number from the console</strong> (not necessarily an integer) and converts the number from <strong>inches to centimeters.</strong> For this purpose <strong>multiply the inches by 2.54</strong> (because one inch = 2.54 centimeters).</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>First, we create a <strong>new Java class</strong> in the project &#x201C;SimpleCalculations&#x201D;. We click on the folder <strong>src</strong> and choose [<strong>New</strong>] &#x2192; [<strong>Java Class</strong>]:</p>
@@ -789,11 +789,11 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <p><img src="assets/chapter-2-1-images/08.Inches-to-centimeters-07.png" alt=""></p>
 <p>the last compiled program will be executed (<strong>InchesToCentimeters</strong>). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:</p>
 <p><img src="assets/chapter-2-1-images/08.Inches-to-centimeters-08.png" alt=""></p>
-<p><strong>Switching between projects</strong> is an easy problem, isn&apos;t it? Choose the file with the source code of the program, double click on it and when it starts, the program from the current file runs.</p>
+<p><strong>Switching between projects</strong> is an easy problem, isn&apos;t it? Choose the file with the source code of the program, double click on it, and when it starts, the program from the current file runs.</p>
 <p>Let&apos;s test with floating-point numbers, for example, with <strong>2.5</strong>:</p>
 <p><img src="assets/chapter-2-1-images/08.Inches-to-centimeters-09.png" alt=""></p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-<td>Depending on the regional settings of the operating system, it is possible to use <b> decimal point </b> (US settings) instead of <b> decimal comma </b> (BG settings).</td>
+<td>Depending on the regional settings of the operating system, it is possible to use <b> a decimal point </b> (US settings) instead of a <b> decimal comma </b> (BG settings).</td>
 </tr></table>
 
 <p>If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:</p>
@@ -805,7 +805,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#1</a>.</p>
 <p>The solution should be accepted as a completely correct one:</p>
 <p><img src="assets/chapter-2-1-images/08.Inches-to-centimeters-13.png" alt=""></p>
-<h3 id="exercise-greeting-by-name"><a name="exercise-greeting-by-name" class="plugin-anchor" href="#exercise-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Greeting by name</h3>
+<h3 id="problem-greeting-by-name"><a name="problem-greeting-by-name" class="plugin-anchor" href="#problem-greeting-by-name"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greeting by name</h3>
 <p>Write a program that <strong>reads from the console a person&apos;s name</strong> and prints <strong><code>Hello, &lt;name&gt;!</code></strong>, where <strong><code>&lt;name&gt;</code></strong> is the name entered earlier.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>First, we create a <strong>new Java class</strong> with the name &#x201C;Greeting&#x201D; in the project &#x201C;SimpleCalculations&#x201D;:</p>
@@ -816,19 +816,19 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <p><img src="assets/chapter-2-1-images/09.Greeting-by-name-03.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here:  <a href="hhttps://judge.softuni.org/Contests/Practice/Index/649#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#2</a>.</p>
-<h3 id="exercise-concatenating-text-and-numbers"><a name="exercise-concatenating-text-and-numbers" class="plugin-anchor" href="#exercise-concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Concatenating text and numbers</h3>
+<h3 id="problem-concatenating-text-and-numbers"><a name="problem-concatenating-text-and-numbers" class="plugin-anchor" href="#problem-concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Concatenating Text and Numbers</h3>
 <p>Write a Java program, that reads from the console a first name, last name, age, and city, and prints a message of the following kind: <strong><code>You are &lt;firstName&gt; &lt;lastName&gt;, a &lt;age&gt;-years old person from &lt;town&gt;.</code></strong>.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We add to the existing IntelliJ IDEA Project one more Java class with the name &quot;<code>ConcatenateData</code>&quot;.    <strong>We write the code</strong>, which reads the input from the console:</p>
 <p><img src="assets/chapter-2-1-images/10.Concatenate-data-01.png" alt=""></p>
 <p>You should write <strong>the code</strong> that prints the message described in the requirements.</p>
 <p><img src="assets/chapter-2-1-images/10.Concatenate-data-02.png" alt=""></p>
-<p>In the picture above, the code is consciously blurred on purpose, in order for you to think of a way to finish it yourself.</p>
+<p>In the picture above, the code is consciously blurred on purpose, for you to think of a way to finish it yourself.</p>
 <p>Next, test the solution locally using [<strong>Ctrl+Shift+F10</strong>] and by entering sample input data.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#3</a>.</p>
-<h3 id="exercise-trapezoid-area"><a name="exercise-trapezoid-area" class="plugin-anchor" href="#exercise-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Trapezoid area</h3>
-<p>Write a program that reads three numbers from the console <strong>b1</strong>, <strong>b2</strong> and <strong>h</strong> and calculates <strong>the area of a trapezoid</strong> with bases <strong>b1</strong> and <strong>b2</strong> and height <strong>h</strong>. The formula for the area of trapezoid is <strong>(b1 + b2) * h / 2</strong>.</p>
+<h3 id="problem-trapezoid-area"><a name="problem-trapezoid-area" class="plugin-anchor" href="#problem-trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Trapezoid Area</h3>
+<p>Write a program that reads three numbers from the console <strong>b1</strong>, <strong>b2</strong>, and <strong>h</strong> and then calculates <strong>the area of a trapezoid</strong> with bases <strong>b1</strong> and <strong>b2</strong> and height <strong>h</strong>. The formula for the area of trapezoid is <strong>(b1 + b2) * h / 2</strong>.</p>
 <p>The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area <strong>(8 + 13) * 7 / 2 = 73.5</strong>.</p>
 <p><img src="assets/chapter-2-1-images/11.Trapezoid-area-01.png" alt=""></p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
@@ -838,7 +838,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 <p><strong>Test</strong> your solution locally using [<strong>Ctrl+Shift+F10</strong>] and by entering sample input data.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#4</a>.</p>
-<h3 id="exercise-circle-area-and-perimeter"><a name="exercise-circle-area-and-perimeter" class="plugin-anchor" href="#exercise-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Circle area and perimeter</h3>
+<h3 id="problem-circle-area-and-perimeter"><a name="problem-circle-area-and-perimeter" class="plugin-anchor" href="#problem-circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Circle Area and Perimeter</h3>
 <p>Write a program that reads from the console <strong>a number r</strong> r then calculates and prints <strong>the area and perimeter of the circle</strong>/<strong>round</strong> with <strong>radius r</strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -867,7 +867,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </ul>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#5</a>.</p>
-<h3 id="exercise-rectangle-area"><a name="exercise-rectangle-area" class="plugin-anchor" href="#exercise-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Rectangle area</h3>
+<h3 id="problem-rectangle-area"><a name="problem-rectangle-area" class="plugin-anchor" href="#problem-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle Area</h3>
 <p><strong>A rectangle</strong> is defined by the <strong>coordinates</strong> at two of its opposite angles (x1, y1) &#x2013; (x2, y2). Calculate its <strong>area and perimeter</strong>. <strong>The input</strong> is read from the console. The numbers <strong>x1, y1, x2, and y2</strong> are given one per line. <strong>The output</strong> is printed on the console and it has to contain two lines, each with one number &#x2013; the area and the perimeter.</p>
 <p><img src="assets/chapter-2-1-images/12.Rectangle-area-01.png" alt=""></p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
@@ -895,7 +895,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#6</a>.</p>
-<h3 id="exercise-triangle-area"><a name="exercise-triangle-area" class="plugin-anchor" href="#exercise-triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Triangle area</h3>
+<h3 id="problem-triangle-area"><a name="problem-triangle-area" class="plugin-anchor" href="#problem-triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle Area</h3>
 <p>Write a program that reads from the console <strong>a side and height of a triangle</strong> and calculates its area. Use <strong>the formula</strong> for triangle area: <strong>area = a * h / 2</strong>. Round the result to <strong>2 digits after the decimal point using <code>Math.round(area*100.00)/100.00)</code></strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -926,8 +926,8 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#7</a>.</p>
-<h3 id="exercise-converter-&#x2013;-from-&#xB0;c-celsius-to-&#xB0;f-fahrenheit"><a name="exercise-converter-&#x2013;-from-&#xB0;c-celsius-to-&#xB0;f-fahrenheit" class="plugin-anchor" href="#exercise-converter-&#x2013;-from-&#xB0;c-celsius-to-&#xB0;f-fahrenheit"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Converter &#x2013; from &#xB0;C (Celsius) to &#xB0;F (Fahrenheit)</h3>
-<p>Write a program that reads <strong>degrees on Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on Fahrenheit scale</strong> (&#xB0;F). Look on the Internet for a proper <a href="https://bfy.tw/3rGh" title="Search in Google" target="_blank">formula</a>, to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>. Here are a few sample data:</p>
+<h3 id="problem-celsius-to-fahrenheit"><a name="problem-celsius-to-fahrenheit" class="plugin-anchor" href="#problem-celsius-to-fahrenheit"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Celsius to Fahrenheit</h3>
+<p>Write a program that reads <strong>degrees on the Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on the Fahrenheit scale</strong> (&#xB0;F). Look on the Internet for a proper <a href="https://bfy.tw/3rGh" title="Search in Google" target="_blank">formula</a>, to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>. Here are a few sample data:</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -957,7 +957,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#8</a>.</p>
-<h3 id="exercise-converter-&#x2013;-from--radians-to-degrees"><a name="exercise-converter-&#x2013;-from--radians-to-degrees" class="plugin-anchor" href="#exercise-converter-&#x2013;-from--radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Converter &#x2013; from  radians to degrees</h3>
+<h3 id="problem-converter-&#x2013;-from--radians-to-degrees"><a name="problem-converter-&#x2013;-from--radians-to-degrees" class="plugin-anchor" href="#problem-converter-&#x2013;-from--radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converter &#x2013; From  Radians to Degrees</h3>
 <p>Write a program, that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it to <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>)</strong> (<strong><code>deg</code></strong>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in Java programs is available through <strong><code>Math.PI</code></strong>. Round the result to the nearest integer using the method <strong><code>Math.round(&#x2026;)</code></strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -988,8 +988,8 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#9</a>.</p>
-<h3 id="exercise-converter-&#x2013;-usd-to-bgn"><a name="exercise-converter-&#x2013;-usd-to-bgn" class="plugin-anchor" href="#exercise-converter-&#x2013;-usd-to-bgn"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Converter &#x2013; USD to BGN</h3>
-<p>Write a program for <strong>conversion of US dollars</strong> (USD) <strong>into Bulgarian levs</strong> (BGN). <strong>Round</strong> the result <strong>2 digits</strong> after the decimal point. Use a fixed rate between a dollar and levs: <strong>1 USD = 1.79549 BGN</strong>.</p>
+<h3 id="problem-usd-to-bgn"><a name="problem-usd-to-bgn" class="plugin-anchor" href="#problem-usd-to-bgn"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: USD to BGN</h3>
+<p>Write a program for the <strong>conversion of US dollars</strong> (USD) <strong>into Bulgarian levs</strong> (BGN). <strong>Round</strong> the result <strong>2 digits</strong> after the decimal point. Use a fixed rate between a dollar and levs: <strong>1 USD = 1.79549 BGN</strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1015,8 +1015,8 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#10</a>.</p>
-<h3 id="exercise-----currency-converter"><a name="exercise-----currency-converter" class="plugin-anchor" href="#exercise-----currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise:    * Currency converter</h3>
-<p>Write a program for <strong>conversion of money from one currency into another</strong>. It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
+<h3 id="problem-----currency-converter"><a name="problem-----currency-converter" class="plugin-anchor" href="#problem-----currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem    * Currency Converter</h3>
+<p>Write a program for the <strong>conversion of money from one currency into another</strong>. It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
 <table>
 <thead>
 <tr>
@@ -1035,7 +1035,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </tr>
 </tbody>
 </table>
-<p><strong>The input</strong> consists of three lines - the first is <strong>a sum for conversion</strong>, the second is the <strong>input currency</strong>, and the third is <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value according to the above exchange rates, rounded <strong>2 digits</strong> after the decimal point. </p>
+<p><strong>The input</strong> consists of three lines - the first is <strong>a sum for conversion</strong>, the second is the <strong>input currency</strong>, and the third is the <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value according to the above exchange rates, rounded <strong>2 digits</strong> after the decimal point. </p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1065,7 +1065,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/649#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/649#11</a>.</p>
-<h3 id="exercise--date-calculations-&#x2013;-1000-days-on-the-earth"><a name="exercise--date-calculations-&#x2013;-1000-days-on-the-earth" class="plugin-anchor" href="#exercise--date-calculations-&#x2013;-1000-days-on-the-earth"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: ** Date calculations &#x2013; 1000 days on the Earth</h3>
+<h3 id="problem-currency-converter"><a name="problem-currency-converter" class="plugin-anchor" href="#problem-currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Currency Converter</h3>
 <p>Write a program that reads from the console a <strong>birth date</strong> in format <strong><code>dd-MM-yyyy</code></strong> then calculates the date on which <strong>1000 days</strong> are turned since this birth date, and prints the output in the same format.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -1100,7 +1100,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <ul>
-<li>Look for information about the types <strong><code>Date</code></strong>, <strong><code>Calendar</code></strong> and <strong><code>SimpleDateFormat</code></strong> in Java and in particular look at the methods <strong><code>Calendar.setTime(date)</code></strong>, <strong><code>Calendar.add(countDays)</code></strong> and <strong><code>SimpleDateFormat.format(date)</code></strong>. With their help, you can solve the problem without the need to calculate days, months, and leap years.</li>
+<li>Look for information about the types <strong><code>Date</code></strong>, <strong><code>Calendar</code></strong>, and <strong><code>SimpleDateFormat</code></strong> in Java, and in particular look at the methods <strong><code>Calendar.setTime(date)</code></strong>, <strong><code>Calendar.add(countDays)</code></strong> and <strong><code>SimpleDateFormat.format(date)</code></strong>. With their help, you can solve the problem without the need to calculate days, months, and leap years.</li>
 <li><strong>Don&apos;t print</strong> anything additional on the console except for the wanted date!</li>
 </ul>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
@@ -1148,7 +1148,7 @@ System.out.println(decimalFormat.format(<span class="hljs-number">2</span> * (wi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2022-02-24T11:36:46.843Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:37:39.590Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2022-03-01T15:30:14.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-01T15:31:07.306Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

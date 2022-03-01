@@ -459,7 +459,7 @@
 </ul>
 <h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>After recalling how to write conditional statements, let&apos;s solve a few problems to get practical experience with the <strong><code>if-else</code></strong> statement.</p>
-<h3 id="problem-transportation-price"><a name="problem-transportation-price" class="plugin-anchor" href="#problem-transportation-price"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Transportation Price</h3>
+<h3 id="problem-transport-price"><a name="problem-transport-price" class="plugin-anchor" href="#problem-transport-price"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Transport Price</h3>
 <p>A student must travel <strong>n kilometers</strong>. He has a choice between <strong>three modes of transport</strong>:</p>
 <ul>
 <li><strong>Taxi</strong>. Starting fee: <strong>0.70</strong> BGN. Daily rate: <strong>0.79</strong> BGN/km. Nightly rate: <strong>0.90</strong> BGN/km.</li>
@@ -471,7 +471,7 @@
 <p><strong>Two lines</strong> are read from the console:</p>
 <ul>
 <li>The first line contains the number <strong>n</strong> - number of kilometers - integer in the interval [<strong>1&#x2026; 5000</strong>].</li>
-<li>The second line contains the word &quot;<strong>day</strong>&quot; or &quot;<strong>night</strong>&quot; - if trip is during the day or at night.</li>
+<li>The second line contains the word &quot;<strong>day</strong>&quot; or &quot;<strong>night</strong>&quot; - if the trip is during the day or at night.</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>the lowest price</strong> for the specified number of kilometers.</p>
@@ -529,14 +529,14 @@
 <p>Once that&apos;s done, we can now proceed to the computation of the <strong>full transportation price</strong>. Another condition for the price defined in the problem is the <strong>traveling distance</strong> with a chosen vehicle. Naturally to do that we pick an <strong><code>if-else</code></strong> condition that we used to determine the <strong>price</strong> for the transport depending on the entered kilometers.</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-05.png" alt=""></p>
 <p>First, we check if the kilometers are <strong>below 20</strong> since it&apos;s specified in the problem that the student could only use a <strong>taxi</strong> for destinations that are <strong>below 20</strong> kilometers away. If the expression in the first conditional statement is evaluated to be <strong>true</strong> then the variable that stores the transportation price (<strong><code>price</code></strong>) will be <strong>assigned</strong> the corresponding value. This value is equal to the <strong>initial rate</strong>, which we <strong>sum up</strong> with its <strong>rate</strong> <strong>multiplied</strong> by <strong>the distance</strong> that the student has to travel.</p>
-<p>If the expression in the first conditional statement is evaluated to <strong>false</strong> then the next step of the program is to check if the distance is <strong>below 100</strong>. The reason we&apos;re doing that is because it&apos;s possible to use a <strong>bus</strong> as a vehicle in this distance range. <strong>The price</strong> per kilometer for the bus <strong>is lower</strong> than the taxi price. Therefore, the result of the expression evaluation is <strong>true</strong>, then here&apos;s the place to assign the <strong>value</strong> of the transportation price variable (<strong><code>price</code></strong>) which equals the result of the <strong>multiplication</strong> of the <strong>distance</strong> and the <strong>bus rate</strong>.</p>
+<p>If the expression in the first conditional statement is evaluated to <strong>false</strong> then the next step of the program is to check if the distance is <strong>below 100</strong>. The reason we&apos;re doing that is to be possible to use a <strong>bus</strong> as a vehicle in this distance range. <strong>The price</strong> per kilometer for the bus <strong>is lower</strong> than the taxi price. Therefore, the result of the expression evaluation is <strong>true</strong>, then here&apos;s the place to assign the <strong>value</strong> of the transportation price variable (<strong><code>price</code></strong>) which equals the result of the <strong>multiplication</strong> of the <strong>distance</strong> and the <strong>bus rate</strong>.</p>
 <p>In the case of the second check <strong>not returning <code>true</code></strong> as a result, the program ends up in the <strong><code>else</code></strong> block and assigns a <strong>value</strong> equal to the <strong>result</strong> of the <strong>multiplication</strong> of the <strong>distance</strong> and the <strong>rate of the train</strong>. We do that because the train is the <strong>cheapest</strong> vehicle for the given distance.</p>
 <h4 id="printing-the-result"><a name="printing-the-result" class="plugin-anchor" href="#printing-the-result"><i class="fa fa-link" aria-hidden="true"></i></a>Printing The Result</h4>
 <p>We <strong>have successfully computed the price of the cheapest transportation</strong> so we&apos;re almost at the end of the problem. The only thing left is to print out the result that we have on the console. In our problem, there&apos;s no requirement for the resulting output and that&apos;s why we choose to keep it simple and just print the <strong>variable</strong> (<strong><code>price</code></strong>).</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-06.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#0</a>.</p>
-<h3 id="problem-pipes-in-a-pool"><a name="problem-pipes-in-a-pool" class="plugin-anchor" href="#problem-pipes-in-a-pool"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Pipes in a Pool</h3>
+<h3 id="problem-pipes-in-pool"><a name="problem-pipes-in-pool" class="plugin-anchor" href="#problem-pipes-in-pool"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Pipes In Pool</h3>
 <p>A Pool with <strong>volume V</strong> has <strong>two filling pipes</strong>. <strong>Each pipe has a specified hourly flow rate</strong> (liters of water that pass through one pipe per hour). The worker opens the pipes at the same time and leaves the sight for <strong>N hours</strong>. Your problem is to write a program that prints out the state of the pool, <strong>at the moment the worker comes back</strong>.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Four lines</strong> are read from the console:</p>
@@ -549,7 +549,7 @@
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>one of two possible states</strong>:</p>
 <ul>
-<li>How full is the pool and each pipe&apos;s percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).<ul>
+<li>How full are the pool and each pipe&apos;s percentage contribution? Use the whole number before the decimal point of a percentage (i.e. round down).<ul>
 <li>&quot;The pool is <strong>[x]</strong>% full. Pipe 1: <strong>[y]</strong>%. Pipe 2: <strong>[z]</strong>%.&quot;</li>
 </ul>
 </li>
@@ -572,7 +572,7 @@
 <tbody>
 <tr>
 <td>1000<br>100<br>120<br>3</td>
-<td>The pool is 66% full. Pipe 1: 45%. Pipe2: 54%.</td>
+<td>The pool is 66% full. Pipe 1: 45%. Pipe 2: 54%.</td>
 <td>100<br>100<br>100<br>2.5</td>
 <td>For 2.5 hours the pool overflows with 400 liters.</td>
 </tr>
@@ -593,13 +593,13 @@
 <p>However, if the check returns <strong><code>false</code></strong> it means that the amount of water is <strong>greater</strong> than <strong>the volume</strong> of the pool, respectively it has <strong>overflowed</strong>. Again, the output must be <strong>one line</strong> but this time it should contain only <strong>two values</strong> - <strong>away time in hours</strong> of the worker and <strong>the amount of overflowed water</strong>.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#1</a>.</p>
-<h3 id="problem-the-sleepy-cat-tom"><a name="problem-the-sleepy-cat-tom" class="plugin-anchor" href="#problem-the-sleepy-cat-tom"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: The Sleepy Cat Tom</h3>
-<p><strong>The cat Tom</strong> enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom&apos;s <strong>norm for playtime</strong> is <strong>30 000 minutes per year*</strong>. Tom&apos;s playtime <strong>is dependant on his owner&apos;s non-working days</strong>:</p>
+<h3 id="problem-sleepy-cat-tom"><a name="problem-sleepy-cat-tom" class="plugin-anchor" href="#problem-sleepy-cat-tom"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sleepy Cat Tom</h3>
+<p><strong>The cat Tom</strong> enjoys sleeping all day, unfortunately whenever his owner has some free time he comes to play with Tom. To have a good sleeping routine Tom&apos;s <strong>norm for playtime</strong> is <strong>30 000 minutes per year*</strong>. Tom&apos;s playtime <strong>is dependent on his owner&apos;s non-working days</strong>:</p>
 <ul>
 <li>When Tom&apos;s owner is at <strong>work</strong>, Tom&apos;s playtime is <strong>63 minutes a day</strong>.</li>
 <li>When Tom&apos;s owner has a <strong>day off</strong>, Tom&apos;s playtime is <strong>127 minutes a day</strong>.</li>
 </ul>
-<p>Your problem is to write a program that takes as input Tom&apos;s owner <strong>number of days off</strong> and prints out whether <strong>Tom has a satisfactory sleeping routine</strong> and how much is <strong>the difference from Tom&apos;s norm for playtime</strong> for the current year, assuming that <strong>the year has 365 days</strong>.</p>
+<p>Your problem is to write a program that takes as input Tom&apos;s owner&apos;s <strong>number of days off</strong> and prints out whether <strong>Tom has a satisfactory sleeping routine</strong> and how much is <strong>the difference from Tom&apos;s norm for playtime</strong> for the current year, assuming that <strong>the year has 365 days</strong>.</p>
 <p><strong>Example</strong>: 20 days off &#x2192; 345 working days (365 - 20 = 345). The actual playing time is 24 275 minutes (345 \ <em> 63 + 20 \ </em> 127). The difference from the norm is 5 725 minutes (30 000 - 24 275 = 5 725) or 95 hours and 25 minutes.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input data is read from the console and consists of an integer - <strong>Tom&apos;s owner number of days off</strong>, number in the range [<strong>0 &#x2026; 365</strong>].</p>
@@ -634,7 +634,7 @@
 <td>20</td>
 <td>Tom sleeps well<br>95 hours and 25 minutes less for play</td>
 <td>113</td>
-<td>Tom will run away<br>3 hours and 47 minutes for play</td>
+<td>Tom will run away<br>3 hours and 47 minutes more for play</td>
 </tr>
 </tbody>
 </table>
@@ -643,7 +643,7 @@
 <h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>The <strong>input data</strong> will be read in a <strong>single line</strong> that will contain a <strong>whole number</strong> in the range [<strong>0 &#x2026; 365</strong>]. That&apos;s why the variable that&apos;ll store the value is going to be of type <strong><code>int</code></strong>.</p>
 <p><img src="assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png" alt=""></p>
-<p>Our <strong>first</strong> step is to calculate how many <strong>minutes in total</strong> has Tom and his master played together. The problem states that not only has the sleepy cat played in <strong>days off</strong> but also on <strong>working days</strong>. <strong>The number</strong> that we read from the console is the number of <strong>non-working days</strong>.</p>
+<p>Our <strong>first</strong> step is to calculate how many <strong>minutes in total</strong> has Tom and his master played together. The problem states that not only has the sleepy cat played on <strong>days off</strong> but also on <strong>working days</strong>. <strong>The number</strong> that we read from the console is the number of <strong>non-working days</strong>.</p>
 <p>Our next step is to use that number to <strong>calculate</strong> how many are the <strong>working days</strong> of Tom&apos;s owner. We need this number because without it we can not get the <strong>total number of playtime minutes</strong>. The total number of days in a year is <strong>365</strong>, the number of days off is <strong>X</strong>, which means that the number of working days is <strong>365 - X</strong>. <strong>We will store the difference</strong> in a new variable (<strong><code>workingDays</code></strong>), which we will use <strong>only</strong> for this <strong>value</strong>.</p>
 <p><img src="assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png" alt=""></p>
 <p>Now that we have <strong>the number of days to play</strong>, we can now <strong>calculate Tom&apos;s playing time</strong> in minutes. Its <strong>value is equal to</strong> the <strong>result of the multiplication of the working days by 63</strong> minutes (in the problem it&apos;s specified that on working days the playing time is 63 minutes per day) <strong>added to the result of the multiplication of days off and 127</strong> minutes (in the problem it&apos;s specified that on days off the playing time is 127 minutes per day).</p>
@@ -659,7 +659,7 @@
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#2</a>.</p>
 <h3 id="problem-harvest"><a name="problem-harvest" class="plugin-anchor" href="#problem-harvest"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Harvest</h3>
-<p>There&apos;s a vineyard that has an <strong>area of X sq. M.</strong> . <strong>40% of the harvest</strong> is allocated for wine production. The yield from <strong>1sq.m. vineyard</strong> is <strong>Y kilograms of grapes</strong>. To produce <strong>1 liter of wine</strong> is used <strong>2.5kg grapes</strong>. The desired amount of wine <strong>for sale is Z liters</strong>.</p>
+<p>There&apos;s a vineyard that has an <strong>area of X sq. M.</strong>. <strong>40% of the harvest</strong> is allocated for wine production. The yield from <strong>1sq.m. vineyard</strong> is <strong>Y kilograms of grapes</strong>. To produce <strong>1 liter of wine</strong> is used <strong>2.5kg grapes</strong>. The desired amount of wine <strong>for sale is Z liters</strong>.</p>
 <p>Your problem is to write a program that <strong>calculates the possible amount of produced wine</strong> and validates if it&apos;s <strong>enough</strong>. <strong>If the production is satisfying the expectations, then the remainder shall be distributed equally among the vineyard workers.</strong></p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Four lines</strong> are read from the console:</p>
@@ -706,7 +706,7 @@
 <td>650<br>2<br>175<br>3</td>
 <td>Good harvest this year! Total wine: 208 liters.<br>33 liters left &#x2192; 11 liters per person.</td>
 <td>1020<br>1.5<br>425<br>4</td>
-<td>It will be a tough winter! More 180 liters wine needed.</td>
+<td>It will be a tough winter! More 180 liters of wine are needed.</td>
 </tr>
 </tbody>
 </table>
@@ -715,8 +715,8 @@
 <h4 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h4>
 <p>First, we need to <strong>check</strong> what <strong>input data</strong> is expected and choose an adequate type for each of the <strong>variables</strong> that will store this data.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-01.png" alt=""></p>
-<p>To solve the problem we need to <strong>compute</strong> the <strong>amount of wine in liters</strong> that the harvest will produce using the <strong>input data</strong>. The problem defines a formula that requires the <strong>weight of the yielded grapes in kg.</strong> . We can easily calculate this by <strong>declaring</strong> a <strong>variable</strong> that will store a <strong>value</strong> equal to <strong>40%</strong> of the result of the <strong>multiplication</strong> of the area of the vineyard and the amount of yielded grapes per square meter.</p>
-<p>Once we have made these calculations, we are ready to <strong>insert</strong> them into the problem formula. We <strong>declare</strong> another <strong>variable</strong> that will store the <strong>amount of wine in liters</strong> and will be equal to the <strong>weight of the yielded grapes in kg. divided by 2.5</strong>.</p>
+<p>To solve the problem we need to <strong>compute</strong> the <strong>amount of wine in liters</strong> that the harvest will produce using the <strong>input data</strong>. The problem defines a formula that requires the <strong>weight of the yielded grapes in kg.</strong>. We can easily calculate this by <strong>declaring</strong> a <strong>variable</strong> that will store a <strong>value</strong> equal to <strong>40%</strong> of the result of the <strong>multiplication</strong> of the area of the vineyard and the amount of yielded grapes per square meter.</p>
+<p>Once we have made these calculations, we are ready to <strong>insert</strong> them into the problem formulation. We <strong>declare</strong> another <strong>variable</strong> that will store the <strong>amount of wine in liters</strong> and will be equal to the <strong>weight of the yielded grapes in kg. divided by 2.5</strong>.</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-02.png" alt=""></p>
 <h4 id="expression-evaluation-and-processing-the-output-data"><a name="expression-evaluation-and-processing-the-output-data" class="plugin-anchor" href="#expression-evaluation-and-processing-the-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Expression Evaluation and Processing The Output Data</h4>
 <p>Our <strong>next step</strong> is to <strong>check</strong> if the <strong>produced wine</strong> is <strong>enough</strong>. We&apos;ll use a simple <strong><code>if-else</code> conditional statement</strong> with a clause that <strong>verifies</strong> if the <strong>amount of wine in liters</strong> produced from the harvest is <strong>more than</strong> or <strong>equal</strong> to the <strong>desired liters</strong>.</p>
@@ -727,7 +727,7 @@
 <p><img src="assets/chapter-3-2-images/04.Harvest-04.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/652#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/652#3</a>.</p>
-<h3 id="problem-company"><a name="problem-company" class="plugin-anchor" href="#problem-company"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Company</h3>
+<h3 id="problem-firm"><a name="problem-firm" class="plugin-anchor" href="#problem-firm"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Firm</h3>
 <p>A company is requested to develop a project that is estimated for a given number of hours. The company has <strong>a certain number of days</strong> to do that. <strong>In 10% of those days</strong>, its employees are being onboarded and <strong>are not ready to work</strong> on the project. A normal <strong>working day at this company lasts for 8 hours</strong>. The project is important for the company and every <strong>employee is obliged to work</strong> on this project <strong>overtime for 2 hours</strong> per day.</p>
 <p><strong>The hours</strong> should be <strong>rounded down</strong> (e.g. <strong>6.98 hours</strong> are rounded to <strong>6 hours</strong>).</p>
 <p>Your problem is to write a program that <strong>calculates if the company is going to finish the project on time</strong> and <strong>how many hours more are needed for the completion of the project</strong> or if the execution was successful <strong>how many dedicated working hours are left at hand</strong>.</p>
@@ -827,7 +827,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-02-24T11:36:46.843Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:37:39.590Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-35"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1402-7","variables":{},"title":"Programming Basics with Java","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Java\" for absolute beginners. Covers the Java language and the Java platform, the Java compiler, the IntelliJ IDEA development environment, variables, data, calculations, conditional statements, loops, nested loops, methods and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2022-03-01T15:30:14.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-01T15:31:07.306Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
