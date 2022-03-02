@@ -52,56 +52,6 @@ In the example above, in the variable **`num`** of integer type **`int`**, we wi
 
 Java is a **highly typed language** this means that the variables have type determined at compile-time and can not change at the execution time (as it is in dynamic languages such as JavaScript and Python). In the example above `scanner` is from type `java.util.Scanner` (scanning text reader) and the variable `num` is from type `int` (integer number).
 
-### Problem: 1000 Days After Birth
- 
-As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiplies it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
-
-```Java
-// Put this code in the file: SquareArea.java
-
-import java.util.Scanner;
-
-public class SquareArea {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("a = ");
-        int a = scanner.nextInt();
-        int area = a * a;
-
-        System.out.print("Square area = ");
-        System.out.println(area);
-    }
-}
-```
-Here is how the program would work when we have a square with a side's length equal to 15:
-
-![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
-
-Test the program with an invalid integer (as an input), for example, "**hello**". You will get an error message during runtime (exception). 
-
-![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
-
-It is normal because **Java** is a highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a new input (a number in the example above).
-
-#### How Does The Example Work?
-
-The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
-
-The following line **`System.out.print("a = ");`** prints an informative message which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`** and not **`System.out.println(…);`** and this way the cursor stays on the same line.
-
-The following line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with a name **`a`**.
-
-The following line **` int area = a * a;`** keeps the result of the multiplication of **` a`** by **`a`** in a new variable with a name **` area`**.
-
-The following line **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`** and not **`System.out.println("…");`** and this way the cursor stays on the same line to print the calculated area of the square afterward.
-
-At the last line **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
-
 #### Reading Floating-Point Numbers From The Console
 
 Try to rewrite the above program to accept as input data not only integers (`int`) but floating-point numbers (`double`). You can use `scanner.nextDouble()`. Later in this chapter, we will learn more about floating-point numbers.
@@ -475,104 +425,6 @@ Now we have an **empty IntelliJ IDEA Project** (without any Java classes in it w
 
 The purpose of this project is to add in it **`.java` class per problem** from the problems.
 
-### Problem: Calculating The Area of The square 
-
-The first problem from this topic is the following: write a console program that reads as **input data an integer `a` and calculates the area** of a square with side **`a`**. The problem is trivial and easy: read as **input data a number** from the console, then **multiply it by itself** and **print the obtained result** as an output on the console.
-
-#### Hints and Guidelines
-
-We create a **new Java class** in the existing IntelliJ IDEA project. On the **src** folder, right-click with the mouse. Choose [**New**] → [**Java Class**]:
-
-![](assets/chapter-2-1-images/07.Square-area-01.png)
-
-A **dialogue window** will open for choosing a name to the Java class, for example, “SquareArea”:
-
-![](assets/chapter-2-1-images/07.Square-area-02.png)
-
-We already have a Project with Java class in it. What remains is to write the **code for solving this problem**. For this purpose, we write in our Java class the `Main` method(as in the picture below). In the body of the `Main` method **`Main(string[] args)`** we write the following code between the opening and closing curly brackets:
-
-![](assets/chapter-2-1-images/07.Square-area-03.png)
-
-As we can see in the code above, we read as input data an integer and assign it to a variable **`a`** (line **`int a = Integer.parseInt(scanner.nextLine())`**), afterward we calculate the area (line **`int area = a * a`**) and finally prints the value of the variable **`area`** on the console. **We start** the program with [**Ctrl+Shft+F10**] and we **test** it with different input values:
-
-![](assets/chapter-2-1-images/07.Square-area-04.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0). You have to get 100 points (completely correct solution):
-
-![](assets/chapter-2-1-images/07.Square-area-05.png)
-
-![](assets/chapter-2-1-images/07.Square-area-06.png)
-
-
-### Problem: Inches to Centimeters
-
-Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For this purpose **multiply the inches by 2.54** (because one inch = 2.54 centimeters).
-
-#### Hints and Guidelines
-
-First, we create a **new Java class** in the project “SimpleCalculations”. We click on the folder **src** and choose [**New**] → [**Java Class**]:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-01.png)
-
-A dialogue window appears in which we write the file’s name. In our case this is "InchesToCentimeters" → [**OK**]:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-02.png)
-
-Next, we have to write the **program code**:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-03.png)
-
-**We start the program** with the right click on the window of the current program. We choose [**Run InchesToCentim...main()**] or we press [**Ctrl+Shift+F10**]. This shortcut starts the program in the current Java class (the one in which we wrote last):
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-04.png)
-
-We obtain the following result:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-05.png)
-
-Now **let's switch to the previous program/problem** ("Square Area"). This is done by double-clicking on the file **`SquareArea.java`** from the folder **src** in the project [**SimpleCalculations**]:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-06.png)
-
-If we use [**Shift+F10**] or press one of the two green arrows (located at the top right and bottom left of the IntelliJ IDEA window)
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-07.png)
-
-the last compiled program will be executed (**InchesToCentimeters**). We can see it as a name in the upper right corner of the window in front of one of the two green arrows:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-08.png)
-
-**Switching between projects** is an easy problem, isn't it? Choose the file with the source code of the program, double click on it, and when it starts, the program from the current file runs.
-
-Let's test with floating-point numbers, for example, with **2.5**:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-09.png)
-
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Depending on the regional settings of the operating system, it is possible to use <b> a decimal point </b> (US settings) instead of a <b> decimal comma </b> (BG settings).</td>
-</tr></table>
-
-If the program expects a decimal point and instead you enter a number with a decimal comma or the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-10.png)
-
-It is recommended to **change the settings of your computer**, to use a **decimal point**:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-11.png)
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-12.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#1](https://judge.softuni.org/Contests/Practice/Index/649#1).
-
-The solution should be accepted as a completely correct one:
-
-![](assets/chapter-2-1-images/08.Inches-to-centimeters-13.png)
-
-
 ### Problem: Greeting by name
 
 Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
@@ -719,7 +571,7 @@ Write a program that reads **degrees on the Celsius scale** (°C) and converts t
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#8](https://judge.softuni.org/Contests/Practice/Index/649#8).
 
 
-### Problem: Converter – From  Radians to Degrees
+### Problem: Celsius to Fahrenheit
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Java programs is available through **``Math.PI``**. Round the result to the nearest integer using the method **``Math.round(…)``**.
 
@@ -799,3 +651,53 @@ Write a program that reads from the console a **birth date** in format **`dd-MM-
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#12](https://judge.softuni.org/Contests/Practice/Index/649#12).
+
+### Problem: 1000 Days After Birth
+ 
+As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiplies it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
+
+```Java
+// Put this code in the file: SquareArea.java
+
+import java.util.Scanner;
+
+public class SquareArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("a = ");
+        int a = scanner.nextInt();
+        int area = a * a;
+
+        System.out.print("Square area = ");
+        System.out.println(area);
+    }
+}
+```
+Here is how the program would work when we have a square with a side's length equal to 15:
+
+![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
+
+Test the program with an invalid integer (as an input), for example, "**hello**". You will get an error message during runtime (exception). 
+
+![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
+
+It is normal because **Java** is a highly typed language. Later on, we will find out how we can catch these kinds of errors and make the user enter a new input (a number in the example above).
+
+#### How Does The Example Work?
+
+The first line **`Scanner scanner = new Scanner(System.in);`** creates a new instance from the **`Scanner`** class with standard system input.
+
+The following line **`System.out.print("a = ");`** prints an informative message which invites the user to enter the side **a** of the square. After the output is printed the cursor stays on the same line. Staying on the same line is more convenient for the user visually. We use **`System.out.print(…);`** and not **`System.out.println(…);`** and this way the cursor stays on the same line.
+
+The following line **`int a = scanner.nextInt();`** reads an integer from the console. The result is kept in a variable with a name **`a`**.
+
+The following line **` int area = a * a;`** keeps the result of the multiplication of **` a`** by **`a`** in a new variable with a name **` area`**.
+
+The following line **`System.out.print("Square area = ");`** prints the given text without going to the next line. Again, use **`System.out.print(…);`** and not **`System.out.println("…");`** and this way the cursor stays on the same line to print the calculated area of the square afterward.
+
+At the last line **`System.out.println(area);`** prints the calculated value of the variable **`area`**.
+
+#### Testing in The Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
