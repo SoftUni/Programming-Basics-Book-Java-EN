@@ -85,6 +85,57 @@ Scanner scanner = new Scanner(System.in);
 Double num = scanner.nextDouble();
 ```
 
+### Problem: Square Area
+
+For example, let's look at the following program which reads an **integer** from the console, multiplies it by itself (squares it), and prints the result from the multiplication. That's how we can calculate square area by side length:
+
+```Java
+// Put this code in the file: SquareArea.java
+
+import java.util.Scanner;
+
+public class SquareArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("a = ");
+        int a = scanner.nextInt();
+        int area = a * a;
+
+        System.out.print("Square area = ");
+        System.out.println(area);
+    }
+}
+```
+
+Here is how the program will work with a side having a size of 15:
+
+![](/assets/chapter-2-1-images/01.Square-area-01.jpg)
+
+If we change the number to string -  "**hello**", we will get an exception error.
+
+![](/assets/chapter-2-1-images/02.Exception-hello-01.jpg)
+
+This is a normal phenomenon, because the **Java** language is strongly typed. Later we will earn how we can catch these type of errors and ask the user to type his input again.
+
+#### How Does The Example Work?
+
+On the first line **`Scanner scanner = new Scanner(System.in);`** create a new instance of the class **`Scanner`**  with standart system code.
+
+On the next line **`System.out.print("a = ");`** prints informative message, that asks the user to type the value for the side **a** of the square. If we want our next input to be on the same row we use **`System.out.print(…);`**, and not **`System.out.println(…);`** because this will move it to the next row.
+
+On the next line **`int a = scanner.nextInt();`** reads the integer number from the console. The result is binded to the variable **`a`**
+
+The next command **`int area = a * a;`** defines a new variable **`area`**  with the result **`a * a`**
+
+The next command **`System.out.print("Square area = ");`** prints the text without going to a new line. Again we are using **`System.out.print(…);`**, and not **`System.out.println("…");`**.
+
+With the last command we will print the area of the square -  **`System.out.println(area);`**
+
+#### Testing in The Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
+
 ### Problem: Inches to Centimeters
 
 Write a program that reads a floating-point number (representing inches) as an input from the console, converts it to centimeters, and print the result as output:
@@ -171,7 +222,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 Let’s look at the basic arithmetic operations in programming.
 
-### Summing up numbers (operator **`+`**)
+### Summing Up Numbers (Operator **`+`**)
 
 We can sum up numbers using the operator **`+`**:
 
@@ -198,7 +249,7 @@ Here is the result of the execution of the program above (with numbers 10 and 3)
 
 ![](assets/chapter-2-1-images/04.Console-output-04.png)
 
-### Multiplying Numbers (operator **`*`**)
+### Multiplying Numbers (Operator **`*`**)
 
 For multiplication of numbers we use the operator **`*`**:
 
@@ -255,7 +306,7 @@ When printing the values **&#8734;** and **-&#8734;** the console output may be 
 NaN
 ```
 
-## Concatenating text and numbers
+## Concatenating Text and Numbers
 
 The operator **`+`** besides for summing up numbers is also used for joining text (concatenation of two strings one after another). In programming, joining text with other text or with number is called "concatenation". Here is how we can concatenate a text with a number with the operator **`+`**:
 
@@ -295,105 +346,6 @@ int expr = (3 + 5) * (4 – 2);
 ```
 The standard rule for the precedence of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In the case of an **expression in brackets, it is calculated first**, but we already know all of that from math.
 
-### Problem: Trapeziod Area
-
-Write a program that reads as input from the console the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula.
-
-```Java
-Scanner scanner = new Scanner(System.in);
-
-double b1 = Double.parseDouble(scanner.nextLine());
-double b2 = Double.parseDouble(scanner.nextLine());
-double h = Double.parseDouble(scanner.nextLine());
-double area = (b1 + b2) * h / 2.0;
-System.out.println("Trapezoid area = " + area);
-```
-
-If we start the program and enter values for sides: 3, 4, and 5, we will obtain the following result:
-```
-3
-4
-5
-Trapezoid area = 17.5
-```
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#4](https://judge.softuni.org/Contests/Practice/Index/649#4).
-
-
-### Problem: Circle Area and Perimeter 
-
-Write a program that reads as input from the console a **radius r** of a circle, and **calculates its area and perimeter**.
-
-Formulas:
--	Area = π \* r \* r
-- Perimeter = 2 \* π \* r
-- π ≈ 3.14159265358979323846…
-
-```Java
-Scanner scanner = new Scanner(System.in);
-
-System.out.print("Enter circle radius. r = ");
-double r = Double.parseDouble(scanner.nextLine());
-System.out.println("Area = " + Math.PI * r * r); 
-  // Math.PI - built-in function in Java
-System.out.println("Perimeter = " + 2 * Math.PI * r);
-```
-Let’s test the program with **radius `r = 10`**:
-
-![](/assets/chapter-2-1-images/04.Console-output-05.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#5](https://judge.softuni.org/Contests/Practice/Index/649#5).
-
-
-### Problem: 2D Rectangle Area
-
-A rectangle is given with the **coordinates of two of its opposite angles**. Write a program that calculates its **area and perimeter**:
-
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/05.Rectangle-area-01.png" width="250" height="200" />
-
-In this problem, we must take into account that we can obtain the length of the rectangle if we subtract the smaller `x` from the bigger `x`. Identically, if we subtract the smaller `y` from the bigger `y`, we can obtain the rectangle height. Then we multiply both sides. Here is an example of an implementation of the described logic:
-
-```Java
-Scanner scanner = new Scanner(System.in);
-
-double x1 = Double.parseDouble(scanner.nextLine());
-double y1 = Double.parseDouble(scanner.nextLine());
-double x2 = Double.parseDouble(scanner.nextLine());
-double y2 = Double.parseDouble(scanner.nextLine());
-
-// Calculate the sides of the rectangle:
-double width = Math.max(x1, x2) - Math.min(x1, x2);
-double height = Math.max(y1, y2) - Math.min(y1, y2);
-
-DecimalFormat decimalFormat = new DecimalFormat("#.#########");
-System.out.println(decimalFormat.format(width * height));
-System.out.println(decimalFormat.format(2 * (width + height)));
-```
-
-We use **`Math.max(a, b)`** to find the bigger value from **`a`** and **`b`** and identically **`Math.min(a, b)`** to find the smaller of both values.
-
-When the program is executed with the values from the coordinate system above we obtain the following result:
-
-![](/assets/chapter-2-1-images/04.Console-output-06.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#6](https://judge.softuni.org/Contests/Practice/Index/649#6).
-
-
-## What Have We Learned from This Chapter?
-
-To summarize what have we learned in this chapter of the book:
-- **Reading a text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).
-- **Reading an integer**: **`int num = Integer.parseInt(scanner.nextLine());`**.
-- **Reading a floating-point number**: **`double num = Double.parseDouble(scanner.nextLine());`**.
-- **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
-- **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
-
 ## Problems Simple Calculations
 
 To consolidate our knowledge of simple calculations, let's solve several problems.
@@ -424,29 +376,6 @@ Now we have an **empty IntelliJ IDEA Project** (without any Java classes in it w
 ![](assets/chapter-2-1-images/06.New-project-05.png)
 
 The purpose of this project is to add in it **`.java` class per problem** from the problems.
-
-### Problem: Greeting by name
-
-Write a program that **reads from the console a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
-
-#### Hints and Guidelines
-
-First, we create a **new Java class** with the name “Greeting” in the project “SimpleCalculations”:
-
-![](assets/chapter-2-1-images/09.Greeting-by-name-01.png)
-
-**Next, we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
-
-![](assets/chapter-2-1-images/09.Greeting-by-name-02.png)
-
-**Run** the program with [**Ctrl+Shift+F10**] and test if it works:
-
-![](assets/chapter-2-1-images/09.Greeting-by-name-03.png)
-
-#### Testing in The Judge System
-
-Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/649#2](hhttps://judge.softuni.org/Contests/Practice/Index/649#2).
-
 
 ### Problem: Concatenating Text and Numbers
 
@@ -520,7 +449,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#
 
 **A rectangle** is defined by the **coordinates** at two of its opposite angles (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2, and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
-![](/assets/chapter-2-1-images/12.Rectangle-area-01.png)
+<img src="/assets/chapter-2-1-images/12.Rectangle-area-01.png" alt="Image" style="width:400px">
 
 #### Sample Input and Output
 
@@ -629,29 +558,6 @@ Write a program for the **conversion of money from one currency into another**. 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#11](https://judge.softuni.org/Contests/Practice/Index/649#11).
 
-
-### Problem: Currency Converter
-
-Write a program that reads from the console a **birth date** in format **`dd-MM-yyyy`** then calculates the date on which **1000 days** are turned since this birth date, and prints the output in the same format.
-
-#### Sample Input and Output
-
-|   Input   |	 Output  |
-|--------|--------|
-|25-02-1995|21-11-1997|
-|07-11-2003|03-08-2006|
-|30-12-2002|25-09-2005|
-|01-01-2012|27-09-2014|
-|14-06-1980|11-03-1983|
-
-#### Hints and Guidelines 
-  * Look for information about the types **`Date`**, **`Calendar`**, and **`SimpleDateFormat`** in Java, and in particular look at the methods **`Calendar.setTime(date)`**, **`Calendar.add(countDays)`** and **`SimpleDateFormat.format(date)`**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
-  * **Don't print** anything additional on the console except for the wanted date!
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#12](https://judge.softuni.org/Contests/Practice/Index/649#12).
-
 ### Problem: 1000 Days After Birth
  
 As an example, let us look at a program. The problem is to calculate the area of a square by a given side's length read as input from the console. The sample source code of the program is below. The code **reads an integer** as input from the console, **multiplies it** by itself (squares it), and as output **prints the result** from the multiplication. Save the code in a file with the name SquareArea.java, or else you will have a compile-time error:
@@ -701,3 +607,12 @@ At the last line **`System.out.println(area);`** prints the calculated value of 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/649#0](https://judge.softuni.org/Contests/Practice/Index/649#0).
+
+## What Have We Learned from This Chapter?
+
+To summarize what have we learned in this chapter of the book:
+- **Reading a text**: **`String str = scanner.nextLine();`** (as we have written in advance **`Scanner scanner = new Scanner(System.in);`**).
+- **Reading an integer**: **`int num = Integer.parseInt(scanner.nextLine());`**.
+- **Reading a floating-point number**: **`double num = Double.parseDouble(scanner.nextLine());`**.
+- **Calculations with numbers** and using the relevant **arithmetic operators** [`+`, `-`, `*`, `/`, `(`, `)`]: **`int sum = 5 + 3;`**.
+- **Printing a text by placeholders** on the console: **`System.out.printf("%d + %d = %d", 3, 5, 3 + 5);`**.
