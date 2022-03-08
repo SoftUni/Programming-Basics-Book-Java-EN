@@ -11,7 +11,7 @@ We have already **learned** how to execute a particular **command block more tha
 
 ## Exam Problems
 
-Let's consolidate our knowledge by solving several more complex loop problems from entrance exams.
+Let's consolidate our knowledge by solving several more complex loop problems from practical exams.
 
 
 ### Problem: Stupid Password Generator

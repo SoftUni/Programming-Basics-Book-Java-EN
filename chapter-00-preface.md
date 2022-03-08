@@ -1,6 +1,6 @@
 # Preface
 
-The book **Programming Basics with Java** introduces the readers to writing **programming code** at a beginners level (basic coding skills), working with **the development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for a furthermore in-depth study of programming and prepares the reader for the entrance exam at SoftUni.
+The book **Programming Basics with Java** introduces the readers to writing **programming code** at a beginners level (basic coding skills), working with **the development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for a furthermore in-depth study of programming and prepares the reader for the practical exam at SoftUni.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>This book only gives you <b>the first steps to programming</b>. It covers basic skills that you must develop for years, to reach a high enough level and start working as a programmer.</td></tr></table>
@@ -12,11 +12,11 @@ The book is used as an unofficial **textbook for school-level programming course
 This book is suitable for **absolute beginners in programming** who want to try what programming is and learn the basic constructions for writing program code used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
 
 <!-- to update  -->
-For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course, you will get free access to lessons, explanations, and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the problem solutions after each topic, instructors, assistants, and mentors. Also, you will get free access to forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
+<!-- For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course, you will get free access to lessons, explanations, and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the problem solutions after each topic, instructors, assistants, and mentors. Also, you will get free access to forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need. -->
 
-The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions. The course is suitable for everyone who want to gain technical knowledge and check if programming is what it will like to do and understand if they would like to develop in the software development field.
+<!-- The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions. The course is suitable for everyone who want to gain technical knowledge and check if programming is what it will like to do and understand if they would like to develop in the software development field. -->
 
-**A new group starts each month.** The Programming Basics course at SoftUni is organized regularly using a few different programming languages as basis. So, check it out! This course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org).
+<!-- **A new group starts each month.** The Programming Basics course at SoftUni is organized regularly using a few different programming languages as basis. So, check it out! This course is **free**, and you can quit any time you like. **Signing up** for free on-site or online training is available via the **SoftUni application form**: [https://softuni.org](https://softuni.org). -->
 
 ## Why Did We Choose Java?
 
@@ -47,8 +47,7 @@ You need to: **solve a lot of problems**, to make mistakes, to fix, to search fo
 
 We advise the reader, as a minimum, **to try out all the examples from the book**, to play with them, to change them, and test them. Even more important than the examples are **the exercises** because they develop the programmer's practical skills. This book provides nearly **150 practical coding exercises**, so it is a good foundation for developing coding and algorithmic thinking skills.
 
-<!-- to update -->
-**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
+**You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book).
 
 </tr></table>
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -64,13 +63,13 @@ We advise the reader, as a minimum, **to try out all the examples from the book*
 The Software University provides **quality education**, **profession**, **job** and **diploma** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful and strong **connection between education and industry** by collaborating with hundreds of software companies, provides job and internships of its students, creates quality professionals for the software industry, and directly responds to the needs of employers via the training process.
 
  <!-- to update -->
-### Free Programming Courses at SoftUni
+<!-- ### Free Programming Courses at SoftUni
 
 SoftUni organizes **free programming courses for beginners**: online and on-site in few locations. The purpose is to give a chance to **everyone interested** in programming and technologies to **try programming**, checks if they are interested and if they would get seriously involved in software development. You can sign up for the free course in **programming basics** using the SoftUni application page: [https://softuni.org](https://softuni.org).
 
 The free programming basics courses at SoftUni aim to introduce you to **basic programming constructions** in the software development world, that you can use in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops**, defining and calling **methods** and other approaches for building programming logic. The trainings are **highly practically oriented**, which means that **the emphasis is strongly on exercises**, and you get the opportunity to apply your knowledge during the learning process.
 
-This **programming book** accompanies the free programming lessons for beginners at SoftUni and serves as an additional teaching aid to help the learning process.
+This **programming book** accompanies the free programming lessons for beginners at SoftUni and serves as an additional teaching aid to help the learning process. -->
 
 ### The Automated Judge System
 
@@ -190,6 +189,7 @@ Only finally, when you start working with a specific technology in a software pr
 
 This book uses the Java language, but it is not required and can be replaced with JavaScript, Python, PHP, C++, Ruby, Swift, Go, Kotlin, or any other language. To be a **software developer**, you need to learn **coding** (20%), learn **algorithmic thinking**, and **solve problems** (30%), to have **fundamental knowledge of programming and computer science** (25%) and to master a **specific programming language and the technologies around it** (25%). Be patient, ia a year or two, all this can be mastered at a good starting level if you are serious.
 
+<!-- to update -->
 <!--- The following section is commented out because translations in English for the teaching materials are not available yet
 
 ## The book as teacher's auxiliary literature
@@ -204,14 +204,14 @@ You can find all these **free teaching materials** on the SoftUni Foundation's w
 )
 -->
 
-<!-- to update -->
 ## The Story of This Book
 
-The main driver and project manager for the creation of this **free open-source programming book** are **[Dr. Svetlin Nakov](https://nakov.com)**. He is the main ideologist and author of the learning content of the training **course "Programming Basics" in SoftUni**, which was used as the basis of the book. 
+The main driver and project manager for the creation of this **free open-source programming book** are **[Dr. Svetlin Nakov](https://nakov.com)**.
 
-Everything started with the mass **free programming basics courses** that have been conducted in the whole country since 2014 when the SoftUni initiative was launched. In the beginning, these courses had a larger range and covered more theory. In 2016 Dr. Svetlin Nakov completely reworked, updated, and simplified the whole method of teaching, strongly emphasizing practice. This is how the core of the **learning content of this book was created**.
+In 2014, the SoftUni initiative was launched. In the beginning, these lessons had a larger range and covered more theory. In 2016 Dr. Svetlin Nakov completely reworked, updated, and simplified the whole method of teaching, strongly emphasizing practice. This is how the core of the **learning content of this book was created**.
 
-The free courses at SoftUni for introduction to programming are probably the most massive trainings ever conducted in South-Eastern Europe. Until 2017 the course in programming basics **was held over 150 times, in around 40 Bulgarian towns and cities** in person and multiple times online with over 50 000 participants. It was completely natural to write a **book** for the tens of thousands of participants at the SoftUni basic programming course.
+<!-- to update -->
+<!-- The free courses at SoftUni for introduction to programming are probably the most massive trainings ever conducted in South-Eastern Europe. Until 2017 the course in programming basics **was held over 150 times, in around 40 Bulgarian towns and cities** in person and multiple times online with over 50 000 participants. It was completely natural to write a **book** for the tens of thousands of participants at the SoftUni basic programming course -->
 Following the principle of **free software and free knowledge**, Svetlin Nakov led a **team of volunteers** and started this open-source project. At first, the idea was to create a **free book** for the basics of programming in the C# programming language and later extend the initiative with other similar books in various popular programming languages (like Java, JavaScript and Python).
 This book is almost a mirror translation to Java from its original version in C#.
 

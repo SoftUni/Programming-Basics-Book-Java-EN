@@ -1,10 +1,10 @@
 # Chapter 8.1. Practical Exam Preparation – Part I
 
-In **the current chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in "Programming Basics". We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
+In **the current chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** at SoftUni.
 
-## Practical Exam on “Programming Basic”
+## Practical Exam
 
-The **"Programming Basics"** course ends with a **practical exam**. It includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** one of the **topics** studied in the course. The themes of the problems are as follows:
+The **practical exam** includes **6** problems, for which you will have **4 hours**, to solve. **Each** of the exam problems will **cover** one of the **topics** studied in this book. The themes of the problems are as follows:
 
 - problem with simple calculations \(no conditions\)
 - problem with simple condition
@@ -22,7 +22,7 @@ The **"Programming Basics"** course ends with a **practical exam**. It includes 
 
 ## Simple Calculations – Problems
 
-**The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few problems:
+**The first** problem of the Practical Exam covers **simple calculations without checks and loops**. Here are a few problems:
 
 ### Problem: Triangle Area
 
@@ -136,7 +136,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Simple Conditions – Problems
 
-**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few problems:
+**The second** problem of the Practical Exam covers **conditional statements and simple calculations**. Here are a few problems:
 
 ### Problem: Point on a Segment
 
@@ -250,7 +250,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Complex Conditions – Problems
 
-**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few problems:
+**The third** problem of the Practical Exam includes **several nested checks combined with simple calculations**. Here are a few problems:
 
 ### Problem: Date After 5 days
 
@@ -361,7 +361,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Simple Loops – Problems
 
-**The fourth** problem of the "Programming Basics" Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
+**The fourth** problem of the Practical Exam includes a **single loop with simple logic** in it. Here are a few examples:
 
 ### Problem: Sums Step 3
 
@@ -454,7 +454,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Drawing Figures on The Console – Problems
 
-**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops** for drawing a figure on the console. Logical deductions, simple calculations, and checks might be required. The problem checks the students' abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
+**The fifth** problem of the Practical Exam requires **using one or several nested loops** for drawing a figure on the console. Logical deductions, simple calculations, and checks might be required. The problem checks the students' abilities to think logically and come up with simple algorithms for solving problems, i.e. to think algorithmically. Here are a few examples for an exam problem:
 
 ### Problem: Perfect Diamond
 
@@ -568,7 +568,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/661#
 
 ## Nested Loops with More Complex Logic – Problems
 
-**The last** (sixth) problem of the "Programming Basics" Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think algorithmically** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples of exam problems.
+**The last** (sixth) problem of the Practical Exam requires using of **several nested loops and more complex logic inside them**. The problems examine participants' ability to **think algorithmically** and to solve non-trivial coding problems that require nested loops with more complex logic and calculations. Here are a few examples of exam problems.
 
 
 ### Problem: Increasing 4 Numbers

@@ -1,10 +1,10 @@
 # Chapter 8.2. Preparation for a Practical Exam – Part II
 
-In this chapter, we will look at a **practical exam Programming Basics** held at SoftUni on December 18, 2016. The problems give a good idea of what we can expect at the entrance exam in programming at SoftUni. The exam covers the learning material studied from this book and the "Programming Basics" course at SoftUni.
+In this chapter, we will look at a **practical exam** held at SoftUni on December 18, 2016. The problems give a good idea of what we can expect at the practical exam in programming at SoftUni.
 
 ## Exam Problems
 
-Traditionally, the entrance exam in SoftUni consists of **6 practical programming problems**:
+Traditionally, the Practical Exam of SoftUni consists of **6 practical programming problems**:
  - Simple problem (without checks).
  - A problem with a single condition.
  - A problem with more complex conditions.

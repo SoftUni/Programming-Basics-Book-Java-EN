@@ -19,7 +19,7 @@ In the current, chapter we will also get acquainted with the **`break`** stateme
 
 ## Loops With a Step
 
-In chapter **"Repetitions (Loops)"**, we learned how the **`for`** loop works, and we already know when and for what purpose to use it. In this topic, we will pay **attention** to a specific and very important **part of its construction**, namely the **step**. 
+In chapter **"Loops"**, we learned how the **`for`** loop works, and we already know when and for what purpose to use it. In this topic, we will pay **attention** to a specific and very important **part of its construction**, namely the **step**. 
 
 ### What is a Step?
 

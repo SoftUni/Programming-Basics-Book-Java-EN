@@ -107,7 +107,7 @@ Like the example above, read the grade from the console and check if it is excel
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#1](https://judge.softuni.org/Contests/Practice/Index/651#1).
 
 
-## The Curly Brackets {} After If / Else 
+## The Curly Brackets {} After If \/ Else 
 
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly brackets**. When we want to execute a **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
@@ -366,7 +366,7 @@ By pressing a combination of buttons [**CTRL + F8**] you create special markers 
 
 To get a better understanding of what we have learned, let's solve a few practical exercises.
 
-### Empty project in IntelliJ Idea
+### Empty Project in IntelliJ Idea
 
 Create a new project with the name **Java** in IntelliJ Idea and leave all other options at their default state. To better organize the solutions to the problems from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
 

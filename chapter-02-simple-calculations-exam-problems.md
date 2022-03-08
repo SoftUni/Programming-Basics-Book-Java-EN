@@ -74,7 +74,7 @@ String str = firstName + " " + lastName + " is " + age + " years old";
 
 ## Exam Problems
 
-Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the problems. We will solve several **problems from a SoftUni entrance exam**.
+Now, after we have recalled how to make simple calculations, read and print numbers on the console, let's move to the problems. We will solve several **problems from a SoftUni practical exam**.
 
 ### Problem: Training Lab
 

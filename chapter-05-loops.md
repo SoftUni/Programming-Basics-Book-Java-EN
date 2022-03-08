@@ -1,4 +1,4 @@
-# Chapter 5.1. Repetitions (Loops)
+# Chapter 5.1. Loops
 
 In the present chapter, we will get familiar with how to **repeat blocks of commands**, known in software development as "**loops**". We will write several loops using the **`for`** operator in its simplest form. Finally, we will solve some practical problems that require repeating a series of actions, using loops.
 
@@ -10,7 +10,7 @@ In the present chapter, we will get familiar with how to **repeat blocks of comm
   https://www.youtube.com/watch?v=VyoaWLnbDi0</a>.
 </div>
 
-## Repetitions of blocks of code (for loop)
+## Repetitions of Blocks of Code (For Loop)
 
 Often in programming, we have to  **execute a block of code multiple times**. To do that, we use the so-called **loops**. Let us look at an example of a **`for` loop** that passes sequentially through the numbers from 1 to 10 and prints them: 
 
