@@ -87,7 +87,6 @@ Keep in mind some **specifics about SoftUni judge**:
 
 The SoftUni judge system is **available any time** via its website: [https://judge.softuni.org](https://judge.softuni.org).
 * To sign in, use your authentication for the SoftUni website: [https://softuni.org](https://softuni.org).
-* Using the SoftUni system is **free** and it's not bound with the participation in SoftUni's courses.
 
 We are convinced that after a few submitted problems, **you will like to receive instant feedback** for your solutions, and the Judge system will become your favorite assistant in learning programming.
 
@@ -112,7 +111,7 @@ There are **4 main skill groups** that all programmers must have. Most of these 
 
 The skill of coding **can be acquired in a few months** of hard learning and solving practical problems by writing code every day. This book covers only the first point of coding: **working with variables, conditional statements, and loops**. The rest remains to be learned in follow-up trainings, courses, and books.
 
-The book (and the courses based on it) gives only the beginning of one long and serious training on the way to professional programming. If you don't learn perfectly the material from this book, you can't become a programmer. You are going to miss fundamentals, and it will be harder in the future. For this reason, **give enough time to programming basics**: solve many problems and write code every day for months until you learn to **solve every problem from the book very easily**. Then go ahead.
+The book gives only the beginning of one long and serious training on the way to professional programming. If you don't learn perfectly the material from this book, you can't become a programmer. You are going to miss fundamentals, and it will be harder in the future. For this reason, **give enough time to programming basics**: solve many problems and write code every day for months until you learn to **solve every problem from the book very easily**. Then go ahead.
 
 We pay special attention to the fact that **programming language doesn't have significant relevance** for one's coding skill. You can either code or not. If you can code in C#, then you'll easily switch to Java, or C++, or any other language. That's why **coding skills** are heavily studied in the foundational software engineering courses at SoftUni. These are the skills that each programming book for beginners starts with, including this one.
 
@@ -229,13 +228,13 @@ The book is based on its initial C# variant ([Programming Basics with C#](https:
 
 Book cover design: Marina Shiderova.
 
-## Official Book Web Site
+## Official Web Site
 
 The book **Programming Basics with Java** is available for free at the following web address:
 
 <p align="center"><strong><a href="https://java-book.softuni.org">https://java-book.softuni.org</a></strong></p>
 
-This is the **official book site** and any new version will be uploaded there. The book is mirrored in the other programming languages mentioned on the website.
+The current book also has an **official Facebook page**, from which you can keep track of news around the books from the series "Basics of Programming", new editions, events, and initiatives:
 
 ## Discussion Forum for Your Questions
 
@@ -248,12 +247,6 @@ In this discussion forum, you will get **proper response to any question associa
 Due to a large number of students, you can find in the forum practically any **solution of any exercise, shared by your colleague**. Thousands of students already got the answer to the same exercise, so if you are late you can check the forum. Even though the exercises in "Programming Basics" are changing at some point, the sharing at SoftUni is always welcome and encouraged, that's why you will easily find solutions and guidance for any exercise.
 
 If you have a specific question, for example, if you spend many hours on a certain piece of code and it doesn't work correctly, you can always **ask in the forum**. You will be surprised how friendly are SoftUni's forum participants.
-
-## Official Reddit Channel of The Book
-
-The book has an **official Reddit channel** where you can ask questions about the exercises in each chapter.
-
-<p align="center"><strong><a href="https://www.reddit.com/r/softuni/">https://www.reddit.com/r/softuni/</a></strong></p>
 
 ## License and Distribution
 
