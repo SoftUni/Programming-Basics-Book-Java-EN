@@ -11,6 +11,7 @@ The book is used as an unofficial **textbook for school-level programming course
 
 This book is suitable for **absolute beginners in programming** who want to try what programming is and learn the basic constructions for writing program code used in software development, regardless of the programming language and the technologies used. The book gives a **solid basis** of practical skills that you can use in any future training in programming and software development.
 
+<!-- to update  -->
 For anyone who hadn't passed [**the free course on Programming Basics in SoftUni**](https://softuni.org), we specifically recommend enrolling it **completely free**, because programming is learned by code writing, not by reading! During the course, you will get free access to lessons, explanations, and demonstrations on-site or online (such as video tutorials), **a lot of practice and code writing**, help with the problem solutions after each topic, instructors, assistants, and mentors. Also, you will get free access to forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
 
 The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions. The course is suitable for everyone who want to gain technical knowledge and check if programming is what it will like to do and understand if they would like to develop in the software development field.
@@ -46,6 +47,7 @@ You need to: **solve a lot of problems**, to make mistakes, to fix, to search fo
 
 We advise the reader, as a minimum, **to try out all the examples from the book**, to play with them, to change them, and test them. Even more important than the examples are **the exercises** because they develop the programmer's practical skills. This book provides nearly **150 practical coding exercises**, so it is a good foundation for developing coding and algorithmic thinking skills.
 
+<!-- to update -->
 **You need to solve all the problems in the book** because programming is learned with practice! The exercises after each topic are carefully selected to cover in-depth the learning material. The purpose of solving all the problems is to provide **complete set of skills for writing programming code** at a beginners level (which is the purpose of this book). During the courses in SoftUni, we purposefully **focus on practice** and problem-solving, and in most courses, code writing occupies over 70% of the entire course.
 
 </tr></table>
@@ -61,6 +63,7 @@ We advise the reader, as a minimum, **to try out all the examples from the book*
 
 The Software University provides **quality education**, **profession**, **job** and **diploma** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful and strong **connection between education and industry** by collaborating with hundreds of software companies, provides job and internships of its students, creates quality professionals for the software industry, and directly responds to the needs of employers via the training process.
 
+ <!-- to update -->
 ### Free Programming Courses at SoftUni
 
 SoftUni organizes **free programming courses for beginners**: online and on-site in few locations. The purpose is to give a chance to **everyone interested** in programming and technologies to **try programming**, checks if they are interested and if they would get seriously involved in software development. You can sign up for the free course in **programming basics** using the SoftUni application page: [https://softuni.org](https://softuni.org).
@@ -200,6 +203,8 @@ If you are a **teacher in programming**, informatics or ICT or wish **to become 
 You can find all these **free teaching materials** on the SoftUni Foundation's website, along with the educational content for a whole sequence of programming and software tech courses. Download them for free here: https://softuni.foundation/projects/applied-software-developer-profession/.
 )
 -->
+
+<!-- to update -->
 ## The Story of This Book
 
 The main driver and project manager for the creation of this **free open-source programming book** are **[Dr. Svetlin Nakov](https://nakov.com)**. He is the main ideologist and author of the learning content of the training **course "Programming Basics" in SoftUni**, which was used as the basis of the book. 
@@ -226,7 +231,7 @@ Book cover design: Marina Shiderova.
 
 ## Official Book Web Site
 
-The book **Programming Basics with C#** is available for free at the following web address:
+The book **Programming Basics with Java** is available for free at the following web address:
 
 <p align="center"><strong><a href="https://java-book.softuni.org">https://java-book.softuni.org</a></strong></p>
 
@@ -234,10 +239,9 @@ This is the **official book site** and any new version will be uploaded there. T
 
 ## Discussion Forum for Your Questions
 
-Ask your **questions about basic programming book** at the **SoftUni's Facebook page** or in the official **SoftUni discussion forum**:
+Ask your **questions about basic programming book** at the **SoftUni's Reddit channel**:
 
-<p align="center"><strong><a href="https://www.facebook.com/softuni.org">https://fb.com/softuni.org</a></strong></p>
-<p align="center"><strong><a href="http://forum.softuni.org">http://forum.softuni.org</a></strong></p>
+<p align="center"><strong><a href="https://www.reddit.com/r/softuni/">http://forum.softuni.org</a></strong></p>
 
 In this discussion forum, you will get **proper response to any question associated with the content of this book** also any other programming questions. The SoftUni community is so big that you will get a response **within a few minutes**. The trainers, assistants, and mentors at SoftUni also respond to your questions. Note that the forum can hold questions in different languages (English, Bulgarian, and others), but if you ask in English, you will get an answer in English.
 
@@ -245,11 +249,11 @@ Due to a large number of students, you can find in the forum practically any **s
 
 If you have a specific question, for example, if you spend many hours on a certain piece of code and it doesn't work correctly, you can always **ask in the forum**. You will be surprised how friendly are SoftUni's forum participants.
 
-## Official Facebook Page of The Book
+## Official Reddit Channel of The Book
 
-The book has an **official Facebook page** where you can track the news about the book series "Programming Basics", new releases, events and initiatives:
+The book has an **official Reddit channel** where you can ask questions about the exercises in each chapter.
 
-<p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
+<p align="center"><strong><a href="https://www.reddit.com/r/softuni/">https://www.reddit.com/r/softuni/</a></strong></p>
 
 ## License and Distribution
 
@@ -265,7 +269,7 @@ International Standard Book Number (ISBN): **978-619-00-1402-7**.
 
 If you find **mistakes**, inaccuracies or bugs in the book, you can report them in the official bug tracker of the project:
 
-<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-JS-EN/issues</a></strong></p>
+<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-JAVA-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-JAVA-EN/issues</a></strong></p>
 
 We do not promise to fix everything you send us, but we do want to **continually improve the quality** of the book, so that reported undoubted errors and all reasonable suggestions will be considered.
 
