@@ -262,7 +262,7 @@ We can use the following idea to solve the problem:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#8](https://judge.softuni.org/Contests/Practice/Index/659#8).
 
 
-## Infinite Loops and break Operator
+## Infinite Loops and `break` Operator
 
 So far, we got acquainted with different types of loops and learned about their constructions and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs and how we can **terminate** its execution through the **`break`** operator.
 
@@ -278,7 +278,7 @@ And here is what an **infinite `for`** loop looks like:
 
 ![](assets/chapter-7-1-images/00.Infinite-for-loop-01.png)
 
-### The break Operator
+### The `break` Operator
 
 We already know that the infinite loop executes a specific code to infinity, but what if we want to forcibly exit the loop under a given condition at some point? In this situation, the **`break`** operator comes in handy.
 
@@ -357,7 +357,7 @@ Note: although the code above is correct, it will not work if the user enters te
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#10](https://judge.softuni.org/Contests/Practice/Index/659#10).
 
 
-## Nested Loops and The break Operator
+## Nested Loops and The `break` Operator
 
 Having learned what **nested loops** are and how the **`break`** operator performs, it is time to understand how they both work together. For a better understanding, let’s write a step-by-step **program** that should make all possible combinations of **pairs of numbers**. The first number of the combination is increasing from 1 to 3, and the second one is decreasing from 3 to 1. The problem must continue running until **`i + j`** **is not equal** to 2 (i.e., **`i = 1`** and **`j = 1`**).
 
@@ -390,11 +390,11 @@ Thus, when **`i + j = 2`**, the program will set the **`hasToEnd = true`** and e
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/659#11](https://judge.softuni.org/Contests/Practice/Index/659#11).
 
 
-## Error Handling: try-catch Construction
+## Error Handling: `try-catch` Construction
 
 The last thing we will get familiar with within this chapter is how to "catch" **errors** with the **`try-catch`** construction.
 
-### What is a try-catch?
+### What is a `try-catch`?
 
 The **`try-catch`** program construction is used to **intercept and handle exceptions (errors)** during the program execution.
 
@@ -402,9 +402,9 @@ In programming, **exceptions** are notifications of an event that disrupts the n
 
 When an exception occurs, the exception is said to have been **”thrown” (throw exception)**. Hence the expression **”catch exception”**.
 
-### The try-catch Construction
+### The `try-catch` Construction
 
-The **`try-catch`** construction has different types, but for now, we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex `**
+The **`try-catch`** construction has different types, but for now, we will get acquainted only with the most basic of them, where the **`catch`** block will intercept any error in a variable named **`ex`**
 
  ![](assets/chapter-7-1-images/00.Try-catch-01.png)
  

@@ -107,7 +107,7 @@ Like the example above, read the grade from the console and check if it is excel
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/651#1](https://judge.softuni.org/Contests/Practice/Index/651#1).
 
 
-## The Curly Brackets {} After If \/ Else 
+## The Curly Brackets `{}` After If \/ Else 
 
 When we have **only one command** in the body of the **`if` statement**, we can **skip the curly brackets**. When we want to execute a **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 

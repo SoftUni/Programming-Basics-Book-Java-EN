@@ -91,7 +91,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/653#
 
 Let's take a look at how we can create more complex logical conditions. We can use the logical "**AND**" (**`&&`**), logical "**OR**" (**`||`**), logical **negation** (**`!`**) and **brackets** (**`()`**).
 
-### Logical "AND"
+### Logical `AND`
 
 As we saw, in some problems we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** are valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 

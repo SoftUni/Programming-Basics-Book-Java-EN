@@ -355,7 +355,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/646#
 
 Write a Java console program that **prints the numbers from 1 to 20** on separate lines on the console.
 
-### Hints and 
+### Hints and Guidelines
 
 Create a new Java class and name it **`Nums1to20`** (right click on the **`src`** folder -> [New] -> [Java Class])
 

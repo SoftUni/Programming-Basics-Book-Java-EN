@@ -247,7 +247,7 @@ If we **replace** **`void`** with **a type** of some variable, this will tell th
 
 We should note that **the result** returned by the method can be of **a type, compatible with the type of the returned value** of the method. For example, if the declared type of the returned value is **`double`**, we can return a value of **`int`** type.
 
-### The return Operator
+### The `return` Operator
 
 To obtain a result from the method, we need to use the **`return`** operator. It should be **used in the body** of the method and tells the program to **stop its execution** and to **return** to the method's caller, a **value** that is defined by the expression after the **`return`** operator.
 
@@ -263,7 +263,7 @@ We have a method in the example below, which compares two numbers and returns a 
 
 ![](assets/chapter-10-images/10.Return-operator-02.png)
 
-#### Code After a "return" is Unreachable
+#### Code After a `return` is Unreachable
 
 When the **return** operator is located inside a conditional statement such as **`if`**, after the statement in the same block, we must **not** have rows with code because IntelliJ IDEA will display a warning telling us that it had found an **unreachable** statement.
 
@@ -274,7 +274,7 @@ When the **return** operator is located inside a conditional statement such as *
 with the phrase <b><i>write</i> <code>return; return;</code> <i>and let's go home</i></b>”, to explain that the logic of the program is wrongly typed.</td></tr>
 </table>
 
-### Using The "return" Value of a Method
+### Using The `return` Value of a Method
 
 After a method is executed and has returned a value, we can use the value in several ways.
 
@@ -365,7 +365,7 @@ As we mentioned, if you use **the same name for several methods with different s
 
 ![](assets/chapter-10-images/14.Method-overloading-01.png)
 
-### Signature and The return Value Type
+### Signature and The `return` Value Type
 
 It is important to say that **the returned type as a result** of the method **is not a part of its signature**. If the returned type was a part of the signature, then the compiler doesn't know which method exactly to call (there is ambiguity).
 
