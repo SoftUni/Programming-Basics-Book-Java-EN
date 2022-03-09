@@ -65,8 +65,6 @@ By the problem condition, **input data** is being entered on **four** separate r
 
 To perform **calculations**, we choose to use a type **`double`**.
 
-You can read more about the different **data types** in Java programming language here: [https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/](https://introprogramming.info/intro-java-book/read-online/glava2-primitivni-tipove-i-promenlivi/)
-
 This way, we successfully solved the first sub-problem. The next step is to **convert the input data** into appropriate **types** to perform the needed calculations. We choose to use **`Integer`** or **`int`** type because the condition of the problem says that the input data must be within a particular range, for which this data type is sufficient. We will do the **conversion** in the following way:
 
 ![](assets/chapter-8-2-images/01.Distance-03.png)
