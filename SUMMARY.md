@@ -22,8 +22,6 @@
 * [Conclusion](chapter-12-conclusion.md)
 
 * [Start a Tech Job](https://softuni.org/)
-
-* [Social Media Accounts]()
     * [Facebook](https://www.facebook.com/softuni.global)
     * [Instagram](https://www.instagram.com/softuni.global)
     * [Twitter](https://twitter.com/softuni_org)
