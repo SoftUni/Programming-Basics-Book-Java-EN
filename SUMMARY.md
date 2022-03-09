@@ -1,3 +1,5 @@
+* [Learn Programming and Start a Tech Job](https://softuni.org/)
+* <a href="https://softuni.org/" target="_blank"><img src="https://softuni.org/wp-content/uploads/2021/08/SoftUni_NO_Slogan_Horizontal.svg" alt="Image" style="width:50px;height:20px"> </a>
 * [Book "Programming Basics" with Java](README.md)
 * [Preface](chapter-00-preface.md)
 * [1. First Steps in Programming](chapter-01-first-steps-in-programming.md)
