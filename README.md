@@ -1,8 +1,6 @@
-```java
+<p></p>
 
-```
-
-Navigation Bar... [https://softuni.org/](https://softuni.org/).
+Navigation: [https://softuni.org/](https://softuni.org/).
 
 # Free Book "Programming Basics with Java"
 

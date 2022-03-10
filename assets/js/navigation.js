@@ -1,5 +1,5 @@
 gitbook.events.bind("page.change", function() {
-	let runCodeLinks = $("p:contains('Navigation Bar...') a");
+	let runCodeLinks = $("p:contains('Navigation:') a");
 	for (let link of runCodeLinks) {
 		if (typeof(link.href) == "string" && link.href.startsWith("https://softuni.org/")) {
 			// A repl.it link is found --> check for code box above it
