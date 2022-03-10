@@ -1,4 +1,5 @@
-<p></p>
+```java
+```
 
 Navigation: [https://softuni.org/](https://softuni.org/).
 
