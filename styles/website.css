@@ -84,3 +84,10 @@ span.run-code-loading {
     width: 100%;
     height: 100%;
 }
+
+/* Header */
+
+.logo {
+    width:60px;
+    height:30px;
+}
