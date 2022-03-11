@@ -2,7 +2,7 @@
 
 ```
 
-Navigation: [https://softuni.org/](https://softuni.org/).
+Read the online version of the book: [https://js-book.softuni.org/](https://js-book.softuni.org/).
 
 # Preface
 
