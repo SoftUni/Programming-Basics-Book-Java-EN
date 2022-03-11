@@ -6,7 +6,6 @@ gitbook.events.bind("page.change", function() {
         <a target="_blank" href="https://js-book.softuni.org/chapter-00-preface.html">About</a>
         <a target="_blank" href="https://softuni.org">Learn Programming</a>
         <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">YouTube Channel</a>
-        <a class="right-btn" target="_blank" href="https://softuni.org/courses/java-basics-free/">Java Basics Course</a>
     </p>
     `);
     for (let link of navigationText) {
