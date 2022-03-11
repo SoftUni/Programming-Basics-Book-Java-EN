@@ -100,7 +100,6 @@ span.run-code-loading {
 }
 
 .topnav {
-    background-color: #f4f4f4;
     overflow: hidden;
 }
 
@@ -118,17 +117,7 @@ span.run-code-loading {
     font-weight: bold;
 }
 
-.right-btn {
-    float: right !important;
-}
-
-@media screen and (max-width: 900px) {
-    .right-btn {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     .topnav {
         text-align: center;
     }
