@@ -95,7 +95,7 @@ span.run-code-loading {
 /* Navigation */
 
 .markdown-section pre {
-    background-color: none !important;
+    background: transparent !important;
 }
 
 .logo {
