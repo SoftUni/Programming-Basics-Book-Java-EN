@@ -11,6 +11,7 @@ gitbook.events.bind("page.change", function() {
 				// Delete the original REPL hyperlink from the DOM
 				$(link).parent().remove();
 			}
+			break;
 		}
 	}
 });

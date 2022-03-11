@@ -1,3 +1,9 @@
+```java
+
+```
+
+Navigation: [https://softuni.org/](https://softuni.org/).
+
 # Preface
 
 The book **Programming Basics with Java** introduces the readers to writing **programming code** at a beginners level (basic coding skills), working with **the development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), using **conditional statements** (**`if`**, **`if-else`**, **`switch-case`**), **loops** (**`for`**, **`while`**, **`do-while`**, **`foreach`**) and **methods** (declaring and calling methods, passing parameters, and returning values). This book teaches **basic coding skills**, using the programming language **Java** and the development environment **IntelliJ IDEA**. The learning material covered in this book delivers the basic training that is needed for a furthermore in-depth study of programming and prepares the reader for the practical exam at SoftUni.
