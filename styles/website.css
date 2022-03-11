@@ -94,6 +94,10 @@ span.run-code-loading {
 
 /* Navigation */
 
+.markdown-section pre {
+    background-color: none !important;
+}
+
 .logo {
     width: 100px;
     padding: 0 !important;
@@ -101,17 +105,16 @@ span.run-code-loading {
 
 .topnav {
     overflow: hidden;
+    display: inline-flex;
 }
 
 .topnav a {
     /* font-family: 'Montserrat', sans-serif; */
-    float: left;
     text-align: center;
-    display: block;
+    display: inline-block;
     color: #333333;
     padding-top: 0.2em;
     padding-left: 2em;
-    margin: 0;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
