@@ -9,7 +9,8 @@ gitbook.events.bind("page.change", function() {
 				// Delete the original hyperlink from the DOM
 				$(link).parent().remove();
 			}
-			break;
 		}
 	}
 });
+
+// change "" with ``
