@@ -8,6 +8,5 @@ gitbook.events.bind("page.change", function() {
             <a target="_blank" href="https://introprogramming.info">Nakov's Books</a>
         </p>
     `);
-
     doc.prepend(topMenu);
 });
