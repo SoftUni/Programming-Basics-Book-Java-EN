@@ -1,8 +1,3 @@
-* [💻 Start a Tech Job](https://softuni.org/)
-* [▶️ YouTube Channel](https://www.youtube.com/c/CodeWithNakov)
-* [💬 Ask for Help on Reddit](https://www.reddit.com/r/softuni/)
-<br />
-
 * [Book "Programming Basics" with Java](README.md)
 * [Preface](chapter-00-preface.md)
 * [1. First Steps in Programming](chapter-01-first-steps-in-programming.md)
@@ -25,3 +20,8 @@
 * [10. Methods](chapter-10-methods.md)
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
+<hr />
+* [💻 Learn Programming and Start a Tech Job](https://softuni.org)
+* [▶️ SoftUni Global @ YouTube](https://www.youtube.com/c/CodeWithNakov)
+* [▶️ Nakov's Books](https://introprogramming.info)
+* [💬 Ask for Help on Reddit](https://www.reddit.com/r/softuni/)
