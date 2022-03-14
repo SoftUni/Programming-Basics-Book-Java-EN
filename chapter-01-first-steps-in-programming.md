@@ -52,7 +52,7 @@ For programming with the **Java language** the most commonly used development en
 
 Alternatives of IntelliJ IDEA are **Eclipse** [https://eclipse.org/downloads/packages](https://eclipse.org/downloads/packages), **NetBeans** [https://netbeans.apache.org/download](https://netbeans.apache.org/download), and **JDeveloper** [https://www.oracle.com/tools/downloads/jdeveloper-12c-downloads.html](https://www.oracle.com/tools/downloads/jdeveloper-12c-downloads.html) and many others. In the current book, we are going to use IntelliJ IDEA.
 
-If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it** [https://repl.it/languages/java](https://repl.it/languages/java).
+If you don't have an opportunity to install an IDE, you can use some online Java IDE like **Repl.it**: [https://repl.it/languages/java](https://repl.it/languages/java).
 
 ### Low- and High-Level Languages, Runtime Environments
 A program is, in essence, a **set of instructions** that ask the computer to carry out specific problems. They are entered by the programmer and **executed unconditionally by the machine**.
