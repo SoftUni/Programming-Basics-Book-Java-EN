@@ -3,7 +3,6 @@ gitbook.events.bind("page.change", function() {
     let navigationBox = $(`
     <p class="topnav">
         <a class="logo" target="_blank" href="https://softuni.org"><img src="https://softuni.org/wp-content/uploads/2021/08/SoftUni_NO_Slogan_Horizontal.svg" alt="logo"></a>
-        <a target="_blank" href="https://js-book.softuni.org/chapter-00-preface.html">About</a>
         <a target="_blank" href="https://softuni.org">Learn Programming</a>
         <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">YouTube Channel</a>
     </p>
