@@ -128,7 +128,4 @@ span.run-code-loading {
         display: inline-block;
         float: none !important;
     }
-    .topnav a:not(:first-child) {
-        display: none;
-    }
 }
