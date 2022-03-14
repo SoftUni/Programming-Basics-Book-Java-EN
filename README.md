@@ -1,9 +1,3 @@
-```java
-
-```
-
-Read the online version of the book: [https://js-book.softuni.org/](https://js-book.softuni.org/).
-
 # Free Book "Programming Basics with Java"
 
 The free book **Programming Basics with Java** introduces readers to writing entry-level programming code (working with data, conditional statements, loops, and methods) using the Java programming language.
