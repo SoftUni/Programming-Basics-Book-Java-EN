@@ -113,11 +113,15 @@ span.run-code-loading {
 }
 
 @media screen and (max-width: 1000px) {
+    .logobox {
+        padding-top: 0 !important;
+    }
     .topnav {
         display: grid;
     }
     .topnav a {
-        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 0em;
     }
 }
 
