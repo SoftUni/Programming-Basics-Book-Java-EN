@@ -94,21 +94,21 @@ span.run-code-loading {
 
 /* Top menu navigation */
 
+.logo {
+    padding-top: 0.5em;
+    width: 100px;
+}
+
 .topnav {
     overflow: hidden;
     display: inline-flex;
-}
-
-.topnav .logo {
-    width: 100px;
-    padding: 0 !important;
+    align-items: center;
 }
 
 .topnav a {
     text-align: center;
     display: inline-block;
     color: #333333;
-    padding-top: 0.15em;
     padding-left: 1.5em;
 }
 
