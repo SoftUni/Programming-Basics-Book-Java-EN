@@ -22,7 +22,7 @@ This book is suitable for **absolute beginners in programming** who want to try 
 
 For this book, we choose the **Java** because it is a **modern programming language** for high-level programming, open-source, easy to learn, and **suitable for beginners**. Using Java is **widespread**, with a well-developed ecosystem, numerous libraries and technology frameworks, and accordingly, it gives many **perspectives** for development. Java combines paradigms of procedural, object-oriented, and functional programming in a modern way with easy syntax although it is more descriptive than Python and JavaScript. In this book, we will use **Java** language and **IntelliJ IDEA** development environment, which are available for free.
 
-As we will explain later, **the programming language that we start with, does not make a significant difference**, but we still need to use some programming language, and in this book we choose Java specifically. The book can also be found mirrored in other programming languages such as C# and JavaScript (see [https://java-book.softuni.org](https://java-book.softuni.org)).
+As we will explain later, **the programming language that we start with, does not make a significant difference**, but we still need to use some programming language, and in this book we choose Java specifically. The book can also be found mirrored in other programming languages such as C#, Python, and JavaScript.
 
 ## The Book in Other Programming Languages: Java, JavaScript, Python, C++
 
