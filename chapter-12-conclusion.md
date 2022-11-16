@@ -29,20 +29,13 @@ This book **gives you a solid foundation**, thanks to which it will be easy for 
 
 The first option, which we recommend, is to enroll in a [**Software Developer program**](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaBook) to master programming on a professional level. The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity, all the skills that a software engineer must possess, **to start a career as a software developer** in an IT company.
 
-[//]: # (TODO: Insert image like the one in the C# book)
-
-<!-- to update -->
-<!-- #### Training Duration in SoftUni
-
-The training in SoftUni has a duration of **1-2 years** (depending on the profession and the selected specializations), and during that period it is normal to reach a good starting level (junior developer), but this is **only if you study seriously** and write code intensely every day. Upon having good grades, a typical student **starts a job around the middle of the training (after around 1.5 years)**. Thanks to the well-developed partner's network, **the career center of SoftUni offers work** in a software or IT company to all SoftUni students who have very good or excellent grades. **Starting a job** in the major, in case of having good grades at SoftUni, combined with a willingness to work and reasonable expectations towards the employers, is almost guaranteed. -->
-
 #### It Takes at Least a Year of Intense Code Writing to Become a Programmer
 
 Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers an easier program with the promise of you becoming a programmer and landing a job within 3-4 months of starting the course, they are either lying to you or providing a significantly lower-quality education that will not prepare you enough for even an intern position. There are exceptions, of course, for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing**!
 
 #### The SoftUni Curriculum for Software Engineers
 
-The SoftUni Curriculum for Software Developers. SoftUni’s [**self-paced programs**](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaBook) are designed as a sequence of modules giving you fundamental knowledge in software development and practical skills to prepare you to work as a programmer with the latest software technologies. The classes are divided into learning theory (30%) and doing exercises and projects (70%).
+SoftUni’s [**self-paced programs**](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=JavaBook) are designed as a sequence of modules giving you fundamental knowledge in software development and practical skills to prepare you to work as a programmer with the latest software technologies. The classes are divided into learning theory (30%) and doing exercises and projects (70%).
 
 #### How Many Hours Per Day Does The Training Take?
 
