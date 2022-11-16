@@ -61,7 +61,3 @@ Brief information about this edition:
 * Edition: **Faber Publishing, Sofia, Oct 2021**
 * License: **CC-BY-SA**
 * Source code: https://github.com/SoftUni/Programming-Basics-Book-Java-EN
-
-## Free Practical Programming Course
-
-Enjoy reading and do not forget to **sign up** for the [**Practical Free Course "Programming Basics"**](https://softuni.org) coming together with this book, because programming is learned by practice, code writing and solving many, many problems, not just by reading!
