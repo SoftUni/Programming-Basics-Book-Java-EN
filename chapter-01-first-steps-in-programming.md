@@ -677,7 +677,7 @@ Unlike the console applications that read and write data as text on the console,
 For our web application, we will use **Spring MVC**. It enables us to create a web application with the **Java** programming language in the **IntelliJ IDEA** development environment.
 
 Take the project (the application's skeleton) from this link:
-[https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-JS-EN/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
+[https://github.com/SoftUni/Programming-Basics-Book-Java-EN/blob/master/assets/chapter-1-assets](https://github.com/SoftUni/Programming-Basics-Book-Java-EN/blob/master/assets/chapter-1-assets) and load it in IntelliJ IDEA using **[Import Project]**:
 
 ![](assets/chapter-1-images/08.Numbers-sum-web-02.png)
 
