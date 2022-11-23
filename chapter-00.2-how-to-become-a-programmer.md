@@ -6,7 +6,7 @@ You can become a programmer \(working in a software company\) after **at least 1
 
 ## Video: Become a Software Engineer – 4 Essential Skills
 
-Watch a video lesson about SoftUni and SoftUni Judge here: [![Watch the video](https://img.youtube.com/vi/Ds5PD3UW57k/mqdefault.jpg](https://youtu.be/Ds5PD3UW57k).
+Watch a video lesson about SoftUni and SoftUni Judge here: https://youtu.be/Ds5PD3UW57k.
 
 ## The 4 Essential Skills of the Software Developers
 
