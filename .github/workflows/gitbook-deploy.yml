@@ -24,8 +24,6 @@ jobs:
         run: gitbook build . --log=debug --debug
       - name: Checkout the `gh-pages` branch into the `_gh-pages` folder
         run: git worktree add ./_gh-pages gh-pages
-      - name: Delete all existing files from the `_gh-pages` folder
-        run: rm -rf ./_gh-pages/*
       - name: Copy the compiled book files to `_gh-pages`
         run: cp -R ./_book/* ./_gh-pages
       - name: Commit and push the changed book files in the `gh-pages` branch
