@@ -35,7 +35,7 @@ Watch Part #2 of the free Java Basics video course, coming with the book: https:
 ## Download The Book
 
 Download the book "**Programming Basics with Java**" in **PDF** format:
-* <a href="#">TODO</a>
+* <a href="https://github.com/SoftUni/Programming-Basics-Book-Java-EN/blob/master/resources/Programming-Basics-Java-v2021.pdf">Programming-Basics-Java-v2021.pdf</a>
 
 ## Book Editions
 
